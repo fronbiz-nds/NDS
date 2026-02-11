@@ -1,0 +1,39 @@
+/* FONT-FACE */
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Pretendard";
+    src:url('../fonts/Pretendard-Regular.otf?ver=1.0.0')   format("opentype"),
+        url('../fonts/Pretendard-Regular.woff?ver=1.0.0')  format("woff"),
+        url('../fonts/Pretendard-Regular.woff2?ver=1.0.0') format("woff2");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Pretendard";
+    src:url('../fonts/Pretendard-Medium.otf?ver=1.0.0')    format("opentype"),
+        url('../fonts/Pretendard-Medium.woff?ver=1.0.0')   format("woff"),
+        url('../fonts/Pretendard-Medium.woff2?ver=1.0.0')  format("woff2");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 600;
+    font-family: "Pretendard";
+    src:url('../fonts/Pretendard-SemiBold.otf?ver=1.0.0')    format("opentype"),
+        url('../fonts/Pretendard-SemiBold.woff?ver=1.0.0')   format("woff"),
+        url('../fonts/Pretendard-SemiBold.woff2?ver=1.0.0')  format("woff2");
+}
+
+@font-face {
+    font-style: normal;
+    font-family: "Pass";
+    src:url('../fonts/password.ttf?ver=1.0.0')    format("opentype"),
+        url('../fonts/password.woff?ver=1.0.0')   format("woff"),
+        url('../fonts/password.woff2?ver=1.0.0')  format("woff2");
+}
+
+@media (max-width: 346px) { html { font-size: 60%; } }
+@media (max-width: 321px) { html { font-size: 55%; } }
+@media (max-width: 281px) { html { font-size: 48%; } }

@@ -1,0 +1,227 @@
+{
+    /* PostCSS Sorting 설정 */
+    "postcssSorting.config": {
+        "unspecified-properties-position": "bottom",
+        "properties-order": [
+            /* Content & Display */
+            "content", 
+            "display",
+            
+            /* Flex & Grid (Layout) */
+            "flex",
+            "flex-grow",
+            "flex-shrink",
+            "flex-basis",
+            "flex-direction",
+            "flex-wrap",
+            "flex-flow",
+            "justify-content",
+            "align-items",
+            "align-content",
+            "gap",
+            "grid",
+            "grid-area",
+            "grid-template",
+            "grid-template-areas",
+            "grid-template-rows",
+            "grid-template-columns",
+            "grid-row",
+            "grid-row-start",
+            "grid-row-end",
+            "grid-column",
+            "grid-column-start",
+            "grid-column-end",
+            "grid-auto-rows",
+            "grid-auto-columns",
+            "grid-auto-flow",
+            "grid-gap",
+            "grid-row-gap",
+            "grid-column-gap",
+
+            /* Visibility & Positioning */
+            "visibility",
+            "opacity",
+            "overflow",
+            "overflow-x",
+            "overflow-y",
+            "float",
+            "clear",
+            "position",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "z-index",
+
+            /* Box Model (Dimensions) */
+            "width",
+            "min-width",
+            "max-width",
+            "height",
+            "min-height",
+            "max-height",
+
+            /* Box Model (Spacing) */
+            "margin",
+            "margin-top",
+            "margin-right",
+            "margin-bottom",
+            "margin-left",
+            "padding",
+            "padding-top",
+            "padding-right",
+            "padding-bottom",
+            "padding-left",
+
+            /* Borders */
+            "border",
+            "border-width",
+            "border-style",
+            "border-color",
+            "border-top",
+            "border-top-width",
+            "border-top-style",
+            "border-top-color",
+            "border-right",
+            "border-right-width",
+            "border-right-style",
+            "border-right-color",
+            "border-bottom",
+            "border-bottom-width",
+            "border-bottom-style",
+            "border-bottom-color",
+            "border-left",
+            "border-left-width",
+            "border-left-style",
+            "border-left-color",
+            "border-radius",
+            "border-top-left-radius",
+            "border-top-right-radius",
+            "border-bottom-right-radius",
+            "border-bottom-left-radius",
+            "outline",
+            "outline-width",
+            "outline-style",
+            "outline-color",
+            "outline-offset",
+
+            /* Backgrounds */
+            "background",
+            "background-color",
+            "background-image",
+            "background-repeat",
+            "background-attachment",
+            "background-position",
+            "background-position-x",
+            "background-position-y",
+            "background-clip",
+            "background-origin",
+            "background-size",
+            "box-shadow",
+
+            /* Typography */
+            "color",
+            "font",
+            "font-style",
+            "font-variant",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "font-family",
+            "letter-spacing",
+            "text-transform",
+            "text-align",
+            "text-align-last",
+            "text-decoration",
+            "text-decoration-color",
+            "text-decoration-line",
+            "text-decoration-style",
+            "text-indent",
+            "vertical-align",
+            "white-space",
+            "word-break",
+            "word-spacing",
+            "word-wrap",
+            "text-shadow",
+
+            /* Misc & User Interface */
+            "list-style",
+            "list-style-type",
+            "list-style-position",
+            "list-style-image",
+            "table-layout",
+            "border-collapse",
+            "border-spacing",
+            "caption-side",
+            "empty-cells",
+            "cursor",
+            "pointer-events",
+            "user-select",
+            "resize",
+            "appearance",
+            "filter",
+            "backdrop-filter",
+            "clip-path",
+            "mask",
+            "quotes",
+
+            /* Transform & Animation */
+            "transform",
+            "transform-origin",
+            "transform-style",
+            "backface-visibility",
+            "perspective",
+            "perspective-origin",
+            "transition",
+            "transition-property",
+            "transition-duration",
+            "transition-timing-function",
+            "transition-delay",
+            "animation",
+            "animation-name",
+            "animation-duration",
+            "animation-timing-function",
+            "animation-delay",
+            "animation-iteration-count",
+            "animation-direction",
+            "animation-fill-mode",
+            "animation-play-state"
+        ]
+    },
+    /* Stylelint 설정 */
+    "stylelint.enable": true,
+    "stylelint.validate": [
+        "css",
+        "scss"
+    ],
+    "stylelint.config": {
+        "plugins": [
+            "@stylistic/stylelint-plugin"
+        ],
+        "rules": {
+            /* 모든 문자열은 쌍따옴표(") 사용 (@charset "utf-8", content: "") */
+            "@stylistic/string-quotes": "double",
+            /* 들여쓰기 4칸 (탭 크기) */
+            "@stylistic/indentation": 4,
+            /* 클래스명과 { 사이 공백 한 칸 (.test {) */
+            "@stylistic/block-opening-brace-space-before": "always",
+            /* { 바로 뒤 공백 제거 ({display...) - 한 줄일 때 */
+            "@stylistic/block-opening-brace-space-after": "never-single-line",
+            /* } 바로 앞 공백 제거 (...auto;}) - 한 줄일 때 */
+            "@stylistic/block-closing-brace-space-before": "never-single-line",
+            /* 콜론(:) 앞뒤 공백 제거 (display:block) */
+            "@stylistic/declaration-colon-space-before": "never",
+            "@stylistic/declaration-colon-space-after": "never",
+            /* 세미콜론(;) 뒤 공백 한 칸 (한 줄일 때) */
+            "@stylistic/declaration-block-semicolon-space-after": "always-single-line",
+            /* [멀티라인/싱글라인 자동 구분] */
+            /* :root, @media 등은 줄바꿈 유지, 일반 클래스는 한 줄 유지 */
+            "@stylistic/block-opening-brace-newline-after": "always-multi-line",
+            "@stylistic/block-closing-brace-newline-before": "always-multi-line",
+            "@stylistic/declaration-block-semicolon-newline-after": "always-multi-line",
+            /* 기타 설정 */
+            "@stylistic/declaration-block-trailing-semicolon": "always",
+            "@stylistic/at-rule-name-space-after": "always"
+        }
+    }
+}

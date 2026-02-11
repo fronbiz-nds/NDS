@@ -223,5 +223,5 @@
             "@stylistic/declaration-block-trailing-semicolon": "always",
             "@stylistic/at-rule-name-space-after": "always"
         }
-    }
+    } 
 }

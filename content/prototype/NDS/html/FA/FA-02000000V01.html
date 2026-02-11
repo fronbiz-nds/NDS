@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+
+	<link rel="stylesheet" href="../../../../assets/libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+			<header class="header">
+				<div class="inner">
+					<div class="funcs">
+						<button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+					</div>
+
+					<h1 class="title"><span class="hide">금액입력</span></h1>
+
+					<div class="funcs">
+						<button type="button" class="func">취소</button>
+					</div>
+				</div>
+			</header>
+
+			<main class="contents">
+				<div class="content -full">
+					<div class="account-setting-box">
+						<div class="link-box">
+							<a href="javascript:void(0)">
+								<span class="use-name">김농협</span>
+								<div class="bank-box">
+									<span class="bank-name">국민은행</span>
+									<span class="bank-number">
+										<!-- [수정 221123] 송금 개선. 텍스트 '으로' 뒤에 추가 -->
+										<span class="number">1234-1234567-889</span>
+										<!-- [수정 221130] #18461 으로 삭제 -->
+									</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="money-counting-box">
+							<!--
+								1. 개발 작업 시 .money-counting-input 에 클레스 hide 적용
+								2. 키패드 input 값을 아래 인풋에 넣어주세요
+							-->
+							<input type="tel" class="money-counting-input hide">
+							<div class="setting-money">
+								<!-- input value 값 입력시 .-placeholder 제거 -->
+								<span class="money-counting -placeholder">얼마를 보낼까요?</span><span class="unit">원</span><!-- [수정 230605] -->
+								<!-- // -->
+							</div>
+							<div class="money-util">
+								<!-- [CASE]
+								<p class="texts">
+									출금가능금액 부족
+									<a href="javascript:void(0)" class="a">잔액채우기</a>
+								</p> -->
+								<!-- [CASE]
+								<p class="texts">1회 한도 초과(현재 1회 한도 : 5,000,000원)</p>
+								<a href="javascript:void(0)" class="a">한도변경하기</a> -->
+								
+								<!-- [수정 230605] [CASE] 금액 한글표기 추가 -->
+								<p class="language-text">57만 8,537원</p>
+								<!-- // -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sticker balance pt-25 pb-15">
+					<div class="send-money-box">
+						<button type="button">
+							<span class="name">
+								<!-- <span class="state">한도제한</span> -->
+								NH농협은행(월급통장)
+							</span>
+							<span class="amount">
+								<span class="number">7,000,000,000</span>원
+							</span>
+						</button>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<div id="layer" class="layer">
+		<div class="container">
+			<div class="header">
+				<div class="inner">
+					<h2 class="title">계좌선택</h2>
+
+					<div class="funcs">
+						<button type="button" class="func -close"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="contents">
+				<div class="content">
+					<div class="selection">
+						<ul>
+							<li>
+								<button type="button" data-bankcode="011" class="info">
+									<span class="name">
+										<span>NH X 카카오페이통장(비대면실명확인)</span>
+									</span>
+									<span class="account-number">
+										<span>NH농협</span>
+										<span class="number">3344-****-7788</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" data-bankcode="011" class="info">
+									<span class="name">
+										<span>NH X 카카오페이통장(비대면실명확인)</span>
+									</span>
+									<span class="account-number">
+										<span>NH농협</span>
+										<span class="number">3344-****-7788</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" data-bankcode="011" class="info">
+									<span class="name">
+										<span>NH X 카카오페이통장(비대면실명확인)</span>
+									</span>
+									<span class="account-number">
+										<span>NH농협</span>
+										<span class="number">3344-****-7788</span>
+									</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../../assets/libs/scrollout/dist/scroll-out.min.js"></script>
+	<script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../../../assets/js/common-ui.js"></script>
+	<script>
+		var buffer = new UI.Buffer('.page');
+
+		function middleBoxControl(size){
+			var middleHeight = $('.sticker').outerHeight() + $('.header').outerHeight();
+
+			$('.account-setting-box').attr('style','height:calc(100vh - ' + size + 'px - ' + middleHeight + 'px) !important');
+
+			// 키패드를 열 경우 높이값(px)을 지정
+			buffer.set(size);
+		}
+
+		// 키패드 높이값을 괄호에 넣고 실행해주세요.
+		middleBoxControl(360);
+
+		$('.money-counting-input').on('input',function(){
+			var countingNumber = $(this).val();
+
+			$('.money-counting').text(countingNumber);
+
+			if( $(this).val().length < 1 ){
+				$('.money-counting').addClass('-placeholder');
+				$('.money-counting').text('보낼금액');
+			} else {
+				$('.money-counting').removeClass('-placeholder');
+			}
+		});
+
+		/* 보낼금액 누르면 인풋으로 포커스 이동 */
+		$('.money-counting').on('click', function(){
+			$('.money-counting-input').focus()
+		})
+	</script>
+</body>
+</html>

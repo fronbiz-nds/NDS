@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+    <link rel="stylesheet" href="../../assets/css/util.css">
+</head>
+<body>
+    <div id="layer" class="layer">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">기간 선택</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <!-- [수정 221122] disabled 케이스 추가 -->
+                    <div class="calendar">
+                        <div class="control">
+                            <button type="button" class="button -xs -fit">오늘</button>
+
+                            <div class="title">
+                                <button type="button" class="prev"><span class="hide">이전달</span></button>
+                                <span class="value">2022.3</span>
+                                <button type="button" class="next" disabled><span class="hide">다음달</span></button>
+                            </div>
+                        </div>
+                        <!-- 단순 선택 시 -active, 시작일 클래스 -start , 종료일 클래스 -end, 사이 날짜는 -between 클래스로 UI가 적용됩니다.
+                        접근성 적용으로 span 태그 내 시작일, 선택됨, 종료일 텍스트가 동적으로 적용되어야 합니다. -->
+                        <table>
+                            <caption><span class="hide">일별 선택 달력</span></caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">일</th>
+                                    <th scope="col">월</th>
+                                    <th scope="col">화</th>
+                                    <th scope="col">수</th>
+                                    <th scope="col">목</th>
+                                    <th scope="col">금</th>
+                                    <th scope="col">토</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><button type="button" disabled>30</button></td>
+                                    <td><button type="button" disabled>31</button></td>
+                                    <td><button type="button">1</button></td>
+                                    <td><button type="button">2</button></td>
+                                    <td><button type="button">3</button></td>
+                                    <td><button type="button">4</button></td>
+                                    <td><button type="button">5</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button">6</button></td>
+                                    <td><button type="button">7</button></td>
+                                    <td><button type="button">8</button></td>
+                                    <td><button type="button">9</button></td>
+                                    <td><button type="button">10</button></td>
+                                    <td><button type="button">11</button></td>
+                                    <td><button type="button">12</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button">13</button></td>
+                                    <td><button type="button">14</button></td>
+                                    <td><button type="button" class="-today">15 <span class="hide">오늘</span></button></td>
+                                    <td><button type="button">16</button></td>
+                                    <td><button type="button" class="-start">17 <span class="hide">시작일</span></button></td>
+                                    <td><button type="button" class="-between">18 <span class="hide">선택됨</span></button></td>
+                                    <td><button type="button" class="-between">19 <span class="hide">선택됨</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="-between">20 <span class="hide">선택됨</span></button></td>
+                                    <td><button type="button" class="-between">21 <span class="hide">선택됨</span></button></td>
+                                    <!-- 선택된 영역이 today 겹쳤을 경우 -->
+                                    <td><button type="button" class="-between -today">22 <span class="hide">선택됨</span></button></td>
+                                    <td><button type="button" class="-end">23 <span class="hide">종료일</span></button></td>
+                                    <td><button type="button">24</button></td>
+                                    <td><button type="button">25</button></td>
+                                    <td><button type="button">26</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button">27</button></td>
+                                    <td><button type="button">28</button></td>
+                                    <td><button type="button">29</button></td>
+                                    <td><button type="button">30</button></td>
+                                    <td><button type="button">31</button></td>
+                                    <td><button type="button" disabled>1</button></td>
+                                    <td><button type="button" disabled>2</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+    </script>
+</body>
+</html>

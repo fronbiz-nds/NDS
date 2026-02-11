@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+
+<body>
+    <div id="layer" class="layer">
+        <div class="container">
+            <div class="header">
+                <div class="inner align-start">
+                    <h1 class="title">현재 포트폴리오 상품을 이용 중이에요</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <p class="p fc-4 ">원리금 보장 상품, 디폴트 옵션으로 운용 중인 자산만 예금・현금성 자산으로 변경할 수 있어요.<br>
+                        포트폴리오 변경은 [포트폴리오 리밸런싱 ] 버튼을 눌러주세요.
+                    </p>
+
+                    <div class="btn-wrap32">
+                        <div class="buttons -double">
+                            <button type="button" class="button -secondary -lg">원리금보장상품/디폴트옵션 변경</button>
+                            <button type="button" class="button -primary -lg ">포트폴리오 리밸런싱</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+
+        // 레이어 닫기(마지막 인자 기본값: false)
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // });
+
+        // 레이어 닫기 + DOM 삭제
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+
+</html>

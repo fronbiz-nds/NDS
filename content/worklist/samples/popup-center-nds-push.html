@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="alert" class="alert">
+        <div class="container">
+            <div class="contents">
+                <div class="content">
+                    <h2 class="h5">혜택정보 PUSH 알림</h2>
+                    <p class="noti-phrase">이벤트, 새소식, 상품정보 등 다양한 혜택 정보를 Push알림으로 받아보세요.</p>
+                </div>
+
+                <div class="fixer">
+                    <!-- 비대칭 버튼 그룹의 경우 -custom -->
+                    <div class="buttons -custom">
+                        <button type="button" class="button -tertiary -md flex-3">닫기</button>
+                        <button type="button" class="button -secondary -md flex-7">동의하고 알림받기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    
+       
+    <script>
+        Alert.open('alert');
+
+        // 얼럿 닫기(마지막 인자 기본값: false)
+        // Alert.close('alert', function() {
+        //     '콜백함수'
+        // });
+
+        // 얼럿 닫기 + DOM 삭제
+        // Alert.close('alert', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

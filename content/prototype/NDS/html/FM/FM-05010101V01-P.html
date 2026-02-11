@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>내 정보 수정</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">예약송금 확인</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content"> 
+                    <div class="messages-box -xl" data-bankcode="004">
+						<p class="message">
+							<span class="point">김소연</span>님께<br>
+							<span class="point"><span class="number">7,500,000</span>원</span>을 송금할까요?
+						</p>
+					</div>
+
+                    <div class="card -sum mb-16">
+                        <div class="-box">
+                            <dl class="dl">
+                                <div>
+                                    <dt>계좌정보</dt>
+                                    <dd>2024.01.12 09:00~10:00</dd>
+                                </div> 
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="account card -list">
+                        <dl class="dl">
+                            <div>
+                                <dt>받는계좌</dt>
+                                <dd>
+                                    NH농협은행<br><span class="number">302-1234-5678-81</span><br>
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>출금계좌</dt>
+                                <dd>
+                                    NH농협은행<br><span class="number">302-1234-5678-81</span>
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>수수료</dt>
+                                <dd><span class="emphasis">김소연님은 수수료 면제!</span></dd>
+                            </div>
+                            <div>
+                                <dt>받는분에게 표기</dt>
+                                <dd>
+                                    <!-- 지방세입 CASE 내용이면 해당버튼 삭제 -->
+                                    <button type="button" class="modify-button">김농협</button>
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>나에게 표기</dt>
+                                <dd>
+                                    <!-- 지방세입 CASE 내용이면 해당버튼 삭제 -->
+                                    <button type="button" class="modify-button memo">최대 10자까지 입력</button>
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>메모</dt>
+                                <dd>
+                                    <button type="button" class="modify-button memo">메모 입력</button>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <div class="case-wrap right">
+                        <a href="javascript:void(0)" class="a -arrow">주택청약(종합)저축 유의사항</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fixer">
+                <div class="buttons">
+                    <button type="button" class="button -primary -lg">김소연님께 송금 예약</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

@@ -1,0 +1,626 @@
+@charset "utf-8";
+
+/* 보험가입프로세스 */
+
+/* 직업찾기 */
+.custom-list ul.tenline{ }
+.custom-list ul.tenline p.jobname {font-weight: 500;}
+.custom-list ul.tenline .jobname.-active {color: var(--point); font-weight: bold;}
+.custom-list > ul.tenline > li + li {border-top:0;}
+
+/* 연금수령액 예시 */
+/* .field + .pension-group {margin-top:3.2rem;} */
+.pension-group {margin:3.2rem 0 1.6rem 0;}
+.pension-group:first-child {margin-top: 0;}
+.pension-group {display:flex; align-items:center; justify-content: space-between; align-items: center;}
+.pension-group .h5 {margin: 0; padding: 0; font-weight: bold; font-size: 1.6rem; line-height: 1.2; word-break: break-word;}
+.pension-group .unit {color: var(--font3); font-size: 1.4rem;}
+
+/* 박스 */
+.pension-box {padding:2.4rem 2rem; border-radius:1.6rem; background-color:var(--G09); font-size: 1.4rem;}
+.pension-box h3.title {color:var(--point); font-weight:600; font-size:2rem;}
+.pension-box > p {margin-top:0;}
+.pension-box > h3 + p {margin-top:2rem;}
+
+.dl > div.title {margin-top: 2.5rem; font-weight:600;}
+.dl > div.title:first-child {margin-top: 0;}
+
+/* 이미지박스 */
+.img-box {margin-top: 2.4rem;}
+.img-box img {margin: 0 auto; width: 29.4rem;}
+
+/* Tab메뉴속 알려드립니다. */
+.segments-panels .sticker {padding: 0; margin-top: 4rem;}
+
+/* 라디오박스아래 체크박스 간격 */
+.box-radios + .checkbox{margin-top: 1.6rem;}
+.message + .checkbox{margin-top: 1.6rem;}
+
+/* 휴대폰 계약문서 저장 아이콘 */
+.agreepaper {display:flex; justify-content:center; margin-top:2.4rem;}
+.agreepaper:first-child {margin-top:0;}
+.agreepaper li {padding:0 2rem;}
+.agreepaper .down {display:flex; flex-direction:column; align-items:center; position:relative; background-color:transparent; color:var(--font2); font-weight:normal; font-size:1.4rem; text-align:center; white-space:nowrap;}
+.agreepaper .down:before {content:""; display:block; width:5.8rem; height:5.8rem; margin-bottom:1rem; border-radius: 2.4rem; background:url(../imgs/img/insurance/ico-FMKB-1600000000F01-1.png) no-repeat center center / 4.8rem;}
+.dark-mode .agreepaper .down:before {content:""; display:block; width:5.8rem; height:5.8rem; margin-bottom:1rem; border-radius: 2.4rem; background:url(../imgs/img/insurance/ico-FMKB-1600000000F01-1_dk.png) no-repeat center center / 4.8rem;}
+
+/* 여행보험(해외) > 보험설계 정보입력 > 여행기간 메세지*/
+.multi + .info {width:100%; margin-top:1rem; padding:0; color:var(--font3); font-size:1.3rem;}
+.multi + .multi {margin-top: 1.2rem;}
+
+/* 추가버튼 */
+.add-button {display:flex; justify-content:center; align-items:center; width:100%; margin-top:2.4rem; background-color:transparent; color:var(--font1); font-size:1.3rem; transition:background-color .6s;}
+.add-button:active {background-color:var(--bg1); transition:none;}
+.add-button:after {content:""; display:inline-block; width:1.2rem; height:1.2rem; margin-left:.6rem; background:url(../imgs/img/insurance/ico-FMKH-0100000000F01-1.png) no-repeat 0 / cover;}
+
+/* 보험설계 정보입력 */
+.info .-bordertype + .label {margin-top: 2.4rem;}
+.info .mix .dash {border: 1px solid var(--line1); border-top: 0; border-left: 0; border-right: 0; transition: border .3s;}
+.info .field .del-btn {top:3rem !important;}
+.info .-bordertype + .button {margin-top: 1.6rem;}
+
+/* 정보입력 한도액 */
+.dl.-limit {padding: 2.4rem 2rem; border-radius: 1.6rem; background-color: var(--bg1);}
+.dl.-limit p.txt {font-size: 1.5rem; color: var(--font1); font-weight: 600; margin-bottom: 1.6rem;}
+.dl.-limit dt {font-size: 1.5rem; font-weight: 400; color: var(--font1); padding: 0.8rem 0 0 0;}
+.dl.-limit dd {font-size: 2rem; font-weight: 600; color: var(--P15) !important; padding: 0;}
+.dl.-limit dd span.yearly {font-size: 1.5rem; font-weight: 400;}
+.dl.-limit p.sum {text-align: right; font-weight: 400; font-size: 1.5rem; padding-right: 0.2rem;}
+.dl.-limit p.sum span.momoney {font-weight: 600;}
+.dl.-limit + p.info {width: 100%; margin-top: 1rem; padding: 0; color: var(--font3); font-size: 1.3rem; text-align: left; font-weight: 400;} 
+.spborder {height: 0.1rem; border: none; background-color: var(--line1); margin: 2.4rem 0;}
+
+/* 보장내용 */
+.dl.-security {padding: 2.5rem 2rem; border-radius: 1.6rem; background-color: var(--bg1);}
+.dl.-security .sumgroup{align-items: center;}
+.dl.-security .sumgroup dt {padding: 0 !important;}
+.dl.-security .sumgroup dd.money {font-size: 2.2rem; font-weight: 600; color: var(--P15); padding: 0;}
+.dl.-security .sumgroup dd span.mo-year {font-size: 1.5rem; font-weight: 600; padding-right: .5rem;}
+.dl.-lined {border-top: none !important;}
+.txtinfo {color:var(--font3); font-size:1.5rem; text-align:left; margin-bottom: 1.9rem;}
+.txtinfo:before {content:""; display:inline-block; width:2.4rem; height:2.4rem; background:url(../imgs/img/utility/ico-gray-notice.png) no-repeat 0 / cover; vertical-align:-0.7rem;}
+.txtinfo span {color:var(--font1); font-weight: 500;}
+
+.intype {font-size: 1.8rem; font-weight: bold; margin-top:.2rem;}
+
+.field .h5 {margin-top: 0 !important;}
+
+.errormessage {color:var(--font3); font-size:1.4rem; text-align:left; margin: 1.2rem 0;}
+.errormessage:before {content:""; display:inline-block; width:2.4rem; height:2.4rem; background:url(../imgs/img/insurance/ico-FMKB-0214000000F01-B-1.png) no-repeat 0 / cover; vertical-align:-0.7rem;}
+.options + .errormessage { margin-top: 2.7rem;}
+
+/* 보험설계 결과확인 */
+.check-result {padding: 2.2rem 2rem; border-radius: 1.6rem; background-color: var(--bg1);}
+.check-result .dl > div {align-items: center;}
+.check-result dt {font-size: 1.5rem; font-weight: 400; color: var(--font2); padding: 0;}
+.check-result dt span.empha {font-size: 1.6rem; font-weight: 600; color: var(--font1);}
+.check-result dd {font-size: 1.6rem; font-weight: 600; color: var(--P15); padding: 0;}
+.check-result dd span.sum {font-size: 2.2rem;}
+.check-result dd p.rate {font-size: 1.2rem; font-weight: 400; color: var(--font3); }
+/* .check-result, .check-result1 + dl {margin-top: 2.4rem;} */
+
+.check-result1 {margin-top: 3.2rem; padding: 2.2rem 2rem; border-radius: 1.6rem; background-color: var(--bg1);}
+.check-result1 .dl > div {align-items: center;}
+.check-result1 dt {font-size: 1.5rem; font-weight: 400; color: var(--font2); padding: 0;}
+.check-result1 dt span.empha {font-size: 1.6rem; font-weight: 600; color: var(--font1);}
+.check-result1 dd {font-size: 1.6rem; font-weight: 600; color: var(--P15); padding: 0;}
+.check-result1 dd span.sum {font-size: 2.2rem;}
+.check-result1 dd p.rate {font-size: 1.2rem; font-weight: 400; color: var(--font3); }
+/* .check-result + dl {margin-top: 2.4rem;} */
+.dl.-box dt span.standrate {font-size: 1.2rem;}
+.dl.-lined dt span.standrate {font-size: 1.2rem;}
+
+.dl.-box dd span.max-amount {font-size: 1.2rem; color: var(--font2);}
+
+.dl.-box + hr {margin-top: 3rem;}
+
+/* 금융상품 중요사항 확인 */
+.panel dl dt.verspace {line-height: 1.5rem;}
+.panel dl dt span.basis {font-size: 1.2rem; color: var(--font2);}
+
+/* 여행보험(해외) > 보험설계 정보입력" */
+.dl.-box .button {background-color: var(--F10);}
+
+.table + .box {margin-top: 3.2rem;}
+
+.security-list {}
+.security-list .dl dt {width: 70%;}
+.security-list .dl dd {width: 30%;}
+.security-list.listrigh .dl dt {width: 30%;}
+.security-list.listrigh .dl dd {width: 70%;}
+
+.important-confirm-box > .agree + .panel .inner.security-list .dl.-lined:first-child {border-top: none !important;}
+.important-confirm-box > .agree + .panel .inner.security-list .dl {padding: 2.4rem 0 2.4rem 0;}
+.important-confirm-box > .agree + .panel .inner.security-list .dl + .dl {padding: 2.4rem 0 2.4rem 0;}
+.important-confirm-box > .agree + .panel .inner.security-list .dl:last-child {padding-bottom: 0;}
+.important-confirm-box > .agree + .panel .inner.security-list .dl.-lined { border-top: 1px solid var(--line2) !important; border-bottom: none !important;}
+
+/* 고지사항 */
+.invest-qna .box {margin-top: 1.2rem;}
+.invest-qna .box .medical-list {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.invest-qna .box .medical-list ul {margin: 1rem 0 1rem 0; width: 48%;}
+.case-wrap .field .checkboxes .checkbox {padding: 1rem 1rem 1rem 0;}
+.box .checkbox {position: absolute; right: 2rem; display: contents;}
+
+.tooltip > .panel > .title ~ .title {margin-top: 2rem;}
+
+/* 실손보험 가입내역 리스트 */
+.join-list {border-top:1px solid var(--line2); border-bottom:1px solid var(--line2);}
+.join-list > li {position:relative;}
+.join-list > li + li {border-top:1px solid var(--line2);}
+.join-list .account-item {display:block; position:relative; width:100%; padding:2.4rem var(--indent); background-color:transparent; text-align:left;}
+.join-list .account-item .date {margin-bottom:.6rem; color:var(--font4); font-size:1.2rem; }
+.join-list .account-item .info {display:flex; flex-wrap:wrap;}
+.join-list .account-item .name {flex:1; min-width:10%; color:var(--font2); font-weight:400; font-size:1.5rem; line-height:1.2; word-break:keep-all; overflow-wrap:break-word;}
+.join-list .account-item .name + .amount {padding-left: 4rem;}
+.join-list .account-item .amount {max-width:90%; margin-left:auto; text-align:right; word-break:keep-all; overflow-wrap:break-word; font-size:1.5rem; line-height:1.2; white-space:nowrap; font-weight: 500;}
+.join-list + p.info {width: 100%; margin-top: 1rem; padding: 0; color: var(--font3); font-size: 1.3rem; text-align: left; font-weight: 500;} 
+
+.in-result {display:flex; flex-direction: column; padding-top:4rem; padding-bottom:4.3rem; text-align:left;}
+.in-result:before {content:""; display:block; width:5.6rem; height:5.6rem; margin-bottom:1.5rem; background:url(../imgs/ico/common/ico-message.png) no-repeat 0 0 / 5.6rem;}
+
+
+.mix .text.-percent input.wide {padding-right:5.8rem;padding-left:2rem;}
+.invest-notice + .box {margin-top: 1.6rem;}
+
+.box ~ .checkbox {margin-top: 1.2rem;}
+.invest-img ~ .checkbox {margin-top: 1.2rem;}
+.box span.age {font-weight: 600;  color: var(--font1);}
+
+.button + .buttons {margin-top: 1.2rem;}
+.dl + .button {margin-top: 2.4rem;}
+
+/* 보험 선물하기 목록 */
+.gift-wrap {position:relative; padding:2.4rem 2rem 1.6rem; border:1px solid var(--G07); border-radius:1.6rem; color:var(--font1);}
+.gift-wrap + .gift-wrap {margin-top:2rem;}
+.gift-wrap .info {display:block; position:relative; width:100%; padding-left:var(--indent); text-align:left; margin-bottom: 1.6rem;}
+.gift-wrap .info[gift-code]:before {position:absolute; top:0; right:0; margin-right:0;}
+.gift-wrap .inner {display: flex; justify-content: space-between;}
+.gift-wrap .inner .inname {display:block; color:var(--font1); font-weight:600; font-size:1.6rem; line-height:1.4;}
+.gift-wrap .inner img {width: 10rem; height: 5.8rem;}
+
+/* 고지사항 */
+.case-wrap + button, .invest-qna + button {
+    margin-top: 1.6rem;
+}
+.field +.box {margin-top: 1.2rem;}
+
+.dl.-box + .info {width: 100%; margin-top: 1rem; padding: 0; color: var(--font3); font-size: 1.3rem; text-align: left;}
+
+.page-img + .h2-group {margin: 3.2rem 0 1.6rem;}
+
+.table tbody td span.txtmid {font-weight: 500; color:var(--font1);}
+
+/* 펀드선택 */
+.title-wrap {display:flex; justify-content:space-between; margin:0 0 1.6rem 0;}
+.title-wrap .title {color:var(--font1); font-size:1.6rem; font-weight: 600;}
+.title-wrap .refresh-group {font-size:1.3rem;}
+.title-wrap .refresh-group .refresh {width:2rem;height:2rem; background:url(../imgs/ico/common/ico-refresh.png) no-repeat center center / 2rem; vertical-align: middle;}
+
+.selection .fsplit {display: flex; align-items: center; justify-content: space-between; min-width: 0;}
+.selection .fsplit .fundtype {font-size: 1.6rem; font-weight: 500;}
+.info.-bordered.-active .fundtype {color: var(--point);}
+.selection p.fudninfo {font-size: 1.3rem; color: var(--font2); margin-top: 1.2rem;}
+.selection .fsplit .select > button {min-height: 3.6rem; padding: 0 3rem 0 1rem; background: transparent url(../imgs/ico/common/ico-select-arr.png) no-repeat right 0.6rem top 50% / 2.4rem; font-weight: 500; font-size: 1.4rem; border-radius: 0.8rem;}
+
+.category p.ftit {margin: 0; font-size: 1.5rem; color: var(--font2);}
+.category .dl div {align-items: center;}
+.category .dl dt {width: 80%;}
+.category .dl dd {width: 20%; font-size: 2rem; font-weight: 500;}
+
+.tit-group {margin: 4rem 0 1.6rem; padding: 0;}
+ul.-bullet>li p.subject {color: var(--font1); font-weight: 500;}
+.yellowbox {margin-bottom: 4rem; text-align: center;}
+.yellowbox-top {border-radius: 1.6rem; height:14.2rem; padding:2.4rem 2rem; background:#f6ede6 url(../imgs/img/insurance/img-yellow.png) no-repeat right 2.4rem bottom 2rem / 8rem}
+.yellowbox-top .h3 {font-weight: 600; color:#121212}
+.yellowbox-top .yellow-sub {color:#505050; font-size: 1.4rem;}
+
+/* 적합성 진단 */
+.invest-qna .answer-list .item .invest-unit.in-icon1::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-01.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon2::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-02.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon3::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-03.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon4::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-04.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon5::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-05.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon6::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-06.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon7::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-07.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon8::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-08.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon9::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-09.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon10::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-10.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon11::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-11.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon12::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-12.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon13::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-13.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon14::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-14.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon15::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-15.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon16::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-16.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon17::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-17.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon18::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-18.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon19::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-19.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon20::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-20.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon21::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-21.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon22::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-22.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon23::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-23.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon24::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-24.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon25::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-25.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon26::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-26.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon27::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-27.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon28::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-28.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon29::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-29.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon30::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-30.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon31::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-31.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon32::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-32.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon33::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-33.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon34::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-34.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon35::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-35.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon36::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-36.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon37::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-37.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon38::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-38.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon39::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-39.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon40::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-40.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon41::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-41.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon42::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-42.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon43::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-43.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon44::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-44.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon45::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-45.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon46::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-46.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon47::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-47.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon48::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-48.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon49::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-49.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon50::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-50.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon51::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-51.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon52::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-52.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon53::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-53.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon54::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-54.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon55::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-55.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon56::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-56.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon57::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-57.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon58::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-58.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon59::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-59.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon60::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-60.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon61::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-61.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon62::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-62.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon63::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-63.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon64::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-64.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon65::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-65.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon66::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-66.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon67::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-67.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon68::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-68.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon69::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-69.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon70::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-70.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon71::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-71.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon72::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-72.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon73::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-73.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon74::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-74.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon75::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-75.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon76::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-76.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon77::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-77.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon78::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-78.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon79::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-79.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon80::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-80.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon81::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-81.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon82::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-82.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon83::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-83.png);}
+
+/* 적합성 진단 - darkmode*/
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon1::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-01_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon2::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-02_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon3::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-03_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon4::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-04_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon5::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-05_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon6::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-06_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon7::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-07_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon8::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-08_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon9::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-09_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon10::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-10_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon11::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-11_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon12::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-12_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon13::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-13_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon14::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-14_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon15::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-15_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon16::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-16_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon17::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-17_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon18::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-18_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon19::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-19_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon20::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-20_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon21::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-21_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon22::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-22_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon23::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-23_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon24::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-24_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon25::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-25_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon26::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-26_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon27::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-27_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon28::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-28_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon29::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-29_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon30::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-30_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon31::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-31_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon32::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-32_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon33::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-33_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon34::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-34_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon35::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-35_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon36::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-36_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon37::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-37_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon38::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-38_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon39::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-39_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon40::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-40_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon41::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-41_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon42::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-42_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon43::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-43_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon44::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-44_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon45::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-45_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon46::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-46_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon47::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-47_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon48::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-48_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon49::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-49_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon50::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-50_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon51::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-51_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon52::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-52_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon53::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-53_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon54::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-54_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon55::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-55_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon56::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-56_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon57::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-57_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon58::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-58_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon59::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-59_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon60::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-60_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon61::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-61_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon62::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-62_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon63::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-63_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon64::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-64_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon65::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-65_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon66::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-66_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon67::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-67_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon68::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-68_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon69::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-69_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon70::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-70_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon71::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-71_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon72::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-72_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon73::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-73_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon74::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-74_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon75::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-75_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon76::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-76_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon77::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-77_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon78::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-78_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon79::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-79_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon80::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-80_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon81::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-81_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon82::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-82_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon83::after {background-image:url(../imgs/img/insurance/ico-FMKK-0200000000F01-83_dk.png);}
+
+.mix .text.-percent input {padding-left: 2rem;}
+.mix .text.-percent input::placeholder {text-align: left;}
+
+.errorcode {font-size: 1.4rem; color: var(--red); margin-top: 3.2rem;}
+
+/* 인터렉션 상단 고정 */
+.heading-fix-type .-fix-heading{position:fixed;background-color:var(--G10);margin-top:-4px;z-index:99;width:100%;left:0;padding-left:var(--in);;padding-right:var(--in);}
+.heading-fix-type .-fix-heading .p{font-weight:400;margin: 1.6rem 0;}
+/* 보험 설문완료후 전체목록 보기 */
+.jsSrveyInsure .field{display: none;}
+.jsSrveyInsure .field.jsSrveyCurrent{display:block;margin-top: 0;}
+.jsSrveyInsure.-checkAll .field{display: block;}
+
+/* 펀드선택:운용비율 */
+.product-h-group {display:flex; width:100%; height:3.4rem;margin: 3.2rem 0 1.6rem 0 ;}
+.product-h-group .total-text {line-height:3.8rem; font-size:1.4rem;}
+.product-h-group .total-num {line-height:3.4rem; margin-left:.8rem; font-size:2.8rem; font-weight:bold;}
+.product-h-group .total-num > span {font-weight:normal;}
+
+.fixed-wrap.-active .fixed-inner {position:fixed; top:5rem; left:0; width:100%; padding-left:2.4rem; background-color:#ffffff; border-bottom:.1rem solid var(--G08); animation:fixedForm .2s both; z-index:1;}
+@keyframes fixedForm {
+    0% {top:5.5rem;}
+    80% {box-shadow:0 .3rem .6rem rgba(85, 85, 85, 5%);}
+    100% {top:5rem; box-shadow:0 .3rem .6rem rgba(85, 85, 85, 5%);}
+}
+.fixed-wrap.-active .product-h-group .total-num {line-height:3.8rem; font-size:1.8rem; transition:all .2s linear;}
+.fixed-wrap + .subs-panels .subs-panel {padding:0;}
+
+.guide-outer {height:6.7rem; line-height:6.7rem; text-align:center; margin:0 -2.4rem; background-color:var(--G09);}
+.guide-outer .guide-text {font-size:1.4rem; color:var(--F01);}
+
+.ratio {display:flex; align-items:center; position:fixed; top:-6.2rem; left:0; width:100%; padding:0 2.4rem; height:6.2rem; background-color:var(--G10); border-bottom:.1rem solid var(--G08); box-shadow:0 .5rem .6rem .1rem rgba(85, 85, 85, 5%);}
+.ratio.-active {top:6.2rem; z-index:1; animation:ratioMove .2s ease-in-out;}
+@keyframes ratioMove {
+    0% {top:3.1rem;}
+    100% {top:6.2rem;}
+}
+.ratio .ratio-text {font-size:1.4rem;}
+.ratio .ratio-num {margin-left:1.2rem; font-size:1.8rem; font-weight:bold;}
+
+.bullet-wrap {margin-bottom: 3.2rem; }
+.bullet-wrap ul > li {font-size: 1.2rem;}
+.bullet-wrap ul.-bullet > li::before {content: ""; background-color: #9e9e9e;top:0.4rem}
+.bullet-wrap ul > li + li {margin-top: 1rem;}
+.bullet-wrap .type {font-weight: 600; color: #12a396;}
+.bullet-wrap .bond {font-weight: 600; color: var(--point); }
+
+.multi .inner6 {width: 60%;}
+.multi .inner4 {width: 40%; margin-left: 1rem;}
+
+.box .ehanaro {font-size: 1.6rem; color: var(--font1);}
+.box .ehanaro span.keypoint {font-weight: 500; color: var(--P15);}
+
+.text_wrap {margin-top: 2.4rem;}
+.text_wrap .strong {font-weight: 600; color: var(--font1);}
+
+/* 보장항목 선택 */
+.insurance-gadget .invest-qna .answer-list {display: flex; flex-wrap: wrap;}
+.insurance-gadget .invest-qna .answer-list .item {margin-top:0; margin:0 1rem 1.2rem 0}
+.insurance-gadget .invest-qna .answer-list .item:nth-child(3n) {margin-right:0;}
+.insurance-gadget .invest-qna .answer-list .item .invest-unit {padding:5.2rem 1.2rem 4rem 1.2rem; border-radius: 1.6rem;}
+.insurance-gadget .invest-qna .answer-list .item.host {position: relative; width:calc(100% / 3 - .7rem);}
+.insurance-gadget .invest-qna .answer-list .item .invest-unit::after {transform: none; top: 1rem; left:1.2rem}
+.insurance-gadget .invest-qna .answer-list .item.host .sick {font-size: 1.5rem; font-weight: 500; color: var(--font1); line-height: 1.2;}
+.insurance-gadget .ensure {display: flex; align-items: center; position: absolute; bottom: 1rem; left:1.2rem; line-height: 1.3;}
+.insurance-gadget .ensure .name {font-size: 1.3rem; color: var(--font3);}
+.insurance-gadget .invest-qna .answer-list .item input:disabled + .invest-unit {border:1px solid #f5f5f5;}
+.insurance-gadget .invest-qna .answer-list .item input:disabled + .invest-unit::after,
+.insurance-gadget .invest-qna .answer-list .item input:disabled + .invest-unit .sick,
+.insurance-gadget .invest-qna .answer-list .item input:disabled ~ .ensure .tooltip > .trigger {opacity: .3;}
+.insurance-gadget .invest-qna .answer-list .item input:disabled ~ .ensure .name {color: var(--F04); opacity: .3;}
+
+.invest-qna .answer-list .item .invest-unit.in-icon84::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-84.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon85::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-85.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon86::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-86.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon87::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-87.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon88::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-88.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon89::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-89.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon90::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-90.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon91::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-91.png);}
+.invest-qna .answer-list .item .invest-unit.in-icon92::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-92.png);}
+
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon84::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-84_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon85::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-85_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon86::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-86_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon87::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-87_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon88::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-88_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon89::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-89_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon90::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-90_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon91::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-91_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.in-icon92::after {background-image:url(../imgs/img/insurance/ico-FMKN-0200000000F01-92_dk.png);}
+
+.checkbox.allselect {display: inline-flex;}
+
+/* 보험상품 주요내용 */
+.insurewrap ul {padding:0; display: flex; justify-content: space-between; flex-wrap: wrap; padding-top: 0.2rem; text-align: center;}
+.insurewrap li {width: 48%;  margin-bottom: 1.2rem; position: relative; line-height: normal;}
+.insurewrap li:nth-last-child(1),
+.insurewrap li:nth-last-child(2){margin-bottom: 0;}
+.insurewrap li::before {content: ''; position: absolute; width: 8rem; height: 4.8rem; transform: translate(-50%, -50%);}
+.insurewrap li.product1::before {background:url(../imgs/img/insurance/ico_FMKB-0400000000F01-1.png) no-repeat center center; top: 51%; background-size:6.4rem auto ;}
+.insurewrap li.product2::before {background:url(../imgs/img/insurance/ico_FMKB-0400000000F01-2.png) no-repeat center center; top: 51%; background-size:7.2rem auto ;}
+.insurewrap li.product3::before {background:url(../imgs/img/insurance/ico_FMKB-0400000000F01-7.png) no-repeat center center / 4.8rem; top: 54%;}
+.insurewrap li.product4::before {background:url(../imgs/img/insurance/ico_FMKB-0400000000F01-4.png) no-repeat center center ; top: 54%; background-size: auto 4.8rem;width: 100%;}
+.insurewrap li.product5::before {background:url(../imgs/img/insurance/ico_FMKB-0400000000F01-8.png) no-repeat center center / 4.8rem; top: 50%;}
+.insurewrap li.product6::before {background:url(../imgs/img/insurance/ico_FMKB-0400000000F01-6.png) no-repeat center center / 4.8rem; top: 8rem;}
+.insurewrap li.product7::before {background:url(../imgs/img/insurance/ico_FMKB-0400000000F01-5.png) no-repeat center center / 4.8rem; top: 50%;}
+.insurewrap .info[data-bankcode]:before {position:absolute; top:50%; left:0; margin-right:0; transform:translateY(-48%);}
+.insurewrap .info.-bordered {display: block; padding:1.6rem; border:1px solid var(--line1); border-radius:1.6rem; position:relative;  height: 16rem;}
+.insurewrap span {display: inline-block;}
+.insurewrap .name {font-size: 1.5rem; color: var(--font1); font-weight: 600;}
+.insurewrap .incase {font-size: 1.3rem; color: var(--font3); display: block; margin-top: .4rem;}
+.insurewrap .memo {font-size: 1.4rem; color: var(--font2); position: absolute; bottom: 1.6rem; display: block; text-align: center; left: 0; right: 0;}
+.insurewrap .interest {font-size: 1.4rem; color: var(--font2); position: absolute; bottom: 1.6rem; display: block; text-align: center; left: 0; right: 0;}
+.insurewrap .insurerate {font-size: 1.4rem; color: var(--font2); position: absolute; bottom: 1.6rem; text-align: center; left: 0; right: 0;}
+.insurewrap .standard {font-size: 2.4rem; color: var(--point); font-weight: 600; margin-top: 2rem; display: block;}
+.insurewrap .percent {font-size: 2.4rem; color: var(--point); font-weight: 600; margin-top: 3.2rem; display: block;}
+.insurewrap .buy {font-size: 1.4rem; color: var(--font2); margin-top: 2.7rem; display: block;}
+.insurewrap .day {font-size: 2.4rem; color: var(--point); font-weight: 600; margin-top: .6rem; display: block;}
+.insurewrap .year {font-size: 2.4rem; color: var(--point); font-weight: 600; margin-top: 2rem; display: block;}
+.insurewrap .inside {font-size: 1.4rem; color: var(--font2); display: block;}
+.insurewrap .ratewrap {margin-top: 3rem;}
+.insurewrap .ratewrap p.rate:first-child {margin-top: 0;}
+.insurewrap .ratewrap p.rate {font-size: 1.4rem; color: var(--font2); display: block; margin-top: .4rem;}
+.insurewrap .ratewrap p.rate span.strong {font-weight: 600; color: var(--point);}
+.insurewrap .ratewrap1 {margin-top: .8rem; line-height: 2rem;}
+.insurewrap .ratewrap1 p.rate {font-size: 1.4rem; color: var(--font2); display: block;}
+.insurewrap .ratewrap1 p.rate span.strong {font-weight: 600; color: var(--point);}
+.insurewrap .price {font-size: 1.4rem; color: var(--font2); position: absolute; bottom: 1.6rem; display: block; text-align: center; left: 0; right: 0;}
+.insurewrap .basictxt {font-size: 1.4rem; color: var(--font2); position: absolute; bottom: 1.6rem; display: block; text-align: center; left: 0; right: 0;}
+
+.jsImportConfWrap:first-child {margin-top:0;}
+
+.field .invest-qna + .case-wrap .box {margin-top: 2.4rem;}
+.field .invest-qna + .case-wrap .checkboxes + .info-wrap .message {margin-top: 0;}
+
+.deepyellow {color:var(--S44);}
+.line-box + .checkbox {margin-top: 3.2rem;}
+.line-box .a.-arrow {margin-top: 1.6rem;}
+
+.refertxt {font-size: 1.4rem; margin-top:2.4rem; color:var(--font2)}
+
+.table.-sm.-xx td {padding: 1rem 0.3rem;}
+.security-list + .txtinfo {margin-top: 1.6rem;}
+
+/* 여행보험(해외) - 보험설계 정보입력 */
+.selection .info-wrap + .button.-lg {margin-top: 2.4rem;}
+
+.h4 + .check-result {margin-top: 2rem;}
+.inbox-tit {font-size: 1.5rem; font-weight: 500; color: var(--font1); margin-bottom: 0.6rem;}
+
+/* 간펴설계 결과확인 */
+.simple-result {margin-bottom: 4rem; padding: 2.2rem 2rem; border-radius: 1.6rem; background-color: var(--bg1);}
+.simple-result .dl > div {align-items: center;}
+.simple-result .dl > div + div {margin-top: 2.4rem;}
+.simple-result dt {width: 50%; font-size: 1.5rem; font-weight: 400; color: var(--font2); padding: 0; line-height: 2rem;}
+.simple-result dt span {font-size: 1.2rem; font-weight: 400; color: var(--font3);display: block; }
+.simple-result dd {width: 50%; font-size: 2rem; font-weight: 600; color: var(--font1); padding: 0;}
+.segments-panel .pension-group {margin-top: 3.2rem;}
+
+/* 검색키워드 */
+.search-area .-focused.mix .-lined.search,
+.search-area .mix .text > input:focus {border-color: var(--point);}
+.submain-content hr {margin-top:3.2rem !important; margin-bottom:3.2rem !important}
+.popular-anchors .outer {position: relative;}
+.popular-search .hash-btn {border:1px solid var(--G06); background-color:var(--G10); border-radius: 1.6rem; padding:0 1.2rem; min-height:3rem; font-size: 1.3rem;}
+.popular-search .hash-btn.-active {border:1px solid var(--G01); background-color: var(--G01); color:var(--G10)}
+.popular-search .hash-btn.-active::after {content:'선택됨'; font-size: 1rem; opacity: 0; width:0; height:0; position:absolute; overflow: hidden;}
+.popular-anchors .outer:after {content:""; position:absolute; top:0; right:3.6rem; bottom:0; z-index:3; width:1.2rem; background:linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--G10) 100%); pointer-events: none; z-index: 10;}
+.popular-anchors.-active .outer:after {display: none;}
+.popular-anchors .outer {overflow:hidden; position:relative; width:100%; background-color: var(--G10); z-index: 17; padding-right:3.6rem; padding-top:.6rem}
+.popular-anchors .inner {overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; background-color:var(--bg-root);}
+.popular-anchors .inner::-webkit-scrollbar {display:none}
+.popular-anchors .list {padding:0; font-size:0; white-space:nowrap;}
+.popular-anchors.-active .inner {height:auto;}
+.popular-anchors.-active .list {white-space:normal;}
+.popular-anchors .item {display:inline-block; position:relative;  margin:0 .4rem .6rem 0;}
+.popular-anchors .item:first-child {margin-left:0;}
+.popular-anchors .item:last-child {padding-right:.4rem;}
+.popular-anchors .item a {display:inline-block; padding:.7rem 1.5rem; border-radius:3rem; background-color:var(--G09); font-weight:normal; font-size:1.4rem; line-height:1.2; white-space:nowrap; text-align:center; color:var(--font2)}
+.popular-anchors .item.-active a {background-color:var(--G01); color:var(--G10); font-weight: 500;}
+.popular-anchors .more {position:absolute; top:.6rem; right:0; z-index:1; width:3rem; height:3rem; background:url(../imgs/img/main/ico-fold-arrow.png) no-repeat center center / 3rem;  transition:.2s}
+.popular-anchors.-active .more {transform:rotate(180deg);}
+.search-result .info-main {line-height:1.2}
+.search-result .info-sub {font-size: 1.4rem; color:var(--font3); margin-top:.6rem;}
+.search-result .selection .info.-bordered {padding:1.6rem 2rem}
+
+/* 불이익 및 권리사항 */
+.notice-visual1 {margin-top: 2.4rem; text-align: center;}
+.notice-visual1::after {content: ''; display: inline-block; width: 30.4rem; height: 15.2rem; background: url(../imgs/img/insurance/img-FMKB-0501000000F01-P-1.png) no-repeat center center / 30.4rem 15.2rem;}
+.dark-mode .notice-visual1::after {content: ''; display: inline-block; width: 30.4rem; height: 15.2rem; background-image: url(../imgs/img/insurance/img-FMKB-0501000000F01-P-1_dk.png);}
+.notice-visual2 {margin-top: 2.4rem; text-align: center;}
+.notice-visual2::after {content: ''; display: inline-block; width: 30.4rem; height: 7.8rem; background: url(../imgs/img/insurance/img-FMKB-0501000000F01-P-2.png) no-repeat center center / 30.4rem 7.8rem;}
+.dark-mode .notice-visual2::after {content: ''; display: inline-block; width: 30.4rem; height: 7.8rem; background-image: url(../imgs/img/insurance/img-FMKB-0501000000F01-P-2_dk.png);}
+.notice-visual3 {margin-top: 2.4rem; text-align: center;}
+.notice-visual3::after {content: ''; display: inline-block; width: 30.4rem; height: 13.7rem; background: url(../imgs/img/insurance/img-FMKB-0501000000F01-P-3.png) no-repeat center center / 30.4rem 13.7rem;}
+.dark-mode .notice-visual3::after {content: ''; display: inline-block; width: 30.4rem; height: 13.7rem; background-image: url(../imgs/img/insurance/img-FMKB-0501000000F01-P-3_dk.png);}
+
+/* 공통오류화면 */
+.error-accordion .title {color:var(--font1); font-weight:bold; font-size:1.6rem; margin-bottom: 1.4rem; line-height: 1.2;}
+.error-accordion .accordion {border:none;}
+.error-accordion .accordion > .title {background-color: var(--G09); border-radius: 1.2rem 1.2rem; padding:1.6rem 1.2rem; font-weight: normal; margin-bottom:0; font-size: 1.4rem;}
+.error-accordion .accordion > .panel {background-color: var(--G09); border:none; margin-top:-1rem; padding:1rem 1.2rem 1.6rem; border-radius: 0 0 1.2rem 1.2rem;}
+.error-accordion .accordion > .title:before {right:1.2rem;}
+.error-accordion + .tel-info {margin-top:2.4rem;}
+
+/* 보험 투자성향그래프 */
+.insurance-img {max-width:28.8rem; height:15.6rem; margin:2.4rem auto 0; background-repeat:no-repeat; background-position:0 0; background-size:100% auto;}
+.insurance-img.-graph-grade1 {background-image:url(../imgs/img/insurance/img-grade1-graph.png);}
+.insurance-img.-graph-grade3 {background-image:url(../imgs/img/insurance/img-grade3-graph.png);}
+.insurance-img.-graph-grade4 {background-image:url(../imgs/img/insurance/img-grade4-graph.png);}
+.insurance-img.-graph-grade5 {background-image:url(../imgs/img/insurance/img-grade5-graph.png);}
+.insurance-img.-graph-grade6 {background-image:url(../imgs/img/insurance/img-grade6-graph.png);}
+body.dark-mode .insurance-img.-graph-grade1 {background-image:url(../imgs/img/insurance/img-grade1-graph_dk.png);}
+body.dark-mode .insurance-img.-graph-grade3 {background-image:url(../imgs/img/insurance/img-grade3-graph_dk.png);}
+body.dark-mode .insurance-img.-graph-grade4 {background-image:url(../imgs/img/insurance/img-grade4-graph_dk.png);}
+body.dark-mode .insurance-img.-graph-grade5 {background-image:url(../imgs/img/insurance/img-grade5-graph_dk.png);}
+body.dark-mode .insurance-img.-graph-grade6 {background-image:url(../imgs/img/insurance/img-grade6-graph_dk.png);}
+
+/* 적합성 진단 결과 */
+.suitable-list > ul {border-top:1px solid var(--G08); border-bottom:1px solid var(--G08);}
+.suitable-list > ul > li + li {border-top:1px solid var(--G08);}
+.suitable-list > ul > li.-active {background-color: var(--G09);}
+.suitable-list > ul > li > .inner {display:block; width:100%; padding:1.6rem 1.2rem; background-color:transparent; text-align:left; line-height: 1.2;}
+.suitable-list > ul > li > .inner .type-name {color:var(--font2); font-size: 1.6rem; font-weight: 600;}
+.suitable-list > ul > li.-active > .inner .type-name {color:var(--point);}
+.suitable-list > ul > li > .inner .perpose,
+.suitable-list > ul > li > .inner .recom {color:var(--font2); font-size: 1.5rem; margin-top:.8rem; line-height: 1.6;}
+.suitable-list > ul > li > .inner .recom {margin-top:.8rem; line-height:1.1}
+
+/* 연금 수령액 예시 */
+.message.-insurance {margin-top:.6rem;}
+
+/* 설명이해여부 확인 설문 */
+.jsSrveyInsure.-noneView.-text-design .invest-qna .question-text span:last-child {color:var(--F03); font-weight:400;}
+.jsSrveyInsure.-noneView.-text-design .invest-qna .question-text span:last-child .strong {color:var(--F01); font-weight:600;}
+
+/* 보험 고지사항 */
+.-ft-normal > .field > .invest-qna > .question-text span:nth-of-type(2) {font-weight: 400;}

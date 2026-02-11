@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">거래취소</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <h4 class="h4">상품 교체매매 내역</h4>
+
+                    <div class="selection card">
+                        <ul>
+                            <li>
+                                <div class="int-rate -bordered -sum" role="button">
+                                    <div class="top-area">
+                                        <div class="top-tooltip">
+                                            <div class="badges">
+                                                <span class="badge line-red">매도</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="data-info-main">
+                                        <div class="info-title">
+                                            국민은행 퇴직연금 정기예금(3개월)
+                                        </div>
+                                    </div>
+                                    <dl class="dl">
+                                        <div>
+                                            <dt>매도금액</dt>
+                                            <dd>10,000원</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="int-rate -bordered -sum" role="button">
+                                    <div class="top-area">
+                                        <div class="top-tooltip">
+                                            <div class="badges">
+                                                <span class="badge line-green">매수</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="data-info-main">
+                                        <div class="info-title">
+                                            NH-Amundi 1.5qo 레비리지인덱스 증권
+                                            투자 신탁1호[주식-파생형]Class Ce
+                                        </div>
+                                    </div>
+                                    <dl class="dl">
+                                        <div>
+                                            <dt>매수금액</dt>
+                                            <dd>10,000원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>운용비율</dt>
+                                            <dd>33.1%</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="int-rate -bordered -sum" role="button">
+                                    <div class="top-area">
+                                        <div class="top-tooltip">
+                                            <div class="badges">
+                                                <span class="badge line-green">매수</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="data-info-main">
+                                        <div class="info-title">
+                                            광주은행 정기예금 1년
+                                        </div>
+                                    </div>
+                                    <dl class="dl">
+                                        <div>
+                                            <dt>매수금액</dt>
+                                            <dd>10,000원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>운용비율</dt>
+                                            <dd>33.1%</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sticker">
+                    <div class="notice -active" data-role="fold">
+                        <button type="button" class="title" data-role="marker" title="펼쳐짐">알아두세요</button>
+                        <div class="panel" data-role="visible">
+                            <ul class="ul -bullet">
+                                <li>거래 취소 후, 입금되는 금액에 대해서는 거래 이전 운용비율대로 운용됩니다.</li>
+                                <li>리밸런싱 알림 설정은 변경되지 않습니다. 변경을 원하시면 [나의포트폴리오>리밸런싱알림설정]에서 변경해 주시기 바랍니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg -primary">다음</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

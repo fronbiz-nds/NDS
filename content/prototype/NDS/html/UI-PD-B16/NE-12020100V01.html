@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+
+	<link rel="stylesheet" href="../../../../assets/libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+			<header class="header">
+				<div class="inner">
+					<div class="funcs">
+						<button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+					</div>
+
+					<h1 class="title"></h1>
+
+					<div class="funcs">
+						<button type="button" class="func">취소</button>
+					</div>
+				</div>
+			</header>
+			<main class="contents">
+				<div class="content">
+					<div class="h2-group">                        
+                        <h2 class="h2">
+                            반환신청할 거래내역을 선택하세요
+                        </h2>
+                    </div>
+
+					<div class="field">
+						<div class="select -account -filled">
+							<button type="button" aria-haspopup="true">
+								<div class="selection">
+									<div data-bankcode="011" class="info">
+										<span class="name">
+											<span>주거래우대통장</span>
+										</span>
+										<span class="account-number">
+											<span>NH농협은행</span>
+											<span>302-1234-5678-81</span>
+										</span>
+									</div>
+								</div>
+							</button>
+						</div>
+					</div>
+
+					<div class="case-wrap -xl">
+						<div class="filter-bar bottom-line top-line">
+							<div class="mix-bar row2">
+								<div class="date-sort">
+									<div class="date">2024.10.22 ~ 2024.12.22</div>
+									<div class="option"><span>전체</span>ㆍ<span class="pl-0">최신순</span></div>
+								</div>
+								<div class="search"><button type="button" class="icon-button -filter"><span class="hide">필터</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="case-wrap -xs">
+						<h3 class="h4">이체거래조회</h3>
+
+						<div>
+                            <div class="account card -list">
+                                <div class="info list-data-tit">
+                                    2024.01.01 19:55:55
+                                </div>
+                    
+                                <dl class="dl">
+                                    <div>
+                                        <dt>받는분</dt>
+                                        <dd>김농협</dd>
+                                    </div>
+                                    <div>
+                                        <dt>입금계좌</dt>
+                                        <dd>NH농협은행<br>
+											302-1234-5678-81
+										</dd>
+                                    </div>
+                                    <div>
+                                        <dt>이체금액</dt>
+                                        <dd>100,000원</dd>
+                                    </div>
+                                    <div>
+                                        <dt>수수료</dt>
+                                        <dd>0원</dd>
+                                    </div>
+                                    <div>
+                                        <dt>처리결과</dt>
+                                        <dd>정상</dd>
+                                    </div>
+                                    <div>
+                                        <dt>보내는분</dt>
+                                        <dd>홍길동</dd>
+                                    </div>
+                                    <div>
+                                        <dt>출금계좌</dt>
+                                        <dd>기업은행<br>
+											302-1234-5678-81
+										</dd>
+                                    </div>
+                                    <div>
+                                        <dt>이용채널</dt>
+                                        <dd>NH올원뱅크</dd>
+                                    </div>
+                                    <div>
+                                        <dt>자금반환</dt>
+                                        <dd>청구가능</dd>
+                                    </div>
+                                </dl>    
+                                <div class="buttons">
+                                    <button type="button" class="button -tertiary -sm">반환신청</button>
+                                </div>                                                                     
+                            </div>
+							<div class="center">
+								<button type="button" class="plus-button">더보기</button>
+							</div>
+                        </div>
+					</div>
+
+					<div class="case-wrap">
+						<div class="empty result">
+							<p class="message">조회 결과가 없습니다.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<div class="sticker">
+					<div class="notice -active" data-role="fold">
+						<button type="button" class="title" data-role="marker">알아두세요</button>
+						<div class="panel" data-role="visible">
+							<ul class="ul -bullet">
+								<li>농협은행 다른금융(오픈뱅킹)을 이용하여 이체한 거래 중, 고객님의 착오로 계좌번호, 금액 등을 잘못 입력하여 이체된 건에 대해 반환을 신청 할 수 있습니다. 신청 후 수취인이 반환에 동의하면 요청 계좌로 입금됩니다.</li>
+								<li>농협은행 다른금융(오픈뱅킹)을 이용하여 이체한 거래가 아니거나, 입금계좌가 농협은행 계좌일 경우, 가까운 영업점 또는 고객행복센터(1661-3000)로 문의하여 주시기 바랍니다.</li>
+                                <li>현재일(신청일)로부터 1년 이내의 거래에 한해 반환 신청이 가능하며, 반환 거절된 건의 재신청은 30일 이후 가능합니다.</li>
+                                <li>착오송금(이체)시 법률관계
+									<div>
+										<ul class="ul -dash mb-0">
+											<li>잘못 송금한 돈이라도 원칙적으로 수취인의 예금이 됩니다. 계좌이체 시 은행은 자금이동의 원인에 관여함이 없이 중개 기능을 수행할 뿐이므로, 잘못 입금된 돈이라도 수취인은 계좌에 들어온 금원 상당의 예금채권을 취득하게 됨 (대법원 2005다59673 등)</li>
+										</ul>
+										<p class="info mt-0">* 은행은 수취인의 동의 없이 송금 의뢰인에게 임의로 반환 불가</p>
+									</div>
+								</li>
+                                <li>입금(반환)받을 계좌는 고객님의 농협은행 계좌에 한해 처리 가능합니다.</li>
+                                <li>연락처 및 이메일주소가 변경되었을 경우 고객정보변경에서 변경 후 재신청 하시기 바랍니다.</li>
+                                <li>(고객센터 > 고객정보관리 > 고객정보변경에서 변경 가능합니다)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../../assets/libs/scrollout/dist/scroll-out.min.js"></script>
+	<script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../../../assets/js/common-ui.js"></script>
+	<script>
+		// 스크립트 추가
+	</script>
+</body>
+</html>

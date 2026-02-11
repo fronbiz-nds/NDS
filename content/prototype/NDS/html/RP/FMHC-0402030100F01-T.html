@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+    <!-- 차트 관련css -->
+    <link rel="stylesheet" href="../../../../assets/libs/Chart/dist/Chart.css">
+    <link rel="stylesheet" href="../../../../assets/libs/Chart/dist/Chart.min.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">My 포트폴리오</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <nav class="tabs">
+                    <div class="outer">
+                        <div class="inner">
+                            <ul class="list">
+                                <li class="item -active"><a href="javascript:void(0)">자산현황</a></li>
+                                <li class="item"><a href="javascript:void(0)">운용성과</a></li>
+                                <li class="item"><a href="javascript:void(0)">거래내역</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="content">
+                    <!-- <div class="myportfolio-h-group">
+                        <h4 class="title">포트폴리오 현황</h4>
+                        <div class="link-title">
+                            <a href="javascript:void(0)" class="a -arrow">리밸런싱 알림설정</a>
+                        </div>
+                    </div> -->
+                    <div class="title-group">
+                        <div class="inner">
+                            <h4 class="h4">상품별 내역</h4>
+                        </div>
+                        <a href="javascript:void(0)" class="button-arrow-right wd-auto">포트폴리오 변경</a>
+                    </div>
+
+                    <div class="card -sum">
+                        <div class="-box">
+                            <div class="top-data-area">
+                                <dt class="title">(NH로보)50대미만 위험중립형<br>e(RA012010520180322)</dt>
+                            </div>
+                            <dl class="dl">
+                                <div class="data-first">
+                                    <dt>신청내역</dt>
+                                    <dd>포트폴리오 50%<br> + 예금상품50%</dd>
+                                </div>
+                                <div>
+                                    <dt>계좌번호</dt>
+                                    <dd>090-0135-0484-11</dd>
+                                </div>
+                                <div>
+                                    <dt>가입일자</dt>
+                                    <dd>2022.12.12</dd>
+                                </div>
+                                <div>
+                                    <dt>총 평가금액</dt>
+                                    <dd class="point">9,985원</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <h4 class="h4">자산배분 현황</h4>
+                    <div>
+                        <div class="h5-group">
+                            <h5 class="h5">계좌전체</h5>
+                        </div>
+                        <div class="chart-area">
+                            <canvas id="bar-chart" height="156" aria-label=""></canvas>
+                            <div class="chart-labels axis-x">
+                                <p class="chart-label">
+                                    원리금보장형<br>
+                                    62.43%
+                                </p>
+                                <p class="chart-label">
+                                    실적배당형<br>
+                                    37.57%
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-wrap -xs">
+                            <div class="h5-group">
+                                <h5 class="h5">보유 MP</h5>
+                            </div>
+                            <div class="chart-area -flex">
+                                <canvas id="doughnut-chart" width="160" height="160" aria-label=""></canvas>
+                                <div class="chart-labels -doughnut">
+                                    <p class="chart-label">국내주식 10%</p>
+                                    <p class="chart-label">국내채권 20%</p>
+                                    <p class="chart-label">국내채권혼합 10%</p>
+                                    <p class="chart-label">해외선진주식 10%</p>
+                                    <p class="chart-label">해외이머징주식 20%</p>
+                                    <p class="chart-label">해외채권 10%</p>
+                                    <p class="chart-label">해외채권혼합 20%</p>
+                                    <!-- <p class="chart-label">유동성 20%</p> -->
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="case-wrap -xs">
+                            <div class="table -combined -basic -right">
+                                <table>
+                                    <caption><span class="hide">보유 MP 상세</span></caption> <!-- 240503 표제목 수정 -->
+                                    <colgroup>
+                                        <col style="width:33.3%">
+                                        <col style="width:33.3%">
+                                        <col style="width:33.3%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">평가금액</th>
+                                            <th scope="col">비중</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">해외채권형</th>
+                                            <td>6,985원</td>
+                                            <td>69.95%</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">유동성</th>
+                                            <td>3,000원</td>
+                                            <td>30.05%</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">합계</th>
+                                            <td colspan="2">9,986원</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+    
+                        <div class="btn-wrap24">
+                            <div class="buttons -half">
+                                <button type="button" class="button -tertiary -rg">묶음해제</button>
+                                <button type="button" class="button -tertiary -rg">거래취소</button>
+                            </div>
+                        </div>
+    
+                        <div class="case-wrap">
+                            <div class="mixed-data">
+                                <ul>
+                                    <li>
+                                        <div class="account card -list">
+                                            <div class="badges">
+                                                <span class="badge line-lightblue">보통위험</span>
+                                            </div>
+                                            <div class="info">
+                                                <span class="name">
+                                                    <span>광주은행 정기예금 1년</span>
+                                                </span>
+                                            </div>
+                                            <dl class="dl">
+                                                <div>
+                                                    <dt>평가금액</dt>
+                                                    <dd>9,938원</dd>
+                                                </div>
+                                                <div>
+                                                    <dt>운용비율</dt>
+                                                    <dd>49.9%</dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="account card -list">
+                                            <div class="badges">
+                                                <span class="badge line-skyblue">낮은위험</span>
+                                            </div>
+                                            <div class="info">
+                                                <span class="name">
+                                                    <span>초단기채권자두자신탁</span>
+                                                </span>
+                                            </div>
+                                            <dl class="dl">
+                                                <div>
+                                                    <dt>평가금액</dt>
+                                                    <dd>2,976원</dd>
+                                                </div>
+                                                <div>
+                                                    <dt>운용비율</dt>
+                                                    <dd>14.94%</dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- [CASE] 포트폴리오 설계 신청 or 포트폴리오 리밸런싱 신청 완료 후, 계좌가 운용지시 진행 중인 경우 그래프 영역에 해당 화면 노출 -->
+                    <div>
+                        <div class="empty result">
+                            <p class="message">운용지시 진행중 입니다.</p>
+                        </div>
+    
+                        <div class="case-wrap -xs">
+                            <div class="buttons -half">
+                                <button type="button" class="button -tertiary -rg">묶음해제</button>
+                                <button type="button" class="button -tertiary -rg">거래취소</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // [CASE] 포트폴리오 설계 신청 or 포트폴리오 리밸런싱 신청 완료 후, 계좌가 운용지시 진행 중인 경우 그래프 영역에 해당 화면 노출 -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <!-- 차트 관련js -->
+    <script src="../../../../assets/libs/Chart/dist/Chart.js"></script>
+    <script src="../../../../assets/libs/Chart/dist/Chart.min.js"></script>
+    <script>
+        var barChart = document.getElementById('bar-chart');
+        var chart = new Chart(barChart, {
+            type: 'bar',
+            // 데이터 집합
+            data : {
+                labels: ['원리금보장형', '실적배당형'],
+                datasets: [{
+                    categoryPercentage: .1,
+                    barPercentage: 7,
+                    label: '원리금보장형',
+                    data: [62.43, 0],
+                    backgroundColor: '#5a5fd8',
+                    hoverBackgroundColor: '#5a5fd8',
+                },{
+                    categoryPercentage: .1,
+                    barPercentage: 7,
+                    label: '실적배당형',
+                    data: [0, 37.57],
+                    backgroundColor: '#ff8a65',
+                    hoverBackgroundColor: '#ff8a65',
+                }]
+            },
+            //설정
+            options: {
+                responsive: true,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                    // ui수정 240122 (차트 옵션 추가))
+                    enabled: false,
+                    // ui수정 240122 (차트 옵션 추가))
+                },
+                legend: {
+                    display : false,
+                },
+                scales:{
+                    xAxes:[{
+                        ticks:{
+                            display: false,
+                            fontColor : '#505050',
+                            fontSize : 12,
+                            fontFamily : 'Pretendard'
+                        }
+                    }],
+                    yAxes:[{
+                        ticks:{
+                            min: 0,
+                            mx: 80,
+                            stepSize: 20,
+                            fontColor : '#909090',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        }
+                    }]
+                }  
+            }
+        })
+
+        var doughnutChart = document.getElementById('doughnut-chart');
+        var chart = new Chart(doughnutChart, {
+            type: 'doughnut',
+            // 데이터 집합
+            data : {
+                labels: ['국내주식', '국내채권', '국내채권혼합', '해외선진주식', '해외이머징주식', '해외채권', '해외채권혼합'], //'유동성'
+                datasets: [{
+                    label: '보유 MP',
+                    data: [10, 30, 20, 20, 20, 10, 20],
+                    borderWidth: 1, // 경계선 제거할시 borderWidth: 0,
+                    hoverBorderWidth: 0,
+                    // 도넛 & 막대 그래프 컬러 순서 : 1.#5a5fd8, 2.#ff8a65, 3.#2bc4c0, 4.#ffcb3e, 5.#218fef, 6.#974bbf, 7.#7fde7b
+                    backgroundColor: ['#5a5fd8', '#ff8a65', '#2bc4c0', '#ffcb3e', '#218fef', '#974bbf', '#7fde7b'],
+                    hoverBackgroundColor : ['#5a5fd8', '#ff8a65', '#2bc4c0', '#ffcb3e', '#218fef', '#974bbf', '#7fde7b'],
+                }],
+            },
+            //설정
+            options: {
+                responsive: false,
+                legend: {
+                    display : false
+                },
+                // ui수정 240122 (차트 옵션 추가))
+                tooltips: {
+                    enabled: false,
+                }
+                // //ui수정 240122 (차트 옵션 추가))
+            }
+        })
+    </script>
+</body>
+</html>

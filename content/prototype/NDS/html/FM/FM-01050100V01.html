@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+
+	<link rel="stylesheet" href="../../../../assets/libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+			<header class="header">
+				<div class="inner">
+					<div class="funcs">
+						<button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+					</div>
+
+					<h1 class="title">대출우대금리실적조회</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -home"><span class="hide">홈</span></button>
+						<button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+					</div>
+				</div>
+			</header>
+
+			<main class="contents">
+				<div class="content">
+
+					<h4 class="h4">대출우대금리 달성현황</h4>
+					
+					<div class="line-box account">
+						<div class="dl -reversed">
+							<div>
+								<dt>최대 우대금리</dt>
+								<dd>
+									<!-- <span class="number point">0.8%</span> --> 
+									<span class="red">미조회</span>
+								</dd>
+							</div>
+							<div>
+								<dt>실적 충족 우대금리</dt>
+								<dd>
+									<span class="number point">0.6%</span>
+									<!-- <span class="red">미조회</span> --> <!-- [미조회] case 추가 -->
+								</dd>
+							</div>
+							<div>
+								<dt>더 받을 수 있는 우대금리</dt>
+								<dd>
+									<span class="number point">0.2%</span>
+									<!-- <span class="red">미조회</span> --> <!-- [미조회] case 추가 -->
+								</dd>
+							</div>
+						</div>
+					</div>
+					
+					<div class="custom-list mt-40">
+						<ul>
+							<li>
+								<div class="preferential-rates">
+									<div class="info">
+										<div class="title">
+											카드이용실적 현황 <span class="e-month">(매월)</span>
+											<button type="button" class="info-ico"><span class="hide">안내</span></button>
+										</div>
+										<div class="desc">카드이용 실적을 <span class="point">달성했어요</span></div>
+										<!-- <div class="desc red pb-25">카드이용 실적이 미조회 되었습니다.</div> --> <!-- [미조회] case 추가 -->
+									</div>
+									<div class="sub">
+										<div class="progress-box -preferential">
+											<div class="progress">
+												<!--
+													style 속성에서 사용되는 CSS 전용 변수로 게이지 컨트롤
+													--current : 현재 표시되야 하는 수치
+														--max : 최대 수치
+													게이지가 차오르는 값을 css로 지정 합니다 %, 실수치, 모두 가능 ( ※게이지계산식 : 100% * ( --current / --max ) )
+													(단, 숫자 정수값만 사용할 것)
+												-->
+												<div class="bar -full" style="--current:1000000; --max:1000000;">
+													<div class="gauge">
+														<div class="gauge-point">
+															<div class="count-money"><span class="number"></span>원</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="progress-label">
+												<span class="unit">
+													<div class="txt"><span class="number">0</span>원</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">50</span>만원</div>
+													<div class="percent-p">+0.2%p</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">100</span>만원</div>
+													<div class="percent-p">+0.3%p</div>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="preferential-rates">
+									<div class="info">
+										<div class="title">
+											급여이체실적 현황 <span class="e-month">(매월)</span>
+											<button type="button" class="info-ico"><span class="hide">안내</span></button>
+										</div>
+										<div class="desc">급여이체 실적을 <span class="point">달성했어요</span></div>
+										<!-- <div class="desc red pb-25">급여이체 실적이 미조회 되었습니다.</div> --> <!-- [미조회] case 추가 -->
+									</div>
+									<div class="sub">
+										<div class="progress-box -preferential">
+											<div class="progress">
+												<!-- 
+													--current : 현재 표시되야 하는 수치
+														--max : 최대 수치
+												-->
+												<div class="bar" style="--current:1500000; --max:1500000;">
+													<div class="gauge">
+														<div class="gauge-point">
+															<div class="count-money"><span class="number"></span>원</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="progress-label">
+												<span class="unit">
+													<div class="txt"><span class="number">0</span>원</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">50</span>만원</div>
+													<div class="percent-p">+0.2%p</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">100</span>만원</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">150</span>만원</div>
+													<div class="percent-p">+0.3%p</div>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="preferential-rates">
+									<div class="info">
+										<div class="title">
+											자동이체실적 현황 <span class="e-month">(매월)</span>
+											<button type="button" class="info-ico"><span class="hide">안내</span></button>
+										</div>
+										<div class="desc">자동이체 횟수를 <span class="point">달성했어요</span></div>
+										<!-- <div class="desc red pb-25">자동이체 횟수가 미조회 되었습니다.</div> --> <!-- [미조회] case 추가 -->
+									</div>
+									<div class="sub">
+										<!-- [수정 240402 AL2401_B018] UI 수정 ('만원' 단위가 아닌 횟수 표기 때 추가되는 클레스 .-count) -->
+										<div class="progress-box -preferential -count">
+											<div class="progress">
+												<!-- 
+													--current : 현재 표시되야 하는 수치
+														--max : 최대 수치
+												-->
+												<div class="bar" style="--current:2; --max:3;">
+													<div class="gauge">
+														<div class="gauge-point">
+															<div class="count-money"><span class="number"></span>회</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="progress-label">
+												<span class="unit">
+													<div class="txt"><span class="number">0</span>회</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">1</span>회</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">2</span>회</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">3</span>회</div>
+													<div class="percent-p">+0.1%p</div>
+												</span>
+											</div>
+										</div>
+										<!-- // -->
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="preferential-rates">
+									<div class="info">
+										<div class="title">
+											적립식예금실적 현황 <span class="e-month">(매월)</span>
+											<button type="button" class="info-ico"><span class="hide">안내</span></button>
+										</div>
+										<div class="desc">적립식예금 횟수를 <span class="point">달성했어요</span></div>
+										<!-- <div class="desc red pb-25">적립식예금 횟수가 미조회 되었습니다.</div> --> <!-- [미조회] case 추가 -->
+									</div>
+									<div class="sub">
+										<div class="progress-box -preferential">
+											<div class="progress">
+												<!-- 
+													--current : 현재 표시되야 하는 수치
+														--max : 최대 수치
+												-->
+												<div class="bar" style="--current:100000; --max:100000;">
+													<div class="gauge">
+														<div class="gauge-point">
+															<div class="count-money"><span class="number"></span>원</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="progress-label">
+												<span class="unit">
+													<div class="txt"><span class="number">0</span>원</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">10</span>만원</div>
+													<div class="percent-p">+0.1%p</div>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="preferential-rates">
+									<div class="info">
+										<div class="title">
+											청약저축실적 현황 <span class="e-month">(매월)</span>
+											<button type="button" class="info-ico"><span class="hide">안내</span></button>
+										</div>
+										<div class="desc">청약저축 실적을 <span class="point">달성했어요</span></div>
+										<!-- <div class="desc red pb-25">청약저축 실적이 미조회 되었습니다.</div> --> <!-- [미조회] case 추가 -->
+									</div>
+									<div class="sub">
+										<div class="progress-box -preferential">
+											<div class="progress">
+												<!-- 
+													--current : 현재 표시되야 하는 수치
+													--max : 최대 수치
+												-->
+												<div class="bar" style="--current:20000; --max:20000;">
+													<div class="gauge">
+														<div class="gauge-point">
+															<div class="count-money"><span class="number"></span>원</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="progress-label">
+												<span class="unit">
+													<div class="txt"><span class="number">0</span>원</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">2</span>만원</div>
+													<div class="percent-p">+0.1%p</div>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="preferential-rates">
+									<div class="info">
+										<div class="title">
+											입출금평잔실적 현황 <span class="e-month">(<span class="number">3</span>개월)</span>
+											<button type="button" class="info-ico"><span class="hide">안내</span></button>
+										</div>
+										<!-- case 1 -->
+										<div class="desc">입출금평잔 실적이 <span class="point">부족해요</span></div>
+										<!-- case 2 -->
+										<div class="desc">입출금평잔 실적을 <span class="point">달성했어요</span></div>
+									</div>
+									<div class="sub">
+										<div class="progress-box -preferential">
+											<div class="progress">
+												<!-- 
+													--current : 현재 표시되야 하는 수치
+														--max : 최대 수치
+												-->
+												<div class="bar" style="--current:1300000; --max:2000000;">
+													<div class="gauge">
+														<div class="gauge-point">
+															<div class="count-money"><span class="number"></span>원</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="progress-label">
+												<span class="unit">
+													<div class="txt"><span class="number">0</span>원</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">50</span>만원</div>
+													<div class="percent-p">+0.1%p</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">100</span>만원</div>
+													<div class="percent-p">+0.2%p</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">150</span>만원</div>
+												</span>
+												<span class="unit">
+													<div class="txt"><span class="number">200</span>만원</div>
+													<div class="percent-p">+0.3%p</div>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+
+				<div class="sticker">
+					<div class="notice -active" data-role="fold">
+						<button type="button" class="title" data-role="marker">알아두세요</button>
+						<div class="panel" data-role="visible">
+							<ul class="ul -bullet">
+								<li>본 화면은 참고용입니다. 대출 상품, 조회일자, 취소 거래 등에 따라 실제 적용되는 우대금리가 달라질 수 있습니다.</li>
+								<li>이번달 실적을 충족하시면 다음달 넷째주 토요일 익일부터 우대금리가 적용됩니다. 원리금균등상환의 경우, 익월로 이월될 수 있습니다.</li>
+								<li>신규, 재대출, 대환 시, 처음 3개월 간은 실적과 무관하게 우대금리가 적용됩니다. 3개월 후에는 본 화면의 정보를 활용하세요.</li>
+								<li class="point">&lt;예시&gt; 3월 15일 신규대출을 받으신 경우, 실적과 무관하게 6월 말일까지 우대금리가 적용됩니다. 이후의 우대금리는 6월 말일의 실적을 기준으로 하여, 7월 넷째주 토요일 익일부터 새롭게 적용됩니다.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -lg -primary">확인</button>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../../assets/libs/scrollout/dist/scroll-out.min.js"></script>
+	<script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../../../assets/js/common-ui.js"></script>
+	<script>
+		// [수정 240402 AL2401_B018] 스크립트 삭제 Popup.open('popup');
+		
+		/* [수정 240328 AL2401_B018] 스크립트 변경. 최종본 기획서 내용 반영 */
+		$('.progress-box').each(function(){
+			let currentLabel = $(this).find('.bar').css('--current') * 1;
+			let		maxLabel = $(this).find('.bar').css('--max') * 1;
+
+			// 아이콘 위에 금액데이터 추가
+			$(this).find('.count-money .number').text(currentLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g,","));
+		});
+
+		setTimeout(function(){
+			$('.progress-box .unit .txt .number').each(function(e, i){
+				let currentLabel = $(this).closest('.progress-label').siblings('.progress').find('.bar').css('--current') * 1;
+				if ( i.innerText <= currentLabel / 10000 ) {
+					$(i).closest('.unit').addClass('-active');
+				}
+			});
+
+			// [수정 240402 AL2401_B018] 스크립트 추가
+			$('.progress-box.-count .unit .txt .number').each(function(e, i){
+				let currentLabel = $(this).closest('.progress-label').siblings('.progress').find('.bar').css('--current') * 1;
+				if ( i.innerText <= currentLabel) {
+					$(i).closest('.unit').addClass('-active');
+				}
+			});
+			//
+		}, 500);
+
+		// full일 때, 텍스트 정렬
+		document.querySelectorAll('.bar').forEach(bar => {
+				const current = parseInt(bar.style.getPropertyValue('--current') || '0', 10);
+				const max = parseInt(bar.style.getPropertyValue('--max') || '0', 10);
+				if (current === max) {
+					bar.classList.add('-full');
+				};
+			});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>내 정보 수정</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">권유직원 조회</h1>
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">                                       
+                    <div class="segments tab -bar">
+                        <div class="outer">
+                            <div class="inner">
+                                <div role="tablist" class="list">
+                                    <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel1" id="segment1">직원명</button></div>
+                                    <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel2" id="segment2">영업점명</button></div> 
+                                    <span class="switcher" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                
+
+                    <div class="segments-panels mt-45">
+                        <div role="tabpanel" aria-labelledby="segment1" id="segments-panel1" class="segments-panel -active" tabindex="0">
+                            
+                            <div class="case-wrap16">
+                                <div class="search">
+                                    <div class="mix -filled">
+                                        <div class="text">
+                                            <input type="text" class="left-side" id="searchce3" placeholder="직원 찾기" value="김농협" title="직원명 입력">
+                                        </div>
+                                
+                                        <div class="space -lined search">
+                                            <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                                        </div>
+                                    </div>
+                                    <p class="info">직원명을 2자 이상 입력해 주세요</p>
+                                </div>
+                            </div>
+
+                            <!-- [CASE]검색결과 있는 경우 -->
+                            <div class="field">
+                                <p class="total-count">총 <span class="point">5</span>건</p>
+                                <div class="custom-list">
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="-sm">
+                                                <div class="address-txt">
+                                                    <p>김농협</p>
+                                                    <p class="addr-num">NH농협은행 양재남지점</p>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="-sm">
+                                                <div>
+                                                    <div class="address-txt">
+                                                        <p>김농협</p>
+                                                        <p class="addr-num">NH농협은행 양재남지점</p>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="-sm">
+                                                <div>
+                                                    <div class="address-txt">
+                                                        <p>김농협</p>
+                                                        <p class="addr-num">NH농협은행 양재남지점</p>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //[CASE]검색결과 있는 경우 -->
+
+                            <!-- [CASE]검색결과 없는 경우 -->
+                            <div class="case-wrap">
+                                <div class="empty result">
+                                    <p class="message">검색 결과가 없습니다.</p>
+                                </div>
+                            </div>
+                            <!-- //[CASE]검색결과 없는 경우 -->
+                        </div>
+
+                        <div role="tabpanel" aria-labelledby="segment2" id="segments-panel2" class="segments-panel" tabindex="0">
+                            
+                            <div class="case-wrap16">
+                                <div class="search">
+                                    <div class="mix -filled">
+                                        <div class="text">
+                                            <input type="text" class="left-side" id="search02" placeholder="관리점 검색" value="양재" title="관리점 검색">
+                                        </div>
+                                
+                                        <div class="space -lined search">
+                                            <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                                        </div>
+                                    </div>
+                                    <p class="info">영업점명을 2자 이상 입력해 주세요<br>
+                                        영업점명을 검색하시면 소속 권유직원을 찾을 수 있습니다
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- [CASE]검색결과 있는 경우 -->
+                            <div class="field">
+                                <p class="total-count">총 <span class="point">4</span>건</p>
+                                <div class="custom-list">
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="-sm">
+                                                <div class="address-txt">
+                                                    <p>김농협</p>
+                                                    <p class="addr-num">NH농협은행 양재남지점</p>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="-sm">
+                                                <div class="address-txt">
+                                                    <p>김농협</p>
+                                                    <p class="addr-num">NH농협은행 양재남지점</p>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="-sm">
+                                                <div class="address-txt">
+                                                    <p>김농협</p>
+                                                    <p class="addr-num">NH농협은행 양재남지점</p>
+                                                </div>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //[CASE]검색결과 있는 경우 -->
+
+                            <!-- [CASE]검색결과 없는 경우 -->
+                            <div class="case-wrap">
+                                <div class="empty result">
+                                    <p class="message">검색 결과가 없습니다.</p>
+                                </div>
+                            </div>
+                            <!-- //[CASE]검색결과 없는 경우 -->
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

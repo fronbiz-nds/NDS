@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>내 정보 수정</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">내 정보 수정</h1>
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <h4 class="h4">기본정보</h4>
+                    <div class="case-wrap16">
+                        <div class="field input">
+                            <label for="text4" class="label">휴대폰번호</label>
+                            <div class="text -basic">
+                                <input type="text4" id="tex" value="010-1234-5678" class="-readonly" placeholder="이름을 입력하세요" readonly>
+                            </div>
+                            <div class="arrow-box">
+                                <a href="javascript:void(0)" class="button-arrow-right justify-flexend">포트폴리오 변경</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="field input">
+                        <label for="text01" class="label">이메일주소</label>
+                        <div class="text -basic">
+                            <input type="text" id="text01" value="abc123@gmail.com" placeholder="금액을 입력하세요">
+                        </div>
+                    </div> 
+
+                    <div class="field">
+                        <label for="text7" class="label">집 전화번호</label>
+                        <div class="mix phone">
+                            <div class="select flex-5">
+                                <button type="button" class="left-side fc-empty" aria-haspopup="true" title="휴대폰 앞자리 선택">선택</button>
+                            </div>
+                            <div class="text flex-7 -readonly -textless" data-clear="false">
+                                <input type="tel" data-id="text7" class="mid-side num-call pl-8" placeholder="-없이 입력" title="휴대폰번호 입력" aria-haspopup="true" readonly=""> 
+                            </div>
+                            <div class="space flex-3 -lined right-side"> 
+                                <button type="button" class="button -tertiary -sm -fit" title="인증번호 요청" disabled>버튼</button>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="field search">
+                        <label for="search01" class="label">집 주소</label>
+                        <div class="mix -filled">
+                            <div class="text">
+                                <input type="text" class="left-side" id="search01" placeholder="우편번호 검색" value="04517 서울시 중구 통일로 120" title="집 주소">
+                            </div>
+                    
+                            <div class="space -lined search">
+                                <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                            </div>
+                        </div>
+                        <div class="text -basic">
+                            <input type="text" id="tex11" value="NH농협은행" placeholder="상세 주소 입력" title="집 상세 주소">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <p class="label">전화 받을 곳</p>
+                        <div class="box-radios -box -lg">
+                            <div class="box-radio">
+                                <input type="radio" name="period-point-color1" id="period-point-color1-1" aria-selected="true" checked>
+                                <label for="period-point-color1-1">휴대폰</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="period-point-color1" id="period-point-color1-2" aria-selected="false">
+                                <label for="period-point-color1-2">집</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="period-point-color1" id="period-point-color1-3" aria-selected="false">
+                                <label for="period-point-color1-3">직장</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <p class="label">우편물 받을 곳</p>
+                        <div class="box-radios -box -lg">
+                            <div class="box-radio">
+                                <input type="radio" name="period-point-color01" id="period-point-color1-01" aria-selected="true" checked>
+                                <label for="period-point-color1-01">집</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="period-point-color01" id="period-point-color1-02" aria-selected="false">
+                                <label for="period-point-color1-02">직장</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr class="hr content-8" aria-hidden="true" tabindex="-1">
+
+                    <div class="field">
+                        <div class="title-group">
+                            <div class="inner">
+                                <span class="h4">직장정보</span>
+                            </div>
+                            <span class="switch ml-auto -sm">
+                                <input type="checkbox" id="switch2" checked>
+                                <label for="switch2"><span class="hide">스위치</span></label>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- [CASE] 스위치on -->
+                    <div class="case-wrap16">
+                        <div class="field search">
+                            <label for="search012" class="label">직장 주소</label>
+                            <div class="mix -filled">
+                                <div class="text">
+                                    <input type="text" class="left-side" id="search012" placeholder="우편번호 검색" value="" title="집 주소">
+                                </div>
+                        
+                                <div class="space -lined search">
+                                    <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                                </div>
+                            </div>
+                            <div class="text -basic">
+                                <input type="text" id="tex112" value="" placeholder="상세 주소 입력" title="집 상세 주소">
+                            </div>
+                        </div>
+                        
+                        <div class="field input">
+                            <label for="text03" class="label">직장명</label>
+                            <div class="text -basic">
+                                <input type="text" id="text03" placeholder="직장명 입력">
+                            </div>
+                        </div> 
+                        <div class="field input">
+                            <label for="text04" class="label">부서명</label>
+                            <div class="text -basic">
+                                <input type="text" id="text04" placeholder="부서명 입력">
+                            </div>
+                        </div> 
+
+                        <div class="field">
+                            <label for="text441" class="label">직장 전화번호</label>
+                            <div class="mix phone">
+                                <div class="select flex-5">
+                                    <button type="button" class="left-side fc-empty" aria-haspopup="true" title="휴대폰 앞자리 선택">선택</button>
+                                </div>
+                                <div class="text flex-9 -readonly -textless" data-clear="false">
+                                    <input type="tel" data-id="phone123q" class="mid-side num-call pl-8" placeholder="-없이 입력" title="휴대폰번호 입력" aria-haspopup="true" readonly=""> 
+                                </div>
+                                <div class="space -lined right-side"> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- //[CASE] 스위치on -->
+                </div>
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

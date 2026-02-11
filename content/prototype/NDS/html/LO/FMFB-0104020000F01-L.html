@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>주거형태 선택</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="layer" class="layer" aria-labelledby="coupon-head" role="region">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">소득 유형을 선택해 주세요</h1>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="options">
+                        <ul>
+                            <li><button type="button" class="option -active">근로소득</button></li>
+                            <li><button type="button" class="option">사업소득</button></li>
+                            <li><button type="button" class="option">(공적)연금소득</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+
+        // 레이어 닫기(마지막 인자 기본값: false)
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // });
+
+        // 레이어 닫기 + DOM 삭제
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

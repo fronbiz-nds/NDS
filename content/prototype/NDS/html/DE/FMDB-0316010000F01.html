@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">예금 가입</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="progress-box">
+                        <div class="progress">
+                            <!--
+                                style 속성에서 사용되는 CSS 전용 변수로 게이지 컨트롤
+                                --current : 현재 표시되야 하는 수치
+                                    --max : 최대 수치
+                                게이지가 차오르는 값을 css로 지정 합니다 %, 실수치, 모두 가능 ( ※게이지계산식 : 100% * ( --current / --max ) )
+                                (단, 숫자 정수값만 사용할 것)
+                            -->
+                            <div class="bar" style="--current:3; --max:12;">
+                                <div class="gauge">
+                                    <!-- 접근성 관련 텍스트 동적 변경 필요 --> 
+                                    <span class="hide"> 12단계 중 3번째</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="h2-group">
+                        <h2 class="h2">
+                            약관에 동의해 주세요
+                        </h2>
+                    </div>
+                    <div class="agree -detail">
+                        <div class="title">
+                            <div class="checkbox -sm">
+                                <input type="checkbox" id="optional-total">
+                                <label for="optional-total">[필수] 전체 동의</label>
+                            </div>
+                            <button type="button" class="more"><span class="hide">필수 전체 동의 약관</span></button>
+                        </div>
+                        <div class="panel">
+                            <div class="checkboxes -full">
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional1">
+                                    <label for="optional1">예금거래 기본약관</label>
+                                    <button type="button" class="more"><span class="hide">예금거래 기본 약관</span></button>
+                                </div>
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional2">
+                                    <label for="optional2">상품설명서</label> 
+                                    <button type="button" class="more"><span class="hide">상품설명서 약관</span></button>
+                                </div>
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional3">
+                                    <label for="optional3">약관</label> 
+                                    <button type="button" class="more"><span class="hide">약관</span></button>
+                                </div>
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional4">
+                                    <label for="optional4">불법/탈법 차명거래금지 실명확인</label> 
+                                    <button type="button" class="more"><span class="hide">불법/탈법 차명거래금지 실명확인 약관</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agree">
+                        <div class="title">
+                            <div class="checkbox -sm">
+                                <input type="checkbox" id="total">
+                                <label for="total">[필수] 금융상품 중요사항 확인</label>
+                            </div>
+                            <button type="button" class="more"><span class="hide">필수 금융상품 중요사항 확인 약관</span></button>
+                        </div>
+                    </div>
+
+                    <div class="agree -detail">
+                        <div class="title">
+                            <div class="checkbox -sm">
+                                <input type="checkbox" id="optional-total1">
+                                <label for="optional-total1">[선택] 전체 동의</label>
+                            </div>
+                            <button type="button" class="more"><span class="hide">선택 전체 동의 약관</span></button>
+                        </div>
+                        <div class="panel">
+                            <div class="checkboxes -full">
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional11">
+                                    <label for="optional11">개인(신용)정보 수집, 이용 동의 (상품서비스 안내 등)</label>
+                                    <button type="button" class="more"><span class="hide">개인(신용)정보 수집, 이용 동의 약관</span></button>
+                                </div>
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional12">
+                                    <label for="optional12">개인(신용)정보 수집, 이용, 제공 동의(상품서비스 안내 등) (농협금융지주 자회사간 상호 정보 제공용)</label> 
+                                    <button type="button" class="more"><span class="hide">개인(신용)정보 수집, 이용, 제공 동의 약관</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg -disabled">다음</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+    </script>
+</body>
+</html>

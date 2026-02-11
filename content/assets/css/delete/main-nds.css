@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: auto;
+}
+
+@media (max-width: 346px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 321px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 281px) {
+  html {
+    font-size: 48%;
+  }
+}
+/* FONT-FACE */
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Pretendard-Regular.otf?ver=1.0.0") format("opentype"), url("../fonts/Pretendard-Regular.woff?ver=1.0.0") format("woff"), url("../fonts/Pretendard-Regular.woff2?ver=1.0.0") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Pretendard-Medium.otf?ver=1.0.0") format("opentype"), url("../fonts/Pretendard-Medium.woff?ver=1.0.0") format("woff"), url("../fonts/Pretendard-Medium.woff2?ver=1.0.0") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Pretendard-SemiBold.otf?ver=1.0.0") format("opentype"), url("../fonts/Pretendard-SemiBold.woff?ver=1.0.0") format("woff"), url("../fonts/Pretendard-SemiBold.woff2?ver=1.0.0") format("woff2");
+}
+@font-face {
+  font-family: "Pass";
+  font-style: normal;
+  src: url("../fonts/password.ttf?ver=1.0.0") format("opentype"), url("../fonts/password.woff?ver=1.0.0") format("woff"), url("../fonts/password.woff2?ver=1.0.0") format("woff2");
+}
+.button.-lg.-primary.-test01 {
+  color: #6ccccd;
+  background-color: #0275d8;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  background: url("/assets/imgs/ico/common/ico-accordian.png") no-repeat;
+  border: 1px solid #153d3d;
+}
+
+h5.-textlg {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: orange;
+  font: 100% Helvetica, sans-serif;
+}
+
+.nds .button,
+.nds .btn {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 1.2rem;
+  background-color: transparent;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+  word-break: break-word;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: border-color 0.3s, background-color 0.3s;
+  transition: border-color 0.3s, background-color 0.3s;
+  font-weight: 600;
+}
+.nds .button.-primary,
+.nds .btn.-primary {
+  background-color: #00AC47;
+  color: #ffffff;
+}
+.nds .button.-primary:active,
+.nds .btn.-primary:active {
+  background-color: #0D572B;
+  -webkit-transition: none;
+  transition: none;
+}
+.nds .button.-primary:disabled,
+.nds .btn.-primary:disabled {
+  background-color: #F0F0F0;
+  color: #909090;
+}
+.nds .button.-secondary,
+.nds .btn.-secondary {
+  color: #00AC47;
+  border: 1px solid #00AC47;
+  background-color: #FFFFFF;
+}
+.nds .button.-secondary:active,
+.nds .btn.-secondary:active {
+  color: #0D572B;
+  border-color: #0D572B;
+  background-color: #E8F2EC;
+  -webkit-transition: none;
+  transition: none;
+}
+.nds .button.-secondary:disabled,
+.nds .btn.-secondary:disabled {
+  background-color: #FFFFFF;
+  border-color: #E1E1E1;
+  color: #909090;
+}
+.nds .button.-tertiary,
+.nds .btn.-tertiary {
+  color: #121212;
+  border: 1px solid #D3D3D3;
+  background-color: #FFFFFF;
+}
+.nds .button.-tertiary:active,
+.nds .btn.-tertiary:active {
+  color: #121212;
+  border-color: #D3D3D3;
+  background-color: #F0F0F0;
+  -webkit-transition: none;
+  transition: none;
+}
+.nds .button.-tertiary:disabled,
+.nds .btn.-tertiary:disabled {
+  background-color: #FFFFFF;
+  border-color: #E1E1E1;
+  color: #909090;
+}
+.nds .button.-lg,
+.nds .btn.-lg {
+  width: 100%;
+  height: 5.6rem;
+  border-radius: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.8rem 2rem;
+  line-height: 2.6rem;
+}
+.nds .button.-md,
+.nds .btn.-md {
+  width: 100%;
+  height: 4.8rem;
+  border-radius: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.4rem 2rem;
+  line-height: 2rem;
+}
+.nds .button.-rg,
+.nds .btn.-rg {
+  width: auto;
+  height: 4.2rem;
+  border-radius: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  line-height: 1.8rem;
+}
+.nds .button.-sm,
+.nds .btn.-sm {
+  width: auto;
+  height: 3.6rem;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  line-height: 1.6rem;
+}
+.nds .button.-xs,
+.nds .btn.-xs {
+  width: auto;
+  height: 3rem;
+  border-radius: 0.6rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 0.6rem 1.2rem;
+  line-height: 1.8rem;
+}
+.nds .button.-fitted,
+.nds .btn.-fitted {
+  width: auto !important;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+    <!-- 차트 관련css -->
+    <link rel="stylesheet" href="../../../../assets/libs/Chart/dist/Chart.css">
+    <link rel="stylesheet" href="../../../../assets/libs/Chart/dist/Chart.min.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">포트폴리오 성과조회</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <h4 class="h4">최근 3년간 운용성과</h4>
+
+                    <p class="profit-info"><span class="profit-tit">누적수익률</span><span class="profit-percent red">+2.22%</span></p>
+
+                    <div class="case-wrap -xs">
+                        <p class="chart-info">(수익률%)</p>
+                        <div class="chart-area">
+                            <canvas id="line-chart" height="156rem" aria-label=""></canvas> <!-- 임시 높이값 -->
+                        </div>
+                    </div>
+
+                    <h4 class="h4">상품별 과거 수익률</h4>
+                    <div class="portfolio-product">
+                        <div class="selection card">
+                            <ul>
+                                <li>
+                                    <div class="int-rate -bordered" role="button">
+                                        <div class="top-area badges">
+                                            <span class="badge -grade4">보통위험</span>
+                                        </div>
+                                        <div class="data-info-main">
+                                            <div class="info-title">
+                                                우리퇴직연금증권자투자신탁1호[국공채]
+                                            </div>
+                                        </div>
+                                        <div class="data-sub">
+                                            <span class="title">수익률</span>
+                                            <span class="value blue">-10.45%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="int-rate -bordered" role="button">
+                                        <div class="top-area badges">
+                                            <span class="badge -grade4">보통위험</span>
+                                        </div>
+                                        <div class="data-info-main">
+                                            <div class="info-title">
+                                                우리GPIMCO토탈리턴증권자투자신탁[채권_재간접형](H)ClassPe1
+                                            </div>
+                                        </div>
+                                        <div class="data-sub">
+                                            <span class="title">수익률</span>
+                                            <span class="value blue">-10.45%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="int-rate -bordered" role="button">
+                                        <div class="top-area badges">
+                                            <span class="badge line-gray">계열사</span><span class="badge line-orange">높은위험</span>
+                                        </div>
+                                        <div class="data-info-main">
+                                            <div class="info-title">
+                                                삼성달러표시단기채권증권자투자신탁UH(채권)Cp
+                                            </div>
+                                        </div>
+                                        <div class="data-sub">
+                                            <span class="title">수익률</span>
+                                            <span class="value red">2.22%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="message">현재 추천포트폴리오의 과거 수익률 정보이며, 실제 실현 수익률은 다를 수 있습니다.</p>
+                    </div>
+
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg -primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <!-- 차트 관련js -->
+    <script src="../../../../assets/libs/Chart/dist/Chart.js"></script>
+    <script src="../../../../assets/libs/Chart/dist/Chart.min.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+
+        // 차트
+        var lineChart = document.getElementById('line-chart');
+        var chart = new Chart(lineChart, {
+            type: 'line',
+            // 데이터 집합
+            data : {
+                labels: ['2019.12.23', '2020.06.24', '2020.12.22', '2021.06.23', '2021.12.22', '2022.06.24', '2022.12.23'],
+                datasets: [{
+                    label: '(수익률%)',
+                    data: [1.5, 1, 1, -2, -4, 0, 4],
+                    // 누적수익률 증가일경우 컬러
+                    pointBackgroundColor: 'rgba(251,78,77,.5)',
+                    borderColor: '#fb4e4d',
+                    // //누적수익률 증가일경우 컬러
+                    
+                    // 누적수익률 감소일경우 컬러
+                    // pointBackgroundColor: 'rgba(48,122,239,.5)',
+                    // borderColor: '#307aef',
+                    // //누적수익률 감소일경우 컬러
+                    borderWidth: 1,
+                    fill: false,
+                    lineTension: 0,
+                    pointBorderWidth: 1,
+                    pointRadius: 4,
+                }]
+            },
+            //설정
+            options: {
+                responsive: true,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                legend: {
+                    display : false
+                },
+                scales:{
+                    xAxes:[{
+                        ticks:{
+                            fontColor : '#767676',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        }
+                    }],
+                    yAxes:[{
+                        ticks:{
+                            fontColor : '#767676',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        }
+                    }]
+                }           
+            }
+        })
+    </script>
+</body>
+</html>

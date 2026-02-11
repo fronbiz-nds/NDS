@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">자금반환청구 상세 결과</h1> 
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <h3 class="h4">청구정보</h3>
+					<div>
+						<div class="account card -list">
+							<dl class="dl">
+								<div>
+									<dt>신청인</dt>
+									<dd>김농협</dd>
+								</div>
+								<div>
+									<dt>청구일자</dt>
+									<dd>2021.01.01 19:55:55</dd>
+								</div>
+								<div>
+									<dt>연락처</dt>
+									<dd>CRM 상의 연락처 표시</dd>
+								</div>
+								<div>
+									<dt>이메일</dt>
+									<dd>CRM 상의 이메일 표시</dd>
+								</div>
+								<div>
+									<dt>신청사유</dt>
+									<dd>계좌입력오류</dd>
+								</div>
+								<div>
+									<dt>반환받을 금액</dt>
+									<dd>100,000원</dd>
+								</div>
+								<div>
+									<dt>청구구분</dt>
+									<dd>전액청구</dd>
+								</div>
+								<div>
+									<dt>입금받을 계좌</dt>
+									<dd>NH농협은행<br>
+                                        302-1234-5678-81
+                                    </dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+
+                    <h3 class="h4">청구정보</h3>
+					<div>
+						<div class="account card -list">
+							<dl class="dl">
+								<div>
+									<dt>처리상태</dt>
+									<dd>정상반환완료</dd>
+								</div>
+								<div>
+									<dt>처리사유</dt>
+									<dd>정상반환</dd>
+								</div>
+								<div>
+									<dt>반환거래 고유번호</dt>
+									<dd>0123456789</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+    </script>
+</body>
+</html>

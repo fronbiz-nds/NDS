@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>내 정보 수정</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">올원PASS</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content -full"> 
+                    <div class="pass-login">
+						<p class="info-txt">올원PASS 비밀번호를 입력해주세요</p>
+
+						<div class="pin-numbers">
+							<span class="start filled">
+								<input title="올원PASS비밀번호 입력 첫번째" type="password" maxlength="1" readonly>
+							</span>
+							<span class="filled">
+								<input title="올원PASS비밀번호 입력 두번째" type="password" maxlength="1" readonly>
+							</span>
+							<span>
+								<input title="올원PASS비밀번호 입력 세번째" type="password" maxlength="1" readonly>
+							</span>
+							<span>
+								<input title="올원PASS비밀번호 입력 네번째" type="password" maxlength="1" readonly>
+							</span>
+							<span>
+								<input title="올원PASS비밀번호 입력 다섯번째" type="password" maxlength="1" readonly>
+							</span>
+							<span>
+								<input title="올원PASS비밀번호 입력 여섯번째" type="password" maxlength="1" readonly>
+							</span>
+						</div>
+
+						<p class="desc">
+							동일한 숫자의 반복 또는 연속된 숫자,<br>
+							개인정보와 관련된 숫자는 등록이 불가합니다.
+						</p>
+					</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

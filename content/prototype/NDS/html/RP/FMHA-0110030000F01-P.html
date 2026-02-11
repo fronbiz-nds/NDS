@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">금융상품 중요사항 확인</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="box">
+                        <ul class="ul -bullet">
+                            <li>금융소비자보호법 제19조(설명의무) 제1항에서 규정하고 있는 금융상품에 관한 중요한 사항을 안내해 드립니다.</li>
+                            <li>고객님께서 충분한 이해없이 확인했다고 답변할 경우 추후 소송이나 분쟁에서 소비자에게 불리하게 작용할 수 있습니다.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="jsImportConfWrap">
+                        <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="optional-total01">
+                                        <label for="optional-total01">예금상품 공통 확인사항</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="inner">
+                                    <ul class="ul -bullet">
+                                        <li>정기예금은 상품매수일 기준 금리가 적용됩니다.</li>
+                                        <li>정기예금 금리는 매월 변동되며, 실제매수시점에 따라 적용금리가 변동될 수 있으니 유의하시기 바랍니다.</li>
+                                        <li>이 퇴직연금은 예금자보호법에 따라 예금보호 대상 금융상품으로 운용되는 적립금에 대하여 다른 보호상품과는 별도로 1인당 "5천만원까지"(운용되는 금융상품 판매회사별 보호 상품 합산) 보호됩니다.</li>
+                                        <li>타사 예금상품 등의 경우 상품제공회사인 타금융회사에서 원리금지급을 보장합니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="optional-total03">
+                                        <label for="optional-total03">중도해지에 따른 불이익</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="inner">
+                                    <p class="p">약정된 만기일 이전에 해지하시면 중도해지금리가 적용됩니다. 중도해지금리는 약정금리보다 낮게 적용됨을 주의해 주시기 바랍니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- [CASE] 가입방법 선택:꼼꼼 일 경우 노출 -->
+                        <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="optional-total04">
+                                        <label for="optional-total04">펀드가입 공통 확인사항</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="inner">
+                                    <ul class="ul -bullet">
+                                        <li>실적배당상품으로 원금손실 가능성(또는 원금초과손실 가능성)이 있으며, 예금자보호법에 따라 보호되지 않습니다.</li>
+                                        <li>투자상품은 운용실적에 따라 이익 또는 손실이 발생할 수 있고, 그 결과는 투자자에게 귀속됩니다.</li>
+                                        <li>해외 투자상품의 경우 투자대상국가의 시장, 환율, 정치 및 경제상황 등에 따른 위험으로 자산가치의 손실이 발생할 수 있습니다.</li>
+                                        <li>펀드의 명칭,종류, 자산운용사, 위험등급, 투자목적,투자 대상자산,투자전략, 보수 및 수수료, 투자소득의 과세에 관한 사항, 환매방법, 기준가격 적용, 기준일 및 환매대금지급일, 기타계약의 해제 및 해지에 관한 사항, 조기상환조건이 있는 경우 그에 관한 사항 등에 대해 확인하고 이해합니다.</li>
+                                        <li>약관, 투자설명서를 열람하고 그 주요내용에 대해서 확인하였습니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="optional-total05">
+                                        <label for="optional-total05">중도해지 시 비용 발생</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="inner">
+                                    <p class="p">
+                                        투자상품의 중도해지 시 환매수수료 또는 기타비용이 발생할 수 있으며, 중도해지를 신청하는 경우라도 상품종류에 따라 중도해지가 제한될 수 있으므로, 상품별로 정하고 있는 중도해지 시 불이익 항목을 반드시 확인하시기 바랍니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="optional-total06">
+                                        <label for="optional-total06">ETF상품 공통 확인사항</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="inner">
+                                    <ul class="ul -bullet">
+                                        <li>ETF 매매는 확정기여형(DC)/기업형IRP/개인형IRP 가입자만 가능합니다.</li>
+                                        <li>ETF 운용지시 후 부담금을 입금하는 경우 다음 영업일에 주문신청 및 매매 체결됩니다. 단, ETF 매수신청금액이 최소 주문가능 금액(전일 종가의 130% 이상)에 미달하는 경우 매수신청이 이루어지지 않으며, 이 경우 현금성자산으로 운용됩니다.</li>
+                                        <li>ETF 매매는 증권사 시스템을 통해 이루어지며, 주문접수가 정상적으로 완료된 이후 장중 시장가격으로 체결됩니다. 단, 시장상황 등에 따라 주문이 체결되지 않을 수도 있으며, 이 경우 주문은 취소 처리 됩니다.</li>
+                                        <li>펀드의 명칭,종류, 자산운용사, 위험등급, 투자목적,투자 대상자산,투자전략, 보수 및 수수료, 투자소득의 과세에 관한 사항, 환매방법, 기준가격 적용, 기준일 및 환매대금지급일, 기타계약의 해제 및 해지에 관한 사항, 조기상환조건이 있는 경우 그에 관한 사항 등에 대해 확인하고 이해합니다.</li>
+                                        <li>
+                                            확인 후(17시 이후) 안내해 드립니다.<br>
+                                            ETF 매수 체결 후 다음 영업일부터 매도신청이 가능합니다.
+                                        </li>
+                                        <li>유동성이 풍부하지 못한 ETF 종목에 투자하는 경우 환금성에 제약이 발생할 수 있고, 일정한 조건을 충족하지 못하는 경우 상장 폐지될 수 있습니다.</li>
+                                        <li>
+                                            ETF 상품을 보유중인 경우 지급제한기간에는 지급 신청(퇴직/연금지급/계약이전/해지/중도인출 등)이 불가합니다.<br>
+                                            ※ 단, D-6영업일에 ETF 매도한 경우 결제 완료(D-4영업일) 이후 지급 신청 가능합니다.<br>
+                                            ※ 지급제한기간 : 매월 마지막영업일(D) 포함 이전 5 영업일로부터 익월 2영업일까지(D-5~D+2)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- // [CASE] 가입방법 선택:꼼꼼 일 경우 노출 -->
+
+                        <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="optional-total07">
+                                        <label for="optional-total07">위법계약해지권</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="inner">
+                                    <p class="p">
+                                        「금융소비자 보호에 관한 법률」 제47조에 의거하여 투자상품 계약체결 시 동법 상의 적합성 · 적정성 원칙, 설명의무 위반 또는 금지되는 불공정영업행위, 부당권유행위의 발생 사실이 있은 경우, 위법사실을 안 날로부터 1년(단, 계약 체결일로부터 5년 이내) 이내에 서면 등으로 계약의 해지를 요구할 수 있습니다. 위법계약해지를 요구 받은 날로부터 10일 이내에 수락여부 및 그 사유를 안내하며, 만약 투자자의 요구가 정당한 것으로 판단될 경우 수수료 등 계약해지와 관련한 추가 비용 부담없이 계약해지가 할 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="optional-total08">
+                                        <label for="optional-total08">분쟁조정 절차</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="inner">
+                                    <p class="p">
+                                        분쟁이 발생한 경우 금융소비자보호법 제36조 1항에 따라 금융감독원(1332)등에 도움을 요청하실 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="optional-total009">
+                                        <label for="optional-total009">필수 유의사항</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="inner">
+                                    <ul class="ul -bullet">
+                                        <li>포트폴리오 서비스를 신청하시면 추천포트폴리오에 한해 운용지시를 할 수 있으며, 현재 보유중인 상품은 전액 교체매매처리 됩니다.</li>
+                                        <li>포트폴리오 신청 후 입금되는 금액은 추천포트폴리오 비율대로 자동매수 됩니다.</li>
+                                        <li>포트폴리오 서비스는 고객님의 계좌 전액에 대해서만 운용 가능합니다. 추천 포트폴리오를 참조하여 다른 상품과 함께 운용하고자 하는 경우에는 퇴직연금 페이지에서 개별 운용 지시하셔야 합니다.</li>
+                                        <li>포트폴리오 서비스 신청 시 임의로 운용비율변경이나 교체매매가 제한됩니다. [나의 포트폴리오>묶음해지 후 퇴직연금 페이지]에서 거래하시기 바립니다.</li>
+                                        <li>포트폴리오 거래 시 보유하고 계신 상품을 각각 매도하여 추천 포트폴리오 비중에 맞게 매수되며, 상품에 따라 최대 2주의 시간이 소요될 수 있습니다,</li>
+                                        <li>계좌 내 금액이 소액일 경우 상품 최소 매수단위를 충족하지 못해 매수주문이 정상적으로 이루어지지 않을 수 있습니다. 원활한 포트폴리오 서비스 제공을 위해 계좌 보유금액은 최소 10만원 이상 유지하시기를 권해드립니다.</li>
+                                        <li>매수 최소단위를 충족하지 못하는 잔여 금액은 계좌 내 미운용 자산으로 편입됩니다.</li>
+                                        <li>수수료 차감 등을 위한 상품 일부매도 거래는 매도 순서를 지정하지 않는 한 퇴직연금약관에 따라 처리됩니다.</li>
+                                        <li>서비스 이용 가능시간 : 09:00~20:00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="optional-total090">
+                                        <label for="optional-total090">디폴트옵션 유의사항</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="inner">
+                                    <ul class="ul -bullet">
+                                        <li>디폴트옵션이란 확정기여형 퇴직연금 또는 개인형 퇴직연금(IRP)에 가입하였을 때로부터 2주 이내 고객님의 별도 의사표시가 없을 경우에는 디폴트옵션에 따라 적립금이 운용되며, 가입 후 만기가 있는 상품(정기예금, 이익율보증형보험계약 등)으로 운용방법을 선정한 경우 해당 상품의 만기일로부터 4주가 지났을 때로부터 2주 이내 고객님의 별도 의사표시가 없을 경우에는 디폴트옵션에 따라 적립금이 운용됩니다.</li>
+                                        <li>디폴트옵션을 지정하지 않은 경우에는 별도의 운용지시가 없는 한 만기 금액이 계속해서 현금성자산으로 운용되어 수익률이 저하될 수 있습니다.</li>
+                                        <li>디폴트옵션은 농협은행의 신청으로 고용노동부 장관의 승인 절차를 걸쳐 변경될 수 있습니다. 이 경우 변경된 디폴트옵션이 아닌 다른 운용방법을 지정 할  수 있습니다. 고객님이 선택한 상품에 대한 변경사항이 발생할 경우 변경사유, 변경되는 디폴트옵션에 대한 정보, 변경에 대한 고용노동부 승인 사실을 통보할 것입니다. 변경 사항에 대한 고용노동부 승인일로부터 14일 이내 별도의 의사표시가 없을 경우 변경된 디폴트옵션으로 적용됩니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="optional-total10">
+                                        <label for="optional-total10">상품판매에 관한 확인사항 동의</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="inner">
+                                    <p class="p">
+                                        본인은 본 상품에 관한 안내사항 및 판매동의 절차를 정확히 숙지하였음을 확인합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg -primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

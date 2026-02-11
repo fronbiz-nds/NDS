@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">본인인증</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="h2-group">
+                        <h2 class="h2">NH모바일인증서의<br>
+                            인증방법을 선택해 주세요
+                        </h2>
+                    </div>
+                    
+                    <!-- [CASE] IOS -->
+                    <div class="link -vertical">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" class="auth-btn">
+                                    <div class="auth-icon-num">
+                                        간편비밀번호
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="auth-btn">
+                                    <div class="auth-icon-finger">
+                                        얼굴(지문)
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="auth-btn">
+                                    <div class="auth-icon-pattern">
+                                        패턴
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //[CASE] IOS -->
+
+                    
+                    <!-- [CASE] AOS -->
+                    <!-- <div class="link -vertical">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" class="auth-btn">
+                                    <div class="auth-icon-num">
+                                        간편비밀번호
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="auth-btn">
+                                    <div class="auth-icon-finger-aos">
+                                        지문인증
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="auth-btn">
+                                    <div class="auth-icon-pattern">
+                                        패턴
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- //[CASE] AOS -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+
+        $(document).ready(function () {
+			var swiper = new Swiper ('.auth-swiper', {
+                slidesPerView:2,
+				spaceBetween:12,
+			})
+		});
+    </script>
+</body>
+</html>

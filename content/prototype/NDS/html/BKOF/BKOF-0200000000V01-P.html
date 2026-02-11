@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="navigation">
+                <div class="header">
+                    <div class="inner">
+                        <h1 class="title">휴대폰 본인인증</h1>
+                        <div class="funcs">
+                            <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="h2-group">
+                        <h2 class="h2">
+                            휴대폰 본인인증을 진행해 주세요
+                        </h2>
+                    </div>
+
+                    <div class="agree -detail">
+                        <div class="title">
+                            <div class="checkbox -sm">
+                                <input type="checkbox" id="optional-total">
+                                <label for="optional-total">[필수] 전체 동의</label>
+                            </div>
+                            <button type="button" class="more"><span class="hide">필수 전체 동의 약관</span></button>
+                        </div>
+                        <div class="panel">
+                            <div class="checkboxes -full">
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional1">
+                                    <label for="optional1">고유식별정보 처리 동의</label>
+                                    <button type="button" class="more"><span class="hide">고유식별정보 처리 동의 약관</span></button>
+                                </div>
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional2">
+                                    <label for="optional2">개인정보 수집 이용 제공 동의</label>
+                                    <button type="button" class="more"><span class="hide">개인정보 수집 이용 제공 동의 약관</span></button>
+                                </div>
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional3">
+                                    <label for="optional3">서비스 이용약관 동의</label>
+                                    <button type="button" class="more"><span class="hide">서비스 이용약관 동의 약관</span></button>
+                                </div>
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional4">
+                                    <label for="optional4">통신사 이용약관 동의</label>
+                                    <button type="button" class="more"><span class="hide">통신사 이용약관 동의 약관</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <p class="label">휴대폰 번호</p>
+                        <div class="select">
+                            <button type="button" aria-haspopup="true" class="fc-empty">통신사 선택</button>
+                        </div>
+                        <div class="mix phone">
+                            <div class="select flex-5">
+                                <button type="button" class="left-side fc-empty" aria-haspopup="true" title="휴대폰 앞자리 선택">010</button>
+                            </div>
+                            <div class="text flex-7 -readonly -textless" data-clear="false">
+                                <input type="tel" data-id="phone123h0" class="mid-side num-call pl-8" placeholder="-없이 입력" title="휴대폰번호 입력"
+                                    aria-haspopup="true" readonly value="">
+                            </div>
+                            <div class="space flex-3 -lined right-side">
+                                <button type="button" class="button -tertiary -sm -fit" title="인증번호 요청" disabled>요청</button>
+                            </div>
+                            <p class="info">휴대폰번호를 입력해 주세요.</p>
+                        </div>
+                        <div class="mix code">
+                            <div class="text flex-8 -readonly -textless" data-clear="false">
+                                <input type="tel" data-id="phone1238" class="left-side num-call" placeholder="인증번호 6자리" title="인증번호 6자리 입력"
+                                    aria-haspopup="true" value="" readonly>
+                                <button class="clear" type="button" style="z-index: -1;">
+                                    <div class="hide">입력 내용 삭제</div>
+                                </button>
+                            </div>
+                            <div class="space -lined mid-side time-limit">
+                                <span aria-live="assertive">05:00</span>
+                            </div>
+                            <div class="space -lined right-side">
+                                <button type="button" class="button -tertiary -sm -fitted">시간연장</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg">확인</button>
+                    </div>
+                </div>
+
+                <!-- 토스트팝업은 -active 클래스 사용하여 실행합니다 -->
+                <div class="toast" role="alert" aria-live="assertive">
+                    <div class="message">
+                        <p>인증번호를 발송했어요.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        window.addEventListener('DOMContentLoaded', () => {
+                const toast = document.querySelector('.toast');
+                if (!toast) return;
+
+                // 페이지 진입 시 -active 추가
+                toast.classList.add('-active');
+
+                setTimeout(() => {
+                    toast.classList.remove('-active');
+                }, 3000);
+            });
+    </script>
+</body>
+</html>

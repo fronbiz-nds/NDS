@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>컨벤션 가이드 - 2023 금상몰</title>
+
+    <link rel="stylesheet" href="worklist/assets/css/docs.css">
+</head>
+<body>
+    <div class="dh">
+        <div class="dh__title">
+            <a href="/">NDS</a>
+        </div>
+
+        <div class="dh__nav">
+            <a href="docs.html" class="-active">Docs</a>
+            <a href="nds-guide-components.html">Components guide</a>
+            <a href="worklist-nds.html">Example of use</a>
+        </div>
+    </div>
+
+    <div class="dn">
+        <div class="dn__group -active">
+            <button type="button">규칙</button>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#js">JS</a></li>
+            </ul>
+        </div>
+
+        <div class="dn__group -active">
+            <button type="button">네이밍</button>
+            <ul>
+                <li><a href="#file-folder-naming">파일/폴더 네이밍</a></li>
+                <li><a href="#image-naming">이미지 네이밍</a></li>
+                <li><a href="#class">클래스 작명</a></li>
+                <li><a href="#reserved-word">예약어</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dc">
+
+        <!-- [컨텐츠 시작] -->
+
+        <div id="html" class="book">
+            <div class="paper">
+                <div class="h1">HTML</div>
+
+                <div class="h2">DOCTYPE</div>
+                <div class="p">HTML5의 문법을 기본으로 따른다.</div>
+                <div class="code">
+                    <script type="text/template">
+<!DOCTYPE html>
+                    </script>
+                </div>
+
+                <div class="h2">인코딩</div>
+                <div class="p">대소문자를 구별하여 CSS와 동일한 인코딩을 지정한다.</div>
+                <div class="code">
+                    <script type="text/template">
+<meta charset="utf-8">
+                    </script>
+                </div>
+
+                <div class="h2">문자</div>
+                <div class="p">태그명, Attribute명과 값은 소문자와 숫자, 대시(-)만 사용하되 alt값은 자유롭게 사용한다.</div>
+                <div class="compare">
+                    <div class="code">
+                        <script type="text/template">
+<header class="header"></header>
+                        </script>
+                    </div>
+
+                    <div class="code">
+                        <script type="text/template">
+<HEADER CLASS="HEADER"></HEADER>
+                        </script>
+                    </div>
+                </div>
+
+                <div class="h2">따옴표</div>
+                <div class="p">큰따옴표만 사용한다.</div>
+                <div class="compare">
+                    <div class="code">
+                        <script type="text/template">
+<header class="header"></header>
+                        </script>
+                    </div>
+
+                    <div class="code">
+                        <script type="text/template">
+<header class='header'></header>
+                        </script>
+                    </div>
+                </div>
+
+                <div class="h2">개행</div>
+                <div class="p">코드 한줄이 너무 길어지지 않도록 개행을 해야한다.</div>
+                <div class="p">태그 내부에 문자만 있는 경우 한줄로 표기하고 태그와 함께 있는 경우에는 개행한다.</div>
+                <div class="compare">
+                    <div class="code -sm">
+                        <script type="text/template">
+<p class="p">내용</p>
+
+<p class="p">
+    <span class="bold">굵은</span> 내용
+</p>
+                        </script>
+                    </div>
+                    <div class="code -sm">
+                        <script type="text/template">
+<p class="p">
+    내용
+</p>
+
+<p class="p"><span class="bold">굵은</span> 내용</p>
+                        </script>
+                    </div>
+                </div>
+
+                <div class="p">개행은 코드의 가독성을 높이기 위해 가로방향으로 너무 길어지지 않게 하기 위한 수단으로 가급적 지키되 충분한 의도가 있는 경우라면 규칙에서 벗어나도 무방하다.</div>
+                <div class="code">
+                    <script type="text/template">
+<ul>
+    <li><a href="javascript:void(0)">메뉴</a></li>
+</ul>
+
+<ul>
+    <li>
+        <a href="javascript:void(0)">
+            <div class="subject">제목</div>
+            <div class="desc">설명</div>
+        </a>
+    </li>
+</ul>
+                    </script>
+                </div>
+
+                <div class="p"><span class="keyword">br</span> 의 경우 반드시 개행하고 문단의 흐름안에 있는 인라인 태그의 경우 개행할 필요는 없다.</div>
+                <div class="compare -expand">
+                    <div class="code">
+                        <script type="text/template">
+<p class="p">
+    내용<br>내용
+</p>
+
+<p class="p">
+    <span class="bold">인라인</span> 내용 <span class="line-through">인라인</span> 내용
+</p>
+                        </script>
+                    </div>
+                    <div class="code">
+                        <script type="text/template">
+<p class="p">
+    내용<br>
+    내용
+</p>
+
+<p class="p">
+    <span class="bold">인라인</span>
+    내용
+    <span class="line-through">인라인</span>
+    내용
+</p>
+                        </script>
+                    </div>
+                </div>
+
+                <div class="print-buffer" style="height:14rem;"></div>
+
+                <div class="h2">들여쓰기</div>
+                <div class="p">한번 들여쓰기는 공백4칸으로 정의하고 중첩이 깊어질때마다 한번씩 들여쓴다.</div>
+                <div class="code">
+                    <script type="text/template">
+<div class="content">
+    <p class="p">금상몰</p>
+</div>
+                    </script>
+                </div>
+
+                <div class="h2">주석</div>
+                <div class="p">주석은 코드 끝부분에 작성하지 않으며 해당하는 라인의 직전라인에 작성한다.</div>
+                <div class="p">완료처리 후 수정된 부분에 대해 날짜와 함께 설명메세지를 제공한다.</div>
+                <div class="code">
+                    <script type="text/template">
+<!-- [YYMMDD] 설명 -->
+                    </script>
+                </div>
+
+                <div class="p">한페이지에 여러 케이스가 함께 있는 경우 표시한다.</div>
+                <div class="code">
+                    <script type="text/template">
+<!-- [CASE] 설명 -->
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div id="css" class="book">
+            <div class="paper">
+                <div class="h1">CSS</div>
+
+                <div class="h2">문자</div>
+                <ul class="ul">
+                    <li>영문은 소문자로 작성한다.</li>
+                    <li>가상 요소(Pseufo Element)와 Content 값은 자유롭게 지정한다.</li>
+                    <li><span class="keyword">font-family</span>의 값도 폰트이름에 따라 자유롭게 지정한다.</li>
+                </ul>
+
+                <div class="h2">따옴표</div>
+                <div class="p">이름에 공백이 포함된 폰트나 한글 이름의 폰트는 큰따옴표를 사용한다.</div>
+                <div class="code">
+                    <script type="text/template">
+@charset "utf-8";
+
+.selector:before {content: ""; font-family:"Pretendard", sans-serif;}
+                    </script>
+                </div>
+                <div class="h2">세미콜론</div>
+                <div class="p">모든 Property의 마지막에는 세미콜론을 삽입한다.</div>
+                <div class="compare">
+                    <div class="code">
+                        <script type="text/template">
+.selector {property:value;}
+                        </script>
+                    </div>
+
+                    <div class="code">
+                        <script type="text/template">
+.selector {property:value}
+                        </script>
+                    </div>
+                </div>
+
+                <div class="h2">들여쓰기</div>
+                <ul class="ul">
+                    <li>한번 들여쓰기는 탭 4칸으로 정의한다.</li>
+                    <li><span class="keyword">:root</span>와 <span class="keyword">@media</span>, <span class="keyword">@keyframes</span> 설정외에는 들여쓰기 하지 않는다.</li>
+                </ul>
+                <div class="code">
+                    <script type="text/template">
+:root {
+    --variable: value;
+}
+
+@media (min-width:320px) {
+    .selector {property:value;}
+}
+
+@keyframes {
+    from {}
+    to {}
+}
+                    </script>
+                </div>
+
+                <div class="h2">공백</div>
+                <div class="p">선택자와 중괄호 사이에 공백을 한칸 삽입한다.</div>
+                <div class="code">
+                    <script type="text/template">
+.selector {}
+                    </script>
+                </div>
+
+                <div class="p">자식선택자, 일반형제선택자, 인접형제선택자의 경우 이전과 다음에 공백을 각각 한 칸씩 삽입한다.</div>
+                <div class="code">
+                    <script type="text/template">
+.selector > .selector {}
+.selector + .selector {}
+.selector ~ .selector {}
+                    </script>
+                </div>
+
+                <div class="p">중괄호 앞과 뒤, 콜론( : )의 이전과 다음은 공백없이 붙인다.</div>
+                <div class="code">
+                    <script type="text/template">
+.selector {property:value;}
+                    </script>
+                </div>
+
+                <div class="p">세미콜론( ; )과 다음 property 사이에 공백을 한칸 삽입한다.</div>
+                <div class="code">
+                    <script type="text/template">
+.selector {property:value; property:value;}
+                    </script>
+                </div>
+
+                <div class="print-buffer" style="height:40rem;"></div>
+
+                <div class="h2">개행</div>
+                <div class="p"><span class="keyword">:root</span>와 <span class="keyword">@media</span>인 경우에 중괄호가 시작할때 한번, 중괄호가 끝나기전에 한번 개행한다.</div>
+
+                <div class="compare">
+                    <div class="code">
+                        <script type="text/template">
+:root {
+    --variable: value;
+}
+
+@media (min-width:320px) {
+    .selector {property:value;}
+}
+
+@keyframes {
+    from {property:value;}
+    to {property:value;}
+}
+                        </script>
+                    </div>
+
+                    <div class="code">
+                        <script type="text/template">
+:root {--variable: value;}
+
+@media (min-width:320px) {
+    .selector {
+        property:value;
+    }
+}
+
+@keyframes {
+    from {
+        property:value;
+    }
+    to {
+        property:value;
+    }
+}
+                        </script>
+                    </div>
+                </div>
+
+                <div class="p">서로 다른 선택자의 경우 개행으로 구분한다.</div>
+                <div class="compare">
+                    <div class="code">
+                        <script type="text/template">
+.selector1,
+.selector2 {property:value;}
+.selector3 {property:value;}
+                        </script>
+                    </div>
+
+                    <div class="code">
+                        <script type="text/template">
+.selector1, .selector2 {property:value;}
+.selector3 {property:value;}
+                        </script>
+                    </div>
+                </div>
+
+                <div class="print-buffer" style="height:9rem;"></div>
+
+                <div class="h2">Property 선언 순서</div>
+                <div class="table -x">
+                    <table>
+                        <caption><span class="hide">Property 선언 순서</span></caption>
+                        <colgroup>
+                            <col style="width:20%">
+                            <col style="width:80%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1. 레이아웃</th>
+                                <td class="-consolas">content, display, flex, visibility, opacity, overflow, float, clear, position, top, right, bottom, left, z-index</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2. 박스모델</th>
+                                <td class="-consolas">width, min-width, max-width, height, min-height, max-height, margin, padding, border, border-radius, outline, background, box-shadow</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3. 글꼴</th>
+                                <td class="-consolas">color, font-style, font-variant, font-weight, font-size, line-height, font-family, letter-spacing, text-transform, text-align, vertical-align, text-shadow</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4. 기타</th>
+                                <td>그외 모든 속성</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5. 변형 &amp; 모션</th>
+                                <td class="-consolas">transform, transition, animate</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="h2">방향에 따른 순서</div>
+                <div class="p">방향과 관련 된 스타일인 경우 시계방향(top, right, bottom, left)의 순서로 선언한다.</div>
+                <div class="code">
+                    <script type="text/template">
+                        .selector {margin-bottom:0; margin-left:0; padding-top:0; padding-right:0;}
+                    </script>
+                </div>
+
+                <div class="h2">약식속성</div>
+                <div class="info -danger">약식 속성을 사용시 지정하지 않은 값을 의도치 않게 초기화하는 경우가 발생할 수 있으므로 사용에 주의가 필요하다.</div>
+
+                <div class="p">border는 <span class="keyword">width</span>, <span class="keyword">style</span>, <span class="keyword">color</span>의 순서로 선언한다.</div>
+                <div class="code">
+                    <script type="text/template">
+                        .selector {border:1px solid #000;}
+                    </script>
+                </div>
+
+                <div class="p">background는 개별적으로 선언하고 두개이상의 속성을 선언할 경우에만 약식을 사용한다.</div>
+                <div class="compare">
+                    <div class="code">
+                        <script type="text/template">
+                            .selector {background-color:#000;}
+                        </script>
+                    </div>
+
+                    <div class="code">
+                        <script type="text/template">
+                            .selector {backgroun#000;}
+                        </script>
+                    </div>
+                </div>
+
+                <div class="h2">축약</div>
+                <div class="p">16진수 컬러 값은 세자리로 축약한다.</div>
+                <div class="code">
+                    <script type="text/template">
+#000000 -> #000
+#ff0000 -> #f00
+                    </script>
+                </div>
+
+                <div class="p">값이 0인 경우 단위는 생략한다.</div>
+                <div class="code">
+                    <script type="text/template">
+0rem -> 0
+                    </script>
+                </div>
+
+                <div class="h2">주석</div>
+                <div class="p">구분이 필요한 상황에만 제한적으로 사용하고 가급적 사용하지 않는다.</div>
+                <div class="compare -expand">
+                    <div class="code">
+                        <script type="text/template">
+url(../imgs/logo/bank/ci_nh.png);} /* 농협 */
+url(../imgs/logo/bank/ci_nh.png);} /* NH투자증권 */
+                        </script>
+                    </div>
+
+                    <div class="code">
+                        <script type="text/template">
+/* 헤더 */
+.header {}
+
+/* 주메뉴 */
+.gnb {}
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="js" class="book">
+            <div class="paper">
+                <div class="h1">JS</div>
+
+                <div class="h2">공통 스크립트</div>
+                <div class="p"></div>
+                <div class="table -x -js">
+                    <table>
+                        <caption><span class="hide">메서드 기능설명</span></caption>
+                        <colgroup>
+                            <col style="width:20%">
+                            <col style="width:80%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">메서드</th>
+                                <th scope="col">설명</th>
+                            </tr>
+                        </thead>
+                        <tbody class="center">
+                            <tr>
+                                <td class="bold -consolas letter-wide">throttle</td>
+                                <td>
+                                    <div class="title">parameter</div>
+                                    func(function)<br>
+                                    limit(number)<br>
+                                    <br>
+                                    이벤트의 실행빈도를 줄이기 위한 기능이다. 주로 스크롤 이벤트에 사용하며 숫자가 작을수록 많이 실행되고 높을수록 적게 실행된다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">clickable</td>
+                                <td>
+                                    더블클릭방지를 위한 함수이다. 모든 <span class="keyword">button</span>과 <span class="keyword">a</span>태그에 적용되어 있다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">tabs</td>
+                                <td>
+                                    1뎁스 탭의 동작을 위한 함수이다. 탭패널 형식에만 적용되며 네비게아션 타입에는 적용되지 않는다. 네비게이션 타입의 활성화와 스크롤 이동은 개발에서 적용하기로 협의.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">subs</td>
+                                <td>
+                                    2뎁스 탭의 동작을 위한 함수이다. 탭패널 형식에만 적용되며 네비게아션 타입에는 적용되지 않는다. 네비게이션 타입의 활성화와 스크롤 이동은 개발에서 적용하기로 협의.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">segments</td>
+                                <td>
+                                    3뎁스 탭의 동작을 위한 함수이다. 박스라디오와 같은 디자인이 지만 <span class="keyword">.segments</span>에만 스크립트가 적용된다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">tooltip</td>
+                                <td>
+                                    툴팁을 동작을 위한 함수이다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">iframe</td>
+                                <td>
+                                    <div class="title">parameter</div>
+                                    selector(string)<br>
+                                    <br>
+                                    아이프레임 리사이즈는 개발파트에서 처리하지만 아이프레임의 내부를 계산하여 높이 값을 지정하기 위한 함수이다. 아코디언이 닫혀있는 경우에는 아이프레임의 높이를 구하는 과정에서 UI를 열고 닫는 등의 컨트롤이 필요해 아코디언(data-role="fold") 내부의 아이프레임 리사이즈만 퍼블리싱파트에서 처리하기로 협의.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">inIframe</td>
+                                <td>
+                                    부모 윈도우에 다크모드가 적용되어 있는지를 파악하여 아이프레임 내부에 다크모드를 적용하는 함수이다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">fold</td>
+                                <td>
+                                    아코디언과 같이 접고 펼치는 모든 UI를 위한 함수이다. data속성을 적용하면 클래스와 상관없이 모든 UI에 적용할 수 있다.<br>
+                                    UI의 가장 상위 요소에 <span class="keyword">data-role="fold"</span> 속성을 추가하고 펼치고 접는 버튼에 <span class="keyword">data-role="marker"</span>를 적용, 접을 영역에 <div class="keyword">data-role="hidden"</div>속성을 추가하면 동작은 모두 스크립트로 이루어진다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">a11y</td>
+                                <td>
+                                    접근성과 관련하여 숨김텍스트를 추가하거나 <span class="keyword">aria</span>속성, <span class="keyword">tabindex</span>를 컨트롤 하는 함수이다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">initTextfield</td>
+                                <td>
+                                    .text와 .textarea의 초기를 위한 함수이다. .popup, .layer, .alert을 열때 재선언되고 있다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">otherTextfield</td>
+                                <td>
+                                    공통UI는 아니지만 공통UI와 유사한 기능을 구현하기 위해 추가된 함수이다. 기능정의는 textfield 메서드와 동일하다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">textfield</td>
+                                <td>
+                                    .text와 .textarea의 상태변화(포커스 여부나 비활성화 등등)와 포커스시 스크롤 이동을 위한 함수이다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">header</td>
+                                <td>
+                                    헤더의 유무 및 상태를 체크하여 제어하는 함수이다. 완료페이지의 경우 제목이 숨김처리되거나 기능버튼이 없는 경우 상단에 아무 내용 없이 흰영역이 있는것이 이슈가 되어 처리.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">init</td>
+                                <td>
+                                    문서가 처음 호출될 때 초기화 되는 함수이다. 개발파트에서 실행 순서로 인한 이슈를 이유로 ready나 onload등의 사용을 안하기를 원해서 모든 공통 스크립트에 사용하지 않았음을 염두해야한다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">Information</td>
+                                <td>
+                                    <div class="title">parameter</div>
+                                    selector(string)
+                                    <div class="title">return</div>
+                                    header(element): 헤더 요소를 반환<br>
+                                    tabs(element): 1뎁스탭 요소를 반환<br>
+                                    subs(element): 2뎁스탭 요소를 반환<br>
+                                    content(element): 본문 요소를 반환<br>
+                                    headerHeight(number): 헤더의 높이를 반환<br>
+                                    tabsHeight(number): 1뎁스탭의 높이를 반환<br>
+                                    subsHeight(number): 2뎁스탭의 높이를 반환<br>
+                                    contentPaddingTop(number): 본문영역의 상단 padding값을 반환<br>
+                                    upperHeight(number): 상단에 있는 모든 요소의 합을 반환<br>
+                                    <br>
+                                    스크롤 이동과 같은 작업을 할시 상단에 스크롤을 위치해야 하는 경우 상단의 높이값을 제공해주는 함수이다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">Buffer</td>
+                                <td>
+                                    <div class="title">parameter</div>
+                                    selector(string)<br>
+                                    <div class="title">return</div>
+                                    isEdited(boolean): 값이 수정된 적이 있는지 여부를 반환<br>
+                                    bufferSize(string): 버퍼의 높이를 반환<br>
+                                    set(number): 버퍼값을 지정<br>
+                                    revert: 변경 이전값으로 적용<br>
+                                    remove: 버퍼 삭제<br>
+                                    <br>
+                                    모든 페이지의 최하단의 간격을 위한 함수이다. <span class="keyword">page</span>, <span class="keyword">popup</span>, <span class="keyword">layer</span>, <span class="keyword">alert</span>에 모두 적용된다. <span class="keyword">.fixer</span>의 높이에 따라 값이 변한다. <span class="keyword">.fixer</span>가 없는 경우 높이값이 0으로 적용된다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">Stack</td>
+                                <td>
+                                    <div class="title">method</div>
+                                    set(dom: Element): 배열에 요소를 추가<br>
+                                    push(dom: Element): 팝업을 열때 카운트를 올리고 배열에 추가<br>
+                                    pop(dom: Element): 팝업을 닫을때 카운트를 내리고 배열에서 삭제<br>
+                                    print(Array): 배열에 담긴 태그들을 출력한다.<br>
+                                    <br>
+                                    <span class="keyword">popup</span>, <span class="keyword">layer</span>, <span class="keyword">alert</span>이 열리고 닫힐때마다 z-index값을 1000을 기준으로 1씩 증가하거나 감소해서 팝업들의 중첩을 제어하고 배열에 요소를 추가/제거하여 관리한다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">Scroll</td>
+                                <td>
+                                    <div class="title">method</div>
+                                    open(id: Sting, isPLA: Boolean): 딤을 열기<br>
+                                    close(): 딤을 닫을후 삭제<br>
+                                    show(): 가렸던 딤을 다시 열기<br>
+                                    hide(): 딤을 잠시 가림<br>
+                                    <br>
+                                    팝업을 열때의 스크롤 값을 저장하고 닫을대 다시 불러오는 함수이다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">Dim</td>
+                                <td>
+                                    <span class="keyword">layer</span>, <span class="keyword">alert</span>를 열때 딤을 추가하는 함수이다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">stackPLAA11y</td>
+                                <td>
+                                    팝업을 열 때 필요한 접근성 처리를 하는 함수이다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">queuePLAA11y</td>
+                                <td>
+                                    팝업을 닫을 때 필요한 접근성 처리를 하는 함수이다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">Popup</td>
+                                <td>
+                                    <div class="title">method</div>
+                                    open(callback: function): 팝업 열기<br>
+                                    close(callback: function, isRemove: boolean): 팝업 닫기. isRemove값이 true일때는 팝업 자체를 삭제한다.<br>
+                                    isOpen: 팝업이 열렸는지 여부<br>
+                                    information: 팝업 상단의 요소및 높이값을 제공<br>
+                                    buffer: 팝업의 buffer정보를 제공<br>
+                                    <br>
+                                    팝업을 제어하는 함수이다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">Layer</td>
+                                <td>
+                                    <div class="title">method</div>
+                                    open(callback: function): 레이어 열기<br>
+                                    close(callback: function, isRemove: boolean): 레이어 닫기. isRemove값이 true일때는 레이어 자체를 삭제한다.<br>
+                                    isOpen: 레이어가 열렸는지 여부<br>
+                                    information: 레이어 상단의 요소및 높이값을 제공<br>
+                                    buffer: 레이어의 buffer정보를 제공<br>
+                                    <br>
+                                    레이어을 제어하는 함수이다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold -consolas letter-wide">Alert</td>
+                                <td>
+                                    <div class="title">method</div>
+                                    open(callback: function): 얼럿 열기<br>
+                                    close(callback: function, isRemove: boolean): 얼럿 닫기. isRemove값이 true일때는 얼럿 자체를 삭제한다.<br>
+                                    isOpen: 얼럿이 열렸는지 여부<br>
+                                    information: 얼럿 상단의 요소및 높이값을 제공<br>
+                                    buffer: 얼럿의 buffer정보를 제공<br>
+                                    <br>
+                                    얼럿을 제어하는 함수이다.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="file-folder-naming" class="book -naming">
+            <div class="paper">
+                <div class="h1">파일/폴더 네이밍</div>
+                <div class="h2">HTML 파일명</div>
+                <div class="p">HTML 신규작성시 해당 서비스 폴더안에 생성하고 파일명은 화면ID와 동일하게 한다.</div>
+
+                <div class="code">
+                    <script type="text/template">
+HA-01000000V01 -> home / HA / HA-01000000V01.html
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div id="image-naming" class="book -naming">
+            <div class="paper">
+                <div class="h1">이미지 네이밍</div>
+
+                <div class="h2">규칙</div>
+                <ul class="ul">
+                    <li>단어간의 구분은 대시(-)로 연결하고 화면ID와 조합되는 경우 이미지가 한개만 있어도 숫자(-1)를 붙인다.</li>
+                    <li>아래의 접두사를 사용하여 이미지를 생성한다.</li>
+                </ul>
+                <div class="table -y">
+                    <table>
+                        <caption><span class="hide">이미지별 접두사</span></caption>
+                        <colgroup>
+                            <col style="width:30%;">
+                            <col style="width:70%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">이름</th>
+                                <th scope="col">작명법</th>
+                            </tr>
+                        </thead>
+                        <tbody class="center">
+                            <tr>
+                                <td>아이콘</td>
+                                <td class="left">
+                                    <div class="naming-guide">
+                                        <div class="file">ico-checkbox-active.png</div>
+                                        <div class="mark">
+                                            <div class="-single" style="width:3.5rem;">접두사</div>
+                                            <div class="-double -id" style="width:8.5rem;">대상요소</div>
+                                            <div class="-double" style="width:6rem;">구분값</div>
+                                            <div class="-single" style="width:3.5rem;">확장자</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>서브페이지 아이콘</td>
+                                <td class="left">
+                                    <div class="naming-guide">
+                                        <div class="file">ico-HA-01000000V01-1.png</div>
+                                        <div class="mark">
+                                            <div class="-single" style="width:3.8rem;">접두사</div>
+                                            <div class="-double -id" style="width:15rem;">화면ID</div>
+                                            <div class="-single" style="width:2.5rem;">숫자</div>
+                                            <div class="-single" style="width:3.2rem;">확장자</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>비주얼 이미지</td>
+                                <td class="left">
+                                    <div class="naming-guide">
+                                        <div class="file">img-HA-01000000V01-1.png</div>
+                                        <div class="mark">
+                                            <div class="-single" style="width:3.8rem;">접두사</div>
+                                            <div class="-double -id" style="width:15rem;">화면ID</div>
+                                            <div class="-single" style="width:2.5rem;">숫자</div>
+                                            <div class="-single" style="width:3.2rem;">확장자</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>배너</td>
+                                <td class="left">
+                                    <div class="naming-guide">
+                                        <div class="file">bn-HA-01000000V01-1.png</div>
+                                        <div class="mark">
+                                            <div class="-single" style="width:3.2rem;">접두사</div>
+                                            <div class="-double -id" style="width:14.8rem;">화면ID</div>
+                                            <div class="-single" style="width:2.2rem;">숫자</div>
+                                            <div class="-single" style="width:3.2rem;">확장자</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- <tr>
+                                <td>임시이미지</td>
+                                <td class="left">
+                                    <div class="naming-guide">
+                                        <div class="file">@HA-01000000V01-1.png</div>
+                                        <div class="mark">
+                                            <div class="-single" style="width:3.2rem;">접두사</div>
+                                            <div class="-double -id" style="width:13.5rem;">화면ID</div>
+                                            <div class="-single" style="width:2.7rem;">숫자</div>
+                                            <div class="-single" style="width:3.5rem;">확장자</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="h2">저장폴더</div>
+                <div class="table -y">
+                    <table>
+                        <caption><span class="hide">저장폴더</span></caption>
+                        <colgroup>
+                            <col style="width:15%;">
+                            <col style="width:15%;">
+                            <col style="width:15%;">
+                            <col style="width:25%;">
+                            <col style="width:30%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">경로1</th>
+                                <th scope="col">경로2</th>
+                                <th scope="col">경로3</th>
+                                <th scope="col">경로4</th>
+                                <th scope="col">종류</th>
+                            </tr>
+                        </thead>
+                        <tbody class="center">
+                            <tr>
+                                <td rowspan="7">assets</td>
+                                <td rowspan="7">imgs</td>
+                                <td rowspan="3">ico</td>
+                                <td>common</td>
+                                <td>공통UI 아이콘</td>
+                            </tr>
+                            <tr>
+                                <td>ci</td>
+                                <td>은행/증권 아이콘</td>
+                            </tr>
+                            <tr>
+                                <td>flag</td>
+                                <td>국기 아이콘</td>
+                            </tr>
+                            <tr>
+                                <td>img</td>
+                                <td>Service별 폴더</td>
+                                <td>비주얼, 아이콘, 배너</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">temp</td>
+                                <td>임시이미지</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="class" class="book">
+            <div class="paper">
+                <div class="h1">클래스 작명 규칙</div>
+
+                <div class="h2">옵션 클래스</div>
+                <ul class="ul">
+                    <li>컴포넌트 클래스와 옵션 클래스를 구분없이 사용할 경우 급속히 클래스가 고갈되는 문제가 있고 비슷한 이름의 클래스가 양산되는 문제가 있다.</li>
+                    <li>상태나 성격을 바꾸기 위해 사용되는 클래스에는 <span class="">prefix</span>로 대시(-)를 붙인다.</li>
+                </ul>
+
+                <div class="code">
+                    <script type="text/template">
+    <button type="button" class="button -lg -primary">버튼</button>
+                    </script>
+                </div>
+
+                <div class="h2">두 단어간의 연결</div>
+                <div class="p">단어를 연결할 때는 대시(-)를 사용한다.</div>
+                <div class="code">
+                    <script type="text/template">
+round button -> .round-button
+                    </script>
+                </div>
+
+                <div class="h2">약어 사용을 지양</div>
+                <ul class="ul">
+                    <li>클래스를 과도하게 줄이는 경우 작업자마다의 해석이 달라질 수 있어 의미 해석의 오류가 발생할 수 있으므로 약어의 사용을 최대한 지양한다.</li>
+                    <li>서로 다른 축약 방식으로 비슷한 이름이 양산될 수 있어 코드 해석에 방해가 될 수 있다.</li>
+                    <li>모든 단어는 온전한 단어로 표기를 하는 것을 지향하되 너무 길거나 풀어쓰는 것보다 약어 자체가 더 많이 사용되는 경우는 약어를 사용해도 좋다.</li>
+                </ul>
+                <div class="compare">
+                    <div class="code">
+                        <script type="text/template">
+.title
+.content
+.button
+.desc
+.cta
+.lg
+
+                        </script>
+                    </div>
+                    <div class="code">
+                        <script type="text/template">
+.tit
+.cnt
+.btn
+.call-to-action
+.description
+.large
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="reserved-word" class="book">
+            <div class="paper">
+                <div class="h1">예약어</div>
+                <div class="p">레이아웃이나 공통UI에 사용되었거나 전역에서 자주 사용될 수 있는 이름을 예약어로 지정하여 사용을 금지하거나 제한적으로 사용하도록 규칙을 정한다.</div>
+
+                <div class="h2">사용 금지</div>
+                <ul class="ul">
+                    <li>태그명과 동일한 클래스명은 공통UI외에는 사용할 수 없습니다.</li>
+                    <li>레이아웃에 사용된 이름은 사용할 수 없습니다.</li>
+                </ul>
+                <div class="class-list">
+                    <div>page</div>
+                    <div>popup</div>
+                    <div>layer</div>
+                    <div>alert</div>
+                    <div>container</div>
+                    <div>header</div>
+                    <div>nav</div>
+                    <div>gnb</div>
+                    <div>lnb</div>
+                    <div>snb</div>
+                    <div>contents</div>
+                    <div>content</div>
+                    <div>sticker</div>
+                    <div>fixer</div>
+                    <div>buffer</div>
+                    <div>loading</div>
+                    <div>section</div>
+                    <div>field</div>
+                </div>
+
+                <div class="h2">제한된 사용</div>
+                <ul class="ul">
+                    <li>컴포넌트명으로 사용할 수 없다.</li>
+                    <li>컴포넌트 내부에서 부품의 역활로는 사용할 수 있다.</li>
+                    <li>같은 이름이 서로 다른 컴포넌트 에서 범용으로 자주 사용될 수 있으므로 서로 영향이 가지 않도록 주의가 필요하다.</li>
+                </ul>
+
+                <div class="h3">UI 관련 키워드</div>
+                <div class="class-list">
+                    <div>inner</div>
+                    <div>subject</div>
+                    <div>heading</div>
+                    <div>title</div>
+                    <div>func</div>
+                    <div>list</div>
+                    <div>item</div>
+                    <div>link</div>
+                    <div>message</div>
+                    <div>desc</div>
+                    <div>more</div>
+                    <div>trigger</div>
+                    <div>panel</div>
+                    <div>info</div>
+                    <div>key</div>
+                    <div>value</div>
+                    <div>close</div>
+                    <div>delete</div>
+                    <div>util</div>
+                    <div>prev</div>
+                    <div>next</div>
+                    <div>keyword</div>
+                    <div>wrap</div>
+                    <div>area</div>
+                    <div>group</div>
+                    <div>marker</div>
+                    <div>option</div>
+                    <div>word</div>
+                    <div>clear</div>
+                    <div>count</div>
+                    <div>num</div>
+                    <div>number</div>
+                    <div>unit</div>
+                    <div>card</div>
+                </div>
+
+                <div class="h3">은행 관련 키워드</div>
+                <div class="class-list">
+                    <div>home</div>
+                    <div>finance</div>
+                    <div>payment</div>
+                    <div>exchange</div>
+                    <div>tax</div>
+                    <div>myallone</div>
+                    <div>account</div>
+                    <div>navigation</div>
+                    <div>utility</div>
+                    <div>admin</div>
+                    <div>commodity</div>
+                    <div>group</div>
+                    <div>mydata</div>
+                    <div>smart</div>
+                    <div>life</div>
+                    <div>big</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- [컨텐츠 끝] -->
+
+</div>
+
+</div>
+
+    <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/libs/anime/lib/anime.min.js"></script>
+    <script>
+        $(function() {
+            $('.code').each(function(i, el) {
+                $(el).text($(el).children().text().trim());
+            });
+        });
+    </script>
+</body>
+</html>

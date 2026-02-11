@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+    <link rel="stylesheet" href="../../assets/css/util.css">
+</head>
+<body>
+    <div id="layer" class="layer">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">이체 주기 선택</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <!-- [231222] 공통 다이얼방식 변경요청건으로 수정, 공란용 li 제거 -->
+                    <div class="datepicker-widget cycle-type">
+                        <ul class="cycle">
+                            <li>매일</li>
+                            <li>매주</li>
+                            <li class="on">매월</li>
+                        </ul>
+                        <div class="cycle-list" >
+                            <ul class="everyday">
+                                <li class="on">매일</li>
+                            </ul>
+                            <ul class="week">
+                                <li>월요일</li>
+                                <li>화요일</li>
+                                <li>수요일</li>
+                                <li class="on">목요일</li>
+                                <li>금요일</li>
+                                <li>토요일</li>
+                                <li>일요일</li>
+                            </ul>
+                            <ul class="day" style="display:block">
+                                <li>01일</li>
+                                <li>02일</li>
+                                <li>03일</li>
+                                <li>04일</li>
+                                <li>05일</li>
+                                <li class="on">06일</li>
+                                <li>07일</li>
+                                <li>08일</li>
+                                <li>09일</li>
+                                <li>10일</li>
+                                <li>11일</li>
+                                <li>12일</li>
+                                <li>13일</li>
+                                <li>14일</li>
+                                <li>15일</li>
+                                <li>16일</li>
+                                <li>17일</li>
+                                <li>18일</li>
+                                <li>19일</li>
+                                <li>20일</li>
+                                <li>21일</li>
+                                <li>22일</li>
+                                <li>23일</li>
+                                <li>24일</li>
+                                <li>25일</li>
+                                <li>26일</li>
+                                <li>27일</li>
+                                <li>28일</li>
+                                <li>29일</li>
+                                <li>30일</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg -primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+    </script>
+</body>
+</html>

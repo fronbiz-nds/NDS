@@ -1,0 +1,92 @@
+<!-- 외환 실행코드 fnGo("코어상품코드", "채널상품코드", "상품구분") -->
+<div class="submain-banner-wrap -exchange">
+    <div class="submain-banner-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="javascript:fnGo('1045211700002', '60000533', '01')">
+                    <div class="submain-banner type01">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">통장 하나로 20개국 통화를 <br>자유롭게 입출금</div>
+                            <div class="prd-sub">다통화외화예금</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:fnGo('1045412200002', '60000534', '01')">
+                    <div class="submain-banner type02">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">목표 환율 도달 시 자동 해지,<br>환차익으로 환테크</div>
+                            <div class="prd-sub">NH환테크 외화회전예금I</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:fnGo('1045511700001', '60000521', '01')">
+                    <div class="submain-banner type03">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">최대 10개국 통화를<br>자유롭게 적립</div>
+                            <div class="prd-sub">다통화 월복리 외화적립예금</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="pagination-wrap">
+            <div class="swiper-pagination"></div>
+            <a href="javascript:void(0);" class="button-stop" role="button">
+                <span class="hide">정지</span>
+            </a>
+        </div>
+    </div> 
+</div>
+
+<script>
+    $(function(){
+        var mainbanner = new Swiper('.submain-banner-swiper',{
+            pagination : {
+                el : '.swiper-pagination',
+                clickable :false,
+                type:'fraction'
+            },
+            loop:true,
+            autoplay:{
+                delay: 4000
+            },
+            speed:500,
+            spaceBetween:24,
+            grabCursor:true,
+            observer : true,
+            observeParents : true
+            // [240312] 사업부 요청으로 배너 액션 수정
+        });
+
+        mainbanner.on('touchEnd', function (transitionEnd) {
+            var autoPlay = mainbanner.autoplay.running
+            if(autoPlay == false){
+                $('.pagination-wrap .button-stop').addClass('-active').find('.hide').text('시작');
+            };
+        });
+
+        // 배너 시작, 정지
+        $('.submain-banner-wrap .button-stop').click(function(){
+            $(this).toggleClass('-active');
+            if($(this).hasClass('-active')){
+                $(this).find('.hide').text('시작');
+                mainbanner.autoplay.stop();
+            }
+            else {
+                $(this).find('.hide').text('정지');
+                mainbanner.autoplay.start();
+            }
+        });
+
+        // 배너 한개일 경우 비활성화
+        if( $('.submain-banner-wrap .swiper-slide').length <= 3 ){
+            $('.submain-banner-wrap .swiper-wrapper').addClass('-disabled');
+            $('.submain-banner-wrap .pagination-wrap').attr('aria-hidden','true');
+            mainbanner.destroy();
+        };
+    })
+</script>

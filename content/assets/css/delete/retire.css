@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* 퇴직연금 */
+
+/* IRP가입 */
+.case-wrap.-sm2 {margin-top:4rem;}
+.case-wrap.-xs2 {margin-top:1.6rem;}
+.case-wrap.-xxs2 {margin-top:.8rem;}
+
+.info-tree {text-align:center; margin:3.2rem 0 4rem 0;}
+
+.label-sub {margin-left:.4rem; font-size:1.3rem; color:var(--F04);}
+
+/* 투자성향분석 icon */
+.invest-qna .answer-list .item .invest-unit.retire-icon1::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-1.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon2::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-2.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon3::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-3.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon4::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-4.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon5::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-5.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon6::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-6.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon7::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-7.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon8::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-8.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon9::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-9.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon10::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-10.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon11::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-11.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon12::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-12.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon13::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-13.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon14::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-14.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon15::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-15.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon16::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-16.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon17::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-17.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon18::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-18.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon19::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-19.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon20::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-20.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon21::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-21.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon22::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-22.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon23::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-23.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon24::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-24.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon25::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-25.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon26::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-26.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon27::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-27.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon28::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-28.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon29::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-29.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon30::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-30.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon31::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-30.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon32::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-19.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon33::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-31.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon34::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-16.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon35::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-32.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon36::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-33.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon37::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-34.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon38::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-35.png);}
+.invest-qna .answer-list .item .invest-unit.retire-icon39::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-36.png);}
+/* 투자성향분석 icon 다크모드 */
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon1::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-1_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon2::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-2_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon3::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-3_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon4::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-4_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon5::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-5_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon6::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-6_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon7::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-7_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon8::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-8_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon9::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-9_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon10::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-10_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon11::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-11_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon12::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-12_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon13::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-13_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon14::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-14_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon15::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-15_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon16::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-16_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon17::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-17_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon18::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-18_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon19::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-19_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon20::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-20_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon21::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-21_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon22::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-22_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon23::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-23_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon24::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-24_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon25::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-25_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon26::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-26_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon27::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-27_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon28::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-28_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon29::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-29_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon30::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-30_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon31::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-30_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon32::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-19_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon33::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-31_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon34::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-16_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon35::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-32_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon36::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-33_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon37::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-34_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon38::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-35_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.retire-icon39::after {background-image:url(../imgs/img/retire/ico-FMHA-0106060000F01-36_dk.png);}
+
+.jsSrveyWrap .field.jsSrveyCurrent ~ .field{display:none;}
+
+.p.date-result {margin-top:1.2rem; font-size:1.4rem; color:var(--F04);}
+
+.user-bold {color:var(--F01); font-weight:bold;}
+
+.product-h-group {display:flex; width:100%; height:3.4rem;}
+.product-h-group .total-text {line-height:3.6rem; color:var(--F01); font-size:1.5rem;}
+.product-h-group .total-num {line-height:3.2rem; margin-left:1.2rem; color:var(--point); font-size:2.6rem; font-weight:bold;}
+
+.hr.-divid {height:.1rem; margin:0 var(--out); background-color:var(--G08);}
+
+.fixed-wrap.-on .fixed-inner {position:fixed; top:5rem; left:0; width:100%; padding-left:2.4rem; background-color:var(--G10); animation:fixedForm .2s both; z-index:1;}
+@keyframes fixedForm {
+    0% {top:5rem;}
+    80% {box-shadow:0 .3rem .6rem rgba(85, 85, 85, 5%);}
+    100% {top:5rem; box-shadow:0 .3rem .6rem rgba(85, 85, 85, 5%);}
+}
+.fixed-wrap {height:9rem;}
+.fixed-wrap.-on .product-h-group .total-num {line-height:3.6rem; font-size:2rem; transition:all .2s linear;}
+.fixed-wrap + .hr.-divid + .subs-panels .subs-panel {padding:0;}
+
+.guide-outer {height:6.7rem; line-height:6.7rem; text-align:center; margin:0 -2.4rem; background-color:var(--G09);}
+.guide-outer .guide-text {font-size:1.4rem; color:var(--F01);}
+
+.ratio {display:flex; align-items:center; position:fixed; top:-5rem; left:0; width:100%; padding:1.2rem 2.4rem; background-color:var(--G10); border-bottom:.1rem solid var(--G08); box-shadow:0 .5rem .6rem .1rem rgba(85, 85, 85, 5%);}
+.ratio.-active {top:6.8rem; z-index:999; /*animation:ratioMove .2s ease-in-out;*/}
+/* @keyframes ratioMove {
+    0% {opacity:0;}
+    100% {opacity:1;}
+} */
+.ratio .ratio-text {color:var(--F01); font-size:1.5rem;}
+.ratio .ratio-num {line-height:2.3rem; margin-left:1.2rem; font-size:2rem; font-weight:bold;}
+.ratio.-two {display:block;}
+.ratio.-two .item {display:flex; justify-content:space-between; align-items:center;}
+.ratio.-two .item + .item {margin-top:1.2rem;}
+.ratio.-two .ratio-num {margin-left:0; color:var(--F03);}
+.ratio.-two.-portfolio.-active {top:5rem;}
+/* .ratio.-on {top:7.6rem; z-index:10; animation:ratioMove .3s ease-in-out;}
+@keyframes ratioMove {
+    0% {top:-5rem; box-shadow:none;}
+    100% {top:7.6rem; box-shadow:0 .5rem .6rem .1rem rgba(85, 85, 85, 5%);}
+} */
+
+.dl.-box.-ratio > div {align-items:center;}
+.dl.-box.-ratio > div + div {margin-top:1.6rem;}
+.dl.-box.-ratio dt {padding:0;}
+.dl.-box.-ratio dd {padding:0;}
+
+.grade-notice {margin-top:2.4rem; color:var(--F01); font-size:1.4rem;}
+.grade-notice.-panel-case {margin:1.6rem 0 1rem 0;}
+
+.product-notice {position:relative; width:100%; padding-left:2.8rem; background:url(../imgs/img/utility/ico-gray-notice.png) no-repeat 0 -.2rem / 2.4rem auto; font-size:1.4rem; color:var(--F04)}
+.product-notice.-under {margin:.8rem 0 0 0;}
+
+.percent-text {font-size:2.2rem; font-weight:normal; line-height: 1.2;}
+.current-percent {font-size:2.2rem; font-weight:bold;}
+.max-percent {color:var(--F03); font-size:2.2rem; font-weight:bold;}
+
+.notice-box {width:100%; padding:2rem 1.6rem; background-color:var(--G09); border-radius:1.6rem;}
+.notice-box > .product-notice {font-weight:500;}
+
+.field .mix .text.-percent .icon-plus {background:url(../imgs/img/utility/ico-input-plus.png) no-repeat 2rem center / 2.4rem auto;}
+.field .mix .text.-percent .icon-minus {background:url(../imgs/img/utility/ico-input-minus.png) no-repeat 2rem center / 2.4rem auto;}
+.field .mix .text.-percent .icon-plus input,
+.field .mix .text.-percent .icon-minus input {padding-left:4.8rem;}
+
+.join-box-radio {position:relative;}
+.join-box-radio input {position:absolute; width:100%; height:100%; font-size:1.4rem; font-weight:500; color:var(--font2)}
+.join-box-radio label {display:inline-flex; flex-direction:column; justify-content:center; align-items:center; position:relative; z-index:2; width:100%; padding:1.6rem; background-color:var(--bg-box-radio); color:var(--F01); font-weight:500; font-size:1.5rem; line-height:1.2; text-align:center; cursor:pointer; border-radius:1rem;}
+.join-box-radio label:after {content:""; position:absolute; top:0; left:0; width:100%; height:100%; border:1px solid var(--border-box-radio); border-radius:1rem;}
+.join-box-radio label span.sub {font-size:1.2rem; margin-top:.4rem;}
+.join-box-radio input:checked + label {z-index:3; background-color:var(--bg-box-radio-checked);}
+.join-box-radio input:checked + label:after {border-color:var(--border-box-radio-checked);}
+.join-box-radio input:disabled + label{color:var(--color-box-radio-disabled); border-color: var(--border-box-radio-disabled);}
+.join-box-radio.-left label {align-items:flex-start; text-align:left;}
+.join-box + .join-box {margin-top:1rem;}
+.join-box.-point .join-box-radio input:checked + label:after {border-color:var(--point);}
+.join-box-radio label span.sub-text {margin-top:.4rem; font-size:1.3rem; font-weight:normal; color:var(--F03); line-height:1.4;}
+
+.info-wrap.-retire {display:flex;}
+.info-wrap.-retire .info {flex:1; white-space:nowrap;}
+.info-wrap.-retire .refresh-btn {margin-top:1rem; padding-left:1.8rem; background:url(../imgs/img/retire/ico-FMHD-0100000000F01-1.png) no-repeat 0 center / 1.6rem auto; vertical-align:middle; color:var(--F01); font-size:1.4rem;}
+
+.custom-key-wrap.-retire {margin-top:2.4rem;}
+
+.limit-btn {text-align:right; margin-top:1.2rem;}
+
+.posible-fund-text {color:var(--F01); font-size:1.5rem; font-weight:500;}
+.posible-fund-text > .all-fund-level {color:var(--font2); font-size: 1.5rem;}
+
+/* 투자성향별 가입 가능 펀드 */
+.select.-tend > button {padding:1.6rem 3.4rem 1.6rem 6.4rem;}
+/* 투자유형 icon */
+.select.-tend > button > span[class*="-grade"] {display:inline-block; position:absolute; top:50%; left:2rem; margin:-1.8rem 0; width:3.6rem; height:3.6rem; background-repeat:no-repeat; background-position:center; background-size:3.6rem auto;}
+.select.-tend > button > span.-grade1-icon {background-image:url(../imgs/img/retire/ico-util-grade1.png);}
+.select.-tend > button > span.-grade2-icon {background-image:url(../imgs/img/retire/ico-util-grade2.png);}
+.select.-tend > button > span.-grade3-icon {background-image:url(../imgs/img/retire/ico-util-grade3.png);}
+.select.-tend > button > span.-grade4-icon {background-image:url(../imgs/img/retire/ico-util-grade4.png);}
+.select.-tend > button > span.-grade5-icon {background-image:url(../imgs/img/retire/ico-util-grade5.png);}
+/* 등급 icon */
+.select.-tend > button > span[class*="-level"] {display:inline-block; position:absolute; top:50%; left:2rem; margin:-1.8rem 0; width:3.6rem; height:3.6rem; background-repeat:no-repeat; background-position:center; background-size:3.6rem auto;}
+.select.-tend > button > span.-level1 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-6.png);}
+.select.-tend > button > span.-level2 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-7.png);}
+.select.-tend > button > span.-level3 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-8.png);}
+.select.-tend > button > span.-level4 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-9.png);}
+.select.-tend > button > span.-level5 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-10.png);}
+.select.-tend > button > span.-level6 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-11.png);}
+
+/* 운용상품조회 */
+.info-dl {margin-top:.8rem; font-size:1.4rem; font-weight:normal; color:var(--F05);}
+.info-dl div {display:flex; align-items:center;}
+.info-dl dt {position:relative; margin-right:1.2rem;}
+.info-dl dt::after {content:""; position:absolute; top:50%; right:-1.2rem; transform:translateY(-50%); width:.1rem; height:1.4rem; border:.1rem solid var(--G07);}
+.info-dl dd {margin-left:1.2rem;}
+
+.info-standard {margin-top:2.8rem;}
+.info-standard .standard-h {font-size:1.4rem; color:var(--F03);}
+.info-standard .standard-price {font-size:2.6rem; font-weight:bold;}
+.info-standard .standard-price span {margin-left:.6rem; font-size:1.8rem;}
+.info-standard .standard-value {display:flex; flex-wrap:wrap; align-items:center; margin-top:1.2rem;}
+.info-standard .standard-value .value-item {width:calc(100% / 3); padding-right:1rem;}
+.info-standard .standard-value .value-item:last-child {padding-right:0;}
+.info-standard .standard-value .value-item .month-text {font-size:1.4rem; color:var(--F03);}
+.info-standard .standard-value .value-item > span {font-size:1.8rem; font-weight:500;}
+
+.button.-xs.-inline.-inquiry {min-height:2.6rem; padding:.4rem 1rem .4rem 2.6rem; background:url(../imgs/img/retire/ico-retire-filter.png) no-repeat .8rem center / 1.6rem auto;}
+body.dark-mode .button.-xs.-inline.-inquiry {background:url(../imgs/img/retire/ico-retire-filter_dk.png) no-repeat .8rem center / 1.6rem auto;}
+
+/* DC가입 */
+.sticker.-dc {padding:0 var(--in) 1rem;}
+.dc-complete > .info-main {padding:0; color:var(--font1); font-weight:500; font-size:1.6rem; line-height:1.2; word-break:break-word;}
+.dc-complete > .info-sub {margin-top:.6rem; padding:0; color:var(--font2); font-size: 1.3rem;}
+
+/* 연금설계 */
+.refresh-h-group + .field {margin-top:3.2rem;}
+.refresh-h-group {display:flex; justify-content:space-between; align-items:center; margin-top:3.2rem;}
+.refresh-h-group .refresh-h5 {padding:0; color:var(--font1); font-weight:700; font-size:1.6rem; line-height:1.2; word-break:break-word;}
+.refresh-h-group .refresh-btn {padding-left:1.8rem; line-height:1.6rem; background:url(../imgs/img/retire/ico-FMHD-0100000000F01-1.png) no-repeat 0 center / 1.6rem auto; vertical-align:middle; font-size:1.4rem;}
+.dark-mode .refresh-h-group .refresh-btn {background-image:url(../imgs/img/retire/ico-FMHD-0100000000F01-1_dk.png);}
+
+.divide-line {border-top:.1rem solid var(--G07);}
+.dl > div + .divide-line {margin-top:1.6rem;}
+.divide-line {padding-top:2.4rem;}
+.divide-line > .h5 {margin-bottom:1.2rem;}
+
+.hometax-img {display:block; width:17.2rem; height:4.8rem; margin:1.2rem auto 2.2rem auto;}
+.incometax-img {display:block; width:25.6rem; height:10.2rem; margin-top:1.4rem;}
+
+/* 포트폴리오 */
+.portfolios {margin-top:3.2rem;}
+.portfolios > a {display:block;}
+.portfolios > a:first-child .portfolio {margin-top:0;}
+.portfolios .portfolio {margin-top:1.6rem; padding:1.6rem 2rem 1.6rem 6.4rem; border:.1rem solid var(--G07); border-radius:1.2rem;}
+.portfolios .portfolio.-icon1 {background:url(../imgs/img/retire/ico-FMHC-0100000000F01-1.png) no-repeat 2rem center / 3.6rem auto;}
+.portfolios .portfolio.-icon2 {background:url(../imgs/img/retire/ico-FMHC-0100000000F01-2.png) no-repeat 2rem center / 3.6rem auto;}
+.portfolios .portfolio.-icon3 {background:url(../imgs/img/retire/ico-FMHC-0100000000F01-3.png) no-repeat 2rem center / 3.6rem auto;}
+.portfolios .portfolio.-icon4 {background:url(../imgs/img/retire/ico-FMHC-0100000000F01-4.png) no-repeat 2rem center / 3.6rem auto;}
+.portfolios .portfolio .info {color:var(--F04); font-size:1.3rem;}
+.portfolios .portfolio .name {color:var(--F01); font-size:1.6rem; font-weight:500;}
+
+.ol.-step.-icon.-portfolio > li:nth-of-type(1):before {background-image:url(../imgs/img/retire/ico-FMHC-0101000000F01-P-1.png); background-size:2.4rem auto;}
+.ol.-step.-icon.-portfolio > li:nth-of-type(2):before {background-image:url(../imgs/img/retire/ico-FMHC-0101000000F01-P-2.png); background-size:2.4rem auto;}
+.ol.-step.-icon.-portfolio > li:nth-of-type(3):before {background-image:url(../imgs/img/retire/ico-FMHC-0101000000F01-P-3.png); background-size:2.4rem auto;}
+.ol.-step.-icon.-portfolio > li:nth-of-type(4):before {background-image:url(../imgs/img/retire/ico-FMHC-0101000000F01-P-4.png); background-size:2.4rem auto;}
+.dark-mode .ol.-step.-icon.-portfolio > li:nth-of-type(1):before {background-image:url(../imgs/img/retire/ico-FMHC-0101000000F01-P-1_dk.png); background-size:2.4rem auto;}
+.dark-mode .ol.-step.-icon.-portfolio > li:nth-of-type(2):before {background-image:url(../imgs/img/retire/ico-FMHC-0101000000F01-P-2_dk.png); background-size:2.4rem auto;}
+.dark-mode .ol.-step.-icon.-portfolio > li:nth-of-type(3):before {background-image:url(../imgs/img/retire/ico-FMHC-0101000000F01-P-3_dk.png); background-size:2.4rem auto;}
+.dark-mode .ol.-step.-icon.-portfolio > li:nth-of-type(4):before {background-image:url(../imgs/img/retire/ico-FMHC-0101000000F01-P-4_dk.png); background-size:2.4rem auto;}
+.dark-mode .ol.-step.-icon.-portfolio > li > .title {color:var(--F01);}
+
+.info.-bordered.-portfolio .info-date {margin-top:.4rem; color:var(--F04); font-size:1.4rem;}
+
+.portfolio-product > .selection {padding-top:0;}
+
+/* 차트 */
+.chart-area {position:relative;}
+.chart-area.-flex {display:flex; justify-content:space-around; align-items:center;}
+
+.chart-title.-type1 {margin:0 0 1.2rem 0; text-indent:0; color:var(--F03); font-size:1.4rem; font-weight:500;}
+.chart-title.-type2 {margin:0 0 1.6rem 0; text-indent:0; color:var(--F03); font-size:1.2rem; font-weight:bold;}
+
+.chart-area .chart-labels.-line {display:flex; justify-content:space-evenly; margin-top:1.2rem;}
+.chart-area .chart-labels.-line .chart-label {position:relative; display:flex; align-items:center; color:var(--F03); font-size:1rem;}
+.chart-area .chart-labels.-line .chart-label::before {content:""; width:3rem; height:.3rem; margin-right:.4rem;}
+.chart-area .chart-labels.-line .chart-label.-max::before {background-color:#fb4e4d;}
+.chart-area .chart-labels.-line .chart-label.-average:before {background-color:#ffcf4d;}
+.chart-area .chart-labels.-line .chart-label.-min::before {background-color:#307aef;}
+.chart-area .chart-labels.-line .chart-label::after {content:""; position:absolute; top:50%; left:1.1rem; margin:-.35rem 0; width:.7rem; height:.7rem; border-radius:100%;}
+.chart-area .chart-labels.-line .chart-label.-max::after {background-color:#fb4e4d;}
+.chart-area .chart-labels.-line .chart-label.-average:after {background-color:#ffcf4d;}
+.chart-area .chart-labels.-line .chart-label.-min::after {background-color:#307aef;}
+
+.chart-area .chart-labels.-doughnut {padding-left:2rem;}
+.chart-area .chart-labels.-doughnut .chart-label {position:relative; display:flex; align-items:flex-start; color:var(--F03); font-size:1.2rem;}
+.chart-area .chart-labels.-doughnut .chart-label::before {content:""; width:1.2rem; height:1.2rem; margin:.3rem .6rem 0 0; border-radius:.2rem;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(1):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(1):before {background-color:#5a5fd8;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(2):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(2):before {background-color:#ff8a65;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(3):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(3):before {background-color:#2bc4c0;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(4):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(4):before {background-color:#ffcb3e;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(5):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(5):before {background-color:#218fef;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(6):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(6):before {background-color:#974bbf;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(7):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(7):before {background-color:#7fde7b;}
+.chart-area .chart-labels.-doughnut .chart-label + .chart-label {margin-top:1rem;}
+.chart-area .chart-labels.-stack-bar .chart-label + .chart-label {margin-top:.4rem;}
+
+.chart-both {display:flex; padding-left:.8rem;}
+.chart-both .chart-area {width:50%;}
+.chart-both .chart-area .chart-labels.-stack-bar {position:absolute; bottom:0; right:50%; width:100%; padding-left:3.2rem; transform:translateX(50%);}
+.chart-both .chart-area .chart-labels.-stack-bar .chart-label {position:relative; display:flex; align-items:center; color:var(--F03); font-size:1rem; font-weight:normal;}
+.chart-both .chart-area .chart-labels.-stack-bar .chart-label::before {content:""; line-height:.6rem; width:.8rem; height:.8rem; margin-right:.6rem;}
+
+.chart-area .chart-labels.-x {display:flex; justify-content:space-between;}
+.chart-area .chart-labels.-x .chart-label {text-align:center; width:50%; margin-left:2.2rem; color:var(--F03); font-size:1.2rem;}
+.chart-area .chart-labels.-x .chart-label + .chart-label {margin-left:1.2rem;}
+/* // 차트 */
+
+.profit-info {color:var(--F01); font-size:1.5rem;}
+.profit-info .profit-percent {margin-left:1.2rem; font-size:2.6rem; font-weight:bold;}
+
+.selection .info.-bordered .top-tooltip {display:flex; justify-content:space-between; align-items:center;}
+.selection .info.-bordered .badge-tooltip {color:var(--F04); font-size:1.2rem;}
+
+.myportfolio-h-group {display:flex; justify-content:space-between; align-items:center; margin:0 0 1.6rem 0;}
+.myportfolio-h-group .title {color:var(--F01); font-size:1.6rem; font-weight:bold;}
+.myportfolio-h-group .link-text {color:var(--F01); font-size:1.4rem; font-weight:500;}
+.myportfolio-h-group + .field {margin-top:1.6rem;}
+
+.confirm-boxs {margin-top:3rem;}
+.confirm-boxs > a {display:block;}
+.confirm-boxs > a + a {margin-top:1.2rem;}
+.confirm-box {position:relative; padding:1.6rem 5.2rem 1.6rem 2rem; border:.1rem solid var(--G07); border-radius:1.2rem;}
+.confirm-box::after {content:""; position:absolute; top:50%; transform:translateY(-50%); right:2rem; width:2.4rem; height:2.4rem; background:url(../imgs/img/retire/ico-FMHC-0402040000F01-1.png) no-repeat center / 2.4rem auto;}
+.dark-mode .confirm-box::after {background-image:url(../imgs/img/retire/ico-FMHC-0402040000F01-1_dk.png);}
+.confirm-box .main-info {color:var(--F01); font-size:1.6rem; font-weight:500;}
+.confirm-box .sub-info {margin-top:.4rem; color:var(--F04); font-size:1.3rem;}
+
+.field.-portfolio {margin-top:.8rem;}
+
+.dl .black-dt {color:var(--F01);}
+
+.notice-title {margin:1.4rem 0 1rem 0; color:var(--F01); font-size:1.5rem; font-weight:bold;}
+.notice-title:first-child {margin-top:0;}
+
+.recommend-portfolio {margin:2.6rem 0 1.6rem 0; color:var(--F01); font-size:2rem; font-weight:bold;}
+
+.portfolio-title {padding-bottom:1.2rem; color:var(--F01); font-size:1.6rem; font-weight:500; word-break:break-all;}
+
+.data-box.-sell {padding:1.3rem 1.2rem;}
+.data-box.-sell .data-box-title {font-size:1.5rem; font-weight:400;}
+.data-box.-sell .data-box-content {font-size:1.5rem; font-weight:500;}

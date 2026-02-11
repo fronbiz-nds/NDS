@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">swiper</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="case-wrap">
+                        <div class="swiper swiper-number">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide" >
+                                        <a href="javascript:void(0)" class="banner-swiper"
+                                            onclick="javascript:parent.fn_goAllOnePage_Template('ABCUP1804R',{'event_no':'3726'},'ABNHFIN_0002','나무카드 이벤트')">
+                                            <div class="wrap" style="background-color:#dfedec;">
+                                                <div class="banner-content -ab-banner-1">
+                                                    배너
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">                                      
+                                        <a href="javascript:void(0)" class="banner-swiper"
+                                            onclick="javascript:parent.fn_goAllOnePage_Template('ABCUP1804R',{'event_no':'4063'},'ABNHFIN_0001','손해보험 이벤트')">
+                                            <div class="wrap" style="background-color:#f1e8f2;">
+                                                <div class="banner-content -ab-banner-1">
+                                                    배너
+                                                </div>
+                                            </div>
+                                        </a>                                  
+                                    </li>
+                                    <li class="swiper-slide">                                      
+                                        <a href="javascript:void(0)" class="banner-swiper"
+                                            onclick="javascript:parent.fn_goAllOnePage_Template('ABCUP1804R',{'event_no':'4063'},'ABNHFIN_0001','손해보험 이벤트')">
+                                            <div class="wrap" style="background-color:#f8d0e7;">
+                                                <div class="banner-content -ab-banner-1">
+                                                    배너
+                                                </div>
+                                            </div>
+                                        </a>                                  
+                                    </li>
+                                </ul>
+
+                                <div class="pagination-wrap indicator">
+                                    <div class="swiper-pagination">
+                                        <span class="swiper-pagination-current">1</span> <span class="swiper-pagination-total">3</span>
+                                    </div>
+                                    <a href="javascript:void(0);" class="button-stop" role="button">
+                                        <span class="hide">정지</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+    var swiper = new Swiper(".swiper-container", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            type: "fraction",
+        },
+        observer: true,
+        observerParents: true,
+    });
+
+    // 
+    // var bannerEventListSwiper = new Swiper('.swiper.swiper-number',{
+	// 		observer:true,
+	// 		observerParents:true,
+	// 		pagination:{
+	// 			el:'.swiper-pagination',
+	// 			type:'fraction',
+	// 			renderFraction: function(current, total) {
+	// 				return '<span class="hide">총</span><span class="' + total + '" ></span>' + 
+	// 					   '<i class="line"><span class="hide">장 슬라이드 중</span></i>' + 
+	// 					   '<span class="' + current + '"></span><span class="hide">번째</span>'
+	// 			}
+	// 		},
+	// 		loop:true,
+	// 		autoplay:{
+	// 			delay: 4000
+	// 		},
+	// 		speed:500,
+	// 		spaceBetween:40,
+	// 		wahchOverflow:true
+	// 	});
+
+	// 	bannerEventListSwiper.on('touchEnd', function (transitionEnd) {
+	// 		var autoPlay = bannerEventListSwiper.autoplay.running
+	// 		if(autoPlay == false){
+	// 			$('.pagination-wrap .button-stop').addClass('-pause').find('.hide').text('시작');
+	// 		};
+	// 	});
+
+		// 시작, 정지
+		// $('.pagination-wrap .button-stop').click(function(){
+		// 	$(this).toggleClass('-pause');
+		// 	if($(this).hasClass('-pause')){
+		// 		$(this).find('.hide').text('시작');
+		// 		bannerEventListSwiper.autoplay.stop();
+		// 	}
+		// 	else {
+		// 		$(this).find('.hide').text('정지');
+		// 		bannerEventListSwiper.autoplay.start();
+		// 	}
+		// });
+
+		// // 베너가 한개일 경우 비활성화
+		// if( $('.submain-cms .swiper-slide').length <= 3 ){
+		// 	$('.submain-cms .swiper-wrapper').addClass('-disabled');
+		// 	$('.submain-cms .paginations').addClass('-disabled');
+		// 	$('.submain-cms').removeClass('-swiping-mode');
+		// };
+		/* // */
+
+        // test
+        const swiperWrapper = document.querySelector('.swiper-wrapper'); 
+        const swiperPaginationCurrent = document.querySelector('.swiper-pagination-current'); 
+        const swiperPaginationTotal = document.querySelector('.swiper-pagination-total'); 
+        const totalSlides = document.querySelectorAll('.swiper-slide').length; 
+        const stopButton = document.querySelector('.button-stop');
+        const slides = document.querySelectorAll('.swiper-slide');
+        
+        let currentIndex = 0; 
+        let isPaused = false;
+        swiperPaginationTotal.textContent = totalSlides; 
+
+        // 슬라이드에 접근성 텍스트
+        slides.forEach((slide, index) => { 
+            slide.setAttribute('aria-label', `5장 슬라이드 중 ${index + 1}번째 슬라이드`); 
+        });
+        
+        function updateSwiper() { 
+            swiperWrapper.style.transform = `translateX(-${currentIndex * 100}%)`; 
+            swiperPaginationCurrent.textContent = currentIndex + 1;
+        }
+
+        function togglePause() { 
+            isPaused = !isPaused; 
+            if (isPaused) { 
+                stopButton.classList.add('-pause'); 
+                stopButton.querySelector('.hide').textContent = '재생'; 
+                stopButton.setAttribute('aria-label', '재생');
+                clearInterval(swiperInterval); 
+            } else { 
+                stopButton.classList.remove('-pause'); 
+                stopButton.querySelector('.hide').textContent = '정지'; 
+                stopButton.setAttribute('aria-label', '정지');
+                swiperInterval = setInterval(nextSlide, 3000); 
+            } 
+        }
+
+        function nextSlide() { 
+            currentIndex = (currentIndex + 1) % totalSlides; 
+            updateSwiper();
+        }
+        
+        function prevSlide() { 
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; 
+            updateSwiper();
+        }
+
+        let swiperInterval = setInterval(nextSlide, 3000);
+
+        stopButton.addEventListener('click', togglePause); 
+        swiperPaginationCurrent.addEventListener('click', () => { 
+            clearInterval(swiperInterval); 
+            prevSlide(); 
+            if (!isPaused) { 
+                swiperInterval = setInterval(nextSlide, 3000); 
+            } 
+        }); 
+        
+        swiperPaginationTotal.addEventListener('click', () => { 
+            clearInterval(swiperInterval); 
+            nextSlide(); 
+            if (!isPaused) { 
+                swiperInterval = setInterval(nextSlide, 3000); 
+            }
+        });
+    </script>
+</body>
+</html>

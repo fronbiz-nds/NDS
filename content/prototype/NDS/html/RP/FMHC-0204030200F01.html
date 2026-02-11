@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">포트폴리오 설계</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="h2-group">
+                        <h2 class="h2">예금상품을 추가해 주세요
+                            <span class="tooltip">
+                                <button type="button" class="trigger">
+                                    <span class="hide">툴팁</span>
+                                </button>
+                                <span class="panel">
+                                    <span class="title">예금상품 비율설정</span>
+                                    <span class="t-content">
+                                        <span class="dot">포트폴리오상품은 추천MP의 비율과 포트폴리오의 비중을 곱하여 자동으로 설정됩니다.</span>
+                                        <span class="dot">예금상품의 상품의 비율은 고객이 직접 입력하며 10% 단위로 설정 가능합니다.</span>
+                                        <span class="dot">예금과 포트폴리오상품의 비율의 합계가 100%가 되어야 합니다.</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </h2>
+                    </div>
+
+                    <div class="case-wrap">
+                        <div class="card -sum">
+                            <dl class="dl -box -highlight">
+                                <div>
+                                    <dt>예금</dt>
+                                    <dd><span class="point">0%</span> / 50%</dd>
+                                </div>
+                                <div>
+                                    <dt>포트폴리오</dt>
+                                    <dd><span class="point">0%</span> / 50%</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <!-- [CASE] 포트폴리오 50~90% 설정한 경우 예금상품, 포트폴리오상품 모두 노출 -->
+                    <div class="case-wrap">
+                        <h4 class="h4">예금상품</h4>
+                        <!-- [CASE] 포트폴리오 100% 설정한 경우 미노출 -->
+                        <button type="button" class="button -tertiary -rg">상품추가</button>
+                        <!-- // [CASE] 포트폴리오 100% 설정한 경우 미노출 -->
+    
+                        <div class="mixed-input">
+                            <ul>
+                                <li>
+                                    <div class="account card">
+                                        <div class="badges">
+                                            <span class="badge line-gray">예금</span>
+                                        </div>
+                                
+                                        <div class="info">
+                                            <span class="name">
+                                                <span>(DC/IRP)산업은행 정기예금 3개월</span>
+                                            </span>
+                                        </div>
+                                
+                                        <div class="input -bordertype">
+                                            <div class="mix -fieldin">
+                                                <span class="left-text">운용비율</span>
+                                                <div class="text -percent -plh-right" data-clear="false">
+                                                    <input type="tel" id="gg" class="right num-call" aria-haspopup="true" placeholder="1 ~ 99 이내로 입력"
+                                                        aria-haspopup="true" title="운용비율 입력" value="20" readonly>
+                                                    <div class="percent">%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="button" class="del-btn -fixed"><span class="hide">삭제</span></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="account card">
+                                        <div class="badges">
+                                            <span class="badge line-gray">예금</span>
+                                        </div>
+                                
+                                        <div class="info">
+                                            <span class="name">
+                                                <span>(DC/IRP)산업은행 정기예금 3개월</span>
+                                            </span>
+                                        </div>
+                                
+                                        <div class="input -bordertype">
+                                            <div class="mix -fieldin">
+                                                <span class="left-text">운용비율</span>
+                                                <div class="text -percent -plh-right" data-clear="false">
+                                                    <input type="tel" id="gg" class="right num-call" aria-haspopup="true" placeholder="1 ~ 99 이내로 입력"
+                                                        aria-haspopup="true" title="운용비율 입력" readonly>
+                                                    <div class="percent">%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="button" class="del-btn -fixed"><span class="hide">삭제</span></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="account card">
+                                        <div class="badges">
+                                            <span class="badge line-gray">예금</span>
+                                        </div>
+                                
+                                        <div class="info">
+                                            <span class="name">
+                                                <span>(DC/IRP)산업은행 정기예금 3개월</span>
+                                            </span>
+                                        </div>
+                                
+                                        <div class="input -bordertype">
+                                            <div class="mix -fieldin">
+                                                <span class="left-text">운용비율</span>
+                                                <div class="text -percent -plh-right" data-clear="false">
+                                                    <input type="tel" id="gg" class="right num-call" aria-haspopup="true" placeholder="1 ~ 99 이내로 입력"
+                                                        aria-haspopup="true" title="운용비율 입력" readonly>
+                                                    <div class="percent">%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="button" class="del-btn -fixed"><span class="hide">삭제</span></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- [CASE] 포트폴리오 100% 설정한 경우 노출 -->
+                        <div class="empty result">
+                            <p class="message">조회 결과가 없습니다.</p>
+                        </div>
+                        <!-- // [CASE] 포트폴리오 100% 설정한 경우 노출 -->
+                    </div>
+
+                    <!-- [CASE] 포트폴리오 50~90% 설정한 경우 + 상품 1개만 선택한 경우 비율자동 입력 & 포트폴리오상품 미노출 -->
+                    <div class="case-wrap">
+                        <h4 class="h4">포트폴리오상품</h4>
+                        <div class="selection card">
+                            <ul>
+                                <li>
+                                    <div class="int-rate -bordered">
+                                        <div class="top-area badges">
+                                            <span class="badge line-gray">펀드</span>
+                                            <span class="badge line-skyblue">보통위험</span>
+                                        </div>
+                                        <div class="data-info-main">
+                                            <div class="info-title">
+                                                우리토탈리턴증권자투자신탁<br>
+                                                [채권_재간접형]                                            
+                                            </div>
+                                        </div>
+                                        <div class="data-sub">
+                                            <span class="title">운용비율</span>
+                                            <span class="value">20%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="int-rate -bordered">
+                                        <div class="top-area badges">
+                                            <span class="badge line-gray">펀드</span>
+                                            <span class="badge line-skyblue">보통위험</span>
+                                        </div>
+                                        <div class="data-info-main">
+                                            <div class="info-title">
+                                                한국투자저축은행 정기예금 1년 개인형IRP                                            
+                                            </div>
+                                        </div>
+                                        <div class="data-sub">
+                                            <span class="title">운용비율</span>
+                                            <span class="value">20%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- // [CASE] 포트폴리오 50~90% 설정한 경우 + 상품 1개만 선택한 경우 비율자동 입력 포트폴리오상품 미노출 -->
+                    <!-- // [CASE] 포트폴리오 50~90% 설정한 경우 예금상품, 포트폴리오상품 모두 노출 -->
+                </div>
+
+                <div class="sticker">
+                    <div class="notice -active" data-role="fold">
+                        <button type="button" class="title" data-role="marker" title="펼쳐짐">알아두세요</button>
+                        <div class="panel" data-role="visible">
+                            <ul class="ul -bullet">
+                                <li>위 상품구성은 부담금 구분에 관계없이 운용비율 등록, 보유상품 변경 등록에 일괄 적용됩니다.</li>
+                                <li>보유하고 있는 원리금 보장상품이 [일괄 운용지시 설정] 의 상품 구성 내역에 포함되지 않았거나 적립금 구분별 해당 상품의 보유 비율보다 상품 구성의 비율이 낮은 경우, 해당 원리금 보장상품은 전액 혹은 일부 매도 처리됩니다.</li>
+                                <li>원리금 보장상품 매도 시 만기 적용 이자율이 아닌 중도해지에 따른 이자율이 적용됩니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg -primary">포트폴리오 신청</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        var h2Height = document.querySelector('.h2-group').clientHeight;
+        var dlHeight = document.querySelector('.dl.-box.-ratio').clientHeight;
+        var ratio = document.querySelector('.ratio');
+
+        window.addEventListener('scroll', function(){
+            if(window.scrollY > h2Height + dlHeight - 32) {
+                ratio.classList.add('-active');
+            }else {
+                ratio.classList.remove('-active');
+            }
+        })
+    </script>
+</body>
+</html>

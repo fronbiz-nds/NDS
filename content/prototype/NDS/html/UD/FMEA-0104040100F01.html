@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>펀드 | 상품상세</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+                    <h1 class="title">상품상세</h1>
+                    <div class="funcs">
+                        <button type="button" class="func -home"><span class="hide">홈</span></button>
+                        <button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner center">
+                    <h1 class="title">펀드</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="product-detail-wrap">
+                        <!-- 플로팅 버튼 -->
+                        <div class="floating-wrap">
+                            <div class="floating-btn" role="button"> 
+                                <p>원금손실<br>가능상품</p>  
+                            </div>
+                            <button type="button" class="floating_close" title="원금손실 가능상품 플로팅 콘텐츠 닫기"></button>
+                        </div>
+                        <!-- //플로팅 버튼 --> 
+                        <!-- 상품 안내 영역 -->
+                        <div class="procuct-summary">
+                            <div class="info-area pb-0">
+                                <div class="title-area">
+                                    <div class="flag-area"><span class="badge line-gray">계열사</span><span class="badge line-red">고난도</span></div>
+                                    <p class="top-para">글로벌 배당주 펀드</p>
+                                    <h2>HDS 3Value 지수연계 증권투자신탁 KSE-24호 (ELS-파생형) Ae</h2>
+                                    <ul class="ul -bullet -toparea">
+                                        <li>수수료 선취-온라인</li> 
+                                        <li>피델리티자산운용</li>
+                                    </ul>
+                                </div><!-- //.title-area -->
+                                
+                                <div class="subtitle-area">
+                                    <div class="product-cost-area -center-item">
+                                        <div class="inner">
+                                            <dl>
+                                                <dt>상품유형</dt>
+                                                <dd>채권형채권</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>위험등급</dt>
+                                                <dd><span class="-grade5">매우낮은위험</span></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>투자지역</dt>
+                                                <dd>국내(원화)</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-daesh-box">
+                                        <p class="product-daesh-tit">최근 3개월 수익률 및 기준가</p>
+                                        <div class="product-daesh-area">                                            
+                                            <span class="product-daesh-prifit red">+1.16%</span><!-- 마이너스인 경우 blue -->
+                                            <span class="product-daesh-price"><span>1397.53</span></span>                                            
+                                            <span class="increase">0.5%</span><!-- 하락인 경우 decrease -->
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrap12">
+                                        <a href="javascript:void(0)" class="button-arrow-right justify-flexend">목표시장 정보안내</a>
+                                    </div>
+                                </div><!-- //.subtitle-area -->
+                            </div><!-- //.info-area -->
+                        </div><!-- //.procuct-summary -->
+                        <!-- //상품 안내 영역 -->
+
+                        <hr class="hr content-8" tabindex="-1" aria-hidden="true">
+                        
+                        <!-- 상품 정보 영역 (레이아웃 확정안됨) -->
+                        <div class="procuct-info">
+                            <div class="accordion -line" data-role="fold">
+                                <button type="button" class="title" data-role="marker" title="접힘">클래스 상품 비교</button>
+                                <div class="panel" data-role="hidden">
+                                    <div class="compare-table">
+                                        <div class="item">
+                                            <p class="type-title">
+                                                BNK이기는증권투자신탁<br>1호[주식]ClassA-e  
+                                            </p>
+                                            <div class="b-detail-wrap">
+                                                <button type="button" class="button -tertiary -xs -fit">자세히보기</button>
+                                            </div>
+                                            <div class="table -vertical -sm">
+                                                <table>
+                                                    <caption><span class="hide">클래스 상품 상세</span></caption> 
+                                                    <colgroup>
+                                                        <col style="width:50%">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col">당일 기준가</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="info">1397.53</p>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th scope="col">수익률(%)</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left">
+                                                                <p class="info"> 
+                                                                    1개월 : <span class="red"> +0.29 </span><br>
+                                                                    3개월 : <span class="blue"> -2.01 </span><br>
+                                                                    6개월 : <span class="red"> +2.96 </span><br>
+                                                                    12개월 : <span class="red"> +48.27 </span>
+                                                                </p> 
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th scope="col">선취판매수수료</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="info">
+                                                                    0.0
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th scope="col">총 보수(연)</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="info">0.0</p>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th scope="col">환매수수료</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="info">0.0</p>
+                                                            </td>
+                                                        </tr>                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <p class="type-title">
+                                                DB NEW해오름신종<br>제3호ClassC-e
+                                            </p>
+                                            <div class="b-detail-wrap">
+                                                <button type="button" class="button -tertiary -xs -fit">자세히보기</button>
+                                            </div>
+                                            <div class="table -vertical -sm">
+                                                <table>
+                                                    <caption><span class="hide">클래스 상품 상세</span></caption> 
+                                                    <colgroup>
+                                                        <col style="width:50%">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col">당일 기준가</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="info">1001.19</p>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th scope="col">수익률(%)</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left">
+                                                                <p class="info"> 
+                                                                    1개월 : <span class="blue">-0.03</span> <br>
+                                                                    3개월 : <span class="blue">-0.1</span> <br>
+                                                                    6개월 : 0 <br>
+                                                                    12개월 : <span class="red">+0.52</span>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th scope="col">선취판매수수료</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="info">
+                                                                    0.0
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th scope="col">총 보수(연)</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="info">0.0</p>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th scope="col">환매수수료</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="info">없음</p>
+                                                            </td>
+                                                        </tr>                                                          
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion -line" data-role="fold"> 
+                                <button type="button" class="title" data-role="marker" title="접힘">상품안내</button>
+                                <div class="panel" data-role="hidden">
+                                    <!-- 제로인 아이프레임 데이터 영역 -->
+                                    <div class="procuct-iframe">
+                                        <iframe class="iframe">아이프레임 </iframe>
+                                    </div>
+                                    <!-- //제로인 아이프레임 데이터 영역 -->
+                                </div>
+                            </div>
+                            <div class="accordion -line" data-role="fold"> 
+                                <button type="button" class="title" data-role="marker" title="접힘">수익률</button>
+                                <div class="panel" data-role="hidden">
+                                    <!-- 제로인 아이프레임 데이터 영역 -->
+                                    <div class="procuct-iframe">
+                                        <iframe class="iframe">아이프레임 </iframe>
+                                    </div>
+                                    <!-- //제로인 아이프레임 데이터 영역 -->
+                                </div>
+                            </div>
+                            <div class="accordion -line" data-role="fold">
+                                <button type="button" class="title" data-role="marker" title="접힘">포트폴리오</button>
+                                <div class="panel" data-role="hidden">
+                                    <!-- 제로인 아이프레임 데이터 영역 -->
+                                    <div class="procuct-iframe">
+                                        <iframe class="iframe">아이프레임 </iframe>
+                                    </div>
+                                    <!-- //제로인 아이프레임 데이터 영역 -->
+                                </div>
+                            </div>
+                            <div class="accordion -line" data-role="fold"> 
+                                <button type="button" class="title" data-role="marker" title="접힘">기준가/수익률</button>
+                                <div class="panel" data-role="hidden">                                    
+                                    <h3 class="h5">수익률</h3>
+                                    <div class="table">
+                                        <table>
+                                            <caption><span class="hide">수익률</span></caption> 
+                                            <colgroup>
+                                                <col style="width:33.3%">
+                                                <col style="width:33.3%">
+                                                <col style="width:33.3%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">3개월</th>
+                                                    <th scope="col">6개월</th>
+                                                    <th scope="col">12개월</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="blue">-1.37%</span></td>
+                                                    <td><span class="blue">-2.09%</span></td>
+                                                    <td><span class="blue">-11.29%</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h3 class="h5">최근 6개월 기준가 변동 현황</h3>
+                                    <!-- 차트영역 -->
+                                    <div class="prodcuct-chart-area">
+                                        <div style="height:200px;background-color: silver;text-align: center;"><br><br><br>차트영역</div>
+                                    </div> 
+                                    <h3 class="h5">기준가 변동 현황</h3>                             
+                                    <div class="table -sm">
+                                        <table>
+                                            <caption><span class="hide">기준가 변동 현황</span></caption> 
+                                            <colgroup>
+                                                <col style="width:28%">
+                                                <col style="width:22%">
+                                                <col style="width:28%">
+                                                <col style="width:22%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">기준일</th>
+                                                    <th scope="col">기준가</th>
+                                                    <th scope="col">전일 대비 증감</th>
+                                                    <th scope="col">증감률</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">2023.03.20</th>
+                                                    <td>993.41</td>
+                                                    <td><span class="red">↑ 3.16</span></td>
+                                                    <td><span class="red">+1.37%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2023.03.17</th>
+                                                    <td>993.41</td>
+                                                    <td><span class="blue">↓ 3.16</span></td>
+                                                    <td><span class="blue">-1.29%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2023.03.16</th>
+                                                    <td>993.41</td>
+                                                    <td><span class="red">↑ 3.16</span></td>
+                                                    <td><span class="red">+1.42%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2023.03.15</th>
+                                                    <td>993.41</td>
+                                                    <td><span class="blue">↓ 3.16</span></td>
+                                                    <td><span class="blue">-1.84%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2023.03.14</th>
+                                                    <td>993.41</td>
+                                                    <td><span class="red">↑ 3.16</span></td>
+                                                    <td><span class="red">+0.34%</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="more-button">더보기</button>
+                                </div>
+                            </div>
+                            <div class="accordion -line" data-role="fold"> 
+                                <button type="button" class="title" data-role="marker" title="접힘">주요 투자위험</button>
+                                <div class="panel" data-role="hidden">
+                                    <!-- 제로인 아이프레임 데이터 영역 -->
+                                    <div class="procuct-iframe">
+                                        <iframe class="iframe">아이프레임 </iframe>
+                                    </div>
+                                    <!-- //제로인 아이프레임 데이터 영역 -->
+                                </div>
+                            </div>
+                            <div class="accordion -line" data-role="fold">
+                                <button type="button" class="title" data-role="marker" title="접힘">매입/환매</button>
+                                <div class="panel" data-role="hidden">
+                                    <h3 class="h5">펀드 선취판매 수수료</h3>
+                                    <div class="table -vertical">
+                                        <table>
+                                            <caption><span class="hide">펀드 선취판매 수수료</span></caption>
+                                            <colgroup>
+                                                <col style="width:50%">
+                                                <col style="width:50%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">선취판매 수수료율</th>
+                                                    <td class="right">0.00%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>                                    
+                                    <div class="text">
+                                        <p class="info">입금일에 선취판매수수료 차감 후 입금됩니다.</p>
+                                    </div>
+
+                                    <div class="case-wrap">
+                                        <h3 class="title-group"><span class="h5 inner">펀드 매입 기준일</span><span class="request">(신청일 기준)</span></h3>
+                                        <div class="table -vertical">
+                                            <table>
+                                                <caption><span class="hide">거래 기준시간</span></caption>
+                                                <colgroup>
+                                                    <col style="width:50%">
+                                                    <col style="width:50%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">거래 기준시간</th>
+                                                        <td class="right">17:00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="table -combined -basic">
+                                            <table>
+                                                <caption><span class="hide">펀드 매입 기준일 신청일 기준</span></caption>
+                                                <colgroup>
+                                                    <col style="width:32%">
+                                                    <col style="width:34%">
+                                                    <col style="width:34%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">구분</th>
+                                                        <th scope="col">기준가 적용일</th>
+                                                        <th scope="col">입금일</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>거래 기준 시간 전 신청</th>
+                                                        <td>2영업일</td>
+                                                        <td>2영업일</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>거래 기준 시간 후 신청</th>
+                                                        <td>3영업일</td>
+                                                        <td>3영업일</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="case-wrap">
+                                        <h3 class="title-group"><span class="h5 inner">펀드 환매 기준일</span><span class="request">(신청일 기준)</span></h3>
+                                        <div class="table -vertical">
+                                            <table>
+                                                <caption><span class="hide">거래 기준시간</span></caption>
+                                                <colgroup>
+                                                    <col style="width:50%">
+                                                    <col style="width:50%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">거래 기준시간</th>
+                                                        <td class="right">17:00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="table -combined -basic">
+                                            <table>
+                                                <caption><span class="hide">펀드 매입 기준일 신청일 기준</span></caption>
+                                                <colgroup>
+                                                    <col style="width:32%">
+                                                    <col style="width:34%">
+                                                    <col style="width:34%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">구분</th>
+                                                        <th scope="col">기준가 적용일</th>
+                                                        <th scope="col">입금일</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>거래 기준 시간 전 신청</th>
+                                                        <td>3영업일</td>
+                                                        <td>4영업일</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>거래 기준 시간 후 신청</th>
+                                                        <td>4영업일</td>
+                                                        <td>5영업일</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ul class="detail">
+                                            <li>
+                                                중도) 환매 시 받을 수 있는 금액 계산<br>
+                                                예시) 평가금액1,000만원, 세금 20만원, 환매수수료 0원
+                                            </li>
+                                            <li>
+                                                환매 시 받을 수 있는 예상금액<br>
+                                                평가 금액 –  세금 –  환매수수료<br>
+                                                = 1,000만원 -20만원 -0원 = 980만원
+                                            </li>
+                                            <li>* 실제 환매금액예상조회는"전계좌조회>펀드>해지예상조회"를 이용해주세요.</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="case-wrap">
+                                        <h3 class="h5">취소</h3>
+                                        <ul class="ul -bullet">
+                                            <li>기준시간 전 거래 : 기준시간까지 가능</li>
+                                            <li>기준시간 이후 거래 : 당일에 한해 농협은행 거래시간까지 가능</li>
+                                        </ul>
+                                    </div>
+                                                             
+                                </div>
+                            </div>
+                            <div class="accordion -line" data-role="fold"> 
+                                <button type="button" class="title" data-role="marker" title="접힘">유의사항</button>
+                                <div class="panel" data-role="hidden">
+                                    <h3 class="h5">유의사항</h3>  
+                                    <ul class="ul -bullet">
+                                        <li>투자 대상 자산의 가격 등락이 투자 손익을 결정하는 주요인이며, 편입자산의 시가 평가에 따라 원금의 0 ~ 100%(원금 전액 손실) 손실이 발생할 수 있습니다. </li>
+                                        <li>이 금융상품은 예금자보호법에 따라 보호되지 않습니다.</li> 
+                                        <li>이 상품은 증권투자신탁업법에 의하여 수탁회사에 안전하게 보관 관리되고 있습니다. 운용 실적에 따라 이익 또는 손실이 발생될 수 있으며, 그 결과는 투자자에게 귀속됩니다.</li>
+                                        <li>수익증권을 취득하기 전에 투자신탁설명서를 읽어보세요. </li>
+                                        <li>과거의 운용 실적이 미래의 수익을 보장하는 것은 아닙니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion -line" data-role="fold"> 
+                                <button type="button" class="title" data-role="marker" title="접힘">상품설명서 및 약관</button>
+                                <div class="panel" data-role="hidden">
+                                    <div class="shortcut -boxType">
+                                        <ul>
+                                            <li><a href="javascript:void(0)" aria-haspopup="true">기본약관</a></li>
+                                            <li><a href="javascript:void(0)" aria-haspopup="true">투자설명서</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //상품 정보 영역 -->
+
+                        <!-- 상품 추가 정보 영역 --> 
+                        <hr class="hr content-8">
+                        <div class="product-other -borderless">
+                            <div class="shortcut -boxType">
+                                <ul>
+                                    <li><a href="javascript:void(0)" aria-haspopup="true">펀드용어사전</a></li>
+                                    <li><a href="javascript:void(0)" aria-haspopup="true">펀드시황</a></li>
+                                </ul>
+                            </div>
+                            <!-- 공유 -->
+                            <div class="product-share">
+                                <ul>
+                                    <li><button type="button" class="wishlist"><span class="hide">장바구니</span></button></li>
+                                </ul>
+                            </div>
+                            <!-- //공유 -->
+                        </div> 
+                        <!-- //상품 추가 정보 영역 -->
+                    </div><!-- //.product-detail-wrap -->
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg">상담</button>
+                        <button type="button" class="button -primary -lg">가입하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+        // procuctDatailAct();
+
+        // html 파일 로드 (퍼블확인용)
+        incHtml();
+        function incHtml() {
+            $('[data-includ]').each(function () {
+                $this = $(this);
+                var $url = $this.attr('data-includ')
+                $this.load($url)
+            })
+        }
+        
+        
+        //Layer.open('layer');
+
+        // 레이어 닫기(마지막 인자 기본값: false)
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // });
+
+        // 레이어 닫기 + DOM 삭제
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>금융상품 검색</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">금융상품 검색</h1>
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="search-area">
+                        <div class="field search">
+                            <div class="mix">
+                                <div class="text">
+                                    <input type="text" class="left-side" id="searchce" placeholder="상품을 검색해보세요 (2글자 이상)">
+                                </div>
+                        
+                                <div class="space -lined search">
+                                    <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr class="hr content-8">
+
+                    <div class="result-area">
+                        <h4 class="h4">인기검색어</h4>
+                        <!-- 인기검색어 영역 -->
+                        <div class="popular-search chip">
+                            <!-- 인기검색어 열림 상태 : popular-anchors 에 -active 클래스 추가 -->
+                            <div class="popular-anchors accordion -active">
+                                <div class="outer">
+                                    <div class="inner over-x">
+                                        <ul class="list tab">
+                                            <li class="item"><button class="hash-btn -active">#목돈모으기</button></li>
+                                            <li class="item"><button class="hash-btn">#주택청약</button></li>
+                                            <li class="item"><button class="hash-btn">#주택전세자금</button></li>
+                                            <!-- 버튼 선택시 -active 클래스 추가  -->
+                                            <li class="item"><button class="hash-btn">#청소년</button></li>
+                                            <li class="item"><button class="hash-btn">#주거래우대</button></li>
+                                            <li class="item"><button class="hash-btn">#여행</button></li>
+                                            <li class="item"><button class="hash-btn">#환테크</button></li>
+                                            <li class="item"><button class="hash-btn">#세태크</button></li>
+                                            <li class="item"><button class="hash-btn">#노후준비</button></li>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="more" onclick="morebtn()"><span class="hide">펼치기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //인기검색어 영역 -->
+
+                        <!-- 검색결과 영역 -->
+                        <div class="search-list-wrap">
+                            <div class="search-result">
+                                <p class="total-count">검색결과 <span class="point">2</span>건</p>
+                                <div class="result-list">
+                                    <div class="mixed-data">
+                                        <!-- 매치되는 단어들은 <span class="point"></span> 사용 -->
+                                        <ul>
+                                            <li>
+                                                <div class="account card -list">
+                                                    <div class="badges">
+                                                        <span class="badge line-gray">대출</span>
+                                                    </div>
+                                        
+                                                    <div class="info">
+                                                        <span class="name">
+                                                            <span>NH모바일전세대출+</span>
+                                                        </span>
+                                                        <p class="desc">전세자금을 서울보증보험, 주택금융공사(일반/청년전세), 보증서 (보험증권)의 보증서 통합 심사를 통하여 보증 기관별 통합 안내를 받을 수 있는 “All In One” 모바일 전용 전세대출
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="account card -list">
+                                                    <div class="badges">
+                                                        <span class="badge line-gray">대출</span>
+                                                    </div>
+                                        
+                                                    <div class="info">
+                                                        <span class="name">
+                                                            <span>NH모바일주택담보대출</span>
+                                                        </span>
+                                                        <p class="desc">시세 있는 아파트, 연립, 다세대주택을 담보로 구입자금과 생활안정자금, 타행대환까지 가능한 모바일 전용 주택담보대출 ※기존 주택을 담보로 신규주택 구입자금 목적으로는 신청불가※ 구입자금의 경우 중개업소를 통한 매매계약인 경우에만 신청 가능하며, 개인간 매매인 경우 신청불가
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="center">
+                                        <button type="button" class="plus-button">더보기(10/12)</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 조회결과 없음 -->
+                            <div class="result -sm">
+                                <p class="message">조회 결과가 없습니다.</p>
+                            </div>
+                        </div>
+                        <!-- // 검색결과 영역 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+        
+        $(document).on('click', '.popular-anchors .more', function(e){
+            $('.popular-anchors').toggleClass('-active');
+        })
+            
+    </script>
+</body>
+</html>

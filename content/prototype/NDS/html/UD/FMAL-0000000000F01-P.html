@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NH포인트 사용 신청 레이어팝업</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">NH포인트 사용 신청</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="content">
+                    <div class="field">
+                        <div class="load-data">
+                            <div class="data-box" id="data-rd">
+                                <div class="data-box-title">Label</div>
+                                <div class="data-box-content">Data</div>
+                            </div>
+                        </div>
+
+                        <div class="case-wrap -xxs input">
+                            <div class="mix unit1">
+                                <div class="text -percent" data-clear="false">
+                                    <input type="tel" id="gggs3" class="right num-call" value="" aria-haspopup="true" placeholder="가용 포인트 이내로 입력"
+                                        readonly>
+                                    <div class="percent">P</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sticker">
+                    <div class="notice -active" data-role="fold">
+                        <button type="button" class="title" data-role="marker">알아두세요</button>
+                        <div class="panel" data-role="visible">
+                            <ul class="ul -bullet">
+                                <li>NH포인트는 1P 단위로 신청할 수 있습니다.</li>
+                                <li>사용 신청하면 바로 출금계좌로 입금됩니다. 입금 후 포인트 사용 취소를 할 수 없습니다.</li>
+                                <li>NH포인트 사용 가능시간 : 04:01 ~ 23:45</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg">NH포인트 사용 신청하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

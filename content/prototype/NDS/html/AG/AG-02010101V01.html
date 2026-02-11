@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+
+	<link rel="stylesheet" href="../../../../assets/libs/jquery/css/jquery-ui.css">
+	<link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+			<header class="header">
+				<div class="inner">
+					<div class="funcs">
+						<button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+					</div>
+
+					<h1 class="title">계좌등록/관리</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -home"><span class="hide">홈</span></button>
+						<button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+					</div>
+				</div>
+			</header>
+			<main class="contents">
+
+				<div class="content pt-0">
+
+                    <div class="subs">
+                        <div class="outer">
+                            <div class="inner">
+                                <div role="tablist" class="list">
+                                    <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="subs-panel1" id="sub1">농협</button></div>
+                                    <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel2" id="sub2">다른금융</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content-wrap -wide">
+                        <div class="subs-panels">
+                            <div role="tabpanel" aria-labelledby="sub1" id="subs-panel1" class="subs-panel -active" tabindex="0">
+                                <div class="h4-group mt-24">
+                                    <h3 class="h4">
+                                        등록된 농협 계좌
+                                        <span class="tooltip">
+                                            <button type="button" class="trigger">
+                                                <span class="hide">툴팁</span>
+                                            </button>
+                                            <span class="panel">
+                                                <span class="t-content">
+                                                    <span class="dot">농협 계좌는 최대 100개까지 등록가능합니다.</span>
+                                                    <span class="dot">등록하기 버튼을 눌러 계좌를 등록할 수 있습니다.</span>
+                                                    <span class="dot">등록된 계좌는 <span class="sortbtn-img"></span>버튼을 눌러 순서를 변경하고 저장 버튼을 선택하면, 변경된 순서가 저장됩니다.</span>
+                                                    <span class="dot">등록된 계좌를 등록해제 할 경우, 올원송금 등 각종 올원뱅크 서비스 이용이 제한 될 수 있습니다.</span>
+                                                </span>                                                    
+                                            </span>
+                                        </span>
+                                    </h3>
+                                </div>
+
+                                <div class="empty result mt-0">
+                                    <p class="message">NH올원뱅크 서비스를 이용하려면<br>
+                                        NH농협은행 계좌가 필요합니다.
+                                    </p>
+                                </div>
+
+                                <div class="case-wrap -xl">
+                                    <div class="buttons">
+                                        <button type="button" class="button -tertiary -md">입출금계좌 개설하기</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div role="tabpanel" aria-labelledby="sub1" id="subs-panel2" class="subs-panel" tabindex="0">
+                                <div class="h4-group mt-24">
+                                    <h3 class="h4">
+                                        등록된 다른금융 계좌
+                                        <span class="tooltip">
+                                            <button type="button" class="trigger">
+                                                <span class="hide">툴팁</span>
+                                            </button>
+                                            <span class="panel">
+                                                <span class="t-content">
+                                                    <span class="dot">농협 계좌는 최대 100개까지 등록가능합니다.</span>
+                                                    <span class="dot">등록하기 버튼을 눌러 계좌를 등록할 수 있습니다.</span>
+                                                    <span class="dot">등록된 계좌는 <span class="sortbtn-img"></span>버튼을 눌러 순서를 변경하고 저장 버튼을 선택하면, 변경된 순서가 저장됩니다.</span>
+                                                    <span class="dot">등록된 계좌를 등록해제 할 경우, 올원송금 등 각종 올원뱅크 서비스 이용이 제한 될 수 있습니다.</span>
+                                                </span>                                                    
+                                            </span>
+                                        </span>
+                                    </h3>
+                                </div>
+
+                                <div class="sortable-wrap account">
+                                    <ul id="sortable" class="sort-list ui-sortable">
+                                        <li class="-registered first">
+                                            <div class="sort-account">
+                                                <div class="info" data-bankcode="029">
+                                                    <span class="name">
+                                                        <span>국민주거래우대통장</span>
+                                                    </span>
+                                                    <span class="account-number">
+                                                        <span class="number">302-****-****-1234</span>
+                                                    </span>
+                                                </div>
+                                                <div class="sortable-buttons">
+                                                    <div class="sort-button ui-sortable-handle"></div>
+                                                    <div class="sort-button-box">
+                                                        <button type="button" class="sort-button-up hide" disabled="">리스트를 위로 이동</button>
+                                                        <button type="button" class="sort-button-down hide">리스트를 아래로 이동</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="detail">
+                                                <div>
+                                                    <button type="button" class="button -tertiary -xs -fitted">등록해제</button>
+                                                    <div class="deposit">50,000,000원</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="-registered last">
+                                            <div class="sort-account">
+                                                <div class="info" data-bankcode="025">
+                                                    <span class="name">
+                                                        <span>하나금융포켓적립예금</span>
+                                                    </span>
+                                                    <span class="account-number">
+                                                        <span class="number">302-****-****-1234</span>
+                                                    </span>
+                                                </div>
+                                                <div class="sortable-buttons">
+                                                    <div class="sort-button ui-sortable-handle"></div>
+                                                    <div class="sort-button-box">
+                                                        <button type="button" class="sort-button-up hide" disabled="">리스트를 위로 이동</button>
+                                                        <button type="button" class="sort-button-down hide">리스트를 아래로 이동</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="detail">
+                                                <div>
+                                                    <button type="button" class="button -tertiary -xs -fitted">등록해제</button>
+                                                    <div class="deposit">
+                                                        <a href="javascript:void(0)" class="a underline">잔액조회</a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="-registered">
+                                            <div class="sort-account">
+                                                <div class="info" data-bankcode="092">
+                                                    <span class="name">
+                                                        <span>토스뱅크미니적금</span>
+                                                    </span>
+                                                    <span class="account-number">
+                                                        <span class="number">302-****-****-1234</span>
+                                                    </span>
+                                                </div>
+                                                <div class="sortable-buttons">
+                                                    <div class="sort-button ui-sortable-handle"></div>
+                                                    <div class="sort-button-box">
+                                                        <button type="button" class="sort-button-up hide" disabled="">리스트를 위로 이동</button>
+                                                        <button type="button" class="sort-button-down hide">리스트를 아래로 이동</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="detail">
+                                                <div>
+                                                    <button type="button" class="button -tertiary -xs -fitted">등록해제</button>
+                                                    <div class="deposit">
+                                                        <a href="javascript:void(0)" class="a underline -error">조회실패</a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="-registered">
+                                            <div class="sort-account">
+                                                <div class="info" data-bankcode="092">
+                                                    <span class="name">
+                                                        <span>토스뱅크미니적금</span>
+                                                    </span>
+                                                    <span class="account-number">
+                                                        <span class="number">302-****-****-1234</span>
+                                                    </span>
+                                                </div>
+                                                <div class="sortable-buttons">
+                                                    <div class="sort-button ui-sortable-handle"></div>
+                                                    <div class="sort-button-box">
+                                                        <button type="button" class="sort-button-up hide" disabled="">리스트를 위로 이동</button>
+                                                        <button type="button" class="sort-button-down hide">리스트를 아래로 이동</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="detail">
+                                                <div>
+                                                    <button type="button" class="button -tertiary -xs -fitted">등록해제</button>
+                                                    <div class="deposit">
+                                                        <a href="javascript:void(0)" class="a no-line">잔액을 조회할 수 없어요</a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="case-wrap -xl">
+                                    <div class="buttons -half">
+                                        <button type="button" class="button -tertiary -md">재동의하기</button>
+                                        <button type="button" class="button -tertiary -md">다른금융 등록하기</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+				</div>
+
+                <div class="sticker">
+					<div class="notice -active" data-role="fold">
+						<button type="button" class="title" data-role="marker">알아두세요</button>
+						<div class="panel" data-role="visible">
+							<ul class="ul -bullet">
+								<li>등록하기 버튼을 눌러 계좌를 등록해주세요.</li>
+								<li>당행계좌는 100개, 다른금융은 9개까지 등록이 가능합니다.</li>
+                                <li>재동의하기 버튼을 눌러 정보제공 동의기간 만료 전 금융거래정보 제공에 대한 동의를 갱신해야 다른금융 계좌를 계속 이용할 수 있습니다.</li>
+                                <li>등록된 계좌는 순서 변경이 가능합니다. 순서 변경 후 저장 버튼을 선택하면, 변경된 순서가 저장됩니다.</li>
+                                <li>보안계좌, 거래중지계좌, 공동명의계좌, 보험(구 방카슈랑스)은 등록이 불가합니다.</li>
+                                <li>농 · 축협계좌는 일부서비스에서 사용이 제한됩니다. (예적금가입, 대출, 외환)</li>
+                                <li>오픈뱅킹 참가은행의 계좌를 등록할 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -tertiary -lg">나가기</button>
+						<button type="button" class="button -primary -lg">저장</button>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/jquery/jquery-ui.min.js"></script>
+    <script src="../../../../assets/libs/jquery/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+	<script>
+		// 스크립트 추가
+
+        function dragnDrop() {
+                const updateSortButtons = ($sortListItems) => {
+                    $sortListItems.removeClass('first last')
+                        .first().addClass('first').end()
+                        .last().addClass('last');
+
+                    $sortListItems.find('.sort-button-up').prop('disabled', false);
+                    $sortListItems.find('.sort-button-down').prop('disabled', false);
+
+                    $sortListItems.first().find('.sort-button-up').prop('disabled', true);
+                    $sortListItems.last().find('.sort-button-down').prop('disabled', true);
+                };
+
+                const setupSortable = ($sortableWrap) => {
+                    const $sortListItems = $sortableWrap.find('.sort-list li');
+                    const $sortList = $sortableWrap.find('.sort-list');
+
+                    $sortList.sortable({
+                        handle: '.sort-button',
+                        axis: 'y',
+                        containment: $sortableWrap,
+                        stop: () => {
+                            updateSortButtons($sortListItems);
+                        },
+                    });
+
+                    $sortableWrap.find('.sort-button-box button').click(function () {
+                        const $li = $(this).closest('li');
+                        const isUpButton = $(this).hasClass('sort-button-up');
+
+                        if (isUpButton) {
+                            $li[isUpButton ? 'prev' : 'next']().before($li);
+                        } else {
+                            $li[isUpButton ? 'next' : 'prev']().after($li);
+                        }
+                    })
+                    updateSortButtons($sortListItems);
+                };
+
+                $('.sortable-wrap').each(function () {
+                    setupSortable($(this));
+                });
+            };
+
+            dragnDrop();
+	</script>
+</body>
+</html>

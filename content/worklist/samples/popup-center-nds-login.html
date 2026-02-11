@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="alert" class="alert">
+        <div class="container">
+            <div class="contents">
+                <div class="content">
+                    <h2 class="h5">로그인 연장 안내</h2>
+                    <p class="noti-phrase">약 10분간 이용이 없으면 금융정보 보호를 위해 자동으로 로그아웃됩니다.<br>
+                        계속 이용하려면 로그인을 연장해 주세요.
+                    </p>
+                    <p class="noti-phrase login-time">남은시간 <span>24</span>초</p>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons -half">
+                        <button type="button" class="button -tertiary -md">로그아웃</button>
+                        <button type="button" class="button -secondary -md">로그인 연장</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    
+       
+    <script>
+        Alert.open('alert');
+
+        // 얼럿 닫기(마지막 인자 기본값: false)
+        // Alert.close('alert', function() {
+        //     '콜백함수'
+        // });
+
+        // 얼럿 닫기 + DOM 삭제
+        // Alert.close('alert', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

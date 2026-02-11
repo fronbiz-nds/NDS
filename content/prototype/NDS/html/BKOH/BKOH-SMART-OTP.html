@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NH포인트 사용 신청 레이어팝업</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="navigation">
+                <div class="header">
+                    <div class="inner">
+                        <h1 class="title"></h1>
+                        <div class="funcs">
+                            <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="content">
+                    <div class="otp-wrap">
+                        <h4 class="h4">
+                            스마트 OTP(타행) 인증
+                            <p class="sub">
+                                타행 스마트 OTP카드를 스마트폰 뒷면에 접촉해 주세요.<br>
+                                스마트폰 잠금을 해제한 뒤 접촉해 주세요.
+                            </p>
+                        </h4>
+                        <div class="img-box">
+                            <img src="../../../../assets/imgs/nds/common/img_otpcard_138.png" style="height:13.8rem" alt="스마트 OTP(타행) 카드 이미지">
+                        </div>
+                    </div>
+                    <div class="field input">
+                        <div class="text -password">
+                            <input type="password" class="num-call" id="field2" value="" aria-haspopup="true" placeholder=""
+                                maxlength="4" readonly>
+                            <button class="clear" type="button" style="z-index: -1;">
+                                <div class="hide">입력 내용 삭제</div>
+                            </button>
+                        </div>
+                        <div class="btn-wrap24">
+                            <button type="button" class="button -tertiary -rg">일회용 PIN번호 입력</button>
+                        </div>
+                    </div>
+
+                    <div class="field input">
+                        <label for="phone1238" class="label">일회용 PIN번호</label>
+                        <div class="mix code">
+                            <div class="text flex-8 -readonly -textless" data-clear="false">
+                                <input type="tel" data-id="phone1238" class="left-side num-call" placeholder="4자리 숫자 입력" title="PIN번호 4자리 숫자 입력" aria-haspopup="true" value="" readonly>
+                                <button class="clear" type="button" style="z-index: -1;">
+                                    <div class="hide">입력 내용 삭제</div>
+                                </button>
+                            </div>
+                            <div class="space -lined mid-side time-limit">
+                                <span aria-live="assertive">3:30</span>
+                            </div>
+                            <div class="space -lined right-side">
+                                <button type="button" class="button -tertiary -sm -fitted">버튼</button>
+                            </div>
+                            <p class="info">안내 문구 입력</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sticker">
+                    <div class="notice -active" data-role="fold">
+                        <button type="button" class="title" data-role="marker">알아두세요</button>
+                        <div class="panel" data-role="visible">
+                            <div class="otp">
+                                <ul class="ul -bullet">
+                                    <li><span>TZ OTP 인증번호 입력방법</span>
+                                        <ol>
+                                            <li>1) 금융결제원 TZ OTP 공동앱 실행</li>
+                                            <li>2) 금융결제원 TZ OTP 공동앱 내 거래내역 확인 클릭</li>
+                                            <li>3) TZ OTP 공동앱에서 생성된 OTP 인증번호를 입력</li>
+                                        </ol>
+                                    </li>
+                                    <li><span>TZ OTP 인증번호 수동입력인 경우</span>
+                                        <ol>
+                                            <li>1) TZ OTP 공동앱 실행 후 OTP 생성 버튼 선택</li>
+                                            <li>2) 일회용 PIN번호 4자리 입력</li>
+                                            <li>3) 농협은행 선택 후 확인 버튼 선택</li>
+                                        </ol>
+                                    </li>
+                                    <li><span>스마트 OTP 공동앱 실행방법</span>
+                                        <ol>
+                                            <li>1) 스마트 OTP 공동앱 실행 버튼 선택</li>
+                                            <li>2) 금융결제원 ‘스마트 OTP 공동앱’ 자동 실행</li>
+                                            <li>3) 스마트 OTP 카드를 스마트폰 뒷면에 접촉</li>
+                                            <li>4) 스마트 OTP 공동앱에서 생성된 OTP 인증번호를 입력</li>
+                                        </ol>
+                                    </li>
+                                    <li><span>스마트 OTP 공동앱 수동입력인 경우</span>
+                                        <ol>
+                                            <li>1) 스마트OTP 공동앱 실행 버튼 선택</li>
+                                            <li>2) 농협은행 선택</li>
+                                            <li>3) 일회용 PIN번호 입력</li>
+                                            <li>4) 스마트 OTP카드를 스마트폰 뒷면에 접촉</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

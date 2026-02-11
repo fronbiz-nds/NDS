@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">금융상품 중요사항 확인</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <p class="p">금융소비자보호법 제19조(설명의무) 제1항에서 규정하고 있는 금융상품에 관한 중요한 사항을 안내해 드립니다.</p>
+                    <div class="jsImportConfWrap"> 
+                        <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="total01">
+                                        <label for="total01">우선 설명사항(이자율)</label>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="panel">
+                                <div class="inner"> 
+                                    <div class="sm-title-group">
+                                        <h2 class="acc-title">기본금리</h2>
+                                        <h3 class="acc-sub-title">만기지급금리</h3>
+                                        <div>
+                                            <p class="acc-tb-tit">만기일시지급식</p>
+                                            <div class="mt-12">
+                                                <div class="table -horizontal -basic">
+                                                    <table>
+                                                        <caption><span class="hide">만기일시지급식</span></caption>
+                                                        <colgroup>
+                                                            <col style="width: 65.0%;">
+                                                            <col style="width: 35.0%;">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">가입기간</th>
+                                                                <th scope="col">기본금리(%)</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1개월 이상 ~ 3개월 미만</td>
+                                                                <td class="num"><span>3.10</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3개월 이상 ~ 6개월 미만</td>
+                                                                <td class="num"><span>3.40</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6개월 이상 ~ 45개월 미만</td>
+                                                                <td class="num"><span>3.50</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12개월 이상 ~ 24개월 미만</td>
+                                                                <td class="num"><span>3.75</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>24개월 이상 ~ 36개월 미만</td>
+                                                                <td class="num"><span>3.30</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>36개월 이상</td>
+                                                                <td class="num"><span>3.40</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="message">자세한 사항은 상품설명서 또는 특약 참조</div>
+                                        </div> 
+                                    </div>
+        
+                                    <div class="sm-title-group">
+                                        <h2 class="h5">우대금리</h2>     
+                                        <p class="p">해당 없음</p>  
+                                    </div>
+                                    
+                                    <div class="sm-title-group">
+                                        <h2 class="h5">변동금리</h2>     
+                                        <p class="p">해당 없음</p> 
+                                    </div>
+                                    
+                                    <div class="sm-title-group">
+                                        <h2 class="h5">만기 후 금리</h2>     
+                                        <p class="p">약정 만기일이 경과한 기간은 만기 후 금리가 적용됩니다. 만기 후 금리는 약정금리보다 낮게 적용됨을 주의해 주시기 바랍니다.</p>
+                                    </div>
+                                    
+                                    <div class="sm-title-group">
+                                        <h2 class="h5">거치식 적금 만기 후 이자율 적용</h2>
+                                        <div class="table -horizontal -basic">
+                                            <table>
+                                                <caption><span class="hide">거치식 적금 만기 후 이자율</span></caption>
+                                                <colgroup>
+                                                    <col style="width: 35.0%;">
+                                                    <col style="width: 65.0%;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">경과기간</th>
+                                                        <th scope="col">적용 이자율</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>만기 후<br> 3개월 이내</td>
+                                                        <td>일반정기적금 가입기간별 기본금리의 50%
+                                                            단, 채움정기적금 가입기간 1년 이상은 만기 시점 국고채 1년물 금리</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>만기 후<br> 6개월 이내</td>
+                                                        <td>일반정기적금 가입기간별 기본금리의 20%
+                                                            단, 국가, 지방자치단체, 국립학교(사업자등록번호 83): 보통적금금리</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>만기 후<br> 6개월 초과</td>
+                                                        <td>일반정기적금 가입기간별 기본금리의 10%
+                                                            단, 국가, 지방자치단체, 국립학교(사업자등록번호 83): 보통적금금리</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ul class="ul -bullet">
+                                            <li>적용 대상 : 채움정기적금을 포함한 거치식적금(단, 신자유적립정기적금 제외)</li>
+                                            <li>기준금리는 상품에 따라 기간별 점장우대금리 또는 기본약정금리를 말함</li>
+                                            <li>자세한 사항은 NH농협은행 인터넷뱅킹 > 새소식/보도자료(정기 예·적금, 중도해지 또는 만기 후 금리 변경 안내)를 참조해 주시기 바랍니다.</li>
+                                            <li>시행일 : 2020.10.05(월)</li>
+                                        </ul>
+                                    </div> 
+                                </div>                         
+                            </div> 
+                        </div> 
+                        
+                        <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="total02">
+                                        <label for="total02">중도해지에 따른 불이익 사항</label>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="panel">
+                                <div class="inner">
+                                    <div class="sm-title-group">
+                                        <p class="p">약정된 만기일 이전에 해지하시면 중도해지금리가 적용됩니다. 중도해지금리는 약정금리보다 낮게 적용됨을 주의해 주시기 바랍니다.</p>
+                                        <div class="mt-16">
+                                            <div class="table -horizontal -basic">
+                                                <table>
+                                                    <caption><span class="hide">거치식적금 만기후이자율</span></caption>
+                                                    <colgroup>
+                                                        <col style="width: 32.0%;">
+                                                        <col style="width: 68.0%;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">경과기간</th>
+                                                            <th scope="col">적용 이자율/적용률</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>3개월 미만</td>
+                                                            <td>0.1%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6개월 미만</td>
+                                                            <td>중도해지 기준금리 * 50% * 경과월수 / 계약월수</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9개월 미만</td>
+                                                            <td>중도해지 기준금리 * 60% * 경과월수 / 계약월수</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>11개월 미만</td>
+                                                            <td>중도해지 기준금리 * 70% * 경과월수 / 계약월수</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>11개월 이상</td>
+                                                            <td>중도해지 기준금리 * 80% * 경과월수 / 계약월수</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <ul class="ul -bullet">
+                                            <li>기준금리는 상품에 따라 기간별 점장우대금리 또는 기본약정</li>
+                                            <li>단, 거치식 적금으로 회차별 입금할 수 있는 경우는 해당 회차 입금 당시 고시금리</li>
+                                            <li>중도해지금리 : 소수 셋째 자리까지 적용 (소수 넷째 자리에서 절사)</li>
+                                            <li>중도해지 최저금리는 0.1%</li>
+                                            <li>경과월수는 계약월수를 초과할 수 없음, 월 미만 일수는 버림</li>
+                                            <li>자세한 사항은 [NH농협은행 인터넷뱅킹 > 새소식(예·적금 중도해지이율 변경 안내)]를 참조해 주시기 바랍니다.</li>
+                                            <li>시행일 : 2020.10.05(월)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="important-confirm-box">
+                            <div class="agree">
+                                <div class="title">
+                                    <div class="checkbox -sm">
+                                        <input type="checkbox" id="total03">
+                                        <label for="total03">금융소비자의 권리</label>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="panel">
+                                <div class="inner">
+                                    <div class="sm-title-group">
+                                        <h2 class="acc-title">자료열람요구권</h2>
+                                        <ul class="ul -bullet">
+                                            <li>금융소비자는 분쟁 조정 또는 소송의 수행 등 권리 구제를 위한 목적으로 은행이 기록 및 유지·관리하는 다음의 자료에 대한 열람(사본 및 청취 포함)을 요구할 수 있습니다.
+                                                <div>
+                                                    <ul class="ul -dash pt-8">
+                                                        <li>계약체결에 관한 자료, 계약의 이행에 관한 자료</li>
+                                                        <li>금융상품 등에 관한 광고 자료</li>
+                                                        <li>금융소비자의 권리행사에 관한 자료</li>
+                                                        <li>내부통제기준의 제정 및 운영 등에 관한 자료</li>
+                                                        <li>업무 위탁에 관한 자료</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>은행은 법령, 제3자의 이익 침해, 영업비밀의 침해 등의 사유가 있는 경우 이를 금융소비자에게 알리고 자료 열람을 제한하거나 거절할 수 있습니다.</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="sm-title-group">
+                                        <h2 class="h5">위법계약해지권</h2>
+                                        <ul class="ul -bullet">
+                                            <li>금융회사가 금융소비자보호법상 판매원칙 위반하면 일정기간 이내에 금융소비자가 계약 해지를 요구할 수 있습니다. 금융회사는 10일 이내에 수락 여부를 안내해야 합니다. 거절할 때는  거절사유와 함께 안내해야 합니다.</li>
+                                            <li>위법계약해지 요구는 계약서류를 받은 날부터 5년, 위법사실을 안 날부터 1년 이내에 가능(계약 종료하면 행사 불가)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="sm-title-group">
+                                        <h2 class="h5">민원처리 및 분쟁조정 절차</h2>
+                                        <p class="p">이 상품에 대한 문의사항 또는 민원 상담을 하려면 영업점, 고객상담센터(1661-3000, 1522-3000) 또는 인터넷 홈페이지(banking.nonghyup.com)에서 문의해 주시기 바랍니다. 또한 이 상품에 대하여 NH농협은행과 분쟁이 있는 경우에는 금융소비자보호법에 따라 금융감독원 민원상담센터(1332) 또는 e-금융민원센터(www.fcsc.kr)에 분쟁조정을 신청할 수 있습니다.</p>
+                                    </div>
+                                    
+                                    <div class="sm-title-group">
+                                        <h2 class="h5">예금자보호 여부</h2>
+                                        <p class="p">이 예금은 예금자보호법에 따라 원금과 소정의 이자를 합하여 1인당 "5천만원까지" (본 은행의 여타 보호상품과 합산) 보호됩니다.</p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg -disabled">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+    </script>
+</body>
+</html>

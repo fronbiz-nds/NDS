@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">본인인증</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <h2 class="h2">대상 인증서를 선택해 주세요</h2>
+                    <!-- ui수정 240122 (UI전체 변경됨, h2 mb클래스 삭제) -->
+                    <!-- [240329] 공동인증서, 금융인증서 추가 -->
+                    <!-- [240404] NH모바일인증서로 변경 -->
+                    <!-- <div class="auth-links">
+                        <a href="javascript:void(0);" class="auth-btn"><div class="auth-icon-naver"></div><span class="auth-text">네이버인증서</span></a>
+                        <a href="javascript:void(0);" class="auth-btn"><div class="auth-icon-pass"></div><span class="auth-text">PASS인증서</span></a>
+                        <a href="javascript:void(0);" class="auth-btn"><div class="auth-icon-kakao"></div><span class="auth-text">카카오인증서</span></a>
+                        <a href="javascript:void(0);" class="auth-btn"><div class="auth-icon-toss"></div><span class="auth-text">토스인증서</span></a>
+                        <a href="javascript:void(0);" class="auth-btn"><div class="auth-icon-joint"></div><span class="auth-text">공동인증서</span></a>
+                        <a href="javascript:void(0);" class="auth-btn"><div class="auth-icon-bank"></div><span class="auth-text">NH모바일인증서</span></a>
+                    </div> -->
+                    <div class="case-wrap">
+                        <div class="link -authenti">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn">
+                                        <div class="certi -naver">
+                                            <p class="title">네이버인증서</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn">
+                                        <div class="certi -pass">
+                                            <p class="title">PASS인증서</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn">
+                                        <div class="certi -kakao">
+                                            <p class="title">카카오인증서</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn">
+                                        <div class="certi -toss01">
+                                            <p class="title">토스인증서</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn">
+                                        <div class="certi -toss02">
+                                            <p class="title">토스인증서</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn">
+                                        <div class="certi -nhmobile">
+                                            <p class="title">NH모바일인증서</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+
+        $(document).ready(function () {
+			var swiper = new Swiper ('.auth-swiper', {
+                slidesPerView:2,
+				spaceBetween:12,
+			})
+		});
+    </script>
+</body>
+</html>

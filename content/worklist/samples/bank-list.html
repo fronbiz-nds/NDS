@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+    <link rel="stylesheet" href="../../assets/css/util.css">
+</head>
+<body>
+    <div id="layer" class="layer">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">은행</h1>
+                    
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="bank-select">
+                        <div class="segments -bar">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div role="tablist" class="list">
+                                        <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel1" id="segment1">은행</button></div>
+                                        <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel2" id="segment2">증권사</button></div>
+                                        <span class="switcher" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="segments-panels">
+                            <div role="tabpanel" aria-labelledby="segment1" id="segments-panel1" class="segments-panel" tabindex="0">
+                                <ul class="button-box">
+                                    <li><button type="button" data-bankcode="011" class="unit"><span class="txt">농협은행</span></button></li>
+                                    <li><button type="button" data-bankcode="004" class="unit"><span class="txt">국민은행</span></button></li>
+                                    <li><button type="button" data-bankcode="003" class="unit"><span class="txt">기업은행</span></button></li>
+                                    <li><button type="button" data-bankcode="002" class="unit"><span class="txt">산업은행</span></button></li>
+                                    <li><button type="button" data-bankcode="088" class="unit"><span class="txt">신한은행</span></button></li>
+                                    <li><button type="button" data-bankcode="020" class="unit"><span class="txt">우리은행</span></button></li>
+                                    <li><button type="button" data-bankcode="081" class="unit"><span class="txt">하나은행</span></button></li>
+                                    <li><button type="button" data-bankcode="027" class="unit"><span class="txt">한국씨티은행</span></button></li>
+                                    <li><button type="button" data-bankcode="023" class="unit"><span class="txt">SC제일은행</span></button></li>
+                                    <li><button type="button" data-bankcode="090" class="unit"><span class="txt">카카오뱅크</span></button></li>
+                                    <li><button type="button" data-bankcode="089" class="unit"><span class="txt">케이뱅크</span></button></li>
+                                    <li><button type="button" data-bankcode="092" class="unit"><span class="txt">토스뱅크</span></button></li>
+                                    <li><button type="button" data-bankcode="039" class="unit"><span class="txt">경남은행</span></button></li>
+                                    <li><button type="button" data-bankcode="034" class="unit"><span class="txt">광주은행</span></button></li>
+                                    <li><button type="button" data-bankcode="031" class="unit"><span class="txt">대구은행</span></button></li>
+                                    <li><button type="button" data-bankcode="032" class="unit"><span class="txt">부산은행</span></button></li>
+                                    <li><button type="button" data-bankcode="037" class="unit"><span class="txt">전북은행</span></button></li>
+                                    <li><button type="button" data-bankcode="007" class="unit"><span class="txt">수협은행</span></button></li>
+                                    <li><button type="button" data-bankcode="035" class="unit"><span class="txt">제주은행</span></button></li>
+                                    <li><button type="button" data-bankcode="064" class="unit"><span class="txt">산림조합중앙회</span></button></li>
+                                    <li><button type="button" data-bankcode="048" class="unit"><span class="txt">신협중앙회</span></button></li>
+                                    <li><button type="button" data-bankcode="045" class="unit"><span class="txt">새마을금고</span></button></li>
+                                    <li><button type="button" data-bankcode="071" class="unit"><span class="txt">우체국</span></button></li>
+                                    <li><button type="button" data-bankcode="050" class="unit"><span class="txt">저축은행</span></button></li>
+                                    <li><button type="button" data-bankcode="055" class="unit"><span class="txt">도이치은행</span></button></li>
+                                    <li><button type="button" data-bankcode="060" class="unit"><span class="txt">뱅크오브아메리카</span></button></li>
+                                    <li><button type="button" data-bankcode="062" class="unit"><span class="txt">중국공상은행</span></button></li>
+                                    <li><button type="button" data-bankcode="063" class="unit"><span class="txt">중국은행</span></button></li>
+                                    <li><button type="button" data-bankcode="067" class="unit"><span class="txt">중국건설은행</span></button></li>
+                                    <li><button type="button" data-bankcode="061" class="unit"><span class="txt">BNP파리바은행</span></button></li>
+                                    <li><button type="button" data-bankcode="054" class="unit"><span class="txt">HSBC은행</span></button></li>
+                                    <li><button type="button" data-bankcode="057" class="unit"><span class="txt">JP모건체이스은행</span></button></li>
+                                </ul>
+                            </div>
+    
+                            <div role="tabpanel" aria-labelledby="segment2" id="segments-panel2" class="segments-panel -active" tabindex="0">
+                                <ul class="button-box">
+                                    <li><button type="button" data-bankcode="247" class="unit"><span class="txt">NH투자증권</span></button></li>
+                                    <li><button type="button" data-bankcode="261" class="unit"><span class="txt">교보증권</span></button></li>
+                                    <li><button type="button" data-bankcode="267" class="unit"><span class="txt">대신증권</span></button></li>
+                                    <li><button type="button" data-bankcode="287" class="unit"><span class="txt">메리츠증권</span></button></li>
+                                    <li><button type="button" data-bankcode="238" class="unit"><span class="txt">미래에셋증권</span></button></li>
+                                    <li><button type="button" data-bankcode="290" class="unit"><span class="txt">부국증권</span></button></li>
+                                    <li><button type="button" data-bankcode="240" class="unit"><span class="txt">삼성증권</span></button></li>
+                                    <li><button type="button" data-bankcode="291" class="unit"><span class="txt">신영증권</span></button></li>
+                                    <li><button type="button" data-bankcode="278" class="unit"><span class="txt">신한투자증권</span></button></li>
+                                    <li><button type="button" data-bankcode="266" class="unit"><span class="txt">에스케이증권</span></button></li>
+                                    <li><button type="button" data-bankcode="209" class="unit"><span class="txt">유안타증권</span></button></li>
+                                    <li><button type="button" data-bankcode="280" class="unit"><span class="txt">유진투자증권</span></button></li>
+                                    <li><button type="button" data-bankcode="265" class="unit"><span class="txt">이베스트투자증권</span></button></li>
+                                    <li><button type="button" data-bankcode="288" class="unit"><span class="txt">카카오페이증권</span></button></li>
+                                    <li><button type="button" data-bankcode="292" class="unit"><span class="txt">케이프투자증권</span></button></li>
+                                    <li><button type="button" data-bankcode="264" class="unit"><span class="txt">키움증권</span></button></li>
+                                    <li><button type="button" data-bankcode="271" class="unit"><span class="txt">토스증권</span></button></li>
+                                    <li><button type="button" data-bankcode="270" class="unit"><span class="txt">하나증권</span></button></li>
+                                    <li><button type="button" data-bankcode="262" class="unit"><span class="txt">하이투자증권</span></button></li>
+                                    <li><button type="button" data-bankcode="243" class="unit"><span class="txt">한국투자증권</span></button></li>
+                                    <li><button type="button" data-bankcode="269" class="unit"><span class="txt">한화투자증권</span></button></li>
+                                    <li><button type="button" data-bankcode="263" class="unit"><span class="txt">현대차투자증권</span></button></li>
+                                    <li><button type="button" data-bankcode="294" class="unit"><span class="txt">한국포스증권</span></button></li>
+                                    <li><button type="button" data-bankcode="224" class="unit"><span class="txt">BNK증권</span></button></li>
+                                    <li><button type="button" data-bankcode="279" class="unit"><span class="txt">DB금융증권</span></button></li>
+                                    <li><button type="button" data-bankcode="225" class="unit"><span class="txt">IBK투자증권</span></button></li>
+                                    <li><button type="button" data-bankcode="218" class="unit"><span class="txt">KB증권</span></button></li>
+                                    <li><button type="button" data-bankcode="227" class="unit"><span class="txt">디올투자증권</span></button></li>
+                                    <li><button type="button" data-bankcode="221" class="unit"><span class="txt">상상인증권</span></button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+    </script>
+</body>
+</html>

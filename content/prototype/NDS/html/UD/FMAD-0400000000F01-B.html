@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="layer" class="layer">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">이체주기를 선택해 주세요</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="datepicker-widget cycle-type">
+                        <ul class="cycle">
+                            <li class="on" aria-selected="true">매월</li>
+                            <li aria-selected="false">매주</li>
+                            <li aria-selected="false">매일</li>
+                        </ul>
+                        <div class="cycle-list" >
+                            <ul class="day" style="display:block">
+                                <li aria-selected="false">01일</li>
+                                <li aria-selected="false">02일</li>
+                                <li aria-selected="false">03일</li>
+                                <li aria-selected="false">04일</li>
+                                <li aria-selected="false">05일</li>
+                                <li class="on"  aria-selected="true">06일</li>
+                                <li aria-selected="false">07일</li>
+                                <li aria-selected="false">08일</li>
+                                <li aria-selected="false">09일</li>
+                                <li aria-selected="false">10일</li>
+                                <li aria-selected="false">11일</li>
+                                <li aria-selected="false">12일</li>
+                                <li aria-selected="false">13일</li>
+                                <li aria-selected="false">14일</li>
+                                <li aria-selected="false">15일</li>
+                                <li aria-selected="false">16일</li>
+                                <li aria-selected="false">17일</li>
+                                <li aria-selected="false">18일</li>
+                                <li aria-selected="false">19일</li>
+                                <li aria-selected="false">20일</li>
+                                <li aria-selected="false">21일</li>
+                                <li aria-selected="false">22일</li>
+                                <li aria-selected="false">23일</li>
+                                <li aria-selected="false">24일</li>
+                                <li aria-selected="false">25일</li>
+                                <li aria-selected="false">26일</li>
+                                <li aria-selected="false">27일</li>
+                                <li aria-selected="false">28일</li>
+                                <li aria-selected="false">29일</li>
+                                <li aria-selected="false">30일</li>
+                            </ul>
+                            <ul class="week">
+                                <li aria-selected="false">월요일</li>
+                                <li aria-selected="false">화요일</li>
+                                <li aria-selected="false">수요일</li>
+                                <li class="on" aria-selected="true">목요일</li>
+                                <li aria-selected="false">금요일</li>
+                                <li aria-selected="false">토요일</li>
+                                <li aria-selected="false">일요일</li>
+                            </ul>
+                            <ul class="everyday">
+                                <li class="on"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+
+        // aria-selected 
+        document.querySelectorAll('.cycle li, .cycle-list ul li').forEach((item) => {
+                item.addEventListener('click', () => {
+                    // 동일 그룹의 모든 항목의 class 및 aria-selected 초기화
+                    const siblings = item.parentElement.children;
+                    Array.from(siblings).forEach((sibling) => {
+                        sibling.classList.remove('on');
+                        sibling.setAttribute('aria-selected', 'false');
+                    });
+
+                    // 선택된 항목에 class "on" 추가 및 aria-selected="true" 설정
+                    item.classList.add('on');
+                    item.setAttribute('aria-selected', 'true');
+                });
+            });
+
+    </script>
+</body>
+</html>

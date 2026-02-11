@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NH포인트 사용 신청 레이어팝업</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="navigation">
+                <div class="header">
+                    <div class="inner">
+                        <h1 class="title">고객정보 변경</h1>
+                        <div class="funcs">
+                            <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="content">
+                    <div class="field input -error">
+                        <label for="tex0" class="label-wrap">
+                            <span class="label">이름</span>
+                            <a href="javascript:void(0)" class="a no-under mb-12">NH농협은행 고객정보 불러오기</a>
+                        </label>
+                        <div class="text -basic">
+                            <input type="text" id="tex0" value="홍길동" placeholder="플레이스홀더">
+                        </div>
+                    </div>
+                    <div class="field input -error">
+                        <label for="phone1238" class="label">휴대폰(필수)</label>
+                        <div class="mix code">
+                            <div class="text flex-8 -readonly -textless" data-clear="false">
+                                <input type="tel" data-id="phone1238" class="left-side num-call" placeholder="인증번호 6자리"
+                                    title="인증번호 6자리 입력" aria-haspopup="true" value="010-12**-12**" readonly>
+                                <button class="clear" type="button" style="z-index: -1;">
+                                    <div class="hide">입력 내용 삭제</div>
+                                </button>
+                            </div>
+                            <div class="space -lined right-side">
+                                <button type="button" class="button -tertiary -sm -fitted" disabled>버튼</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field input -error">
+                        <label for="phone7" class="label">이메일</label>
+                        <div class="mix currency">
+                            <div class="text flex-5 -readonly -textless" data-clear="false">
+                                <input type="text" class="left-side num-call pr-0" id="phone7" value="userID" placeholder="직접입력" aria-haspopup="true" readonly>
+                            </div>
+                            <div class="dash">@</div>
+                            <div class="select flex-8">
+                                <button type="button" class="right-side choose pl-0 pr-40" aria-haspopup="true" title="이메일선택">nonghyup.com</button>
+                            </div>
+                            <p class="info">이메일 양식이 올바르지 않습니다.</p>
+                        </div>
+                    </div>
+                    <div class="field search -error">
+                        <label for="searchce3" class="label">집 주소(필수)</label>
+                        <div class="mix">
+                            <div class="text">
+                                <input type="text" class="left-side" id="searchce3" placeholder="검색어 입력" value="04517 서울시 중구 통일로 120">
+                            </div>
+
+                            <div class="space -lined search">
+                                <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                            </div>
+                        </div>
+                        <div class="text -basic">
+                            <input type="text" id="tex0" value="NH농협은행" placeholder="플레이스홀더">
+                        </div>
+                        <p class="info -error">주소에 한자와 특수문자는 입력할 수 없습니다.</p>
+                    </div>
+                    <div class="field input -error">
+                        <label for="phone123h0" class="label">집 전화번호(필수)</label>
+                        <div class="mix phone">
+                            <div class="select flex-4">
+                                <button type="button" class="left-side" aria-haspopup="true"
+                                    title="휴대폰 앞자리 선택">선택</button>
+                            </div>
+                            <div class="text flex-4" data-clear="false">
+                                <input type="password" class="mid-side num-call" id="phone123h0" value="1234"
+                                    placeholder="앞자리" maxlength="4" title="잔화번호 앞자리 4자리" aria-haspopup="true"
+                                    readonly>
+                            </div>
+                            <div class="dash">-</div>
+                            <div class="text flex-5" data-clear="false">
+                                <input type="password" class="right-side num-call" data-id="phone123h01" value="1234"
+                                    placeholder="뒷자리" title="잔화번호 뒷자리 4자리" maxlength="4" aria-haspopup="true"
+                                    readonly>
+                            </div>
+                            <p class="info">집 전화번호를 입력해 주세요.</p>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <p class="label">연락 받을곳</p>
+                        <div class="box-radios -box -lg">
+                            <div class="box-radio">
+                                <input type="radio" name="period1234450103" id="box-radio1-11100704">
+                                <label for="box-radio1-11100704">휴대폰</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="period1234450103" id="box-radio1-1110070035" checked>
+                                <label for="box-radio1-1110070035">집 전화</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="period1234450103" id="box-radio1-11100706">
+                                <label for="box-radio1-11100706">직장 전화</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <p class="label">우편물 받을곳</p>
+                        <div class="box-radios -box -lg">
+                            <div class="box-radio">
+                                <input type="radio" name="period12344501073" id="box-radio1-111007047" checked>
+                                <label for="box-radio1-111007047">집</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="period12344501073" id="box-radio1-11100700357">
+                                <label for="box-radio1-11100700357">직장</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="period12344501073" id="box-radio1-111007067">
+                                <label for="box-radio1-111007067">기타</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-wrap">
+                        <div class="accordion -line -active" data-role="fold">
+                            <button type="button" class="title" data-role="marker" title="펼쳐짐">직장정보</button>
+                            <div class="panel pb-0" data-role="visible">
+                                <div class="field input">
+                                    <label for="tex" class="label">직장 주소</label>
+                                    <div class="text -basic">
+                                        <input type="text" id="tex" value="04517 서울시 중구 통일로 120" placeholder="플레이스홀더" disabled>
+                                    </div>
+                                    <div class="text -basic">
+                                        <input type="text" id="tex0" value="NH농협은행" placeholder="플레이스홀더">
+                                    </div>
+                                </div>
+
+                                <div class="field input -error">
+                                    <label for="tex01" class="label">직장명(선택)</label>
+                                    <div class="text -basic">
+                                        <input type="text" id="tex01" value="NH농협은행" placeholder="플레이스홀더">
+                                        <p class="info">직장명에 특수문자는 - . / ( )만 사용가능합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="field input -error">
+                                    <label for="tex02" class="label">부서명(선택)</label>
+                                    <div class="text -basic">
+                                        <input type="text" id="tex02" value="스마트뱅킹팀" placeholder="플레이스홀더">
+                                        <p class="info">부서명에 특수문자는 - . / ( )만 사용가능합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="field input">
+                                    <label for="phone123h0" class="label">직장 전화번호(선택)</label>
+                                    <div class="mix phone">
+                                        <div class="select flex-4">
+                                            <button type="button" class="left-side fc-empty" aria-haspopup="true" title="휴대폰 앞자리 선택">선택</button>
+                                        </div>
+                                        <div class="text flex-4" data-clear="false">
+                                            <input type="password" class="mid-side num-call" id="phone123h0" value="" placeholder="앞자리" maxlength="4"
+                                                title="잔화번호 앞자리 4자리" aria-haspopup="true" readonly>
+                                        </div>
+                                        <div class="dash">-</div>
+                                        <div class="text flex-5" data-clear="false">
+                                            <input type="password" class="right-side num-call" data-id="phone123h04" value="" placeholder="뒷자리"
+                                                title="잔화번호 뒷자리 4자리" maxlength="4" aria-haspopup="true" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="field input">
+                                    <label for="phone123h05" class="label">팩스(선택)</label>
+                                    <div class="mix phone">
+                                        <div class="select flex-4">
+                                            <button type="button" class="left-side fc-empty" aria-haspopup="true" title="휴대폰 앞자리 선택">선택</button>
+                                        </div>
+                                        <div class="text flex-4" data-clear="false">
+                                            <input type="password" class="mid-side num-call" id="phone123h05" value="" placeholder="앞자리" maxlength="4"
+                                                title="잔화번호 앞자리 4자리" aria-haspopup="true" readonly>
+                                        </div>
+                                        <div class="dash">-</div>
+                                        <div class="text flex-5" data-clear="false">
+                                            <input type="password" class="right-side num-call" data-id="phone123h051" value="" placeholder="뒷자리"
+                                                title="잔화번호 뒷자리 4자리" maxlength="4" aria-haspopup="true" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap">
+                        <div class="accordion -line -active" data-role="fold">
+                            <button type="button" class="title" data-role="marker" title="펼쳐짐">기타정보</button>
+                            <div class="panel pb-0" data-role="visible">
+                                <div class="field search -error">
+                                    <label for="searchce30" class="label">기타 주소</label>
+                                    <div class="mix">
+                                        <div class="text">
+                                            <input type="text" class="left-side" id="searchce30" placeholder="검색어 입력" value="04517 서울시 중구 통일로 120">
+                                        </div>
+                                
+                                        <div class="space -lined search">
+                                            <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="text -basic">
+                                        <input type="text" id="searchce301" value="NH농협은행" placeholder="플레이스홀더">
+                                    </div>
+                                    <p class="info -error">주소에 한자와 특수문자는 입력할 수 없습니다.</p>
+                                </div>
+
+                                <div class="field">
+                                    <p class="label">생일</p>
+                                    <div class="box-radios -box -lg">
+                                        <div class="box-radio">
+                                            <input type="radio" name="period12344588" id="box-radio1-11107" checked>
+                                            <label for="box-radio1-11107">양력</label>
+                                        </div>
+                                        <div class="box-radio">
+                                            <input type="radio" name="period12344588" id="box-radio1-11106">
+                                            <label for="box-radio1-11106">음력</label>
+                                        </div>
+                                    </div>
+                                    <div class="mix datepicker day -error">
+                                        <div class="text" data-clear="false">
+                                            <input type="text" class="left-side" id="gga1" value="2025.08.23" title="첫번째 날짜선택" aria-haspopup="true"
+                                                readonly>
+                                        </div>
+                                        <div class="space -lined date">
+                                            <button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력
+                                                    보기</span></button>
+                                        </div>
+                                        <p class="info">생년월일을 입력해 주세요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -tertiary -lg">취소</button>
+                        <button type="button" class="button -primary -lg">저장</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

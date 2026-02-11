@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NH포인트 사용 신청 레이어팝업</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="navigation">
+                <div class="header">
+                    <div class="inner">
+                        <h1 class="title"></h1>
+                        <div class="funcs">
+                            <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="content">
+                    <div class="otp-wrap">
+                        <h4 class="h4">
+                            보안카드 번호 입력
+                            <p class="sub">
+                                일련번호 7~9번째 숫자 3자리를 입력해 주세요
+                            </p>
+                        </h4>
+                        <div class="otp-pw -secur">
+                            <span class="filled"><input title="보안카드 번호 입력" type="password" maxlength="1" disabled></span>
+                            <span class="filled"><input title="보안카드 번호 입력" type="password" maxlength="1" disabled></span>
+                            <span class="filled"><input title="보안카드 번호 입력" type="password" maxlength="1" disabled></span>
+                            <span class="filled"><input title="보안카드 번호 입력" type="password" maxlength="1" disabled></span>
+                            <span class="filled"><input title="보안카드 번호 입력" type="password" maxlength="1" disabled></span>
+                            <span class="filled"><input title="보안카드 번호 입력" type="password" maxlength="1" disabled></span>
+                            <input type="text" id="tex1" class="number ml-7" maxlength="1" value="*" placeholder="*" title="보안카드 번호 입력" readonly>
+                            <input type="text" id="tex12" class="number" maxlength="1" value="*" placeholder="*" title="보안카드 번호 입력" readonly>
+                            <input type="text" id="tex13" class="number" maxlength="1" value="*" placeholder="*" title="보안카드 번호 입력" readonly>
+                            <span class="filled ml-7"><input title="보안카드 번호 입력" type="password" maxlength="1" disabled></span>
+                        </div>
+                        <p class="center info -error">보안카드 일련번호 3자리를 입력해 주세요</p>
+
+                        <div class="case-wrap">
+                            <div class="data-box" style="width: 29.5rem;">
+                                <dl class="dl">
+                                    <div>
+                                        <dt>[33] 앞 2자리</dt>
+                                        <dd>
+                                            <div class="otp-pw -secur">
+                                                <input type="text" id="tex11" class="number ml-7" maxlength="1" value="*" placeholder="*" title="보안카드 번호 입력" readonly>
+                                                <input type="text" id="tex122" class="number" maxlength="1" value="*" placeholder="*" title="보안카드 번호 입력" readonly>
+                                                <span class="filled ml-7"><input title="보안카드 번호 입력" type="password" maxlength="1" disabled></span>
+                                                <span class="filled"><input title="보안카드 번호 입력" type="password" maxlength="1" disabled></span>
+                                            </div>
+                                        </dd>
+                                    </div>
+                                    <div>
+                                        <dt>[28] 뒤 2자리</dt>
+                                        <dd>
+                                            <div class="otp-pw -secur">
+                                                <span class="filled ml-7"><input title="보안카드 번호 입력" type="password" maxlength="1" disabled></span>
+                                                <span class="filled"><input title="보안카드 번호 입력" type="password" maxlength="1" disabled></span>
+                                                <input type="text" id="tex111" class="number ml-7" maxlength="1" value="*" placeholder="*" title="보안카드 번호 입력" readonly>
+                                                <input type="text" id="tex1222" class="number" maxlength="1" value="*" placeholder="*" title="보안카드 번호 입력" readonly>
+                                            </div>
+                                        </dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <p class="center info -error">비밀번호가 일치하지 않습니다 (n/10)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

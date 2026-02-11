@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+    <!-- 차트 관련css -->
+    <link rel="stylesheet" href="../../../../assets/libs/Chart/dist/Chart.css">
+    <link rel="stylesheet" href="../../../../assets/libs/Chart/dist/Chart.min.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">포트폴리오 설계</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="h2-group">
+                        <h2 class="h2">포트폴리오 상품을 확인해 주세요</h2>
+                    </div>
+
+                    <div class="case-wrap -sm">
+                        <div class="segments -bar">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div role="tablist" class="list">
+                                        <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel1" id="segment3">NH로보 포트폴리오</button></div>
+                                        <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel2" id="segment4">전문가 포트폴리오</button></div>
+                                        <span class="switcher" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="segments-panels">
+                        <div role="tabpanel" aria-labelledby="segment1" id="segments-panel1" class="segments-panel" tabindex="0">
+                            
+                        </div>
+
+                        <div role="tabpanel" aria-labelledby="segment2" id="segments-panel2" class="segments-panel -active" tabindex="0">
+                            <p class="grade-notice"><span class="-grade1">공격투자형</span>에 적합한 상품입니다.</p>
+
+                            <div class="h4-group mt-32">
+                                <h3 class="h4">추천 포트폴리오</h3>
+                            </div>
+
+                            <div class="card -sum">
+                                <dl class="dl -box -reversed">
+                                    <div>
+                                        <dt>예상최고 수익률
+                                            <span class="tooltip">
+                                                <button type="button" class="trigger">
+                                                    <span class="hide">툴팁</span>
+                                                </button>
+                                                <span class="panel">
+                                                    <span class="title">예상최고 수익률</span>
+                                                    <span class="t-content">
+                                                        포트폴리오에 투자할 경우 예상되는 수익률의 연간 기준 최고치(신뢰수준 95%)입니다. 가령, 포트폴리오의 예상 최고수익률이 10%라는 것의 의미는 포트폴리오의 수익률이 10%를 넘지 않을 확률이 95%라는 의미합니다.
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </dt>
+                                        <dd>14.49%</dd>
+                                    </div>
+                                    <div>
+                                        <dt>기대수익률
+                                            <span class="tooltip">
+                                                <button type="button" class="trigger">
+                                                    <span class="hide">툴팁</span>
+                                                </button>
+                                                <span class="panel">
+                                                    <span class="title">기대수익률</span>
+                                                    <span class="t-content">
+                                                        포트폴리오에 투자할 경우 예상되는 연환산 평균수익률입니다. 가령, 포트폴리오의 기대수익률이 5%라면 향후 해당 포트폴리오로 계속투자할 경우 예상되는 연평균 수익률이 5%라는 것을 의미합니다.
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </dt>
+                                        <dd>4.48%</dd>
+                                    </div>
+                                    <div>
+                                        <dt>예상최저 수익률
+                                            <span class="tooltip">
+                                                <button type="button" class="trigger">
+                                                    <span class="hide">툴팁</span>
+                                                </button>
+                                                <span class="panel">
+                                                    <span class="title">예상최저 수익률</span>
+                                                    <span class="t-content">
+                                                        포트폴리오에 투자할 경우 예상되는 수익률의 연간 기준 최저치(신뢰수준 95%)입니다. 가령, 포트폴리오의 예상 최저수익률이 -2%라는 것의 의미는 포트폴리오의 수익률이 -2% 이상의 손실을 기록하지 않을 확률이 95%라는 의미합니다.
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </dt>
+                                        <dd>-5.54%</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            
+                            <div class="case-wrap -xs">
+                                <div class="accordion -box" data-role="fold">
+                                    <button type="button" class="title" data-role="marker" title="접힘">운용전략 및 특징</button>
+                                    <div class="panel" data-role="hidden">
+                                        <!-- 240422 문구 수정 -->
+                                        <!-- [CASE] 공격투자형일 경우 -->
+                                        <p class="p"><span class="-grade1">공격투자형</span>의 투자성향을 가진 고객을 위하여 NH농협은행의 전문가가 추천하는 모델 포트폴리오입니다. 시장 평균수익률을 훨씬 넘어서는 높은 수준의 투자수익을 추구하며, 이를 위해 자산가치의 변동에 따른 손실 위험을 적극 수용하고, 투자자금 대부분을 주식, 주식형펀드 또는 파생상품 등의 위험자산에 투자 할 의향이 있는 고객에게 적합한 포트폴리오입니다.</p>
+                                        <!-- // [CASE] 공격투자형일 경우 -->
+
+                                        <!-- [CASE] 적극투자형일 경우 -->
+                                        <!-- <p class="p"><span class="-grade3">적극투자형</span>의 투자성향을 가진 고객을 위하여 NH농협은행의 로보어드바이저 알고리즘에 의해 산출된 모델 포트폴리오입니다. 투자원금의 보전보다는 위험을 감내하더라도 높은 수준의 투자수익 실현을 추구하며, 투자자금의 상당 부분을 주식, 주식형펀드 등의 위험자산에 투자할 의향이 있는 고객에게 적합한 포트폴리오입니다.</p> -->
+                                        <!-- // [CASE] 적극투자형일 경우 -->
+
+                                        <!-- [CASE] 위험중립형일 경우 -->
+                                        <!-- <p class="p"><span class="-grade4">위험중립형</span>의 투자성향을 가진 고객을 위하여 NH농협은행의 로보어드바이저 알고리즘에 의해 산출된 모델 포트폴리오입니다. 투자에는 그에 상응하는 투자위험이 있음을 충분히 인식하고 있으며, 예 · 적금보다 높은 수익을 기대 할 수 있다면 일정수준의 손실위험을 감수할 수 있는 고객에게 적합한 포트폴리오입니다.</p> -->
+                                        <!-- // [CASE] 위험중립형일 경우 -->
+
+                                        <!-- [CASE] 안정추구형일 경우 -->
+                                        <!-- <p class="p"><span class="-grade5">안정추구형</span>의 투자성향을 가진 고객을 위하여 NH농협은행의 로보어드바이저 알고리즘에 의해 산출된 모델 포트폴리오입니다. 투자원금의 손실위험은 최소화화고, 이자소득이나 배당소득 수준의 안정적인 투자를 목표로 합니다. 다만, 수익을 위해 단기적인 손실을 수용할 수 있으며 예 · 적금보다 높은 수익을 위해 자산 중 일부를 변동성 높은 상품에 투자할 의향이 있는 고객에게 적합한 포트폴리오 입니다.</p> -->
+                                        <!-- // [CASE] 안정추구형일 경우 -->
+
+                                        <!-- [CASE] 안정형일 경우 -->
+                                        <!-- <p class="p"><span class="-grade6">안정형</span>의 투자성향을 가진 고객을 위하여 NH농협은행의 로보어드바이저 알고리즘에 의해 산출된 모델 포트폴리오입니다. 예금 또는 적금 수준의 수익률을 기대하며, 투자원금에 손실이 발생하는 것을 원하지 않는 고객에게 적합한 포트폴리오입니다.</p> -->
+                                        <!-- // [CASE] 안정형일 경우 -->
+                                        <!-- // 240422 문구 수정 -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="case-wrap -xs">
+                                <div class="card -sum">
+                                    <dl class="dl -box -reversed">
+                                        <div>
+                                            <dt>변동성
+                                                <span class="tooltip">
+                                                    <button type="button" class="trigger">
+                                                        <span class="hide">툴팁</span>
+                                                    </button>
+                                                    <span class="panel">
+                                                        <span class="title">변동성</span>
+                                                        <span class="t-content">
+                                                            변동성은 포트폴리오의 수익률이 기대수익률을 기준해서 위아래로 움직이는 정도를 의미합니다. 포트폴리오의 변동성이 높을수록 투자위험도 높다는 의미입니다. 반면 변동성이 낮을수록 투자위험이 낮아 안정적인 자산운용에 유리합니다.
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </dt>
+                                            <dd>11.91%</dd>
+                                        </div>
+                                        <div>
+                                            <dt>원금손실확률
+                                                <span class="tooltip">
+                                                    <button type="button" class="trigger">
+                                                        <span class="hide">툴팁</span>
+                                                    </button>
+                                                    <span class="panel">
+                                                        <span class="title">원금 손실확률</span>
+                                                        <span class="t-content">
+                                                            포트폴리오에 투자할 경우 예상되는 투자원금 손실을 경험할 확률입니다. 가령, 원금손실확률이 10%라면 향후 해당포트폴리오에 100번 투자할 경우 그 중 10번 정도는 원금손실가능성이 있음을 의미합니다.
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </dt>
+                                            <dd>34.1%</dd>
+                                        </div>
+                                        <div>
+                                            <dt>최대손실비율
+                                                <span class="tooltip">
+                                                    <button type="button" class="trigger">
+                                                        <span class="hide">툴팁</span>
+                                                    </button>
+                                                    <span class="panel">
+                                                        <span class="title">최대 손실비율</span>
+                                                        <span class="t-content">
+                                                            정상적인 시장여건 하에서 포트폴리오에 투자할 경우 투자원금 대비 입을 수 있는 최대 손실 예상금액의 비율(신뢰수준 95%)입니다. 최대손실비율의 값이 높을수록 투자위험이 발생했을 때 입을 수 있는 손해액의 규모가 큽니다.
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </dt>
+                                            <dd>23.34%</dd>
+                                        </div>
+                                        <div>
+                                            <dt>MDD
+                                                <span class="tooltip">
+                                                    <button type="button" class="trigger">
+                                                        <span class="hide">툴팁</span>
+                                                    </button>
+                                                    <span class="panel">
+                                                        <span class="title">MDD</span>
+                                                        <span class="t-content">
+                                                            “Maximum Draw-Down”의 약자로 포트폴리오의 과거 투자기간 중 발생한 최고점 대비 손실률을 의미합니다.
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </dt>
+                                            <dd>-0.64%</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <div class="case-wrap -xs">
+                                <div class="chart-area -flex">
+                                    <canvas id="doughnut-chart" width="160" height="160" aria-label=""></canvas>
+                                    <div class="chart-labels -doughnut">
+                                        <p class="chart-label">국내주식 10%</p>
+                                        <p class="chart-label">국내채권 20%</p>
+                                        <p class="chart-label">국내채권혼합 10%</p>
+                                        <p class="chart-label">해외선진주식 10%</p>
+                                        <p class="chart-label">해외이머징주식 20%</p>
+                                        <p class="chart-label">해외채권 10%</p>
+                                        <p class="chart-label">해외채권혼합 20%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btn-wrap24">
+                                <div class="buttons -half">
+                                    <button type="button" class="button -tertiary -rg">포트폴리오 성과조회</button>
+                                    <button type="button" class="button -tertiary -rg">투자 시뮬레이션</button>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="title-group">
+                                    <div class="inner">
+                                        <h4 class="h4">추천상품</h4>
+                                    </div>
+                                    <a href="javascript:void(0)" class="a -arrow">포트폴리오 변경</a>
+                                </div>
+
+                                <div class="portfolio-product">
+                                    <div class="selection card">
+                                        <ul>
+                                            <li>
+                                                <div class="int-rate -bordered" role="button">
+                                                    <div class="top-area badges">
+                                                        <span class="badge -grade4">보통위험</span>
+                                                    </div>
+                                                    <div class="data-info-main">
+                                                        <div class="info-title">
+                                                            미래에셋QV글로벌자산배분30증권투자신탁1호(채혼-재간접형)C-P2e
+                                                        </div>
+                                                    </div>
+                                                    <div class="data-sub">
+                                                        <span class="title">운용비율</span>
+                                                        <span class="value">20%</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="int-rate -bordered" role="button">
+                                                    <div class="top-area badges">
+                                                        <span class="badge -grade4">보통위험</span>
+                                                    </div>
+                                                    <div class="data-info-main">
+                                                        <div class="info-title">
+                                                            IBK골드마이닝증권투자신탁1호(주식) C-Re
+                                                        </div>
+                                                    </div>
+                                                    <div class="data-sub">
+                                                        <span class="title">운용비율</span>
+                                                        <span class="value">40%</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="int-rate -bordered" role="button">
+                                                    <div class="top-area badges">
+                                                        <span class="badge line-gray">계열사</span><span class="badge line-orange">높은위험</span>
+                                                    </div>
+                                                    <div class="data-info-main">
+                                                        <div class="info-title">
+                                                            NH-Amundi 필승코리아증권투자신탁[주식] C-P2e
+                                                        </div>
+                                                    </div>
+                                                    <div class="data-sub">
+                                                        <span class="title">운용비율</span>
+                                                        <span class="value">40%</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg -primary">다음</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <!-- 차트 관련js -->
+    <script src="../../../../assets/libs/Chart/dist/Chart.js"></script>
+    <script src="../../../../assets/libs/Chart/dist/Chart.min.js"></script>
+    <script>
+        var doughnutChart = document.getElementById('doughnut-chart');
+        var chart = new Chart(doughnutChart, {
+            type: 'doughnut',
+            // 데이터 집합
+            data : {
+                labels: ['국내주식', '국내채권', '국내채권혼합', '해외선진주식', '해외이머징주식', '해외채권', '해외채권혼합'], //'유동성'
+                datasets: [{
+                    label: '보유 MP',
+                    data: [10, 30, 20, 20, 20, 10, 20],
+                    borderWidth: 1, // 경계선 제거할시 borderWidth: 0,
+                    hoverBorderWidth: 0,
+                    // 도넛 & 막대 그래프 컬러 순서 : 1.#5a5fd8, 2.#ff8a65, 3.#2bc4c0, 4.#ffcb3e, 5.#218fef, 6.#974bbf, 7.#7fde7b
+                    backgroundColor: ['#5a5fd8', '#ff8a65', '#2bc4c0', '#ffcb3e', '#218fef', '#974bbf', '#7fde7b'],
+                    hoverBackgroundColor : ['#5a5fd8', '#ff8a65', '#2bc4c0', '#ffcb3e', '#218fef', '#974bbf', '#7fde7b'],
+                }],
+            },
+            //설정
+            options: {
+                responsive: false,
+                legend: {
+                    display : false
+                },
+                // ui수정 240122 (차트 옵션 추가))
+                tooltips: {
+                    enabled: false,
+                }
+                // //ui수정 240122 (차트 옵션 추가))
+            }
+        })
+    </script>
+</body>
+</html>

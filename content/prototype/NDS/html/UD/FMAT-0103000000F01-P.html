@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">본인인증</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="auth-box -toss" aria-hidden="true"></div>
+
+                    <div class="h2-group">
+                        <h2 class="h2">토스 앱에서 인증해 주세요</h2>
+                        <p class="desc">
+                            고객님의 휴대폰으로 인증을 요청했어요.<br>
+                            토스 앱에서 인증 요청 메시지를 확인해 주세요.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sticker">
+                    <div class="box">
+                        <h3 class="title">휴대폰에 인증 요청 메시지가 오지 않으면</h3>
+                        <ul class="ul -bullet">
+                            <li>토스 앱이 설치되어 있는지 확인하고 로그인해 주세요.</li>
+                            <li>토스 앱 오른쪽 위의 알림 아이콘을 눌러 인증 요청을 확인하고 인증해 주세요.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <!-- [CASE] 다시 요청 가능할 경우 -->
+                        <button type="button" class="button -tertiary -lg">다시 요청</button>
+                        <!-- // -->
+                        <!-- [CASE] 다시 요청 불가능할 경우 -->
+                        <!-- <button type="button" class="button -lg">닫기</button> -->
+                        <!-- // -->
+                        <button type="button" class="button -primary -lg">다음</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

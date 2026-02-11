@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="layer" class="layer">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">대출신청 금액을 입력해 주세요</h1>
+
+                    <!-- <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div> -->
+                </div>
+            </div>
+
+            
+
+            <div class="contents">
+                <div class="content">
+                    <div class="choose-account-Wrap -inputed">
+
+                        <!-- <div class="field">
+                            <div class="mix">
+                                <div class="text -won choose-account-input">
+                                    <input type="tel" id="tt12" class="right num-call" value="" placeholder="10만원~10억원" aria-haspopup="true" readonly>
+                                    <div class="won">원</div>
+                                </div>
+                                <div class="info-wrap">
+                                    <p class="message -error">1회 이체한도는 50,000,000입니다.</p>
+                                    <p class="message">1회 이체한도는 50,000,000입니다.</p>
+                                    <p class="info right point">칠억원</p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="field layerType">
+                            <div class="mix">
+                                <div class="text -won choose-account-input">
+                                    <div class="num-call">
+                                        <span class="placeholder">0원</span><!-- placeholder -->
+                                        <span class="num-val"></span><!-- 숫자들어 가는 영역 -->
+                                    </div>
+                                    <!-- <input type="tel" id="tt12" class="right num-call" value="" placeholder="10만원~10억원" aria-haspopup="true" readonly> -->
+                                    <div class="won">원</div>
+                                </div>
+                                <!-- [CASE] 메시지 케이스 -->
+                                <!-- 공통 화면 설계서 참조 3개의 값중 하나만 노출
+                                    (한도안내 or 한도체크값이 있는경우에는 최초 먼저 노출 후, 정상금액 입력 시에는 한글금액만 출력 
+                                    - 입력오류알림인 있는 경우에는 입력오류알림 내용만  출력  ) -->
+                                <div class="info-wrap">
+                                    <p class="message -default">100만원이상 10만원 단위로 입력</p>
+                                    <!-- <p class="message">1회 이체한도는 50,000,000입니다.</p> -->
+                                    <!-- <p class="message -error">1회 이체한도는 50,000,000입니다.</p> -->
+                                    <!-- <p class="info right point">칠억원</p> -->
+                                </div>
+                                <!-- [CASE] 메시지 케이스 -->
+                            </div>
+                        </div>
+
+                        <!-- <div class="amount-btn-wrap">
+                            <button type="button" value="100000" class="button numBtn -sm -fit">+10만</button>
+                            <button type="button" value="500000" class="button numBtn -sm -fit">+50만</button>
+                            <button type="button" value="1000000" class="button numBtn -sm -fit">+100만</button>
+                            <button type="button" value="10000000" class="button numBtn -sm -fit">+1,000만</button>
+                        </div>
+                        <div class="custom-key-wrap">
+                            <button class="t_btn" type="button" value="1" title="숫자 1 입력">1</button>
+                            <button class="t_btn" type="button" value="2" title="숫자 2 입력">2</button>
+                            <button class="t_btn" type="button" value="3" title="숫자 3 입력">3</button>
+                            <button class="t_btn" type="button" value="4" title="숫자 4 입력">4</button>
+                            <button class="t_btn" type="button" value="5" title="숫자 5 입력">5</button>
+                            <button class="t_btn" type="button" value="6" title="숫자 6 입력">6</button>
+                            <button class="t_btn" type="button" value="7" title="숫자 7 입력">7</button>
+                            <button class="t_btn" type="button" value="8" title="숫자 8 입력">8</button>
+                            <button class="t_btn" type="button" value="9" title="숫자 9 입력">9</button>
+                            <button class="t_btn" type="button" disabled aria-hidden="true">NH</button>
+                            <span role="button" class="t_btn" type="button" style="width:50px;background-color:yellow" value="0" title="숫자 0 입력">0</span>
+                            <span role="button" class="t_btn btn-del" style="width:50px;background-color:yellow" title="마지막 숫자 삭제">←</span>
+                        </div> -->
+
+                        <div class="amount-btn-wrap same-width">
+                            <span role="button" data-value="100000" class="button numBtn -sm -fit">+100만원</span>
+                            <span role="button" data-value="500000" class="button numBtn -sm -fit">+500만원</span>
+                            <span role="button" data-value="1000000" class="button numBtn -sm -fit">+1,000만원</span>
+                            <span role="button" data-value="10000000" class="button numBtn -sm -fit">+1억원</span>
+                        </div>
+                        <div class="custom-key-wrap">
+                            <span role="button" class="key-btn" data-value="1" title="숫자 1 입력">1</span>
+                            <span role="button" class="key-btn" data-value="2" title="숫자 2 입력">2</span>
+                            <span role="button" class="key-btn" data-value="3" title="숫자 3 입력">3</span>
+                            <span role="button" class="key-btn" data-value="4" title="숫자 4 입력">4</span>
+                            <span role="button" class="key-btn" data-value="5" title="숫자 5 입력">5</span>
+                            <span role="button" class="key-btn" data-value="6" title="숫자 6 입력">6</span>
+                            <span role="button" class="key-btn" data-value="7" title="숫자 7 입력">7</span>
+                            <span role="button" class="key-btn" data-value="8" title="숫자 8 입력">8</span>
+                            <span role="button" class="key-btn" data-value="9" title="숫자 9 입력">9</span>
+                            <span role="button" class="key-btn" data-value="00" title="숫자 00 입력">00</span>
+                            <span role="button" class="key-btn" data-value="0" title="숫자 0 입력">0</span>
+                            <span role="button" class="key-btn btn-del" title="마지막 숫자 삭제"></span>
+                        </div>
+                        <div class="buttons">
+                            <button type="button" class="button -lg -primary">확인</button>
+                        </div>
+                    </div>
+                    <!-- //.choose-account-Wrap -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+
+        // 레이어 닫기(마지막 인자 기본값: false)
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // });
+
+        // 레이어 닫기 + DOM 삭제
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+    <script>
+        /* 키패드 키입력 예시 */
+        var numKeyEmt = document.querySelectorAll('.custom-key-wrap .key-btn');
+        numKeyEmt.forEach(numKeyEmt => {
+            var $targetInput;
+            var $thisValLayer = numKeyEmt.closest('.custom-key-layer.-active');  //dim 없는 레이어 숫자 키패드
+            var $thisValChoose = numKeyEmt.closest('.choose-account-Wrap');  //bottom sheet 숫자 키패드
+            
+             numKeyEmt.addEventListener('click',function () {
+                 if (!numKeyEmt.classList.contains('btn-del')) { //div로 변경으로 수정(240118) 숫자삭제시 '원' 텍스트 깜박이는 문제로인해 조건 추가
+                    if ($thisValLayer !== null) {
+                        $targetInput = numKey.numInput;
+                    } else if($thisValChoose !== null) {
+                        $targetInput = $thisValChoose.querySelector('.choose-account-input .num-call .num-val');//div로 변경으로 수정(240118)
+                        $targetInput.closest('.text').classList.remove('-textless');
+                    }
+                    var $thisval = numKeyEmt.getAttribute('data-value');
+                    if (!numKeyEmt.classList.contains('disabled')) {
+                        if (!numKeyEmt.classList.contains('btn-del')) {
+                            $targetInput.innerText = $targetInput.innerText + $thisval;//div로 변경으로 수정(240118)
+                        }
+                    } 
+                 }
+             })
+
+            if (numKeyEmt.classList.contains('btn-del')) {
+                if ($thisValLayer !== null) {
+                     $targetInput = numKey.numInput;
+                 } else if($thisValChoose !== null) {
+                     $targetInput = $thisValChoose.querySelector('.choose-account-input .num-call .num-val');//div로 변경으로 수정(240118)
+                     /* div로 변경으로 추가 시작(240118) */
+                     if ($targetInput.innerText.length == 0) {
+                        $targetInput.closest('.text').classList.add('-textless');    
+                     }
+                     /* div로 변경으로 추가 끝(240118) */
+                 }
+                var startTime = 0;
+                var endTime = 0;
+                var lognTab = 0;
+                numKeyEmt.ontouchstart = function () {
+                    startTime = Date.now()
+                }
+                numKeyEmt.ontouchend = function () {
+                    endTime = Date.now()
+                    longTab = endTime - startTime;
+                    if (longTab > 300) {
+                        $targetInput.innerText = '';//div로 변경으로 수정(240118)
+                        setTimeout(() => {
+                            $targetInput.closest('.text').classList.add('-textless');
+                        }, 1);
+                    }else{
+                       $targetInput.innerText = $targetInput.innerText.slice(0,-1);//div로 변경으로 수정(240118)
+                        if ($targetInput.innerText.length == 0 ) {//div로 변경으로 수정(240118)
+                            setTimeout(() => {
+                                $targetInput.closest('.text').classList.add('-textless');
+                            }, 1);
+                           // $targetInput.closest('.text').classList.add('-textless')
+                        }
+                    }
+                }
+            }
+        });
+ 
+         //
+         var amountBtn = document.querySelectorAll('.amount-btn-wrap .numBtn');
+         amountBtn.forEach(amountBtn => {
+             amountBtn.addEventListener('click',function () {
+                var $targetInput;
+                 var $thisValLayer = amountBtn.closest('.custom-key-layer.-active');  //dim 없는 레이어 숫자 키패드
+                 var $thisValChoose = amountBtn.closest('.choose-account-Wrap');  //bottom sheet 숫자 키패드
+                 if ($thisValLayer !== null) {
+                     $targetInput = numKey.numInput;
+                 } else if($thisValChoose !== null) {
+                     $targetInput = $thisValChoose.querySelector('.choose-account-input .num-call .num-val') //div로 변경으로 수정(240118)
+                 }
+                 var $thisval = amountBtn.getAttribute('data-value');
+                 $targetInput.innerText = Number($thisval) + Number($targetInput.innerText);//div로 변경으로 수정(240118)
+                 $targetInput.closest('.text').classList.remove('-textless');
+             })
+             
+         });
+         /* //키패드 키입력 예시 */
+     </script>
+
+</body>
+</html>

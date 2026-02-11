@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+
+	<link rel="stylesheet" href="../../../../assets/libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+			<header class="header">
+				<div class="inner">
+					<div class="funcs">
+						<button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+					</div>
+
+					<h1 class="title"><span class="hide">회차별 상환</span></h1>
+
+					<div class="funcs">
+						<button type="button" class="func">취소</button>
+					</div>
+				</div>
+			</header>
+
+			<main class="contents">
+				<div class="content">
+
+					<div class="h2-group">
+						<h2 class="h2">
+							상환 예약을 위한 정보를 입력해 주세요
+						</h2>
+					</div>
+
+					<h2 class="h4">계좌정보</h2>
+					<div class="account card">
+						<dl class="dl">
+							<div>
+								<dt>계좌번호</dt>
+								<dd><span class="number">302-1234-1234-01</span></dd>
+							</div>
+							<div>
+								<dt>상품명</dt>
+								<dd>올원직장인대출</dd>
+							</div>
+							<div>
+								<dt>대출잔액</dt>
+								<dd><span class="number">10,000,000</span>원</dd>
+							</div>
+						</dl>
+					</div>
+
+					<div class="field input">
+						<label for="tt1" class="label">상환금액</label>
+						<div class="mix price-won">
+							<div class="text -won" data-clear="false">
+								<input type="tel" id="tt1" class="right num-call" aria-haspopup="true" placeholder="금액을 입력하세요" readonly>
+								<div class="won comb-del">원</div>
+								<button class="clear" type="button" style="z-index: -1;"><div class="hide">입력 내용 삭제</div></button>
+							</div>
+							<p class="info">상환예약 금액은 금차 원리금 합계보다 많아야 합니다.</p>
+						</div>
+					</div>
+
+					<div class="field calendar">
+						<label for="gga" class="label">상환예약일자</label>
+						<div class="mix datepicker day">
+							<div class="text" data-clear="false">
+								<input type="text" class="left-side fc-empty" id="gga" value="" placeholder="날짜를 선택하세요" title="날짜선택" aria-haspopup="true"
+									readonly>
+							</div>
+							<div class="space -lined date">
+								<button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+							</div>
+							<div class="info-wrap">
+								<p class="info -bullet">예약하시는 상환 일자는 상환예약 신청일자 익영업일부터 최종상환 일자 전영업일까지 기간 내에서 등록 가능합니다.</p>
+								<p class="info -bullet">휴일 및 자동이체 출금일은 상환예약이 불가합니다.</p>
+								<p class="info -bullet">자동이체 출금일: 자동이체일(휴일인 경우 다음 영업일)</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<p class="label">상환예약시간</p>
+						<div class="select -basic">
+							<button type="button" aria-haspopup="true" class="fc-empty">시간을 선택하세요</button>
+						</div>
+					</div>
+
+					<div class="field">
+						<p class="label">출금계좌</p>
+						<div class="select -price -filled">
+							<div class="button-type -fixed">
+								<div class="selection">
+									<button type="button" aria-haspopup="true" data-bankcode="011" class="info">
+										<span class="name">
+											<span>주거래우대통장</span>
+										</span>
+										<span class="account-number">
+											<span>NH농협은행</span>
+											<span>111-1234-5678-99</span>
+										</span>
+									</button>
+									<div class="amount">
+										<div class="key">출금가능금액</div>
+										<div class="value">
+											<span>
+												50,000,000
+											</span>원
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field input">
+						<label for="field20" class="label -readonly">계좌 비밀번호</label>
+						<div class="text -password -readonly">
+							<input type="password" class="num-call" id="field20" value="" aria-haspopup="true" readonly="" placeholder="계좌비밀번호 4자리" maxlength="4">
+							<button class="clear" type="button" style="z-index: -1;"><div class="hide">입력 내용 삭제</div></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="sticker">
+					<div class="notice -active" data-role="fold">
+						<button type="button" class="title" data-role="marker">알아두세요</button>
+						<div class="panel" data-role="visible">
+							<ul class="ul -bullet">
+								<li>원금예약상환은 개인여신 중 일시상환대출 및 원금균등할부상환만 가능합니다.</li>
+								<li>현재 대출의 상태가 지연 및 연체 중인 대출은 신청 불가합니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -primary -lg">확인</button>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../../assets/libs/scrollout/dist/scroll-out.min.js"></script>
+	<script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../../../assets/js/common-ui.js"></script>
+	<script>
+		// 스크립트 추가
+	</script>
+</body>
+</html>

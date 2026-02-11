@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>[NDS] Components guide</title>
+
+    <link rel="stylesheet" href="assets/css/common-ui.css">
+    <link rel="stylesheet" href="worklist/assets/css/guide.css">
+    <!-- 반영X -->
+    <style>
+        .badge.-colorpick {
+            animation: colorpick 2s linear infinite;
+            border: 1px solid red;
+            color: blue
+        }
+
+        @keyframes colorpick {
+            from {
+                filter: hue-rotate(0)
+            }
+
+            to {
+                filter: hue-rotate(360deg)
+            }
+        }
+
+        .badge.-colorpick-bg {
+            animation: colorpick-bg 2s linear infinite;
+            background-color: red;
+            color: green
+        }
+
+        @keyframes colorpick-bg {
+            from {
+                filter: hue-rotate(0)
+            }
+
+            to {
+                filter: hue-rotate(360deg)
+            }
+        }
+    </style>
+    <!-- // 반영X -->
+</head>
+
+<body class="body-width-lnb test-mode">
+    <div class="container">
+        <div class="contents with-lnb">
+            <aside class="lnb-wrapper">
+                <ul class="lnb" id="lnbMenu"></ul>
+            </aside>
+            <div class="content">
+                <div class="gh">
+                    <div class="gh__title">
+                        <a href="/">NDS</a>
+                    </div>
+
+                    <div class="gh__nav">
+                        <a href="docs.html">Docs</a>
+                        <a href="nds-guide-components.html" class="-active">Components guide</a>
+                        <a href="worklist-nds.html">Example of use</a>
+                    </div>
+
+                    <div class="gh__utils">
+                        <button type="button" class="gh__util -alltest on"><span>카피모드</span></button>
+                        <button type="button" class="gh__util -assemble"><span>조립모드</span></button>
+                        <button type="button" class="gh__util -dark"><span>다크모드</span></button>
+                    </div>
+                </div>
+                <div class="gc">
+                    <div class="gl__header">
+                        <div class="field search">
+                            <div class="mix -filled">
+                                <div class="text">
+                                    <input type="text" class="left-side" id="searchInput" placeholder="검색어 입력" value="">
+                                </div>
+
+                                <div class="space -lined search">
+                                    <button type="button" class="icon-button -search right-side"><span
+                                            class="hide">조회</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gl"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function (e) {
+            const keyword = e.target.value.toLowerCase();
+            // .gl__item이 각각의 카드라고 가정
+            document.querySelectorAll('.gl__item').forEach(function (item) {
+                // data-title 속성 기준으로 검색
+                const title = item.getAttribute('data-title') || '';
+                if (title.toLowerCase().includes(keyword)) {
+                    item.classList.remove('hide');
+                } else {
+                    item.classList.add('hide');
+                }
+            });
+        });
+    </script>
+    <script>
+        const componentTypes = [
+            "Accordion", "Attached file", "Badge", "Bottomsheet", "Bullet", "Button",
+            "Calendar", "Card", "Check", "Chip", "Controls", "Divider", "Empty",
+            "Filter", "Icon", "Image", "Indicator", "Infobox", "Input", "Label",
+            "Link", "List", "Load data", "Local Assets", "Navigation", "Popover",
+            "Popup", "Process", "Radio", "Search", "Select", "Statusbar", "Switch",
+            "Tab", "Table", "Terms", "Text area", "Toast", "Tooltip"
+        ];
+
+        const lnbContainer = document.getElementById('lnbMenu');
+
+        componentTypes.forEach(type => {
+            const li = document.createElement('li');
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.textContent = type;
+            button.onclick = () => {
+                // 다른 버튼들의 active 클래스 제거
+                document.querySelectorAll('.lnb button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                // 클릭된 버튼에 active 클래스 추가
+                button.classList.add('active');
+
+                const input = document.getElementById('searchInput');
+                if (input) {
+                    input.value = type + ' |';
+                    // 검색 이벤트 트리거
+                    const event = new Event('input');
+                    input.dispatchEvent(event);
+                    // 입력 필드에 포커스
+                    input.focus();
+                }
+                document.querySelector('.contents.with-lnb > .content').scrollTo(0, 0)
+            };
+            li.appendChild(button);
+            lnbContainer.appendChild(li);
+        });
+
+        // 토스트 팝업 확인용
+        function tostAtive(e) {
+            var $target = e.nextElementSibling;
+            $target.classList.add('-active')
+            setTimeout(() => {
+                $target.classList.remove('-active')
+            }, 3100);
+        }
+    </script>
+    <!-- Assemble Mode Viewport -->
+    <div class="assemble-viewport" id="assembleViewport">
+        <div class="assemble-viewport__header">
+            <h3 class="assemble-viewport__title">모바일 뷰포트 (360x760)</h3>
+            <div class="assemble-viewport__actions">
+                <button type="button" class="assemble-viewport__action -export" id="assembleViewportExport"
+                    title="HTML 내보내기"><span class="hide">내보내기</span></button>
+                <button type="button" class="assemble-viewport__action -undo" id="assembleViewportUndo"
+                    title="실행 취소"><span class="hide">실행 취소</span></button>
+                <button type="button" class="assemble-viewport__action -redo" id="assembleViewportRedo"
+                    title="다시 실행"><span class="hide">다시 실행</span></button>
+                <button type="button" class="assemble-viewport__action -close" id="assembleViewportClose"><span
+                        class="hide">닫기</span></button>
+            </div>
+        </div>
+        <div class="assemble-viewport__frame" id="assembleViewportFrame">
+            <iframe id="assembleViewportIframe" class="assemble-viewport__iframe" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/libs/anime/lib/anime.min.js"></script>
+    <script src="worklist/assets/js/guide.js"></script>
+    <script src="assets/js/common-ui.js"></script>
+    <script>
+    // 로드 이후 guide 실행
+    async function init() {
+        const components = [
+            '/public/content/components/Accordion.html',
+            '/public/content/components/Attachedfile.html',
+            '/public/content/components/Badge.html',
+            '/public/content/components/Bottomsheet.html',
+            '/public/content/components/Bullet.html',
+            '/public/content/components/Button.html',
+            '/public/content/components/Calendar.html',
+            '/public/content/components/Card.html',
+            '/public/content/components/Check.html',
+            '/public/content/components/Chip.html',
+            '/public/content/components/Controls.html',
+            '/public/content/components/Divider.html',
+            '/public/content/components/Empty.html',
+            '/public/content/components/Filter.html',
+            '/public/content/components/Icon.html',
+            '/public/content/components/Image.html',
+            '/public/content/components/Indicator.html',
+            '/public/content/components/Infobox.html',
+            '/public/content/components/Input.html',
+            '/public/content/components/Label.html',
+            '/public/content/components/Link.html',
+            '/public/content/components/List.html',
+            '/public/content/components/Loaddata.html',
+            '/public/content/components/LocalAssets.html',
+            '/public/content/components/Navigation.html',
+            '/public/content/components/Popover.html',
+            '/public/content/components/Popup.html',
+            '/public/content/components/Process.html',
+            '/public/content/components/Radio.html',
+            '/public/content/components/Search.html',
+            '/public/content/components/Select.html',
+            '/public/content/components/Statusbar.html',
+            '/public/content/components/Switch.html',
+            '/public/content/components/Tab.html',
+            '/public/content/components/Table.html',
+            '/public/content/components/Terms.html',
+            '/public/content/components/Textarea.html',
+            '/public/content/components/Toast.html',
+            '/public/content/components/Tooltip.html',
+        ];
+
+        for (const path of components) {
+        await loadComponent(path);
+        }
+        buildGuide();
+    }
+    // 컴퍼넌트 불러오기
+    async function loadComponent(path) {
+        const res = await fetch(path);
+        const html = await res.text();
+        document.querySelector('.gl').insertAdjacentHTML('beforeend', html);
+    }
+    init();
+    </script>
+</body>
+
+</html>

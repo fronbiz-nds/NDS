@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+    <link rel="stylesheet" href="../../assets/css/util.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <h1 class="title">타이틀</h1>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta amet corrupti ipsum necessitatibus consequatur repellat vel, et culpa odio magni explicabo. Commodi possimus velit dolorum voluptate nesciunt doloremque beatae!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta amet corrupti ipsum necessitatibus consequatur repellat vel, et culpa odio magni explicabo. Commodi possimus velit dolorum voluptate nesciunt doloremque beatae!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta amet corrupti ipsum necessitatibus consequatur repellat vel, et culpa odio magni explicabo. Commodi possimus velit dolorum voluptate nesciunt doloremque beatae!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta amet corrupti ipsum necessitatibus consequatur repellat vel, et culpa odio magni explicabo. Commodi possimus velit dolorum voluptate nesciunt doloremque beatae!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta amet corrupti ipsum necessitatibus consequatur repellat vel, et culpa odio magni explicabo. Commodi possimus velit dolorum voluptate nesciunt doloremque beatae!
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="button -primary" onclick="Layer.open('layer')">Layer Open</button>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <a href="#button" class="button -lg">취소</a>
+                        <button type="button" class="button -lg -primary"><span>확인</span></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="layer" class="layer">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <h1 class="title">타이틀</h1>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="buttons">
+                        <button type="button" class="button -primary" onclick="Alert.open('alert')">Alert Open</button>
+                        <button type="button" class="button" onclick="Layer.close('layer')">Layer Close</button>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <a href="#button" class="button -lg">취소</a>
+                        <button type="button" class="button -lg -primary"><span>확인</span></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="alert" class="alert">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <h1 class="title">타이틀</h1>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <button type="button" class="button" onclick="Alert.close('alert')">Alert Close</button>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <a href="#button" class="button -lg">취소</a>
+                        <button type="button" class="button -lg -primary"><span>확인</span></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+    </script>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>금융상품몰 메인</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page main-body">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <h1 class="title">금융상품몰</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cart"><span class="hide">장바구니</span>
+                            <span class="cart-badge-wrap">
+                                <span class="cart-num">2</span>
+                                <span class="cart-badge"></span>
+                        </button>
+                        <button type="button" class="func -menu"><span class="hide">메뉴</span></button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="main-content">
+                        <!-- 공지사항 -->
+                        <div class="notice-wrap">
+                            <div class="notice-dim"></div>
+                            <div class="notice-content">
+                                <div class="notice-banner-wrap swiper-number">
+                                    <div class="notice-banner-swiper swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="notice-banner">
+                                                        <!-- 시스템 점검 공지용 배너 -->
+                                                        <div class="notice-txt-wrap">
+                                                            <div class="inspect-title">시스템 점검 안내</div>
+                                                            <div class="inspect-date">5월 19일(일) 23:55~<br>5월 20일(월) 04:55</div>
+                                                            <div class="inspect-content">시스템 정기점검으로<br>서비스가 일시 중단 되오니<br>고객님의 양해를 부탁드립니다.</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <!-- cms 영역(링크가 cms에 포함되어 있는 경우) -->
+                                                <div id="noticeUrlLoad0">
+                                                    <div class="notice-banner">
+                                                        <!-- <a href="javascript:;" role="button" title="NH모바일전세대출+" onclick="navigate('MFEL2200R', {'nhType':'1','naac_dsc':'1','psnFncWrsC':'40000854','listServiceId':'MFEL0111R','serviceId':'MFEL2200R'});n_click_logging('https://' + document.location.hostname + '/wlarea.do?area01=smartmarket_m&area02=bnk&area03=main00501')">
+                                                            <img src="/content/assets/imgs/img/main/main-notice-01.png"  alt="신규대출부터 대환대출까지 ! 스마트폰 하나로 신청할 수 있는 대출상품">
+                                                        </a> -->
+                                                        <div class="message-test" style="padding: 10rem;">배너2입니다.</div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="notice-banner">
+                                                        <div class="message-test" style="padding: 10rem;">배너3입니다.</div> 
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="notice-banner">
+                                                        <!-- <img src="/content/assets/imgs/img/main/main-notice-02.png" alt="청년도약계좌 다시시작, 만기 도래한 청년희망적금! 청년도약계좌로 시작해 보세요 2024.05.01 ~ 2024.05.31"> -->
+                                                        <div class="message-test" style="padding: 10rem;">배너4입니다.</div> 
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="pagination-wrap indicator -left">
+                                            <div class="swiper-pagination">
+                                                <span class="swiper-pagination-current">1</span> <span class="swiper-pagination-total">3</span>
+                                            </div>
+                                            <a href="javascript:void(0);" class="button-stop" role="button">
+                                                <span class="hide">정지</span>
+                                            </a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="notice-bottom">
+                                    <a class="close term-close" href="javascript:void(0);" role="button">3일동안 열지 않기</a>
+                                    <a class="close" href="javascript:void(0);" role="button">닫기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // 공지사항 -->
+
+                        <!-- 배너영역 -->
+                        <!-- [240507] 메인, 서브메인 사업부 수정 요청사항 메인 배너 정책 -->
+                        <!-- [240517] 배너 수정 -->
+                        <div class="main-banner-wrap" style="display: none;">
+                            <div class="main-banner-swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- 수신 배너 2종 -->
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0);">
+                                            <div class="main-banner type01">
+                                                <div class="hash-tag"><span>#목돈굴리기</span><span>#대표상품</span></div>
+                                                <div class="banner-txt-wrap">
+                                                    <div class="prd-title">복잡한 우대조건없이<br>목돈을 굴릴수 있는</div>
+                                                    <div class="prd-sub">NH올원e예금</div>
+                                                </div>
+                                                <div class="banner-bottom">
+                                                    <span class="high"><span class="txt">최고</span><span class="num">2.80%</span></span>
+                                                    <span class="def"><span class="txt">기본</span><span class="num">2.80%</span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0);">
+                                            <div class="main-banner type02">
+                                                <div class="hash-tag"><span>#재테크</span><span>#월복리</span><span>#급여이체</span></div>
+                                                <div class="banner-txt-wrap">
+                                                    <div class="prd-title">이자에 이자를 더한 적금<br>재테크도 꼼꼼하게</div>
+                                                    <div class="prd-sub">NH직장인월복리적금</div>
+                                                </div>
+                                                <div class="banner-bottom">
+                                                    <span class="high"><span class="txt">최고</span><span class="num">2.80%</span></span>
+                                                    <span class="def"><span class="txt">기본</span><span class="num">2.80%</span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- // 수신 배너 2종 -->
+
+                                    <!-- 여신 배너 2종 -->
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0);">
+                                            <div class="main-banner type03">
+                                                <div class="hash-tag"><span>#BEST</span><span>#대출</span></div>
+                                                <div class="banner-txt-wrap">
+                                                    <div class="prd-title">내가 가진 대출을<br>갈아탈 수 있는 기회!</div>
+                                                    <div class="prd-sub">다른금융기관 대출 갈아타기</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0);">
+                                            <div class="main-banner type04">
+                                                <div class="hash-tag"><span>#전세대출</span><span>#갈아타기</span></div>
+                                                <div class="banner-txt-wrap">
+                                                    <div class="prd-title">농협은행 전세대출<br>비교하고 갈아타자!</div>
+                                                    <div class="prd-sub">NH모바일전세대출+</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- // 여신 배너 2종 -->
+
+                                    <!-- 영업점 상품 -->
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0);">
+                                            <div class="main-banner type03">
+                                                <div class="banner-badge"><span class="main-badge">영업점상품</span></div>
+                                                <div class="hash-tag"><span>#BEST</span><span>#금리우대</span></div>
+                                                <div class="banner-txt-wrap">
+                                                    <div class="prd-title">이자에 이자를 더한 적금<br>재테크도 꼼꼼하게</div>
+                                                    <div class="prd-sub">주택청약종합저축</div>
+                                                </div>
+                                                <div class="banner-bottom">
+                                                    <span class="high"><span class="txt">최고</span><span class="num">2.80%</span></span>
+                                                    <span class="def"><span class="txt">기본</span><span class="num">2.80%</span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- // 영업점 상품 -->
+
+                                    <!-- 올원전용 상품 -->
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0);">
+                                            <div class="main-banner type02">
+                                                <div class="banner-badge"><span class="main-badge">올원전용</span></div>
+                                                <div class="hash-tag"><span>#BEST</span><span>#금리우대</span></div>
+                                                <div class="banner-txt-wrap">
+                                                    <div class="prd-title">높은우대 환율 적용<br>외화정기예금 금리 제공</div>
+                                                    <div class="prd-sub">주택청약종합저축</div>
+                                                </div>
+                                                <div class="banner-bottom">
+                                                    <span class="high"><span class="txt">최고</span><span class="num">2.80%</span></span>
+                                                    <span class="def"><span class="txt">기본</span><span class="num">2.80%</span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- // 올원전용 상품 -->
+
+                                    <!-- 하드코딩 배너 4종 -->
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0);">
+                                            <div class="main-banner type05">
+                                                <div class="banner-txt-wrap">
+                                                    <div class="prd-title">시작이 반이다!<br>똑똑하게 내 집 마련하기</div>
+                                                    <div class="prd-sub">NH왈츠회전예금</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0);">
+                                            <div class="main-banner type06">
+                                                <div class="banner-txt-wrap">
+                                                    <div class="prd-title">시작이 반이다!<br>똑똑하게 내 집 마련하기</div>
+                                                    <div class="prd-sub">NH직장인월복리적금</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0);">
+                                            <div class="main-banner type07">
+                                                <div class="banner-txt-wrap">
+                                                    <div class="prd-title">시작이 반이다!<br>똑똑하게 내 집 마련하기</div>
+                                                    <div class="prd-sub">주택청약종합저축</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0);">
+                                            <div class="main-banner type08">
+                                                <div class="banner-txt-wrap">
+                                                    <div class="prd-title">시작이 반이다!<br>똑똑하게 내 집 마련하기</div>
+                                                    <div class="prd-sub">NH올원e예금</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- // 하드코딩 배너 4종 -->
+                                </div>
+                                <div class="pagination-wrap">
+                                    <div class="swiper-pagination"></div>
+                                    <a href="javascript:void(0);" class="button-stop" role="button">
+                                        <span class="hide">정지</span>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- // [240517] 배너 수정 -->
+                        <!-- [240507] 메인, 서브메인 사업부 수정 요청사항 메인 배너 정책 -->
+                        <!-- // 배너 -->
+
+                        <!-- 상품검색 링크 -->
+                        <div class="search-link-wrap" style="display: none;">
+                            <div class="outer">
+                                <!-- [240315] iOS 버그 대응 위치 변경 -->
+                                <a class="search-link-button" href="javascript:void(0);" role="button" aria-haspopup="true">
+                                    <div class="search-link">검색</div>
+                                </a>
+                                <div class="inner">
+                                    <ul class="list">
+                                        <li class="item"><a href="javascript:void(0);" role="button" class="hash-btn" aria-haspopup="true">#직장인</a></li>
+                                        <li class="item"><a href="javascript:void(0);" role="button" class="hash-btn" aria-haspopup="true">#개인사업자</a></li>
+                                        <li class="item"><a href="javascript:void(0);" role="button" class="hash-btn" aria-haspopup="true">#공무원</a></li>
+                                        <li class="item"><a href="javascript:void(0);" role="button" class="hash-btn" aria-haspopup="true">#전문직</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // 상품검색 링크 -->
+
+                        
+
+                        <!-- ============================================ // 하단 마케팅 배너 타입 샘플 ============================================ -->
+
+                        <!-- 메인 하단 링크 -->
+                        <div class="linked-bottom-menu">
+                            <a href="javascript:void(0);" class="linked-finance">홈</a>
+                            <a href="javascript:void(0);" class="linked-mall">상품몰</a>
+                            <a href="javascript:void(0);" class="linked-mydata">마이데이터</a>
+                            <a href="javascript:void(0);" class="linked-life">생활+</a>
+                        </div>
+                        <!-- // 메인 하단 링크 -->
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        // 메인배너
+        // var mainbanner = new Swiper('.main-banner-swiper',{
+        //     pagination : {
+        //         el : '.swiper-pagination',
+        //         clickable :false,
+        //         type:'fraction'
+        //     },
+        //     loop:true,
+        //     autoplay:{
+        //         delay: 4000
+        //     },
+        //     speed:700,
+        //     spaceBetween:24,
+        //     grabCursor:true,
+        //     observer : true,
+        //     observeParents : true
+        // });
+
+        // 배너 시작, 정지
+        // mainbanner.on('touchEnd', function (transitionEnd) {
+        //     var autoPlay = mainbanner.autoplay.running
+        //     if(autoPlay == false){
+        //         $('.pagination-wrap .button-stop').addClass('-active').find('.hide').text('시작');
+        //     };
+        // });
+
+        // $('.main-banner-wrap .button-stop').click(function(){
+        //     $(this).toggleClass('-active');
+        //     if($(this).hasClass('-active')){
+        //         $(this).find('.hide').text('시작');
+        //         mainbanner.autoplay.stop();
+        //     }
+        //     else {
+        //         $(this).find('.hide').text('정지');
+        //         mainbanner.autoplay.start();
+        //     }
+        // });
+
+        // 메인 배너 한개일 경우 비활성화
+        if( $('.main-banner-wrap .swiper-slide').length <= 3 ){
+                $('.main-banner-wrap .swiper-wrapper').addClass('-disabled');
+                $('.main-banner-wrap .pagination-wrap').attr('aria-hidden','true');
+                mainbanner.destroy();
+            };
+
+        // 금융상품 검색
+        var searchInner = document.querySelector('.search-link-wrap .inner')
+        searchInner.addEventListener('scroll' ,function() {
+            if (searchInner.scrollLeft > 0) {
+                searchInner.parentNode.classList.add('-scroll-on')
+            } else {
+                searchInner.parentNode.classList.remove('-scroll-on')
+            }
+        });
+
+        //스크롤 이벤트, 하단 고정 메뉴 이벤트 document ready 후 실행 필요
+        // [240417] 가입중 상품 영역 상단으로 올라가면서 스크롤 이벤트 필요 없어짐, 삭제 요망
+        
+        $(document).ready(function(){
+            // 스크롤 이벤트
+            var footer = document.querySelector('.linked-bottom-menu');
+            var preScrollTop = 0;
+    
+            // function minitooltip(){
+            //     var bottom = document.querySelector('.linked-bottom-menu').getBoundingClientRect().height;
+            //     var vport = window.innerHeight - bottom;
+            //     var infoinner = document.querySelector('.info-inner');
+            //     var info = document.querySelector('.main-info-wrap').getBoundingClientRect().y + 40;
+            //     var toast= document.querySelector('.toast-mini');
+            //     if ( vport > info ) {
+            //         infoinner.classList.add('view-on');
+            //         toast.setAttribute('aria-hidden','false');
+            //         setTimeout(() => {
+            //             toast.setAttribute('aria-hidden','true');
+            //         }, 6000);
+            //     } 
+            // };
+            // minitooltip();
+    
+            // 하단 고정 메뉴
+            window.addEventListener('scroll', function(){
+                var nextScrollTop = window.scrollY;
+    
+                if (preScrollTop < nextScrollTop) {
+                    footer.classList.add('down');
+                    footer.classList.remove('up');
+                }else {
+                    footer.classList.add('up');
+                    footer.classList.remove('down');
+                }
+                preScrollTop = nextScrollTop;     
+                // minitooltip();
+            });
+        });
+
+        // 공지사항
+        function notice() {
+            var notiwrap = document.querySelector('.notice-wrap');
+            notiwrap.classList.add('-active');
+            notiwrap.tabIndex = 0;
+            
+            //페이지 스크롤 잠김
+            document.querySelector('body').classList.add('lock');
+            
+            // var noticebanner = new Swiper('.notice-banner-swiper',{
+            //     pagination : {
+            //         el : '.notice-swiper-pagination',
+            //         clickable :false,
+            //         type:'fraction'
+            //     },
+            //     loop:true,
+            //     grabCursor:true,
+            //     observer : true,
+            //     observeParents : true,
+            //     effect:"creative",
+            //     creativeEffect: {
+            //         prev:{
+            //             shadow:true,
+            //             translate: ['-100%', 0, -1]
+            //         },
+            //         next:{
+            //             shadow:true,
+            //             translate: ['100%', 0, 0]
+            //         }
+            //     }
+            // });
+            
+            notiwrap.addEventListener('click', function(e){
+                if(e.target.classList.contains('close')){
+                    notiwrap.classList.add('-out');
+                    setTimeout(function() {
+                        notiwrap.classList.remove('-active');
+                        notiwrap.classList.remove('-out');
+                    }, 1000);
+                    // 페이지 스크롤 해제
+                    document.querySelector('body').classList.remove('lock');
+                    notiwrap.tabIndex = -1;
+                }
+            });
+
+            // 공지 배너 한개일 경우 비활성화
+            if( $('.notice-banner-wrap .swiper-slide').length <= 3 ){
+                $('.notice-banner-wrap .swiper-wrapper').addClass('-disabled');
+                $('.notice-banner-wrap .pagination-wrap').attr('aria-hidden','true');
+                noticebanner.destroy();
+            };
+        }
+        notice();
+
+        // 메인페이지 전용 클래스 추가 필요
+        $(document).ready(function(){
+            $('.page').addClass('main-body');
+        });
+        
+
+
+        // test
+        var swiper = new Swiper(".swiper-container", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            type: "fraction",
+        },
+        observer: true,
+        observerParents: true,
+    });
+        
+        // test
+        let swiperNumber = document.querySelector('.swiper-number'); 
+        let swiperWrapper = swiperNumber.querySelector('.swiper-wrapper'); 
+        let swiperPaginationCurrent = swiperNumber.querySelector('.swiper-pagination-current'); 
+        let swiperPaginationTotal = swiperNumber.querySelector('.swiper-pagination-total'); 
+        let slides = swiperWrapper.querySelectorAll('.swiper-slide');
+        let totalSlides = slides.length; 
+        let stopButton = document.querySelector('.button-stop');
+        
+        let currentIndex = 0; 
+        let isPaused = false;
+        swiperPaginationTotal.textContent = totalSlides; 
+
+        // 슬라이드에 접근성 텍스트
+        slides.forEach((slide, index) => { 
+            slide.setAttribute('aria-label', `5장 슬라이드 중 ${index + 1}번째 슬라이드`); 
+        });
+        
+        function updateSwiper() { 
+            swiperWrapper.style.transform = `translateX(-${currentIndex * 100}%)`; 
+            swiperPaginationCurrent.textContent = currentIndex + 1;
+        }
+
+        function togglePause() { 
+            isPaused = !isPaused; 
+            if (isPaused) { 
+                stopButton.classList.add('-pause'); 
+                stopButton.querySelector('.hide').textContent = '재생'; 
+                stopButton.setAttribute('aria-label', '재생');
+                clearInterval(swiperInterval); 
+            } else { 
+                stopButton.classList.remove('-pause'); 
+                stopButton.querySelector('.hide').textContent = '정지'; 
+                stopButton.setAttribute('aria-label', '정지');
+                swiperInterval = setInterval(nextSlide, 3000); 
+            } 
+        }
+
+        function nextSlide() { 
+            currentIndex = (currentIndex + 1) % totalSlides; 
+            updateSwiper();
+        }
+        
+        function prevSlide() { 
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; 
+            updateSwiper();
+        }
+
+        let swiperInterval = setInterval(nextSlide, 3000);
+
+        stopButton.addEventListener('click', togglePause); 
+        swiperPaginationCurrent.addEventListener('click', () => { 
+            clearInterval(swiperInterval); 
+            prevSlide(); 
+            if (!isPaused) { 
+                swiperInterval = setInterval(nextSlide, 3000); 
+            } 
+        }); 
+        
+        swiperPaginationTotal.addEventListener('click', () => { 
+            clearInterval(swiperInterval); 
+            nextSlide(); 
+            if (!isPaused) { 
+                swiperInterval = setInterval(nextSlide, 3000); 
+            }
+        });
+    </script>
+</body>
+</html>

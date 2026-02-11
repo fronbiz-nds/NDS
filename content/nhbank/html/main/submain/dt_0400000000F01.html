@@ -1,0 +1,114 @@
+<!-- 저축 실행코드 javascript:getBnrDetail(상품코드8자리); -->
+<div class="submain-banner-wrap -deposit">
+    <div class="submain-banner-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="javascript:getBnrDetail(10001160)">
+                    <div class="submain-banner type01">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">복잡한 우대조건 없이<br>목돈을 굴릴 수 있는</div>
+                            <div class="prd-sub">NH올원e예금</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:getBnrDetail(10001314)">
+                    <div class="submain-banner type02">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">복잡한 우대조건 없는<br>모바일 전용 고금리 적금</div>
+                            <div class="prd-sub">NH올원e적금</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:getBnrDetail(10001313)">
+                    <div class="submain-banner type03">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">고객들의 이유있는 선택!<br>NH농협은행 대표 통장</div>
+                            <div class="prd-sub">NH올원e통장</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:getBnrDetail(10000587)">
+                    <div class="submain-banner type04">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">청약권이 부여되는<br>내 집 마련의 필수 상품</div>
+                            <div class="prd-sub">주택청약종합저축</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- [240607] 배너 삭제 요청 -->
+            <!-- <div class="swiper-slide">
+                <a href="javascript:void(0);">
+                    <div class="submain-banner type05">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">지수 변동률에 따라 수익률이<br>정해지는 정기예금</div>
+                            <div class="prd-sub">지수연동예금(ELD)24호-4호</div>
+                        </div>
+                    </div>
+                </a>
+            </div> -->
+        </div>
+        <div class="pagination-wrap">
+            <div class="swiper-pagination"></div>
+            <a href="javascript:void(0);" class="button-stop" role="button">
+                <span class="hide">정지</span>
+            </a>
+        </div>
+    </div> 
+</div>
+
+<script>
+    $(function(){
+        // 메인배너
+        var mainbanner = new Swiper('.submain-banner-swiper',{
+            pagination : {
+                el : '.swiper-pagination',
+                clickable :false,
+                type:'fraction'
+            },
+            loop:true,
+            autoplay:{
+                delay: 4000
+            },
+            speed:500,
+            spaceBetween:24,
+            grabCursor:true,
+            observer : true,
+            observeParents : true
+            // [240312] 사업부 요청으로 배너 액션 수정
+        });
+
+        mainbanner.on('touchEnd', function (transitionEnd) {
+            var autoPlay = mainbanner.autoplay.running
+            if(autoPlay == false){
+                $('.pagination-wrap .button-stop').addClass('-active').find('.hide').text('시작');
+            };
+        });
+
+        // 배너 시작, 정지
+        $('.submain-banner-wrap .button-stop').click(function(){
+            $(this).toggleClass('-active');
+            if($(this).hasClass('-active')){
+                $(this).find('.hide').text('시작');
+                mainbanner.autoplay.stop();
+            }
+            else {
+                $(this).find('.hide').text('정지');
+                mainbanner.autoplay.start();
+            }
+        });
+
+        // 배너 한개일 경우 비활성화
+        if( $('.submain-banner-wrap .swiper-slide').length <= 3 ){
+            $('.submain-banner-wrap .swiper-wrapper').addClass('-disabled');
+            $('.submain-banner-wrap .pagination-wrap').attr('aria-hidden','true');
+            mainbanner.destroy();
+        };
+    })
+</script>

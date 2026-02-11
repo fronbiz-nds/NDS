@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>출금계좌 비밀번호</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">입출금 가입</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="progress-box">
+                        <div class="progress">
+                            <!--
+                                style 속성에서 사용되는 CSS 전용 변수로 게이지 컨트롤
+                                --current : 현재 표시되야 하는 수치
+                                    --max : 최대 수치
+                                게이지가 차오르는 값을 css로 지정 합니다 %, 실수치, 모두 가능 ( ※게이지계산식 : 100% * ( --current / --max ) )
+                                (단, 숫자 정수값만 사용할 것)
+                            -->
+                            <div class="bar" style="--current:3; --max:12;">
+                                <div class="gauge">
+                                    <!-- <span class="bubble"><span class="now">1</span><span class="total">4</span></span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h2-group">
+                        <h2 class="h2">
+                            사용할 비밀번호를 입력해 주세요
+                        </h2>      
+                    </div>
+
+                    <div class="field input">
+                        <label for="field20" class="label">비밀번호</label>
+                        <div class="text -password">
+                            <input type="password" class="num-call" id="field20" value="" aria-haspopup="true" readonly placeholder="4자리 숫자 입력" maxlength="4">
+                            <button class="clear" type="button" style="z-index: -1;"><div class="hide">입력 내용 삭제</div></button>
+                        </div>
+                    </div>
+
+                    <div class="field search">
+                        <label for="searchce" class="label">관리점
+                            <span class="tooltip">
+                                <button type="button" class="trigger">
+                                    <span class="hide">툴팁</span>
+                                </button>
+                                <span class="panel">
+                                    <span class="t-content">
+                                        <span>관리점은 수수료, 사고 처리, 고객안내 등을 위해 필수로 입력해야 합니다.</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                        <div class="mix">
+                            <div class="text">
+                                <input type="text" class="left-side" id="searchce" placeholder="관리점 검색">
+                            </div>
+                    
+                            <div class="space -lined search">
+                                <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field search">
+                        <label for="searchce5" class="label">권유직원 (선택)</label>
+                        <div class="mix">
+                            <div class="text">
+                                <input type="text" class="left-side" id="searchce5" placeholder="직원명 검색">
+                            </div>
+                    
+                            <div class="space -lined search">
+                                <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xl">
+                        <div class="h2-group">
+                            <h2 class="h2">
+                                사용할 비밀번호를 입력해 주세요
+                            </h2>      
+                        </div>    
+
+                        <div class="field input">
+                            <label for="tt1" class="label">1일 이체 한도</label>
+                            <div class="mix price-won">
+                                <div class="text -won" data-clear="false">
+                                    <input type="tel" id="tt1" class="right num-call" aria-haspopup="true" placeholder="1일 이체 한도 입력" readonly>
+                                    <div class="won comb-del">원</div>
+                                    <button class="clear" type="button" style="z-index: -1;"><div class="hide">입력 내용 삭제</div></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field input">
+                            <label for="tt15" class="label">1회 이체 한도</label>
+                            <div class="mix price-won">
+                                <div class="text -won" data-clear="false">
+                                    <input type="tel" id="tt15" class="right num-call" aria-haspopup="true" placeholder="1회 이체 한도 입력" readonly>
+                                    <div class="won comb-del">원</div>
+                                    <button class="clear" type="button" style="z-index: -1;"><div class="hide">입력 내용 삭제</div></button>
+                                </div>
+                            </div>
+                            <div class="notewrap">
+                                <p class="info">
+                                    고객님의 인터넷, 스마트뱅킹의 이체한도입니다.<br>
+                                    단, 한도제한계좌로 개설되며, 오픈뱅킹 거래 및 가상계좌 이체를 포함한 이체한도는 100만원입니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg" disabled>다음</button> 
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- 숫자 키패드 레이어 -->
+    <div class="custom-key-layer" aria-hidden="false">
+        <div class="amount-btn-wrap">
+            <button type="button" value="100000" class="button numBtn -sm -fit">+10만</button>
+            <button type="button" value="500000" class="button numBtn -sm -fit">+50만</button>
+            <button type="button" value="1000000" class="button numBtn -sm -fit">+100만</button>
+            <button type="button" value="10000000" class="button numBtn -sm -fit">+1,000</button>
+        </div>
+        <div class="custom-key-wrap">
+            <button type="button" class="numBtn" value="1" title="숫자 1 입력">1</button>
+            <button type="button" class="numBtn" value="2" title="숫자 2 입력">2</button>
+            <button type="button" class="numBtn" value="3" title="숫자 3 입력">3</button>
+            <button type="button" class="numBtn" value="4" title="숫자 4 입력">4</button>
+            <button type="button" class="numBtn" value="5" title="숫자 5 입력">5</button>
+            <button type="button" class="numBtn" value="6" title="숫자 6 입력">6</button>
+            <button type="button" class="numBtn" value="7" title="숫자 7 입력">7</button>
+            <button type="button" class="numBtn" value="8" title="숫자 8 입력">8</button>
+            <button type="button" class="numBtn" value="9" title="숫자 9 입력">9</button>
+            <button type="button" class="numBtn btn-temp" disabled="" aria-hidden="true">NH</button>
+            <button type="button" class="numBtn btn-amount" value="00" title="숫자 00입력">00</button>
+            <button type="button" class="numBtn" value="0" title="숫자 0 입력">0</button>
+            <button type="button" class="numBtn btn-del" title="마지막 숫자 삭제">←</button>
+        </div>
+        <div class="buttons">
+            <button type="button" class="button -primary -lg" onclick="numKey.keyClose()">확인</button>
+        </div>
+    </div>
+    <!-- //숫자 키패드 레이어 -->
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+    </script>
+</body>
+
+</html>

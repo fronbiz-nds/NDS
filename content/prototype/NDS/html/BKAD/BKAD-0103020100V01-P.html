@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="navigation">
+                <div class="header">
+                    <div class="inner">
+                        <h1 class="title">수익률 항목 안내</h1>
+                        <div class="funcs">
+                            <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <dl class="product-info-dl">
+                        <dt class="h4">① 총 입금액(총 투자원금)</dt>
+                        <dd>
+                            <p class="p">시장평균 수익률을 훨씬 넘어서는 높은 수준의 투자수익을 추구하며 이를 위해 자산가치의 변동에 따른 손실 위험을 적극 수용하고 투자자금 대부분을 주식, 주식형펀드 또는 파생상품 등의 위험자산에 투자할 의향이 있는 유형
+                            </p>
+                        </dd>
+                    
+                        <dt class="h4">②-1 총 출금액(비용 차감 전)</dt>
+                        <dd>
+                            <p class="p">투자 기간 중 해당 펀드를 환매한 금액의 누계입니다.</p>
+                        </dd>
+                    
+                        <dt class="h4">②-2 총 출금액(비용 차감 후)</dt>
+                        <dd>
+                            <p class="p">비용 차감 후 총 출금액은 환매 시 발생된 환매수수료와 세금 등 제반 비용을 차감하고 실제 지급된 금액입니다.</p>
+                        </dd>
+                    
+                        <dt class="h4">③ 수수료.보수</dt>
+                        <dd>
+                            <p class="p">투자 기간 중 발생한 판매수수료와 총 보수(운용보수, 판매 보수, 신탁 보수, 사무관리보수 등)를 의미합니다.</p>
+                        </dd>
+                    
+                        <dt class="h4">⑤ -1 환매 차감 예상금액</dt>
+                        <dd>
+                            <p class="p">평가 기준일의 평가금액으로 전액 중도 환매를 가정했을 경우 발생이 예상되는 환매수수료, 후취수수료와 세금 등 제반 비용을 의미합니다. "환매 예상금액은" 정보 제공 기준 시점의 평가금액에서 발생이 예상되는 "환매 차감 예상금액"을 제외한 예상 차감 지급액을 의미합니다.
+                            </p>
+                        </dd>
+                    
+                        <dt class="h4">⑤-2 환매 예상 금액</dt>
+                        <dd>
+                            <p class="p">④ 평가금액-⑤-1 환매 차감 예상금액(환매수수료, 세금 등)</p>
+                        </dd>
+                    
+                        <dt class="h4">⑥-1 누적 수익률(비용 차감 전)</dt>
+                        <dd>
+                            <p class="p">=[ (평가금액+총 출금액(비용 차감 전)) / 총 입금액–1 ]</p>
+                        </dd>
+                    
+                        <dt class="h4">⑥-2 누적 수익률(비용 차감 후)</dt>
+                        <dd>
+                            <p class="p">[ (환매 예상금액+총 출금액(비용 차감 후)) / 총 입금액 –1 ]</p>
+                        </dd>
+                    
+                        <dt class="h4">⑦ 연환산  수익률</dt>
+                        <dd>
+                            <p class="p mb-12">연평균(기하 평균)하여 계산한 값으로 투자 기간이 1년 미만일 경우 표시하지 않습니다. 실투자 기간이 짧은 경우 연평균(기하 평균) 연환산 수익률은 "투자원금 연 평잔을 이용한 연환산 수익률"과 오차가 발생할 수 있습니다. 연환산 수익률=(1 + 가입 이후 누적수익률) ^ (1 / 가입 년수) - 1 판매사 이동 또는 CDSC 등 전환형 펀드는 전환 이후 시점의 누적수익률이 제공됩니다.
+                            </p>
+                            <p class="info">판매사 이동 또는 CDSC등 전환형 펀드는 전환 후 시점의 누적수익률이 제공됩니다.</p>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        window.addEventListener('DOMContentLoaded', () => {
+                const toast = document.querySelector('.toast');
+                if (!toast) return;
+
+                // 페이지 진입 시 -active 추가
+                toast.classList.add('-active');
+
+                setTimeout(() => {
+                    toast.classList.remove('-active');
+                }, 3000);
+            });
+    </script>
+</body>
+</html>

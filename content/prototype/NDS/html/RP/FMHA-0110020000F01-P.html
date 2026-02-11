@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">비예금상품 설명 확인서</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="box">
+                        <ul class="ul -bullet">
+                            <li>이 상품은 일반 예금 상품과 달리 원금의 일부 또는 전부 손실이 발생할 수 있으며, 투자로 인한 손실은 투자자 본인에게 귀속됩니다.</li>
+                            <li>충분한 이해 없이 답변하실 경우 추후 소송이나 분쟁에서 불리하게 작용할 수 있습니다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="field">
+                        <div class="invest-qna">
+                            <div class="question-text">
+                                <span class="number">01</span>
+                                <span>이 상품은 예·적금 상품과 달리 예금자보호를 받지 못해 원금 손실이 발생할 수 있습니다. 투자로 인한 손실은 투자자 본인에게 귀속됩니다. 확인하셨나요?</span>
+                            </div>
+                            <div class="answer-list">
+                                <div class="box-radios survey">
+                                    <div class="box-radio -yn -error -left">
+                                        <input type="radio" name="radio1" id="radio1-1" checked>
+                                        <label for="radio1-1">아니요</label>
+                                    </div>
+                                    <div class="box-radio -yn -left">
+                                        <input type="radio" name="radio1" id="radio1-2">
+                                        <label for="radio1-2">예</label>
+                                    </div>
+                                </div> 
+                                <!-- [CASE] 예 선택했을 경우 -->
+                                <!-- <div class="invest-notice">
+                                    <div class="message">
+                                        <span class="point">정답입니다.</span><br>
+                                        이 상품은 예·적금과는 다른 상품으로 은행이 판매하는 상품이지만 예금자보호를 받지 못해 원금손실 위험이 있습니다.
+                                    </div>
+                                </div> -->
+                                <!-- // [CASE] 예 선택했을 경우 -->
+
+                                <!-- [CASE] 아니요 선택했을 경우 -->
+                                <div class="invest-notice">
+                                    <div class="inner">
+                                        <div class="message">
+                                            <span class="red">다시 확인해 주세요.</span><br>
+                                            '② 아니요' 선택 시 가입을 진행할 수 없습니다. 본 상품은 예·
+                                            적금과는 다른 상품으로 은행이 판매하는 상품이지만 예금자보
+                                            호를 받지 못해 원금손실의 위험이 있습니다. 다시 한 번 확인해 주시기 바랍니다.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // [CASE] 아니요 선택했을 경우 -->
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="field">                        
+                        <div class="invest-qna">
+                            <div class="question-text">
+                                <span class="number">02</span>
+                                <span>이 상품의 원금 손실 위험 발생 가능성에 대해 어떻게 생각하시나요?</span>
+                            </div>
+                            <div class="answer-list">
+                                <div class="box-radios">
+                                    <div class="item">
+                                        <div class="box-radio -left">
+                                            <input type="radio" name="radio2" id="radio2-1">
+                                            <label for="radio2-1">원금손실위험이 거의 없다.</label>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="box-radio -left">
+                                            <input type="radio" name="radio2" id="radio2-2">
+                                            <label for="radio2-2">원금 손실 위험이 있지만 경미한 수준이다.</label>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="box-radio -left">
+                                            <input type="radio" name="radio2" id="radio2-3">
+                                            <label for="radio2-3">원금 손실 위험이 있지만 높은 수익률을 위해 받아들여야 한다.</label>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            
+                            <!-- [CASE] 첫번째 문항 선택했을 경우 -->
+                            <!-- <div class="invest-notice">
+                                <div class="message">
+                                    <span class="red">확인해 주세요.</span><br>
+                                    이 상품은 원금 손실 위험을 감수해야 하는 상품입니다. 시장 상황 등에 따라 원금 전액 손실이 발생할 수 있습니다.
+                                </div>
+                            </div> -->
+                            <!-- // [CASE] 첫번째 문항 선택했을 경우 -->
+
+                            <!-- [CASE] 두번째 문항 선택했을 경우 -->
+                            <!-- <div class="invest-notice">
+                                <div class="message">
+                                    <span class="red">확인해 주세요.</span><br>
+                                    이 상품은 원금 손실 위험을 감수해야 하는 상품입니다. 시장 상황 등에 따라 원금 전액 손실이 발생할 수 있습니다.
+                                </div>
+                            </div> -->
+                            <!-- // [CASE] 두번째 문항 선택했을 경우 -->
+                            
+                            <!-- [CASE] 세번째 문항 선택했을 경우 -->
+                            <!-- <div class="invest-notice">
+                                <div class="message">
+                                    <span class="point">정답입니다.</span><br>
+                                    이 상품은 원금 손실 위험을 감수해야 하는 상품입니다. 시장 상황 등에 따라 원금 전액 손실이 발생할 수 있습니다.
+                                </div>
+                            </div> -->
+                            <!-- // [CASE] 세번째 문항 선택했을 경우 -->
+                        </div>
+                    </div>
+
+                    <div class="field">                        
+                        <div class="invest-qna">
+                            <div class="question-text">
+                                <span class="number">03</span>
+                                <span>계약서에서 이 상품의 최대 원금 손실 규모를 어느 정도로 이해하셨나요?</span>
+                            </div>
+                            <div class="answer-list">
+                                <div class="box-radios">
+                                    <div class="item">
+                                        <div class="box-radio -left">
+                                            <input type="radio" name="radio29" id="radio29-1">
+                                            <label for="radio29-1">경미한 수준일 것이다.</label>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="box-radio -left">
+                                            <input type="radio" name="radio29" id="radio29-2">
+                                            <label for="radio29-2">원금의 0 ~ 100%(원금 전액)의 손실이 발생할 수 있다.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- [CASE] 첫번째 문항 선택했을 경우 -->
+                            <!-- <div class="invest-notice">
+                                <div class="message">
+                                    <span class="red">확인해 주세요.</span><br>
+                                    이 상품은 원금의 100%까지 손실이 발생할 수 있는 상품입니다.
+                                </div>
+                            </div> -->
+                            <!-- // [CASE] 첫번째 문항 선택했을 경우 -->
+
+                            <!-- [CASE] 두번째 문항 선택했을 경우 -->
+                            <!-- <div class="invest-notice">
+                                <div class="message">
+                                    <span class="point">정답입니다.</span><br>
+                                    이 상품은 원금의 100%까지 손실이 발생할 수 있는 상품입니다.
+                                </div>
+                            </div> -->
+                            <!-- // [CASE] 두번째 문항 선택했을 경우 -->
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="invest-qna">
+                            <div class="question-text">
+                                <span class="number">04</span>
+                                <span>원금 손실 가능성과 최대 손실 가능금액을 이해하고, 손실 위험이 있음에도 이 상품에 가입하시겠어요?</span>
+                            </div>
+
+                            <div class="answer-list">
+                                <div class="box-radios survey">
+                                    <div class="box-radio -yn -left">
+                                        <input type="radio" name="radio4" id="radio4-1">
+                                        <label for="radio4-1">예</label>
+                                    </div>
+                                    <div class="box-radio -yn -left">
+                                        <input type="radio" name="radio4" id="radio4-2">
+                                        <label for="radio4-2">아니오</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [CASE] 예 선택했을 경우 -->
+                            <!-- <div class="invest-notice">
+                                <div class="message">
+                                    <span class="point">확인했습니다.</span><br>
+                                    이 상품은 원금 손실 위험과 최대 원금 손실 규모를 이해한 후 가입할 수 있습니다.
+                                </div>
+                            </div> -->
+                            <!-- // [CASE] 예 선택했을 경우 -->
+
+                            <!-- [CASE] 아니요 선택했을 경우 -->
+                            <!-- <div class="invest-notice">
+                                <div class="inner">
+                                    <div class="message">
+                                        <span class="red">확인해 주세요.</span><br>
+                                        이 상품은 원금 손실 위험과 최대 원금 손실 규모를 이해한 후 가입할 수 있습니다.
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- // [CASE] 아니요 선택했을 경우 -->
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xs">
+                        <div class="checkbox -basic -sm">
+                            <input type="checkbox" id="checkbox-sm">
+                            <label for="checkbox-sm">위 내용을 충분히 이해하고 확인하였으며, 가입에 동의합니다.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg -primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <h1 class="title">본인인증</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="progress-box">
+                        <div class="progress">
+                            <!--
+                                style 속성에서 사용되는 CSS 전용 변수로 게이지 컨트롤
+                                --current : 현재 표시되야 하는 수치
+                                    --max : 최대 수치
+                                게이지가 차오르는 값을 css로 지정 합니다 %, 실수치, 모두 가능 ( ※게이지계산식 : 100% * ( --current / --max ) )
+                                (단, 숫자 정수값만 사용할 것)
+                            -->
+                            <div class="bar" style="--current:3; --max:12;">
+                                <div class="gauge">
+                                    <!-- 접근성 관련 텍스트 동적 변경 필요 --> 
+                                    <span class="hide"> 12단계 중 3번째</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>                      
+                    <div class="h2-group">                        
+                        <h2 class="h2">
+                            계좌를 인증해 주세요
+                        </h2>
+                    </div>     
+                    <div class="segments tab -bar">
+                        <div class="outer">
+                            <div class="inner">
+                                <div role="tablist" class="list">
+                                    <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel1" id="segment1">NH농협</button></div>
+                                    <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel2" id="segment2">다른금융</button></div>
+                                    <span class="switcher" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                
+                    <div class="case-wrap"> 
+                        <div class="segments-panels">
+                            <div role="tabpanel" aria-labelledby="segment1" id="segments-panel1" class="segments-panel -active" tabindex="0">
+                                
+                                <div class="field">
+                                    <p class="label">계좌번호</p>
+                                    <!-- [CASE]계좌선택 전 -->
+                                    <div class="select -basic">
+                                        <button type="button" aria-haspopup="true" class="fc-empty">계좌 선택</button>
+                                    </div>
+                                    <!-- //[CASE]계좌선택 전 -->
+
+                                    <!-- [CASE]계좌선택 후 -->
+                                    <div class="select -account -filled">
+                                        <button type="button" aria-haspopup="true">
+                                            <div class="selection">
+                                                <div data-bankcode="011" class="info">
+                                                    <span class="name">
+                                                        <span>주거래우대통장</span>
+                                                    </span>
+                                                    <span class="account-number">
+                                                        <span>NH농협</span>
+                                                        <span>111-1234-5678-99</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <!-- [CASE]계좌선택 후 -->
+                                </div>
+
+                                <div class="field input forms">
+                                    <label for="field20" class="label">비밀번호</label>
+                                    <div class="text -password">
+                                        <input type="password" class="num-call" id="field20" value="1212" aria-haspopup="true" readonly
+                                            placeholder="4자리 숫자 입력" maxlength="4">
+                                        <button class="clear" type="button" style="z-index: -1;">
+                                            <div class="hide">입력 내용 삭제</div>
+                                        </button>
+                                        <p class="info">비밀번호가 일치하지 않으면 계좌의 비밀번호 오류 횟수가 증가합니다.</p>
+                                    </div>
+                                </div>
+                                <div class="checkbox -basic -sm">
+                                    <input type="checkbox" id="checkbox-sm">
+                                    <label for="checkbox-sm">비밀번호를 잊으셨다면 변경해 주세요.</label>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" aria-labelledby="segment2" id="segments-panel2" class="segments-panel" tabindex="0">
+                                
+                                <div class="field">
+                                    <p class="label">레이블</p>
+                                    <!-- [CASE]계좌 선택 전 -->
+                                    <div class="select -basic -filled">
+                                        <button type="button" aria-haspopup="true" title="레이블명">은행 선택</button>
+                                    </div>
+                                    <!-- //[CASE]계좌 선택 전 -->
+
+                                    <!-- [CASE]계좌 선택 후 -->
+                                    <div class="select -account -filled">
+                                        <button type="button" aria-haspopup="true">
+                                            <div class="selection">
+                                                <div data-bankcode="090" class="info">
+                                                    <span class="name">
+                                                        <span>카카오뱅크</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <!-- //[CASE]계좌 선택 후 -->
+                                    <div class="text -basic">
+                                        <input type="tel" id="tex" value="" placeholder="계좌번호 숫자만 입력">
+                                    </div>
+                                </div>
+                                
+                                <div class="field input forms">
+                                    <label for="field20" class="label">비밀번호</label>
+                                    <div class="text -password">
+                                        <input type="password" class="num-call" id="field20" value="1212" aria-haspopup="true" readonly
+                                            placeholder="4자리 숫자 입력" maxlength="4">
+                                        <button class="clear" type="button" style="z-index: -1;">
+                                            <div class="hide">입력 내용 삭제</div>
+                                        </button>
+                                        <p class="info">비밀번호가 일치하지 않으면 계좌의 비밀번호 오류 횟수가 증가합니다.</p>
+                                    </div>
+                                </div>
+                                <div class="case-wrap -xs">
+                                    <div class="checkbox -basic -sm">
+                                        <input type="checkbox" id="checkbox-sm11">
+                                        <label for="checkbox-sm11">비밀번호를 잊으셨다면 1원 송금으로 확인해 주세요.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>               
+                </div>
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg">다음</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+        Popup.open('popup');
+    </script>
+</body>
+</html>

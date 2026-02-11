@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>우대쿠폰_단일항목 사용</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">타이틀</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="progress-box">
+                        <div class="progress">
+                            <!--
+                                style 속성에서 사용되는 CSS 전용 변수로 게이지 컨트롤
+                                --current : 현재 표시되야 하는 수치
+                                    --max : 최대 수치
+                                게이지가 차오르는 값을 css로 지정 합니다 %, 실수치, 모두 가능 ( ※게이지계산식 : 100% * ( --current / --max ) )
+                                (단, 숫자 정수값만 사용할 것)
+                            -->
+                            <div class="bar" style="--current:3; --max:12;">
+                                <div class="gauge">
+                                    <!-- 접근성 관련 텍스트 동적 변경 필요 --> 
+                                    <span class="hide"> 12단계 중 3번째</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <p class="label">우대쿠폰</p>
+                        <div class="box-radios -box -lg" role="tablist">
+                            <div class="box-radio">
+                                <input type="radio" id="tab01" name="period-point-color1">
+                                <label for="tab01">사용 안함</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" id="tab02" name="period-point-color1" checked>
+                                <label for="tab02">사용함</label>
+                            </div>
+                        </div>
+                        <!-- [CASE] 우대쿠폰 사용시 -->
+                        <div class="case-wrap16" >
+                            <div class="select -basic -filled">
+                                <button type="button" aria-haspopup="false" title="우대쿠폰 선택">예·적금0.1%p / 대출0.3%p 금리우대</button>
+                            </div>
+                            <!-- [CASE] 선택가능 쿠폰이 없음 -->
+                            <!-- <div class="select">
+                                <button type="button" disabled>선택 가능한 쿠폰이 없습니다.</button>
+                            </div> -->
+                        </div>
+                        <!-- [CASE] 우대쿠폰 사용시 -->
+
+                        <div class="field">
+                            <p class="label">NH포인트 사용 신청</p>
+                            <div class="box-radios -box -lg" role="tablist">
+                                <div class="box-radio">
+                                    <input type="radio" name="period-point-color15">
+                                    <label for="tab015">사용 안함</label>
+                                </div>
+                                <div class="box-radio">
+                                    <input type="radio" name="period-point-color15" checked>
+                                    <label for="tab025">사용함</label>
+                                </div>
+                            </div>
+                            <p class="message">
+                                NH포인트를 현금처럼 사용해 보세요.<br>
+                                캐시백을 신청하면 바로 출금계좌로 입금됩니다.
+                            </p>
+                        </div>
+                    </div>  
+                 </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+    </script>
+</body>
+</html>

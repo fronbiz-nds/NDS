@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NH포인트 사용 신청 레이어팝업</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="navigation">
+                <div class="header">
+                    <div class="inner">
+                        <h1 class="title">권유직원 조회</h1>
+                        <div class="funcs">
+                            <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="content">
+                    <div class="segments tab -bar">
+                        <div class="outer">
+                            <div class="inner">
+                                <div role="tablist" class="list">
+                                    <div class="item -active"><button type="button" role="tab" aria-selected="true"
+                                            aria-controls="segments-panel3" id="segment5" class="">직원명<span class="hide">선택됨</span></button>
+                                    </div>
+                                    <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel4"
+                                            id="segment6" class="">지점명</button>
+                                    </div>
+                                    <span class="switcher" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="segments-panels">
+                        <div role="tabpanel" aria-labelledby="segment5" id="segments-panel3" class="segments-panel -active" tabindex="0">
+                            <div class="search">
+                                <div class="mix">
+                                    <div class="text">
+                                        <input type="text" class="left-side" id="searchce3" placeholder="직원명 검색" value="">
+                                    </div>
+
+                                    <div class="space -lined search">
+                                        <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                                    </div>
+                                </div>
+                                <p class="info">직원명 (2자 이상 입력)</p>
+                            </div>
+
+                            <div class="case-wrap -xxs">
+                                <div class="custom-list">
+                                    <ul class="staff">
+                                        <li>
+                                            <button type="button" class="-sm">
+                                                <div class="addr-txt">
+                                                    <p class="addr-name">김*경</p>
+                                                    <p class="addr-detail">파주시청<출></p>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="-sm">
+                                                <div class="addr-txt">
+                                                    <p class="addr-name">김*경</p>
+                                                    <p class="addr-detail">부평동지점</p>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="-sm">
+                                                <div class="addr-txt">
+                                                    <p class="addr-name">김*경</p>
+                                                    <p class="addr-detail">부산중앙동지점</p>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="-sm">
+                                                <div class="addr-txt">
+                                                    <p class="addr-name">김*경</p>
+                                                    <p class="addr-detail">부평동동지점</p>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li class="bd-bottom">
+                                            <button type="button" class="-sm">
+                                                <div class="addr-txt">
+                                                    <p class="addr-name">김*경</p>
+                                                    <p class="addr-detail">부산중앙동지점</p>
+                                                </div>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" aria-labelledby="segment6" id="segments-panel4" class="segments-panel" tabindex="-1">
+                            지점명
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

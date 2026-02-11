@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title"></h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="h2-group">
+                        <h2 class="h2">
+                            약관에 동의해 주세요
+                        </h2>
+                    </div>     
+                    
+                    <div class="agree -detail">
+                        <div class="title">
+                            <div class="checkbox -sm">
+                                <input type="checkbox" id="optional-total">
+                                <label for="optional-total">[필수] 전체 동의</label>
+                            </div>
+                            <button type="button" class="more"><span class="hide">[필수] 전체 동의 약관</span></button>
+                        </div>
+                        <div class="panel">
+                            <div class="checkboxes -full">
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional1">
+                                    <label for="optional1">오픈뱅킹 서비스 이용약관</label>
+                                    <button type="button" class="more"><span class="hide">오픈뱅킹 서비스 이용약관</span></button>
+                                </div>
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional2">
+                                    <label for="optional2">오픈뱅킹 출금/조회 약관</label> 
+                                    <button type="button" class="more"><span class="hide">오픈뱅킹 출금/조회 약관</span></button>
+                                </div>
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional3">
+                                    <label for="optional3">개인(신용)정보 수집이용동의서</label> 
+                                    <button type="button" class="more"><span class="hide">개인(신용)정보 수집이용동의서 약관</span></button>
+                                </div>
+                                <div class="checkbox -sub">
+                                    <input type="checkbox" id="optional4">
+                                    <label for="optional4">금융거래정보제공 동의서</label> 
+                                    <button type="button" class="more"><span class="hide">금융거래정보제공 동의서 약관</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agree">
+                        <div class="title">
+                            <div class="checkbox -sm">
+                                <input type="checkbox" id="total">
+                                <label for="total">[선택] 개인신용정보 수집이용동의서(오픈뱅킹용)</label>
+                            </div>
+                            <button type="button" class="more"><span class="hide">[선택] 개인신용정보 수집이용동의서(오픈뱅킹용) 약관</span></button>
+                        </div>
+                    </div>
+
+                    <!-- [CASE]약관 동의 완료시 -->
+                    <!-- <div class="agree">
+                        <div class="title">
+                            <div class="checkbox -sm">
+                                <input type="checkbox" id="total">
+                                <label for="total">약관 동의 완료</label>
+                            </div>
+                            <button type="button" class="more"><span class="hide">동의 약관</span></button>
+                        </div>
+                    </div>
+                    <div class="agree">
+                        <div class="title">
+                            <div class="checkbox -sm">
+                                <input type="checkbox" id="total">
+                                <label for="total">이메일주소 입력 완료</label>
+                            </div>
+                            <button type="button" class="more"><span class="hide">이메일주소 입력 완료 약관</span></button>
+                        </div>
+                    </div> -->
+                    <!-- //[CASE]약관 동의 완료시 -->
+
+                    <hr class="hr content-8">
+
+                    <div class="h2-group">
+                        <h2 class="h2">
+                            이메일주소와 권유 직원을 입력해 주세요
+                        </h2>
+                    </div> 
+
+                    <div class="field input">
+                        <label for="tex2" class="label">이메일 주소</label>
+                        <div class="text -basic">
+                            <input type="text" id="tex2" value="" placeholder="이메일 주소 입력">
+                        </div>
+                        <div class="info-wrap">
+                            <ul class="ul -bullet -caption">
+                                <li>이메일주소 변경 시 올원회원정보에 반영됩니다.</li>
+                                <li>오픈뱅킹 안내를 받을 고객님의 이메일주소를 입력해주세요.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="field input">
+						<div class="label">
+							<label for="search03">권유직원</label>
+						</div>
+                        <div class="mix -filled">
+                            <div class="text">
+                                <input type="text" class="left-side" id="search03" placeholder="직원명 검색" value="" title="집 주소">
+                            </div>
+                    
+                            <div class="space -lined search">
+                                <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                            </div>
+                        </div>
+					</div>
+
+                    <div class="field input">
+						<div class="label">
+							<label for="search01">관리영업점</label>
+						</div>
+                        <div class="mix -filled">
+                            <div class="text">
+                                <input type="text" class="left-side" id="search01" placeholder="관리영업점 검색" value="" title="집 주소">
+                            </div>
+                    
+                            <div class="space -lined search">
+                                <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                            </div>
+                        </div>
+					</div>
+
+                    <hr class="hr content-8">
+
+                    <div class="h2-group">
+                        <h2 class="h2">
+                            등록할 계좌를 선택해 주세요
+                        </h2>
+                    </div>
+
+                    <div class="accordion -line" data-role="fold">
+                        <button type="button" class="title" data-role="marker" title="접힘"><p>은행권(총 <span class="point">2</span>개)</p></button>
+                        <div class="panel pt-8" data-role="hidden">
+                            <div class="dummy">
+                                <ul class="mixed-data">
+                                    <li>
+                                        <div class="field">
+                                            <div class="card account -comb -accor">
+                                                <div class="compare-checkbox">
+                                                    <div class="checkbox -sm">
+                                                        <input type="checkbox" id="bordered-account112" checked="">
+                                                        <label for="bordered-account112"></label>
+                                                    </div>
+                                                </div>
+                                                <div data-bankcode="011" class="info">
+                                                    <span class="name">
+                                                        <span>주거래우대통장</span>
+                                                    </span>
+                                                    <span class="account-number">
+                                                        <span>NH농협은행</span>
+                                                        <span>111-1234-5678-99</span>
+                                                    </span>
+                                                </div>
+                
+                                                <div class="amount mix-charge">
+                                                    <div class="value">
+                                                        <span>50,000,000</span>원
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="dls" data-role="fold">
+                                                    <button type="button" class="more" data-role="marker">
+                                                        <span class="hide">더보기</span>
+                                                    </button>
+                                                    <dl class="dl" data-role="hidden">
+                                                        <div>
+                                                            <dt>계좌상태</dt>
+                                                            <dd>활동성계좌</dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt>개선일</dt>
+                                                            <dd>2025.01.01</dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt>최종거래일</dt>
+                                                            <dd>2025.01.01</dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="field">
+                                            <div class="card account -comb -accor">
+                                                <div class="compare-checkbox">
+                                                    <div class="checkbox -sm">
+                                                        <input type="checkbox" id="bordered-account112" checked="" disabled>
+                                                        <label for="bordered-account112"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="top-data-area">
+                                                    <dt class="badges">
+                                                        <span class="badge fill-gray">등록불가</span>
+                                                    </dt>
+                                                </div>
+                                                <div data-bankcode="011" class="info">
+                                                    <span class="name">
+                                                        <span>주거래우대통장</span>
+                                                    </span>
+                                                    <span class="account-number">
+                                                        <span>NH농협은행</span>
+                                                        <span>111-1234-5678-99</span>
+                                                    </span>
+                                                </div>
+                
+                                                <div class="amount mix-charge">
+                                                    <div class="value">
+                                                        <span>50,000,000</span>원
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="dls" data-role="fold">
+                                                    <button type="button" class="more" data-role="marker">
+                                                        <span class="hide">더보기</span>
+                                                    </button>
+                                                    <dl class="dl" data-role="hidden">
+                                                        <div>
+                                                            <dt>계좌상태</dt>
+                                                            <dd>활동성계좌</dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt>개선일</dt>
+                                                            <dd>2025.01.01</dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt>최종거래일</dt>
+                                                            <dd>2025.01.01</dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="account card -comb">
+                                            <div class="dot-menu">
+                                                <button type="button" class="button">
+                                                    <span class="hide">더보기</span>
+                                                </button>
+                                            </div>
+                                            <button type="button" data-bankcode="011" class="info">
+                                                <span class="name">
+                                                    <span>주거래우대통장</span>
+                                                </span>
+                                                <span class="account-number">
+                                                    <span>NH농협은행</span>
+                                                    <span>302-1234-5678-81</span>
+                                                </span>
+                                            </button>
+                                        
+                                            <div class="amount">
+                                                <div class="value">
+                                                    <span>
+                                                        <span>USD </span>500.00
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="buttons">
+                                                <button type="button" class="button -tertiary -sm">거래내역조회</button>
+                                                <button type="button" class="button -tertiary -sm">쏙~입금</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion -line" data-role="fold">
+                        <button type="button" class="title" data-role="marker" title="접힘"><p>은행권(총 <span class="point">2</span>개)</p></button>
+                        <div class="panel pt-8" data-role="hidden">
+                            <div class="dummy">
+                                <ul class="mixed-data">
+                                    <li>
+                                        <div class="field">
+                                            <div class="card account -comb -accor">
+                                                <div class="compare-checkbox">
+                                                    <div class="checkbox -sm">
+                                                        <input type="checkbox" id="bordered-account112" checked="">
+                                                        <label for="bordered-account112"></label>
+                                                    </div>
+                                                </div>
+                                                <div data-bankcode="003" class="info">
+                                                    <span class="name">
+                                                        <span>주거래우대통장</span>
+                                                    </span>
+                                                    <span class="account-number">
+                                                        <span>NH농협은행</span>
+                                                        <span>111-1234-5678-99</span>
+                                                    </span>
+                                                </div>
+                
+                                                <div class="amount mix-charge">
+                                                    <div class="value">
+                                                        <span>50,000,000</span>원
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="dls" data-role="fold">
+                                                    <button type="button" class="more" data-role="marker">
+                                                        <span class="hide">더보기</span>
+                                                    </button>
+                                                    <dl class="dl" data-role="hidden">
+                                                        <div>
+                                                            <dt>계좌상태</dt>
+                                                            <dd>활동성계좌</dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt>개선일</dt>
+                                                            <dd>2025.01.01</dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt>최종거래일</dt>
+                                                            <dd>2025.01.01</dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-wrap40">
+                        <button type="button" class="button -tertiary -md">등록할 계좌 직접입력</button>
+                    </div>
+                    
+                </div>
+
+                <div class="sticker">
+					<div class="notice -active" data-role="fold">
+						<button type="button" class="title" data-role="marker">알아두세요</button>
+						<div class="panel" data-role="visible">
+							<ul class="ul -bullet">
+								<li>오픈뱅킹을 새로 등록한 경우 3일(등록일 포함) 이후부터 이체를 할 수 있습니다.</li>
+								<li>입출금계좌만 등록하실 수 있습니다.</li>
+                                <li>증권계좌는 입출금이 가능한 종합계좌만 등록가능합니다.</li>
+                                <li>예적금 및 대출계좌, 휴면계좌, 비활동성 계좌 등 일부 계좌는 등록이 불가할 수 있습니다.</li>
+                                <li>직접입력을 통해 등록한 계좌 중 입출금계좌가 아닌 경우 이용에 제한이 있을 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg">다음</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+    </script>
+</body>
+</html>

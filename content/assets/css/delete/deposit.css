@@ -1,0 +1,349 @@
+@charset "utf-8";
+/* 수신 */
+
+/* 스와이퍼 */
+.img-slide-wrap {text-align: center;min-height:41.2rem;}
+.img-slide-wrap .img-slide-inner {background-color: #f3f3f3; border: 1px solid #efefef; border-radius: 16px;height: 36rem;padding-right: 7.5rem;padding-left: 7.7rem;}
+.img-slide-wrap .img-slide-inner .swiper {padding-bottom: 66px;}
+.img-slide-wrap .img-slide-inner .swiper .swiper-wrapper .swiper-slide img {width: 16rem; padding-top: 2.2rem;}
+
+/* 신청전 확인사항 */
+.ol.-icon.-type02 > li {min-height: 6.9rem;color: var(--font1);font-size:1.4rem;padding-bottom: 4.5rem;padding-left: 6.4rem;/* padding-top: 0.85rem; */display: flex; align-items: center;}
+.ol.-icon.-type02 > li.ico-certificate,
+.ol.-icon.-type02 > li > .title, 
+.ol.-icon.-type02 > li > .title p {padding-top:0;}
+.ol.-icon.-type02 > li.ico-certificate {padding-bottom: 3.1rem;}
+.ol.-icon.-type02 > li > .title {font-size: 1.8rem;}
+
+.ol.-icon > li + li {margin-top:0;}
+.ol.-icon > li {position:relative; min-height:4rem; padding-top:0.85rem; padding-left:5rem; color:var(--font2); font-size:1.4rem; padding-bottom: 3.1rem; padding-left:6rem; /* padding-top:1.4rem; */}
+.ol.-icon > li:before {content:''; display: inline-flex; width:4.8rem; height:4.8rem; box-sizing: content-box; justify-content:center; align-items:center; position:absolute; top:0; left:0;  border-radius:1.9rem; color:var(--point); font-weight:bold; font-size:1.8rem; letter-spacing:-0.05em;}
+.ol.-icon > li > .title {display:block; color:var(--font1); font-weight:500; font-size:1.6rem;}
+.ol.-icon > li.ico-myphone:before {background:url(../imgs/img/utility/ico-myphone.png) no-repeat center center / 3.8rem var(--G09);}
+.ol.-icon > li.ico-certificate:before {background:url(../imgs/img/utility/ico-certificate.png) no-repeat center center / 3.8rem var(--G09); }
+
+.ol.process.-icon > li > .title {font-size: 1.8rem;}
+.ol.process.-icon > li > .title.-arrcenter {height: 4.8rem; vertical-align: middle; display: flex; align-items: center;}
+.ol.process.-icon > li.-ico01 > .title,
+.ol.process.-icon > li.-ico04 > .title {padding-top: 0.8rem;}
+.ol.process.-icon > li > .title p {padding-top: 0;}
+.ol.process.-icon > li[class^="-ico"] {position:relative; min-height:4.8rem; color:var(--font2); padding-bottom: 3.2rem; padding-left:6rem; padding-top: 0;}
+.ol.process.-icon > li.-ico01,
+.ol.process.-icon > li.-ico04 {padding-bottom: 4.4rem;}
+.ol.process.-icon > li.-ico01:before {background:url(../imgs/img/deposit/ico-FMDA-0601000000F01-2.png) no-repeat left / contain;}
+.dark-mode .ol.process.-icon > li.-ico01:before {background:url(../imgs/img/deposit/ico-FMDA-0601000000F01-2_dk.png) no-repeat left / contain;}
+.ol.process.-icon > li.-ico02:before {background:url(../imgs/img/deposit/ico-FMDA-0601000000F01-3.png) no-repeat left / contain;}
+.dark-mode .ol.process.-icon > li.-ico02:before {background:url(../imgs/img/deposit/ico-FMDA-0601000000F01-3_dk.png) no-repeat left / contain;}
+.ol.process.-icon > li.-ico03:before {background:url(../imgs/img/deposit/ico-FMDA-0601000000F01-1.png) no-repeat left / contain;}
+.dark-mode .ol.process.-icon > li.-ico03:before {background:url(../imgs/img/deposit/ico-FMDA-0601000000F01-1_dk.png) no-repeat left / contain;}
+.ol.process.-icon > li.-ico04:before {background:url(../imgs/img/deposit/FMDA-0802000000F01-1.png) no-repeat left / contain;}
+.dark-mode .ol.process.-icon > li.-ico04:before {background:url(../imgs/img/deposit/FMDA-0802000000F01-1_dk.png) no-repeat left / contain;}
+.ol.process.-icon > li.-ico05:before {background:url(../imgs/img/deposit/FMDA-0501010000F01-1.png) no-repeat left / contain;}
+.dark-mode .ol.process.-icon > li.-ico05:before {background:url(../imgs/img/deposit/FMDA-0501010000F01-1_dk.png) no-repeat left / contain;}
+
+.important-confirm-box > .panel .sm-title-group .ul.-bullet li {font-size:1.5rem;}
+.important-confirm-box > .panel .sm-title-group .ul.-bullet li:not(:first-child) {margin-top: 0.8rem;}
+
+/* 외화 통화 선택 */
+.exchange [data-countrycode].-md:before {width: 3.2rem; height: 3.2rem;}
+.exchange [data-countrycode].-md > span {padding-left:1.2rem;}
+.exchange [data-countrycode].-md {display:flex; align-items:center; justify-content:flex-start;}
+
+/* 판정기준표 */
+.ol.-number.fore-indi .fore-title {font-size: 1.5rem; font-weight: 600; color: var(--F01);}
+.ol.-number.fore-indi .ul.-bullet li {margin-left: 0.6rem; font-size: 1.5rem;}
+
+/* 외화 공통(case:readonly) */
+.mix.-type02 .select.-readonly > button {background: var(--F09);}
+
+/* 수신 가입기간 */
+.text.period-disabled input[disabled] {text-align: center; border: none; font-size:1.5rem; font-weight: 400;}
+
+.rate-guide .ol.-circle.-lg > li {font-size: 1.6rem; color: var(--font1); font-weight: 500; margin-top: 3.3rem;}
+.rate-guide .ol.-circle.-lg > li .guide-desc .button {margin-top: 2.4rem;}
+
+.box-radios.-sm.-radius4 .box-radio label:after {border-radius: 0.8rem;}
+.box-radios.-sm.-radius4 .box-radio label {font-size: 1.3rem;}
+.box-radios.-sm.-radius4 .box-radio:not(:last-child) {margin-right: 0.4rem;}
+
+.-box.limit-point-box.type02 {margin-top: 2.4rem; margin-bottom: 1.2rem; padding: 1.7rem 2rem 1.6rem;}
+.-box.limit-point-box.type02 dt {font-size: 1.4rem; padding: 0;}
+.-box.limit-point-box.type02 dd {font-size: 1.8rem; padding: 0;}
+
+/* 적금:적립목적 선택  */
+.custom-checkbox-wrap {display: flex;flex-wrap: wrap;/* padding-top:0.2rem; */}
+.custom-checkbox-wrap + .custom-checkbox-wrap {margin-top:1.2rem;}
+.custom-checkbox-wrap .custom-checkbox span {display: block; position:absolute;top:calc(55% + 1rem);left:0;right:0;font-size: 1.5rem;text-align: center; letter-spacing: -0.1rem; margin-top: 1.2rem;}
+.custom-checkbox-wrap .custom-checkbox.type05 span {margin-top: 0;}
+.custom-checkbox-wrap .custom-checkbox.type05 {width: 100%; height: 7.1rem;}
+.custom-checkbox-wrap .custom-checkbox.type05 span {top:calc(21% + 1rem);text-align: left;padding-left: 7.2rem;}
+.custom-checkbox-wrap .custom-checkbox:last-child {margin-right:0;}
+.custom-checkbox-wrap .custom-checkbox {width: calc((100% - 1rem) / 2 ); height: 11.8rem; margin: 0 1rem 0 0;}
+.custom-checkbox-wrap .custom-checkbox label {width:100%;height:100%; border-radius: 1rem; border:1px solid #ddd; padding:0; display:inline-flex; flex:1; position:relative; color:var(--F03); font-size:1.6rem; word-break:break-all; cursor:pointer;}
+.custom-checkbox-wrap .custom-checkbox label:after {content:"";  position:absolute; background:url(../imgs/ico/common/ico-checkbox.png) no-repeat .2rem / 2.4rem; transform:translateY(-50%);}
+.custom-checkbox-wrap .custom-checkbox.type01 label:after {width: 5.6rem;height: 5.6rem;background:url(../imgs/img/deposit/img-FMDC-0303000000F01-1.png) no-repeat center center / 5.6rem;top: 38%;left:52%;transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type02 label:after {width: 5.6rem; height: 5.6rem; background:url(../imgs/img/deposit/img-FMDC-0303000000F01-2.png) no-repeat center center / 5.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type03 label:after {width: 5.6rem; height: 5.6rem; background:url(../imgs/img/deposit/img-FMDC-0303000000F01-3.png) no-repeat center center / 5.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type04 label:after {width: 5.6rem; height: 5.6rem; background:url(../imgs/img/deposit/img-FMDC-0303000000F01-4.png) no-repeat center center / 5.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type05 label:after {width: 4rem; height: 4rem; background:url(../imgs/img/deposit/img-FMDC-0303000000F01-5.png) no-repeat center center / 4rem; top:47%; left:3.6rem; transform: translate(-50%, -50%);}
+
+.custom-checkbox-wrap .custom-checkbox.type01 input:checked ~ label:after {width: 5.6rem; height: 5.6rem; background:url(../imgs/img/deposit/img-FMDC-0303000000F01-1.png) no-repeat center center / 5.6rem; top:38%; left:52%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type02 input:checked ~ label:after {width: 5.6rem; height: 5.6rem; background:url(../imgs/img/deposit/img-FMDC-0303000000F01-2.png) no-repeat center center / 5.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type03 input:checked ~ label:after {width: 5.6rem; height: 5.6rem; background:url(../imgs/img/deposit/img-FMDC-0303000000F01-3.png) no-repeat center center / 5.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type04 input:checked ~ label:after {width: 5.6rem; height: 5.6rem; background:url(../imgs/img/deposit/img-FMDC-0303000000F01-4.png) no-repeat center center / 5.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox input:checked ~ label {border:1px solid var(--point); background:#fff;}
+.dark-mode .custom-checkbox-wrap .custom-checkbox input:checked ~ label {background: transparent;}
+.custom-checkbox-wrap .custom-checkbox input {position:absolute;width: 2.8rem;height: 2.8rem;border-radius:50%;background-color:rgba(0,0,0,0);}
+
+.box-radios.radio-w-half {width: calc((100% - 1rem) / 2 );}
+.box-radio .dl {width: 100%;}
+
+/* NH고향사랑 온도계 */
+.thermo-btn-group .box-radios + .box-radios{margin-top:.4rem}
+.thermo-btn-group .box-radios.-sm.-radius4 .box-radio label{color:var(--F01)}
+.thermo-btn-group .box-radios.-sm.-radius4 .box-radio input:checked + label{color:var(--point)}
+.thermo-field {margin-top:4rem; padding-bottom:1rem;}
+.thermo-wrap{width:232px;height:212px;margin:0 auto; position:relative; margin-top:1rem}
+.thermo-wrap .thermo-body{background:url(../imgs/img/deposit/thermometer/thermobody.png) 84px bottom / 94px  no-repeat;position:absolute;left:0;top:0;right:0;bottom:0;z-index: 10;}
+.dark-mode .thermo-wrap .thermo-body{background:url(../imgs/img/deposit/thermometer/thermobody_dk.png) 84px bottom / 94px  no-repeat;position:absolute;left:0;top:0;right:0;bottom:0;z-index: 10;}
+.meter-wrap {width: 74px;height: 172px;position: absolute;background: var(--G10);left: 96px;bottom: 12px;display: flex;flex-direction: column-reverse;}
+.meter-wrap .wave {position:absolute;top:-15px;display: block;width:320px;height:30px;background-image: url('../imgs/img/deposit/thermometer/wave.png');background-size: 320px 100%;background-repeat: no-repeat;z-index: 5;}
+.dark-mode .meter-wrap .wave {position:absolute;top:-15px;display: block;width:320px;height:30px;background-image: url('../imgs/img/deposit/thermometer/wave_dk.png');background-size: 320px 100%;background-repeat: no-repeat;z-index: 5;}
+.meter-wrap .thermo-bar{display: block;position:relative;transition:height 1s;transition-timing-function: ease;height:0;overflow: hidden;filter:blur(0.5px);}
+.meter-wrap .thermo-bar::after{content: '';position:absolute;width: 74px;height: 100%;bottom:0;background: url(../imgs/img/deposit/thermometer/barBG.png) no-repeat;background-size: cover;background-position: bottom;}
+.counter-wrap{position:absolute;width:100%;bottom:30px;z-index: 15;color: #fff;}
+.counter-wrap .inner{display: block;width:70px; margin-left:98px;text-align: center;font-size:2.2rem;position:relative;font-weight: 600;letter-spacing: -.04rem;}
+.thermo-title{display: flex; justify-content: space-between; align-items: baseline; }
+.thermo-title .h4 {font-weight: 600; margin:0;}
+.thermo-title .region{display: inline-block; margin:0; margin-right:.4rem}
+.thermo-title .text-right {color:var(--F04); font-size: 1.4rem;}
+.thermo-title .region.hang{animation: hang ease .3s 1;}
+.partial-wrap{position:absolute;left:0;top:0;right:0;bottom:0;z-index: 20;}
+.partial-wrap .heart.p1{background: url(../imgs/img/deposit/thermometer/heart1.png) left top / 100% no-repeat;width:36px;height:36px;display: block;position:absolute;top:30px;left:80px;}
+.partial-wrap .heart.p2{background: url(../imgs/img/deposit/thermometer/heart2.png) left top / 100% no-repeat;width:62px;height:62px;display: block;position:absolute;top:50px;left:168px;}
+.partial-wrap #ally{display: block;position:absolute;bottom:0;left:0;animation: left ease .5s 1;}
+.partial-wrap #ally.st1{background: url(../imgs/img/deposit/thermometer/step1.png) left bottom / 100% 100% no-repeat;width:114.5px;height:117.5px;animation: left ease .5s 1;}
+.partial-wrap #ally.st2{background: url(../imgs/img/deposit/thermometer/step2.png) left bottom / 100% 100% no-repeat;width:98.5px;height:116.5px;animation: up ease .5s 1;}
+.partial-wrap #ally.st3{background: url(../imgs/img/deposit/thermometer/step3.png) left bottom / 100% 100% no-repeat;width:98px;height:116px;animation: land ease .5s 1;}
+.partial-wrap #ally.st4{background: url(../imgs/img/deposit/thermometer/step4.png) left bottom / 100% 100% no-repeat;width:117px;height:114.5px;animation: left ease .5s 1;}
+.partial-wrap #ally.st5{background: url(../imgs/img/deposit/thermometer/step5.png) left bottom / 100% 100% no-repeat;width:105.5px;height:114.5px;animation: right ease .5s 1;}
+.partial-wrap .shadow{background: url(../imgs/img/deposit/thermometer/shadow.png) left bottom / 100% 100% no-repeat !important;width:87px;height:22.5px;display: block;position:absolute;bottom:-10px;left:6px;z-index: -1;animation: left ease .5s 1;}
+.partial-wrap #ally.st1 + .shadow{bottom:-10px;left:6px;animation: left 1s 1;}
+.partial-wrap #ally.st2 + .shadow{bottom:-10px;left:3px;opacity: 0.8;}
+.partial-wrap #ally.st3 + .shadow{width:87px;bottom:-10px;left:2px;}
+.partial-wrap #ally.st4 + .shadow{width:99px;bottom:-10px;left:0;animation: left 1s 1;}
+.partial-wrap #ally.st5 + .shadow{width:87px;bottom:-10px;left:14px;animation: right 1s 1;}
+
+@-webkit-keyframes float {0%,100%{transform:translateY(0);}50%{transform:translateY(6px);}}
+@-webkit-keyframes land {0%{transform:translateY(-5px);}50%{transform:translateY(0);}100%{transform:translateY(0);}}
+@-webkit-keyframes up {0%{transform:translateY(5px);}100%{transform:translateY(0);}}
+@-webkit-keyframes left {0%{transform:translateX(-5px);}100%{transform:translateX(0);}}
+@-webkit-keyframes right {0%{transform:translateX(5px);}100%{transform:translateX(0);}}
+@-webkit-keyframes hang {0%{transform:rotateX(90deg);opacity: 0;}100%{transform:rotateX(0);opacity: 1;}}
+@keyframes float {0%,100%{transform:translateY(0);}50%{transform:translateY(6px);}}
+@keyframes land {0%{transform:translateY(-5px);}50%{transform:translateY(0);}100%{transform:translateY(0);}}
+@keyframes up {0%{transform:translateY(5px);}100%{transform:translateY(0);}}
+@keyframes left {0%{transform:translateX(-5px);}100%{transform:translateX(0);}}
+@keyframes right {0%{transform:translateX(5px);}100%{transform:translateX(0);}}
+@keyframes hang {0%{transform:rotateX(90deg);opacity: 0;}100%{transform:rotateX(0);opacity: 1;}}
+
+/* 적금 만기일 */
+.dl.-box.-duedate {padding: 1.6rem 2rem;}
+.dl.-box.-duedate div{align-items: center;}
+.dl.-box.-duedate dt {font-size: 1.4rem; font-weight: 500;}
+.dl.-box.-duedate dd {color: var(--P15); font-size: 1.8rem;}
+
+/* 주택청약 작은 버튼 */
+.button-box-wrap .button.-sm.-widthauto {width: auto;}
+.button-box-wrap .button + .button {margin-top: 1.2rem;}
+
+.ol.-number .button-box-wrap {margin: 1.6rem 0 0 0;}
+
+.rate-guide .ol.-circle.-lg > li .guide-desc .button.-arrow {width: auto; position: relative; padding: 1rem 3.6rem 1rem 2rem;}
+.rate-guide .ol.-circle.-lg > li .guide-desc .button.-arrow:after {content: ""; position: absolute; background: url(../imgs/img/deposit/ic_arrow_right_black_16.png) no-repeat center / 1.6rem; width: 1.6rem; height: 1.6rem; right: 7%;; display: inline-block;}
+.dark-mode .rate-guide .ol.-circle.-lg > li .guide-desc .button.-arrow:after {background: url(../imgs/img/deposit/ic_arrow_right_black_16_dk.png) no-repeat center / 1.6rem;}
+
+/* 우리아이 통장 선택 */
+.-card {width: 100%;}
+.-card .box-radio.-left.-bigsize label {padding: 2.4rem 2rem 2.1rem 2rem;}
+.-card .box-radio.-left.-bigsize label:after {border-radius: 1.6rem;}
+.-card .box-radio.-left.-bigsize input:checked + label {font-weight: normal;}
+.select-account {display: flex;flex-direction: column;width: 100%;}
+.select-account .titile-acct {font-size: 1.6rem; font-weight: 600; color: var(--F01);}
+.select-account .desc-acct {margin-top: 0.8rem;}
+.select-account .desc-acct p{font-size: 1.4rem; color: var(--F03);}
+.select-account .tag-wrap {margin-top: 1.2rem;}
+.select-account .tag-wrap .tag {font-size: 1.4rem; color: var(--F04);}
+.select-account .tag-wrap .tag:not(:first-child) {margin-left: 0.8rem;}
+.select-account .rate-acct {margin-top: 2.4rem; align-self: flex-end;}
+.select-account .rate-acct .point {font-size: 1.8rem; font-weight: 600;}
+.select-account .rate-acct .rate {font-size: 1.4rem;color: var(--F04);margin-left: 0.8rem;}
+
+.-card.type02 .box-radio.-left.-bigsize label {padding: 2.4rem 2rem;}
+.-card.type02 .box-radio.-left.-bigsize .dl div:first-of-type dt,
+.-card.type02 .box-radio.-left.-bigsize .dl div:first-of-type dd {padding-top: 0;}
+.-card.type02 .box-radio.-left.-bigsize .dl div:last-of-type dt,
+.-card.type02 .box-radio.-left.-bigsize .dl div:last-of-type dd {padding-bottom: 0;}
+
+/* 목표금액 설정 */
+.box-total:after {content:"";  position:absolute;left:50%;transform: translate(-50%, -50%);}
+.box-total.type01:after {width: 8rem;height: 8rem;background:url(../imgs/img/deposit/img-FMDC-0304000000F01-1.png) no-repeat center center / 8rem;top: 38%;}
+.box-total.type02:after {width: 8rem;height: 8rem;background:url(../imgs/img/deposit/img-FMDC-0304000000F01-2.png) no-repeat center center / 8rem;top: 38%;}
+.box-total.type03:after {width: 8rem;height: 8rem;background:url(../imgs/img/deposit/img-FMDC-0304000000F01-3.png) no-repeat center center / 8rem;top: 38%;}
+.box-total.type04:after {width: 8rem;height: 8rem;background:url(../imgs/img/deposit/img-FMDC-0304000000F01-4.png) no-repeat center center / 8rem;top: 38%;}
+.box-total.type05:after {width: 8rem;height: 8rem;background:url(../imgs/img/deposit/img-FMDC-0304000000F01-5.png) no-repeat center center / 8rem;top: 38%;}
+.box-total .total-date {padding-top: 9.4rem; text-align: center;}
+.box-total .total-date .-date {font-size: 1.4rem; color: var(--font3); font-weight: 600;}
+.box-total .total-date .-num {font-size: 2rem; color: var(--P15);padding-left: 1.2rem; font-weight: 600;}
+
+/* 적립목적*/
+.purpose-wrap .purpose:before {content:""; display: inline-block; vertical-align: middle; margin-right: 0.8rem;}
+.purpose-wrap .purpose.type01:before {width: 3.2rem;height: 3.2rem;background:url(../imgs/img/deposit/img-FMDC-0303000000F01-1.png) no-repeat center center / 3.2rem;}
+.purpose-wrap .purpose.type02:before {width: 3.2rem;height: 3.2rem;background:url(../imgs/img/deposit/img-FMDC-0303000000F01-2.png) no-repeat center center / 3.2rem;}
+.purpose-wrap .purpose.type03:before {width: 3.2rem;height: 3.2rem;background:url(../imgs/img/deposit/img-FMDC-0303000000F01-4.png) no-repeat center center / 3.2rem;}
+.purpose-wrap .purpose.type04:before {width: 3.2rem;height: 3.2rem;background:url(../imgs/img/deposit/img-FMDC-0303000000F01-3.png) no-repeat center center / 3.2rem;}
+.purpose-wrap .purpose.type05:before {width: 3.2rem;height: 3.2rem;background:url(../imgs/img/deposit/img-FMDC-0303000000F01-5.png) no-repeat center center / 3.2rem;}
+
+/* arrow btn */
+.button.-arrow {text-align: left; position: relative; text-align: left; justify-content: flex-start; align-items: center; padding: 1.9rem 3.6rem 1.9rem 2rem;}
+.button.-arrow:after {content: ""; position: absolute; background: url(../imgs/ico/common/ico-arrow-right-gray.png) no-repeat center right / 2.4rem; width: 2.4rem; height: 2.4rem; right: 1.5rem; display: inline-block;}
+
+.-guide .button.-arrow {text-align: left; position: relative; text-align: left; justify-content: flex-start; align-items: center; padding: 1rem 3.8rem 1rem 2rem; width: auto;}
+.-guide .button.-arrow:after {content: ""; position: absolute; background: url(../imgs/ico/common/ico-arrow-right-gray.png) no-repeat center right / 1.6rem; width: 1.6rem; height: 1.6rem; right: 1.5rem; display: inline-block;}
+
+/* 금융상품 중요사항 내 테이블 */
+.ol.-number .table-wrap {margin: 1.2rem 0 0.8rem -1.5rem;}
+.ml-minus {margin-left: -1.5rem;}
+
+/* 우리아이 가입 */
+.h1-group.-offer .desc {font-size: 1.5rem; color: var(--F03); margin-top: 1.6rem; margin-bottom: 0;}
+.h1-group.-offer .desc.-detail {margin-top: 3.2rem;}
+
+/* 현재 환율 조회 */
+.exchange-rate.-search {flex: 0 0 auto;}
+.exchange-rate .fit-buttons.-right {margin-left: 1rem; flex: 0 0 auto;}
+.exchange-rate .message.-type02 {word-break: keep-all;}
+
+/* 예적금 상품찾기 */
+.condition-wrap.-box {display: flex; align-items: center; flex-wrap: wrap; margin-right: -1.2rem;}
+.condition-wrap.-box .condition-item{padding: 1.2rem; border: 1px solid var(--P15); border-radius: 0.8rem;font-size: 1.4rem; margin-right: 1rem; line-height: 1; margin-bottom: 1rem;}
+.condition-item.-box {margin-right: 1rem; margin-bottom: 1rem;font-size: 1.4rem; color: var(--font1); height: 4rem; display: flex; align-items: center; flex: 0 0 auto; position: relative;}
+.condition-item.-selec .check > input:checked ~ label {font-size: 1.4rem; color: var(--font1); position: relative;}
+.condition-item.-selec .check > input:checked ~ label {border: 1px solid var(--P15);}
+
+.condition-wrap {letter-spacing: 0; word-spacing: 0; font-size: 0;}
+.condition-item.-selec {margin-bottom: 1rem; display: inline-block; margin-right: 1rem;}
+.condition-item.-selec .check + .check {margin-top:1rem;}
+.condition-item.-selec .check > label:before {content:""; position:absolute; top:50%; border:none; left:1rem; width: 1.6rem; height: 1.6rem; border:1px solid transparent; border-radius:.8rem; transform:translateY(-50%);}
+.condition-item.-selec .check > label:after {content:"";  position:absolute; top:50%; left:1rem; width: 1.6rem; height:1.6rem; border-radius:.8rem; background:url(../imgs/ico/common/ico-sub-checkbox-def.png) no-repeat 0 / 1.6rem; transform:translateY(-50%);}
+.condition-item.-selec .check > input {position:absolute; width:1.6rem; height:1.6rem; top:50%; left:1rem; border-radius:1rem; background-color:rgba(0,0,0,0); transform: translateY(-50%);}
+.condition-item.-selec .check > label {display: inline-block;font-size:1.4rem; font-weight: 400; border: 1px solid var(--G06); border-radius: 8px; padding: 1.2rem 1.2rem 1.2rem 2.8rem; line-height: 1;}
+.condition-item.-selec .check > input:checked ~ label:after {background-image:url(../imgs/ico/common/ico-sub-checkbox-active.png);}
+.condition-item.-selec .check > input:checked:focus ~ label:after {-webkit-animation:checkbox-sm .3s ease-out; animation:checkbox-sm .3s ease-out;}
+.condition-item.-selec .check input:checked ~ label:before {border-color:transparent; transition:border .3s, background .3s;}
+.condition-item.-selec .check input:checked ~ label:after {background-image:url(../imgs/ico/common/ico-sub-checkbox-active.png);}
+.condition-item.-selec .check input:checked:focus ~ label:after {-webkit-animation:checkbox .3s ease-out; animation:checkbox .3s ease-out;}
+.condition-item.-selec .check {position: relative;}
+
+.condition-item .plus {position: relative;padding-left: 2rem;}
+.condition-item .plus:before {content:"+"; position: absolute; left: 0;}
+
+/* 예적금상품찾기:만족한 우대조건 */
+.preferred-wrap {padding-bottom: 0.8rem;}
+.preferred-wrap .prf-item {font-size: 1.4rem; display: inline-flex; margin: 0 2rem 1.2rem 0; align-items: center;}
+.preferred-wrap .prf-item:before {content: '';background-image: url(../imgs/ico/common/ico-sub-checkbox-active.png); width: 1.6rem; height: 1.6rem; margin-right: 0.4rem; background-repeat: no-repeat; background-size: 100%; background-position: center;}
+
+.dl.-fcg dt {font-size: 1.4rem; color: var(--font3);}
+.dl.-fcg dd {font-size: 1.4rem; color: var(--font2);}
+.dl.-fcg + .-info {font-size: 1.3rem; color: var(--font3);}
+
+.p.-sub {font-size: 1.6rem; color: var(--font1); font-weight: 600;}
+.-separate {padding: 2rem;}
+.-separate .title {padding: 0;}
+.-separate .title .checkbox .total,
+.-separate .title .checkbox .-perc {font-size: 1.5rem;}
+.-separate .title .checkbox .badge {margin-left: 0.8rem; font-size: 1rem; padding: 0.4rem; line-height: 1;}
+.-separate .title .checkbox .-suffic {display: flex; align-items: center; margin-bottom: 0.8rem;}
+.-separate .p.-info {margin: 0; padding-bottom: 1.7rem; padding-top: 0.1rem;}
+.-separate .badge.-blueline.-space {width: 3.2rem;border: none;}
+.-separate .title + .p.-info {font-size: 1.4rem;color: var(--font3);padding: 0 0 2.1rem 2rem;margin-bottom:0 ;}
+.-separate .title + .title {padding-bottom: 0; padding-top: 1.6rem;}
+.-separate .title .checkbox.-sm label:before,
+.-separate .title .checkbox.-sm label:after, 
+.-separate .checkbox.-sm input {top: 0; transform: translateY(0);}
+.-separate .title .checkbox.-sm label > div:nth-of-type(2) {font-weight: 400;}
+.dark-mode .badge.-blueline {border:1px solid var(--FB4); color:var(--FB4);}
+
+.product-detail-wrap.-depo {padding-top: 0;}
+.product-detail-wrap.-depo .product-other {border: 0; margin-top: 0;}
+.product-detail-wrap.-depo .product-other .product-recommend {margin: 0 -2.4rem 0 -2.4rem;}
+.product-detail-wrap.-depo .product-other .product-recommend .product-recommend-list ul > li {background-color: transparent; flex: 0 0 17.6rem; border: 1px solid var(--G07);border-radius: 1.2rem; width: 17.6rem;}
+.product-detail-wrap.-depo .product-other .product-recommend .product-recommend-list ul > li a{padding: 0; width: 17.6rem;}
+.-depo .recnd-item {width: 17.6rem; padding: 2rem;}
+.-depo .recnd-item .title {font-size: 1.6rem; color: var(--font1); font-weight: 600;}
+.-depo .recnd-item .desc {font-size: 1.3rem; color: var(--font2); margin-top: 1.2rem;}
+.-depo .recnd-item .perc {font-size: 2.2rem; font-weight: 600; color: var(--P15);}
+
+.item-list.-able {width: 100%;}
+.item-list.-able ul li + li {margin-top: 2rem;}
+.item-list.-able a {display: block; width: 100%; height: 100%;}
+.item-list.-able .item {border: 1px solid var(--G07); width: 100%; padding: 2rem;border-radius: 1.2rem;}
+.item-list.-able .item .title {font-size: 1.6rem; font-weight: 600;}
+.item-list.-able .item .sub-msg {font-size: 1.3rem; color: var(--font2);}
+.item-list.-able .p.-info {font-size: 1.3rem; color: var(--font3); margin-top: 1.2rem;}
+
+/* 예적금 상품찾기 */
+.p.-aligncenter {display: flex;align-items: center;}
+.p.-aligncenter .limit-point.-type02 {font-size: 2.2rem;}
+.p.-aligncenter .-baseline {color: var(--font3); padding-left: 0.4rem;}
+
+.result .message.-sm {font-size: 1.6rem; margin-top: 2.4rem;}
+
+/* 조회 옵션 선택 */
+.box-radios.-selectbox .box-radio {flex: 0 0 calc((100% - 1.2rem) / 3 ); margin-bottom: 1rem;}
+.box-radios.-selectbox .box-radio:nth-child(3n) {margin-right: 0;}
+
+/* 계약서류조회 */
+.info.-search .top-area .badge.bg-grey {background-color: var(--G08);}
+.info.-search .info-main {margin: 0.8rem 0 2.4rem 0;} 
+.accordion.-card.bg-grey {background-color: var(--G09); border: none; margin-top: 2.4rem;}
+.accordion.-card.bg-grey > button {padding: 1.6rem 4.8rem 1.6rem 1.2rem;}
+.accordion.-card.bg-grey > .title:before { right: 1.2rem;}
+.accordion.-card.bg-grey > .title {font-size: 1.4rem; min-height: 4.8rem; border-radius: 1.2rem;}
+.accordion.-card.bg-grey > .panel {color: var(--font2); font-size: 1.4rem; padding: 1.2rem 1.2rem 1.6rem 1.2rem;}
+.accordion.-card.bg-grey .download ul li {display: flex;justify-content: space-between;align-items: center;}
+.accordion.-card.bg-grey .download ul li button.down-btn {width: 2.4rem; height: 2.4rem; color: transparent; background: url(../imgs/img/deposit/ico-FMUC-0100000000F01-2.png) no-repeat center center / 2.4rem; margin-left: 2rem;}
+.accordion.-card.bg-grey .download ul li button.go-link {width: 2.4rem; height: 2.4rem; color: transparent; background: url(../imgs/img/deposit/ico-FMUC-0100000000F01-1.png) no-repeat center center / 2.4rem; margin-left: 0.4rem;}
+.accordion.-card.bg-grey .download ul li > div {display: flex;}
+
+/* 금융상품 중요사항 확인 간격 조정 */
+.sm-title-group .h5 + .sub-title.-gap {margin-top: 2.4rem;}
+
+/* 이어하기 */
+.-continue .p {font-size: 1.6rem; color: var(--font1);margin-bottom: 0;}
+.-continue .message {font-size: 1.4rem; color: var(--font2);}
+.-continue .ol.-step.-icon.-horizontal {margin-top: 2rem;}
+
+/* 데이터박스 readonly */
+.data-box.-type02 {justify-content: flex-start;}
+.data-box.-type02 .currency {color: var(--F03); font-size: 1.4rem; font-weight: 500;}
+.data-box.-type02 [data-countrycode]:before {margin-right: 0.8rem;}
+
+/* 이메일 체크박스 없음 */
+.check.-reverse {display: flex;justify-content: space-between;align-items: center;}
+.check.-reverse .checkbox.-sm > label {font-size: 1.3rem;margin-bottom: 0.8rem;}
+.check.-reverse .checkbox label, .check.-reverse .checkbox.-sm > label {padding: 0.25rem 3.2rem 0 0; font-weight: 400;}
+.check.-reverse .checkbox label:before, .check.-reverse .checkbox.-sm > label:before {right: 0; left: auto;}
+.check.-reverse .checkbox label:after, .check.-reverse .checkbox.-sm > label:after {right: 0; left: auto;} 
+
+/* 통화선택 readonly bg-color*/
+.mix .left-space.bg-readonly {background-color: var(--G09); border-radius: 1.2rem 0 0 1.2rem;}
+
+/* 트래블리 외화예금 */
+.travely-img {height:12.3rem; background:url(../imgs/img/product/FMGA-0116020000F01-B.png) no-repeat center center / 20.6rem auto; margin:1.4rem 0 3.6rem;}
+.travely-notice ul li .travely-list {margin-bottom:1rem; background:var(--BG10); padding:1.5rem 1rem 1.5rem 4.8rem; border-radius: 1.2rem; font-size: 1.6rem; position:relative; color:var(--font2);}
+.travely-notice ul li .travely-list::before {display: block; content: ''; position: absolute; top:50%; left:1.8rem; transform: translateY(-50%); width:2.2rem; height:2.2rem;}
+.travely-notice ul li .travely-list.l1::before {background:url(../imgs/img/product/FMGA-0116020000F01-B_1.png) no-repeat center center / 2.2rem}
+.travely-notice ul li .travely-list.l2::before {background:url(../imgs/img/product/FMGA-0116020000F01-B_2.png) no-repeat center center / 2.2rem}
+.travely-notice ul li .travely-list.l3::before {background:url(../imgs/img/product/FMGA-0116020000F01-B_3.png) no-repeat center center / 2.2rem}
+.travely-txt {color:var(--font3); font-size: 1.4rem; text-align: center; margin-top:2.8rem;}

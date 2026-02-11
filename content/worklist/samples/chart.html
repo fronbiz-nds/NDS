@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>금상몰</title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+    <!-- <link rel="stylesheet" href="../../assets/css/util.css">
+    <link rel="stylesheet" href="../../assets/css/retire.css">
+    <link rel="stylesheet" href="../../assets/css/isa.css"> -->
+    <!-- 차트 관련css -->
+    <link rel="stylesheet" href="../../assets/libs/Chart/dist/Chart.css">
+    <link rel="stylesheet" href="../../assets/libs/Chart/dist/Chart.min.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <h1 class="title">차트</h1>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div>
+                        <h3 class="h5 mt-0">막대형 차트 Type1</h3>
+                        <div class="chart-area">
+                            <p class="chart-title -type1">title</p>
+                            <canvas id="bar-chart1" height="200" aria-label=""></canvas> <!-- 임시 높이값 -->
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xs">
+                        <h3 class="h5">막대형 차트 Type2</h3>
+                        <div class="chart-area">
+                            <p class="chart-title -type1">title</p>
+                            <canvas id="bar-chart2" height="156" aria-label=""></canvas>
+                            <div class="chart-labels -x">
+                                <p class="chart-label">
+                                    금상몰
+                                </p>
+                                <p class="chart-label">
+                                    금상몰
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xs">
+                        <h3 class="h5">막대형 차트 Type3</h3>
+                        <div class="chart-area -flex -isa">
+                            <div class="chart-labels -multi-x">
+                                <p class="chart-label">
+                                    국내주식 일반
+                                    <span>12%</span>
+                                </p>
+                                <p class="chart-label">
+                                    국내채권 단기채
+                                    <span>51%</span>
+                                </p>
+                                <p class="chart-label">
+                                    국내채권 일반
+                                    <span>10%</span>
+                                </p>
+                                <p class="chart-label">
+                                    MMF
+                                    <span>29%</span>
+                                </p>
+                                <p class="chart-label">
+                                    해외주식 글로벌
+                                    <span>15%</span>
+                                </p>
+                                <p class="chart-label">
+                                    해외주식 아시아
+                                    <span>11%</span>
+                                </p>
+                                <p class="chart-label">
+                                    해외주식 혼합 글로벌
+                                    <span>12%</span>
+                                </p>
+                                <p class="chart-label">
+                                    금상몰금상몰금상몰
+                                    <span>12%</span>
+                                </p>
+                                <p class="chart-label">
+                                    금상몰금상몰금상몰
+                                    <span>12%</span>
+                                </p>
+                                <p class="chart-label">
+                                    해외부동산주식투자형
+                                    <span>12%</span>
+                                </p>
+                            </div>
+                            <canvas id="bar-chart5" width="200" height="262" aria-label=""></canvas> <!-- 임시 높이값 -->
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xs">
+                        <h3 class="h5">누적 막대 차트</h3>
+                        <div class="chart-both">
+                            <div class="chart-area">
+                                <p class="chart-title -type2">title</p>
+                                <canvas id="bar-chart3" width="20" height="136" aria-label=""></canvas> <!-- 임시 높이값 -->
+                                <div class="chart-labels -stack-bar">
+                                    <p class="chart-label">유동성 10%</p>
+                                    <p class="chart-label">해외채권혼합 20%</p>
+                                    <p class="chart-label">해외채권 20%</p>
+                                    <p class="chart-label">국내채권 30%</p>
+                                    <p class="chart-label">해외이머징주식 20%</p>
+                                </div>
+                            </div>
+                            <div class="chart-area">
+                                <p class="chart-title -type2">title</p>
+                                <canvas id="bar-chart4" width="20" height="136" aria-label=""></canvas> <!-- 임시 높이값 -->
+                                <div class="chart-labels -stack-bar">
+                                    <p class="chart-label">해외채권혼합 40%</p>
+                                    <p class="chart-label">해외채권 10%</p>
+                                    <p class="chart-label">국내채권 50%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-wrap -xs">
+                        <h3 class="h5">라인형 차트</h3>
+                        <div class="chart-area">
+                            <p class="chart-title">title</p>
+                            <canvas id="line-chart1" height="166rem" aria-label=""></canvas> <!-- 임시 높이값 -->
+                            <div class="chart-labels -line">
+                                <p class="chart-label -max">최대수익률</p>
+                                <p class="chart-label -average">평균수익률</p>
+                                <p class="chart-label -min">최저수익률</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xs">
+                        <p class="profit-info">누적수익률<span class="profit-percent red">+2.75%</span></p>
+                        <div class="chart-area">
+                            <p class="chart-title">title</p>
+                            <canvas id="line-chart2" height="166rem" aria-label=""></canvas> <!-- 임시 높이값 -->
+                        </div>
+                    </div>
+                    
+                    <div class="case-wrap -xs">
+                        <p class="profit-info">누적수익률<span class="profit-percent blue">-2.75%</span></p>
+                        <div class="chart-area">
+                            <p class="chart-title">title</p>
+                            <canvas id="line-chart3" height="166rem" aria-label=""></canvas> <!-- 임시 높이값 -->
+                        </div>
+                    </div>
+                    
+                    <div class="case-wrap -xs">
+                        <h3 class="h5">도넛형 차트</h3>
+                        <p class="chart-title -type1">title</p>
+                        <div class="chart-area -flex">
+                            <canvas id="doughnut-chart" width="160" height="160" aria-label=""></canvas>
+                            <div class="chart-labels -doughnut">
+                                <p class="chart-label">국내주식 10%</p>
+                                <p class="chart-label">국내채권 20%</p>
+                                <p class="chart-label">국내채권혼합 10%</p>
+                                <p class="chart-label">해외선진주식 10%</p>
+                                <p class="chart-label">해외이머징주식 20%</p>
+                                <p class="chart-label">해외채권 10%</p>
+                                <p class="chart-label">해외채권혼합 20%</p>
+                                <!-- <p class="chart-label">유동성 20%</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xs">
+                        <h3 class="h5">파이형 차트</h3>
+                        <canvas id="pie-chart" aria-label=""></canvas>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    <!-- 차트 관련js -->
+    <script src="../../assets/libs/Chart/dist/Chart.js"></script>
+    <script src="../../assets/libs/Chart/dist/Chart.min.js"></script>
+
+    <script>
+        // 도넛, 막대 그래프 컬러 순서 : 1.#5a5fd8, 2.#ff8a65, 3.#2bc4c0, 4.#ffcb3e, 5.#218fef, 6.#974bbf, 7.#7fde7b, 8.#0fb794, 9.#de769d, 10.#8dded6 / (최대 10개 노출)
+        // 라인 그래프 컬러 : 증가/감소, 최대/최저 - #fb4e4d, #307aef,  평균 - #ffcf4d / (최대 3개 노출)
+
+        var barChart1 = document.getElementById('bar-chart1');
+        var chart = new Chart(barChart1, {
+            type: 'bar',
+            data : {
+                labels: ['1', '2', '3', '4', '5', '6', '7'],
+                datasets: [{
+                    label: '1',
+                    data: [10, 3, 30, 23, 10, 5, 50],
+                    backgroundColor: '#5a5fd8',
+                    hoverBackgroundColor: '#5a5fd8',
+                },{
+                    label: '2',
+                    data: [10, 3, 30, 23, 10, 5, 50],
+                    backgroundColor: '#ff8a65',
+                    hoverBackgroundColor: '#ff8a65',
+                }]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display : false
+                },
+                tooltips: {
+                    enabled: false,
+                },
+                scales:{
+                    xAxes:[{
+                        ticks:{
+                            display: true,
+                            fontColor : '#909090',
+                            fontSize : 10,
+                            fontFamily : 'Pretendard'
+                        }
+                    }],
+                    yAxes:[{
+                        ticks:{
+                            min: 0,
+                            max: 50,
+                            stepSize: 10,
+                            fontColor : '#909090',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        }
+                    }]
+                }
+            }
+        })
+
+        var barChart2 = document.getElementById('bar-chart2');
+        var chart = new Chart(barChart2, {
+            type: 'bar',
+            data : {
+                labels: ['원리금보장형', '실적배당형'],
+                datasets: [{
+                    categoryPercentage: .1,
+                    barPercentage: 7,
+                    label: '원리금보장형',
+                    data: [62.43, 0],
+                    backgroundColor: '#5a5fd8',
+                    hoverBackgroundColor: '#5a5fd8',
+                },{
+                    categoryPercentage: .1,
+                    barPercentage: 7,
+                    label: '실적배당형',
+                    data: [0, 37.57],
+                    backgroundColor: '#ff8a65',
+                    hoverBackgroundColor: '#ff8a65',
+                }]
+            },
+            options: {
+                responsive: true,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                    enabled: false,
+                },
+                legend: {
+                    display : false,
+                },
+                scales:{
+                    xAxes:[{
+                        ticks:{
+                            display: false,
+                            fontColor : '#505050',
+                            fontSize : 12,
+                            fontFamily : 'Pretendard'
+                        }
+                    }],
+                    yAxes:[{
+                        ticks:{
+                            min: 0,
+                            max: 80,
+                            stepSize: 20,
+                            fontColor : '#909090',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        }
+                    }]
+                }  
+            }
+        })
+
+        var barChart3 = document.getElementById('bar-chart3');
+        var chart1 = new Chart(barChart3, {
+            type: 'bar',
+            data : {
+                labels: ['title'],
+                datasets: [{
+                    label: '다섯번째',
+                    data: [20],
+                    backgroundColor: '#218fef',
+                    hoverBackgroundColor: '#218fef',
+                },{
+                    label: '네번째',
+                    data: [20],
+                    backgroundColor: '#ffcb3e',
+                    hoverBackgroundColor: '#ffcb3e',
+                },{
+                    label: '세번째',
+                    data: [20],
+                    backgroundColor: '#2bc4c0',
+                    hoverBackgroundColor: '#2bc4c0',
+                },{
+                    label: '두번째',
+                    data: [20],
+                    backgroundColor: '#ff8a65',
+                    hoverBackgroundColor: '#ff8a65',
+                },{
+                    label: '첫번째',
+                    data: [20],
+                    backgroundColor: '#5a5fd8',
+                    hoverBackgroundColor: '#5a5fd8',
+                }]
+            },
+            options: {
+                responsive: false,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                    enabled: false,
+                },
+                legend: {
+                    display : false
+                },
+                scales:{
+                    xAxes:[{
+                        display: false,
+                        stacked: true,
+                    }],
+                    yAxes:[{
+                        ticks:{
+                            min:0,
+                            max:100,
+                            stepSize:1,
+                        },
+                        display: false,
+                        stacked: true,
+                    }]
+                },
+            }
+        })
+
+        var barChart4 = document.getElementById('bar-chart4');
+        var chart2 = new Chart(barChart4, {
+            type: 'bar',
+            data : {
+                labels: ['title'],
+                datasets: [{
+                    label: '세번째',
+                    data: [50],
+                    backgroundColor: '#2bc4c0',
+                    hoverBackgroundColor: '#2bc4c0',
+                },{
+                    label: '두번째',
+                    data: [10],
+                    backgroundColor: '#ff8a65',
+                    hoverBackgroundColor: '#ff8a65',
+                },{
+                    label: '첫번째',
+                    data: [40],
+                    backgroundColor: '#5a5fd8',
+                    hoverBackgroundColor: '#5a5fd8',
+                }]
+            },
+            options: {
+                responsive: false,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                    enabled: false,
+                },
+                legend: {
+                    display : false
+                },
+                scales:{
+                    xAxes:[{
+                        display: false,
+                        stacked: true,
+                    }],
+                    yAxes:[{
+                        ticks:{
+                            min:0,
+                            max:100,
+                            stepSize:1,
+                        },
+                        display: false,
+                        stacked: true,
+                    }]
+                },
+            }
+        })
+
+        var barChart5 = document.getElementById('bar-chart5');
+        var chart = new Chart(barChart5, {
+            type: 'horizontalBar',
+            data : {
+                labels: ['국내주식 일반', '국내채권 단기채', '국내채권 일반', 'MMF', '해외주식 글로벌', '해외주식 아시아', '해외주식혼합 글로벌', '1', '2', '3'],
+                datasets: [{
+                    label: '1',
+                    data: [10, 20, 20, 5, 5, 10, 10, 5, 5, 10],
+                    // 차트 갯수 10개까지 예시
+                    backgroundColor: ['#5a5fd8', '#ff8a65', '#2bc4c0', '#ffcb3e', '#218fef', '#974bbf', '#7fde7b', '#0fb794', '#de769d', '#8dded6'],
+                    hoverBackgroundColor: ['#5a5fd8', '#ff8a65', '#2bc4c0', '#ffcb3e', '#218fef', '#974bbf', '#7fde7b', '#0fb794', '#de769d', '#8dded6'],
+                    categoryPercentage: .5,
+                    barPercentage: 1,
+                }]
+            },
+            options: {
+                responsive: false,
+                legend: {
+                    display : false
+                },
+                tooltips: {
+                    enabled: false,
+                },
+                scales:{
+                    xAxes:[{
+                        gridLines:{
+							display:true,
+                            color:'transparent',
+						},
+                        ticks:{
+                            min: 0,
+                            mx: 100,
+                            display: false,
+                        }
+                    }],
+                    yAxes:[{
+                        gridLines:{
+							display:false,
+						},
+                        ticks:{
+                            display: false,
+                        }
+                    }]
+                }
+            }
+        })
+
+        var lineChart1 = document.getElementById('line-chart1');
+        var chart = new Chart(lineChart1, {
+            type: 'line',
+            data : {
+                labels: ['2023.10.23', '2024.04.22', '2024.10.21', '2025.04.21', '2025.10.20', '2026.04.20', '2026.10.19'],
+                datasets: [{
+                    label: '최대수익률',
+                    data: [7, 12, 13, 2, -8, -2, 16],
+                    backgroundColor: '#fb4e4d',
+                    borderColor: '#fb4e4d',
+                    borderWidth: 1,
+                    fill: false,
+                    lineTension: 0,
+                    pointBorderWidth: 1,
+                    pointBackgroundColor: 'rgba(251,78,77,.5)',
+                    pointRadius: 2,
+                }, {
+                    label: '평균수익률',
+                    data: [4, 0, 5, -3, -6, -2, 12],
+                    backgroundColor: '#ffcf4d',
+                    borderColor: '#ffcf4d',
+                    borderWidth: 1,
+                    fill: false,
+                    lineTension: 0,
+                    pointBorderWidth: 1,
+                    pointBackgroundColor: 'rgba(255,207,77,.5)',
+                    pointRadius: 2,
+                }, {
+                    label: '최저수익률',
+                    data: [0, -8, -1, -7, -3, -8, 10],
+                    backgroundColor: '#307aef',
+                    borderColor: '#307aef',
+                    borderWidth: 1,
+                    fill: false,
+                    lineTension: 0,
+                    pointBorderWidth: 1,
+                    pointBackgroundColor: 'rgba(48,122,239,.5)',
+                    pointRadius: 2,
+                },]
+            },
+            options: {
+                responsive: true,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                legend: {
+                    display : false
+                },
+                scales:{
+                    xAxes:[{
+                        ticks:{
+                            fontColor : '#767676',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        },
+                    }],
+                    yAxes:[{
+                        ticks:{
+                            min: -9,
+                            max:18,
+                            stepSize:3,
+                            fontColor : '#767676',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        },
+                    }]
+                }           
+            }
+        })
+
+        var lineChart2 = document.getElementById('line-chart2');
+        var chart = new Chart(lineChart2, {
+            type: 'line',
+            data : {
+                labels: ['2019.12.23', '2020.06.24', '2020.12.22', '2021.06.23', '2021.12.22', '2022.06.24', '2022.12.23'],
+                datasets: [{
+                    label: '(수익률%)',
+                    data: [1.5, 1, 1, -2, -4, 0, 4],
+                    pointBackgroundColor: 'rgba(251,78,77,.5)',
+                    borderColor: '#fb4e4d',
+                    borderWidth: 1,
+                    fill: false,
+                    lineTension: 0,
+                    pointBorderWidth: 1,
+                    pointRadius: 4,
+                }]
+            },
+            options: {
+                responsive: true,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                legend: {
+                    display : false
+                },
+                scales:{
+                    xAxes:[{
+                        ticks:{
+                            fontColor : '#767676',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        }
+                    }],
+                    yAxes:[{
+                        ticks:{
+                            fontColor : '#767676',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        }
+                    }]
+                }           
+            }
+        })
+        
+        var lineChart3 = document.getElementById('line-chart3');
+        var chart = new Chart(lineChart3, {
+            type: 'line',
+            data : {
+                labels: ['2019.12.23', '2020.06.24', '2020.12.22', '2021.06.23', '2021.12.22', '2022.06.24', '2022.12.23'],
+                datasets: [{
+                    label: '(수익률%)',
+                    data: [1.5, 1, 1, -2, -4, 0, 4],
+                    pointBackgroundColor: 'rgba(48,122,239,.5)',
+                    borderColor: '#307aef',
+                    borderWidth: 1,
+                    fill: false,
+                    lineTension: 0,
+                    pointBorderWidth: 1,
+                    pointRadius: 4,
+                }]
+            },
+            options: {
+                responsive: true,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                legend: {
+                    display : false
+                },
+                scales:{
+                    xAxes:[{
+                        ticks:{
+                            fontColor : '#767676',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        }
+                    }],
+                    yAxes:[{
+                        ticks:{
+                            fontColor : '#767676',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        }
+                    }]
+                }           
+            }
+        })
+
+        var doughnutChart = document.getElementById('doughnut-chart');
+        var chart = new Chart(doughnutChart, {
+            type: 'doughnut',
+            data : {
+                labels: ['국내주식', '국내채권', '국내채권혼합', '해외선진주식', '해외이머징주식', '해외채권', '해외채권혼합'], //'유동성'
+                datasets: [{
+                    label: '보유 MP',
+                    data: [10, 30, 20, 20, 20, 10, 20],
+                    borderWidth: 0, // 경계선 제거할시 borderWidth: 0,
+                    hoverBorderWidth: 0,
+                    // 도넛 & 막대 그래프 컬러 순서 : 1.#5a5fd8, 2.#ff8a65, 3.#2bc4c0, 4.#ffcb3e, 5.#218fef, 6.#974bbf, 7.#7fde7b
+                    backgroundColor: ['#5a5fd8', '#ff8a65', '#2bc4c0', '#ffcb3e', '#218fef', '#974bbf', '#7fde7b'],
+                    hoverBackgroundColor : ['#5a5fd8', '#ff8a65', '#2bc4c0', '#ffcb3e', '#218fef', '#974bbf', '#7fde7b'],
+                }],
+            },
+            options: {
+                responsive: false,
+                legend: {
+                    display : false
+                },
+                tooltips: {
+                    enabled: false,
+                }
+            }
+        })
+
+        var pieChart = document.getElementById('pie-chart');
+        var chart = new Chart(pieChart, {
+            type: 'pie',
+            data : {
+                labels: ['1', '2', '3'],
+                datasets: [{
+                    label: '금상몰',
+                    data: [10, 15, 25],
+                    borderWidth: 1,
+                    hoverBorderWidth: 0,
+                    backgroundColor: ['#5a5fd8', '#ff8a65', '#2bc4c0'],
+                    hoverBackgroundColor: ['#5a5fd8', '#ff8a65', '#2bc4c0'],
+                }]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display : false
+                },
+                tooltips: {
+                    enabled: false,
+                }
+            }
+        })
+    </script>
+</body>
+</html>

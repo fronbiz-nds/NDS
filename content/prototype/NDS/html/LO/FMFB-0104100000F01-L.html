@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>상환방법선택_Bottom Sheet</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="layer" class="layer">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">상환방법을 선택해 주세요</h1>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="options">
+                        <ul class="mixed-data">
+                            <li>
+                                <div class="box-radios -explain -lg">
+                                    <div class="box-radio -left">
+                                        <input type="radio" name="period-point-color11" id="period-point-color22-11">
+                                        <label for="period-point-color22-11">원금균등분할상환<span class="sub">원금과 이자를 함께 갚아요. 매월 일정한 금액을 내요.</span></label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box-radios -explain -lg">
+                                    <div class="box-radio -left">
+                                        <input type="radio" name="period-point-color11" id="period-point-color22-112" checked>
+                                        <label for="period-point-color22-112">원금균등분할상환<span class="sub">원금과 이자를 함께 갚아요. 회차별로 이자가 줄어들어요.</span></label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+
+        // 레이어 닫기(마지막 인자 기본값: false)
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // });
+
+        // 레이어 닫기 + DOM 삭제
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

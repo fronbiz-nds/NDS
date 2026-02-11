@@ -1,0 +1,65 @@
+@charset "utf-8";
+.product_new ul{padding:0;margin:0;}
+/*공통 cms상세*/
+.product_new .detail-tit{color: #111;margin:25px 0 7px 0;padding:0;font-size: 15px;display:block;font-weight:bold;}
+.product_new .detail-tit:nth-child(1){margin-top:0;}
+
+/* float */
+.f_left {float:left !important;}
+.f_right {float:right !important;}
+
+/*공통 cms상세:"."불릿*/
+.product_new .detail-desc{font-size:14px;line-height:20px;}
+.product_new .detail-desc ul strong {margin:0; padding:0; font-size:14px;}
+.product_new .detail-desc ul > li {margin:0 0 10px 0;padding:0 0 0 8px; background:url('../images/cn/common_new/ic_notice_dot01.png') left 9px no-repeat;list-style: none;}
+.product_new .detail-desc ul > li > ul {margin-left:-8px; }
+.product_new .detail-desc ul > li > ul > li {padding:0 0 0 8px; background:url('../images/cn/common_new/ic_notice_dot02.png') left 9px no-repeat;}
+.product_new .detail-desc ul > li > ul > li > ul {margin:0;}
+.product_new .detail-desc ul > li > ul > li > ul > li {padding:0 0 0 8px; font-size:13px; color:#777; background:url('../images/cn/common/new/ic_notice_dot02.png') left 9px no-repeat;}
+.product_new .detail-desc p.depth1 {padding:0 0 0 8px; background:url('../images/cn/common_new/ic_notice_dot01.png') left 9px no-repeat;}
+.product_new .detail-desc .depth1 > li {padding:0 0 0 8px; background:url('../images/cn/common_new/ic_notice_dot01.png') left 9px no-repeat;}
+/*공통 cms상세:"-"불릿*/
+.product_new .detail-desc .depth2 {padding:0; color:#666;}
+.product_new .detail-desc .depth2 > li, .product_new .detail-desc p.depth2 {padding:0 0 0 8px; margin-left:-8px;background:url('../images/cn/common_new/ic_notice_dot02.png') left 9px no-repeat;}
+.product_new .detail-desc .depth3 > li, .product_new .detail-desc p.depth3 {padding:0 0 0 8px; font-size:13px; color:#777; background:url('../images/cn/common_new/ic_notice_dot02.png') left 9px no-repeat;}
+/*공통 cms상세:숫자불릿*/
+.product_new .detail-desc .depth_num > li {padding:0 0 0 15px; text-indent:-15px; background:none;}
+.product_new .detail-desc .depth_num > li ul {margin-left:-15px;}
+.product_new .detail-desc .depth_num > li ul li {text-indent:0; }
+.product_new .detail-desc p.depth_num {padding:0 0 0 15px; text-indent:-15px;}
+/*공통 cms상세:주)불릿*/
+.product_new .detail-desc .depth_text > li {padding:0 0 0 27px; text-indent:-27px; background:none;}
+.product_new .detail-desc .depth_text > li ul {margin-left:-27px; text-indent:0;}
+.product_new .detail-desc p.depth_text {padding:0 0 0 27px; text-indent:-27px;}
+/*공통 cms상세:아래첨자*/
+.product_new .detail-desc sup {display:inline-block; margin-top:-5px; color:#5884ac;}
+.product_new .detail-desc .f_point01 {color:#5884ac;} /*파란*/
+.product_new .detail-desc .f_point02 {color:#333;} /*#333 레이아웃색깔보다 진하게*/
+/*공통 cms상세:아래첨자*/
+.product_new .bottom_box {clear:both; width:900px; padding:36px 0 0; }
+.product_new .bottom_box ul {padding:8px 20px; font-size:13px; line-height:23px; letter-spacing:-0.025em; border:1px solid #e0e0e0; border-width:1px 0; background:#f7f7f7;}
+
+/*공통 cms상세:table*/
+.product_new .detail-desc strong + table{margin:5px 0 15px 0;}
+.product_new .detail-desc table{width:100%;margin:5px 0;border-top:1px solid #ccc;border-collapse: inherit;border-spacing: 0;border-collapse: inherit;word-wrap:break-word;word-break:break-all}
+.product_new .detail-desc table + table{margin:10px 0;}
+.product_new .detail-desc table th{background:#f5f5f5;font-weight:bold;padding:12px 10px 10px;border-bottom:1px solid #ccc;}
+.product_new .detail-desc table td{padding:12px 10px 10px;border-bottom:1px solid #ccc;}
+.product_new .detail-desc table.tb_row{border-top:1px solid #ccc;border-bottom:0;color: #111;position:relative;}
+.product_new .detail-desc table.tb_row th{border-top:0;text-align:left;border-left:1px solid #ccc;}
+.product_new .detail-desc table.tb_row th:first-child{border-left:0}
+.product_new .detail-desc table.tb_row td{border-top:0;border-left:1px solid #ccc;}
+.product_new .detail-desc table.tb_col th,
+.product_new .detail-desc table.tb_col td{text-align:center;}
+.product_new .detail-desc table.tb_col thead th{border-right:1px solid #ccc;}
+.product_new .detail-desc table.tb_col thead th:last-child{border-right:0;}
+.product_new .detail-desc table.tb_col tbody th{border-right:1px solid #ccc;}
+.product_new .detail-desc table.tb_col td{border-right:1px solid #ccc;}
+.product_new .detail-desc table.tb_col td:last-child{border-right:0;}
+.product_new .detail-desc table.tb_col td.line{border-right:1px solid #ccc;}/*라인없을시*/
+
+
+
+
+
+

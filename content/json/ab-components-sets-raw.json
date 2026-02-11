@@ -1,0 +1,2913 @@
+{
+    "error": false,
+    "status": 200,
+    "meta": {
+      "component_sets": [
+        {
+          "key": "704344e06de7a7ef98b6ac08fe110474cf4e13c6",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "976:48623",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/APG/Q7E/Bog2LZU1jGg7mAEH/976_48623.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=027b2c7db51fe8447d70c2207838b484594a13fbfe66b4f4754a9a41eb2bfb01",
+          "name": "box/code",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.894Z",
+          "updated_at": "2025-04-22T05:08:33.589Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "00a416d21812570221cd69072e27141971250392",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "256:2336",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Xcj/irY/81XZIRrn4FyTQ15x/256_2336.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=be75f393f0f8dc28b9b0a94e94d15b13c0f1d3becf2e0969862e9e389af10485",
+          "name": "Guide/Spacing",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.460Z",
+          "updated_at": "2025-01-15T05:15:38.460Z",
+          "containing_frame": {
+            "name": "Local Assets",
+            "nodeId": "199:880",
+            "pageId": "199:879",
+            "pageName": "Local Assets",
+            "backgroundColor": "#FFFFFF"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "3ad1be66eb39c49f03122c141802afe162cba8d8",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "302:2728",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/8JN/cvd/OvlPZwfDwcTf5XmT/302_2728.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dcce378ab34d976ae51818e0cd7fbd8fc50ebd3ec93d1aee09a035d13eb63952",
+          "name": "Guide/Size",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.469Z",
+          "updated_at": "2025-01-15T05:15:38.469Z",
+          "containing_frame": {
+            "name": "Local Assets",
+            "nodeId": "199:880",
+            "pageId": "199:879",
+            "pageName": "Local Assets",
+            "backgroundColor": "#FFFFFF"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "6fb10b82ce05dd1cfa7eaaaab586e7fb2da4b3ce",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3622:63281",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/u2M/2cI/fwdM92goyhIFJfc4/3622_63281.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=20ed4de6ab0dbbea6e3a9146cf5f2a81145d57fff5d731b02700e1618dc8771a",
+          "name": "icon",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.985Z",
+          "updated_at": "2025-04-22T05:08:33.582Z",
+          "containing_frame": {
+            "name": "Select",
+            "nodeId": "9769:131799",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "325075759a70ca7b79443452ea5939590d70e3ab",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5211:101320",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/JSc/WxN/zY7nEIQr34ERrh2A/5211_101320.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=09ee11e4af6ede622ab5a4aeacba338e8639a5f9ee7e5c0da91e7539e74c5f60",
+          "name": "list",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.339Z",
+          "updated_at": "2025-04-17T04:11:14.376Z",
+          "containing_frame": {
+            "name": "Attached file",
+            "nodeId": "9751:80281",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "2e4f252e16217cf8dee1f0aee26325d4e0c78bcc",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5133:86243",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/MDt/W0Q/lcKTTFZmQ20k5Muy/5133_86243.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2202c9ce44dc62780a990fb49de6253c8b9d0f9f78fd42e5ba07b21ad48f7597",
+          "name": "card-sm",
+          "description": "",
+          "created_at": "2025-01-15T05:16:05.950Z",
+          "updated_at": "2025-04-17T04:11:30.227Z",
+          "containing_frame": {
+            "name": "List",
+            "nodeId": "9759:75317",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "5c234719286c3efa14873a61452333f8a02e252a",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "668:16720",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/P86/hEa/FLfhKyfmcKnx4Z9s/668_16720.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e08bd0a60c7d7af217a04a24f5113c6d9b4c8dbfba6f65e27cecb2849893be3a",
+          "name": "line/rrn",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.822Z",
+          "updated_at": "2025-04-22T05:08:33.562Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "962a95453724b99983f92260a895b9ae27af0f56",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "641:16997",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/WtS/tJx/7j3mwdbRiltnmInE/641_16997.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ba69f5f40310f5e5918c714deb094275ce70a4858d2804994c19bb4b8f8914f4",
+          "name": "search",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.111Z",
+          "updated_at": "2025-04-22T05:08:33.634Z",
+          "containing_frame": {
+            "name": "Search",
+            "nodeId": "9769:131248",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "6e0893c9d7e6df489fa59874960e0bd28f27abd3",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "668:16002",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/mQZ/OnY/gB0CXCuqlfT6ylGb/668_16002.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5c1c708ec89aa56ef8ab86cf5332b4e223a11ead783c2e08423a5af977593f1c",
+          "name": "line/basic",
+          "description": "",
+          "created_at": "2025-01-15T05:16:05.926Z",
+          "updated_at": "2025-04-22T05:08:33.576Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "5e743415d9dffd2697b66537ab8403c75ac15c98",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1254:30205",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/VjR/xNx/8UCNM9rCh3GhOEfO/1254_30205.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=91750de7d1eeb8570d5d44ba1cafc5cc291983c1bee80507b1bdaf862aee7623",
+          "name": "# base/base-chip-accordion",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.189Z",
+          "updated_at": "2025-04-17T04:11:30.253Z",
+          "containing_frame": {
+            "name": "Chip",
+            "nodeId": "9752:102398",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "bcf6a099aa1d15b6ba45977a27ce8a66a49b7151",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1258:29468",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/PvQ/biw/DD4ql0eK0FvLpXll/1258_29468.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e05e2ce4063242baeede0a0b492ddf892f47fbd056c89840260aee88fbfa9810",
+          "name": "# atom/base-infobox-text",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.021Z",
+          "updated_at": "2025-04-17T04:11:14.501Z",
+          "containing_frame": {
+            "name": "Infobox",
+            "nodeId": "9752:102719",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "f96cbf35d2cc635288aa6d839bbcbe334d64552e",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3284:65703",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/O2Y/z5K/muR2wqPWQV8EIA1I/3284_65703.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=10bb779e3ae5fbf6b79f0f676afa32de94d803cadb44e4fa1da9bc4b6da56221",
+          "name": "box/inner",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.236Z",
+          "updated_at": "2025-04-22T05:08:51.714Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "a7470d42e25c7be7eaf24ecb895f6832594f7707",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5075:70565",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/xM8/qfL/5xPgEiFG4cOlOx8o/5075_70565.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b6bbf2f360d3c1638484588753a55947cf92cbcc7845dfbd0fef36ba459ffbc6",
+          "name": "# atom/atom-list-label",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.127Z",
+          "updated_at": "2025-04-17T04:11:30.367Z",
+          "containing_frame": {
+            "name": "List",
+            "nodeId": "9759:75317",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "dbd0f4be4af09c907bb8ca68e6f48e0fba14c96b",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5071:146346",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/fuS/3dC/7xcUSRlyyVNdPhaJ/5071_146346.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=779d29bc8ee3a2a539bedf82fc32f4f31f25808aaa9a00641ed10b1b63a04847",
+          "name": "box/unit3",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.972Z",
+          "updated_at": "2025-04-22T05:08:33.691Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "02dd1ad2c9b0f35b8bad3ea26cbc94b122862feb",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "8233:72593",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/NhM/g9C/nlGk93koXitggIuZ/8233_72593.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a8dc5b27f12b6131d654acac80b71e447252a52148c537aabe2b1ad69da8bb9d",
+          "name": "box/list",
+          "description": "",
+          "created_at": "2025-01-23T01:15:03.888Z",
+          "updated_at": "2025-04-17T04:11:14.322Z",
+          "containing_frame": {
+            "name": "Accordion",
+            "nodeId": "9751:75546",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "25b6f1cfae7a53a88a527e991994be71180d04b9",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1001:19749",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/jfA/uZv/q1bmMaQljzZruxWn/1001_19749.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9cdfad5af5a0c271a8c106c9bdb3af0b55de26c7b92f22d909600f6b6ad99008",
+          "name": "survey/icon",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.025Z",
+          "updated_at": "2025-04-17T04:11:48.259Z",
+          "containing_frame": {
+            "name": "Radio",
+            "nodeId": "9759:130407",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "70de57078b2d99d0dd45caf3a4d82a0bba088229",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "634:12044",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/TgU/SzS/A5ldPFy5quGGXluS/634_12044.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e3b9099f1e8e93f9d237ce391dbcd72d20bb1587d8eef4aa55dfbb4556a6657f",
+          "name": "box/combination",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.566Z",
+          "updated_at": "2025-04-22T05:08:33.595Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "288b3ebdeb51e4753c2f368ff5b1bb1ace929cc3",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "627:17230",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/332/1OO/VRQqkLmZrkEXckBd/627_17230.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e441b4b084887b6e1ac28bcfa58c08ffa1b16428151856f0ae42e501cc287b1f",
+          "name": "box/rrn1",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.916Z",
+          "updated_at": "2025-04-22T05:08:33.529Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "727461bda6b40305120437129225f55ae995bdc4",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5294:131481",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/M8t/Dfm/RNufPcdUWypf2H2T/5294_131481.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d511dc38f313275958f25a0e6bfab04656767b5b58be013f75963345a8f74342",
+          "name": "# base/base-radio-survey-yn",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.980Z",
+          "updated_at": "2025-04-17T04:11:48.322Z",
+          "containing_frame": {
+            "name": "Radio",
+            "nodeId": "9759:130407",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "c8c759ebce5c773f0e7cd7d4309568a680ce4b9d",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3001:47875",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/r8h/5AN/lSevEUTG8A3jBYIM/3001_47875.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3358b34ea149e98ac34025c3cd7dde65056c12568bfbb7b1f065011c7093b98c",
+          "name": "basic/tertiary",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.585Z",
+          "updated_at": "2025-04-22T05:08:33.672Z",
+          "containing_frame": {
+            "name": "Button",
+            "nodeId": "9752:89601",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "2b0a7bbaa7edc14ff36b57b5a499e0aa2f3aa4f7",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "847:15010",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/TWZ/X7h/l5gErXIfaLDjDeQj/847_15010.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=df4f277c681b3601f6243982de21b1e3987558beac37b1b0d76d17e7888fba17",
+          "name": "notice",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.439Z",
+          "updated_at": "2025-04-17T04:11:14.360Z",
+          "containing_frame": {
+            "name": "Accordion",
+            "nodeId": "9751:75546",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "667de89f386b2b2f0e56c25201f07c70ab0f17d4",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3411:86681",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/zzG/rJa/094yw9pBOAL6eM8V/3411_86681.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=090d2d3209f77f2d154a8c1ec8921a2134208ea42b0bb34cd1e098685cc57054",
+          "name": "line",
+          "description": "",
+          "created_at": "2025-02-11T00:54:13.674Z",
+          "updated_at": "2025-04-17T04:11:14.435Z",
+          "containing_frame": {
+            "name": "List",
+            "nodeId": "9759:75317",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "674c3cf9dd6b8b8c6712da8579d735870911b96b",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5075:67382",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/tVe/Vut/f2YNh4QAQ6SqfUAq/5075_67382.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=edbeb3a7718cc45edc2e75dd5bfe2b5218ede6f67889dd6972d9194ce6fac165",
+          "name": "general/input",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.592Z",
+          "updated_at": "2025-04-22T05:08:33.568Z",
+          "containing_frame": {
+            "name": "Card",
+            "nodeId": "9752:101311",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "6b899157bef5a90ae044c460c2d4ddfcfeae792b",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "8281:72429",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/hPZ/aJZ/UKfCe7uAg4PXlH3N/8281_72429.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=811d815a4f55f7598142ebf386187a6035573465daa7693843c4ed081f53f349",
+          "name": "bank",
+          "description": "",
+          "created_at": "2025-01-24T04:15:59.932Z",
+          "updated_at": "2025-04-22T05:08:51.671Z",
+          "containing_frame": {
+            "name": "Select",
+            "nodeId": "9769:131799",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "c21b8864402872392125e177ac66c33affe65148",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "475:5503",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/8HC/SrE/zyaKOeQ62tX5S3b7/475_5503.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8ad8c5666ddddd31ae413dddd9cb13a6de9df2d89a8cb8d9caf9340f89e34919",
+          "name": "# atom/atom-field-message",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.553Z",
+          "updated_at": "2025-04-17T04:11:14.514Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "ca2426b34447db522bff440051b0aa2a72dbeeb0",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1041:33134",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/E1p/KCB/3HTa4vymZsVBmCXP/1041_33134.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=20412b5ea9f5fe52acf4246259e0d94030bb618f7bf415d7032f624928942a07",
+          "name": "# atom/atom-bs-list-account",
+          "description": "",
+          "created_at": "2025-01-15T05:16:05.921Z",
+          "updated_at": "2025-04-17T04:12:08.478Z",
+          "containing_frame": {
+            "name": "Bottomsheet",
+            "nodeId": "9751:80900",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "aa166471fbebc61e9f60ad5f9b2916a9cac60093",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3088:41303",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/crr/SmB/R8ug2SD1aSfJ7rP4/3088_41303.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dd55bda3f445303f4ac2a630a4e1b77b58a04460ff596e0e0c3471a2a8fb2965",
+          "name": "# atom/atom-card-button",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.029Z",
+          "updated_at": "2025-04-22T05:08:33.659Z",
+          "containing_frame": {
+            "name": "Card",
+            "nodeId": "9752:101311",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "1008a97e470c592f8a8e4e2a85bfdcc436c760f5",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5212:72584",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/KLs/1u2/2pZkqodPZyVQplVA/5212_72584.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a3b132fc7666de2ca4cbf149344c23555197d1dbf3764717df89bb4fd2e8dee8",
+          "name": "box/rrn2",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.473Z",
+          "updated_at": "2025-04-22T05:08:33.500Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "77ab121b9182a5d54844697ef99fe50716da987c",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3032:47262",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Qe7/ZuC/mTge008P3upfJ6ED/3032_47262.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0723fac894fe9a6c4715f58f3ee11fec99eb00c6283d273626b164595a8ea3ed",
+          "name": "line/price",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.871Z",
+          "updated_at": "2025-04-22T05:08:33.614Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "75a6b7e45d113fb75b7e4ba1be128a1832d0c63e",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "9673:76308",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Iag/FDN/gchvO2mEgBBYmAUT/9673_76308.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7d9c83e94b075fe56af292f30890204d123b930d6245bd6cd4bbf6d07cfce6e9",
+          "name": "line/password",
+          "description": "",
+          "created_at": "2025-03-18T00:36:44.235Z",
+          "updated_at": "2025-04-22T05:08:33.602Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "9bd8a77734d74a539032d7d12c32b28cb4725d3d",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "692:18623",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/WJ5/qW5/sFi0SqxAFNVJrWBG/692_18623.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9fe7505fc3f72a746c8c89954828ad47f4da660c44f1adebdc1b3ebc6ad8339e",
+          "name": "box/unit1",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.470Z",
+          "updated_at": "2025-04-22T05:08:33.640Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "bcf2a3e1041408406faa0c25ac7c36a0e8fc1068",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3032:47821",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Plt/aCt/ZqKJXgl7NYhonh25/3032_47821.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=788e8ead3e0dbf69036384335b5bf0d103c83a063dd599429a5ea88ee5f0ed77",
+          "name": "box/unit2",
+          "description": "",
+          "created_at": "2025-01-15T05:16:05.999Z",
+          "updated_at": "2025-04-22T05:08:51.695Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "d4bfd765299673df1bde49ebe63b81c33e725554",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "692:17034",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/fvH/4GC/NJmjRTz8ufS8tnRc/692_17034.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5e8f5d055b716c531a32610887e6186de174749d1daab68a2181c19ec3801538",
+          "name": "box/dollar",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.924Z",
+          "updated_at": "2025-04-22T05:08:33.679Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "76d3ca8460e3a3f82eac3b30ea1b14f958593d87",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "9702:122299",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/YnD/rgE/qQiWlanUxOvwoHxX/9702_122299.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8d384d0deb6821e729ef979e0eacdf886523dff0dee83fa517f0856575b80a56",
+          "name": "box/currency",
+          "description": "",
+          "created_at": "2025-03-18T06:32:53.568Z",
+          "updated_at": "2025-04-22T05:08:33.609Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "279d1b30dbe3595889810e0175a76f050e7ab465",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3150:59178",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/CAU/lPO/e9Srmy6HuxDQmsKI/3150_59178.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d47fd2289671a54d39fbef2a6b2d55df0b0b16acd03c686f413550b7e56a11a1",
+          "name": "summary/accordion",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.017Z",
+          "updated_at": "2025-04-17T04:11:14.354Z",
+          "containing_frame": {
+            "name": "Card",
+            "nodeId": "9752:101311",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "30f76bd25ccceb9ea86a3b23299a1bf3a2828835",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "824:12939",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/5Vo/74n/PctWoTUmyA5qyZa5/824_12939.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=424caaa708a64878c8dc1359b8d02e9119474602d68009ea550ee7261d46b7f8",
+          "name": "explain/none",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.435Z",
+          "updated_at": "2025-04-17T04:11:14.371Z",
+          "containing_frame": {
+            "name": "Radio",
+            "nodeId": "9759:130407",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "36bc57d81e4eaf6488c47b80245b762c25638940",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1014:19314",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/SMw/URI/cXV4ooTe1IzzuVLG/1014_19314.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d8c62196e05c2f67dadd694202e341401daf15afd8789b9964c2aa5828790d8f",
+          "name": "# atom/atom-bs-list-state",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.545Z",
+          "updated_at": "2025-04-17T04:11:14.382Z",
+          "containing_frame": {
+            "name": "Bottomsheet",
+            "nodeId": "9751:80900",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "4ff7db3007aefc183daf39dc191e4d2f8a8c991e",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3330:46446",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/T2R/7WS/y8dDJy42GhntmklH/3330_46446.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b3cc9db3c5e2ed5083c3f4472562da8fdea0b95b8c381d299bdbb570875cc696",
+          "name": "body",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.461Z",
+          "updated_at": "2025-04-17T04:11:14.392Z",
+          "containing_frame": {
+            "name": "Bullet",
+            "nodeId": "9752:89572",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "5791ace4858a97e63e37a1b7e2a600f00bf3ed16",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1046:36368",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/zk5/Ise/kQpQjPNEEZ42zjMs/1046_36368.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28ba84d30464b8c8dad0901c56107c56a461fdf9c28f7b9a56c20138a1312183",
+          "name": "# atom/atom-bs-price",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.478Z",
+          "updated_at": "2025-04-17T04:11:14.428Z",
+          "containing_frame": {
+            "name": "Bottomsheet",
+            "nodeId": "9751:80900",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "8a885b1f98409cec4100a3a77a0901b123dabd27",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3001:47807",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/XiB/h07/7Kf2uX2CZF40gD2s/3001_47807.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f780ed0ced2a0eb3fb6aed241b2083b08bb4f648269e675fc4575cfe1da0443a",
+          "name": "basic/primary",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.599Z",
+          "updated_at": "2025-04-17T04:11:14.453Z",
+          "containing_frame": {
+            "name": "Button",
+            "nodeId": "9752:89601",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "9d952672704754fd08c0bda0b707afe705d8efbc",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "649:12477",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/G8K/ayg/sFqYqdY1y887Bcrr/649_12477.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=56a3cdd288817686ee5cfcdf8ed3e5491f8d218559939743ccbadf352d14fdf2",
+          "name": "textarea",
+          "description": "",
+          "created_at": "2025-02-25T01:08:56.904Z",
+          "updated_at": "2025-04-17T04:11:14.465Z",
+          "containing_frame": {
+            "name": "Text area",
+            "nodeId": "9770:77129",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "a0d157ff04ba4eb432c64c39ea94320ee05927d3",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1254:28950",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/7CH/UqW/8AzdpuSGs1ejyi5o/1254_28950.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c5101d1233ccae44d7a7bc8b191686d7c140c7748d353bd31e202f67593f1e22",
+          "name": "single",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.186Z",
+          "updated_at": "2025-04-17T04:11:14.471Z",
+          "containing_frame": {
+            "name": "Chip",
+            "nodeId": "9752:102398",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "a4ccb32479ce2de187a56d603bd5ef09d3842145",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5431:68114",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/wRC/cwp/avF93hOcM0f1Ctry/5431_68114.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1e3c8d2ceecf54a792341fe8ec55e6dde7ca7110bd02275995eb70856535519d",
+          "name": "controller",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.466Z",
+          "updated_at": "2025-04-17T04:11:14.485Z",
+          "containing_frame": {
+            "name": "Controls",
+            "nodeId": "9752:102506",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "adbc09d2add0c343cb0a977a0a517678a9b41d20",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "293:4898",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Vfr/wfb/yxIDViZBlDMVG10i/293_4898.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=175167dc1e4bbd2704ee3dcfee6862fa0453965736ca348bb846b0fa7e0be5e6",
+          "name": "statusbar/aos",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.244Z",
+          "updated_at": "2025-04-17T04:11:14.496Z",
+          "containing_frame": {
+            "name": "Statusbar",
+            "nodeId": "9769:137425",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "c5667f3149bc85b0d02d010d4d367d442f2b9e9e",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5816:68453",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Xdm/IRT/9SFUHXEkS23KLgLq/5816_68453.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e75e434a51999f4c14eeff3a765cf70c1cfb0f4346b7954ab18d1e23d70cb485",
+          "name": "account/accordion",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.482Z",
+          "updated_at": "2025-04-17T04:11:14.520Z",
+          "containing_frame": {
+            "name": "Card",
+            "nodeId": "9752:101311",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "d541176f71d78662b4553507770000a7741791fe",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "6187:87969",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/xQo/iek/vw4KAquqsog65oqJ/6187_87969.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5bdfa8092a73d6c94ef85e68e7f5c8d8f7f92e5959bbc4034e8614f5bd6b8f64",
+          "name": "card-xs",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.581Z",
+          "updated_at": "2025-04-17T04:11:14.541Z",
+          "containing_frame": {
+            "name": "List",
+            "nodeId": "9759:75317",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "1852b10ca9adb20a5543d46b91adc58d2326047b",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5148:72672",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/giS/yPh/eFu4DjTL0tDIQNLj/5148_72672.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4b7aca14ce5e72693e376b43c525226d72a941ece33f91940649f83e52b39f1f",
+          "name": "card-lg",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.610Z",
+          "updated_at": "2025-04-17T04:11:30.217Z",
+          "containing_frame": {
+            "name": "List",
+            "nodeId": "9759:75317",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "37045439d1c766ce8988138369872eb1c2f4235d",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "847:13976",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/U7z/cJi/NuUM4ySUDTrSAGyQ/847_13976.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=777b6bd323c1e3f41766dd230f68881b13e45d63062e013ea69d78d5886e08de",
+          "name": "fill",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.486Z",
+          "updated_at": "2025-04-17T04:11:30.232Z",
+          "containing_frame": {
+            "name": "Label",
+            "nodeId": "9752:105995",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "4dfd6888ee3971317aeb4f9db11d4687915fad3d",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "873:21797",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/xw2/ufo/qk0FIJ1WZdgTUiaw/873_21797.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dd94ee6ca5ddf5da298366fbdca82eb08baa5096956cd20246c0f75070e5ab06",
+          "name": "basic",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.490Z",
+          "updated_at": "2025-04-17T04:11:30.237Z",
+          "containing_frame": {
+            "name": "Switch",
+            "nodeId": "9770:76854",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "6e81a0c9e146294cb05a7f3d951d45bf2044a5d5",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "847:13898",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/FvH/Nsv/nQMTyJ2qyy97wqj7/847_13898.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a34d02f90142889cbced72136ba451a883d0b8dc58e24e8135ede6da7dfd76ec",
+          "name": "line/grade",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.912Z",
+          "updated_at": "2025-04-17T04:11:30.316Z",
+          "containing_frame": {
+            "name": "Label",
+            "nodeId": "9752:105995",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "7aab56c35c35c14f146d63557ee4c19243c1dd2e",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5443:71970",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/XPg/vpf/9ufBqWjB9tvdshdo/5443_71970.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8cf35e0bc0962594ad055148d97278b79d97d7a888bf8eb92a44ca2abf7c0f59",
+          "name": "# base/base-indicator-dot",
+          "description": "",
+          "created_at": "2025-01-15T05:16:05.932Z",
+          "updated_at": "2025-04-17T04:11:30.343Z",
+          "containing_frame": {
+            "name": "Indicator",
+            "nodeId": "9752:102667",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "86e50b1d32a4b577e5cd0464e26df0690f71510a",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "597:12249",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/PDJ/ggF/fEs8vZcry40h5EzK/597_12249.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=06691c50bf705df35d9b8eccbee44c054077bf294d001ba794d8b5121bd09109",
+          "name": "# base/base-stepper",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.368Z",
+          "updated_at": "2025-04-17T04:11:30.349Z",
+          "containing_frame": {
+            "name": "Controls",
+            "nodeId": "9752:102506",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "fe10e37c9e8db08612f0809cdf1f088057671cab",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1222:27886",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/cYm/bq1/9ejM0IAs4PQQa6ey/1222_27886.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8a56058ca8ca18e09714f704e2eabc63720ec852ddc5d828eae6527bb090592f",
+          "name": "# base/base-step-horizontal-md",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.573Z",
+          "updated_at": "2025-04-17T04:11:30.424Z",
+          "containing_frame": {
+            "name": "Process",
+            "nodeId": "9759:125591",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "00aac9be1aa6f10be7f827d05116d3f36807a7fa",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3623:55719",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/eLs/M3Z/2X2oUtTGaTT5lV0n/3623_55719.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=972806fe8483ba23f8212fd49a5763a4c669252dd3278a5d09e42a856d40c80a",
+          "name": "step/icon/vertical",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.178Z",
+          "updated_at": "2025-04-17T04:11:48.232Z",
+          "containing_frame": {
+            "name": "Process",
+            "nodeId": "9759:125591",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "1758c17697a3a0c756a5f00cd85734f45ebd6ffb",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1095:27853",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/7VN/Rwn/DxCieK5m9MmSSvxq/1095_27853.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a36a28b0a6df10b798a8057106f0cddea1db333df290caeff49a751e8c94de3f",
+          "name": "survey/yn",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.478Z",
+          "updated_at": "2025-04-17T04:11:48.244Z",
+          "containing_frame": {
+            "name": "Radio",
+            "nodeId": "9759:130407",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "25aa8c576c601b7c91c0099e8ec5fa1d61dacc2e",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "701:41952",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/JzE/hrG/HMh1eKEYecf4fmws/701_41952.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e6846a17067cce123252b61f3ddc5010475fdeffa85fb57a60418e90a1cd17e6",
+          "name": "# base/base-tab-line",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.376Z",
+          "updated_at": "2025-04-17T04:11:48.254Z",
+          "containing_frame": {
+            "name": "Tab",
+            "nodeId": "9770:76989",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "396fdf1b0bcaa6693914a01b4fdd89765a1c6910",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "8011:132480",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/QP0/QQ1/dQePi9yN7atEV8Cw/8011_132480.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=00b842ae09e55df8efc3f76e018b4f472404d4ec302ea6f1d5df4159d991999d",
+          "name": "big-font",
+          "description": "",
+          "created_at": "2025-01-20T05:33:17.573Z",
+          "updated_at": "2025-04-17T04:11:48.275Z",
+          "containing_frame": {
+            "name": "Switch",
+            "nodeId": "9770:76854",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "413e03d7e35a2a0a5b78cf2197c544715938db03",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3611:54918",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ai4/zQv/3sPHFyusMQLhpKng/3611_54918.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1b2c59ba05ee3cb5189145a92452deb30dabc4d2131808d7f83541715e985ad9",
+          "name": "survey/ox",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.265Z",
+          "updated_at": "2025-04-17T04:11:48.290Z",
+          "containing_frame": {
+            "name": "Radio",
+            "nodeId": "9759:130407",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "517ceddd74f95e4e0bb0a4bd08ac709226364632",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3081:37522",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/69F/qAi/c9bEoUQxqFZgrkpV/3081_37522.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a7abbf68546b4da0c4c31c8519fb07b9758a8dcbe911b21b32e84f31e1bef60a",
+          "name": "# atom/atom-card-label",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.352Z",
+          "updated_at": "2025-04-17T04:11:48.296Z",
+          "containing_frame": {
+            "name": "Card",
+            "nodeId": "9752:101311",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "5ba4534e091c15ba6bbc15745162e1650f6ff994",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1222:30956",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/4sv/U6i/Ct3Lk8D2sahgDule/1222_30956.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=55a134021bff526aa9524dbce0cbbc3141d9139730d3eb94ac5ddb2acdf076c9",
+          "name": "# atom/atom-step-text",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.006Z",
+          "updated_at": "2025-04-17T04:11:48.305Z",
+          "containing_frame": {
+            "name": "Process",
+            "nodeId": "9759:125591",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "6a4b05a1767b5dbf7f0af7a33574e4358d729d4d",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "8072:144989",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/UmZ/61P/br6r4mRBRGiqsp5S/8072_144989.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6b3038f7dcf04173652e8c7b739b07403804910b0cc405df47e741f3f9860bea",
+          "name": "dot",
+          "description": "",
+          "created_at": "2025-01-20T05:33:17.500Z",
+          "updated_at": "2025-04-17T04:11:48.310Z",
+          "containing_frame": {
+            "name": "Indicator",
+            "nodeId": "9752:102667",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "7540ac182d20f075146b863046053e7d2cedb4ab",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "813:17390",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/KXA/2dq/BbHJh4DHmrP7mveW/813_17390.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b8c67b6c203022a97bf3d94c8daccfffc153d0fa0a4d311c1e6c64e09af899a5",
+          "name": "box/center",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.494Z",
+          "updated_at": "2025-04-17T04:11:48.327Z",
+          "containing_frame": {
+            "name": "Radio",
+            "nodeId": "9759:130407",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "89cdc6c618e6dcbd5821ebc6142c2cd062c27957",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "813:17483",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Cs0/uN5/BJbQ08zO9GB4rnRE/813_17483.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9b1bdb1a6aaa176c4a7e8769bef6e93f99977de681a23a297ba6b2a60dd9ae68",
+          "name": "basic",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.588Z",
+          "updated_at": "2025-04-17T04:11:48.344Z",
+          "containing_frame": {
+            "name": "Radio",
+            "nodeId": "9759:130407",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "8eed70fe181f10efa9b049e83f8eaae68ac4b954",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5097:61530",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/5Xv/2Jz/QVDwkEQ9t2TzuehF/5097_61530.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7a441b2a3f3635f508e0c12719be11df57db3b2aad20f7686382941da068a687",
+          "name": "survey/text",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.344Z",
+          "updated_at": "2025-04-17T04:11:48.359Z",
+          "containing_frame": {
+            "name": "Radio",
+            "nodeId": "9759:130407",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "8a1d032d617b72ce5e65c0e9ea9252f819edafff",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3066:77448",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Rkp/8kq/K6GRYReIbcKT5yv1/3066_77448.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3bc465b346fd56589c41c24c947348462484109c942132d580ac90befa49b14a",
+          "name": "line/combination",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.606Z",
+          "updated_at": "2025-04-22T05:08:51.682Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "bf7cdcce92935a97685fd620349d28e5c61d3801",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "765:17750",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/4ag/hL8/ckoCo4OY30YLyFyH/765_17750.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6f181f0243ddf46a49ea9eca3721c8b4027fc24bcc4754bd911b00083b75579c",
+          "name": "bar",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.603Z",
+          "updated_at": "2025-04-17T04:11:48.438Z",
+          "containing_frame": {
+            "name": "Tab",
+            "nodeId": "9770:76989",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "cbb28f165e71afd2b33339d0e1ddaa83e0b0baff",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3631:60634",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/JCF/6VL/4k5hZqo2kPWvW8oJ/3631_60634.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=05f222a4ba8cbf4d7639cf555ff82002329c79ad2b6a4f53c9fce41fc96cf07d",
+          "name": "# base/base-step-horizontal-icon",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.098Z",
+          "updated_at": "2025-04-17T04:11:48.444Z",
+          "containing_frame": {
+            "name": "Process",
+            "nodeId": "9759:125591",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "cc322db503a65670645a21b2ee7e1143b54ace34",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3631:60939",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/2eh/s4n/lUxpBto2nlgTZVec/3631_60939.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=605284047d965bbc9aa68b3253d8115dbff14ecdd65ca7eb20666e3ff79adf84",
+          "name": "step/icon/horizontal",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.285Z",
+          "updated_at": "2025-04-17T04:11:48.450Z",
+          "containing_frame": {
+            "name": "Process",
+            "nodeId": "9759:125591",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "d2d44cbfb86ee1b0cb43ea1f460ef56d58cc4251",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "953:14524",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Fhn/eK5/ALNDQijBxum0fGJ6/953_14524.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ab79b75d2008eea980b1227a6a79be0816a45750dd050348eeb8d6adbe8e357b",
+          "name": "graybox/basic",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.379Z",
+          "updated_at": "2025-04-17T04:11:48.461Z",
+          "containing_frame": {
+            "name": "Accordion",
+            "nodeId": "9751:75546",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "ef54506d69ca8f2d04430d28b4989398b92d1034",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5380:78554",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/5MG/WJU/PMqnh5VcneyhjiWH/5380_78554.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8305341c0eae5a992ba0e7660ddc51073e214e95e183f23f27ae6904e5abbebf",
+          "name": "box/left",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.270Z",
+          "updated_at": "2025-04-17T04:11:48.467Z",
+          "containing_frame": {
+            "name": "Radio",
+            "nodeId": "9759:130407",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "ffcb6c1ab4516d2d6fb176fb51ef076df4bb1b56",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3520:81982",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Y3w/3ey/Fl7J7yVZ6Ch07ThV/3520_81982.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f65fe2c6d9256fa5081ae3133bc4846237c489b957657695586997969f1dd6c0",
+          "name": "box/16serial",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.885Z",
+          "updated_at": "2025-04-22T05:08:51.720Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "00ad50e02a36a47d13c56912ed0999632509bb72",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1081:25645",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/yDw/11G/sQ8WkUZeqNA5uRCY/1081_25645.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cdabb5dedc1a803bae1694e51de5acba487605b91e1a914844be1dbdbcc25abd",
+          "name": "chip",
+          "description": "",
+          "created_at": "2025-01-15T05:16:05.897Z",
+          "updated_at": "2025-04-17T04:12:08.382Z",
+          "containing_frame": {
+            "name": "Tab",
+            "nodeId": "9770:76989",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "00f9f566e130d1bbcd1cd37476df6b8cfec75a12",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "6194:80099",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/flD/6L8/S0p7xoKptoO2ROmc/6194_80099.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28c3cf01daeb5dfa71c386198f04b01c7b6db94e6f9fbdd58de23b3417ed906b",
+          "name": "page-xs",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.464Z",
+          "updated_at": "2025-04-17T04:12:08.387Z",
+          "containing_frame": {
+            "name": "List",
+            "nodeId": "9759:75317",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "0a27c8d7b874c24e13d0416e91e4f8897be4056d",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "922:25595",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/N9A/XEu/eoQNzqbBHSlk0BdN/922_25595.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=891d22ee59f81bacd58d0214869ecf46fbab2a55a2a8dbecab4b26dddf8961c4",
+          "name": "# atom/base-table-text",
+          "description": "",
+          "created_at": "2025-01-15T05:16:05.959Z",
+          "updated_at": "2025-04-17T04:12:08.392Z",
+          "containing_frame": {
+            "name": "Table",
+            "nodeId": "9770:77057",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "2203246597aabeb2ea81fa2985597d9db2d314fa",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "788:14003",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/dNA/u21/AjtQROh5dExdpoMq/788_14003.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=539dbeb4df67b08807040d8e198639010c2b0e70332f6e506b45c5fa2717e48f",
+          "name": "box",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.570Z",
+          "updated_at": "2025-04-17T04:12:08.397Z",
+          "containing_frame": {
+            "name": "Check",
+            "nodeId": "9752:101944",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "387cf4764a459ca500cddb54cdc2c615ba84edbc",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "701:42637",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/GKo/SwV/uxs9n6a8l15sk2DX/701_42637.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=24c395a7bbf7900ef31a306cc99cbe2874637a8a937cc391fdd8eb9ed481db94",
+          "name": "line",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.356Z",
+          "updated_at": "2025-04-17T04:12:08.407Z",
+          "containing_frame": {
+            "name": "Tab",
+            "nodeId": "9770:76989",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "508767958a95c9f31017945c0212ec20dc168094",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3203:60717",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/E5s/3Yw/hZGfJvPNtCgHgbBi/3203_60717.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7de1b2b102a7dfef3bc8dc97392f476585b572f9f4e2b27b7c42bcd57743db45",
+          "name": "terms",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.562Z",
+          "updated_at": "2025-04-17T04:12:08.412Z",
+          "containing_frame": {
+            "name": "Terms",
+            "nodeId": "9770:77080",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "684305fbe02c8bf7c202d40688e54e7c7eef347e",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3032:48011",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/CPJ/q7y/GLkERRUjbrRKyDH0/3032_48011.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1208f27788233a9d0fed2e143004f0d0d60847ef07ad5b196689c3f9c9d85c16",
+          "name": "box/price",
+          "description": "",
+          "created_at": "2025-01-15T05:16:05.941Z",
+          "updated_at": "2025-04-22T05:08:51.664Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "9038cc90d61de8a27ed4b0cff6ab4b797230e0a4",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "441:10978",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/CSE/tXH/7GQYkUPCm2FBonfX/441_10978.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1650a1f82ccabfd27aff2fa1f27df56cc58c2549e225d15a91665555df5b3ad9",
+          "name": "# atom/atom-tab-accordion",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.182Z",
+          "updated_at": "2025-04-17T04:12:08.443Z",
+          "containing_frame": {
+            "name": "Tab",
+            "nodeId": "9770:76989",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "99597657cb82535fc7c103bcbcf8946ab0b3111e",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "758:12804",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/d3z/VR7/er6OzyPhynb2rtx0/758_12804.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6efe093735673bfb6ec87b3048763c74198067eb71395b8fa87a46f8b05ccefe",
+          "name": "# base/base-tab-chip",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.139Z",
+          "updated_at": "2025-04-17T04:12:08.448Z",
+          "containing_frame": {
+            "name": "Tab",
+            "nodeId": "9770:76989",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "a0f3e310e592b4063da081a6728cf7e19cb0232f",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "765:17728",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ybV/BW2/SAZp3DkKAYNVDfen/765_17728.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5f3d49927c9a316ff3659bcfd65cc781f9b617057dafe726fc8fee6ebf12adcb",
+          "name": "# base/base-tab-bar",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.489Z",
+          "updated_at": "2025-04-17T04:12:08.453Z",
+          "containing_frame": {
+            "name": "Tab",
+            "nodeId": "9770:76989",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "a5a58da07549879d0b704638fc5142c30c212cb8",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1251:28700",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/1zb/2dn/jkdFcj5iGDQvLrBw/1251_28700.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b814f798c9b5c74edd7499837d2c0ee1728644c0359c95f7a57368c42863b717",
+          "name": "number",
+          "description": "",
+          "created_at": "2025-01-23T07:44:39.599Z",
+          "updated_at": "2025-04-17T04:12:08.458Z",
+          "containing_frame": {
+            "name": "Indicator",
+            "nodeId": "9752:102667",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "b475622e830824552ac4e1fdc07ad536896dbbdf",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "416:11120",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/v0Y/x08/mrKbWNK6mk57Vzu9/416_11120.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fd299318f064fce0cc117d14cf8a80075f29afe0a20287d60ae9ecc9fb293aa8",
+          "name": "statusbar/ios",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.454Z",
+          "updated_at": "2025-04-17T04:12:08.463Z",
+          "containing_frame": {
+            "name": "Statusbar",
+            "nodeId": "9769:137425",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "cb378ca9f3b788cc0079a0796927e4d8181d72ec",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1254:30458",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/y1l/WXW/5eHBSu3b9T2huVmG/1254_30458.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b04691231d7d481db3bce8f75a93c8874ba37f3aa797883716f563f958b8372e",
+          "name": "accordion",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.256Z",
+          "updated_at": "2025-04-17T04:12:08.484Z",
+          "containing_frame": {
+            "name": "Chip",
+            "nodeId": "9752:102398",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "d5fbfe93a046a6170409ba6c1b44e1c1fa528d6e",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3203:58337",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/wsK/FDU/WOe0tkvlMXKVnPkD/3203_58337.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ba878dae12cda1d099ce221bdf9f08bcd59d65602122c0403876e98f5f614391",
+          "name": "# base/base-terms-link",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.558Z",
+          "updated_at": "2025-04-17T04:12:08.544Z",
+          "containing_frame": {
+            "name": "Terms",
+            "nodeId": "9770:77080",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "03f551758c11c34f794d94baedf556dfeb375616",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5076:95875",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/wNf/qVF/idN6DVY6DXvQiGou/5076_95875.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ac735caa84252ddb95aec5f4c80cdb08e690ac9851074a74d9833d7cd5129b46",
+          "name": "basic/none-header",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.348Z",
+          "updated_at": "2025-04-22T05:08:33.491Z",
+          "containing_frame": {
+            "name": "Bottomsheet",
+            "nodeId": "9751:80900",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "29d69f1e7ee2c46ab2dc3a54bbdbc22caf456542",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "627:23638",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/5CR/YUi/HSJ033A8Z2auACK2/627_23638.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d58b4de53a6ff134a65530f10244ccb8a28055924877ed26792c50a04560c9c0",
+          "name": "account",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.261Z",
+          "updated_at": "2025-04-22T05:08:33.537Z",
+          "containing_frame": {
+            "name": "Select",
+            "nodeId": "9769:131799",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "542186338750707386ea9d8890b487a7bbb765a9",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "9731:90647",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/52W/H4s/VAVwykAcT2EkCOX5/9731_90647.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=90f7e649be21675c9f2f3a6ece5780b4f1811b2fe5486de3d4d26160fb90bfb1",
+          "name": "Button",
+          "description": "",
+          "created_at": "2025-03-19T05:35:03.047Z",
+          "updated_at": "2025-03-19T05:35:03.047Z",
+          "containing_frame": {
+            "name": "Local Assets",
+            "nodeId": "199:880",
+            "pageId": "199:879",
+            "pageName": "Local Assets",
+            "backgroundColor": "#FFFFFF"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "60042198b5874c8b3444d2203f747349c31c3951",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "9731:90595",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Zum/XHD/XBmDNrEUyPjwdJG0/9731_90595.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=97e25934a0728fa9480ce80679a6d138ac95c27734a5a5eb4790129a17917b2a",
+          "name": "Tag",
+          "description": "",
+          "created_at": "2025-03-19T05:35:03.087Z",
+          "updated_at": "2025-03-19T05:35:03.087Z",
+          "containing_frame": {
+            "name": "Local Assets",
+            "nodeId": "199:880",
+            "pageId": "199:879",
+            "pageName": "Local Assets",
+            "backgroundColor": "#FFFFFF"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "305fe30f717fc3c446b0e0152cb436099c093753",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3276:57110",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/7bl/zvg/gzdMmWtGN1VDyo99/3276_57110.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3d4dd5dfb510b4450b30ced54b0d737d6ce515abc009b9c0708d1556ceb57683",
+          "name": "# base/base-bs-list-account",
+          "description": "",
+          "created_at": "2025-03-20T01:30:18.596Z",
+          "updated_at": "2025-04-17T04:11:14.366Z",
+          "containing_frame": {
+            "name": "Bottomsheet",
+            "nodeId": "9751:80900",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "655fbfa944fb80e4c04ecfa0e2dcce59b4af5321",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3567:55083",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/VYp/7pw/o9j6jHIl8zPYQtV9/3567_55083.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4ed280196f5ce7b3e8ea0d2fbbffa33346b3b389dbf4b450701dadc77bb6c491",
+          "name": "line/color",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.908Z",
+          "updated_at": "2025-04-17T04:11:30.258Z",
+          "containing_frame": {
+            "name": "Label",
+            "nodeId": "9752:105995",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "34a3eb6d878fe2db2d696d3a8cda8a197506c033",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3001:47938",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/aTF/XU8/tWAENWPnbzpIuWJO/3001_47938.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f6782f468d0daa627b628b48a342df3ed75abb82e4208f886e1100daa6963a70",
+          "name": "cta/cta",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.250Z",
+          "updated_at": "2025-04-22T05:08:51.652Z",
+          "containing_frame": {
+            "name": "Button",
+            "nodeId": "9752:89601",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "d28a88e76d6b78577e3c988b9be201cc03493151",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3339:61572",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/pxk/qln/eCp88iXlrCuExEmz/3339_61572.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02cdc9cce0f0516457f2e8ec074def34a3ab3778266f9166c790ef5ca5c9592f",
+          "name": "explain/icon",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.331Z",
+          "updated_at": "2025-04-17T04:11:48.456Z",
+          "containing_frame": {
+            "name": "Radio",
+            "nodeId": "9759:130407",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "fca3e5db53d22ac87aca86300184faa56aec708b",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3623:75825",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/cuX/5Fn/nLwLT2cZhC6c027m/3623_75825.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=931d55763b3999fffb960984a660441e58dacb9c1dfea705fcd98a5f28c996b7",
+          "name": "# atom/atom-accordion-text",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.427Z",
+          "updated_at": "2025-04-17T04:11:14.547Z",
+          "containing_frame": {
+            "name": "Accordion",
+            "nodeId": "9751:75546",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "3d480e7af3b7230b566d2ede3984ac11571628ab",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1014:19350",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/UfB/Omv/pTSG1VsgdMPgPYrg/1014_19350.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=89631df6ac8ccd5896764aea3869751324d3be4ddbaec5dc86ce90dab1133972",
+          "name": "# base/base-bs-list",
+          "description": "",
+          "created_at": "2025-01-15T05:16:05.945Z",
+          "updated_at": "2025-04-17T04:11:14.386Z",
+          "containing_frame": {
+            "name": "Bottomsheet",
+            "nodeId": "9751:80900",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "52422880dd16d05b0ef3868084ae16b0ef8e770b",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "853:15339",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/RLE/qXo/127x47seLWhYsarW/853_15339.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=87d97c9b47d14efa48e28fe65d9a80a467c694a917b9ddb14b2f297524201a43",
+          "name": "line",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.994Z",
+          "updated_at": "2025-04-17T04:11:14.396Z",
+          "containing_frame": {
+            "name": "Accordion",
+            "nodeId": "9751:75546",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "9d7efd9a62e711929bcf420df2e0e6a2b3e36ec8",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1248:34050",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/3jG/5zC/Rq7UbHPuM3am6lz3/1248_34050.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ffa6d2a253e779947d251b27f6cf4bc369f959c6dc754229db217d9174ae8706",
+          "name": "popover",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.449Z",
+          "updated_at": "2025-04-17T04:11:30.361Z",
+          "containing_frame": {
+            "name": "Popover",
+            "nodeId": "9759:125513",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "ac8eda96346a25b9e21be00c3cb5f7916f770b6d",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5157:70253",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/rHr/X4K/Kz38jXD8AHNhUdjO/5157_70253.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=244d35df0605e70d980660f79847c682d57ee61fb92cdb23044582ce88be15ed",
+          "name": "page-sm",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.577Z",
+          "updated_at": "2025-04-17T04:11:30.375Z",
+          "containing_frame": {
+            "name": "List",
+            "nodeId": "9759:75317",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "e5649120a24f9f9aa98e67e2b3fa131748433898",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "8082:72031",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/q3C/M9H/qFx1b6iDYK8BhKOP/8082_72031.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c700e463c27414d9716cf19c91d143f94165edfd87c52e17f3267cf14e7d48eb",
+          "name": "# atom/atom-terms-link",
+          "description": "",
+          "created_at": "2025-01-20T05:33:27.342Z",
+          "updated_at": "2025-04-17T04:12:08.550Z",
+          "containing_frame": {
+            "name": "Terms",
+            "nodeId": "9770:77080",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "6d8033a6acbeab3eba795579260d45f819ef6408",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3097:38214",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/R9D/kQC/TabKQuhT9JjvLm7X/3097_38214.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9e767bf533ea2a582356ee412bb4d223dcc8ffd36c899c2e49e34ddef93ed260",
+          "name": "# base/base-accordion-link",
+          "description": "",
+          "created_at": "2025-03-20T01:30:49.934Z",
+          "updated_at": "2025-04-17T04:12:08.432Z",
+          "containing_frame": {
+            "name": "Accordion",
+            "nodeId": "9751:75546",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "b45dbdbeea35b9f23815b1cea3b9af2941a3af07",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1193:26636",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Byk/c3S/pUZv4486xv1SC644/1193_26636.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=be5f9c797b658e24be59919e55857171873b0a05688168acca735a18dc0aba82",
+          "name": "# atom/atom-tooltip-text",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.364Z",
+          "updated_at": "2025-04-17T04:11:30.381Z",
+          "containing_frame": {
+            "name": "Tooltip",
+            "nodeId": "9770:77199",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "a11b355fa47c965acc6966bcf179437887976e99",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5211:67983",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/exj/D9f/7PFghGYj3SrZzfIm/5211_67983.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=39ca85b1eb426294e188397d78bb5435ed3d91d7763af00977fa794d28cf2962",
+          "name": "thumbnail",
+          "description": "",
+          "created_at": "2025-03-20T01:30:49.928Z",
+          "updated_at": "2025-04-17T04:11:14.475Z",
+          "containing_frame": {
+            "name": "Attached file",
+            "nodeId": "9751:80281",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "d18720b5f7b33fdba343e9eece2cad214fbb82fb",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1104:28299",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/kUr/fWv/l47caZw16r0Rjm9k/1104_28299.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9d15e4c5e6ffc338525e0cd56a2bd2d45d26e353c20bc7ae1cd8fc6abd4c099d",
+          "name": "# atom/atom-bs-keypad",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.360Z",
+          "updated_at": "2025-04-17T04:11:14.531Z",
+          "containing_frame": {
+            "name": "Bottomsheet",
+            "nodeId": "9751:80900",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "0f7f3fd86e38d5ecd65d9ec82875c2020f011ca7",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5248:76705",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/UZf/ue4/LdTYv6txi54tTWp4/5248_76705.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=188d334d6b2c347d65a09e36578340b162d2b116e1b9b964d8e983416eb557c2",
+          "name": "notice",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.457Z",
+          "updated_at": "2025-04-17T04:11:14.336Z",
+          "containing_frame": {
+            "name": "Bullet",
+            "nodeId": "9752:89572",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "a229c6772799d6ecd43b71a64e5e5913fd2710af",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "813:15320",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Gap/s6E/0jKARCLH9sQuIjr7/813_15320.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=479d276515577d08fcd4d411bf553d3fbd847ff38673f7c98fa614ae7d9a4f64",
+          "name": "basic",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.445Z",
+          "updated_at": "2025-04-17T04:11:14.481Z",
+          "containing_frame": {
+            "name": "Check",
+            "nodeId": "9752:101944",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "12c9cced672372158040c6247810412ddc17bd48",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3037:98800",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/NRR/95J/GPLMe2FdYBEDDPqm/3037_98800.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ec70f3bc9ee2caaade1c6aa075dbbb661cb5288e7e6a884ced7b024445717d51",
+          "name": "period",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.121Z",
+          "updated_at": "2025-04-22T05:08:33.508Z",
+          "containing_frame": {
+            "name": "Calendar",
+            "nodeId": "9752:101247",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "88e4bd4110b0e0c34d88addd1c249428e4b92d4c",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3213:72702",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/6D9/MdD/nUs0s5wEQ306cjSh/3213_72702.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f8fc2ea47ad7729fca3e6853bea66c118182a8b4b8da656b4151df9529aca509",
+          "name": "step/text/sm",
+          "description": "",
+          "created_at": "2025-01-15T05:16:05.858Z",
+          "updated_at": "2025-04-22T05:08:33.621Z",
+          "containing_frame": {
+            "name": "Process",
+            "nodeId": "9759:125591",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "a672414bb8b584480b348aa620bd3ce3951ae922",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "8233:72482",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ugT/r7X/Uo8gOWMP2AUbW6IA/8233_72482.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=87b68c50fa558258c40d1686b5cec3c7491d012f89b10ad22ca00875db8a298f",
+          "name": "box/text",
+          "description": "",
+          "created_at": "2025-01-23T01:15:03.881Z",
+          "updated_at": "2025-04-17T04:11:14.490Z",
+          "containing_frame": {
+            "name": "Accordion",
+            "nodeId": "9751:75546",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "9ea0623d70d1b16d8ba8466748da93a5675beecb",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1222:28428",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/sJ9/Xeb/C2d0LOTmWROC5vNF/1222_28428.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fa6ae7e9c11572c852a3be71be401b41395721f72234f641e85808a314a5155d",
+          "name": "step/text/lg",
+          "description": "",
+          "created_at": "2025-02-13T02:15:24.110Z",
+          "updated_at": "2025-04-22T05:08:33.648Z",
+          "containing_frame": {
+            "name": "Process",
+            "nodeId": "9759:125591",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "ecbb4c2947691cac46af3111de65b1e28720b3ab",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3001:47845",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/tyf/WWi/CUWR5vbHReULGVxB/3001_47845.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=035d6fdeabf4fecc45851777854b8a4660e490fb8e14035a5dc87f244b8305c1",
+          "name": "basic/secondary",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.830Z",
+          "updated_at": "2025-04-17T04:11:30.405Z",
+          "containing_frame": {
+            "name": "Button",
+            "nodeId": "9752:89601",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "f405f2daac0d46e17cefdbf747121156e4d56a8e",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5592:68292",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/w34/XDH/fphkZxIdc16chKre/5592_68292.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=490202a3e0811135dfad4e5995fb82a92a6bc2be0fe8712d35a1d21192e7f530",
+          "name": "# atom/atom-infobox-text",
+          "description": "",
+          "created_at": "2025-01-15T05:16:05.936Z",
+          "updated_at": "2025-04-17T04:11:30.411Z",
+          "containing_frame": {
+            "name": "Infobox",
+            "nodeId": "9752:102719",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "fd2d814ec20d46842a584068c6900761ae429fcd",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "6000:70517",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Wic/heV/TXqPTfiIdeF7D4sv/6000_70517.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0d32c05e95e0dda8b82482f9d70a9215f39e7b1411dbaeabca8d3b52c1a00343",
+          "name": "survey",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.372Z",
+          "updated_at": "2025-04-17T04:11:30.418Z",
+          "containing_frame": {
+            "name": "Check",
+            "nodeId": "9752:101944",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "5b0ee2bb7d1baaae35559d741cafa6741b130764",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "636:19270",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ftu/Gec/ul0TJ3qZrtnobbjk/636_19270.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9a36b524c76b39ca2f3eb880cab4377ffd7b67f2e15e627aa5b15c99268b9ada",
+          "name": "table",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.903Z",
+          "updated_at": "2025-04-17T04:11:30.242Z",
+          "containing_frame": {
+            "name": "Table",
+            "nodeId": "9770:77057",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "ace2fc829e00d463204ac922d1f21ad7e2047bce",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1222:29415",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/W95/sGw/Ds5c3qiTCrOOcYvN/1222_29415.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e348838fd303a4f19b1e89373b867d0f049fcf3f0d272320e866c1d583e1efc1",
+          "name": "step/horizontal",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.474Z",
+          "updated_at": "2025-04-17T04:11:48.432Z",
+          "containing_frame": {
+            "name": "Process",
+            "nodeId": "9759:125591",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "1b1defba43e273b6a4fbc8e10dbc64ec0a01b7a6",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3097:39289",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/qyi/MZD/56Eu5NU8kcHF96cH/3097_39289.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1953dd104e8079643be59a7a2e31e9656ac707cc82c70133c6dfccdc0659d216",
+          "name": "graybox/list",
+          "description": "",
+          "created_at": "2025-03-20T01:30:49.923Z",
+          "updated_at": "2025-04-17T04:11:14.348Z",
+          "containing_frame": {
+            "name": "Accordion",
+            "nodeId": "9751:75546",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "5e0f8eceae1256dfbd26c44ded86b4e4ca6faf9a",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "627:16594",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/5h7/yCM/NGF8D87gQUhv66XH/627_16594.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8f5d22035295e3589092aa707cdf0975f7bf7a225021b7e90991a60f025cf9d0",
+          "name": "box/password",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.998Z",
+          "updated_at": "2025-04-22T05:08:51.658Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "87f935560b34008a4037f718f59bc05d0936bc33",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3100:40547",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/aZf/rLb/9kyXd3Z8jfo2kpkR/3100_40547.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d8a72502bdf07f0639756abb11cb2fcd83bd0c965ade08ce0f519aeac6b58a65",
+          "name": "line/unit",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.826Z",
+          "updated_at": "2025-04-22T05:08:51.677Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "b7b745d4c64b81a6aeee4aa57134f1582b4902d4",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "9329:74125",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/nLV/wlD/vgUn3nUJcjJZA62S/9329_74125.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=971cbb704303ab047882fe46b9d3a10648bb28f6cb477f82340e46a339949ea2",
+          "name": "box/point",
+          "description": "",
+          "created_at": "2025-03-07T06:54:13.772Z",
+          "updated_at": "2025-04-22T05:08:51.689Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "13a20da50556403f94a566ec3a09e1b294b92967",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "678:13757",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/4a8/LLA/zl4DAsedidabjgZI/678_13757.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ef69cefe3f758ad3d8a7b79475b0013c22728c8e2d953e4e513b057089a1f4d1",
+          "name": "box/basic",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.280Z",
+          "updated_at": "2025-04-22T05:08:33.517Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "221f1e2822b5bdcab7fbe01a11d6c2a1aaa323a0",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1229:33184",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/OwK/q1M/3hKYkHNjrMW2iEkH/1229_33184.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=204052ac1eda9d70789f446195949181c64c030bcaacb1e3082b2cf41365ded8",
+          "name": "step/vertical",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.484Z",
+          "updated_at": "2025-04-22T05:08:33.524Z",
+          "containing_frame": {
+            "name": "Process",
+            "nodeId": "9759:125591",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "327f611177c3dfb67b3d200919b26b22aaac011d",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "627:21018",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/2KC/N5Q/82kFUEqxAcwoeAuH/627_21018.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e9111c8d37868f8b5875b54d2879c6ecf47949ceeefd3ff106ee342430c13057",
+          "name": "basic",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.032Z",
+          "updated_at": "2025-04-22T05:08:33.543Z",
+          "containing_frame": {
+            "name": "Select",
+            "nodeId": "9769:131799",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "3d1c8ee68d0dd940937686373ba0c49c4ec6268a",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3256:69939",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/7dq/1nd/zXciIX7pSWRKzZp0/3256_69939.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f8e45c0215528725089b7bb78733710adc3b91a1d71f5854a1159f2e636050ac",
+          "name": "list",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.010Z",
+          "updated_at": "2025-04-22T05:08:33.549Z",
+          "containing_frame": {
+            "name": "Select",
+            "nodeId": "9769:131799",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "5433980710819a93ab965e379471576ea39cadee",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "6232:72955",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/o5Q/dRk/v8eWNQQWzYAVuYoR/6232_72955.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a9e9d603f2424043f02619b87c82dc6f10336d76dc6fb96e8b7fe6a72f9e8e19",
+          "name": "box/adress",
+          "description": "",
+          "created_at": "2025-01-15T05:15:38.498Z",
+          "updated_at": "2025-04-22T05:08:33.556Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "8deb984f192e3209839d2a9996519a2ad7da13f0",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "8033:72243",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/UjG/4oW/R9JH8LIdlz7Bmx40/8033_72243.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ca14c61321b271426547701b0809f55b5bc37e6e9282083abe8a181c3e86dcb0",
+          "name": "2row",
+          "description": "",
+          "created_at": "2025-01-20T05:33:17.558Z",
+          "updated_at": "2025-04-22T05:08:33.629Z",
+          "containing_frame": {
+            "name": "Select",
+            "nodeId": "9769:131799",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "a582c754a8fb474538286d473b9fe2c5d9ff013b",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1229:32056",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/FIN/RTi/iOoFkOCBhPoZKBgT/1229_32056.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6c120a4f02944f020e5657e18065d6e50c5b9b64b1422eaf38c627d1ab08ffb4",
+          "name": "# base/base-step-vertical-md",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.899Z",
+          "updated_at": "2025-04-22T05:08:33.654Z",
+          "containing_frame": {
+            "name": "Process",
+            "nodeId": "9759:125591",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "bdd7e7cff7678e731c8dc8ae888a195ed655f6b4",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "5076:70137",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/QYd/ObQ/SJMrqJMFRJYD4wz1/5076_70137.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f823fe64de1549b8f9e683235b5b2dedf2a2ace2225c96c1a6d27915b954fa7e",
+          "name": "basic/with-header",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.990Z",
+          "updated_at": "2025-04-22T05:08:33.667Z",
+          "containing_frame": {
+            "name": "Bottomsheet",
+            "nodeId": "9751:80900",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "d6c4896281c2f4ed56ba5fc572d880a0730c28d8",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3037:98767",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/e8j/iCg/uR0qSunkdJr5AO1p/3037_98767.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=34f27e08482556d4c98951b6b5e4d7946795b34a8d5fa48989145119e4738788",
+          "name": "day",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.133Z",
+          "updated_at": "2025-04-22T05:08:33.685Z",
+          "containing_frame": {
+            "name": "Calendar",
+            "nodeId": "9752:101247",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "e2b81fba1a33b2b3244e21e13c6bc033cc6cb532",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "1051:46713",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/OI3/Rck/Nc0R1CdhHAZT8k9d/1051_46713.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cfc0054094c3bdd844495d4f0b6144214dc56354868cf05506cf6dac82d1613c",
+          "name": "search-filter",
+          "description": "",
+          "created_at": "2025-01-15T05:15:56.453Z",
+          "updated_at": "2025-04-22T05:08:33.698Z",
+          "containing_frame": {
+            "name": "Search",
+            "nodeId": "9769:131248",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "f1f26ad1a9d4473ac20c2bf6f2967f5036fd2c0d",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "692:31365",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/IJP/qRD/MT46LUk6UakdjRGi/692_31365.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ea17796d301097fea886932fd9dfa021730b546735265a3470ccbff7128df372",
+          "name": "price",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.014Z",
+          "updated_at": "2025-04-22T05:08:33.703Z",
+          "containing_frame": {
+            "name": "Select",
+            "nodeId": "9769:131799",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "cd82c94897e81697d1db68079f57b4e128157a25",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "8060:73793",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/0ZB/9em/pgP3iOHjAWZ9ETGT/8060_73793.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3bdf6d53a1d8f23e50b99a8efd9cda43efa796bbdfd84d7058e1969eb430e0c6",
+          "name": "admin",
+          "description": "",
+          "created_at": "2025-01-20T05:33:17.567Z",
+          "updated_at": "2025-04-22T05:08:51.699Z",
+          "containing_frame": {
+            "name": "Select",
+            "nodeId": "9769:131799",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "e7b7230b5407367776470c850083006a1e1404d7",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "634:12690",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/64v/CuE/sJnQchbbrKHHfTU1/634_12690.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=62e1a8489f93a20e919a6d6f4214147873ebf9b12e36c8a71673dcfe4a129816",
+          "name": "box/12serial",
+          "description": "",
+          "created_at": "2025-01-15T05:15:46.890Z",
+          "updated_at": "2025-04-22T05:08:51.705Z",
+          "containing_frame": {
+            "name": "Input",
+            "nodeId": "9752:102756",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        },
+        {
+          "key": "eb65b55b282de842bff8c4acae683729a7fe029f",
+          "file_key": "MzywCRAEcfyBIVxBp7EcOU",
+          "node_id": "3450:69411",
+          "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/q6Y/pQT/2iWdFfV8gKPGXVCL/3450_69411.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCRNQJ6QVT%2F20250518%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250518T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=90bc2523714b40a7d9e2d3cf8bb8cd857ae3696aed50a56a46c13e40fc1eb455",
+          "name": "currency",
+          "description": "",
+          "created_at": "2025-01-15T05:15:47.002Z",
+          "updated_at": "2025-04-22T05:08:51.709Z",
+          "containing_frame": {
+            "name": "Select",
+            "nodeId": "9769:131799",
+            "pageId": "0:1",
+            "pageName": "⌘ Component",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "user": {
+            "id": "1409787277395461602",
+            "handle": "홍의환",
+            "img_url": "https://www.gravatar.com/avatar/d51ad0da783c22af7f673385a38a8af4?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_2.png"
+          }
+        }
+      ]
+    },
+    "i18n": null
+  }

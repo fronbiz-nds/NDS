@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">예금 가입</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="progress-box">
+                        <div class="progress">
+                            <!--
+                                style 속성에서 사용되는 CSS 전용 변수로 게이지 컨트롤
+                                --current : 현재 표시되야 하는 수치
+                                    --max : 최대 수치
+                                게이지가 차오르는 값을 css로 지정 합니다 %, 실수치, 모두 가능 ( ※게이지계산식 : 100% * ( --current / --max ) )
+                                (단, 숫자 정수값만 사용할 것)
+                            -->
+                            <div class="bar" style="--current:6; --max:12;">
+                                <div class="gauge">
+                                    <!-- 접근성 관련 텍스트 동적 변경 필요 --> 
+                                    <span class="hide"> 12단계 중 3번째</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg">다음</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div id="layer" class="layer dimWhiteLayer">
+        <div class="container">
+            <div class="contents">
+                <div class="content">
+                    <div class="choose-account-Wrap -inputed">
+                        <div class="custom-key-wrap">
+                            <span role="button" class="key-btn" data-value="1" title="숫자 1 입력">1</span>
+                            <span role="button" class="key-btn" data-value="2" title="숫자 2 입력">2</span>
+                            <span role="button" class="key-btn" data-value="3" title="숫자 3 입력">3</span>
+                            <span role="button" class="key-btn" data-value="4" title="숫자 4 입력">4</span>
+                            <span role="button" class="key-btn" data-value="5" title="숫자 5 입력">5</span>
+                            <span role="button" class="key-btn" data-value="6" title="숫자 6 입력">6</span>
+                            <span role="button" class="key-btn" data-value="7" title="숫자 7 입력">7</span>
+                            <span role="button" class="key-btn" data-value="8" title="숫자 8 입력">8</span>
+                            <span role="button" class="key-btn" data-value="9" title="숫자 9 입력">9</span>
+                            <span role="button" class="key-btn" data-value="." title="소수점 입력">.</span>
+                            <span role="button" class="key-btn" data-value="0" title="숫자 0 입력">0</span>
+                            <span role="button" class="key-btn btn-del" title="마지막 숫자 삭제"></span>
+                        </div>
+                        <div class="buttons">
+                            <button type="button" class="button -primary -lg">확인</button>
+                        </div>
+                    </div>
+                    <!-- //.choose-account-Wrap -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+
+        // 레이어 닫기(마지막 인자 기본값: false)
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // });
+
+        // 레이어 닫기 + DOM 삭제
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+    <script>
+        /* 키패드 키입력 예시 */
+         /* const numKeyEmt = document.querySelectorAll('.custom-key-wrap button');
+         numKeyEmt.forEach(numKeyEmt => {
+             numKeyEmt.addEventListener('click',function () {
+                 let $targetInput;
+                 const $thisValLayer = numKeyEmt.closest('.custom-key-layer.-active');  //dim 없는 레이어 숫자 키패드
+                 const $thisValChoose = numKeyEmt.closest('.choose-account-Wrap');  //bottom sheet 숫자 키패드
+                 
+                 if ($thisValLayer !== null) {
+                     $targetInput = numKey.numInput;
+                 } else if($thisValChoose !== null) {
+                     $targetInput = $thisValChoose.querySelector('.choose-account-input input')
+                 }
+                 let $thisval = numKeyEmt.value;
+                 if (!numKeyEmt.classList.contains('btn-del')) {
+                     $targetInput.value = $targetInput.value + $thisval;
+                 }else{
+                     $targetInput.value = $targetInput.value.slice(0,-1)
+                 }
+             })
+         }); */
+
+        var numKeyEmt = document.querySelectorAll('.custom-key-wrap .key-btn');
+        numKeyEmt.forEach(numKeyEmt => {
+            var $targetInput;
+            var $thisValLayer = numKeyEmt.closest('.custom-key-layer.-active');  //dim 없는 레이어 숫자 키패드
+            var $thisValChoose = numKeyEmt.closest('.choose-account-Wrap');  //bottom sheet 숫자 키패드
+            
+             numKeyEmt.addEventListener('click',function () {
+                 if ($thisValLayer !== null) {
+                     $targetInput = numKey.numInput;
+                 } else if($thisValChoose !== null) {
+                     $targetInput = $thisValChoose.querySelector('.choose-account-input input');
+                     $targetInput.closest('.text').classList.remove('-textless');
+                 }
+                var $thisval = numKeyEmt.getAttribute('data-value');
+                if (!numKeyEmt.classList.contains('disabled')) {
+                    if (!numKeyEmt.classList.contains('btn-del')) {
+                        $targetInput.value = $targetInput.value + $thisval;
+                    }
+                }
+             })
+
+            if (numKeyEmt.classList.contains('btn-del')) {
+                if ($thisValLayer !== null) {
+                     $targetInput = numKey.numInput;
+                 } else if($thisValChoose !== null) {
+                     $targetInput = $thisValChoose.querySelector('.choose-account-input input');
+                     $targetInput.closest('.text').classList.remove('-textless');
+                 }
+                var startTime = 0;
+                var endTime = 0;
+                var lognTab = 0;
+                numKeyEmt.ontouchstart = function () {
+                    startTime = Date.now()
+                }
+                numKeyEmt.ontouchend = function () {
+                    endTime = Date.now()
+                    longTab = endTime - startTime;
+                    if (longTab > 300) {
+                        $targetInput.value = '';
+                        setTimeout(() => {
+                            $targetInput.closest('.text').classList.add('-textless');
+                        }, 1);
+                    }else{
+                       $targetInput.value = $targetInput.value.slice(0,-1);
+                        if ($targetInput.value.length == 0) {
+                            setTimeout(() => {
+                                $targetInput.closest('.text').classList.add('-textless');
+                            }, 1);
+                            $targetInput.closest('.text').classList.add('-textless')
+                        }
+                    }
+                }
+            }
+        });
+         /* //키패드 키입력 예시 */
+     </script>
+
+</body>
+</html>

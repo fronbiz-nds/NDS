@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>보험 간편설계</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+                    <h1 class="title">상품상세</h1>
+                    <div class="funcs">
+                        <button type="button" class="func -home"><span class="hide">홈</span></button>
+                        <button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner center">
+                    <h1 class="title">보험 간편설계</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">                 
+                    <div class="h2-group">                        
+                        <h2 class="h2">
+                            무배당 IBK e-세액공제연금<br>저축보험_2404
+                        </h2>
+                    </div>
+                    <div class="field">
+                        <p class="h4">내 보험료를 간편하게 확인해 보세요</p>
+                        <div class="mix">
+                            <div class="text" data-clear="false">
+                                <input type="tel" class="num-call" id="field1" value="19880912" title="생년월일 입력" aria-haspopup="true" readonly>
+                            </div>
+                        </div>
+                        <div class="case-wrap16">
+                            <div class="box-radios -box -lg">
+                                <div class="box-radio">
+                                    <input type="radio" name="period" title="성별선택" id="box-radio11-1" checked>
+                                    <label for="box-radio11-1">남</label>
+                                </div>
+                                <div class="box-radio">
+                                    <input type="radio" name="period" title="성별선택" id="box-radio11-2">
+                                    <label for="box-radio11-2">여</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 연금보험CASE 노출 -->
+                    <div class="field">
+                        <p class="label">연금개시연령
+                            <span class="tooltip">
+                                <button type="button" class="trigger">
+                                    <span class="hide">툴팁</span>
+                                </button>
+                                <span class="panel">
+                                    <span class="title">연금개시연령</span>
+                                    <span class="t-content">
+                                        연금을 지급받기 시작하는 나이를 말하며, 연금개시 선택 나이는 60세가 가장 많습니다. <br>
+                                        ‘4050세대들에 대한 은퇴 보고서’에 의하면 예상하는 은퇴 나이는 40대는 64.1세, 50대는 65.9세입니다. <br>
+                                        * 은퇴시장 리포트_2016, 보험개발원 참조
+                                    </span>
+                                </span>
+                            </span>
+                        </p>
+                        <div class="select">
+                            <button type="button" aria-haspopup="true" class="fc-empty">선택</button>
+                        </div>
+                    </div>
+                    <!-- 연금보험CASE 노출 -->
+
+                    <!-- 저축보험, 보장성보험 CASE 노출 -->
+                    <div class="field">
+                        <p class="label">보험종류</p>
+                        <div class="select">
+                            <button type="button" aria-haspopup="true" class="fc-empty">선택</button>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <p class="label">계약플랜</p>
+                        <div class="select">
+                            <button type="button" aria-haspopup="true" class="fc-empty">선택</button>
+                        </div>
+                    </div>
+                    <!-- //저축보험, 보장성보험 CASE 노출 -->
+
+                    <div class="field">
+                        <p class="label">보험기간
+                            <span class="tooltip">
+                                <button type="button" class="trigger">
+                                    <span class="hide">툴팁</span>
+                                </button>
+                                <span class="panel">
+                                    <span class="title">보험기간</span>
+                                    <span class="t-content">
+                                        보험계약에 의하여 일정한 기간 내에 보험사고가 발생할 경우 보장을 받을 수 있는 기간을 말합니다. <br>
+                                        (보험기간이 10년일 경우 10년간 보험사고에 대하여 보장받으실 수 있습니다.)
+                                    </span>
+                                </span>
+                            </span>
+                        </p>
+                        <div class="select">
+                            <button type="button" aria-haspopup="true" class="fc-empty">선택</button>                            
+                        </div>
+                    </div>  
+                    <div class="field">
+                        <p class="label">납입기간
+                            <span class="tooltip">
+                                <button type="button" class="trigger">
+                                    <span class="hide">툴팁</span>
+                                </button>
+                                <span class="panel">
+                                    <span class="title">납입기간</span>
+                                    <span class="t-content">
+                                        보험료를 내는 기간을 말합니다.<br>
+                                        (20년납은 가입할 때부터 20년 동안 보험료를 낸다는 뜻입니다. 전기납은 보험기간 동안 보험료를 내는 것을 말하는데, 연금보험의 경우 연금 신청 시점까지 매월 보험료를 납입하는 방식을 말합니다.) 
+                                    </span>
+                                </span>
+                            </span>
+                        </p>
+                        <div class="select">
+                            <button type="button" aria-haspopup="true" class="fc-empty">선택</button>                            
+                        </div>
+                    </div>
+                    <div class="field">  
+                        <p class="label">보험료</p>   
+                        <div class="mix">
+                            <div class="text -won">
+                                <input type="tel" id="text1213" class="right num-call" onclick="numKey.keyOpen(this,'amount')" placeholder="100,000원 ~ 1,500,000원 입력" readonly>
+                                <div class="won">원</div>
+                            </div>                          
+                        </div> 
+                    </div>    
+                    <div class="field">
+                        <button type="button" class="button -primary -md">결과보기</button>
+                    </div>  
+
+                    <hr class="hr content-8" aria-hidden="true" tabindex="-1">
+
+                    <div class="card -sum">
+                        <dl class="dl -box price-single -double">
+                            <div class="monthly">
+                                <dt class="flex-1">예상계약자적립액</dt>
+                                <dd>
+                                    <span class="point">18,400,000원</span>
+                                </dd>
+                            </div>
+                            <div class="monthly">
+                                <dt class="flex-1">연금예상수령액(월단위)<br><span>(현재 공시이율 기준 2.73%)</span></dt>
+                                <dd>
+                                    <span class="point">8,400,000원</span>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <div class="case-wrap -xl">
+                        <div class="segments tab -bar -triple row-2">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div role="tablist" class="list">
+                                        <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel33" id="segment5">연금액 예시</button></div>
+                                        <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel43" id="segment6">해약환급금<br>예시</button></div>
+                                        <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel53" id="segment7">보장내용</button></div>
+                                        <span class="switcher" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="segments-panels">
+                            <div role="tabpanel" aria-labelledby="segment5" id="segments-panel33" class="segments-panel -active" tabindex="0">
+                                <div class="field">
+                                    <p class="label">예상연금수령액 산출기준</p>
+                                    <div class="select">
+                                        <button type="button" aria-haspopup="true">현재 공시이율 기준(2.77%)</button>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="title-group">
+                                        <div class="inner">
+                                            <h4 class="h4">연금수령액 예시</h4>
+                                        </div>
+                                        <span class="request">(단위 : 원/세전)</span>
+                                    </div>
+                                    <div class="load-data">
+                                        <div class="data-box" id="data-rd">
+                                            <div class="data-box-title flex-1">연금개시 시점의 계약자적립액 예상액</div>
+                                            <div class="data-box-content flex-1">18,400,000원</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="field">
+                                    <div class="title-group">
+                                        <div class="inner">
+                                            <h4 class="h4">연급지급유형별 연금수령액 예시표</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="account card">
+                                        <div class="info">
+                                            <span class="name">
+                                                <span>종신형</span>
+                                            </span>
+                                        </div>
+                                        <dl class="dl">
+                                            <div>
+                                                <dt>기본연금 20년보증</dt>
+                                                <dd>26,408원</dd>
+                                            </div>
+                                        </dl>
+        
+                                        <div class="info">
+                                            <span class="name">
+                                                <span>확정형</span>
+                                            </span>
+                                        </div>
+                                        <dl class="dl">
+                                            <div>
+                                                <dt>확정20년</dt>
+                                                <dd>28,408원</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                                
+                            </div>
+    
+                            <div role="tabpanel" aria-labelledby="segment6" id="segments-panel43" class="segments-panel" tabindex="0">
+                                컨텐츠2
+                            </div>
+    
+                            <div role="tabpanel" aria-labelledby="segment7" id="segments-panel53" class="segments-panel" tabindex="0">
+                                컨텐츠3
+                            </div>
+                        </div>    
+                    </div>                                                
+                </div>
+
+                <div class="sticker">
+                    <div class="notice -active" data-role="fold">
+                        <button type="button" class="title" data-role="marker">알아두세요</button>
+                        <div class="panel" data-role="hidden">
+                            <ul class="ul -bullet">
+                                <li>상기 예시된 연금개시시점의 계약자적립액은 경과기간 별 최저보증이율, 감독규정 제1-2조 제13호에 따른 2024년 현재 평균공시이율 연 단위 복리 2.75% (다만, 공시이율과 비교하여 낮은 이율 적용), 현재 공시이율(연 단위 복리 2.60%) 기준 별로 해당 이율이 유지됨을 가정하여 계산한 금액입니다.</li>
+                                <li>상기 예시된 연금액은 연금개시시점 최저보증이율, 현재 평균공시이율(다만, 공시이율과 비교하여 낮은 이율 적용)과 현재 공시이율이 유지됨을 가정하여 계산한 1차년도 연금액입니다.</li>
+                                <li>공시이율은 매월 1일에 회사가 정한 운용자산이익률과 외부지표금리 등을 고려하여 정한 이율로 하며, 매월 1일부터 당월 말일까지 1개월 간 확정 적용하며 매 1개월마다 변동됩니다. (공시이율의 최저보증이율은 가입 후 10년 이내의 기간 동안은 연 단위 복리 1.0%, 10년을 초과하는 기간 동안은 연 단위 복리 0.5% 입니다)</li>
+                                <li>평균공시이율은 감독원장이 정하는 바에 따라 산정한 전체 보험회사 공시이율의 평균으로, 전년도 9월말 기준 직전 12개월 간 보험회사 평균공시이율입니다. 평균공시이율을 적용한 금액은 실제 받으실 금액과 다를 수 있으며, 추후 변동될 수 있습니다.</li>
+                                <li>실제 연금개시시점 계약자적립액 및 연금엑은 공시이율을 적용하여 계산되며, 향후 공시이율 변동 시 연금개시시점 계약자적립액 및 연금액도 변동됩니다.</li>
+                                <li>연금지급개시 시점의 계약자적립액이 “이미 납입한 보험료+1,000원” 이하일 경우 연금지급개시 시점의 계약자적립액은 “이미 납입한 보험료+1,000원＂으로 합니다.(단, 보험료 납입유예 도는 1회 기본 보험료만 납입한 부활(효력회복)로 인해 연금개시시점이 연기된 경우에는 연금지급개시 시점의 계약자적립액을 보증하지 않습니다)</li>
+                                <li>상기 예시된 금액은 세전 금액이며, 상기 금액이 미래의 수익을 보장하는 것은 아닙니다.</li>
+                                <li>이미 납입한 보험료‘란 계약자가 납입한 기본 보험료 및 추가납입 보험료의 합계를 말하며, 연금계좌에서 인출이 있었을 경우에는 이를 차감한 금액을 말합니다.</li>
+                                <li>상기 연금지급형태 별 연금액 예시는 천원 미만 절사하여 표시된 금액입니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg">취소</button>
+                        <button type="button" class="button -primary -lg">가입하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 숫자 키패드 레이어 -->
+    <div class="custom-key-layer" aria-hidden="true">
+        <div class="amount-btn-wrap">
+            <button type="button" value="100000" class="button numBtn -sm -fit">+10만</button>
+            <button type="button" value="500000" class="button numBtn -sm -fit">+50만</button>
+            <button type="button" value="1000000" class="button numBtn -sm -fit">+100만</button>
+            <button type="button" value="10000000" class="button numBtn -sm -fit">+1,000</button>
+        </div>
+        <div class="custom-key-wrap">
+            <button type="button" class="numBtn" value="1" title="숫자 1 입력">1</button>
+            <button type="button" class="numBtn" value="2" title="숫자 2 입력">2</button>
+            <button type="button" class="numBtn" value="3" title="숫자 3 입력">3</button>
+            <button type="button" class="numBtn" value="4" title="숫자 4 입력">4</button>
+            <button type="button" class="numBtn" value="5" title="숫자 5 입력">5</button>
+            <button type="button" class="numBtn" value="6" title="숫자 6 입력">6</button>
+            <button type="button" class="numBtn" value="7" title="숫자 7 입력">7</button>
+            <button type="button" class="numBtn" value="8" title="숫자 8 입력">8</button>
+            <button type="button" class="numBtn" value="9" title="숫자 9 입력">9</button>
+            <button type="button" class="numBtn btn-temp" disabled  aria-hidden="true">NH</button>
+            <button type="button" class="numBtn btn-amount" value="00" title="숫자 00입력" >00</button>
+            <button type="button" class="numBtn" value="0" title="숫자 0 입력">0</button>
+            <button type="button" class="numBtn btn-del" title="마지막 숫자 삭제">←</button>
+        </div>
+        <div class="buttons">
+            <button type="button" class="button -primary -lg" onclick="numKey.keyClose()">확인</button>
+        </div>
+    </div>
+    <!-- 숫자 키패드 레이어 -->
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+        procuctDatailAct();
+    </script>
+    <script>
+        /* 키패드 키입력 예시 */
+        var numKeyEmt = document.querySelectorAll('.custom-key-wrap button');
+         numKeyEmt.forEach(function(numKeyEmt) {
+             numKeyEmt.addEventListener('click',function () {
+                 var $targetInput;
+                 var $thisValLayer = numKeyEmt.closest('.custom-key-layer.-active');  //dim 없는 레이어 숫자 키패드
+                 var $thisValChoose = numKeyEmt.closest('.choose-account-Wrap');  //bottom sheet 숫자 키패드
+                 
+                 if ($thisValLayer !== null) {
+                     $targetInput = numKey.numInput;
+                 } else if($thisValChoose !== null) {
+                     $targetInput = $thisValChoose.querySelector('.choose-account-input input')
+                     $targetInput.closest('.text').classList.remove('-textless');
+                 }
+                 var $thisval = numKeyEmt.value;
+ 
+                 if (numKeyEmt.classList.contains('btn-del')) {
+                     if ($targetInput.value.length !== 0) {
+                         $targetInput.value = $targetInput.value.slice(0,-1);
+                         if ($targetInput.value.length == 0) {
+                             setTimeout(function() {
+                                 $targetInput.closest('.text').classList.add('-textless');
+                             }, 101);
+                         }
+                     }
+                 }else{
+                     $targetInput.value = $targetInput.value + $thisval;
+                 }
+             })
+         });
+ 
+ 
+         //10만, 50만.... 버튼 클릭시
+         var amountBtn = document.querySelectorAll('.amount-btn-wrap button');
+         amountBtn.forEach(function(amountBtn) {
+             amountBtn.addEventListener('click',function () {
+                 var $targetInput;
+                 var $thisValLayer = amountBtn.closest('.custom-key-layer.-active');  //dim 없는 레이어 숫자 키패드
+                 var $thisValChoose = amountBtn.closest('.choose-account-Wrap');  //bottom sheet 숫자 키패드
+                 if ($thisValLayer !== null) {
+                     $targetInput = numKey.numInput;
+                 } else if($thisValChoose !== null) {
+                     $targetInput = $thisValChoose.querySelector('.choose-account-input input')
+                 }
+                 var $thisval = amountBtn.value;
+                 $targetInput.value = Number($thisval) + Number($targetInput.value);
+             })
+         });
+         /* //키패드 키입력 예시 */      
+     </script>
+</body>
+</html>

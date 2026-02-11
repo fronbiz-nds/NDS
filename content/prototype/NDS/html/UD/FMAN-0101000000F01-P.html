@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>우편번호를 입력</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">우편번호를 입력해 주세요</h1> 
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">                    
+                    <div class="field search">
+                        <div class="mix">
+                            <div class="text">
+                                <input type="text" class="left-side" id="searchce" value="" placeholder="도로명, 지번, 건물명" title="도로명, 지번, 건물명">
+                            </div>
+                    
+                            <div class="space -lined search">
+                                <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <ul class="ul -bullet address-detail">
+                            <li>도로명+건물번호 <span>(통일로 120)</span></li>
+                            <li>지역명+번지 <span>(충정로 1가 85)</span></li>
+                            <li>건물명 <span>(농협중앙회 중앙본부)</span></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

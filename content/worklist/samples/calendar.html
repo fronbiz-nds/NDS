@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+    <link rel="stylesheet" href="../../assets/css/util.css">
+</head>
+<body>
+    <div id="layer" class="layer">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">년월 선택</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="content">
+                    <!-- [수정 221122] disabled 케이스 추가 -->
+                    <div class="calendar">
+                        <div class="control">
+                            <button type="button" class="button -xs -fit">당월</button>
+
+                            <div class="title">
+                                <button type="button" class="prev"><span class="hide">이전달</span></button>
+                                <span class="value">2022</span>
+                                <button type="button" class="next" disabled><span class="hide">다음달</span></button>
+                            </div>
+                        </div>
+
+                        <div class="month">
+                            <caption><span class="hide">월별 선택 달력</span></caption>
+                            <ol>
+                                <li><button type="button" disabled>1</button></li>
+                                <li><button type="button" disabled>2</button></li>
+                                <li><button type="button" disabled>3</button></li>
+                                <li><button type="button" disabled>4</button></li>
+                                <li><button type="button" disabled>5</button></li>
+                                <li><button type="button">6</button></li>
+                                <!-- [수정 221223] 접근성 : span 태그 추가-->
+                                <li><button type="button" class="-active">7 <span class="hide">선택됨</span></button></li>
+                                <li><button type="button">8</button></li>
+                                <li><button type="button">9</button></li>
+                                <!-- [수정 221223] 접근성 : span 태그 추가-->
+                                <li><button type="button" class="-today">10 <span class="hide">오늘</span></button></li>
+                                <li><button type="button">11</button></li>
+                                <li><button type="button">12</button></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+    </script>
+</body>
+</html>

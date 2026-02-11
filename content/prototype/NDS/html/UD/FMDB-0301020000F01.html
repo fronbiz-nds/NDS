@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">타이틀</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="progress-box">
+                        <div class="progress">
+                            <!--
+                                style 속성에서 사용되는 CSS 전용 변수로 게이지 컨트롤
+                                --current : 현재 표시되야 하는 수치
+                                    --max : 최대 수치
+                                게이지가 차오르는 값을 css로 지정 합니다 %, 실수치, 모두 가능 ( ※게이지계산식 : 100% * ( --current / --max ) )
+                                (단, 숫자 정수값만 사용할 것)
+                            -->
+                            <div class="bar" style="--current:6; --max:12;">
+                                <div class="gauge">
+                                    <!-- 접근성 관련 텍스트 동적 변경 필요 --> 
+                                    <span class="hide"> 12단계 중 3번째</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="h2-group">                        
+                        <h2 class="h2">
+                            과세유형을 선택해 주세요
+                        </h2>
+                    </div>
+
+                    <div class="case-wrap">
+                        <div class="field">
+                            <div class="box-radios -box -lg">
+                                <div class="box-radio">
+                                    <input type="radio" name="period-point-color2" id="period-point-color2-1">
+                                    <label for="period-point-color2-1">일반과세</label>
+                                </div>
+                                <div class="box-radio">
+                                    <input type="radio" name="period-point-color2" id="period-point-color2-2" checked>
+                                    <label for="period-point-color2-2">비과세종합저축</label>
+                                </div>
+                            </div>
+
+                            <p class="info">비과세종합저축 대상자 
+                                <span class="tooltip">
+                                    <button type="button" class="trigger">
+                                        <span class="hide">툴팁</span>
+                                    </button>
+                                    <span class="panel">
+                                        <span class="t-content">
+                                            <span class="dot">65세 이상인 거주자</span>
+                                            <span class="dot">장애인복지법 제32조 규정에 의하여 등록한 장애인</span>
+                                            <span class="dot">독립유공자 예우에 관한 법률 제6조의 규정에 의하여 등록한 독립유공자와 그 유족 또는 가족</span>
+                                            <span class="dot">국가유공자 등 예우 및 지원에 관한 법률 제6조의 규정에 의하여 등록한 상이자</span>
+                                            <span class="dot">국민기초생활보장법 제2조 제2호의 규정에 의한 수급자</span>
+                                            <span class="dot">고엽제후유증 등 환자지원 및 단체설립에 관한 법률 제2조 제3호의 규정에 의한 고엽제후유증 환자</span>
+                                        </span>
+                                    </span> 
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="field">
+                            <p class="label -tooltitle">비과세종합저축 신청
+                                <span class="tooltip">
+                                    <button type="button" class="trigger">
+                                        <span class="hide">툴팁</span>
+                                    </button>
+                                    <span class="panel">
+                                        <span class="title">보험계약 상세조회</span>
+                                        <span class="t-content">
+                                            <span class="dot">우대금리는 대출 만기까지 적용됩니다.</span>
+                                            <span class="dot">우대금리는 대출 만기까지 적용됩니다.</span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </p>
+                            <div class="box-radios -box -lg">
+                                <div class="box-radio">
+                                    <input type="radio" name="period-point-color15" id="tab015" checked>
+                                    <label for="tab015">신청</label>
+                                </div>
+                                <div class="box-radio">
+                                    <input type="radio" name="period-point-color15" id="tab025">
+                                    <label for="tab025">신청 안함</label>
+                                </div>
+                            </div>
+                            <p class="info">비과세 종합저축 대상자
+                                <span class="tooltip">
+                                    <button type="button" class="trigger">
+                                        <span class="hide">툴팁</span>
+                                    </button>
+                                    <span class="panel">
+                                        <span class="title">보험계약 상세조회</span>
+                                        <span class="t-content">
+                                            <span class="dot">우대금리는 대출 만기까지 적용됩니다.</span>
+                                            <span class="dot">우대금리는 대출 만기까지 적용됩니다.</span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="field load-data">
+                            <div class="data-box" id="data-rd">
+                                <div class="data-box-title">나의 잔여한도</div>
+                                <div class="data-box-content">8,400,000P</div>
+                            </div>
+                            <p class="info">2020년 1월 1일 이후 3개의 과세기간 중 하나 이상의 과세기간이 금융소득 종합과세대상자에 해당될 경우 비과세종합저축 가입대상에서 제외됩니다. 이후 관련 법령에서 정하는 절차에 따라 비과세종합저축이 일반과세로 전환됩니다.
+                            </p>
+                        </div>
+                        
+                        <!-- [CASE]비과세, 만기알림, 쿠폰, 포인트, 재예치 신청/권유직원 선택 시 화면 -->
+                        <div class="field input">
+                            <label for="text01" class="label">비과세종합저축 한도 설정</label> 
+                            <div class="mix price-won">
+                                <div class="text -won -unit">
+                                    <input type="tel" id="text01" class="right num-call" value="500,000" aria-haspopup="true" readonly>
+                                    <div class="won comb-del">원</div>
+                                    <button class="clear" type="button" style="z-index: -1;"><div class="hide">입력 내용 삭제</div></button>
+                                </div>
+                                <div class="info-wrap">
+                                    <p class="info right point">오십만원</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //[CASE]비과세, 만기알림, 쿠폰, 포인트, 재예치 신청/권유직원 선택 시 화면 -->
+
+                        <div class="field input">
+                            <label for="field20" class="label">출금계좌 비밀번호</label>
+                            <div class="text -password">
+                                <input type="password" class="num-call" id="field20" value="1212" aria-haspopup="true" readonly placeholder="비밀번호 4자리 입력" maxlength="4">
+                                <button class="clear" type="button" style="z-index: -1;"><div class="hide">입력 내용 삭제</div></button>
+                            </div>
+                            <div class="checkbox -sm">
+                                <input type="checkbox" id="checkbox-sm-checked01">
+                                <label for="checkbox-sm-checked01">출금계좌와 동일하게 비밀번호 설정</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+    </script>
+</body>
+</html>

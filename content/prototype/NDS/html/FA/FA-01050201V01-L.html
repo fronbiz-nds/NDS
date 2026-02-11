@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+
+	<link rel="stylesheet" href="../../../../assets/libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+	<div id="layer" class="layer">
+		<div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">예금주 확인</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="field input">
+                        <div class="text -basic">
+                            <input type="text" id="tex" value="" placeholder="예금주명을 입력해 주세요">
+                        </div>
+                    </div>
+
+                    <div class="field input mt-12">
+                        <div class="text -basic">
+                            <input type="tel" id="tex1" value="" placeholder="11자리만 입력해 주세요">
+                            <p class="info">예금주의 성함과 일치하지 않으면, 입금이 되지 않습니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../../assets/libs/scrollout/dist/scroll-out.min.js"></script>
+	<script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../../../assets/js/common-ui.js"></script>
+	<script>
+		Layer.open('layer');
+	</script>
+</body>
+</html>

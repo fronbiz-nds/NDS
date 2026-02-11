@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>내 정보 수정</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">ARS인증</h1>
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">                                       
+                    <div class="h2-group">                        
+                        <h2 class="h2">
+                            e금융 가입자 인증을 진행해 주세요
+                        </h2>
+                    </div>
+
+                    <div class="field">
+                        <p class="label">등록된 전화번호 선택</p>
+                        <div class="select -basic -filled">
+                            <button type="button" aria-haspopup="true" title="등록된 전화번호 선택">010-****-4999</button>
+                        </div>
+                    </div>
+
+                    <div class="btn-wrap24">
+                        <button type="button" class="button -tertiary -rg">전화승인요청</button>
+                    </div>
+
+                    <div class="case-wrap">
+                        <div class="auth-number">
+                            <p class="title -label">인증번호</p>
+                            <p class="time">00:00
+                                <span class="hide" aria-live="polite" role="text"><span>3</span>분 남았습니다</span>
+                            </p>
+                            <div class="message-box-wrap">
+                                <p class="value">_ _</p>
+    
+                                <!-- [CASE] 인증번호 입력 활성화 후
+                                <p class="value">50</p> -->
+    
+                                <p class="desc">
+                                    ARS 음성 안내를 듣고<br>
+                                    전화기에 위 인증번호를 입력하세요.
+                                </p>
+    
+                                <!-- [CASE] ARS 인증 시간 초과시
+                                <p class="desc">
+                                    전화승인 시간이 초과되었습니다.<br>
+                                    다시 시도하여 주시기 바랍니다.
+                                </p> -->
+    
+                                <!-- [CASE] ARS 인증 거래 중단시
+                                <p class="desc">
+                                    전화연결이 끊어져서 거래가 중단되었습니다.<br>
+                                    잠시 후 다시 시도하여 주시기 바랍니다.
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="case-wrap">
+                            <p class="caption center">본인명의 휴대폰이 아닐 경우(예 : 법인폰 등)
+                                <span class="tooltip">
+                                    <button type="button" class="trigger">
+                                        <span class="hide">툴팁</span>
+                                    </button>
+                                    <span class="panel">
+                                        <span class="t-content">
+                                            전자금융사기예방 서비스에 가입된 전화번호로 ARS인증을 받으시면 e금융 가입자 인증을 하실 수 있습니다
+                                        </span>
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

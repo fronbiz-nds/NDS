@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+    <!-- 차트 관련css -->
+    <link rel="stylesheet" href="../../../../assets/libs/Chart/dist/Chart.css">
+    <link rel="stylesheet" href="../../../../assets/libs/Chart/dist/Chart.min.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">포트폴리오 리밸런싱</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="h2-group">
+                        <h2 class="h2">포트폴리오 상품을 확인해 주세요</h2>
+                    </div>
+
+                    <div class="segments -bar">
+                        <div class="outer">
+                            <div class="inner">
+                                <div role="tablist" class="list">
+                                    <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel3" id="segment3">NH로보 포트폴리오</button></div>
+                                    <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel4" id="segment4">전문가 포트폴리오</button></div>
+                                    <span class="switcher" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="segments-panels">
+                        <div role="tabpanel" aria-labelledby="segment1" id="segments-panel3" class="segments-panel -active" tabindex="0">
+                            <p class="grade-notice">40대 이하 <span class="-grade3">위험중립형</span>에 적합한 상품입니다.</p>
+
+                            <h4 class="h4">리밸런싱 추천
+                                <span class="tooltip">
+                                    <button type="button" class="trigger">
+                                        <span class="hide">툴팁</span>
+                                    </button>
+                                    <span class="panel">
+                                        <span class="t-content">
+                                            <span>리밸런싱(Rebalancing)이란 운용자금의 일시적 증가 혹은 시장상황의 변경에 합리적으로 대응하기 위해 고객 포트폴리오를 수정하여 미래 수익의 극대화를 위한 운용상품 조정을 의미합니다.</span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </h4>
+
+                            <div class="card -sum">
+                                <dl class="dl -box">
+                                    <div>
+                                        <dt>현재 포트폴리오</dt>
+                                        <dd>(NH전문가)위험중립형e (020031052021032)</dd>
+                                    </div>
+                                    <div>
+                                        <dt>추천 포트폴리오</dt>
+                                        <dd>(NH로보)40대미만 위험중립형e (010231052021032)</dd>
+                                    </div>
+                                    <div>
+                                        <dt>계좌번호</dt>
+                                        <dd>090-0135-0484-11</dd>
+                                    </div>
+                                    <div>
+                                        <dt>가입일자</dt>
+                                        <dd>2022.12.12</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            
+                            <div class="case-wrap -xs">
+                                <div class="chart-both">
+                                    <div class="chart-area">
+                                        <p class="chart-title -xxs">현재</p>
+                                        <canvas id="bar-chart1" width="20" height="136" aria-label=""></canvas> <!-- 임시 높이값 -->
+                                        <div class="chart-labels -stack-bar">
+                                            <p class="chart-label">유동성 10%</p>
+                                            <p class="chart-label">해외채권혼합 20%</p>
+                                            <p class="chart-label">해외채권 20%</p>
+                                            <p class="chart-label">국내채권 30%</p>
+                                            <p class="chart-label">해외이머징주식 20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="chart-area">
+                                        <p class="chart-title -xxs">추천</p>
+                                        <canvas id="bar-chart2" width="20" height="136" aria-label=""></canvas> <!-- 임시 높이값 -->
+                                        <div class="chart-labels -stack-bar">
+                                            <p class="chart-label">해외채권혼합 40%</p>
+                                            <p class="chart-label">해외채권 10%</p>
+                                            <p class="chart-label">국내채권 50%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="case-wrap -xs">
+                                <div class="table">
+                                    <table>
+                                        <caption><span class="hide">리밸런싱 포트폴리오 상세</span></caption> <!-- 240503 표제목 수정 -->
+                                        <colgroup>
+                                            <col style="width:33.3%">
+                                            <col style="width:33.3%">
+                                            <col style="width:33.3%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">현재</th>
+                                                <th scope="col">추천</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">기대수익률</th>
+                                                <td>2.53%</td>
+                                                <td>2.33%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">원금손실확률</th>
+                                                <td>7.5%</td>
+                                                <td>36.42%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="case-wrap">
+                                <div class="title-group">
+                                    <div class="inner">
+                                        <h4 class="h4">상품별 내역</h4>
+                                    </div>
+                                    <a href="javascript:void(0)" class="button-arrow-right wd-auto">포트폴리오 변경</a>
+                                </div>
+                                <div class="box-radios -lg">
+                                    <div class="box-radio">
+                                        <input type="radio" name="period1" id="box-radio1-1" checked>
+                                        <label for="box-radio1-1">현재 포트폴리오</label>
+                                    </div>
+                                    <div class="box-radio">
+                                        <input type="radio" name="period1" id="box-radio1-2">
+                                        <label for="box-radio1-2">추천 포트폴리오</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- [CASE] 현재 포트폴리오 선택 시 노출 -->
+                            <div class="case-wrap -xs">
+                                <div class="mixed-data">
+                                    <ul>
+                                        <li>
+                                            <div class="account card -list">
+                                                <div class="badges">
+                                                    <span class="badge line-cobalt">매우낮은위험</span>
+                                                </div>
+                                                <div class="info">
+                                                    <span class="name">
+                                                        <span>(DC/IRP)광주은행 정기예금 1년</span>
+                                                    </span>
+                                                </div>
+                                                <dl class="dl">
+                                                    <div>
+                                                        <dt>평가금액</dt>
+                                                        <dd>9,938원</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>운용비율</dt>
+                                                        <dd>49.9%</dd>
+                                                    </div>
+                                                </dl>    
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="account card -list">
+                                                <div class="badges">
+                                                    <span class="badge line-lightblue">보통위험</span>
+                                                </div>
+                                                <div class="info">
+                                                    <span class="name">
+                                                        <span>우리GPIMCO토탈리턴증권자투자신탁[채권_재간접형](H)ClassPe1</span>
+                                                    </span>
+                                                </div>
+                                                <dl class="dl">
+                                                    <div>
+                                                        <dt>평가금액</dt>
+                                                        <dd>2,976원</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>운용비율</dt>
+                                                        <dd>14.94%</dd>
+                                                    </div>
+                                                </dl>    
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="account card -list">
+                                                <div class="badges">
+                                                    <span class="badge line-cobalt">매우낮은위험</span>
+                                                </div>
+                                                <div class="info">
+                                                    <span class="name">
+                                                        <span>농협현금성자산(대기자금)</span>
+                                                    </span>
+                                                </div>
+                                                <dl class="dl">
+                                                    <div>
+                                                        <dt>평가금액</dt>
+                                                        <dd>5,000원</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>운용비율</dt>
+                                                        <dd>25.11%</dd>
+                                                    </div>
+                                                </dl>    
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- // [CASE] 현재 포트폴리오 선택 시 노출 -->
+                            
+                            <div class="btn-wrap24">
+                                <div class="buttons -half">
+                                    <button type="button" class="button -tertiary -rg">포트폴리오 성과조회</button>
+                                    <button type="button" class="button -tertiary -rg">투자 시뮬레이션</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" aria-labelledby="segment2" id="segments-panel4" class="segments-panel" tabindex="0">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg -primary">다음</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <!-- 차트 관련js -->
+    <script src="../../../../assets/libs/Chart/dist/Chart.js"></script>
+    <script src="../../../../assets/libs/Chart/dist/Chart.min.js"></script>
+    <script>
+        var barChart1 = document.getElementById('bar-chart1');
+        var chart1 = new Chart(barChart1, {
+            type: 'bar',
+            // 데이터 집합
+            data : {
+                labels: ['현재'],
+                datasets: [{
+                    label: '다섯번째',
+                    data: [20],
+                    // 도넛, 막대 그래프 컬러 순서 : 1.#5a5fd8, 2.#ff8a65, 3.#2bc4c0, 4.#ffcb3e, 5.#218fef, 6.#974bbf, 7.#7fde7b
+                    backgroundColor: '#218fef',
+                },{
+                    label: '네번째',
+                    data: [20],
+                    backgroundColor: '#ffcb3e',
+                },{
+                    label: '세번째',
+                    data: [20],
+                    backgroundColor: '#2bc4c0',
+                },{
+                    label: '두번째',
+                    data: [20],
+                    backgroundColor: '#ff8a65',
+                },{
+                    label: '첫번째',
+                    data: [20],
+                    backgroundColor: '#5a5fd8',
+                }]
+            },
+            //설정
+            options: {
+                responsive: false,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                    enabled: false,
+                },
+                legend: {
+                    display : false
+                },
+                scales:{
+                    xAxes:[{
+                        display: false,
+                        stacked: true,
+                    }],
+                    yAxes:[{
+                        display: false,
+                        stacked: true,
+                    }]
+                },
+            }
+        })
+
+        var barChart2 = document.getElementById('bar-chart2');
+        var chart2 = new Chart(barChart2, {
+            type: 'bar',
+            // 데이터 집합
+            data : {
+                labels: ['추천'],
+                datasets: [{
+                    label: '세번째',
+                    data: [50],
+                    // 도넛, 막대 그래프 컬러 순서 : 1.#5a5fd8, 2.#ff8a65, 3.#2bc4c0, 4.#ffcb3e, 5.#218fef, 6.#974bbf, 7.#7fde7b
+                    backgroundColor: '#2bc4c0',
+                },{
+                    label: '두번째',
+                    data: [10],
+                    backgroundColor: '#ff8a65',
+                },{
+                    label: '첫번째',
+                    data: [40],
+                    backgroundColor: '#5a5fd8',
+                }]
+            },
+            //설정
+            options: {
+                responsive: false,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                    enabled: false,
+                },
+                legend: {
+                    display : false
+                },
+                scales:{
+                    xAxes:[{
+                        display: false,
+                        stacked: true,
+                    }],
+                    yAxes:[{
+                        display: false,
+                        stacked: true,
+                    }]
+                },
+            }
+        })
+    </script>
+</body>
+</html>

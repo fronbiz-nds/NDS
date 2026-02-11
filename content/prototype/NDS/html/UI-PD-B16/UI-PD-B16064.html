@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+
+	<link rel="stylesheet" href="../../../../assets/libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+			<header class="header">
+				<div class="inner">
+					<div class="funcs">
+						<button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+					</div>
+
+					<h1 class="title">칭찬/불만/제안</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -home"><span class="hide">홈</span></button>
+						<button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+					</div>
+				</div>
+			</header>
+			<main class="contents">
+				<div class="content">
+					<h2 class="h2">농협은행을 이용하시면서 느끼신<br>
+						칭찬, 불만, 제안을 들려주세요
+					</h2>
+					<a href="javascript:void(0)" class="button-arrow-right">고객의 소리 접수 안내</a>
+
+					<div class="field input">
+						<label for="tex" class="label">성명</label>
+						<div class="text -basic">
+							<input type="text" id="tex" value="" placeholder="홍길동" readonly>
+						</div>
+					</div>
+
+					<div class="field input">
+						<label for="tex11" class="label">휴대폰번호</label>
+						<div class="text -basic">
+							<input type="tel" id="tex11" value="01012345678" placeholder="휴대폰번호" readonly>
+						</div>
+					</div>
+
+					<div class="field">
+						<p class="label">고객의 소리 유형</p>
+						<div class="select -basic">
+							<button type="button" aria-haspopup="true" class="fc-empty">칭찬/불만/제안 중 선택해 주세요</button>
+						</div>
+					</div>
+
+					<div class="field">
+						<label for="tex112" class="label">답변 확인방법</label>
+						<div class="box-radios -box -lg" role="tablist">
+							<div class="box-radio">
+								<input type="radio" name="period-point-color15" id="tab015">
+								<label for="tab015">올원뱅크</label>
+							</div>
+							<div class="box-radio">
+								<input type="radio" name="period-point-color15" id="tab025" checked="">
+								<label for="tab025">올원뱅크+이메일</label>
+							</div>
+						</div>
+						<div class="text -basic">
+							<input type="text" id="tex112" value="abc123@gmail.com" placeholder="">
+						</div>
+					</div>
+
+					<div class="field search">
+						<label for="searchce" class="label">직원명</label>
+						<div class="mix">
+							<div class="text">
+								<input type="text" class="left-side" id="searchce" placeholder="검색해주세요">
+							</div>
+					
+							<div class="space -lined search">
+								<button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="field search">
+						<label for="searchce" class="label">영업점</label>
+						<div class="mix">
+							<div class="text">
+								<input type="text" class="left-side" id="searchce" placeholder="검색해주세요">
+							</div>
+					
+							<div class="space -lined search">
+								<button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="case-wrap">
+						<div class="box">
+                            <p class="p">[농협은행 주식회사 귀중] 귀 행과의 「고객의 소리(칭찬, 제안, 불만, 민원)」 의 접수·처리 및 상담업무와 관련하여 귀 행이 본인의 개인(신용)정보를 수집·이용하거나 제3자에게 제공하고자 하는 경우에는「신용정보의 이용 및 보호에 관한 법률」, 「개인정보보호법」등 관계 법령에 따라 본인의 동의가 필요합니다.
+							</p>
+                        </div>
+					</div>
+
+					<div class="case-wrap -xs">
+						<div class="agree">
+                            <div class="title">
+                                <div class="checkbox -sm">
+                                    <input type="checkbox" id="total">
+                                    <label for="total">개인(신용)정보 수집·이용 동의</label>
+                                </div>
+                                <button type="button"><span class="hide">개인(신용)정보 수집·이용 동의 약관</span></button>
+                            </div>
+                        </div>
+					</div>
+
+					<div class="case-wrap -xs">
+						<p class="p center">위 개인(신용)정보 수집·이용에 동의합니다.</p>
+					</div>
+
+					<hr class="hr content-8 mtb-40">
+
+					<div class="field input">
+						<label for="tex77" class="label">문의 제목</label>
+						<div class="text -basic">
+							<input type="text" id="tex77" value="" placeholder="제목을 작성해주세요. (최대 20자)">
+							<div class="text-count">
+								<span class="count point">0</span>
+								<span class="total">20</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="field textfield">
+						<label for="textarea" class="label">문의 내용</label>
+						<div class="textarea">
+							<textarea id="textarea" placeholder="내용을 작성해주세요. (최대 5000자)"></textarea>
+							<div class="text-count">
+								<span class="count point">0</span>
+								<span class="total">5000</span>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+                <div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -tertiary -lg">취소</button>
+						<button type="button" class="button -primary -lg">접수하기</button>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../../assets/libs/scrollout/dist/scroll-out.min.js"></script>
+	<script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../../../assets/js/common-ui.js"></script>
+	<script>
+		// 스크립트 추가
+	</script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+
+	<link rel="stylesheet" href="../../../../assets/libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+			<header class="header">
+				<div class="inner">
+					<div class="funcs">
+						<button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+					</div>
+
+					<h1 class="title"></h1>
+
+					<div class="funcs">
+						<button type="button" class="func"><span>취소</span></button>
+					</div>
+				</div>
+			</header>
+			<main class="contents">
+				<div class="content">
+					<div class="h2-group">
+						<h2 class="h2">
+							누구에게 보낼까요?
+						</h2>
+					</div>
+					
+					<div class="field">
+						<div class="mix">
+							<div class="select -currency -filled">
+								<button type="button" aria-haspopup="true" title="통화 선택"><span data-bankcode="011" class="-sm"></span>NH농협은행</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="field input mt-12">
+						<div class="text -basic">
+							<input type="text" id="tex" value="" placeholder="계좌번호를 입력해 주세요">
+						</div>
+					</div>
+
+					<div class="btn-wrap24">
+						<button type="button" class="button -primary -rg" disabled>다음</button>
+					</div>
+
+					<div class="tab middle-tabs mt-32">
+						<div class="outer">
+							<div class="inner">
+								<div role="tablist" class="list">
+									<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="middle-tabs-panel1" id="middle-tab1">최근</button></div>
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="middle-tabs-panel2" id="middle-tab2">자주</button></div>
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="middle-tabs-panel3" id="middle-tab3">내계좌</button></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="middle-tabs-panels">
+						<div role="tabpanel" aria-labelledby="middle-tab1" id="middle-tabs-panel1" class="middle-tabs-panel -active" tabindex="0">
+							<div class="right mb-24">
+								<!-- <button type="button" class="button -tertiary -xs -fitted ml-auto">삭제하기</button> -->
+								<a href="javascript:void(0)" class="a underline">삭제하기</a>
+							</div>
+							<div class="selection remittance">
+								<ul>
+									<li>
+										<button type="button" data-bankcode="004" class="info">
+											<span class="name">
+												<span>김국민</span>
+											</span>
+											<span class="account-number">
+												<span>국민은행</span>
+												<span class="number">123412341234123</span> 
+											</span>
+										</button>
+										<div class="list-settings">
+											<div class="setting -favorite">
+												<input type="checkbox" id="favorite1" class="favorite-input">
+												<label for="favorite1" class="favorite-label"><span class="hide">즐겨찾기</span></label>
+											</div>
+										</div>
+									</li>
+									<li>
+										<button type="button" data-bankcode="011" class="info">
+											<span class="name">
+												<span>나농협</span>
+											</span>
+											<span class="account-number">
+												<span>NH농협</span>
+												<span class="number">123412341234123</span>
+											</span>
+										</button>
+										<div class="list-settings">
+											<div class="setting -favorite">
+												<input type="checkbox" id="favorite2" class="favorite-input">
+												<label for="favorite2" class="favorite-label"><span class="hide">즐겨찾기</span></label>
+											</div>
+										</div>
+									</li>
+									<li>
+										<button type="button" data-bankcode="020" class="info">
+											<span class="name">
+												<span>이우리</span>
+											</span>
+											<span class="account-number">
+												<span>우리은행</span>
+												<span class="number">1002125478901</span>
+											</span>
+										</button>
+										<div class="list-settings">
+											<div class="setting -favorite">
+												<input type="checkbox" id="favorite3" class="favorite-input">
+												<label for="favorite3" class="favorite-label"><span class="hide">즐겨찾기</span></label>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div role="tabpanel" aria-labelledby="middle-tab2" id="middle-tabs-panel2" class="middle-tabs-panel" tabindex="0">
+							<div class="empty result">
+								<p class="message">내역을 불러올 수 없습니다.</p>
+							</div>
+
+							<div class="empty result">
+								<p class="message">등록된 계좌가 없습니다.</p>
+							</div>
+						</div>
+
+						<div role="tabpanel" aria-labelledby="middle-tab3" id="middle-tabs-panel3" class="middle-tabs-panel" tabindex="0">
+							<div class="selection remittance">
+								<ul>
+									<li>
+										<button type="button" data-bankcode="011" class="info -fix">
+											<span>
+												<span>
+													<span class="name">
+														<span>콕! BASIC 통장</span>
+													</span>
+													<span class="account-number">
+														<span>NH농협은행</span>
+														<span>111-1234-5678-99</span>
+													</span>
+												</span>
+												<div class="amout-number">
+													<span class="amout-title">출금가능금액</span>
+													<span>100,000,000</span>원
+												</div>
+											</span>
+										</button>
+									</li>
+									<li>
+										<button data-bankcode="092" class="info -fix">
+											<span>
+												<span>
+													<span class="name">
+														<span>나의e모임통장이다</span>
+													</span>
+													<span class="account-number">
+														<span>NH농협은행</span>
+														<span>111-1234-5678-99</span>
+													</span>
+												</span>
+											</span>
+											<div class="balance">
+												<a href="javascript:void(0)" class="a -underline">잔액조회</a>
+											</div>
+										</button>
+									</li>
+									<li>
+										<button type="button" data-bankcode="011" class="info -fix">
+											<span>
+												<span>
+													<span class="name">
+														<span>콕! BASIC 통장</span>
+													</span>
+													<span class="account-number">
+														<span>NH농협은행</span>
+														<span>111-1234-5678-99</span>
+													</span>
+												</span>
+												<div class="amout-number">
+													<span class="amout-title">출금가능금액</span>
+													<span>100,000,000</span>원
+												</div>
+											</span>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</main>
+		</div>
+	</div>
+
+	<script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../../assets/libs/scrollout/dist/scroll-out.min.js"></script>
+	<script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../../../assets/js/common-ui.js"></script>
+	<script>
+		// 스크립트 추가
+
+		
+	// tab test
+	document.addEventListener("DOMContentLoaded", function () {
+    const tabItems = document.querySelectorAll(".list .item");
+    const tabPanels = document.querySelectorAll(".middle-tabs-panel");
+
+    tabItems.forEach((tab, index) => {
+        tab.addEventListener("click", function () {
+            tabItems.forEach((item) => item.classList.remove("-active"));
+            tabPanels.forEach((panel) => panel.classList.remove("-active"));
+
+            this.classList.add("-active");
+
+            tabPanels[index].classList.add("-active");
+        });
+    });
+});
+
+	</script>
+</body>
+</html>

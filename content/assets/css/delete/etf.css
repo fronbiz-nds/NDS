@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* 신탁 */
+
+.case-wrap.-xs2 {margin-top:1.6rem;}
+
+/* 설명의무 고객 확인 사항  */
+.custom-checkbox-wrap {display:flex; flex-wrap:wrap; padding-top:0.2rem;}
+.custom-checkbox-wrap .custom-checkbox span {display:block; position:absolute; top:calc(55% + 1rem);left:0; right:0; font-size:1.5rem; text-align:center; letter-spacing:-0.1rem; color:var(--F03);}
+.custom-checkbox-wrap .custom-checkbox:nth-child(2n) {margin-right:0;}
+.custom-checkbox-wrap .custom-checkbox {width:calc(100% / 2 - .6rem); height:10rem; margin:0 1.2rem 1.2rem 0;}
+.custom-checkbox-wrap .custom-checkbox label {width:100%; height:100%; border-radius:1rem; border:1px solid var(--border1); background:var(--G10); padding:0; display:inline-flex; flex:1; position:relative; color:var(--color-checkbox); font-size:1.6rem; word-break:break-all; cursor:pointer;}
+.custom-checkbox-wrap .custom-checkbox label:after {content:""; position:absolute; background:url(../imgs/ico/common/ico-checkbox.png) no-repeat .2rem / 2.4rem; transform:translateY(-50%);}
+.custom-checkbox-wrap .custom-checkbox.type01 label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/etf/ico-FMIA-0900000000F01-1g.png) no-repeat center center / 3.6rem auto; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type02 label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/etf/ico-FMIA-0900000000F01-2g.png) no-repeat center center / 3.6rem auto; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type03 label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/etf/ico-FMIA-0900000000F01-3g.png) no-repeat center center / 3.6rem auto; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type04 label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/etf/ico-FMIA-0900000000F01-4g.png) no-repeat center center / 3.6rem auto; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type05 label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/etf/ico-FMIA-0900000000F01-5g.png) no-repeat center center / 3.6rem auto; top:40%; left:50%; transform: translate(-50%, -50%);}
+
+.custom-checkbox-wrap .custom-checkbox.type01 input:checked ~ label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/etf/ico-FMIA-0900000000F01-1w.png) no-repeat center center / 3.6rem auto; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type02 input:checked ~ label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/etf/ico-FMIA-0900000000F01-2w.png) no-repeat center center / 3.6rem auto; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type03 input:checked ~ label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/etf/ico-FMIA-0900000000F01-3w.png) no-repeat center center / 3.6rem auto; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type04 input:checked ~ label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/etf/ico-FMIA-0900000000F01-4w.png) no-repeat center center / 3.6rem auto; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type05 input:checked ~ label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/etf/ico-FMIA-0900000000F01-5w.png) no-repeat center center / 3.6rem auto; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox input:checked ~ label {border:1px solid var(--point);}
+.custom-checkbox-wrap .custom-checkbox input {position:absolute; width:2.8rem; height:2.8rem; border-radius:50%; background-color:rgba(0,0,0,0);}
+
+/* 투자성향분석 icon */
+.invest-qna .answer-list .item .invest-unit.etf-icon1::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-1.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon2::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-2.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon3::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-3.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon4::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-4.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon5::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-5.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon6::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-6.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon7::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-7.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon8::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-8.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon9::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-9.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon10::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-10.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon11::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-11.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon12::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-12.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon13::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-13.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon14::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-14.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon15::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-15.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon16::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-16.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon17::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-17.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon18::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-18.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon19::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-19.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon20::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-20.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon21::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-21.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon22::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-22.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon23::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-23.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon24::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-24.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon25::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-25.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon26::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-26.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon27::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-27.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon28::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-28.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon29::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-29.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon30::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-30.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon31::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-30.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon32::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-19.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon33::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-31.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon34::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-16.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon35::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-32.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon36::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-33.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon37::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-34.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon38::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-35.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon39::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-36.png);}
+/* 투자성향분석 icon 다크모드 */
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon1::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-1_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon2::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-2_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon3::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-3_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon4::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-4_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon5::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-5_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon6::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-6_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon7::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-7_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon8::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-8_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon9::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-9_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon10::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-10_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon11::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-11_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon12::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-12_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon13::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-13_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon14::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-14_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon15::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-15_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon16::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-16_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon17::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-17_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon18::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-18_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon19::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-19_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon20::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-20_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon21::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-21_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon22::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-22_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon23::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-23_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon24::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-24_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon25::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-25_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon26::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-26_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon27::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-27_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon28::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-28_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon29::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-29_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon30::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-30_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon31::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-30_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon32::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-19_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon33::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-31_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon34::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-16_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon35::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-32_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon36::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-33_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon37::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-34_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon38::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-35_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon39::after {background-image:url(../imgs/img/etf/ico-FMIA-0400000000F01-36_dk.png);}
+
+/* 설명의무확인사항 icon */
+.invest-qna .answer-list .item .invest-unit.etf-icon40::after {background-image:url(../imgs/img/etf/ico-FMIA-0900000000F01-1.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon41::after {background-image:url(../imgs/img/etf/ico-FMIA-0900000000F01-2.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon42::after {background-image:url(../imgs/img/etf/ico-FMIA-0900000000F01-3.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon43::after {background-image:url(../imgs/img/etf/ico-FMIA-0900000000F01-4.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon40::after {background-image:url(../imgs/img/etf/ico-FMIA-0900000000F01-1_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon41::after {background-image:url(../imgs/img/etf/ico-FMIA-0900000000F01-2_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon42::after {background-image:url(../imgs/img/etf/ico-FMIA-0900000000F01-3_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon43::after {background-image:url(../imgs/img/etf/ico-FMIA-0900000000F01-4_dk.png);}
+
+/* 비예금상품 icon */
+.invest-qna .answer-list .item .invest-unit.etf-icon44::after {background-image:url(../imgs/img/etf/ico-FMIA-1100000000F01-1.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon45::after {background-image:url(../imgs/img/etf/ico-FMIA-1100000000F01-2.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon46::after {background-image:url(../imgs/img/etf/ico-FMIA-1100000000F01-3.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon47::after {background-image:url(../imgs/img/etf/ico-FMIA-1100000000F01-4.png);}
+.invest-qna .answer-list .item .invest-unit.etf-icon48::after {background-image:url(../imgs/img/etf/ico-FMIA-1100000000F01-5.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon44::after {background-image:url(../imgs/img/etf/ico-FMIA-1100000000F01-1_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon45::after {background-image:url(../imgs/img/etf/ico-FMIA-1100000000F01-2_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon46::after {background-image:url(../imgs/img/etf/ico-FMIA-1100000000F01-3_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon47::after {background-image:url(../imgs/img/etf/ico-FMIA-1100000000F01-4_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.etf-icon48::after {background-image:url(../imgs/img/etf/ico-FMIA-1100000000F01-5_dk.png);}
+
+.p.date-result {margin-top:1.2rem; font-size:1.4rem; color:var(--F04);}
+
+.jsSrveyWrap .field.jsSrveyCurrent ~ .field{display:none;}
+
+.li-blank {padding-left:5.66rem;}
+
+.call-loading {text-align:center;}
+.call-loading .call-img {width:14rem; height:14rem; margin:6.4rem auto 3.2rem; background:url(../imgs/img/utility/img-call-loading.png) no-repeat 0 0 / 14rem auto;}
+.call-loading .call-text {margin-top:2.4rem; color:var(--F01); font-size:2.2rem; font-weight:bold;}
+
+.w-three {width:calc(100% / 3 - .66rem);}
+
+.dl > .etf-dl dt {width:27%;}
+
+/* etf 체크박스 */
+.etf-checkbox {display:flex; position:relative;}
+.etf-checkbox input {position:absolute; width:2.8rem; height:2.8rem; top:0; left:0; border-radius:1rem; background-color:rgba(0,0,0,0);}
+.etf-checkbox label {min-height:2.8rem; position:relative; padding-left:3.8rem; color:var(--color-checkbox); font-size:1.6rem; word-break:break-all; cursor:pointer; letter-spacing: -.08rem; font-weight: 500; line-height:1.7}
+.etf-checkbox label:before {content:""; position:absolute; top:0; left:0; width:2.8rem; height:2.8rem; border:1px solid var(--border-checkbox); border-radius:1rem;}
+.etf-checkbox label:after {content:"";  position:absolute; top:0; left:0; width:2.8rem; height:2.8rem; border-radius:1rem; background:url(../imgs/ico/common/ico-checkbox-sm.png) no-repeat 0 / 2.8rem;}
+.etf-checkbox.-sm > label:before {content:""; position:absolute; top:0; left:0; width:2.4rem; height:2.4rem; border:1px solid var(--border-checkbox); border-radius:.8rem;}
+.etf-checkbox.-sm > label:after {content:"";  position:absolute; top:0; left:0; width:2.4rem; height:2.4rem; border-radius:.8rem; background:url(../imgs/ico/common/ico-checkbox-sm.png) no-repeat 0 / 2.4rem;}
+.etf-checkbox.-sm > input {position:absolute; width:2.4rem; height:2.4rem; top:50%; left:0; border-radius:1rem; background-color:rgba(0,0,0,0); transform: translateY(-50%);}
+.etf-checkbox.-sm > label {min-height:2.4rem; padding:0 0 0 3.2rem; font-size:1.6rem; line-height:1.5;width:100%;}
+.etf-checkbox.-sm > label > .label-state {margin-left:.4rem; color:var(--G07); text-decoration:underline;}
+.etf-checkbox.-sm > label > .label-state.-checking {color:var(--point);}
+.etf-checkbox.-sm > input:checked ~ label:after {background-image:url(../imgs/ico/common/ico-checkbox-sm-checked.png);}
+.etf-checkbox.-sm > input:checked:focus ~ label:after {-webkit-animation:checkbox-sm .3s ease-out; animation:checkbox-sm .3s ease-out;}
+.etf-checkbox input:checked ~ label:before {border-color:var(--border-checkbox-checked); background-color:var(--bg-checkbox-checked); transition:border .3s, background .3s;}
+.etf-checkbox input:checked ~ label:after {background-image:url(../imgs/ico/common/ico-checkbox-checked.png);}
+.etf-checkbox input:checked:focus ~ label:after {-webkit-animation:checkbox .3s ease-out; animation:checkbox .3s ease-out;}
+
+.etf-checkbox input[disabled] ~ label {color:var(--color-checkbox-disabled);}
+.etf-checkbox input[checked] ~ label {color:var(--color-checkbox);}
+.etf-checkbox input[disabled] ~ label:before {border-color: var(--border-checkbox-disabled); background-color:var(--bg-checkbox-disabled);}
+.etf-checkbox input[disabled]:checked ~ label:before {border-color:var(--border-checkbox-checked-disabled); background-color:var(--bg-checkbox-checked-disabled);}
+
+.etf-checkbox label .input {display:inline-block; position:relative; width:2.8rem; height:2.8rem;}
+.etf-checkbox label .input:before {content:""; position:absolute; top:0; left:0; width:2.8rem; height:2.8rem; background-color:var(--bg-checkbox); border:1px solid var(--border-checkbox); border-radius:50%;}
+.etf-checkbox label .input:after {content:""; position:absolute; top:0; left:0; width:2.8rem; height:2.8rem; border-radius:50%; background:url(../imgs/ico/common/ico-checkbox.png) no-repeat .2rem / 2.4rem;}
+.etf-checkbox input:checked ~ label .input:before {border-color:var(--border-checkbox-checked); background-color:var(--bg-checkbox-checked);}
+.etf-checkbox input:checked ~ label .input:after {background-image:url(../imgs/ico/common/ico-checkbox-checked.png);}
+.etf-checkbox input:checked:focus ~ label .input:after {-webkit-animation:checkbox .3s ease-out; animation:checkbox .3s ease-out;}
+
+@-webkit-keyframes checkbox {
+    0%   {width:0;}
+    50%  {width:1.25rem;}
+    100% {width:2.8rem;}
+}
+@keyframes checkbox {
+    0%   {width:0;}
+    50%  {width:1.25rem;}
+    100% {width:2.8rem;}
+}
+
+@-webkit-keyframes checkbox-sm {
+    0%   {width:0;}
+    50%  {width:1.1rem;}
+    100% {width:2.4rem;}
+}
+@keyframes checkbox-sm {
+    0%   {width:0;}
+    50%  {width:1.1rem;}
+    100% {width:2.4rem;}
+}
+
+.etf-checkbox input[disabled] ~ label .input:before {background-color:var(--bg-checkbox-disabled);}
+.etf-checkbox input[disabled]:checked ~ label .input:before {border-color:var(--border-checkbox-checked-disabled); background-color:var(--bg-checkbox-checked-disabled);}
+.etf-checkbox input[disabled]:checked ~ label .input:after {background:url(../imgs/ico/common/ico-checkbox-checked.png) no-repeat / 2.4rem;}
+
+.etf-label {margin-top:1.2rem; color:var(--F01); font-size:1.6rem; font-weight:600;}
+.etf-label .label-state {color:var(--G07); text-decoration:underline;}
+.etf-label .label-state.-checking {color:var(--point);}
+
+.limit-inquiry {padding:1.6rem 2rem; background-color:var(--G09); border-radius:1.2rem;}
+.limit-inquiry > .limit-amount {text-align:right; color:var(--F01); font-size:1.8rem; font-weight:bold;}
+.limit-inquiry > .limit-amount.-none {text-align:left; color:var(--F03); font-size:1.4rem; font-weight:normal;}
+.limit-btn {text-align:right; margin-top:1.2rem;}
+
+.field .mix .text.-percent .icon-plus {background:url(../imgs/img/utility/ico-input-plus.png) no-repeat 2rem center / 2.4rem auto;}
+.field .mix .text.-percent .icon-minus {background:url(../imgs/img/utility/ico-input-minus.png) no-repeat 2rem center / 2.4rem auto;}
+.field .mix .text.-percent .icon-plus input,
+.field .mix .text.-percent .icon-minus input {padding-left:4.8rem;}
+
+.deliberate-img {width:27.4rem; height:7.6rem; background:url(../imgs/img/etf/img-FMIB-0500000000F01-1.png) no-repeat 0 0 / 27.4rem auto;}
+.dark-mode .deliberate-img {width:27.4rem; height:7.6rem; background:url(../imgs/img/etf/img-FMIB-0500000000F01-1_dk.png) no-repeat 0 0 / 27.4rem auto;}
+.deliberate-info {color:var(--F04); font-size:1.3rem;}
+
+.product-box {padding:1.8rem 2rem; border-radius:1.6rem; background-color:var(--G09);}
+.product-box .title {color:var(--F01); font-size:1.6rem; font-weight:bold;}
+
+.ol.-step.-horizontal.-loan {display:flex; justify-content:space-between; padding:0; width:100%; margin-top:1.6rem; position:relative}
+.ol.-step.-horizontal.-loan > li {padding:0; min-height:8rem;}
+.ol.-step.-horizontal.-loan > li:before {border-color:transparent; right:0; left:auto; border:none; background:var(--G10);}
+.ol.-step.-horizontal.-loan > li:before {content:counter(step); counter-increment:step; display:inline-flex; justify-content:center; align-items:center; width:3rem; height:3rem; border:.1rem solid var(--G07); border-radius:2.4rem; color:var(--F04); font-weight:bold; font-size:1.2rem; letter-spacing:-0.01em; position:absolute; left:50%; transform:translateX(-50%); z-index:10; }
+.ol.-step.-horizontal.-loan > li::after {display: none;}
+.ol.-step.-horizontal.-loan::after {content:""; height:.2rem; background:url(../imgs/ico/common/ico-h-path.png) repeat left center / 3.8rem auto; position:absolute; left:.1rem; right:0; top:1.5rem; bottom:auto; z-index:0; border-right:0}
+
+.ol.-step.-loan {counter-reset:step;}
+.ol.-step.-loan > li {position:relative; min-height:4rem; padding-top:0.45rem; padding-left:4rem; color:var(--font2); font-size:1.4rem; padding-bottom:3.2rem;}
+.ol.-step.-loan > li:last-child {padding-bottom:0;}
+.ol.-step.-loan > li::after {content:""; width:0; border-right:1.5px dashed var(--G06); position:absolute; left:1.5rem; top:3rem; bottom:.1rem;}
+.ol.-step.-loan > li + li {margin-top:0;}
+.ol.-step.-loan > li:before {content:counter(step); counter-increment:step; display:inline-flex; justify-content:center; align-items:center; position:absolute; top:0; left:0; width:3rem; height:3rem; border:.1rem solid var(--G07); border-radius:50%; color:var(--F04); font-weight:bold; font-size:1.2rem; letter-spacing:-0.01em;}
+.ol.-step.-loan > li > .title {display:block; color:var(--font1); font-weight:500; font-size:1.6rem;}
+.ol.-step.-loan > li:last-child::after {display:none;}
+.ol.-step.-loan > li.-done:before {background-color:var(--G09); color:var(--F05);}
+.ol.-step.-loan > li.-ing:before {background-color:var(--P15); border-color:var(--P15); color:var(--G10);}
+.ol.-step.-loan > li.-ing > .title {color:var(--P15);}
+
+.box.-reserve-box {padding:1.8rem 1.6rem;}

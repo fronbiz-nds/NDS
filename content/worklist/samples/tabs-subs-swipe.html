@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+    <link rel="stylesheet" href="../../assets/css/util.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">타이틀</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -home"><span class="hide">홈</span></button>
+                        <button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <nav class="tabs">
+                    <div class="outer">
+                        <div class="inner">
+                            <ul class="list">
+                                <li class="item -active"><a href="javascript:void(0)">탭1</a></li>
+                                <li class="item"><a href="javascript:void(0)">탭2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="subs">
+                    <div class="outer">
+                        <div class="inner">
+                            <div role="tablist" class="list">
+                                <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="subs-panel1" id="sub1">탭1</button></div>
+                                <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel2" id="sub2">탭2</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content -wide">
+                    <div class="subs-panels">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+
+                                <div role="tabpanel" aria-labelledby="sub1" id="subs-panel1" class="swiper-slide subs-panel" tabindex="0">
+                                    패널1
+                                </div>
+
+                                <div role="tabpanel" aria-labelledby="sub2" id="subs-panel2" class="swiper-slide subs-panel" tabindex="0">
+                                    패널2
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+    </script>
+</body>
+</html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>금융상품몰 메인</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <!-- 메인페이지는 page 에 main-body 클래스 반드시 필요 (기본 body 배경색 : 회색) -->
+    <!-- 모앱 스마트뱅킹 접속시에는 body 에 smart-bank 클래스 필요 (홈버튼 아이콘, 메인 하단 링크 레이아웃 바뀜) -->
+    <div class="page main-body">
+        <div class="container">
+            <div class="navigation">
+                <header class="header top">
+                    <div class="inner main">
+                        <h1 class="title">금융상품몰</h1>
+    
+                        <div class="funcs">
+                            <button type="button" class="func -cart"><span class="hide">장바구니</span>
+                                <span class="cart-badge-wrap">
+                                    <span class="cart-num">2</span>
+                                    <span class="cart-badge"></span>
+                            </span></button>
+                            <button type="button" class="func -menu"><span class="hide">메뉴</span></button>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <!-- <header class="header">
+                <div class="inner">
+                    <h1 class="title">금융상품몰</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cart"><span class="hide">장바구니</span>
+                            <span class="cart-badge-wrap">
+                                <span class="cart-num">2</span>
+                                <span class="cart-badge"></span>
+                        </button>
+                        <button type="button" class="func -menu"><span class="hide">메뉴</span></button>
+                    </div>
+                </div>
+            </header> -->
+
+            <main class="contents">
+                <div class="content">
+                    <div class="main-content">
+                        <!-- 공지사항 -->
+                        <div class="notice-wrap">
+                            <div class="notice-dim"></div>
+                            <div class="notice-content">
+                                <div class="notice-banner-wrap">
+                                    <div class="notice-banner-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="notice-banner">
+                                                        <div class="notice-txt-wrap">
+                                                            <div class="inspect-title">시스템 점검 안내</div>
+                                                            <div class="inspect-date">5월 19일(일) 23:55~<br>5월 20일(월) 04:55</div>
+                                                            <div class="inspect-content">시스템 정기점검으로<br>서비스가 일시 중단 되오니<br>고객님의 양해를 부탁드립니다.</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="notice-banner">
+                                                        <img src="/content/assets/imgs/img/main/main-notice-01.png" alt="청년도약계좌 다시시작, 만기 도래한 청년희망적금! 청년도약계좌로 시작해 보세요 2024.05.01 ~ 2024.05.31">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div class="notice-banner">
+                                                        <img src="/content/assets/imgs/img/main/main-notice-02.png" alt="청년도약계좌 다시시작, 만기 도래한 청년희망적금! 청년도약계좌로 시작해 보세요 2024.05.01 ~ 2024.05.31">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="pagination-wrap">
+                                            <div class="notice-swiper-pagination"></div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="notice-bottom">
+                                    <a class="close term-close" href="javascript:void(0);" role="button">3일동안 보지 않기</a>
+                                    <a class="close" href="javascript:void(0);" role="button">닫기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // 공지사항 -->
+                        <!-- 배너영역 -->
+                        <div class="case-wrap top-bann">
+                            <div class="swiper swiper-number">
+                                <div class="swiper-container main-swiper">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide" >
+                                            <a href="javascript:void(0)" class="banner-swiper"
+                                                onclick="javascript:parent.fn_goAllOnePage_Template('ABCUP1804R',{'event_no':'3726'},'ABNHFIN_0002','나무카드 이벤트')">
+                                                <div class="wrap main-content type01">
+                                                    <div class="main-banner">
+                                                        <div class="hash-tag"><span>#목돈굴리기</span><span>#대표상품</span></div>
+                                                        <div class="banner-txt-wrap">
+                                                            <div class="prd-title">복잡한 우대조건없이<br>목돈을 굴릴수 있는</div>
+                                                            <div class="prd-sub">NH올원e예금</div>
+                                                        </div>
+                                                        <div class="banner-bottom">
+                                                            <span class="high"><span class="txt">최고</span><span class="num">2.80%</span></span>
+                                                            <span class="def"><span class="txt">기본</span><span class="num">2.80%</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">                                      
+                                            <a href="javascript:void(0)" class="banner-swiper"
+                                                onclick="javascript:parent.fn_goAllOnePage_Template('ABCUP1804R',{'event_no':'4063'},'ABNHFIN_0001','손해보험 이벤트')">
+                                                <div class="wrap main-content" style="background-color:#7f038d;">
+                                                    <div class="main-banner type02">
+                                                        <div class="hash-tag"><span>#전세대출</span><span>#갈아타기</span></div>
+                                                        <div class="banner-txt-wrap">
+                                                            <div class="prd-title">농협은행 전세대출<br>비교하고 갈아타자!</div>
+                                                            <div class="prd-sub">NH모바일전세대출+</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>                                  
+                                        </li>
+                                        <li class="swiper-slide">                                      
+                                            <a href="javascript:void(0)" class="banner-swiper"
+                                                onclick="javascript:parent.fn_goAllOnePage_Template('ABCUP1804R',{'event_no':'4063'},'ABNHFIN_0001','손해보험 이벤트')">
+                                                <div class="wrap main-content" style="background-color:#f8d0e7;">
+                                                    <div class="banner-content -ab-banner-1">
+                                                        배너
+                                                    </div>
+                                                </div>
+                                            </a>                                  
+                                        </li>
+                                    </ul>
+    
+                                    <div class="pagination-wrap indicator">
+                                        <div class="swiper-pagination">
+                                            <span class="swiper-pagination-current">1</span> <span class="swiper-pagination-total">3</span>
+                                        </div>
+                                        <a href="javascript:void(0);" class="button-stop" role="button">
+                                            <span class="hide">정지</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //배너영역 -->
+
+                        <!-- 상품검색 링크 -->
+                        <div class="search-link-wrap">
+                            <!-- <div class="search-title">금융상품을 검색해 보세요</div> -->
+                            <div class="outer">
+                                <a class="search-link-button" href="javascript:void(0);" role="button" aria-haspopup="true">
+                                    <div class="search-link">검색</div>
+                                </a>
+                                <div class="inner">
+                                    <ul class="list">
+                                        <li class="item"><a href="javascript:void(0);" role="button" class="hash-btn" aria-haspopup="true">#직장인</a></li>
+                                        <li class="item"><a href="javascript:void(0);" role="button" class="hash-btn" aria-haspopup="true">#개인사업자</a></li>
+                                        <li class="item"><a href="javascript:void(0);" role="button" class="hash-btn" aria-haspopup="true">#공무원</a></li>
+                                        <li class="item"><a href="javascript:void(0);" role="button" class="hash-btn" aria-haspopup="true">#전문직</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // 상품검색 링크 -->
+
+                        <!-- 알림영역, 비로그인시 비노출 -->
+                        <div class="main-info-wrap">
+                            <div class="info-inner">
+                                <span class="noti-ico"></span>
+                                    <p>나농협님 가입 중인 상품이 
+                                    <span class="bold">
+                                        <span id="btnBsnLoadCnt">3건</span>
+                                        <span class="toast-mini-wrap">
+                                            <span class="toast-mini" aria-hidden="true">이어서 가입할 수 있어요
+                                                <button type="button" class="pop-delete"><span class="hide">삭제</span></button>
+                                            </span>
+                                        </span> 
+                                    </span>
+                                     있어요</p>
+                            </div>
+                        </div>
+                        <!-- // 알림영역 -->
+
+                        <!-- 서비스 링크 -->
+                        <div class="service-link-wrap">
+                            <a class="service-link-button -transit" href="javascript:void(0);">
+                                <span class="service-name">입출금</span>
+                            </a>
+                            <a class="service-link-button -deposit" href="javascript:void(0);">
+                                <span class="service-name">예금</span>
+                            </a>
+                            <a class="service-link-button -saving" href="javascript:void(0);">
+                                <span class="service-name">적금</span>
+                            </a>
+                            <a class="service-link-button -housing" href="javascript:void(0);">
+                                <span class="service-name">주택청약</span>
+                            </a>
+                            <a class="service-link-button -fund" href="javascript:void(0);">
+                                <span class="service-name">펀드</span>
+                            </a>
+                            <a class="service-link-button -loan" href="javascript:void(0);">
+                                <span class="service-name">대출</span>
+                            </a>
+                            <a class="service-link-button -exchange" href="javascript:void(0);">
+                                <span class="service-name">외환</span>
+                            </a>
+                            <a class="service-link-button -retirement" href="javascript:void(0);">
+                                <span class="service-name">퇴직연금</span>
+                            </a>
+                            <a class="service-link-button -trust" href="javascript:void(0);">
+                                <span class="service-name">신탁</span>
+                            </a>
+                            <a class="service-link-button -isa" href="javascript:void(0);">
+                                <span class="service-name">ISA</span>
+                            </a>
+                            <a class="service-link-button -insurance" href="javascript:void(0);">
+                                <span class="service-name">보험</span>
+                            </a>
+                            <a class="service-link-button -goldbar" href="javascript:void(0);">
+                                <span class="service-name">골드/실버바</span>
+                            </a>
+                        </div>
+                        <!-- // 서비스 링크 -->
+
+                        <!-- 금융상품 비교하기 링크 -->
+                        <div class="compare-link-wrap">
+                            <a class="compare-link-button -loan01" href="javascript:void(0);">
+                                <div class="compare-title">나에게 맞는 대출을 찾아볼까요?</div>
+                                <div class="compare-sub">한번에 제휴사 대출상품 비교</div>
+                            </a>
+                        </div>
+                        <!-- // 금융상품 비교하기 링크 -->
+
+                        <!-- 신용대출 비교하기 링크 -->
+                        <div class="compare-link-wrap">
+                            <a class="compare-link-button -loan02" href="javascript:void(0);">
+                                <div class="compare-title">나에게 딱 맞는 대출을 찾아보세요</div>
+                                <div class="compare-sub">직장인 신용대출</div>
+                            </a>
+                        </div>
+                        <!-- // 신용대출 비교하기 링크 -->
+
+                        <!-- 상품 비교 50% -->
+                        <div class="insurance-link-wrap">
+                            <a class="insurance-link-button -bankbook" href="javascript:void(0);">
+                                <span class="main-text">이자가 쌓이는<br> 입출식통장</span>
+                                <span class="sub-text">NH올원e통장</span>
+                            </a>
+                            <a class="insurance-link-button -calc" href="javascript:void(0);">
+                                <span class="main-text">금리 비교하고<br> 똑똑하게 받자</span>
+                                <span class="sub-text">직장인 신용대출</span>
+                            </a>
+                        </div>
+                        <!-- //상품 비교 50% -->
+
+                        <!-- 상품 비교 100% -->
+                        <div class="link -horizontal shadow">
+                            <ul>
+                                <li><a href="javascript:void(0)">한번에 편하게 직장인을 위한 신용대출</a></li>
+                                <li><a href="javascript:void(0)" class="icon-man">한번에 편하게 직장인을 위한 신용대출</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link -horizontal bg-gray">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" class="lnik-row2 icon-man">
+                                        <div class="finding-tit">나에게 딱 맞는 대출을 찾아보세요</div>
+                                        <span class="finding-name">직장인 신용대출</span>
+                                    </a>
+                                </li>
+                                <li><a href="javascript:void(0)">한번에 편하게 직장인을 위한 신용대출</a></li>
+                            </ul>
+                        </div>
+                        <!-- // 상품 비교 100% -->
+
+                        <!-- [240516] 메인 하단 배너 추가 -->
+                        <!-- [240603] CMS 영역 관리 추가 -->
+                        <div class="loadArea" data-includ="/content/nhbank/html/main/FM_0000000000F01.html"></div>
+                        <!-- // [240603] CMS 영역 관리 추가 -->
+                        <!-- // [240516] 메인 하단 배너 추가 -->
+
+                        <!-- ============================================ 하단 마케팅 배너 타입 샘플 ============================================ -->
+
+                        <!-- 메인 하단배너 타입 1 -->
+                        <!-- <div class="main-bottom-banner type1">
+                            <a class="link-button" href="javascript:void(0);">
+                                <div class="title">나에게 딱 맞는 대출을 찾아보세요</div>
+                                <div class="sub">직장인 신용대출</div>
+                            </a>
+                        </div> -->
+                        <!-- // 메인 하단배너 타입 1 -->
+
+                        <!-- 메인 하단배너 타입 2 -->
+                        <!-- <div class="main-bottom-banner type2">
+                            <a class="link-button" href="javascript:void(0);">
+                                <div class="title">시작이 반이다!<br>똑똑한 내 집 마련</div>
+                                <div class="sub">주탁청약종합저축</div>
+                            </a>
+                            <a class="link-button" href="javascript:void(0);">
+                                <div class="title">1분이면<br>한도조회 OK!</div>
+                                <div class="sub">직장인 신용대출</div>
+                            </a>
+                        </div> -->
+                        <!-- // 메인 하단배너 타입 2 -->
+
+                        <!-- 메인 하단배너 타입 3 -->
+                        <!-- <div class="main-bottom-banner type3">
+                            <a class="link-button" href="javascript:void(0);">
+                                <div class="title">공무원 전용<br>비대면 즉시 대출</div>
+                            </a>
+                            <a class="link-button" href="javascript:void(0);">
+                                <div class="title">내가 가진 대출을<br>갈아탈수 있는 기회!</div>
+                            </a>
+                        </div> -->
+                        <!-- // 메인 하단배너 타입 3 -->
+
+                        <!-- 메인 하단배너 타입 4 -->
+                        <!-- <div class="main-bottom-banner type4">
+                            <a class="link-button" href="javascript:void(0);">
+                                <div class="title">한번에 편하게 직장인을 위한 신용대출</div>
+                            </a>
+                        </div> -->
+                        <!-- // 메인 하단배너 타입 4 -->
+
+                        <!-- 메인 하단배너 타입 5 -->
+                        <!-- <div class="main-bottom-banner type5">
+                            <a class="link-button" href="javascript:void(0);">
+                                <div class="title">한번에 편하게 제안하는 <span class="bold">직장인 신용대출</span></div>
+                            </a>
+                        </div> -->
+                        <!-- // 메인 하단배너 타입 5 -->
+
+                        <!-- 메인 하단배너 타입 6 -->
+                        <!-- <div class="main-bottom-banner type6">
+                            <a class="link-button" href="javascript:void(0);">
+                                <div class="title">나에게 딱 맞는 대출을 찾아보세요</div>
+                                <div class="sub">직장인 신용대출</div>
+                            </a>
+                        </div> -->
+                        <!-- // 메인 하단배너 타입 6 -->
+
+                        <!-- 메인 하단배너 타입 7 -->
+                        <!-- <div class="main-bottom-banner type7">
+                            <a class="link-button" href="javascript:void(0);">
+                                <div class="title">한번에 편하게 제안하는 <span class="bold">직장인 신용대출</span></div>
+                            </a>
+                        </div> -->
+                        <!-- // 메인 하단배너 타입 7 -->
+
+                        <!-- ============================================ // 하단 마케팅 배너 타입 샘플 ============================================ -->
+
+                        <!-- 메인 하단 링크 -->
+                        <div class="linked-bottom-menu">
+                            <a href="javascript:void(0);" class="linked-finance">홈</a>
+                            <a href="javascript:void(0);" class="linked-mall">상품몰</a>
+                            <a href="javascript:void(0);" class="linked-mydata">마이데이터</a>
+                            <a href="javascript:void(0);" class="linked-life">생활+</a>
+                        </div>
+                        <!-- [240404] 메인 footer 메뉴 스마트뱅킹 접속용 추가 요청 (사업부) -->
+                        <div class="linked-bottom-menu smart-bank-link">
+                            <a href="javascript:void(0);" class="linked-sbhome">홈</a>
+                            <a href="javascript:void(0);" class="linked-sbmydata">마이데이터</a>
+                            <a href="javascript:void(0);" class="linked-sbmall">금융상품몰</a>
+                            <a href="javascript:void(0);" class="linked-sbtalk">상담톡</a>
+                        </div>
+                        <!-- // [240404] 메인 footer 메뉴 스마트뱅킹 접속용 추가 요청 (사업부) -->
+                        <!-- // 메인 하단 링크 -->
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+
+        // 메인배너
+var swiper = new Swiper(".swiper-container.main-swiper" , {
+          pagination:  {
+            el: ".swiper-pagination",
+            clickable: true,
+            type: "fraction",
+        },
+        observer: true,
+        observerParents: true,
+        // autoplay:{
+        //     delay: 3000,
+        // },
+    });
+
+
+        // 배너 시작, 정지
+        // mainbanner.on('touchEnd', function (transitionEnd) {
+        //     var autoPlay = mainbanner.autoplay.running
+        //     if(autoPlay == false){
+        //         $('.pagination-wrap .button-stop').addClass('-active').find('.hide').text('시작');
+        //     };
+        // });
+
+        // $('.main-banner-wrap .button-stop').click(function(){
+        //     $(this).toggleClass('-active');
+        //     if($(this).hasClass('-active')){
+        //         $(this).find('.hide').text('시작');
+        //         mainbanner.autoplay.stop();
+        //     }
+        //     else {
+        //         $(this).find('.hide').text('정지');
+        //         mainbanner.autoplay.start();
+        //     }
+        // });
+
+        // 메인 배너 한개일 경우 비활성화
+        // if( $('.main-banner-wrap .swiper-slide').length <= 3 ){
+        //         $('.main-banner-wrap .swiper-wrapper').addClass('-disabled');
+        //         $('.main-banner-wrap .pagination-wrap').attr('aria-hidden','true');
+        //         mainbanner.destroy();
+        //     };
+
+        // 금융상품 검색
+        var searchInner = document.querySelector('.search-link-wrap .inner')
+        searchInner.addEventListener('scroll' ,function() {
+            if (searchInner.scrollLeft > 0) {
+                searchInner.parentNode.classList.add('-scroll-on')
+            } else {
+                searchInner.parentNode.classList.remove('-scroll-on')
+            }
+        })
+
+        //스크롤 이벤트, 하단 고정 메뉴 이벤트 document ready 후 실행 필요
+        // [240417] 가입중 상품 영역 상단으로 올라가면서 스크롤 이벤트 필요 없어짐, 삭제 요망
+        
+        $(document).ready(function(){
+            // 스크롤 이벤트
+            var footer = document.querySelector('.linked-bottom-menu');
+            var sbfooter = document.querySelector('.smart-bank-link');
+            var preScrollTop = 0;
+    
+            // function minitooltip(){
+            //     var bottom = document.querySelector('.linked-bottom-menu').getBoundingClientRect().height;
+            //     var vport = window.innerHeight - bottom;
+            //     var infoinner = document.querySelector('.info-inner');
+            //     var info = document.querySelector('.main-info-wrap').getBoundingClientRect().y + 40;
+            //     var toast= document.querySelector('.toast-mini');
+            //     if ( vport > info ) {
+            //         infoinner.classList.add('view-on');
+            //         toast.setAttribute('aria-hidden','false');
+            //         setTimeout(() => {
+            //             toast.setAttribute('aria-hidden','true');
+            //         }, 6000);
+            //     } 
+            // };
+            // minitooltip();
+            
+            // 하단 고정 메뉴
+            var scrolling;
+            var maincont = document.querySelector('.main-content');
+
+            window.addEventListener('scroll', function(){
+                var nextScrollTop = window.scrollY;
+                maincont.classList.remove('sc-stop');
+
+                if (preScrollTop < nextScrollTop) {
+                    footer.classList.add('down');
+                    footer.classList.remove('up');
+                    sbfooter.classList.add('down');
+                    sbfooter.classList.remove('up');
+                    // [240603] 사업부 추가요청 - 스크롤 멈췄을때 다시 올라오도록 추가
+                    clearTimeout(scrolling);
+                    scrolling = setTimeout(function(){
+                        maincont.classList.add('sc-stop');
+                    },500)
+                }else {
+                    footer.classList.add('up');
+                    footer.classList.remove('down');
+                    sbfooter.classList.add('up');
+                    sbfooter.classList.remove('down');
+                }
+                preScrollTop = nextScrollTop;                
+
+            });
+        });
+
+        // 공지사항
+        function notice() {
+            var notiwrap = document.querySelector('.notice-wrap');
+            notiwrap.classList.add('-active');
+            notiwrap.tabIndex = 0;
+            
+            //페이지 스크롤 잠김
+            document.querySelector('body').classList.add('lock');
+            
+            var noticebanner = new Swiper('.notice-banner-swiper',{
+                pagination : {
+                    el : '.notice-swiper-pagination',
+                    clickable :false,
+                    type:'fraction'
+                },
+                loop:true,
+                grabCursor:true,
+                observer : true,
+                observeParents : true,
+                effect:"creative",
+                creativeEffect: {
+                    prev:{
+                        shadow:true,
+                        translate: ['-100%', 0, -1]
+                    },
+                    next:{
+                        shadow:true,
+                        translate: ['100%', 0, 0]
+                    }
+                }
+            });
+            
+            notiwrap.addEventListener('click', function(e){
+                if(e.target.classList.contains('close')){
+                    notiwrap.classList.add('-out');
+                    setTimeout(function() {
+                        notiwrap.classList.remove('-active');
+                        notiwrap.classList.remove('-out');
+                    }, 1000);
+                    // 페이지 스크롤 해제
+                    document.querySelector('body').classList.remove('lock');
+                    notiwrap.tabIndex = -1;
+                }
+            });
+
+            // 공지 배너 한개일 경우 비활성화
+            if( $('.notice-banner-wrap .swiper-slide').length <= 3 ){
+                $('.notice-banner-wrap .swiper-wrapper').addClass('-disabled');
+                $('.notice-banner-wrap .pagination-wrap').attr('aria-hidden','true');
+                noticebanner.destroy();
+            };
+        }
+        // notice();
+
+        // 메인페이지 전용 클래스 추가 필요
+        $(document).ready(function(){
+            $('.page').addClass('main-body');
+        });
+
+
+        // test
+        let mainSwiperWrapper = document.querySelector('.main-swiper'); 
+        let swiperWrapper = mainSwiperWrapper.querySelector('.swiper-wrapper'); 
+        let slides = mainSwiperWrapper.querySelectorAll('.swiper-slide');
+        let totalSlides = mainSwiperWrapper.querySelectorAll('.swiper-slide').length; 
+        let swiperPaginationWrapper = mainSwiperWrapper.querySelector('.pagination-wrap'); 
+        let swiperPaginationCurrent = swiperPaginationWrapper.querySelector('.swiper-pagination-current'); 
+        let swiperPaginationTotal = swiperPaginationWrapper.querySelector('.swiper-pagination-total'); 
+        let stopButton = swiperPaginationWrapper.querySelector('.button-stop');
+
+        let currentIndex = 0; 
+        let isPaused = false;
+        swiperPaginationTotal.textContent = totalSlides; 
+
+        // 슬라이드에 접근성 텍스트
+        slides.forEach((slide, index) => { 
+            slide.setAttribute('aria-label', `5장 슬라이드 중 ${index + 1}번째 슬라이드`); 
+        });
+        
+        function updateSwiper() { 
+            swiperWrapper.style.transform = `translateX(-${currentIndex * 100}%)`; 
+            swiperPaginationCurrent.textContent = currentIndex + 1;
+        }
+
+        function togglePause() { 
+            isPaused = !isPaused; 
+            if (isPaused) { 
+                stopButton.classList.add('-pause'); 
+                stopButton.querySelector('.hide').textContent = '재생'; 
+                stopButton.setAttribute('aria-label', '재생');
+                clearInterval(swiperInterval); 
+            } else { 
+                stopButton.classList.remove('-pause'); 
+                stopButton.querySelector('.hide').textContent = '정지'; 
+                stopButton.setAttribute('aria-label', '정지');
+                swiperInterval = setInterval(nextSlide, 3000); 
+            } 
+        }
+
+        function nextSlide() { 
+            currentIndex = (currentIndex + 1) % totalSlides; 
+            updateSwiper();
+        }
+        
+        function prevSlide() { 
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; 
+            updateSwiper();
+        }
+
+        let swiperInterval = setInterval(nextSlide, 3000);
+
+        stopButton.addEventListener('click', togglePause); 
+        swiperPaginationCurrent.addEventListener('click', () => { 
+            clearInterval(swiperInterval); 
+            prevSlide(); 
+            if (!isPaused) { 
+                swiperInterval = setInterval(nextSlide, 3000); 
+            } 
+        }); 
+        
+        swiperPaginationTotal.addEventListener('click', () => { 
+            clearInterval(swiperInterval); 
+            nextSlide(); 
+            if (!isPaused) { 
+                swiperInterval = setInterval(nextSlide, 3000); 
+            }
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>상품상세</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+                    <h1 class="title">상품상세</h1>
+                    <div class="funcs">
+                        <button type="button" class="func -home"><span class="hide">홈</span></button>
+                        <button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner center">
+                    <h1 class="title">예금</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="product-detail-wrap">
+                        <!-- 상품 안내 영역 -->
+                        <div class="procuct-summary">
+                            <div class="info-area">
+                                <div class="title-area">
+                                    <h2>NH고향사랑기부예금</h2>
+                                    <div class="hashtag"><span>#농사랑/공헌</span></div>
+                                </div><!-- //.title-area -->
+                                
+                                <div class="subtitle-area">
+                                    <div class="product-cost-area">
+                                        <div class="inner">
+                                            <dl>
+                                                <dt>최고</dt>
+                                                <dd class="point">3.90%</dd>
+                                            </dl>
+                                            <span class="daesh">~</span>
+                                            <dl>
+                                                <dt>기본</dt>
+                                                <dd>3.10%</dd>
+                                            </dl>
+                                        </div>
+                                        <p class="cost-para">연/세전, 2024.01.05 기준</p>
+                                    </div>
+
+                                    <ul class="product-dl-list">
+                                        <li class="range">
+                                            <dl>
+                                                <dt>가입기간</dt>
+                                                <dd>12개월까지</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="cost">
+                                            <dl>
+                                                <dt>가입금액</dt>
+                                                <dd>1백만원 부터 제한없음</dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div><!-- //.subtitle-area -->
+
+                                <div class="top-join-btn"><button type="button" class="button -primary -md">가입하기</button></div>
+                            </div><!-- //.info-area -->
+
+                            <div class="loadArea" data-includ="../../../../nhbank/html/dt/dt10001196_de.html"></div>
+
+                            <!-- 금리 계산해보기 -->
+                            <div class="interest-calc-wrap">
+                                <div class="accordion -card" data-role="fold">
+                                    <button type="button" class="title -interest" data-role="marker">만기금액 미리 계산해보기</button>  
+                                    <div class="panel" data-role="hidden">
+                                        <div class="interest-calc-cont">
+                                            <!-- <div class="calc-row">
+                                                <span class="calc-para -front">만기 금액은 실제와 다를 수 있습니다.</span>
+                                            </div> -->
+                                            <div class="calc-row">
+                                                <span class="calc-para -front">총</span>
+                                                <span class="calc-input">
+                                                    <div class="mix">
+                                                        <div class="text -won" data-clear="false">
+                                                            <input type="tel" id="tt1" class="right num-call" aria-haspopup="true" placeholder="금액을 입력하세요" readonly>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <span class="calc-para">원을</span>
+                                            </div>
+                                            <div class="calc-row">
+                                                <span class="calc-input">
+                                                    <div class="mix">
+                                                        <div class="text" data-clear="false">
+                                                            <input type="tel" id="tt2" class="right num-call" aria-haspopup="true" placeholder="개월 입력" readonly>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <span class="calc-para">개월 동안 저축한다면?</span>
+                                            </div>
+                                            <div class="calc-btn-wrap"><button type="button" class="button -lg -secondary">계산해보기</button></div>
+                                            <div class="interest-calc-result">
+                                                <dl>
+                                                    <dt>세전</dt>
+                                                    <dd>1,040,500원</dd>
+                                                </dl>
+                                            </div>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //금리 계산해보기 -->
+                        </div><!-- //.procuct-summary -->
+                        <!-- //상품 안내 영역 -->
+
+                        <!-- 상품 정보 영역 -->
+                        <div class="procuct-info">
+                            <div class="segments -tabstyle">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div role="tablist" class="list">
+                                            <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel01" id="segment01">상품안내</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel02" id="segment02">우대금리</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel03" id="segment03">금리안내</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel04" id="segment04">유의사항</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel05" id="segment05">기타사항</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="segments-panels">
+                                <div role="tabpanel" aria-labelledby="segment01" id="segments-panel01" class="segments-panel -active" tabindex="0">
+                                    <dl class="prodect-info-dl">
+                                        <dt class="h4">상품특징</dt>
+                                        <dd>
+                                            <p class="p">고향사랑기부제 참여 시 우대금리를 제공하고 공익기금을 적립하는 지역사회공헌 상품</p>
+                                        </dd>
+
+                                        <dt class="h4">가입대상</dt>
+                                        <dd>
+                                            <p class="p">개인</p>
+                                        </dd>
+
+                                        <dt class="h4">가입기간</dt>
+                                        <dd>
+                                            <p class="p">1년(12개월) 가능</p>
+                                        </dd>
+
+                                        <dt class="h4">가입금액</dt>
+                                        <dd>
+                                            <p class="p">1백만원 이상 가입가능</p>
+                                        </dd>
+
+                                        <dt class="h4">예금종류</dt>
+                                        <dd>
+                                            <p class="p">큰만족실세예금(거치식예금)</p>
+                                        </dd>
+
+                                        <dt class="h4">적립방법</dt>
+                                        <dd>
+                                            <p class="p">일시예치</p>
+                                        </dd>
+
+                                        <dt class="h4">세제혜택안내</dt>
+                                        <dd>
+                                            <p class="p">비과세종합저축으로 가입 가능</p>
+                                        </dd>
+
+                                        <dt class="h4">이자지급안내</dt>
+                                        <dd>
+                                            <p class="p">만기일시지급, 월이자지급</p>
+                                        </dd>
+
+                                        <dt class="h4">가입/해지안내</dt>
+                                        <dd>
+                                            <div>
+                                                <ul class="ul -bullet">
+                                                    <li>가입 : 영업점, 비대면 채널</li>
+                                                    <li>해지 : 영업점, 비대면 채널</li>
+                                                </ul>
+                                            </div>
+                                        </dd>
+                                    </dl>
+
+                                </div>
+
+                                <div role="tabpanel" aria-labelledby="segment02" id="segments-panel02" class="segments-panel" tabindex="0">
+                                    <dl class="prodect-info-dl">
+                                        <dt class="h4">우대금리</dt>
+                                        <dd>
+                                            <p class="p mb-0">고향사랑기부제 참여 시 우대금리를 제공하고 공익기금을 적립하는 지역사회공헌 상품</p>
+                                            <div class="case-wrap -xxs">
+                                                <div class="table -horizontal -basic">
+                                                    <table>
+                                                        <caption><span class="hide">항목별 금리(%P)</span></caption>
+                                                        <colgroup>
+                                                            <col style="width:37%">
+                                                            <col style="width:37%">
+                                                            <col style="width:26%">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">항목</th>
+                                                                <th scope="col">내용</th>
+                                                                <th scope="col">금리(%P)</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>고향사랑기부우대</td>
+                                                                <td>고향사항기부금납부자</td>
+                                                                <td class="num">0.5</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>고령자 우대</td>
+                                                                <td>만 65세 이상 가입자</td>
+                                                                <td class="num">0.1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>청년(MZ세대)</td>
+                                                                <td>만19세이상 부터 만34세 이하 가입자</td>
+                                                                <td class="num">0.1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>범농협이용실적우대 <sup>주)</sup></td>
+                                                                <td>NH채움카드로 전국농협판매장 이용 또는 zgm 고향으로 카드 이용실적</td>  
+                                                                <td class="num">0.1</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="notewrap">
+                                                    <ul>
+                                                        <li>주) 가입 월부터 만기 전전월말까지 농협은행 NH채움(개인 신용/체크) 카드로 전국 농협판매장, 농협주유소 이용실적이 월 평균 5만원 이상 이거나, 농협은행 「zgm.고향으로카드」(개인 신용/체크) 월 평균 5만원 이상 이용실적이 있는 경우<br>* 이용실적은 카드 승인 기준(현금서비스 제외)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </dd>
+
+                                        <dt class="h4">고향사랑기부금 납부 우대금리 적용 방법</dt>
+                                        <dd>
+                                            <ul class="ul -bullet">
+                                                <li>농협은행(농축협 포함) 영업점 창구 또는 ‘고향사랑e음(http://ilovegohyang.go.kr)’ 사이트에서 고향사랑기부금을 납부한 경우 : 별도의 서류(고향사랑기부금 납부 증빙서류) 제출 없이 고향사랑기부 우대금리가 자동 반영<br>
+                                                    (단, 실시간 바로 반영되지 않고 일정기간 이후 반영)됩니다.</li>
+                                                <li>이 적금 가입연도 초일부터 만기전전월까지 고향사랑기부금을 납부한 경우에 한해 고향사랑기부 우대금리가 자동 반영되고, 이후 고향사랑기부금을 납부한 경우에는 적금 만기일 전 영업일까지 가입고객이 별도로 아래 고향사랑기부금 납부 증빙서류 제출 방법에 따라 서류를 제출하고 고향사랑기부 우대금리 적용을 신청하셔야 합니다.</li>
+                                            </ul>
+                                        </dd>
+
+                                        <dt class="h4">가입기간</dt>
+                                        <dd>
+                                            <ul class="detail">
+                                                <li>①농협은행 영업점 제출 또는<br>
+                                                    ②농협은행스마트뱅킹>금융상품몰>예금>우대금리신청>채팅상담을 통해 제출
+                                                </li>
+                                            </ul>
+                                            <ul class="ul -bullet">
+                                                <li>고향사랑기부금 납부 후 고향사랑기부 우대금리 적용 신청 시 필요서류
+                                                    <div>
+                                                        <ul class="ul -dash">
+                                                            <li>고향사랑 기부금을 농협은행(농·축협 포함) 영업점 창구 납부 시 : 고향사랑 기부금 납부 후 수령받는 거래내역 확인서</li>
+                                                            <li>고향사랑 기부금을 고향사랑e음(http://ilovegohyang.go.kr) 사이트에서 납부 시 : 납부를 확인할 수 있는 증빙서류(예 : 고향사랑기부금 납부 영수증 등)
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl> 
+                                </div>
+
+                                <div role="tabpanel" aria-labelledby="segment03" id="segments-panel03" class="segments-panel" tabindex="0">
+                                    <div class="calendar">
+                                        <div class="mix datepicker day -filled">
+                                            <div class="text" data-clear="false">
+                                                <input type="text" class="left-side" id="gga0" value="2025.08.23" title="첫번째 날짜선택" aria-haspopup="true"
+                                                    readonly>
+                                            </div>
+                                            <div class="space -lined date">
+                                                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrap24">
+                                        <button type="button" class="button -lg">조회</button>
+                                    </div>
+
+                                    <div class="case-wrap -xs">
+                                        <h5 class="h4">만기지급금리</h5>
+                                        <ul class="ul -bullet">
+                                            <li>만기일시지급식
+                                                <div class="table-wrap">
+                                                    <div class="table -horizontal -basic">
+                                                        <table>
+                                                            <caption><span class="hide">만기일시지급식 금리</span></caption>
+                                                            <colgroup>
+                                                                <col style="width:50%">
+                                                                <col style="width:50%">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">가입기간</th>
+                                                                    <th scope="col">기본금리(연%, 세전)</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>12개월 이상 ~ <br>24개월 미만</td>
+                                                                    <td>3.10</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="notewrap">
+                                                        <p class="p">자세한 사항은 상품설명서 및 특약참조</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mt-20">특별금리
+                                                <div>
+                                                    <ul class="ul -dash">
+                                                        <li>위 기본금리에 아래 고향사랑특별금리가 추가로 가산되어 적용</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table-wrap">
+                                                    <div class="table -horizontal -basic">
+                                                        <table>
+                                                            <caption><span class="hide">고향사랑특별 금리</span></caption>
+                                                            <colgroup>
+                                                                <col style="width:100%">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">고향사랑특별금리(%p)</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>0.10</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" aria-labelledby="segment04" id="segments-panel04" class="segments-panel" tabindex="0">
+                                    <dl class="prodect-info-dl">
+                                        <dt class="h4">유의사항</dt>
+                                        <dd><p class="p">만기 자동해지 서비스 등록계좌의 경우 우대금리 신청은 반드시 만기 전영업일까지 신청하셔야 합니다.</p></dd>
+                                    </dl>
+                                </div>
+                                
+                                <div role="tabpanel" aria-labelledby="segment05" id="segments-panel05" class="segments-panel" tabindex="0">
+                                    <dl class="prodect-info-dl">
+                                        <dt class="h4">가입유형 및 추가예치액 입금기한</dt>
+                                        <dd><p class="p">해당없음</p></dd>
+
+                                        <dt class="h4">중도해지금리</dt>
+                                        <dd><p class="p">큰만족실세예금 중도해지금리</p></dd>
+
+                                        <dt class="h4">만기 후 금리</dt>
+                                        <dd><p class="p">큰만족실세예금 만기 후 금리</p></dd>
+
+                                        <dt class="h4">무통장 거래</dt>
+                                        <dd><p class="p">가능</p></dd>
+
+                                        <dt class="h4">추가적립</dt>
+                                        <dd><p class="p">불가</p></dd>
+
+                                        <dt class="h4">자동이체</dt>
+                                        <dd><p class="p">자동이체 약관 준용</p></dd>
+
+                                        <dt class="h4">재예치</dt>
+                                        <dd><p class="p">불가</p></dd>
+
+                                        <dt class="h4">분할인출</dt>
+                                        <dd><p class="p">분할해지</p></dd>
+
+                                        <dt class="h4">만기앞당김해지</dt>
+                                        <dd><p class="p">가능</p></dd>
+
+                                        <dt class="h4">휴면예금 및 출연</dt>
+                                        <dd><p class="p">상품설명서 참조</p></dd>
+
+                                        <dt class="h4">양도 및 담보제공</dt>
+                                        <dd><p class="p">가능</p></dd>
+
+                                        <dt class="h4">기금조성</dt>
+                                        <dd>
+                                            <ul class="ul -bullet">
+                                                <li>연간 판매액의 0.1% 공익기금 출연</li>
+                                                <li>농협은행은 고객이 선택한 「또 하나의 고향」 시·도·광역시에 우선적으로 기금을 적립하여 해당 지역을 지원할 수 있습니다.</li>
+                                                <li>다만, 특정 지역에 기금 적립이 편중되는 경우 당행은 고객이 선정한 지역과 상관없이 기금 전체를 통합하여 지원할 수 있습니다.</li>
+                                                <li>「또 하나의 고향」으로 선택한 지역이 통장 네이밍에 반영됩니다.</li>
+                                            </ul>
+                                        </dd>
+
+                                        <dt class="h4">원금 또는 이자지급 제한</dt>
+                                        <dd>
+                                            <ul class="ul -bullet">
+                                                <li>계좌에 압류, 가압류 질권설정 등이 등록될 경우 원금 및 이자지급 제한</li>
+                                                <li>예금잔액증명서 발급 당일에는 입금·출금·이체 등 잔액 변동 불가</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+
+                                    <div class="case-wrap">
+                                        <p class="sentence2">* 금융소비자 보호에 관한 법률 제19조제1항에 따른 설명을 받을 수 있는 권리가 있습니다.</p>
+                                        <p class="sentence2">* 금융상품을 가입하시기 전에 상품설명서 및 약관을 반드시 읽어보시기 바랍니다.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //상품 정보 영역 -->
+
+                        <!-- 상품 추가 정보 영역 -->
+                        <div class="product-other">
+                            <!-- 상품설명서 및 약관 -->
+                            <div class="product-agree-area">
+                                <div class="accordion -lg -active" data-role="fold">
+                                    <button type="button" class="title" data-role="marker">상품설명서 및 약관</button>
+                                    <div class="panel" data-role="hidden">
+                                        <div class="shortcut -boxType">
+                                            <ul>
+                                                <li><a href="javascript:void(0)" aria-haspopup="true">기본약관</a></li>
+                                                <li><a href="javascript:void(0)" aria-haspopup="true">상품설명서</a></li>
+                                                <li><a href="javascript:void(0)" aria-haspopup="true">상품특약</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //상품설명서 및 약관 -->
+
+                            <!-- 예금자보호 (관리자) -->
+                            <div class="loadArea" data-includ="../../../../nhbank/html/cn/common/protect01.html"></div>
+                            <!-- //예금자보호 (관리자) -->
+
+                            <!-- 준법감시 심의필 (관리자) -->
+                            <div class="product-deliberate">
+                                <p class="p">준법감시심의필 000-0000(심의일:YYYY.MM.DD)<br>유효기간 : YYYYY.MM.DD ~ YYYYY.MM.DD</p>
+                            </div>
+                            <!-- //준법감시 심의필 (관리자) -->
+                            
+                            <!-- 공유 -->
+                            <div class="product-share">
+                                <ul>
+                                    <li><button type="button" class="share" aria-haspopup="true"><span class="hide">공유</span></button></li>   
+                                    <li><button type="button" class="wishlist"><span class="hide">장바구니</span></button></li>                                             
+                                </ul>
+                            </div>
+                            <!-- //공유 -->
+                            
+                            <!-- 추천상품 -->
+                            <div class="product-recommend">
+                                <h4 class="h5"><span>김농협</span>님을 위한 추천 상품</h4>
+                                <div class="product-recommend-list">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;" role="button">
+                                                <div class="title">채움적금</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" role="button">
+                                                <div class="title">e금리우대적금</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" role="button">
+                                                <div class="title">청년도약계좌</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //추천상품 -->
+                        </div>
+                        <!-- //상품 추가 정보 영역 -->
+                    </div><!-- //.product-detail-wrap -->
+                </div>
+
+                <div class="fixer -jsProcuctBtn">
+                    <div class="buttons">
+                        <button type="button" class="button -lg">상담</button>
+                        <button type="button" class="button -primary -lg">가입하기</button>
+                    </div>
+                </div>
+
+                <!-- 토스트팝업은 -active 클래스 사용하여 실행합니다 -->
+                <div class="toast" role="alert" aria-live="assertive">
+                    <div class="message" >
+                        <p>장바구니에 담었어요</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+        procuctDatailAct();
+
+        // html 파일 로드 (퍼블확인용)
+        incHtml();
+        function incHtml() {
+            $('[data-includ]').each(function () {
+                $this = $(this);
+                var $url = $this.attr('data-includ')
+                $this.load($url)
+            })
+        }
+    </script>
+</body>
+</html>

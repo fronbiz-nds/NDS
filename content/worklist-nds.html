@@ -1,0 +1,2779 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>퍼블리싱 워크리스트</title>
+    <script type="text/javascript" src="./assets/libs/anime/lib/anime.min.js"></script>
+    <script type="text/javascript" src="./worklist/assets/libs/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./worklist/assets/js/worklist.js"></script>
+    <link rel="stylesheet" href="./worklist/assets/css/worklist.css" />
+</head>
+
+<body>
+    <div class="loading-box">
+        <h3 class="loading-txt">Loading...</h3>
+    </div>
+
+    <div class="wh">
+        <div class="wh__title"><a href="/">NDS</a></div>
+        <div class="wh__nav">
+            <a href="docs.html">Docs</a>
+            <a href="nds-guide-components.html">Components guide</a>
+            <a href="worklist-nds.html" class="-active">Example of use</a>
+        </div>
+
+        <div class="wh__category">
+            <input id="category1" type="radio" name="category" value="all" checked><label for="category1">전체</label>
+            <input id="category2" type="radio" name="category" value="util2"><label for="category2">공통</label>
+            <input id="category3" type="radio" name="category" value="util3"><label for="category3">모듈서비스</label>
+        </div>
+
+        <div class="wh__search">
+            <div class="wh__inner">
+                <div class="field">
+                    <div class="mix">
+                        <div class="text">
+                            <input type="text" id="tableSearch" class="left-side" id="searchce">
+                        </div>
+        
+                        <div class="space -lined search">
+                            <button type="button" class="icon-button -search right-side search-bt"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <main>
+        <div class="wrap">
+            <table>
+                <colgroup>
+                    <col style="width:10%">
+                    <col style="width:10%">
+                    <col style="width:10%">
+                    <col style="width:10%">
+                    <col style="width:10%">
+                    <col style="width:10%">
+                    <col style="width:15%">
+                    <col style="width:4%">
+                    <col style="width:5%">
+                    <col style="width:5%">
+                    <col style="width:5%">
+                    <col style="width:10%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Lv2</th>
+                        <th>Lv3</th>
+                        <th>Lv4</th>
+                        <th>Lv5</th>
+                        <th>Lv6</th>
+                        <th>Lv7</th>
+                        <th>화면ID</th>
+                        <th>담당</th>
+                        <th>완료일</th>
+                        <th>UX라이팅</th>
+                        <th>수정일</th>
+                        <th>수정내역</th>
+                    </tr>
+                </thead>
+                <!-- 공통 -->
+                <tbody class="util2">
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">셀렉트 박스</td>
+                        <td class="lv4">통신사 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-0100000000V01-P.html" class="linked" target="_blank">BKOB-0100000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">셀렉트 박스</td>
+                        <td class="lv4">휴대폰번호 앞자리 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-0200000000V01-P.html" class="linked" target="_blank">BKOB-0200000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">셀렉트 박스</td>
+                        <td class="lv4">이메일 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-0400000000V01-P.html" class="linked" target="_blank">BKOB-0400000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌직접선택</td>
+                        <td class="lv4">계좌번호 직접 입력</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOA-0700000000V01-P.html" class="linked" target="_blank">BKOA-0700000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(NH농협)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-0600000000V01-P.html" class="linked" target="_blank">BKOB-0600000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(선택X)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-0600000000V01-P-1.html" class="linked" target="_blank">BKOB-0600000000V01-P-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(NH농협)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-0700000000V01-P.html" class="linked" target="_blank">BKOB-0700000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(2tab-NH농협)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-0800000000V01-P.html" class="linked" target="_blank">BKOB-0800000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(2tab-선택X)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-0800000000V01-P-1.html" class="linked" target="_blank">BKOB-0800000000V01-P-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(4tab-최근)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-1100000000V01-P.html" class="linked" target="_blank">BKOB-1100000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(4tab-최근-내역없음/다시조회)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-1100000000V01-P-1.html" class="linked" target="_blank">BKOB-1100000000V01-P-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(4tab-최근-내역없음)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-1100000000V01-P-2.html" class="linked" target="_blank">BKOB-1100000000V01-P-2</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(전체계좌)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-2600000000V01-P.html" class="linked" target="_blank">BKOB-2600000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(2tab-NH농협-전체계좌)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-2700000000V01-P.html" class="linked" target="_blank">BKOB-2700000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(4tab-최근)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-3100000000V01-P.html" class="linked" target="_blank">BKOB-3100000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(4tab-자주)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-3100000000V01-P-1.html" class="linked" target="_blank">BKOB-3100000000V01-P-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(4tab-내계좌)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-3100000000V01-P-2.html" class="linked" target="_blank">BKOB-3100000000V01-P-2</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">계좌 선택</td>
+                        <td class="lv4">계좌 선택(4tab-직접입력)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-3100000000V01-P-3.html" class="linked" target="_blank">BKOB-3100000000V01-P-3</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">농협/농축협 선택</td>
+                        <td class="lv4"></td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-0500000000V01-P.html" class="linked" target="_blank">BKOB-0500000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">기관선택</td>
+                        <td class="lv4">은행</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-1500000000V01-P.html" class="linked" target="_blank">BKOB-1500000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">기관선택</td>
+                        <td class="lv4">은행(2tab)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-1600000000V01-P.html" class="linked" target="_blank">BKOB-1600000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">기관선택</td>
+                        <td class="lv4">보험사(3tab)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-3500000000V01-P.html" class="linked" target="_blank">BKOB-3500000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">기관선택</td>
+                        <td class="lv4">국세/지방세입(3tab)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-3400000000V01-P.html" class="linked" target="_blank">BKOB-3400000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">캘린더</td>
+                        <td class="lv4">날짜 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-1700000000V01-P.html" class="linked" target="_blank">BKOB-1700000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">캘린더</td>
+                        <td class="lv4">이체 주기 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-1800000000V01-P.html" class="linked" target="_blank">BKOB-1800000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">본인인증방법</td>
+                        <td class="lv4">본인인증 방법 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOB/BKOB-3600000000V01-P.html" class="linked" target="_blank">BKOB-3600000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">본인인증방법</td>
+                        <td class="lv4">본인인증 방법 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOD/BKOD-0200000000V01-P.html" class="linked" target="_blank">BKOD-0200000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">본인인증방법</td>
+                        <td class="lv4">본인인증 진행</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOD/BKOD-0300000000V01-P.html" class="linked" target="_blank">BKOD-0300000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">고객정보변경</td>
+                        <td class="lv4">고객정보변경1</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOG/BKOG-0100000000V01-P.html" class="linked" target="_blank">BKOG-0100000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">고객정보변경</td>
+                        <td class="lv4">고객정보변경2</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOG/BKOG-0200000000V01-P.html" class="linked" target="_blank">BKOG-0200000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">보안매체인증</td>
+                        <td class="lv4">OTP 번호 입력</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOH/BKOH-0100000000V01-P.html" class="linked" target="_blank">BKOH-0100000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">보안매체인증</td>
+                        <td class="lv4">모바일OTP 번호 입력</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOH/BKOH-0200000000V01-P.html" class="linked" target="_blank">BKOH-0200000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">보안매체인증</td>
+                        <td class="lv4">보안카드 번호 입력</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOH/BKOH-0300000000V01-P.html" class="linked" target="_blank">BKOH-0300000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">보안매체인증</td>
+                        <td class="lv4">해외체류 인증 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOH/BKOH-0500000000V01-P.html" class="linked" target="_blank">BKOH-0500000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">보안매체인증</td>
+                        <td class="lv4">보안매체 발급 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOH/BKOH-0600000000V01-P.html" class="linked" target="_blank">BKOH-0600000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">보안매체인증</td>
+                        <td class="lv4">스마트 OTP(타행) 인증</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOH/BKOH-SMART-OTP.html" class="linked" target="_blank">BKOH-SMART-OTP</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">주소검색</td>
+                        <td class="lv4"></td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOE/BKOE-0100000000V01-P.html" class="linked" target="_blank">BKOE-0100000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">주소검색(결과X)</td>
+                        <td class="lv4"></td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOE/BKOE-0200000000V01-P.html" class="linked" target="_blank">BKOE-0200000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">주소검색(결과O)</td>
+                        <td class="lv4"></td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOE/BKOE-0200000000V01-P-2.html" class="linked" target="_blank">BKOE-0200000000V01-P-2</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">영업점검색</td>
+                        <td class="lv4"></td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOE/BKOE-0300000000V01-P.html" class="linked" target="_blank">BKOE-0300000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">영업점검색2</td>
+                        <td class="lv4"></td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOE/BKOE-0400000000V01-P.html" class="linked" target="_blank">BKOE-0400000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">영업점검색(결과X)</td>
+                        <td class="lv4"></td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOE/BKOE-0500000000V01-P.html" class="linked" target="_blank">BKOE-0500000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">영업점검색(결과O)</td>
+                        <td class="lv4"></td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOE/BKOE-0500000000V01-P-2.html" class="linked" target="_blank">BKOE-0500000000V01-P-2</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">권유직원검색</td>
+                        <td class="lv4">권유직원 조회(결과X)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOE/BKOE-0800000000V01-P.html" class="linked" target="_blank">BKOE-0800000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">권유직원검색</td>
+                        <td class="lv4">권유직원 조회(결과O)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOE/BKOE-0800000000V01-P-2.html" class="linked" target="_blank">BKOE-0800000000V01-P-2</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">휴대폰인증</td>
+                        <td class="lv4"></td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOF/BKOF-0100000000V01-P.html" class="linked" target="_blank">BKOF-0100000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">휴대폰인증2</td>
+                        <td class="lv4"></td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOF/BKOF-0200000000V01-P.html" class="linked" target="_blank">BKOF-0200000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">휴대폰인증</td>
+                        <td class="lv4">문자메시지 보내기</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOF/BKOF-0300000000V01-P.html" class="linked" target="_blank">BKOF-0300000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">휴대폰인증</td>
+                        <td class="lv4">USIM 본인인증</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOF/BKOF-0400000000V01-P.html" class="linked" target="_blank">BKOF-0400000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">휴대폰인증</td>
+                        <td class="lv4">약관 동의</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOF/BKOC-0400000000V01.html" class="linked" target="_blank">BKOC-0400000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">약관관련</td>
+                        <td class="lv4">전체 동의</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOC/BKOC-0601000000V01-P.html" class="linked" target="_blank">BKOC-0601000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">약관관련</td>
+                        <td class="lv4">전체 동의</td>
+                        <td class="lv5">확인</td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOC/BKOC-0602000000V01-P.html" class="linked" target="_blank">BKOC-0602000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">약관관련</td>
+                        <td class="lv4">개별약관</td>
+                        <td class="lv5">동의</td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOC/BKOC-0602000000V01-P-1.html" class="linked" target="_blank">BKOC-0602000000V01-P-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">약관관련</td>
+                        <td class="lv4">전체 동의</td>
+                        <td class="lv5">스크롤</td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOC/BKOC-0800000000V01-P.html" class="linked" target="_blank">BKOC-0800000000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공통</td>
+                        <td class="lv3">시스템공지팝업</td>
+                        <td class="lv4">(긴급수정용)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKOC/main-marketing-P.html" class="linked" target="_blank">main-marketing-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                </tbody>
+                <!-- //공통 -->
+
+                <!-- 모듈서비스 -->
+                <tbody class="util3">
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">펀드실질투자수익률보고서</td>
+                        <td class="lv4">조회 조건 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0103010000V01.html" class="linked" target="_blank">BKAD-0103010000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">펀드실질투자수익률보고서</td>
+                        <td class="lv4">보고서 정보</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0103030000V01.html" class="linked" target="_blank">BKAD-0103030000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">펀드실질투자수익률보고서</td>
+                        <td class="lv4">보고서 정보(요약)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0103020000V01.html" class="linked" target="_blank">BKAD-0103020000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">펀드실질투자수익률보고서</td>
+                        <td class="lv4">수익률 항목 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0103020100V01-P.html" class="linked" target="_blank">BKAD-0103020100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">펀드실질투자수익률보고서</td>
+                        <td class="lv4">상세 보고서</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0103020100V01-1.html" class="linked" target="_blank">BKAD-0103020100V01-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">펀드실질투자수익률보고서</td>
+                        <td class="lv4">수익 현황</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0103020100V01-2.html" class="linked" target="_blank">BKAD-0103020100V01-2</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">펀드실질투자수익률보고서</td>
+                        <td class="lv4">중도해지 시</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0103020100V01-3.html" class="linked" target="_blank">BKAD-0103020100V01-3</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">펀드실질투자수익률보고서</td>
+                        <td class="lv4">세법 개정에 따른 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0103020100V01-4.html" class="linked" target="_blank">BKAD-0103020100V01-4</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">펀드실질투자수익률보고서</td>
+                        <td class="lv4">운용수익 및 운용비용 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0103020300V01-P.html" class="linked" target="_blank">BKAD-0103020300V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">펀드실질투자수익률보고서</td>
+                        <td class="lv4">중도해지 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0103020400V01-P.html" class="linked" target="_blank">BKAD-0103020400V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">계좌 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403010000V01.html" class="linked" target="_blank">BKAD-0403010000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">운용상품 정보</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403020000V01.html" class="linked" target="_blank">BKAD-0403020000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">상품 추가</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403020100V01-P-1.html" class="linked" target="_blank">BKAD-0403020100V01-P-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">상품 추가(결과X)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403020100V01-P-2.html" class="linked" target="_blank">BKAD-0403020100V01-P-2</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">설명서/약관 동의</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403030000V01.html" class="linked" target="_blank">BKAD-0403030000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">연금펀드 세제 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403030100V01-P.html" class="linked" target="_blank">BKAD-0403030100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">투자자 확인사항</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403030200V01-P.html" class="linked" target="_blank">BKAD-0403030200V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">투자자성향진단 확인</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403040000V01.html" class="linked" target="_blank">BKAD-0403040000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">주요사항 확인</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403100000V01.html" class="linked" target="_blank">BKAD-0403100000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">투자자성향 확인</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403040100V01-P.html" class="linked" target="_blank">BKAD-0403040100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">다시 하는 이유 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0405040000V01.html" class="linked" target="_blank">BKAD-0405040000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">비예금상품 설명 확인서</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403050000V01.html" class="linked" target="_blank">BKAD-0403050000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">정보 확인</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403060000V01.html" class="linked" target="_blank">BKAD-0403060000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">운용상품 추가</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403070000V01.html" class="linked" target="_blank">BKAD-0403070000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">펀드콜 설문</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403070100V01-P.html" class="linked" target="_blank">BKAD-0403070100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">설문 완료</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403080000V01.html" class="linked" target="_blank">BKAD-0403080000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용상품관리</td>
+                        <td class="lv4">펀드 중요사항 확인</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0403090000V01.html" class="linked" target="_blank">BKAD-0403090000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">투자성향분석</td>
+                        <td class="lv4">투자자성향진단 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0405010000V01.html" class="linked" target="_blank">BKAD-0405010000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">투자성향분석</td>
+                        <td class="lv4">투자자성향진단 진행 여부</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0405010000V01-1.html" class="linked" target="_blank">BKAD-0405010000V01-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">투자성향분석</td>
+                        <td class="lv4">투자자성향진단 상세 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0405010100V01-P.html" class="linked" target="_blank">BKAD-0405010100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">투자성향분석</td>
+                        <td class="lv4">투자성향 및 펀드 위험등급 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0405010200V01-P.html" class="linked" target="_blank">BKAD-0405010200V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">투자성향분석</td>
+                        <td class="lv4">Select, Label</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-case.html" class="linked" target="_blank">BKAD-case</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">투자성향분석</td>
+                        <td class="lv4">투자자성향진단 설문</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0405020000V01.html" class="linked" target="_blank">BKAD-0405020000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">투자성향분석</td>
+                        <td class="lv4">투자자성향 완료</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0405030000V01.html" class="linked" target="_blank">BKAD-0405030000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">투자성향분석</td>
+                        <td class="lv4">투자성향진단 결과보기</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0405030100V01-P.html" class="linked" target="_blank">BKAD-0405030100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">계좌 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0101000000V01.html" class="linked" target="_blank">BKAC-0101000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">상환방법 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0102000000V01.html" class="linked" target="_blank">BKAC-0102000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">정보 입력</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0103000000V01.html" class="linked" target="_blank">BKAC-0103000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">정보 확인</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0104000000V01.html" class="linked" target="_blank">BKAC-0104000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">상환 완료</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0105000000V01.html" class="linked" target="_blank">BKAC-0105000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">금액 입력</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0106000000V01.html" class="linked" target="_blank">BKAC-0106000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">상환 정보</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0107000000V01.html" class="linked" target="_blank">BKAC-0107000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">정보 입력</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0108000000V01.html" class="linked" target="_blank">BKAC-0108000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">정보 입력2</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0109000000V01.html" class="linked" target="_blank">BKAC-0109000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">상환 완료</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0110000000V01.html" class="linked" target="_blank">BKAC-0110000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">금액 입력2</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0111000000V01.html" class="linked" target="_blank">BKAC-0111000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">정보 조회</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0112000000V01.html" class="linked" target="_blank">BKAC-0112000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">대출계약 철회 대상 계좌 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BSAC-0112010000V01-P.html" class="linked" target="_blank">BSAC-0112010000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">정보 입력3</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0113000000V01.html" class="linked" target="_blank">BKAC-0113000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">정보 확인2</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0114000000V01.html" class="linked" target="_blank">BKAC-0114000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">대출</td>
+                        <td class="lv3">원리금 조회/상환</td>
+                        <td class="lv4">상환 완료2</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAC/BKAC-0115000000V01.html" class="linked" target="_blank">BKAC-0115000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">계좌 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308010000V01.html" class="linked" target="_blank">BKAE-0308010000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">탭(요약)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308020000V01-T.html" class="linked" target="_blank">BKAE-0308020000V01-T</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">탭(자산현황)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308030000V01-T.html" class="linked" target="_blank">BKAE-0308030000V01-T</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">납입액 탭(회사 납입)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308030100V01-P.html" class="linked" target="_blank">BKAE-0308030100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">납입액 탭(가입자 입금)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308030200V01-P.html" class="linked" target="_blank">BKAE-0308030200V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">차감액 탭(수수료)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308030300V01-P.html" class="linked" target="_blank">BKAE-0308030300V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">차감액 탭(중도인출)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308030400V01-P.html" class="linked" target="_blank">BKAE-0308030400V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">탭(수익률 현황)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308020000V01-T-1.html" class="linked" target="_blank">BKAE-0308020000V01-T-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">탭(수수료)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308050000V01-T.html" class="linked" target="_blank">BKAE-0308050000V01-T</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">수수료 안내 탭(연금수령 전)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308050100V01-P.html" class="linked" target="_blank">BKAE-0308050100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">퇴직금 적용 수수료</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308050200V01-P.html" class="linked" target="_blank">BKAE-0308050200V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">탭(기타)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308060000V01-T.html" class="linked" target="_blank">BKAE-0308060000V01-T</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">운용현황보고서</td>
+                        <td class="lv4">탭(요약2)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0308020000V01-T-2.html" class="linked" target="_blank">BKAE-0308020000V01-T-2</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">계좌 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402010000V01.html" class="linked" target="_blank">BKAE-0402010000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">포트폴리오 변경 안내</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402010100V01-P.html" class="linked" target="_blank">BKAE-0402010100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">매도상품 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402020000V01.html" class="linked" target="_blank">BKAE-0402020000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">매도상품 선택2</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402020000V01-1.html" class="linked" target="_blank">BKAE-0402020000V01-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">매도 상품 지정</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402020100V01-P.html" class="linked" target="_blank">BKAE-0402020100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">운용상품 선택</td>
+                        <td class="lv5">현금성자산</td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402030000V01-P.html" class="linked" target="_blank">BKAE-0402030000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">운용상품 선택</td>
+                        <td class="lv5">예금</td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402040000V01-P.html" class="linked" target="_blank">BKAE-0402040000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">운용상품 선택</td>
+                        <td class="lv5">펀드</td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402050000V01-P.html" class="linked" target="_blank">BKAE-0402050000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">운용상품 선택</td>
+                        <td class="lv5">ETF</td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402060000V01-P.html" class="linked" target="_blank">BKAE-0402060000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">운용상품 선택</td>
+                        <td class="lv5">디폴트옵션</td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402070000V01-P.html" class="linked" target="_blank">BKAE-0402070000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">매수 비율 설정</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402080000V01.html" class="linked" target="_blank">BKAE-0402080000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">약관 및 필수사항 동의</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402090000V01.html" class="linked" target="_blank">BKAE-0402090000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">약관 및 필수사항 확인</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402090100V01-P.html" class="linked" target="_blank">BKAE-0402090100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">변경상품 확인</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402100000V01.html" class="linked" target="_blank">BKAE-0402100000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">전자문서 미리보기</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402100100V01-P.html" class="linked" target="_blank">BKAE-0402100100V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">퇴직연금</td>
+                        <td class="lv3">보유상품 변경</td>
+                        <td class="lv4">보유상품 변경 신청</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAE/BKAE-0402110000V01.html" class="linked" target="_blank">BKAE-0402110000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용비율변경</td>
+                        <td class="lv4">계좌 선택</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0402010000V01.html" class="linked" target="_blank">BKAD-0402010000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용비율변경</td>
+                        <td class="lv4">정보 입력</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0402020000V01-1.html" class="linked" target="_blank">BKAD-0402020000V01-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용비율변경</td>
+                        <td class="lv4">운용비율</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0402020000V01-2.html" class="linked" target="_blank">BKAD-0402020000V01-2</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">펀드</td>
+                        <td class="lv3">운용비율변경</td>
+                        <td class="lv4">운용비율 변경</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKAD/BKAD-0402040000V01.html" class="linked" target="_blank">BKAD-0402040000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">법무국고금</td>
+                        <td class="lv4">조회</td>
+                        <td class="lv5">탭(기납벌과금)</td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUA/BKUA-1301010000V01-T.html" class="linked" target="_blank">BKUA-1301010000V01-T</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">법무국고금</td>
+                        <td class="lv4">조회</td>
+                        <td class="lv5">탭(본납벌과금)</td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUA/BKUA-1301010000V01-T-1.html" class="linked" target="_blank">BKUA-1301010000V01-T-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">법무국고금</td>
+                        <td class="lv4">납부 목록</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUA/BKUA-1302010000V01.html" class="linked" target="_blank">BKUA-1302010000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">법무국고금</td>
+                        <td class="lv4">정보 확인</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUA/BKUA-1303010000V01.html" class="linked" target="_blank">BKUA-1303010000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">법무국고금</td>
+                        <td class="lv4">납부 목록</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUA/BKUA-1302020000V01.html" class="linked" target="_blank">BKUA-1302020000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">법무국고금</td>
+                        <td class="lv4">정보 확인2</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUA/BKUA-1303020100V01.html" class="linked" target="_blank">BKUA-1303020100V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">법무국고금</td>
+                        <td class="lv4">정보 확인3</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUA/BKUA-1303030200V01.html" class="linked" target="_blank">BKUA-1303030200V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">법무국고금</td>
+                        <td class="lv4">납부 완료</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUA/BKUA-1304000000V01.html" class="linked" target="_blank">BKUA-1304000000V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">법무국고금</td>
+                        <td class="lv4">납부 실패</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUA/BKUA-1304010100V01.html" class="linked" target="_blank">BKUA-1304010100V01</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">보관금</td>
+                        <td class="lv4">탭(법원보관금)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUC/BKUC-1701000000V01-1.html" class="linked" target="_blank">BKUC-1701000000V01-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">보관금</td>
+                        <td class="lv4">탭(집행보관금)</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUC/BKUC-1701000000V01-2.html" class="linked" target="_blank">BKUC-1701000000V01-2</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">보관금</td>
+                        <td class="lv4">조회 내용 입력</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUC/BKUC-1701000000V01-P-1.html" class="linked" target="_blank">BKUC-1701000000V01-P-1</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">보관금</td>
+                        <td class="lv4">조회 내용 입력2</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUC/BKUC-1701000000V01-P-2.html" class="linked" target="_blank">BKUC-1701000000V01-P-2</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                    <tr>
+                        <td class="lv2">공과금/채권</td>
+                        <td class="lv3">보관금</td>
+                        <td class="lv4">납부 내역 확인</td>
+                        <td class="lv5"></td>
+                        <td class="lv6"></td>
+                        <td class="lv7"></td>
+                        <td class="func">
+                            <input type="radio" class="iframe-select" name="iframename">
+                            <a href="./prototype/NDS/html/BKUC/BKUC-1701020000V01-P.html" class="linked" target="_blank">BKUC-1701020000V01-P</a>
+                        </td>
+                        <td class="user"></td>
+                        <td class="date"></td>
+                        <td class="cf1"></td>
+                        <td class="cf2"></td>
+                        <td class="note"></td>
+                    </tr>
+                </tbody>
+                <!-- //모듈서비스 -->
+
+            </table>
+        </div>
+    </main>
+    <div class="iframe-box">
+        <iframe class="iframe-view" src=""></iframe>
+        <button class="iframe-close"></button>
+    </div>
+    <div class="toast">
+        <div class="message">
+            <p>화면ID 복사 완료</p>
+        </div>
+    </div>
+    
+    <script>
+        const winBody = document.querySelector('body');
+        const winWidth = window.outerWidth;
+        if (winWidth < 700) {
+            winBody.classList.add('mobile');
+        }
+
+        const pubSubjectArry = document.querySelectorAll('.iden');
+        pubSubjectArry.forEach(pubSubject => {
+            if (pubSubject.closest('body').classList.contains('mobile')) {
+                const pubSubjectClosetArry2 = pubSubject.closest('tr').querySelector('td.lv2').textContent +' ';
+                const pubSubjectClosetArry3 = pubSubject.closest('tr').querySelector('td.lv3').textContent +' ';
+                const pubSubjectClosetArry4 = pubSubject.closest('tr').querySelector('td.lv4').textContent +' ';
+                const pubSubjectClosetArry5 = pubSubject.closest('tr').querySelector('td.lv5').textContent +' ';
+                const pubSubjectClosetArry6 = pubSubject.closest('tr').querySelector('td.lv6').textContent +' ';
+                const pubSubjectClosetArry7 = pubSubject.closest('tr').querySelector('td.lv7').textContent +' ';
+                pubSubject.innerText = pubSubjectClosetArry2 + pubSubjectClosetArry3 + pubSubjectClosetArry4 + pubSubjectClosetArry5 + pubSubjectClosetArry6 + pubSubjectClosetArry7 ;
+            }
+        });
+
+        const listArry = document.querySelectorAll('.func .linked');
+        
+        let dupYn = false;
+        for (let i = 0; i < listArry.length; i++) {
+            const errElem = listArry[i].textContent;
+            for (let j = i+1; j < listArry.length; j++) {
+                const arryText = listArry[j].textContent;
+                if (errElem === arryText) {
+                    //listArry.closest('tr').classList.add('red')
+                    //j.closest('tr').classList.add('red');
+                    listArry[j].closest('tr').classList.add('red')
+                    // console.log(listArry[j].length)
+                }else{
+                    //console.log(22)
+                }
+                
+            }
+            
+        }
+
+        /* let dupYn = false;
+        listArry.forEach(array => {
+            const errElem = listArry[array];
+            console.log(errElem)
+        });
+        for (let i = 0; i < listArry.length; i++) {
+            const errElem = listArry[i].textContent;
+            for (let j = i+1; j < listArry.length; j++) {
+                if (errElem === listArry[j].textContent) {
+                    j.closest('tr').classList.add('red')
+                    //j.closest('tr').classList.add('red');
+                    console.log(11)
+                }else{
+                    //console.log(22)
+                }
+                
+            }
+            
+        } */
+        /* listArry.forEach(listArry => {
+            listArryText = listArry.textContent;
+            if (listArry.textContent === listArry.textContent) {
+                listArry.closest('tr').classList.add('red')
+            }
+
+        }); */
+        // console.log(listArry.length);
+    </script>
+    <!-- 테스트 -->
+</body>
+
+</html>

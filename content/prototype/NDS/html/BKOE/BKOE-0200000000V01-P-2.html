@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NH포인트 사용 신청 레이어팝업</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="navigation">
+                <div class="header">
+                    <div class="inner">
+                        <h1 class="title">주소 검색</h1>
+                        <div class="funcs">
+                            <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="content">
+                    <div class="field search">
+                        <div class="mix">
+                            <div class="text">
+                                <input type="text" class="left-side" id="searchce3" placeholder="도로명, 지번, 건물명, 초성검색" value="">
+                            </div>
+                    
+                            <div class="space -lined search">
+                                <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xxs">
+                        <div class="custom-list">
+                            <ul class="address">
+                                <li>
+                                    <button type="button" class="-sm">
+                                        <div>
+                                            <div class="addr-txt">
+                                                <p class="addr-num">04517</p>
+                                                <p class="addr-name">서울특별시 중구 통일로 120 (충정로 1가)</p>
+                                                <p class="addr-detail">서울특별시 중구 충정로 1가 85 농협중앙회 중앙본부 신관</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="-sm">
+                                        <div>
+                                            <div class="addr-txt">
+                                                <p class="addr-num">10574</p>
+                                                <p class="addr-name">경기도 고양시 덕양구 통일로 396번길 120 (오금동)</p>
+                                                <p class="addr-detail">경기도 고양시 덕양구 오금동 422-19</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="-sm">
+                                        <div>
+                                            <div class="addr-txt">
+                                                <p class="addr-num">10574</p>
+                                                <p class="addr-name">경기도 고양시 덕양구 통일로 1108번길 120 (내유동)</p>
+                                                <p class="addr-detail">경기도 고양시 덕양구 내유동 282-7</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="bd-bottom">
+                                    <button type="button" class="-sm">
+                                        <div>
+                                            <div class="addr-txt">
+                                                <p class="addr-num">18438</p>
+                                                <p class="addr-name">경기도 화성시 동탄중앙로 189 (동탄시범마을다은 월드메르디앙 반도유보라)</p>
+                                                <p class="addr-detail">경기도 화성시 반송동 80  동탄시범다은마을 월드메르디앙 반도유보라</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="center">
+                            <button type="button" class="plus-button">더보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

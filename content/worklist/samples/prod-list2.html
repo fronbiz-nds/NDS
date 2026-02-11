@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+    <link rel="stylesheet" href="../../assets/css/util.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">금융상품몰</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -home"><span class="hide">홈</span></button>
+                        <button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="prod-main-list-units">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" class="prod-txt-unit">
+                                    <div class="prod-txts">
+                                        <div class="badges">
+                                            <span class="badge -red">NEW</span>
+                                        </div>
+                                        <h4 class="title">NH페이모아통장</h4>
+                                        <p class="txt">간편결제(Pay)실적 모아<br>우대금리/수수료 혜택</p>
+                                    </div>
+                                    <div class="prod-info">
+                                        <span class="badge -disabled">최고 연</span>
+                                        <p class="percent">2.05%</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="prod-txt-unit">
+                                    <div class="prod-txts">
+                                        <h4 class="title">NH주거래우대통장</h4>
+                                        <p class="txt">간편결제(Pay)실적 모아<br>우대금리/수수료 혜택</p>
+                                    </div>
+                                    <div class="prod-info">
+                                        <span class="badge -disabled">최고 연</span>
+                                        <p class="percent">2.05%</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="prod-txt-unit">
+                                    <div class="prod-txts">
+                                        <h4 class="title">NH1934우대통장</h4>
+                                        <p class="txt">청년들만 모여라! 만 34세 이하를 위한<br>특별한 입출금통장</p>
+                                    </div>
+                                    <div class="prod-info">
+                                        <span class="badge -disabled">최고 연</span>
+                                        <p class="percent">3.00%</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="prod-txt-unit">
+                                    <div class="prod-txts">
+                                        <h4 class="title">NH X 카카오페이통장</h4>
+                                        <p class="txt">올원뱅크와 카카오페이가 만나 즐거운<br>혜택을 드립니다.</p>
+                                    </div>
+                                    <div class="prod-info">
+                                        <span class="badge -disabled">최고 연</span>
+                                        <p class="percent">1.00%</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="prod-txt-unit">
+                                    <div class="prod-txts">
+                                        <h4 class="title">NH모여라통장(저축예금)</h4>
+                                        <p class="txt">회비관리 어렵지 않아요!<br>모임 회비 관리하기 좋은 통장</p>
+                                    </div>
+                                    <div class="prod-info">
+                                        <span class="prod-info-badge">최고 연</span>
+                                        <p class="percent">0.90%</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    <script>
+        $(function(){
+            /* [수정 230707] 스크립트 추가 */
+            // 예적금 인터렉션
+            $(document).off().on('click', '.prod-links-banner a', function(){
+                var numbering = $(this).attr('href').slice(13,14);
+                var scrollPoint = []
+                $('[data-scrolling]').each(function(e){
+                    scrollPoint.push( $(this).offset().top );
+                });
+
+                $('html, body').animate(
+                    {scrollTop: scrollPoint[numbering - 1] - $('header').outerHeight() - $('.page .tabs').outerHeight() - 28 },300
+                )
+            })
+            /* // */
+        });
+    </script>
+</body>
+</html>

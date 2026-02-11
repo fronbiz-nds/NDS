@@ -1,0 +1,107 @@
+<!-- 대출 실행코드 javascript:moveProductDetailPage(상품코드8자리); -->
+<div class="submain-banner-wrap -loan">
+    <div class="submain-banner-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="javascript:moveProductDetailPage(40000938)">
+                    <div class="submain-banner type01">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">여러 보증기관을<br>한번에 비교하세요</div>
+                            <div class="prd-sub">NH모바일전세대출+</div>
+                        </div>
+                        <div class="hash-tag"><span>#전세대출</span><span>#갈아타기</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:moveProductDetailPage(40000940)">
+                    <div class="submain-banner type02">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">은행 방문없이 신청할 수 있는<br>아파트 담보대출</div>
+                            <div class="prd-sub">NH모바일아파트대출2.0</div>
+                        </div>
+                        <div class="hash-tag"><span>#대출</span><span>#갈아타기</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:moveProductDetailPage(40000939)">
+                    <div class="submain-banner type03">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">신용대출부터 갈아타기까지<br>직장인을 위한 신용대출</div>
+                            <div class="prd-sub">신용대출 갈아타기</div>
+                        </div>
+                        <div class="hash-tag"><span>#전세대출</span><span>#갈아타기</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:moveProductDetailPage(40000927)">
+                    <div class="submain-banner type04">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">공적연금을 받는 고객이라면<br>간편하게 신청</div>
+                            <div class="prd-sub">NH연금엔대출</div>
+                        </div>
+                        <div class="hash-tag"><span>#전세대출</span><span>#갈아타기</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="pagination-wrap">
+            <div class="swiper-pagination"></div>
+            <a href="javascript:void(0);" class="button-stop" role="button">
+                <span class="hide">정지</span>
+            </a>
+        </div>
+    </div> 
+</div>
+
+<script>
+    $(function(){
+        var mainbanner = new Swiper('.submain-banner-swiper',{
+            pagination : {
+                el : '.swiper-pagination',
+                clickable :false,
+                type:'fraction'
+            },
+            loop:true,
+            autoplay:{
+                delay: 4000
+            },
+            speed:500,
+            spaceBetween:24,
+            grabCursor:true,
+            observer : true,
+            observeParents : true
+            // [240312] 사업부 요청으로 배너 액션 수정
+        });
+
+        mainbanner.on('touchEnd', function (transitionEnd) {
+            var autoPlay = mainbanner.autoplay.running
+            if(autoPlay == false){
+                $('.pagination-wrap .button-stop').addClass('-active').find('.hide').text('시작');
+            };
+        });
+
+         // 배너 시작, 정지
+        $('.submain-banner-wrap .button-stop').click(function(){
+            $(this).toggleClass('-active');
+            if($(this).hasClass('-active')){
+                $(this).find('.hide').text('시작');
+                mainbanner.autoplay.stop();
+            }
+            else {
+                $(this).find('.hide').text('정지');
+                mainbanner.autoplay.start();
+            }
+        });
+
+        // 배너 한개일 경우 비활성화
+        if( $('.submain-banner-wrap .swiper-slide').length <= 3 ){
+            $('.submain-banner-wrap .swiper-wrapper').addClass('-disabled');
+            $('.submain-banner-wrap .pagination-wrap').attr('aria-hidden','true');
+            mainbanner.destroy();
+        };
+
+    })
+</script>

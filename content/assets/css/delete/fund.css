@@ -1,0 +1,458 @@
+@charset "utf-8";
+
+/* 펀드가입프로세스 */
+
+/* 설명의무 고객 확인 사항  */
+.custom-checkbox-wrap {display: flex; flex-wrap: wrap; padding-top:0.2rem;}
+.custom-checkbox-wrap .custom-checkbox span {display: block; position:absolute;top:calc(55% + 1rem);left:0;right:0;font-size: 1.5rem;text-align: center; letter-spacing: -0.1rem; color:var(--F03);}
+.custom-checkbox-wrap .custom-checkbox:nth-child(2n) {margin-right:0;}
+.custom-checkbox-wrap .custom-checkbox {width:calc(100% / 2 - .6rem); height:10rem; margin:0 1.2rem 1.2rem 0;}
+.custom-checkbox-wrap .custom-checkbox:last-child {margin-bottom: 0;}
+.custom-checkbox-wrap .custom-checkbox label {width:100%;height:100%; border-radius: 1rem; border:1px solid var(--border1); background:var(--G10); padding:0; display:inline-flex; flex:1; position:relative; color:var(--color-checkbox); font-size:1.6rem; word-break:break-all; cursor:pointer;}
+.custom-checkbox-wrap .custom-checkbox label:after {content:"";  position:absolute; background:url(../imgs/ico/common/ico-checkbox.png) no-repeat .2rem / 2.4rem; transform:translateY(-50%);}
+.custom-checkbox-wrap .custom-checkbox.type01 label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-01g.png) no-repeat center center / 3.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type02 label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-02g.png) no-repeat center center / 3.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type03 label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-03g.png) no-repeat center center / 3.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type04 label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-04g.png) no-repeat center center / 3.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type05 label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-05g.png) no-repeat center center / 3.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+
+.custom-checkbox-wrap .custom-checkbox.type01 input:checked ~ label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-01w.png) no-repeat center center / 3.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type02 input:checked ~ label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-02w.png) no-repeat center center / 3.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type03 input:checked ~ label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-03w.png) no-repeat center center / 3.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type04 input:checked ~ label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-04w.png) no-repeat center center / 3.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox.type05 input:checked ~ label:after {width:3.6rem; height:3.6rem; background:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-05w.png) no-repeat center center / 3.6rem; top:40%; left:50%; transform: translate(-50%, -50%);}
+.custom-checkbox-wrap .custom-checkbox input:checked ~ label {border:1px solid var(--point);}
+.custom-checkbox-wrap .custom-checkbox input {position:absolute; width:2.8rem; height:2.8rem; border-radius:50%; background-color:rgba(0,0,0,0);}
+
+/* 설명의무 고객 확인 사항 */
+.invest-qna .answer-list .item .invest-unit.-icon190::after {background-image:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-06.png);}
+.invest-qna .answer-list .item .invest-unit.-icon191::after {background-image:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-07.png);}
+.invest-qna .answer-list .item .invest-unit.-icon192::after {background-image:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-08.png);}
+.invest-qna .answer-list .item .invest-unit.-icon193::after {background-image:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-09.png);}
+.invest-qna .answer-list .item .invest-unit.-icon194::after {background-image:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-10.png);}
+
+/* 설명의무 고객 확인 사항 - darkmode */
+.dark-mode .invest-qna .answer-list .item .invest-unit.-icon190::after {background-image:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-06_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.-icon191::after {background-image:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-07_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.-icon192::after {background-image:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-08_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.-icon193::after {background-image:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-09_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.-icon194::after {background-image:url(../imgs/img/fund/ico-FMEA-0106020000F01-P-10_dk.png);}
+
+.invest-qna .answer-list .item .invest-unit.-icon195::after {background-image:url(../imgs/ico/service/commodity/ico-CF-05040000V01-P-01.png);}
+.invest-qna .answer-list .item .invest-unit.-icon196::after {background-image:url(../imgs/ico/service/commodity/ico-CF-05040000V01-P-02.png);}
+.invest-qna .answer-list .item .invest-unit.-icon197::after {background-image:url(../imgs/ico/service/commodity/ico-CF-05040000V01-P-03.png);}
+.invest-qna .answer-list .item .invest-unit.-icon198::after {background-image:url(../imgs/ico/service/commodity/ico-CF-05040000V01-P-04.png);}
+.invest-qna .answer-list .item .invest-unit.-icon199::after {background-image:url(../imgs/ico/service/commodity/ico-CF-05040000V01-P-05.png);}
+
+/* 비예금상품설명 확인서 */
+.invest-qna .answer-list .item .invest-unit.-icon1::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-01.png);}
+.invest-qna .answer-list .item .invest-unit.-icon2::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-02.png);}
+.invest-qna .answer-list .item .invest-unit.-icon3::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-03.png);}
+.invest-qna .answer-list .item .invest-unit.-icon4::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-04.png);}
+.invest-qna .answer-list .item .invest-unit.-icon5::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-05.png);}
+.invest-qna .answer-list .item .invest-unit.-icon6::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-06.png);}
+
+/* 비예금상품설명 확인서 - darkmode */
+.dark-mode .invest-qna .answer-list .item .invest-unit.-icon1::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-01_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.-icon2::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-02_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.-icon3::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-03_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.-icon4::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-04_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.-icon5::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-05_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.-icon6::after {background-image:url(../imgs/img/fund/ico-FMEA-0110000000F01-06_dk.png);}
+
+/* 숙려제도 안내 */
+.period {display: block; margin-bottom: 5.8rem;}
+.period .ol.-step1 {counter-reset:step1; display: flex;}
+.period .ol.-step1 > li {position:relative; min-height:4rem; padding-top:0.85rem; padding-left:5rem; color:var(--font2); font-size:1.4rem; padding-bottom: 3rem;}
+.period .ol.-step1 > li::after {content:''; width:3rem; border-top:1.5px dashed var(--G06); border-right: 0; position:absolute; left:1.9rem; top:4.1rem; bottom:.1rem;}
+
+.period .ol.-step1 > li + li {margin-top:0;}
+.period .ol.-step1 > li:before {content:counter(step1); counter-increment:step1; display:inline-flex; justify-content:center; align-items:center; position:absolute; top:0; left:0; width:4rem; height:4rem; border:.15rem solid var(--point); border-radius:50%; color:var(--point); font-weight:bold; font-size:1.8rem; letter-spacing:-0.05em;}
+.title {display:block; color:var(--font1); font-weight:500; font-size:1.6rem;}
+.period .ol.-step1 > li:last-child::after {display: none;}
+.period .ol.-step.-icon.-horizontal > li {padding:0; width:4.8rem; min-height:7.5rem;}
+.period .ol.-step.-icon.-horizontal > li.step1:before {background:url(../imgs/img/fund/ico-FMEA-0108000000F01-01.png) no-repeat center center / 4.8rem;}
+.period .ol.-step.-icon.-horizontal > li.step2:before {background:url(../imgs/img/fund/ico-FMEA-0108000000F01-02.png) no-repeat center center / 4.8rem ;}
+.period .ol.-step.-icon.-horizontal > li.step3:before {background:url(../imgs/img/fund/ico-FMEA-0108000000F01-03.png) no-repeat center center / 4.8rem ;}
+.period .ol.-step.-icon.-horizontal > li.step4:before {background:url(../imgs/img/fund/ico-FMEA-0108000000F01-04.png) no-repeat center center / 4.8rem ;}
+.dark-mode .period .ol.-step.-icon.-horizontal > li.step1:before {background:url(../imgs/img/fund/ico-FMEA-0108000000F01-01_dk.png) no-repeat center center / 4.8rem;}
+.dark-mode .period .ol.-step.-icon.-horizontal > li.step2:before {background:url(../imgs/img/fund/ico-FMEA-0108000000F01-02_dk.png) no-repeat center center / 4.8rem ;}
+.dark-mode .period .ol.-step.-icon.-horizontal > li.step3:before {background:url(../imgs/img/fund/ico-FMEA-0108000000F01-03_dk.png) no-repeat center center / 4.8rem ;}
+.dark-mode .period .ol.-step.-icon.-horizontal > li.step4:before {background:url(../imgs/img/fund/ico-FMEA-0108000000F01-04_dk.png) no-repeat center center / 4.8rem ;}
+.period .ol.-step.-icon.-horizontal > li > .title {display: flex; color:var(--font1); width:4.8rem; text-align: center; font-size: 1.4rem; position:absolute; top:4rem; right:0; }
+.period .ol.-step.-icon.-horizontal > li.step1 .title {padding-left: 1rem;}
+.period .ol.-step.-icon.-horizontal > li.step3 .title {padding-left: .4rem;}
+.period .pertxt {display: inline-block; width: 8rem; padding: 0; margin: 0; text-align: center; font-size: 1.4rem; margin-left: -1.7rem; line-height: 1.7rem; position: absolute; margin-top: 5rem;left:0} 
+.period .step1 .pertxt {margin-top:3.6rem}
+
+/* 펀드 상세 */
+
+.prod-detail-info-wrap {background:#fff;padding:0; margin:0; display: flex; justify-content: center; margin-top:2rem;}
+.prod-detail-info-wrap .prod-detail-info {text-align: center; padding:1.2rem 0.75rem 1.6rem 0.75rem; border:1px solid #f0f0f0; border-radius: 0.5rem; width:33.33%; margin-right:0.6rem; }
+.prod-detail-info-wrap .prod-detail-info:last-child {margin-right:0;}
+.prod-detail-info-wrap .prod-detail-info .info-txt {font-size: 1.3rem; color:var(--font1)}
+.prod-detail-info-wrap .prod-detail-info .info-sub-txt {padding:0.5rem 0; font-size: 1.3rem; color:#121212; background:#f0f0f0; border-radius: 0.8rem; margin-top:0.8rem;}
+.prod-detail-info-wrap .prod-detail-info .info-sub-txt.grade1 {background:#ec0c0c; color:#fff;}
+.prod-detail-info-wrap .prod-detail-info .info-sub-txt.grade2 {background:#ff7f29; color:#fff;}
+.prod-detail-info-wrap .prod-detail-info .info-sub-txt.grade3 {background:#d9ae02; color:#fff;}
+.prod-detail-info-wrap .prod-detail-info .info-sub-txt.grade4 {background:#12a396; color:#fff;}
+.prod-detail-info-wrap .prod-detail-info .info-sub-txt.grade5 {background:#015aac; color:#fff;}
+.prod-detail-info-wrap .prod-detail-info .info-sub-txt.grade6 {background:#2b9ac9; color:#fff;}
+.prod-detail-info-wrap .prod-detail-info .txt-wrap {margin-top:0;}
+.fund-links {display:flex;;justify-content:center; margin-top:5rem;}
+.fund-links li:last-child {margin-right:0;}
+.fund-links li {margin-right:7rem;position:relative;}
+.fund-links li a {display: block; width:100%; height:100%;}
+.fund-links .link {display:flex; flex-direction:column; align-items:center; background-color:transparent; color:var(--font1); font-weight:bold; font-size:1.4rem; text-align:center; white-space:nowrap;}
+.fund-links .link::before {content:""; display:block; width:7.7rem; height:7.7rem; border:1px solid #e6e6e6; border-radius: 50%; margin-bottom:1rem;}
+.fund-links .link::after {content: ''; display: block; position:absolute; top:50%;}
+.fund-links .link.-mobile::after {width:3.2rem;height:3.1rem; background:url(../../assets/imgs/ico/service/commodity/ico-CF-05000000V01-1.png) no-repeat 0 / cover; top:2.4rem; left:2.7rem;}
+.fund-links .link.-coupon::after {width:3.2rem;height:3rem; background:url(../../assets/imgs/ico/service/commodity/ico-CF-05000000V01-2.png) no-repeat 0 / cover; top:2.6rem; left:2.5rem;}
+.table tr td .UD-arrow {margin-left:0.4rem;}
+.table tr td .red .UD-arrow {width:0.7rem;height:1.2rem;display: inline-block;background: url(../../assets/imgs/ico/service/commodity/ico-red-up-arrow.png) no-repeat 100% 100% / cover;}
+.table tr td .blue .UD-arrow {width:0.7rem;height:1.2rem;display: inline-block;background: url(../../assets/imgs/ico/service/commodity/ico-blue-down-arrow.png) no-repeat 100% 100% / cover;}
+
+.mix input.finish {width: 75%; margin-right: 0.5rem;}
+.mix p.tomonth {width: 20%; text-align: right; padding-top: 2.5rem;}
+
+.mix .text.-won input.tomonth {padding-right: 8rem;}
+
+.rethink {color: var(--red) !important; font-size: 1.2rem;}
+
+.agree + .info {width: 100%; margin-top: 1rem; padding: 0 var(--indent); color: var(--font3); font-size: 1.2rem; text-align: left; font-weight: 500;}
+
+/* 투자성향분석 */
+.field + .dl {margin-top: 1.6rem;}
+.inner-qna {margin-top: 1.6rem;}
+.inner-qna .answer-list {margin-top: 1.6rem;}
+
+/* 투자성향별 가입 가능 펀드 */
+.select.-tend > button {padding:1.6rem 3.4rem 1.6rem 6.4rem;}
+/* 투자유형 icon */
+.select.-tend > button > span[class*="-grade"] {display:inline-block; position:absolute; top:50%; left:2rem; margin:-1.8rem 0; width:3.6rem; height:3.6rem; background-repeat:no-repeat; background-position:center; background-size:3.6rem auto;}
+.select.-tend > button > span.-grade1-icon {background-image:url(../imgs/img/retire/ico-util-grade1.png);}
+.select.-tend > button > span.-grade2-icon {background-image:url(../imgs/img/retire/ico-util-grade2.png);}
+.select.-tend > button > span.-grade3-icon {background-image:url(../imgs/img/retire/ico-util-grade3.png);}
+.select.-tend > button > span.-grade4-icon {background-image:url(../imgs/img/retire/ico-util-grade4.png);}
+.select.-tend > button > span.-grade5-icon {background-image:url(../imgs/img/retire/ico-util-grade5.png);}
+/* 등급 icon */
+.select.-tend > button > span[class*="-level"] {display:inline-block; position:absolute; top:50%; left:2rem; margin:-1.8rem 0; width:3.6rem; height:3.6rem; background-repeat:no-repeat; background-position:center; background-size:3.6rem auto;}
+.select.-tend > button > span.-level1 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-6.png);}
+.select.-tend > button > span.-level2 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-7.png);}
+.select.-tend > button > span.-level3 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-8.png);}
+.select.-tend > button > span.-level4 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-9.png);}
+.select.-tend > button > span.-level5 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-10.png);}
+.select.-tend > button > span.-level6 {background-image:url(../imgs/img/retire/ico-FMEA-0103040300F01-P-11.png);}
+
+/* 투자성향분석 icon */
+.invest-qna .answer-list .item .invest-unit.fund-icon1::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-01.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon2::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-02.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon3::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-03.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon4::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-04.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon5::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-05.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon6::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-06.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon7::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-07.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon8::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-08.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon9::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-09.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon10::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-10.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon11::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-11.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon12::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-12.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon13::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-13.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon14::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-14.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon15::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-15.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon16::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-16.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon17::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-17.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon18::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-18.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon19::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-19.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon20::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-20.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon21::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-21.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon22::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-22.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon23::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-23.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon24::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-24.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon25::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-25.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon26::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-26.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon27::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-27.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon28::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-28.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon29::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-29.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon30::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-30.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon31::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-31.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon32::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-32.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon33::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-33.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon34::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-34.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon35::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-35.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon36::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-36.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon37::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-37.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon38::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-38.png);}
+.invest-qna .answer-list .item .invest-unit.fund-icon39::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-39.png);}
+
+/* 투자성향분석 icon - darkmode */
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon1::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-01_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon2::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-02_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon3::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-03_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon4::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-04_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon5::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-05_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon6::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-06_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon7::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-07_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon8::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-08_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon9::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-09_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon10::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-10_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon11::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-11_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon12::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-12_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon13::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-13_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon14::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-14_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon15::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-15_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon16::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-16_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon17::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-17_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon18::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-18_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon19::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-19_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon20::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-20_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon21::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-21_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon22::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-22_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon23::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-23_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon24::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-24_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon25::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-25_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon26::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-26_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon27::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-27_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon28::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-28_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon29::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-29_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon30::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-30_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon31::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-31_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon32::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-32_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon33::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-33_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon34::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-34_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon35::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-35_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon36::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-36_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon37::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-37_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon38::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-38_dk.png);}
+.dark-mode .invest-qna .answer-list .item .invest-unit.fund-icon39::after {background-image:url(../imgs/img/fund/FMEA-0103050000F01-39_dk.png);}
+
+.jsSrveyWrap .field.jsSrveyCurrent ~ .field{display:none;}
+
+.field .mix .text.-percent .icon-plus {background:url(../imgs/img/utility/ico-input-plus.png) no-repeat 2rem center / 2.4rem auto;}
+.field .mix .text.-percent .icon-minus {background:url(../imgs/img/utility/ico-input-minus.png) no-repeat 2rem center / 2.4rem auto;}
+.field .mix .text.-percent .icon-plus input,
+.field .mix .text.-percent .icon-minus input {padding-left:4.8rem;}
+.dl > div .percent {line-height: 1.5;}
+
+.mix .select ~ .select{margin-top: 0; margin-left: 1rem;}
+.mix span.yearmonth {padding-top: 1.5rem; margin-left: 0.3rem;}
+.p.date-result {margin-top:1.2rem; font-size:1.4rem; color:var(--F04);}
+
+/* 투자성향분석 상세 안내 */
+.posible-fund-text {color:var(--F01); font-size:1.5rem; font-weight:500;}
+.posible-fund-text > .all-fund-level {color:var(--font2); font-size: 1.5rem;}
+
+.right ~.button {margin-top: 1.6rem;}
+
+/* NH로보드림 */
+.portfolios {margin-top:3.2rem;}
+.portfolios > a {display:block;}
+.portfolios > a:first-child .portfolio {margin-top:0;}
+.portfolios .portfolio {margin-top:1.6rem; padding:1.6rem 2rem 1.6rem 6.8rem; border:.1rem solid var(--G07); border-radius:1.2rem;}
+.portfolios .portfolio.-active {border-color: var(--point);}
+.portfolios .portfolio.-icon1 {background:url(../imgs/img/fund/ico-FMED-0100000000F01-1.png) no-repeat 2rem center / 3.6rem auto;}
+.portfolios .portfolio.-icon2 {background:url(../imgs/img/fund/ico-FMED-0100000000F01-2.png) no-repeat 2rem center / 3.6rem auto;}
+.portfolios .portfolio.-icon3 {background:url(../imgs/img/fund/ico-FMED-0100000000F01-3.png) no-repeat 2rem center / 3.6rem auto;}
+.portfolios .portfolio .info {color:var(--F03); font-size:1.3rem;}
+.portfolios .portfolio .choicetxt {color:var(--F03); font-size:1.2rem;}
+.portfolios .portfolio .name {color:var(--F01); font-size:1.6rem; font-weight:500;}
+.portfolios .portfolio.-br0 {border:none;}
+
+.portfolios .service {padding:1.2rem 2rem 1.2rem 6rem;}
+.portfolios .service + .service {margin-top:1.2rem;}
+.portfolios .service.-icon1 {background:url(../imgs/img/fund/ico-FMED-0101000000F01-P-1.png) no-repeat 0 0 / 4.8rem auto;}
+.portfolios .service.-icon2 {background:url(../imgs/img/fund/ico-FMED-0101000000F01-P-2.png) no-repeat 0 0 / 4.8rem auto;}
+.portfolios .service.-icon3 {background:url(../imgs/img/fund/ico-FMED-0101000000F01-P-3.png) no-repeat 0 0 / 4.8rem auto;}
+.dark-mode .portfolios .service.-icon1 {background:url(../imgs/img/fund/ico-FMED-0101000000F01-P-1_dk.png) no-repeat 0 0 / 4.8rem auto;}
+.dark-mode .portfolios .service.-icon2 {background:url(../imgs/img/fund/ico-FMED-0101000000F01-P-2_dk.png) no-repeat 0 0 / 4.8rem auto;}
+.dark-mode .portfolios .service.-icon3 {background:url(../imgs/img/fund/ico-FMED-0101000000F01-P-3_dk.png) no-repeat 0 0 / 4.8rem auto;}
+.portfolios .service .info {margin-top:.6rem; color:var(--F03); font-size:1.5rem;}
+.portfolios .service .name {color:var(--F01); font-size:1.6rem; font-weight:500;}
+
+.selection .info.-icon::before {position: absolute; top: 50%; left: 1.9rem; margin-right: 0; transform: translateY(-48%);}
+.selection .info.-icon1::before {background-image: url(../imgs/img/fund/ico-FMED-0101000000F01-P-1.png);}
+.selection .subexp {display:block; margin-top:.2rem; color:var(--font3); font-size:1.2rem; line-height:1.2;}
+.selection .subexp span {display:inline-block;}
+
+.invest-qna .answer-list .item .invest-unit.portfolio {display: inline-block; padding: 2.5rem 2rem 2.4rem 6.4rem; color:var(--F01); font-size:1.6rem; font-weight:500; border: 1px solid var(--line1);}
+.invest-qna .answer-list .item .invest-unit.portfolio::after {left: 2rem;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon1::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-1.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon2::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-2.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon3::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-3.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon4::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-4.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon5::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-5.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon6::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-6.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon7::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-7.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon8::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-8.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon9::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-9.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon10::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-10.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon11::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-11.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon12::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-12.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon13::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-13.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon14::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-14.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon15::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-15.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon16::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-16.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item .invest-unit.portfolio.port-icon17::after {background:url(../imgs/img/fund/ico-FMED-0201010000F01-17.png) no-repeat 0 center / 3.6rem auto;}
+.invest-qna .answer-list .item span.choicetxt {color:var(--F03); font-size:1.2rem; display: block;}
+
+/* 차트 */
+.chart-area {position:relative;}
+.chart-area.-flex {display:flex; justify-content:space-around; align-items:center;}
+
+.chart-title.-type1 {margin:0 0 1.2rem 0; text-indent:0; color:var(--F03); font-size:1.4rem; font-weight:500;}
+.chart-title.-type2 {margin:0 0 1.6rem 0; text-indent:0; color:var(--F03); font-size:1.2rem; font-weight:bold;}
+
+.chart-area .chart-labels.-line {display:flex; justify-content:space-evenly; margin-top:1.2rem;}
+.chart-area .chart-labels.-line .chart-label {position:relative; display:flex; align-items:center; color:var(--F03); font-size:1rem;}
+.chart-area .chart-labels.-line .chart-label::before {content:""; width:3rem; height:.3rem; margin-right:.4rem;}
+.chart-area .chart-labels.-line .chart-label.-max::before {background-color:#fb4e4d;}
+.chart-area .chart-labels.-line .chart-label.-average:before {background-color:#ffcf4d;}
+.chart-area .chart-labels.-line .chart-label.-min::before {background-color:#307aef;}
+.chart-area .chart-labels.-line .chart-label::after {content:""; position:absolute; top:50%; left:1.1rem; margin:-.35rem 0; width:.7rem; height:.7rem; border-radius:100%;}
+.chart-area .chart-labels.-line .chart-label.-max::after {background-color:#fb4e4d;}
+.chart-area .chart-labels.-line .chart-label.-average:after {background-color:#ffcf4d;}
+.chart-area .chart-labels.-line .chart-label.-min::after {background-color:#307aef;}
+
+.chart-area .chart-labels.-doughnut {padding-left:2rem;}
+.chart-area .chart-labels.-doughnut .chart-label {position:relative; display:flex; align-items:flex-start; color:var(--F03); font-size:1.2rem;}
+.chart-area .chart-labels.-doughnut .chart-label::before {content:""; width:1.2rem; height:1.2rem; margin:.3rem .6rem 0 0; border-radius:.2rem;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(1):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(1):before {background-color:#5a5fd8;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(2):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(2):before {background-color:#ff8a65;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(3):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(3):before {background-color:#2bc4c0;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(4):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(4):before {background-color:#ffcb3e;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(5):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(5):before {background-color:#218fef;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(6):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(6):before {background-color:#974bbf;}
+.chart-area .chart-labels.-doughnut .chart-label:nth-of-type(7):before,
+.chart-area .chart-labels.-stack-bar .chart-label:nth-of-type(7):before {background-color:#7fde7b;}
+.chart-area .chart-labels.-doughnut .chart-label + .chart-label {margin-top:1rem;}
+.chart-area .chart-labels.-stack-bar .chart-label + .chart-label {margin-top:.4rem;}
+
+.chart-both {display:flex; padding-left:.8rem;}
+.chart-both .chart-area {width:50%;}
+.chart-both .chart-area .chart-labels.-stack-bar {position:absolute; bottom:0; right:50%; width:100%; padding-left:3.2rem; transform:translateX(50%);}
+.chart-both .chart-area .chart-labels.-stack-bar .chart-label {position:relative; display:flex; align-items:center; color:var(--F03); font-size:1rem; font-weight:normal;}
+.chart-both .chart-area .chart-labels.-stack-bar .chart-label::before {content:""; line-height:.6rem; width:.8rem; height:.8rem; margin-right:.6rem;}
+
+.chart-area .chart-labels.-x {display:flex; justify-content:space-between;}
+.chart-area .chart-labels.-x .chart-label {text-align:center; width:50%; margin-left:2.2rem; color:var(--F03); font-size:1.2rem;}
+.chart-area .chart-labels.-x .chart-label + .chart-label {margin-left:1.2rem;}
+/* // 차트 */
+
+.dl + .button {margin-top: 2.4rem;}
+.typetxt {color:var(--S44);}
+
+.portterm-wrap {margin-top: 1.2rem;}
+.portterm-wrap ul.portterm {display: flex; justify-content: end; text-align: right; color:var(--F01); font-size:1.5rem; margin-left: -6rem; }
+.portterm-wrap ul.portterm li {position:relative; display: inline-block; vertical-align: middle; padding: .4rem 1.2rem .4rem 1.2rem;}
+.portterm-wrap ul.portterm li::before {content: ''; width: .1rem; height: 1.2rem; background: #121212; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.portterm-wrap ul.portterm li:first-child::before {content: ''; width: 0;}
+.portterm-wrap ul.portterm li::after {content:''; display: block; clear: both;}
+.portterm-wrap ul.portterm .strong {font-weight: 600;}
+
+.tit-gropup {margin: 3.2rem 0 .6rem 0;}
+.table-box {margin-top: 4rem;}
+
+.case-wrap ~ .checkbox {margin-top: 1.6rem;}
+
+.ul.-bullet + .shortcut.-boxType {margin-top: 2.4rem;}
+
+.box-radio.-jointype input:dfundbled + label{color:var(--font1); background-color: var(--bg-radio-dfundbled );}
+.box-radio.-jointype input:dfundbled + label::after {border: none;}
+
+.data-box + .fit-buttons {margin-top: 1.2rem;}
+.standardtxt {font-size: 1.4rem; color:var(--font3); font-weight: 400;}
+.tit-wrap {display: flex; justify-content: space-between;}
+.tit-wrap + .table {margin-top: 0;}
+.table td span.sum {font-weight: 500;}
+.table tbody td + th{border-left: 1px solid var(--line1);}
+
+.dl.-box.-half dt {width: 40%;}
+.dl.-box.-half dd {width: 60%;}
+
+/* .tabs + .content .h5 {margin-top: .8rem;} */
+.account .gravity.-bordertype {margin-top: 2.4rem;}
+.b-wrap {margin-top: 1.6rem;}
+.standardtxt + .account {margin-top: 1.6rem;}
+
+.dl > div.title-group {align-items: center; margin: .7rem 0 .7rem 0;}
+.dl.-linerobo {padding: 1.4rem 0 3.2rem 0; border-top: 1px solid var(--line2); border-bottom: 1px solid var(--line2);}
+.dl.-linerobo + .dl.-linerobo {margin-top:0; border-top:none;}
+.dl.-linerobo > div.field {display: block;}
+
+.shortcut.-lined.-flor a {display: block; align-items: center; padding: 1.9rem var(--indent);}
+.shortcut.-lined.-flor .info {color: var(--F04); font-size: 1.3rem; font-weight: 400;}
+
+.button-wrap {margin-top: 2.4rem;}
+.deal-history-list {margin-top: 4rem;}
+.txtbuy {margin-bottom: 1.6rem; font-size: 1.4rem; color: var(--F03);}
+
+.table .ul.-bullet .point {font-size: 1.4rem; color:var(--font2) !important}
+.custom-checkbox-wrap + .case-wrap {margin-top: 2.4rem;}
+.case-wrap .p + .checkbox {margin-top: 3.2rem;}
+
+.mix.income .dash {width: 1rem;}
+.mix.income .text input {padding: 1.4rem .5rem; text-align: center;}
+.mix.income > .text input.left-side {padding-left: 1rem;}
+.mix.income > .text input.right-side {padding-right: 1rem;}
+
+/* 펀드 상세 > 목표시장 정보 안내  */
+
+.product-detail-btn {display: flex;justify-content: space-around; align-items: flex-start; margin: 1.2rem 0 1.6rem 0;}
+.product-info .ul > li {font-size: 1.2rem;}
+
+.compare-text {position:absolute; top:2.2rem; right:5.2rem; color:var(--F04); font-size:1.4rem; font-weight:normal;}
+
+.compare-wrap + h2,
+.compare-wrap + .h2-group {transition:.3s ease}
+.compare-wrap.-active + h2,
+.compare-wrap.-active + .h2-group {margin-top:5rem;}
+@keyframes compare {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.compare-wrap .compares {display:block; width:calc(100% - 7.6rem); letter-spacing:0; word-spacing:0; font-size:0;}
+.compare-wrap .compares .compare-item {display:inline-block; vertical-align:middle; position:relative; width:calc((100% / 2) - .3rem); height:3rem; line-height:3rem; padding:0 3rem 0 1rem; background-color:var(--G09); border-radius:.6rem; color:var(--F03); font-size:1.3rem; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.compare-wrap .compares .compare-item.-disabled {background-color:var(--G09); color:var(--F07);}
+.compare-wrap .compares .compare-item + .compare-item {margin-left:.6rem;}
+.compare-wrap .compares .compare-item .compare-delete {position:absolute; top:50%; margin:-.8rem 0; right:1rem; width:1.6rem; height:1.6rem; background:url(../imgs/img/isa/ico-FMJA-1400000000F01-1.png) no-repeat 0 0 / 1.6rem auto;}
+.compare-wrap .button.-xs.-fit.-compare {margin-left:.6rem; white-space:nowrap;}
+.compare-wrap .button.-xs.-fit.-secondary.-compare {font-weight:normal;}
+.compare-wrap .button.-xs.-fit.-secondary.-compare:disabled {border-color:var(--G07); color:var(--F05);}
+
+.client-info {margin-top:1.6rem; font-size: 1.5rem;}
+.client-info .desc {margin-bottom:.6rem; color:var(--font2); line-height: 1.3;}
+.client-info a {line-height: 1.3;}
+
+.fund-list-area .selection .info .fund-info-subtxt {color: var(--font3); font-weight: 400; font-size: 1.4rem; margin: .4rem 0 .5rem 0;}
+.fund-list-area .selection .info .fund-recruit-time {color: var(--font2);  font-size: 1.4rem; margin-top: .6rem;}
+.fund-list-area .selection .fund-info-standard {margin-top:3.2rem;}
+.fund-list-area .selection .accordion{margin-top:2.4rem;}
+.fund-list-area .selection .accordion.-card{border: 0; background-color: var(--G09);}
+.fund-list-area .selection .accordion.-card > .title {min-height: 4.8rem; font-size: 1.4rem; font-weight: 400; padding: 0 4.8rem 0 2rem;}
+.fund-list-area .selection .accordion.-card > .panel {font-size: 1.4rem; color:var(--F03);}
+
+.client-info + .box {margin-top: 2.4rem;}
+.img-box-fund {margin-bottom: 4rem; text-align: center;}
+
+.box + .jsSrveyWrap {margin-top: 3.2rem;}
+
+.join-process-visual {margin-top: .3rem;}
+.join-process-visual::after {content: ''; display: inline-block; width: 31.2rem; height: 17rem; background: no-repeat center; background-size: contain; background-image: url(../imgs/img/fund/img-FMEB-0403010000F01-P-1.png);}
+.dark-mode .join-process-visual::after {content: ''; display: inline-block; width: 31.2rem; height: 17rem; background: no-repeat center; background-size: contain; background-image: url(../imgs/img/fund/img-FMEB-0403010000F01-P-1_dk.png);}
+
+.h1-group .desc + .desc {margin-top: 1.6rem;}
+
+/* NH추천펀드 예외case */
+.hr.-recommend-fund {margin:4rem var(--out) 3.6rem var(--out);}
+.filter-bar .mix-bar.-recommend-fund {min-height:0; margin-bottom:1rem;}
+.date-space {margin-right:.6rem;}
+
+.case-wrap.-lg {margin-top:4rem;}
+.case-wrap.-xs2 {margin-top:1.6rem;}

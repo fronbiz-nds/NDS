@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+
+	<link rel="stylesheet" href="../../../../assets/libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+            <div class="navigation smartbank -mall">
+                <header class="header top">
+                    <div class="inner basic">
+                        <div class="funcs">
+                            <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                        </div>
+                        <h1 class="title">운용현황보고서</h1>
+                        <div class="funcs">
+                            <button type="button" class="func -home"><span class="hide">홈</span></button>
+                            <button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+			<main class="contents">
+				<nav class="tabs -swipe">
+					<div class="outer flex -relative -end">
+						<div class="inner">
+							<ul class="list tab -line -flexible">
+								<li class="item"><a href="javascript:void(0)">요약</a></li>
+								<li class="item"><a href="javascript:void(0)">자산현황</a></li>
+								<li class="item"><a href="javascript:void(0)">디폴트옵션</a></li>
+								<li class="item"><a href="javascript:void(0)">수익률 현황</a></li>
+								<li class="item"><a href="javascript:void(0)">수수료</a></li>
+								<li class="item -active"><a href="javascript:void(0)">기타</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="content">
+					<div class="field">
+						<div class="h4-group">
+							<h3 class="h4">
+								예상 연금  수령액
+								<span class="tooltip">
+									<button type="button" class="trigger">
+										<span class="hide">툴팁</span>
+									</button>
+									<span class="panel">
+										<span class="title">예상 연금  수령액 안내</span>
+										<span class="t-content">
+											예상 연금  수령액 안내
+										</span>
+									</span>
+								</span>
+							</h3>
+						</div>
+						<div class="account card -list">
+							<dl class="dl">
+								<div>
+									<dt>(가정)예상 납입액</dt>
+									<dd>1,000,000원</dd>
+								</div>
+								<div>
+									<dt>(가정)예상 수익률</dt>
+									<dd class="red">+10.00%</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+
+					<div class="case-wrap -xs">
+						<div class="table -horizontal -basic">
+							<table>
+								<caption><span class="hide">연령(만), 연도, 금액 표</span></caption>
+								<colgroup>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">연령(만)</th>
+										<th scope="col">연도</th>
+										<th scope="col">금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>55세</td>
+										<td>2023년</td>
+										<td class="num">5,814,000원</td>
+									</tr>
+									<tr>
+										<td>56세</td>
+										<td>2033년</td>
+										<td class="num">23,256,000원</td>
+									</tr>
+									<tr>
+										<td>57세</td>
+										<td>2034년</td>
+										<td class="num">23,652,000원</td>
+									</tr>
+									<tr>
+										<td>58세</td>
+										<td>2035년</td>
+										<td class="num">24,073,000원</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="case-wrap -xs">
+						<ul class="ul -bullet">
+							<li><span class="fc-1 fw-500">1. 예상 납입액</span>  : 작성기준일로부터 역산한 직전 3년간의 월 평균 납입액을 의미합니다.</li>
+							<li><span class="fc-1 fw-500">2. 예상 수익률</span>   : ‘통합연금포털’ 예상금액 산출시 적용되는 가정수익률을 적용하였으며, 매년 변경될 수 있습니다.</li>
+							<li><span class="fc-1 fw-500">3. 예상 연금 수령액</span>
+								<div>
+									<ul class="basic">
+										<li>① 직전 3년간 월평균 납입액을</li>
+										<li>② 고객이 지정한 기간 동안 납입하고,</li>
+										<li>➂ 예상수익률이 향후 일정하다는 가정하에</li>
+										<li>➃ 고객이 신청한 연금수령개시 예정일로부터</li>
+										<li>➄ 고객의 연금수령 신청기간(기간이 없는 경우 20년 가정) 동안 연금을 수령하는 것을 가정하여 산출한 세금 차감 전 금액입니다.</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<hr class="hr content-8" aria-hidden="true">
+
+					<div class="case-wrap -xl">
+						<h3 class="h4 mb-12">계좌이체 제도 안내</h3>
+						<dl class="product-info-dl">
+							<dt class="h4">세법 개정에 따라 계좌이체 제도가 변경될 수 있으니 아래 내용을 확인해 주세요.</dt>
+                            <dd>
+                                <ul class="ul -bullet">
+                                    <li>계좌이체 제도는 소득세법 시행령 제 40조의4 (연금계좌의 이체)에 따라 기존 연금계좌에 있는 금액이 연금수령이 개시되기전의 다른 연금계좌로 이체되는 경우 이를 인출로 보지 않고 계속 세액공제나 과세이연 혜택을 유지시키는 것을 의미합니다.</li>
+                                    <li>계좌이체는 전부 이전만 가능하고, 일부 금액의 이전은 불가합니다.</li>
+									<li>아래의 경우는‘계좌이체’로 보지 않으므로 세제상 혜택을 받을 수 없습니다.
+										<div>
+											<ul class="basic">
+												<li>① 2013.03.01 이후 가입한 개인형 IRP 계좌에서 2013.03.01 이전에 가입한 개인형IRP계좌로 이체 되는 경우</li>
+												<li>② 개인형IRP계좌에 있는 일부 금액이 이체 되는 경우</li>
+											</ul>
+										</div>
+									</li>
+									<li>개인형 IRP계좌 상호간의 이체 또는 개인형IRP계좌-연금저축계좌간 이체시에는 이체하는 금융회사와 이체받는 금융기관 중 한 기관만 방문하시면 됩니다.</li>
+                                </ul>
+                            </dd>
+						</dl>
+					</div>
+
+					<div class="case-wrap -xs">
+						<div class="box">
+							<p class="sentence1">계좌이체가 가능한 경우</p>
+							<ul class="ul -bullet">
+								<li>개인형IRP계좌(2013.03.01 이후 가입계좌)에서 타 개인형IRP계좌(2013.03.01 이후 가입계좌)로의 전액이체</li>
+								<li>개인형IRP계좌(2013.03.01 이전 가입계좌)에서 타 개인형IRP계좌(2013.03.01 이후 가입계좌)로의 전액이체</li>
+								<li>연령이 만 55세 이상이면서 연금계좌 불입기간이 5년을 경과하거나, 이연퇴직소득이 있고 만 55세 이상인 연금저축계좌 가입자가 개인형IRP로 전액이체(당행 이관인 경우에만 가능함)</li>
+								<li>연령이 만 55세 이상이면서 연금계좌 불입기간이 5년을 경과하거나, 이연퇴직소득이 있고 만 55세 이상인 개인형IRP 가입자가 연금저축계좌로 전액이체</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="sticker">
+					<div class="notice -active" data-role="fold">
+						<button type="button" class="title" data-role="marker">알아두세요</button>
+						<div class="panel" data-role="visible">
+							<ul class="ul -bullet">
+								<li>적립금 운용현황에 대해 궁금한 사항은 퇴직연금 관리점 또는 퇴직연금 상담센터(1588-5995)로 문의해 주시기 바랍니다.</li>
+								<li>금융감독원(https://www.fss.or.kr/)의 ‘통합연금포털‘에서 퇴직연금사업자별 퇴직연금 수익률, 총비용부담률 등을 비교해 볼 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../../assets/libs/scrollout/dist/scroll-out.min.js"></script>
+	<script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../../../assets/js/common-ui.js"></script>
+	<script>
+		// 스크립트 추가
+	</script>
+</body>
+</html>

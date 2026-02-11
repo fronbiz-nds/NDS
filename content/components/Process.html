@@ -1,0 +1,725 @@
+<script data-size="2" data-title="Process | process-progress-bar" type="text/template">
+                            <div class="progress-box">
+                                <div class="progress">
+                                    <div class="bar" style="--current:3; --max:12;">
+                                        <div class="gauge">
+                                            <!-- 접근성 관련 텍스트 동적 변경 필요 -->
+                                            <span class="hide"> 12단계 중 3번째</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-progress-number" type="text/template">
+                            <div class="progress-num">
+                                <span class="current">01</span>
+                                <span class="total">03</span>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/horizontal @ Step=3step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -step horizontal">
+                                    <li class="done">
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                    <li class="active">
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/horizontal @ Step=4step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -step horizontal">
+                                    <li class="done">
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                    <li class="active">
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/horizontal @ Step=5step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -step horizontal">
+                                    <li class="done">
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                    <li class="active">
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">스탭명</div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/icon/horizontal @ Type=3step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -icon horizontal">
+                                    <li class="step1 done">
+                                        <div class="title">스탭명</div>
+                                        <span class="sub-info">부가설명</span>
+                                    </li>
+                                    <li class="step2 active">
+                                        <div class="title">스탭명</div>
+                                        <span class="sub-info">부가설명</span>
+                                    </li>
+                                    <li class="step3 disabled">
+                                        <div class="title">스탭명</div>
+                                        <span class="sub-info">부가설명</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/icon/horizontal @ Type=4step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -icon horizontal">
+                                    <li class="step1 done">
+                                        <div class="title">스탭명</div>
+                                        <span class="sub-info">부가설명</span>
+                                    </li>
+                                    <li class="step2 active">
+                                        <div class="title">스탭명</div>
+                                        <span class="sub-info">부가설명</span>
+                                    </li>
+                                    <li class="step2 active">
+                                        <div class="title">스탭명</div>
+                                        <span class="sub-info">부가설명</span>
+                                    </li>
+                                    <li class="step3 disabled">
+                                        <div class="title">스탭명</div>
+                                        <span class="sub-info">부가설명</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/icon/vertical @ Step=2step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -icon vertical">
+                                    <li class="step1">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step2">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/icon/vertical @ Step=3step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -icon vertical">
+                                    <li class="step1">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step2">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step3">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/icon/vertical @ Step=4step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -icon vertical">
+                                    <li class="step1">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step2">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step3">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step4">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/icon/vertical @ Step=5step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -icon vertical">
+                                    <li class="step1">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step2">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step3">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step4">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step5">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/icon/vertical @ Step=6step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -icon vertical">
+                                    <li class="step1">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step1">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step2">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step3">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step4">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step5">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/icon/vertical @ Step=7step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -icon vertical">
+                                    <li class="step1">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step1">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step2">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step3">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step4">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step5">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="step6">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/lg @ Step=2step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -badge text">
+                                    <li>
+                                        <span class="gadget">1단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">2단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/lg @ Step=3step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -badge text">
+                                    <li>
+                                        <span class="gadget">1단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">2단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">3단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/lg @ Step=4step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -badge text">
+                                    <li>
+                                        <span class="gadget">1단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">2단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">3단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">4단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/lg @ Step=5step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -badge text">
+                                    <li>
+                                        <span class="gadget">1단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">2단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">3단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">4단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">5단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/lg @ Step=6step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -badge text">
+                                    <li>
+                                        <span class="gadget">1단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">2단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">3단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">4단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">5단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">6단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/lg @ Step=7step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -badge text">
+                                    <li>
+                                        <span class="gadget">1단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">2단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">3단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">4단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">5단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">6단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <span class="gadget">7단계</span>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/sm @ Step=1setp" type="text/template">
+                            <div class="process">
+                                <ol class="ol -circle -sm">
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/sm @ Step=2step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -circle -sm">
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/sm @ Step=3step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -circle -sm">
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/sm @ Step=4step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -circle -sm">
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/sm @ Step=5step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -circle -sm">
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/sm @ Step=6step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -circle -sm">
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/text/sm @ Step=7step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -circle -sm">
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span class="desc">내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/vertical @ Step=2step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -step vertical">
+                                    <li class="done">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="active">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/vertical @ Step=3step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -step vertical">
+                                    <li class="done">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="active">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/vertical @ Step=4step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -step vertical">
+                                    <li class="done">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="active">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/vertical @ Step=5step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -step vertical">
+                                    <li class="done">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="active">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/vertical @ Step=6step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -step vertical">
+                                    <li class="done">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="active">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Process | process-step/vertical @ Step=7step" type="text/template">
+                            <div class="process">
+                                <ol class="ol -step vertical">
+                                    <li class="done">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li class="active">
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                    <li>
+                                        <div class="title">타이틀</div>
+                                        <span>내용을 입력해 주세요.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </script>

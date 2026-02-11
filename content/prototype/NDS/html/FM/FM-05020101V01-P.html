@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>내 정보 수정</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">주택청약(종합)저축 유의사항</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content"> 
+                    <ul class="ul -bullet">
+                        <li>납입회차는 국민주택 청약 시 순위 산정과 관련이 있습니다.</li>
+                        <li>국민주택 청약 시 1순위는 해당지역에 따른 일정 가입기간 및 납입회차를 충족해야 발생하므로, 입금 시 회차 분할 여부를 명확히 입력하셔야 합니다.</li>
+                        <li>1회차당 납입 금액은 최저 2만원부터 최고 50만원(청약저축 10만원)까지 10원 단위로 입금 가능합니다.</li>
+                        <li>단, 계좌잔액이 1,500만원에 도달할 때까지는 회차당 최고 1,500만원까지 입금 가능합니다.(청약저축제외)</li>
+                        <li>국민주택 등에 청약 시 회차별 입금액은 10만원을 초과하여도 10만원만 인정하며 동일순위 경쟁시 회차별 입금액이 많은 계좌가 청약에 유리합니다.</li>
+                        <li>매월 정해진 날짜(신규일 응당일)에 납입하지 않는 경우 지연(연체)일수 발생으로 해당 회차 및 금액이 늦게 인정될 수 있으며, 순위발생일도 늦어질 수 있습니다.</li>
+                        <li>주택별 청약자격 등 주택청약(종합)저축의 모든 업무 내용은 법령인 주택공급에 관한 규칙이 적용됩니다.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="navigation">
+                <div class="header">
+                    <div class="inner">
+                        <h1 class="title">투자성향 및 펀드 위험등급 안내</h1>
+                        <div class="funcs">
+                            <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <h4 class="h4">Select</h4>
+                    <div class="type-wrap">
+                        <div class="select -levels">
+                            <button type="button" aria-haspopup="true" class="title">공격투자형<span class="grade1-icon"></span></button>
+                        </div>
+                        <div class="select -levels">
+                            <button type="button" aria-haspopup="true" class="title">적극투자형<span class="grade2-icon"></span></button>
+                        </div>
+                        <div class="select -levels">
+                            <button type="button" aria-haspopup="true" class="title">위험중립형<span class="grade3-icon"></span></button>
+                        </div>
+                        <div class="select -levels">
+                            <button type="button" aria-haspopup="true" class="title">안정추구형<span class="grade4-icon"></span></button>
+                        </div>
+                        <div class="select -levels">
+                            <button type="button" aria-haspopup="true" class="title">안정형<span class="grade5-icon"></span></button>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xl">
+                        <div class="type-wrap">
+                            <div class="select -levels">
+                                <button type="button" aria-haspopup="true" class="title">1등급<span class="level1"></span></button>
+                            </div>
+                            <div class="select -levels">
+                                <button type="button" aria-haspopup="true" class="title">2등급<span class="level2"></span></button>
+                            </div>
+                            <div class="select -levels">
+                                <button type="button" aria-haspopup="true" class="title">3등급<span class="level3"></span></button>
+                            </div>
+                            <div class="select -levels">
+                                <button type="button" aria-haspopup="true" class="title">4등급<span class="level4"></span></button>
+                            </div>
+                            <div class="select -levels">
+                                <button type="button" aria-haspopup="true" class="title">15급<span class="level5"></span></button>
+                            </div>
+                            <div class="select -levels">
+                                <button type="button" aria-haspopup="true" class="title">6등급<span class="level6"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xl">
+                        <h4 class="h4">Label</h4>
+                        <span class="badges">
+                            <span class="badge -grade1">1등급</span><span class="badge -grade1">매우높은위험</span>
+                        </span>
+                        <span class="badges">
+                            <span class="badge -grade2">2등급</span><span class="badge -grade2">높은위험</span>
+                        </span>
+                        <span class="badges">
+                            <span class="badge -grade3">3등급</span><span class="badge -grade3">다소높은위험</span>
+                        </span>
+                        <span class="badges">
+                            <span class="badge -grade4">4등급</span><span class="badge -grade4">보통위험</span>
+                        </span>
+                        <span class="badges">
+                            <span class="badge -grade5">5등급</span><span class="badge -grade5">낮은위험</span>
+                        </span>
+                        <span class="badges">
+                            <span class="badge -grade6">6등급</span><span class="badge -grade6">매우낮은위험</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        window.addEventListener('DOMContentLoaded', () => {
+                const toast = document.querySelector('.toast');
+                if (!toast) return;
+
+                // 페이지 진입 시 -active 추가
+                toast.classList.add('-active');
+
+                setTimeout(() => {
+                    toast.classList.remove('-active');
+                }, 3000);
+            });
+    </script>
+</body>
+</html>

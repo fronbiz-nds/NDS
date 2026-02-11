@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+    <!-- 차트 관련css -->
+    <link rel="stylesheet" href="../../../../assets/libs/Chart/dist/Chart.css">
+    <link rel="stylesheet" href="../../../../assets/libs/Chart/dist/Chart.min.css"> 
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">투자 시뮬레이션</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="h2-group">
+                        <h2 class="h2">설정 결과를 확인해 주세요</h2>
+                    </div>
+
+                    <div class="card -sum">
+                        <dl class="dl -box">
+                            <div>
+                                <dt>추천 포트폴리오</dt>
+                                <dd>위험중립형</dd>
+                            </div>
+                            <div>
+                                <dt>시뮬레이션 기간</dt>
+                                <dd>3년</dd>
+                            </div>
+                            <div>
+                                <dt>교체매매금액</dt>
+                                <dd>100,000원</dd>
+                            </div>
+                            <div>
+                                <dt>정기적립투자금액</dt>
+                                <dd>매월 0원</dd>
+                            </div>
+                            <div>
+                                <dt>총 투자금액</dt>
+                                <dd>100,000원</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    
+                    <div class="case-wrap -xs">
+                        <div class="chart-area">
+                            <p class="chart-info">(수익률%)</p>
+                            <canvas id="line-chart" height="156rem" aria-label=""></canvas> <!-- 임시 높이값 -->
+                            <div class="chart-labels -line">
+                                <p class="chart-label -max">최대수익률</p>
+                                <p class="chart-label -average">평균수익률</p>
+                                <p class="chart-label -min">최저수익률</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xs">
+                        <div class="table -combined -basic">
+                            <table>
+                                <caption><span class="hide">수익률 및 금액</span></caption> 
+                                <colgroup>
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" rowspan="2" scope="col">구분</th>
+                                        <th colspan="3" scope="col">예상평가금액</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">최저</th>
+                                        <th scope="col">평균</th>
+                                        <th scope="col">최고</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">수익률(%)</th>
+                                        <td><span class="blue">-12.87</span></td>
+                                        <td>5.10</td>
+                                        <td>26.47</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">금액(원)</th>
+                                        <td>87,127</td>
+                                        <td>105,103</td>
+                                        <td>1236,477</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <h4 class="h4">기간별 상세 내역</h4>
+                    <div class="table -combined -basic">
+                        <table>
+                            <caption><span class="hide">기간별 수익률 상세 내역</span></caption> 
+                            <colgroup>
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2" rowspan="2" scope="col">구분</th>
+                                    <th colspan="3" scope="col">수익률(%)</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">최저</th>
+                                    <th scope="col">평균</th>
+                                    <th scope="col">최고</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">3개월</th>
+                                    <td><span class="blue">-7.02</span></td>
+                                    <td>0.23</td>
+                                    <td>5.96</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6개월</th>
+                                    <td><span class="blue">-9.24</span></td>
+                                    <td>0.99</td>
+                                    <td>10.76</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1년</th>
+                                    <td><span class="blue">-11.60</span></td>
+                                    <td>2.09</td>
+                                    <td>14.45</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2년</th>
+                                    <td><span class="blue">-10.34</span></td>
+                                    <td>3.26</td>
+                                    <td>26.18</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table">
+                        <table>
+                            <caption><span class="hide">기간별 금액 상세 내역</span></caption> 
+                            <colgroup>
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2" rowspan="2" scope="col">구분</th>
+                                    <th colspan="3" scope="col">금액(원)</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">최저</th>
+                                    <th scope="col">평균</th>
+                                    <th scope="col">최고</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">3개월</th>
+                                    <td>9.2,978</td>
+                                    <td>100,233</td>
+                                    <td>105,961</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6개월</th>
+                                    <td>90,755</td>
+                                    <td>100,991</td>
+                                    <td>110,769</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1년</th>
+                                    <td>88,393</td>
+                                    <td>102,093</td>
+                                    <td>114,450</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2년</th>
+                                    <td>89,655</td>
+                                    <td>103,264</td>
+                                    <td>126,185</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="case-wrap -xl">
+                        <button type="button" class="button -tertiary -md">시뮬레이션 다시하기</button>
+                    </div>
+                </div>
+
+                <div class="sticker">
+                    <div class="notice -active" data-role="fold">
+                        <button type="button" class="title" data-role="marker" title="펼쳐짐">알아두세요</button>
+                        <div class="panel" data-role="visible">
+                            <ul class="ul -bullet">
+                                <li>고객님의 투자 결정에 참고하기 위해 통계적 계산에 의해 도출된 수치입니다.</li>
+                                <li>해당 내용이 미래의 수익률을 보장하지 않으며, 다양한 변수에 의해 언제든 변경될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg -primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <!-- 차트 관련js -->
+    <script src="../../../../assets/libs/Chart/dist/Chart.js"></script>
+    <script src="../../../../assets/libs/Chart/dist/Chart.min.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+
+        var lineChart = document.getElementById('line-chart');
+        var chart = new Chart(lineChart, {
+            type: 'line',
+            data : {
+                labels: ['2023.10.23', '2024.04.22', '2024.10.21', '2025.04.21', '2025.10.20', '2026.04.20', '2026.10.19'],
+                datasets: [{
+                    label: '최대수익률',
+                    data: [7, 12, 13, 2, -8, -2, 16],
+                    backgroundColor: '#fb4e4d',
+                    borderColor: '#fb4e4d',
+                    borderWidth: 1,
+                    fill: false,
+                    lineTension: 0,
+                    pointBorderWidth: 1,
+                    pointBackgroundColor: 'rgba(251,78,77,.5)',
+                    pointRadius: 2,
+                }, {
+                    label: '평균수익률',
+                    data: [4, 0, 5, -3, -6, -2, 12],
+                    backgroundColor: '#ffcf4d',
+                    borderColor: '#ffcf4d',
+                    borderWidth: 1,
+                    fill: false,
+                    lineTension: 0,
+                    pointBorderWidth: 1,
+                    pointBackgroundColor: 'rgba(255,207,77,.5)',
+                    pointRadius: 2,
+                }, {
+                    label: '최저수익률',
+                    data: [0, -8, -1, -7, -3, -8, 10],
+                    backgroundColor: '#307aef',
+                    borderColor: '#307aef',
+                    borderWidth: 1,
+                    fill: false,
+                    lineTension: 0,
+                    pointBorderWidth: 1,
+                    pointBackgroundColor: 'rgba(48,122,239,.5)',
+                    pointRadius: 2,
+                },]
+            },
+            //설정
+            options: {
+                responsive: true,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                legend: {
+                    display : false
+                },
+                scales:{
+                    xAxes:[{
+                        ticks:{
+                            fontColor : '#767676',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        },
+                    }],
+                    yAxes:[{
+                        ticks:{
+                            min: -9,
+                            max:18,
+                            stepSize:3,
+                            fontColor : '#767676',
+                            fontSize : 8,
+                            fontFamily : 'Pretendard'
+                        },
+                    }]
+                }           
+            }
+        })
+    </script>
+</body>
+</html>

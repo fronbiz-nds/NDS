@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">환전신청 내역조회 상세</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <h3 class="h4">외화수령인</h3>
+                    <div class="account card">
+						<dl class="dl">
+							<div>
+								<dt>성명</dt>
+								<dd>홍*동</dd>
+							</div>
+							<div>
+								<dt>생년월일</dt>
+								<dd>801230-*******</dd>
+							</div>
+							<div>
+								<dt>전화번호</dt>
+								<dd>010-3423-4425</dd>
+							</div>
+						</dl>
+					</div>
+
+                    <h3 class="h4">외화환전 정보</h3>
+                    <div class="account card">
+						<dl class="dl">
+							<div>
+								<dt>환전신청일</dt>
+								<dd>2019.03.27</dd>
+							</div>
+							<div>
+								<dt>외화수령일</dt>
+								<dd>2019.03.27</dd>
+							</div>
+							<div>
+								<dt>환전번호</dt>
+								<dd>CI0********60000**</dd>
+							</div>
+							<div>
+								<dt>환전금액</dt>
+								<dd><span>USD</span> 361.00</dd>
+							</div>
+							<div>
+								<dt>고시환율</dt>
+								<dd>1,194.23원</dd>
+							</div>
+							<div>
+								<dt>적용환율</dt>
+								<dd>1,184.23원</dd>
+							</div>
+							<div>
+								<dt>우대원화금액</dt>
+								<dd>2,012원</dd>
+							</div>
+							<div>
+								<dt>환급계좌번호</dt>
+								<dd>NH농협은행<br>
+                                    301-4567-1234-91
+                                </dd>
+							</div>
+							<div>
+								<dt>인출원화</dt>
+								<dd>1,184원</dd>
+							</div>
+						</dl>
+					</div>
+
+                    <h3 class="h4">외화수령점 정보</h3>
+                    <div class="account card">
+						<dl class="dl">
+							<div>
+								<dt>외화수령점</dt>
+								<dd>양재지점</dd>
+							</div>
+							<div>
+								<dt>주소</dt>
+								<dd>서울특별시 강남구 대치동 대치빌라</dd>
+							</div>
+							<div>
+								<dt>전화번호</dt>
+								<dd><a href="javascript:void(0)" class="a underline">02-1234-1777</a></dd>
+							</div>
+						</dl>
+					</div>
+
+                    <div class="case-wrap">
+						<ul class="shares bott-center">
+							<li><button type="button" class="share -kakao">카카오톡 <span class="hide">카카오톡 메시지 보내기</span></button></li>
+							<li><button type="button" class="share -message">문자메시지 <span class="hide">카카오톡 봉투선택 페이지 이동</span></button></li>
+						</ul>
+					</div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons -half">
+                        <button type="button" class="button -tertiary -lg">재환전(되팔기)</button>
+                        <button type="button" class="button -primary -lg">외화BOX 담기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+    </script>
+</body>
+</html>

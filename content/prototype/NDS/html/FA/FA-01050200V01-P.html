@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>내 정보 수정</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">받는분</h1>
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content"> 
+                    <div class="field search">
+                        <div class="mix">
+                            <div class="text">
+                                <input type="text" class="left-side" id="searchce" placeholder="이름/전화번호 입력">
+                            </div>
+                    
+                            <div class="space -lined search">
+                                <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap">
+                        <ul class="fixed-quick-list">
+                            <li><a href="#aa">ㄱ</a></li>
+                            <li><a href="#ab">ㄴ</a></li>
+                            <li><a href="#ac">ㄷ</a></li>
+                            <li><a href="#ad">ㄹ</a></li>
+                            <li><a href="#ae">ㅁ</a></li>
+                            <li><a href="#af">ㅂ</a></li>
+                            <li><a href="#ag">ㅅ</a></li>
+                            <li><a href="#ah">ㅇ</a></li>
+                            <li><a href="#ai">ㅈ</a></li>
+                            <li><a href="#aj">ㅊ</a></li>
+                            <li><a href="#ak">ㅋ</a></li>
+                            <li><a href="#al">ㅌ</a></li>
+                            <li><a href="#am">ㅍ</a></li>
+                            <li><a href="#an">ㅎ</a></li>
+                            <!-- 영어 주소록 시 추가 -->
+                            <li><a href="#ba">A</a></li>
+                            <li><a href="#bj">J</a></li>
+                            <li><a href="#bs">S</a></li>
+                            <li><a href="#bz">Z</a></li>
+                            <li><a href="#ao">#</a></li>
+                        </ul>
+
+                        <!-- [CASE] 최근 조회한 휴대폰 목록에 붙는 클레스 recently -->
+                        <div class="addr-book-list recently">
+                            <div class="addr-book-info">최근 조회한 휴대폰</div>
+                            <ul class="addr-book-result">
+                                <li> <!-- 좌측 상단에 알림표시 class="allone-members" -->
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">강농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                    <div class="addr-right-menu">
+                                        <button type="button" class="addr-delete"><span class="hide">전화번호 삭제</span></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">김나리</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                    <div class="addr-right-menu">
+                                        <button type="button" class="addr-delete"><span class="hide">전화번호 삭제</span></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="addr-book-list">
+                            <div class="addr-book-info" id="aa">ㄱ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">강농협협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">고농협협협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">곤농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">곽농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="ab">ㄴ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">나농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">남농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">노농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="ac">ㄷ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">다농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="ad">ㄹ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">류농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="ae">ㅁ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">문농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="af">ㅂ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">박농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="ag">ㅅ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">박농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="ah">ㅇ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">안농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="ai">ㅈ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">장농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">조농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="aj">ㅊ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">차농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">추농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">최농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="ak">ㅋ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">카캬코</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="al">ㅌ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">타요</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="am">ㅍ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">표농협</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="an">ㅎ</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">하하</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">호호</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">히히</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="ba">A</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">Anna</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="bj">J</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">John</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="bs">S</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">Sui</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="bz">Z</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">Zara</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+    
+                            <div class="addr-book-info" id="ao">#</div>
+                            <ul class="addr-book-result">
+                                <li>
+                                    <button type="button" class="addr-select">
+                                        <span class="addr-name">❤💖유</span>
+                                        <span class="addr-number">***-***-****</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

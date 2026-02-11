@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+    <link rel="stylesheet" href="../../assets/css/util.css">
+</head>
+<body>
+    <div id="layer" class="layer">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">조회 옵션 선택</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="field">
+                        <p class="label">조회기간</p>
+                        <div class="box-radios -sm">
+                            <div class="box-radio">
+                                <input type="radio" name="periods" id="period1" checked>
+                                <label for="period1">1주일</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="periods" id="period2">
+                                <label for="period2">1개월</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="periods" id="period3">
+                                <label for="period3">3개월</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="periods" id="period4">
+                                <label for="period4">직접입력</label>
+                            </div>
+                        </div>
+                        <div class="mix datepicker">
+                            <div class="text" data-clear="false">
+                                <input type="text" class="left-side" id="date" value="2023.08.23" aria-haspopup="true" readonly>
+                            </div>
+                            <div class="space -lined date -start">
+                                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+                            </div>
+                            <div class="dash">~</div>
+                            <div class="text" data-clear="false">
+                                <input type="text" class="left-side" id="date" value="2023.08.23" aria-haspopup="true" readonly>
+                            </div>
+                            <div class="space -lined date -end">
+                                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <p class="label">조회구분</p>
+                        <div class="box-radios -sm">
+                            <div class="box-radio">
+                                <input type="radio" name="box-radios" id="box-radio1" checked>
+                                <label for="box-radio1">최신순</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="box-radios" id="box-radio2">
+                                <label for="box-radio2">과거순</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <p class="label">조회유형</p>
+                        <div class="box-radios -sm">
+                            <div class="box-radio">
+                                <input type="radio" name="box-radios2" id="box-radio3" checked>
+                                <label for="box-radio3">전체</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="box-radios2" id="box-radio4">
+                                <label for="box-radio4">입금</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="box-radios2" id="box-radio5">
+                                <label for="box-radio5">출금</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg -primary">다른계좌 등록하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+    </script>
+</body>
+</html>

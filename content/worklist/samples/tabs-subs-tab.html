@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">타이틀</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -home"><span class="hide">홈</span></button>
+                        <button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <nav class="tabs">
+                    <div class="outer">
+                        <div class="inner">
+                            <ul class="list tab -chip -flexible">
+                                <li class="item -active"><a href="javascript:void(0)">메뉴1</a></li>
+                                <li class="item"><a href="javascript:void(0)">메뉴2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="subs">
+                    <div class="outer">
+                        <div class="inner">
+                            <div role="tablist" class="list">
+                                <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="subs-panel1" id="sub1">탭1</button></div>
+                                <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel2" id="sub2">탭2</button></div>
+                                <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel3" id="sub3">탭3</button></div>
+                                <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel4" id="sub4">탭4</button></div>
+                                <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel5" id="sub5">탭5</button></div>
+                                <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel6" id="sub6">탭6</button></div>
+                                <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel7" id="sub7">탭7</button></div>
+                                <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel8" id="sub8">탭8</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content -wide">
+                    <div class="subs-panels">
+                        <div role="tabpanel" aria-labelledby="sub1" id="subs-panel1" class="subs-panel -active" tabindex="0">
+                            패널1
+                        </div>
+                        <div role="tabpanel" aria-labelledby="sub1" id="subs-panel2" class="subs-panel" tabindex="0">
+                            패널2
+                        </div>
+                        <div role="tabpanel" aria-labelledby="sub1" id="subs-panel3" class="subs-panel" tabindex="0">
+                            패널3
+                        </div>
+                        <div role="tabpanel" aria-labelledby="sub1" id="subs-panel4" class="subs-panel" tabindex="0">
+                            패널4
+                        </div>
+                        <div role="tabpanel" aria-labelledby="sub1" id="subs-panel5" class="subs-panel" tabindex="0">
+                            패널5
+                        </div>
+                        <div role="tabpanel" aria-labelledby="sub1" id="subs-panel6" class="subs-panel" tabindex="0">
+                            패널6
+                        </div>
+                        <div role="tabpanel" aria-labelledby="sub1" id="subs-panel7" class="subs-panel" tabindex="0">
+                            패널7
+                        </div>
+                        <div role="tabpanel" aria-labelledby="sub1" id="subs-panel8" class="subs-panel" tabindex="0">
+                            패널8
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 아코디언 -->
+                <div class="content">
+                    <div class="popular-search">
+                        <!-- 인기검색어 열림 상태 : popular-anchors 에 -active 클래스 추가 -->
+                        <div class="popular-anchors -active">
+                            <div class="outer">
+                                <div class="inner over-x">
+                                    <ul class="list tab">
+                                        <li class="item"><button class="hash-btn">#목돈모으기</button></li>
+                                        <li class="item"><button class="hash-btn">#목돈굴리기</button></li>
+                                        <li class="item"><button class="hash-btn">#주택청약</button></li>
+                                        <li class="item"><button class="hash-btn">#주택청약</button></li>
+                                        <li class="item"><button class="hash-btn">#주택전세자금</button></li>
+                                        <li class="item"><button class="hash-btn">#전문직</button></li>
+                                        <li class="item"><button class="hash-btn">#공무원</button></li>
+                                        <li class="item"><button class="hash-btn">#MZ세대</button></li>
+                                        <!-- 버튼 선택시 -active 클래스 추가  -->
+                                        <li class="item"><button class="hash-btn -active">#청소년</button></li>
+                                        <li class="item"><button class="hash-btn">#주거래우대</button></li>
+                                        <li class="item"><button class="hash-btn">#여행</button></li>
+                                        <li class="item"><button class="hash-btn">#환테크</button></li>
+                                        <li class="item"><button class="hash-btn">#세태크</button></li>
+                                        <li class="item"><button class="hash-btn">#노후준비</button></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="more" onclick="morebtn()"><span class="hide">펼치기</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //아코디언 -->
+            </main>
+        </div>
+    </div>
+
+    <script src="../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+
+        
+        // Popup.open('popup');
+        
+        function morebtn() {
+            $(document).on('click', '.popular-anchors .more', function(e){
+            $('.popular-anchors').toggleClass('-active');
+        })
+        }
+        
+            
+    
+    </script>
+</body>
+</html>

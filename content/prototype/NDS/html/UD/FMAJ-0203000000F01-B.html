@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="layer" class="layer">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">계좌를 선택해 주세요</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="segments tab -bar">
+                        <div class="outer">
+                            <div class="inner">
+                                <div role="tablist" class="list">
+                                    <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel3" id="segment3">NH농협(원화)</button></div>
+                                    <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel4" id="segment4">NH농협(외화)</button></div>
+                                    <span class="switcher" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="segments-panels">
+                        <div role="tabpanel" aria-labelledby="segment1" id="segments-panel3" class="segments-panel -active" tabindex="0">
+                            <div class="choose-account-Wrap">
+                                <div class="field">
+                                    <div class="text">
+                                        <div class="choose-account-input">
+                                            <input type="text" id="text" readonly placeholder="계좌번호 직접 입력">
+                                            <button type="button" class="button jsChooseBtn -sm -inline">직접 입력</button>
+                                        </div>
+                                        <p class="message">입력 정보 안내 메시지 출력</p>
+                                    </div>
+                                </div>
+                                <div class="custom-key-display">
+                                    <div class="custom-key-wrap">
+                                        <button type="button" value="1" title="숫자 1 입력">1</button>
+                                        <button type="button" value="2" title="숫자 2 입력">2</button>
+                                        <button type="button" value="3" title="숫자 3 입력">3</button>
+                                        <button type="button" value="4" title="숫자 4 입력">4</button>
+                                        <button type="button" value="5" title="숫자 5 입력">5</button>
+                                        <button type="button" value="6" title="숫자 6 입력">6</button>
+                                        <button type="button" value="7" title="숫자 7 입력">7</button>
+                                        <button type="button" value="8" title="숫자 8 입력">8</button>
+                                        <button type="button" value="9" title="숫자 9 입력">9</button>
+                                        <button type="button" disabled aria-hidden="true">NH</button>
+                                        <button type="button" value="0" title="숫자 0 입력">0</button>
+                                        <button type="button" class="btn-del" title="마지막 숫자 삭제">←</button>
+                                    </div>
+                                    <div class="buttons">
+                                        <button type="button" class="button -primary -lg">확인</button>
+                                    </div>
+                                    
+                                </div><!-- //.custom-key-display -->
+
+                                <div class="choose-account-list account -borderless mb-0">
+                                    <ul>
+                                        <li>
+                                            <button type="button" data-bankcode="011" class="info -fix">
+                                                <span>
+                                                    <span>
+                                                        <span class="name">
+                                                            <span>주거래우대통장</span>
+                                                        </span>
+                                                        <span class="account-number">
+                                                            <span>NH농협</span>
+                                                            <span>111-1234-5678-99</span>
+                                                        </span>
+                                                    </span>
+                                                    <div class="amout-number">
+                                                        <span class="amout-title">출금가능금액</span>
+                                                        <span>100,000,000</span>원
+                                                    </div>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" data-bankcode="011" class="info -fix">
+                                                <span>
+                                                    <span>
+                                                        <span class="name">
+                                                            <span>주거래우대통장</span>
+                                                        </span>
+                                                        <span class="account-number">
+                                                            <span>NH농협</span>
+                                                            <span>111-1234-5678-99</span>
+                                                        </span>
+                                                    </span>
+                                                    <div class="amout-number">
+                                                        <span class="amout-title">출금가능금액</span>
+                                                        <span>100,000,000</span>원
+                                                    </div>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" data-bankcode="011" class="info -fix">
+                                                <span>
+                                                    <span>
+                                                        <span class="name">
+                                                            <span>주거래우대통장</span>
+                                                        </span>
+                                                        <span class="account-number">
+                                                            <span>NH농협</span>
+                                                            <span>111-1234-5678-99</span>
+                                                        </span>
+                                                    </span>
+                                                    <div class="amout-number">
+                                                        <span class="amout-title">출금가능금액</span>
+                                                        <span>100,000,000</span>원
+                                                    </div>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div><!-- //.choose-account-list -->
+                            </div>
+                            <!-- //.choose-account-Wrap -->
+                        </div>
+
+                        <div role="tabpanel" aria-labelledby="segment2" id="segments-panel4" class="segments-panel" tabindex="0">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Layer.open('layer');
+
+        // 레이어 닫기(마지막 인자 기본값: false)
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // });
+
+        // 레이어 닫기 + DOM 삭제
+        // Layer.close('layer', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+
+    <script>
+        /* 키패드 키입력 예시 */
+        const numKeyEmt = document.querySelectorAll('.custom-key-wrap button');
+        numKeyEmt.forEach(numKeyEmt => {
+            numKeyEmt.addEventListener('click',function () {
+                let $targetInput;
+                const $thisValLayer = numKeyEmt.closest('.custom-key-layer.-active');  //dim 없는 레이어 숫자 키패드
+                const $thisValChoose = numKeyEmt.closest('.choose-account-Wrap');  //bottom sheet 숫자 키패드
+                
+                if ($thisValLayer !== null) {
+                    $targetInput = numKey.numInput;
+                } else if($thisValChoose !== null) {
+                    $targetInput = $thisValChoose.querySelector('.choose-account-input input')
+                    $targetInput.closest('.text').classList.remove('-textless');
+                }
+                let $thisval = numKeyEmt.value;
+
+                if (numKeyEmt.classList.contains('btn-del')) {
+                    if ($targetInput.value.length !== 0) {
+                        $targetInput.value = $targetInput.value.slice(0,-1);
+                        if ($targetInput.value.length == 0) {
+                            setTimeout(() => {
+                                $targetInput.closest('.text').classList.add('-textless');
+                            }, 101);
+                        }
+                    }
+                }else{
+                    $targetInput.value = $targetInput.value + $thisval;
+                }
+            })
+        });
+
+        //10만, 50만.... 버튼 클릭시
+        const amountBtn = document.querySelectorAll('.amount-btn-wrap button');
+        amountBtn.forEach(amountBtn => {
+            amountBtn.addEventListener('click',function () {
+                let $targetInput;
+                const $thisValLayer = amountBtn.closest('.custom-key-layer.-active');  //dim 없는 레이어 숫자 키패드
+                const $thisValChoose = amountBtn.closest('.choose-account-Wrap');  //bottom sheet 숫자 키패드
+                if ($thisValLayer !== null) {
+                    $targetInput = numKey.numInput;
+                } else if($thisValChoose !== null) {
+                    $targetInput = $thisValChoose.querySelector('.choose-account-input input')
+                }
+                let $thisval = amountBtn.value;
+                $targetInput.value = Number($thisval) + Number($targetInput.value);
+            })
+            
+        });
+        /* //키패드 키입력 예시 */
+    </script>
+</body>
+</html>

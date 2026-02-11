@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+
+	<link rel="stylesheet" href="../../../../assets/libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+            <div class="navigation smartbank -mall">
+                <header class="header top">
+                    <div class="inner basic">
+                        <div class="funcs">
+                            <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                        </div>
+                        <h1 class="title">운용현황보고서</h1>
+                        <div class="funcs">
+                            <button type="button" class="func -home"><span class="hide">홈</span></button>
+                            <button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+			<main class="contents">
+				<nav class="tabs -swipe">
+					<div class="outer flex -relative -end">
+						<div class="inner">
+							<ul class="list tab -line -flexible">
+								<li class="item"><a href="javascript:void(0)">요약</a></li>
+								<li class="item -active"><a href="javascript:void(0)">자산현황</a></li>
+								<li class="item"><a href="javascript:void(0)">디폴트옵션</a></li>
+								<li class="item"><a href="javascript:void(0)">수익률 현황</a></li>
+								<li class="item"><a href="javascript:void(0)">수수료</a></li>
+								<li class="item"><a href="javascript:void(0)">기타</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="content">
+					<div class="field">
+						<div class="h4-group">
+							<h3 class="h4">
+								기본 정보
+							</h3>
+						</div>
+						<div class="account card -list">
+							<dl class="dl">
+								<div>
+									<dt>대상 기간</dt>
+									<dd>2017.08.01~2023.08.10</dd>
+								</div>
+								<div>
+									<dt>가입일</dt>
+									<dd>2017.08.01</dd>
+								</div>
+								<div>
+									<dt>기준일</dt>
+									<dd>2017.08.01</dd>
+								</div>
+								<div>
+									<dt>제도 유형</dt>
+									<dd>개이형IRP</dd>
+								</div>
+								<div>
+									<dt>가입자(또는 사업장)</dt>
+									<dd>홍길동</dd>
+								</div>
+								<div>
+									<dt>휴대폰</dt>
+									<dd>010-1234-1234</dd>
+								</div>
+								<div>
+									<dt>이메일</dt>
+									<dd>id1004@nonghyuo.com</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="h4-group">
+							<h3 class="h4">
+								적립금 현황
+								<span class="tooltip">
+									<button type="button" class="trigger">
+										<span class="hide">툴팁</span>
+									</button>
+									<span class="panel">
+										<span class="title">적립금 안내</span>
+										<span class="t-content">
+											적립금 안내
+										</span>
+									</span>
+								</span>
+							</h3>
+						</div>
+						<div class="card -sum -acc-multi">
+							<div class="dls -box -active pb-20" data-role="fold">
+								<div class="top-data-area -data-view mb-0">
+									<dl class="dl">
+										<div>
+											<dt class="title">기준일 적립금</dt>
+											<dd class="main-data"><span class="point">20,000,000원</span></dd>
+										</div>
+									</dl>
+								</div>
+								<hr class="hr list-2" aria-hidden="true" tabindex="-1">
+								<dl class="dl">
+									<div>
+										<dt>기초 적립금(A)</dt>
+										<dd>20,000,000원</dd>
+									</div>
+								</dl>
+
+								<hr class="hr list-2" aria-hidden="true" tabindex="-1">
+								<dl class="dl">
+									<div>
+										<dt>납입액(B)</dt>
+										<dd>
+											<div class="arrow">
+												<a type="button" class="button-arrow-right justify-flexend">상세내역</a>
+											</div>
+										</dd>
+									</div>
+									<div>
+										<dt>회사 납입</dt>
+										<dd>1,000,000원</dd>
+									</div>
+									<div>
+										<dt>가입자 납입</dt>
+										<dd>1,000,000원</dd>
+									</div>
+								</dl>
+
+								<hr class="hr list-2" aria-hidden="true" tabindex="-1">
+								<dl class="dl">
+									<div>
+										<dt>차감액(C)</dt>
+										<dd>
+											<div class="arrow">
+												<a type="button" class="button-arrow-right justify-flexend">상세내역</a>
+											</div>
+										</dd>
+									</div>
+									<div>
+										<dt>수수료</dt>
+										<dd>1,000,000원</dd>
+									</div>
+									<div>
+										<dt>중도인출</dt>
+										<dd>1,000,000원</dd>
+									</div>
+								</dl>
+
+								<hr class="hr list-2" aria-hidden="true" tabindex="-1">
+								<dl class="dl">
+									<div>
+										<dt>운용손익(D)</dt>
+										<dd>-30,000원</dd>
+									</div>
+								</dl>
+								
+								<hr class="hr list-2" aria-hidden="true" tabindex="-1">
+								<dl class="dl">
+									<div>
+										<dt>
+											기준일 적립금<br>(A+B-C+D)
+										</dt>
+										<dd>9,000,990원</dd>
+									</div>
+								</dl>
+							</div>
+						</div>
+					</div>
+
+					<div class="case-wrap">
+						<div class="h4-group">
+							<h3 class="h4">
+								보유상품 현황(2023.08.10)
+								<span class="tooltip">
+									<button type="button" class="trigger">
+										<span class="hide">툴팁</span>
+									</button>
+									<span class="panel">
+										<span class="title">보유상품 안내</span>
+										<span class="t-content">
+											보유상품 안내
+										</span>
+									</span>
+								</span>
+							</h3>
+						</div>
+
+						<div class="segments tab -bar -triple">
+							<div class="outer">
+								<div class="inner">
+									<div role="tablist" class="list">
+										<div class="item -active"><button type="button" role="tab" aria-selected="true"
+												aria-controls="segments-panel33" id="segment5" class="">원리금 보장<span class="hide">선택됨</span></button>
+										</div>
+										<div class="item"><button type="button" role="tab" aria-selected="false"
+												aria-controls="segments-panel43" id="segment6" class="">실적배당형</button>
+										</div>
+										<div class="item"><button type="button" role="tab" aria-selected="false"
+												aria-controls="segments-panel53" id="segment7" class="">디폴트옵션</button>
+										</div>
+										<span class="switcher" aria-hidden="true"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="segments-panels">
+							<div role="tabpanel" aria-labelledby="segment5" id="segments-panel33" class="segments-panel -active" tabindex="0">
+								<div class="empty result">
+									<span class="message">
+										조회 결과가 없습니다.
+									</span>
+								</div>
+
+								<div class="case-wrap -xs">
+									<div class="account card -list">
+										<div class="info">
+											<span class="name">
+												<span>농협현금성자산(대기자금)</span>
+											</span>
+										</div>
+										<dl class="dl">
+											<div>
+												<dt>매입원금</dt>
+												<dd>10,000,000원</dd>
+											</div>
+											<div>
+												<dt>지급금</dt>
+												<dd>0원</dd>
+											</div>
+											<div>
+												<dt>평가손익</dt>
+												<dd>-100,000원</dd>
+											</div>
+											<div>
+												<dt>평가 금액</dt>
+												<dd>9,900,000원</dd>
+											</div>
+											<div>
+												<dt>자산 비중</dt>
+												<dd>50%</dd>
+											</div>
+										</dl>
+									</div>
+									<div class="center">
+										<button type="button" class="plus-button">더보기</button>
+									</div>
+								</div>
+								<div class="field">
+									<p class="p">동일한 상품을 여러 개 보유한 경우 운용상품별 평가 금액은 합산하여 표시됩니다.</p>
+								</div>
+							</div>
+							<div role="tabpanel" aria-labelledby="segment6" id="segments-panel43" class="segments-panel" tabindex="-1">
+								컨텐츠2
+							</div>
+							<div role="tabpanel" aria-labelledby="segment7" id="segments-panel53" class="segments-panel" tabindex="-1">
+								컨텐츠3
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sticker">
+					<div class="notice -active" data-role="fold">
+						<button type="button" class="title" data-role="marker">알아두세요</button>
+						<div class="panel" data-role="visible">
+							<p class="p">적립금 운용현황에 대해 궁금한 사항은 퇴직연금 관리점 또는 퇴직연금 상담센터(1588-5995)로 문의해 주시기 바랍니다.</p>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../../assets/libs/scrollout/dist/scroll-out.min.js"></script>
+	<script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../../../assets/js/common-ui.js"></script>
+	<script>
+		// 스크립트 추가
+	</script>
+</body>
+</html>

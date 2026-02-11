@@ -1,0 +1,131 @@
+<!--  실행 onclick="youtubeLink();" -->
+<div class="submain-banner-wrap -retire">
+    <div class="submain-banner-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="javascript:void(0);" onclick="youtubeLink();">
+                    <div class="submain-banner type01">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">퇴직연금 상품 동영상으로<br>꿀팁을 쉽게 알아보세요</div>
+                            <div class="prd-sub"><span class="a -arrow">바로 보러가기</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- 2024-07-03 이벤트 종료로 주석 처리 -->
+            <!-- <div class="swiper-slide">
+                <a href="javascript:void(0);" onclick="eventLink();">
+                    <div class="submain-banner type02">
+                        <div class="banner-txt-wrap">
+                            <div class="prd-title">개인형 IRP로 미래쌓기 이벤트</div>
+                            <div class="prd-sub">스타벅스 모바일 쿠폰 받아가세요!</div>
+                            <div class="date-sub">2024.04.01~2024.06.30</div>
+                        </div>
+                    </div>
+                </a>
+            </div> -->
+        </div>
+        <div class="pagination-wrap">
+            <div class="swiper-pagination"></div>
+            <a href="javascript:void(0);" class="button-stop" role="button">
+                <span class="hide">정지</span>
+            </a>
+        </div>
+    </div> 
+</div>
+
+<script>
+    var OPA;
+    var isAlloneBank;
+
+    $(function(){
+	
+       isAlloneBank = checkAlloneBank();
+       OPA = isAlloneBank ? window.$AB_OPA : window.$NH_OPA;
+
+        // 메인배너
+        var mainbanner = new Swiper('.submain-banner-swiper',{
+            pagination : {
+                el : '.swiper-pagination',
+                clickable :false,
+                type:'fraction'
+            },
+            loop:true,
+            autoplay:{
+                delay: 4000
+            },
+            speed:500,
+            spaceBetween:24,
+            grabCursor:true,
+            observer : true,
+            observeParents : true
+            // [240312] 사업부 요청으로 배너 액션 수정
+        });
+
+        mainbanner.on('touchEnd', function (transitionEnd) {
+            var autoPlay = mainbanner.autoplay.running
+            if(autoPlay == false){
+                $('.pagination-wrap .button-stop').addClass('-active').find('.hide').text('시작');
+            };
+        });
+
+        // 배너 시작, 정지
+        $('.submain-banner-wrap .button-stop').click(function(){
+            $(this).toggleClass('-active');
+            if($(this).hasClass('-active')){
+                $(this).find('.hide').text('시작');
+                mainbanner.autoplay.stop();
+            }
+            else {
+                $(this).find('.hide').text('정지');
+                mainbanner.autoplay.start();
+            }
+        });
+
+        // 배너 한개일 경우 비활성화
+        if( $('.submain-banner-wrap .swiper-slide').length <= 3 ){
+            $('.submain-banner-wrap .swiper-wrapper').addClass('-disabled');
+            $('.submain-banner-wrap .pagination-wrap').attr('aria-hidden','true');
+            mainbanner.destroy();
+        };
+
+    });
+
+    function callback(res){
+    	console.log(res);
+    }
+
+    function checkAlloneBank() {
+        return window.$AB_OPA && window.$AB_OPA.BRIDGE_CALLBACK;
+    }
+
+    function youtubeLink(){
+        var params = {
+                url : "https://youtube.com/playlist?list=PLfP75Hg5loVbAY_swT8PtNGMjs5jvuKxz"
+            };
+    
+        if (isAlloneBank) {
+            executeAlloneBank("NHCWeb", "openPage", params, callback);
+        } else {
+            OPA.NHCWeb.openPage(params, "callback");
+        }
+    }
+    
+    function eventLink(){
+        
+        var targetServiceId = "";
+        var param = {event_no : ""};
+        var targetChannel = "";
+        if (!$ENV.isSB) {
+            targetServiceId = "ABCUP1804R";
+            param.event_no = "4257";
+            targetChannel = "";
+        } else {
+           
+            targetServiceId = "NSNL2200R";
+            param.event_no = "4260";
+        }
+        
+        goChannelService(targetServiceId, param);
+    }
+</script>

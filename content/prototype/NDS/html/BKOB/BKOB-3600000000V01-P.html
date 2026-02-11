@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NH포인트 사용 신청 레이어팝업</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="navigation">
+                <div class="header">
+                    <div class="inner">
+                        <h1 class="title">본인인증 방법 안내</h1>
+                        <div class="funcs">
+                            <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents bg-gray-full">
+                <div class="content">
+                    <h2 class="h2">
+                        본인인증 방법을 선택해 주세요
+                    </h2>
+                    <div class="field">
+                        <div class="link -category -type02">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn -menu">
+                                        <div class="certi -icon-sms">
+                                            <p class="info">휴대폰 SMS 인증</p>
+                                            <p class="title">
+                                                본인명의 휴대폰을 미리 <br>준비해 주세요
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn -menu">
+                                        <div class="certi -icon-phone">
+                                            <p class="info">전화 ARS 인증</p>
+                                            <p class="title">
+                                                등록된 전화번호로 ARS 인증을 <br>
+                                                할 수 있어요
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn -menu">
+                                        <div class="certi -icon-usim">
+                                            <p class="info">USIM 인증</p>
+                                            <p class="title">
+                                                본인명의 휴대폰을 미리 <br>
+                                                준비해 주세요
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn -menu">
+                                        <div class="certi -icon-joint">
+                                            <p class="info">공동인인증서 인증</p>
+                                            <p class="title">
+                                                본인명의 공동인증서로 인증을 <br>
+                                                할 수 있어요
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn -menu">
+                                        <div class="certi -icon-video">
+                                            <p class="info">영상통화 인증</p>
+                                            <p class="title">
+                                                신분증을 미리 준비해 주세요
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn -menu">
+                                        <div class="certi -icon-account">
+                                            <p class="info">본인계좌 인증</p>
+                                            <p class="title">
+                                                농협은행 / 타은행 계좌로 인증할 수 있어요
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn -menu">
+                                        <div class="certi -icon-otp">
+                                            <p class="info">보안매체 인증</p>
+                                            <p class="title">
+                                                보안매체를 미리  준비해 주세요
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="certi-btn -menu">
+                                        <div class="certi -icon-banking">
+                                            <p class="info">금융인증서 인증</p>
+                                            <p class="title">
+                                                발급받은 금융인증서로 인증을 <br>
+                                                할 수 있어요
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+
+        // 팝업 닫기(마지막 인자 기본값: false)
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // });
+
+        // 팝업 닫기 + DOM 삭제
+        // Popup.close('popup', function() {
+        //     '콜백함수'
+        // }, true);
+    </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">입출금 가입</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="progress-box">
+                        <div class="progress">
+                            <!--
+                                style 속성에서 사용되는 CSS 전용 변수로 게이지 컨트롤
+                                --current : 현재 표시되야 하는 수치
+                                    --max : 최대 수치
+                                게이지가 차오르는 값을 css로 지정 합니다 %, 실수치, 모두 가능 ( ※게이지계산식 : 100% * ( --current / --max ) )
+                                (단, 숫자 정수값만 사용할 것)
+                            -->
+                            <div class="bar" style="--current:3; --max:12;">
+                                <div class="gauge">
+                                    <!-- 접근성 관련 텍스트 동적 변경 필요 -->
+                                    <span class="hide"> 12단계 중 3번째</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h2-group">
+                        <h2 class="h2">
+                            약관에 동의해 주세요
+                        </h2>
+                    </div>
+                    <div class="case-wrap">
+                        <div class="agree -detail">
+                            <div class="title">
+                                <div class="checkbox -sm">
+                                    <input type="checkbox" id="required-total">
+                                    <label for="required-total">[필수] 전체 동의</label>
+                                </div>
+                                <button type="button" class="more"><span class="hide">필수 전체 동의 약관</span></button>
+                            </div>
+                            <div class="panel">
+                                <div class="checkboxes -full">
+                                    <div class="checkbox -sub">
+                                        <input type="checkbox" id="required1">
+                                        <label for="required1">예금거래 기본약관</label>
+                                        <button type="button" class="more"><span class="hide">약관</span></button>
+                                    </div>
+                                    <div class="checkbox -sub">
+                                        <input type="checkbox" id="required2">
+                                        <label for="required2">상품특약</label>
+                                        <button type="button" class="more"><span class="hide">약관</span></button>
+                                    </div>
+                                    <div class="checkbox -sub">
+                                        <input type="checkbox" id="required3">
+                                        <label for="required3">상품설명서</label>
+                                        <button type="button" class="more"><span class="hide">상품설명서</span></button>
+                                    </div>
+                                    <div class="checkbox -sub">
+                                        <input type="checkbox" id="required4">
+                                        <label for="required4">가상자산 관련 대고객 확인서</label>
+                                        <button type="button" class="more"><span class="hide">가상자산 관련 대고객
+                                                확인서</span></button>
+                                    </div>
+                                    <div class="checkbox -sub">
+                                        <input type="checkbox" id="required5">
+                                        <label for="required5">(비여신)개인(신용)정보 수집・이용 동의서</label>
+                                        <button type="button" class="more"><span class="hide">(비여신)개인(신용)정보 수집・이용
+                                                동의서</span></button>
+                                    </div>
+                                    <div class="checkbox -sub">
+                                        <input type="checkbox" id="required6">
+                                        <label for="required6">고객정보취급방침 확인</label>
+                                        <button type="button" class="more"><span class="hide">고객정보취급방침
+                                                확인</span></button>
+                                    </div>
+                                    <div class="checkbox -sub">
+                                        <input type="checkbox" id="required8">
+                                        <label for="required8">불법/탈법 차명거래금지 설명확인</label>
+                                        <button type="button" class="more"><span class="hide">불법/탈법 차명거래금지
+                                                설명확인</span></button>
+                                    </div>
+                                    <div class="checkbox -sub">
+                                        <input type="checkbox" id="required7">
+                                        <label for="required7">이체 한도 확인</label>
+                                        <button type="button" class="more"><span class="hide">이체 한도 확인</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agree">
+                            <div class="title">
+                                <div class="checkbox -sm">
+                                    <input type="checkbox" id="total">
+                                    <label for="total">[필수] 금융상품 중요사항 확인</label>
+                                </div>
+                                <button type="button" class="more"><span class="hide">금융상품 중요사항 확인 약관</span></button>
+                            </div>
+                        </div>
+                        <div class="agree -detail">
+                            <div class="title">
+                                <div class="checkbox -sm">
+                                    <input type="checkbox" id="optional-total">
+                                    <label for="optional-total">[선택] 전체 동의</label>
+                                </div>
+                                <button type="button" class="more"><span class="hide">선택 전체 동의 약관</span></button>
+                            </div>
+                            <div class="panel">
+                                <div class="checkboxes -full">
+                                    <div class="checkbox -sub">
+                                        <input type="checkbox" id="optional1">
+                                        <label for="optional1">예금잔액통보 제외 신청하기</label>
+                                        <button type="button" class="more"><span class="hide">약관</span></button>
+                                    </div>
+                                    <div class="checkbox -sub">
+                                        <input type="checkbox" id="optional3"> 
+                                        <label for="optional3">개인(신용)정보 수집, 이용 동의 (상품서비스 안내 등)</label>
+                                        <button type="button" class="more"><span class="hide">약관</span></button>
+                                    </div>
+                                    <div class="checkbox -sub">
+                                        <input type="checkbox" id="optional2">
+                                        <label for="optional2">개인(신용)정보 수집, 이용, 제공 동의 (상품서비스 안내 등) (농협금융지주 자회사 간 상호 정보
+                                            제공용)</label> 
+                                        <button type="button" class="more"><span class="hide">약관</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [CASE] 트래블리 외화예금 출금계좌등록 미노출 -->
+                        <div class="field">
+                            <p class="label">출금계좌 등록</p>
+                            <div class="box-radios -lg">
+                                <div class="box-radio">
+                                    <input type="radio" name="period-point-color1" id="period-point-color1-1"
+                                        checked="">
+                                    <label for="period-point-color1-1">등록 안함</label>
+                                </div>
+                                <div class="box-radio">
+                                    <input type="radio" name="period-point-color1" id="period-point-color1-2">
+                                    <label for="period-point-color1-2">등록</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // [CASE] 트래블리 외화예금 출금계좌등록 미노출 -->
+                        <div class="field">
+                            <p class="label">계약서류 받는 방법</p>
+                            <div class="box-radios -lg">
+                                <div class="box-radio">
+                                    <input type="radio" name="period-point-color2" id="period-point-color2-1">
+                                    <label for="period-point-color2-1">이메일</label>
+                                </div>
+                                <div class="box-radio">
+                                    <input type="radio" name="period-point-color2" id="period-point-color3-2"
+                                        checked="">
+                                    <label for="period-point-color3-2">문자메시지</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <!-- [CASE]문자메시지 선택시 -->
+                            <div class="field mt-16">                       
+                                <div class="mix phone">
+                                    <div class="select flex-5">
+                                        <button type="button" class="left-side fc-empty" aria-haspopup="true" title="휴대폰 앞자리 선택">010</button> <!-- 선택되어 있지 않은 경우 : 클래스 fc-empty 추가 -->
+                                    </div>
+                                    <div class="text flex-9 -readonly -textless" data-clear="false">
+                                        <input type="tel" data-id="phone123q" class="mid-side num-call pl-8" placeholder="-없이 입력" title="휴대폰번호 입력" aria-haspopup="true" readonly="" value=""> 
+                                    </div>
+                                    <div class="space -lined right-side"> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //[CASE]문자메시지 선택시 -->
+    
+                            <!-- [CASE]이메일 선택시 -->
+                            <div class="field input mt-16">
+                                <div class="text -basic">
+                                    <input type="text" id="tex" value="abc123@gmail.com" placeholder="이메일 주소 입력">
+                                </div>
+                            </div>
+                            <!-- //[CASE]이메일 선택시 -->
+                        </div>
+                    </div>
+
+                    <div class="case-wrap mt-0 dp-none"> <!-- [CASE]클래스 dp-block 변경시 block됨 -->
+                        <div class="h2-group">
+                            <h2 class="h2">
+                                사용할 비밀번호를 입력해 주세요
+                            </h2>
+                        </div>
+                        <div class="field">  <!-- 비밀번호 오류시 클래스 -error 추가  -->                        
+                            <label for="text" class="label">비밀번호</label>
+                            <div class="text">
+                                <input type="password" id="text" placeholder="비밀번호 4자리 입력" class="fake-readonly"
+                                    readonly="">
+                            </div>
+                            <!-- <p class="message">같은 숫자를 반복해서 사용할 수 없습니다.</p> -->  <!-- 비밀번호 오류시 메시지 추가  -->                           
+                        </div>
+                        <div class="field">
+                            <label for="search01" class="label">관리점
+                                <span class="tooltip">
+                                    <button type="button" class="trigger">
+                                        <span class="hide">툴팁</span>
+                                    </button>
+                                    <span class="panel">
+                                        <!-- <span class="title">보험계약 상세조회</span> -->
+                                        <span class="t-content">
+                                            <span>수수료, 사고 처리, 고객 안내 등을 위해 필수로 입력해야 합니다.</span> 
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                            <div class="mix">
+                                <div class="text">
+                                    <input type="text" class="left-side fake-readonly" id="search01"
+                                        placeholder="관리점 찾기" aria-haspopup="true" readonly>
+                                </div>
+                                <div class="space -lined search">
+                                    <button type="button" class="icon-button -search right-side"
+                                        aria-haspopup="true"><span class="hide">조회</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="search02" class="label">권유직원 (선택)</label> 
+                            <div class="mix">
+                                <div class="text">
+                                    <input type="text" class="left-side fake-readonly" id="search02" placeholder="직원 찾기"
+                                        aria-haspopup="true" readonly>
+                                </div>
+                                <div class="space -lined search">
+                                    <button type="button" class="icon-button -search right-side"
+                                        aria-haspopup="true"><span class="hide">조회</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button  -primary -lg" disabled>다음</button> 
+                    </div>
+                </div>
+                <!-- [CASE]두번째 콘텐츠일 때 -->
+                <div class="fixer dp-none">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg" disabled>다음</button> 
+                    </div>
+                </div>
+                <!-- //[CASE]두번째 콘텐츠일 때 -->
+            </div>
+        </main>
+    </div>
+    
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+    </script>
+</body>
+
+</html>

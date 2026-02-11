@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="title">민원접수 전 확인 부탁드립니다</h1> 
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div>
+                        <ul class="ul -bullet">
+                            <li>NH농협은행의 업무와 관련된 부당한 처리 및 금융분쟁 사항을 접수할 수 있습니다.</li>
+                            <li>단순 질의는 전화상담 혹은 1:1문의로 접수해주시면 신속하게 안내 받으실 수 있습니다.</li>
+                            <li>당행 업무에 관한 불만, 제안사항이 있으신 경우 불만/제안 화면에서 남겨주세요. 고객님의 말씀을 늘 귀담아 듣고 개선하겠습니다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-wrap">
+                        <div class="buttons -triple">
+                            <button type="button" class="button -tertiary -rg">상담원문의</button>
+                            <button type="button" class="button -tertiary -rg">1:1문의</button>
+                            <button type="button" class="button -tertiary -rg">불만/제안</button>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap">
+                        <p class="p">혹시 위에서 안내 드린 전화상담, 1:1문의, 불만/제안 접수를 통해 원할한 해결이 되셨습니까?</p>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -tertiary -lg">예(취소)</button>
+                        <button type="button" class="button -primary -lg">아니오(민원신청)</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+    </script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>금융상품몰 서브메인</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <!-- (중요) 서브메인 페이지는 page div 에 submain-body 클래스 반드시 필요합니다 -->
+<div class="page submain-body">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+                    <h1 class="title">금융상품몰</h1>
+                    <div class="funcs">
+                        <button type="button" class="func -home"><span class="hide">홈</span></button>
+                        <button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <div class="submain-content">
+                        <nav class="tabs">
+                            <div class="outer -relative">
+                                <div class="inner">
+                                    <ul class="list">
+                                        <li class="item"><a href="javascript:void(0)">저축</a></li>
+                                        <li class="item"><a href="javascript:void(0)">대출</a></li>
+                                        <li class="item -active"><a href="javascript:void(0)">펀드/투자</a></li>
+                                        <li class="item"><a href="javascript:void(0)">외환</a></li>
+                                        <li class="item"><a href="javascript:void(0)">보험</a></li>
+                                        <li class="item"><a href="javascript:void(0)">퇴직연금</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- 탭바 영역 -->
+                        <div class="submain-list">
+                            <div class="submain-anc-tab">
+                                <div class="subs -anchor">
+                                    <div class="inner-wrap">
+                                        <div class="inner">
+                                            <div role="tablist" class="list">
+                                                <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="subs-panel1" id="sub1">펀드</button></div>
+                                                <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel2" id="sub2">신탁</button></div>
+                                                <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel3" id="sub3">ISA</button></div>
+                                                <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel4" id="sub4">골드/실버바</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subs-panels">
+                                    <div role="tabpanel" aria-labelledby="sub1" id="subs-panel1" class="subs-panel -active" tabindex="0">
+                                        <div class="submain-fund-wrap">
+                                            <!-- 로보드림 링크 -->
+                                            <div class="robo-link-wrap">
+                                                <a class="robo-link-button" href="javascript:void(0);">
+                                                    <div class="submain-banner -fund type01">
+                                                        <div class="banner-txt-wrap">
+                                                            <div class="prd-title">NH로보드림</div>
+                                                            <div class="prd-sub">꿈이 이루어지는 AI펀드 투자</div>
+                                                        </div>
+                                                        <div class="hash-tag"><span>#포트폴리오</span><span>#AI</span><span>#분산투자</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <!-- // 로보드림 링크 -->
+
+                                            <!-- 투자성향 관심펀드 링크 -->
+                                            <!-- [240404] 관심펀드, 투자성향 위치 변경 -->
+                                            <div class="myfund-link-wrap">
+                                                <a class="myfund-link-button -interest" href="javascript:void(0);">
+                                                    <div class="title">관심펀드</div>
+                                                    <div class="sub">3</div>
+                                                </a>
+                                                <a class="myfund-link-button -invest" href="javascript:void(0);">
+                                                    <!-- [240507] 메인, 서브메인 사업부 수정 요청 내 투자성향-> 성향은? 으로 문구 변경 -->
+                                                    <div class="title">내 투자성향은?</div>
+                                                    <div class="sub">
+                                                        <!-- [CASE] 공격투자형:-grade1, 적극투자형:-grade3, 위험중립형:-grade4, 안정추구형:-grade5, 안정형:-grade6 -->
+                                                        <div class="-grade5">안정추구형</div>
+                                                        <!-- [CASE] 분석 전 -->
+                                                        <!-- <div>분석하기</div> -->
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <!-- // [240404] 관심펀드, 투자성향 위치 변경 -->
+                                            <!-- // 투자성향 관심펀드 링크 -->
+
+                                            <!-- 상품 찾기 링크 -->
+                                            <div class="case-wrap20">
+                                                <div class="link -horizontal">
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)" class="ico-prod">딱 맞는 상품을 찾아드릴게요</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- // 상품 찾기 링크 -->
+
+                                            <!-- 펀드 서비스 링크 -->
+                                            <!-- [240403] 서비스 링크 추가 -->
+                                            <div class="fund-service-link-wrap">
+                                                <a class="fund-service-link-button -recomm" href="javascript:void(0);">
+                                                    <span class="service-name">NH 추천 펀드</span>
+                                                </a>
+                                                <a class="fund-service-link-button -profit" href="javascript:void(0);">
+                                                    <span class="service-name">수익률 BEST</span>
+                                                </a>
+                                                <a class="fund-service-link-button -sell" href="javascript:void(0);">
+                                                    <span class="service-name">판매 BEST</span>
+                                                </a>
+                                                <a class="fund-service-link-button -youth" href="javascript:void(0);">
+                                                    <span class="service-name">청년형장기펀드</span>
+                                                </a>
+                                                <a class="fund-service-link-button -retirefund" href="javascript:void(0);">
+                                                    <span class="service-name">모집식 펀드</span>
+                                                </a>
+                                                <a class="fund-service-link-button -elffund" href="javascript:void(0);">
+                                                    <span class="service-name">ELF</span>
+                                                </a>
+                                            </div>
+                                            <!-- // 펀드 서비스 링크 -->
+
+                                            <!-- 펀드 추천상품 -->
+                                            <div class="fund-recommend">
+                                                <div class="fund-recommend-list">
+                                                    <ul>
+                                                        <li class="type01">
+                                                            <a href="javascript:;" role="button">
+                                                                <div class="title">EMP 펀드</div>
+                                                                <div class="hashtag"><span>#ETF</span><span>#재산배분</span></div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="type02">
+                                                            <a href="javascript:;" role="button">
+                                                                <div class="title">TDF 펀드</div>
+                                                                <div class="hashtag"><span>#알아서</span><span>#재산배분</span><span>#숫자는은퇴시점</span></div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="type03">
+                                                            <a href="javascript:;" role="button">
+                                                                <div class="title">공모주 펀드</div>
+                                                                <div class="hashtag"><span>#IPO</span><span>#공모주</span></div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="type04">
+                                                            <a href="javascript:;" role="button">
+                                                                <div class="title">단기채 펀드</div>
+                                                                <div class="hashtag"><span>#단기채권</span><span>#우량채권</span></div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="type05">
+                                                            <a href="javascript:;" role="button">
+                                                                <div class="title">ESG 펀드</div>
+                                                                <div class="hashtag"><span>#환경</span><span>#사회</span><span>#지배구조</span></div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- //추천상품 -->
+
+                                            <!-- 펀드 투자정보 -->
+                                            <div class="line-box">
+                                                <h4 class="h5">펀드 투자정보</h4>
+                                                <div class="shortcut">
+                                                    <ul>
+                                                        <li class="-fund-search"><a href="javascript:void(0)">기준가 / 수익률 조회</a></li>
+                                                        <li class="-major-chart"><a href="javascript:void(0)">주요지수</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="devide-wrap">
+                                                    <ul>
+                                                        <li class="-fund-search"><a href="javascript:void(0)">펀드용어사전</a></li>
+                                                        <li class="-major-chart"><a href="javascript:void(0)">펀드시황</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- // 펀드 투자정보 -->
+
+                                            <!-- 펀드상품 가입 유의사항 -->
+                                            <div class="fund-caution">
+                                                <a class="link-button" href="javascript:void(0);" role="button" aria-haspopup="true">
+                                                    <div class="title">가입 전에 안내사항을 확인해 주세요</div>
+                                                    <div class="sub">펀드상품 가입 유의사항</div>
+                                                </a>
+                                            </div>
+                                            <!-- // 펀드상품 가입 유의사항 -->
+
+                                            <div class="case-wrap20">
+                                                <div class="link -horizontal">
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">계약서류 조회</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub2" id="subs-panel2" class="subs-panel" tabindex="0">
+                                        컨텐츠
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub3" id="subs-panel3" class="subs-panel" tabindex="0">
+                                        컨텐츠
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub4" id="subs-panel4" class="subs-panel" tabindex="0">
+                                        컨텐츠
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                        <!-- // 탭바 영역 -->
+
+                        <!-- 영상통화 예약 진행중인 상품 -->
+                        <div class="reservation">
+                            <div class="rs-container">
+                                <div class="rs-header">
+                                    <div class="rs-inner">
+                                        <h1 class="rs-title">영상통화 예약 진행중인 상품</h1>
+                                        <div class="rs-funcs">
+                                            <button type="button" class="rs-func -close"><span class="hide">닫기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="rs-contents">
+                                    <div class="rs-content">
+                                        <div class="rs-prd">
+                                            <a class="prd" href="javascript:void(0);">
+                                                <div class="title">ETF특정금전신탁 KODEX 2차전지산업-거취식</div>
+                                                <div class="sub">예약일시: 2024년 2월 23일 15시</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // 영상통화 예약 진행중인 상품 -->
+                        
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+
+        // 스크롤 이벤트
+        $(document).ready(
+            function(){
+                // page에 submain-body 클래스 반드시 필요
+                $('.page').addClass('submain-body');
+                var tabactive = $('.submain-content .tabs .item.-active a').text();
+                $('.submain-body .header .title').after('<h1 class="sub-title" aria-hidden="true"></h1>');
+                $('.submain-body .header .sub-title').text(tabactive);
+                window.addEventListener('scroll',function () {
+                var fixTab = document.querySelector('.submain-list');
+                var fixTabTop = fixTab.getBoundingClientRect().top;
+                var subheader = document.querySelector('.submain-body .header')
+                var maintitle = document.querySelector('.submain-body .header .title')
+                var subtitle = document.querySelector('.submain-body .header .sub-title')
+                if (fixTabTop < 50) {
+                    fixTab.classList.add('-fixed');
+                }else{
+                    fixTab.classList.remove('-fixed');
+                }
+        
+                if(window.scrollY > 50 ){ 
+                    subheader.classList.add('-switch');            
+                    maintitle.setAttribute('aria-hidden','true');
+                    subtitle.setAttribute('aria-hidden','false');
+                }else{
+                    subheader.classList.remove('-switch');
+                    maintitle.setAttribute('aria-hidden','false');
+                    subtitle.setAttribute('aria-hidden','true');
+                }   
+                     
+                });
+            }
+        );
+
+        // 영상통화 예약 진행중인 상품
+        $(document).ready(
+            function(){
+                $('.reservation').addClass('-active')
+            }
+        );
+
+        // 영상통화 예약 진행중인 상품 닫기 (nds test)
+        document.querySelector('.rs-func.-close').addEventListener('click', function () {
+                document.querySelector('.reservation').style.display = 'none';
+            });
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+
+	<link rel="stylesheet" href="../../../../assets/libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+			<header class="header">
+				<div class="inner">
+					<div class="funcs">
+						<button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+					</div>
+
+					<h1 class="title"><span class="hide"></span></h1>
+
+					<div class="funcs">
+						<button type="button" class="func">취소</button>
+					</div>
+				</div>
+			</header>
+			<main class="contents">
+				<div class="content">
+					<div class="h2-group">                        
+                        <h2 class="h2">
+                            환전 정보를 입력해 주세요
+                        </h2>
+                    </div>
+
+					<div class="field search">
+						<div class="label-wrap">
+							<label for="searchce" class="label">외화수령 영업점</label>
+							<a href="javascript:void(0)" class="button-arrow-right justify-flexend">최근 신청 영업점 불러오기</a>
+						</div>
+						<div class="mix">
+							<div class="text">
+								<input type="text" class="left-side" id="searchce" placeholder="영업점을 검색하세요">
+							</div>
+					
+							<div class="space -lined search">
+								<button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="field calendar">
+						<label for="gga" class="label">지정수령일자</label>
+						<div class="mix datepicker day">
+							<div class="text" data-clear="false">
+								<input type="text" class="left-side fc-empty" id="gga" value="" placeholder="지정수령일자를 선택하세요" title="날짜선택" aria-haspopup="true"
+									readonly>
+							</div>
+							<div class="space -lined date">
+								<button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="field input">
+						<div class="title-group">
+							<div class="inner">
+								<label for="gggs33" class="label">권유직원번호
+									<span class="tooltip">
+										<button type="button" class="trigger">
+											<span class="hide">툴팁</span>
+										</button>
+										<span class="panel">
+											<span class="title">NH포인트 안내</span>
+											<span>NH포인트는 거래금액까지 신청 가능합니다. </span>
+											<span>출금계좌로 신청포인트가 입금됩니다.</span>
+											<span>입금 후에는 포인트 취소가 불가능합니다.</span>
+											<span>NH포인트 사용은 04시 01분부터 23시 45분까지 가능합니다.</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<span class="switch ml-auto -sm">
+                                <input type="checkbox" id="switch2" checked="">
+                                <label for="switch2"><span class="hide">스위치</span></label>
+                            </span>
+						</div>
+						
+						<div class="mix">
+							<div class="text">
+								<input type="text" class="left-side" id="gggs33" placeholder="검색하세요">
+							</div>
+					
+							<div class="space -lined search">
+								<button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="case-wrap">
+						<p class="label">출금계좌번호</p>
+						<div class="select -price -filled">
+							<div class="button-type -fixed">
+								<div class="selection">
+									<button type="button" aria-haspopup="true" data-bankcode="011" class="info">
+										<span class="name">
+											<span>NH X 카카오페이통장</span>
+										</span>
+										<span class="account-number">
+											<span>NH농협은행</span>
+											<span>111-1234-5678-99</span>
+										</span>
+									</button>
+									<div class="amount mix-charge">
+										<div>
+											<button type="button" class="button -xs">잔액채우기</button>
+										</div>
+										<div>
+											<div class="key">출금가능금액</div>
+											<div class="value">
+												<span>50,000,000</span>원
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field input">
+						<label for="field20" class="label">출금계좌 비밀번호</label>
+						<div class="text -password">
+							<input type="password" class="num-call" id="field20" value="1212" aria-haspopup="true" readonly placeholder="4자리 숫자 입력" maxlength="4">
+							<button class="clear" type="button" style="z-index: -1;"><div class="hide">입력 내용 삭제</div></button>
+						</div>
+
+						<div class="btn-wrap24">
+							<button type="button" class="button -tertiary -rg">NH포인트 캐시백 신청하기</button>
+						</div>
+					</div>
+
+					<div class="field">
+                        <p class="label">환전목적</p>
+                        <div class="box-radios -box -lg">
+                            <div class="box-radio">
+                                <input type="radio" name="period-point-color01" id="period-point-color1-01" aria-selected="true" checked="">
+                                <label for="period-point-color1-01">해외여행경비</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="period-point-color01" id="period-point-color1-02" aria-selected="false">
+                                <label for="period-point-color1-02">소지목적</label>
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="field">
+						<p class="label">통화선택</p>
+						<div class="select -basic">
+							<button type="button" aria-haspopup="true" class="fc-empty">통화를 선택하세요</button>
+						</div>
+					</div>
+
+					<div class="field">
+                        <p class="label">환전금액</p>
+                        <div class="box-radios -box -lg">
+                            <div class="box-radio">
+                                <input type="radio" name="period-point-color012" id="period-point-color1-011" aria-selected="true" checked="">
+                                <label for="period-point-color1-011">외화입력</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="period-point-color012" id="period-point-color1-021" aria-selected="false">
+                                <label for="period-point-color1-021">원화입력</label>
+                            </div>
+                        </div>
+						<div class="case-wrap16">
+                            <div class="mix dollar combi decimal">
+                                <div class="left-space flex-2">
+                                    <div class="left-side" aria-haspopup="true" title="통화 선택">USD</div>
+                                </div>
+                        
+                                <div class="text flex-8 -plh-right comb-del" data-clear="false">
+                                    <input type="tel" class="num-call right" id="phonen3" placeholder="USD 10~2,000" value=""
+                                        aria-haspopup="true" readonly>
+                                    <button class="clear" type="button" style="z-index: -1;"><div class="hide">입력 내용 삭제</div></button>
+                                </div>
+								<div class="space -lined right-side">.00</div>
+                                <p class="info">USD 1 단위로 입력 가능합니다.</p>
+                            </div>
+
+							<!-- [CASE]원화입력 선택시 -->
+							<!-- <div>
+								<div class="mix unit1">
+									<div class="text -percent" data-clear="false">
+										<input type="tel" id="gggs3" class="right num-call" value="" aria-haspopup="true" placeholder="" readonly>
+										<div class="percent">원</div>
+									</div>
+								</div>
+								<p class="info">원화입력으로 환전 시 환전최소단위로 인하여 인출원화가 변경될 수 있습니다.</p>
+							</div> -->
+							<!-- //[CASE]원화입력 선택시 -->
+                        </div>
+                    </div>
+				</div>
+
+				<div class="sticker">
+					<div class="notice -active" data-role="fold">
+						<button type="button" class="title" data-role="marker">알아두세요</button>
+						<div class="panel" data-role="visible">
+							<ul class="ul -bullet">
+								<li>출금계좌 선택 시 유의사항
+									<div>
+										<ul class="ul -dash">
+											<li>올원뱅크 환전신청은 농협은행계좌(원화)만 가능합니다.</li>
+											<li>농축협계좌는 선택이 불가합니다.</li>
+										</ul>
+									</div>
+								</li>
+								<li>시범운영중인 일부 탄력점포 영업점의 경우 영업시간이 다를 수 있습니다.
+									<div>
+										<a href="javascript:void(0)" class="button-arrow-right justify-start">탄력점포 확인하기</a>
+									</div>
+								</li>
+								<li>외화수령일 지정
+									<div>
+										<ul class="ul -dash">
+											<li>신청 당일부터 6개월 이내에서 지정 가능</li>
+											<li>USD, EUR, JPY, CNY는 신청 당일부터 지정 가능</li>
+											<li>기타통화는 신청일 다음 영업일부터 지정 가능</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -primary -lg">환전신청</button>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../../assets/libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../../assets/libs/scrollout/dist/scroll-out.min.js"></script>
+	<script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../../../assets/js/common-ui.js"></script>
+	<script>
+		// 스크립트 추가
+	</script>
+</body>
+</html>

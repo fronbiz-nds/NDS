@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>상품상세</title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+                    <h1 class="title">상품상세</h1>
+                    <div class="funcs">
+                        <button type="button" class="func -home"><span class="hide">홈</span></button>
+                        <button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="container">
+            <div class="header">
+                <div class="inner center">
+                    <h1 class="title">골드/실버바</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="content">
+                    <div class="product-detail-wrap">
+                        <!-- 상품 안내 영역 -->
+                        <div class="procuct-summary">
+                            <div class="info-area">
+                                <div class="title-area gs-visual -gold">
+                                    <h2>골드바</h2>
+                                    <p class="under-para -sm">안정성ㆍ수익성 높은 투자 포인트</p>
+                                </div><!-- //.title-area -->
+                                
+                                <div class="subtitle-area">
+                                    <ul class="product-dl-list">
+                                        <li class="target">
+                                            <dl>
+                                                <dt>구매대상</dt>
+                                                <dd>개인</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="date">
+                                            <dl>
+                                                <dt>거래시간</dt>
+                                                <dd>09:00 ~ 16:00</dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div><!-- //.subtitle-area -->
+
+                                <div class="top-join-btn"><button type="button" class="button -primary -md">구매하기</button></div>
+                            </div><!-- //.info-area -->
+                        </div><!-- //.procuct-summary -->
+                        <!-- //상품 안내 영역 -->
+
+                        <!-- 상품 정보 영역 -->
+                        <div class="procuct-info">
+                            <div class="segments -tabstyle">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div role="tablist" class="list">
+                                            <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel01" id="segment01">구매 및 수령정보</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel02" id="segment02">상품상세</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel03" id="segment03">가격조회</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel04" id="segment04">투자 포인트</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="segments-panels">
+                                <div role="tabpanel" aria-labelledby="segment01" id="segments-panel01" class="segments-panel -active" tabindex="0">
+                                    <dl class="prodect-info-dl">
+                                        <dt class="h4">구매정보 안내</dt>
+                                        <dd>
+                                            <ul class="ul -bullet">
+                                                <li>구매 대상 : 실명의 개인(미성년자의 경우 법정대리인의 동의가 필요하며 영업점에서만 구매 가능)</li>
+                                                <li>거래시간 : NH농협은행 영업일 09:00 ~ 16:00</li>
+                                                <li>소득세법에 따라 현금영수증 발급 가능</li>
+                                            </ul>
+                                        </dd>
+
+                                        <dt class="h4">수령정보 안내</dt>
+                                        <dd>
+                                            <ul class="ul -bullet">
+                                                <li>수령 대상 :  본인 (신분증 필요, 대리인 수령 불가)</li>
+                                                <li>수령 방법
+                                                    <div>
+                                                        <ul class="ul -dash">
+                                                            <li>구매할 때 지정한 영업점에서 수령(영업점 변경 불가)</li>
+                                                            <li>구매한 날부터 일반적으로 영업일 기준 7일 이내에 수령 가능</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>유의사항
+                                                    <div>
+                                                        <ul class="ul -dash">
+                                                            <li>골드바 구매 후 권종 교환 및 취소(환불, 정정) 불가</li>
+                                                            <li>국제 금 시세 및 골드바 수급 상황에 따라 판매가 제한될 수 있음</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div role="tabpanel" aria-labelledby="segment02" id="segments-panel02" class="segments-panel" tabindex="0">
+                                    <h4 class="h4">상품 내용</h4>
+                                    <ul class="ul -bullet">
+                                        <li>품질이 보증된 바(bar) 형태의 금(순도 99.99%)을 NH농협은행에서 대행 판매합니다.</li>
+                                        <li>판매사: ㈜한국거래소쓰리엠, ㈜삼성금거래소, 한국조폐공사</li>
+                                    </ul>
+
+                                    <div class="case-wrap">
+                                        <div class="subs -gstab">
+                                            <div class="outer">
+                                                <div class="inner">
+                                                    <div role="tablist" class="list">
+                                                        <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="subs-panel1" id="sub1">한국금거래소 쓰리엠</button></div>
+                                                        <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel2" id="sub2">삼성 금거래소</button></div>
+                                                        <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel3" id="sub3">한국 조폐공사</button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content -wide">
+                                            <div class="subs-panels">
+                                                <div role="tabpanel" aria-labelledby="sub1" id="subs-panel1" class="subs-panel -active" tabindex="0">
+                                                    <p class="p">LS MnM㈜에서 공급받은 순도 99.99%의 금을 한국금거래소쓰리엠이 제조하고 질량과 순도를 보증합니다.</p>
+
+                                                    <ul class="gs-procuct-info">
+                                                        <li>
+                                                            <div class="thumb"><button type="button" title="골드바 확대 이미지 보기" aria-haspopup="true" onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 1kg 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">1kg 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>50mmX110mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>5%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 5%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="thumb"><button type="button"  onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 100g 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">100g 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>25mmX45mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>5%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 5%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="thumb"><button type="button"  onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 10g 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">10g 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>15.5mmX25.5mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>7%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 5%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="thumb"><button type="button"  onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 3.75g 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">3.75g 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>12mmX20mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>17%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 8%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+        
+                                                    <h4 class="h4">소재</h4>
+                                                    <p class="p">금 99.99%</p>
+        
+                                                    <h4 class="h4">LS MnM㈜</h4>
+                                                    <p class="p">국내에서 유일하게 런던금시장연합회(LMBA)의 ‘Good Delivery List’에 등록된 회사</p>
+        
+                                                    <h4 class="h4">고객이 살 때 금액</h4>
+                                                    <p class="p">1g당 기준 가격 X 중량 X (1 + 골드바 종류별 판매수수료율) X (1 + 부가가치세 10%)</p> 
+                                                    <h4 class="h4">고객이 팔 때 금액</h4>
+                                                    <p class="p">1g당 기준 가격 X 중량 X (1 - 골드바 종류별 매입수수료율), 파실 때에는 부가세 없음</p>
+        
+                                                    <h4 class="h4">1g당 기준 가격</h4>
+                                                    <p class="p">국제 금 가격을 원달러 환율과 1g당 원화 가격으로 환산하여 은행이 고시하는 가격</p>
+        
+                                                    <h4 class="h4">수수료</h4>
+                                                    <p class="p">금 실물 구입 비용, 골드바 제조 비용, 보안 물류 비용, 판매업체수수료, 은행수수료 등이 포함</p>
+                                                </div>
+
+                                                <div role="tabpanel" aria-labelledby="sub1" id="subs-panel2" class="subs-panel" tabindex="0">
+                                                    <p class="p">예시입니다.</p>
+                                                    <ul class="gs-procuct-info">
+                                                        <li>
+                                                            <div class="thumb"><button type="button" title="골드바 확대 이미지 보기" aria-haspopup="true" onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 1kg 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">1kg 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>50mmX110mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>5%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 5%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="thumb"><button type="button"  onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 100g 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">100g 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>25mmX45mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>5%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 5%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="thumb"><button type="button"  onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 10g 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">10g 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>15.5mmX25.5mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>7%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 5%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="thumb"><button type="button"  onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 3.75g 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">3.75g 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>12mmX20mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>17%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 8%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div role="tabpanel" aria-labelledby="sub1" id="subs-panel3" class="subs-panel" tabindex="0">
+                                                    <p class="p">예시입니다.</p>
+                                                    <ul class="gs-procuct-info">
+                                                        <li>
+                                                            <div class="thumb"><button type="button" title="골드바 확대 이미지 보기" aria-haspopup="true" onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 1kg 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">1kg 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>50mmX110mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>5%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 5%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="thumb"><button type="button"  onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 100g 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">100g 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>25mmX45mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>5%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 5%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="thumb"><button type="button"  onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 10g 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">10g 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>15.5mmX25.5mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>7%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 5%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="thumb"><button type="button"  onclick="lageView(this);"><img src="../../../../assets/imgs/nds/product/img_korea-gold1_64.png" alt="한국금거래소쓰리엠 3.75g 골드바 이미지"></button></div>
+                                                            <div class="gs-procuct-detail">
+                                                                <strong class="title">3.75g 골드바</strong>
+                                                                <dl class="dl">
+                                                                    <div>
+                                                                        <dt>크기</dt>
+                                                                        <dd>12mmX20mm</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>순도</dt>
+                                                                        <dd>금 99.99%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>판매수수료율<br>(고객이 살 때)</dt>
+                                                                        <dd>17%</dd>
+                                                                    </div>
+                                                                    <div>
+                                                                        <dt>매입수수료율<br>(고객이 팔 때)</dt>
+                                                                        <dd> 8%</dd>
+                                                                    </div>
+                                                                </dl>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" aria-labelledby="segment03" id="segments-panel03" class="segments-panel" tabindex="0">
+                                    <p class="base-data">기준일 2023년10월06일 09시08분14초</p>
+                                    <div class="card -sum">
+                                        <div class="-box">
+                                            <dl class="dl">
+                                                <div>
+                                                    <dt>국제 금 가격(USD / T.oz)</dt>
+                                                    <dd>2,636 USD</dd>
+                                                </div>
+                                                <div>
+                                                    <dt>원달러 환율( / USD)</dt>
+                                                    <dd>1,349.6 원</dd>
+                                                </div>
+                                                <div>
+                                                    <dt>1g당 기준가격</dt>
+                                                    <dd>114,377.74 원</dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    
+                                    <h4 class="h4">(주)한국금거래소쓰리엠</h4>
+                                    <div class="table -horizontal -basic">
+                                        <table>
+                                            <caption><span class="hide">(주)한국금거래소쓰리엠 중량별 가격</span></caption>
+                                            <colgroup>
+                                                <col style="width:20%">
+                                                <col style="width:40%">
+                                                <col style="width:40%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">종류</th>
+                                                    <th scope="col">고객이 살 때<br>(부가가치세 포함)(원)</th>
+                                                    <th scope="col">고객이 팔 때(원)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="center">3.75g<br>(17%)</td>
+                                                    <td class="right">336,303원</td>
+                                                    <td class="right">240,400원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="center">10g</td>
+                                                    <td class="right">820,171원</td>
+                                                    <td class="right">661,990원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="center">100g</td>
+                                                    <td class="right">8,048,513원</td>
+                                                    <td class="right">6,619,990원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="center">1kg</td>
+                                                    <td class="right">80,485,174원</td>
+                                                    <td class="right">99,199,930원 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h4 class="h4">(주)삼성금거래소</h4>
+                                    <div class="table -horizontal -basic">
+                                        <table>
+                                            <caption><span class="hide">(주)삼성금거래소 중량별 가격</span></caption>
+                                            <colgroup>
+                                                <col style="width:20%">
+                                                <col style="width:40%">
+                                                <col style="width:40%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">종류</th>
+                                                    <th scope="col">고객이 살 때<br>(부가가치세 포함)(원)</th>
+                                                    <th scope="col">고객이 팔 때(원)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="center">37.5g</td>
+                                                    <td class="right">3,032,557원</td>
+                                                    <td class="right">2,482,490원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="center">187.5g</td>
+                                                    <td class="right">15,047,846원</td>
+                                                    <td class="right">12,412,480원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="center">375g</td>
+                                                    <td class="right">30,038,217원</td>
+                                                    <td class="right">24,824,970원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h4 class="h4">한국조폐공사</h4>
+                                    <div class="table -horizontal -basic">
+                                        <table>
+                                            <caption><span class="hide">한국조폐공사 중량별 구매수수료율 및 가격</span></caption>
+                                            <colgroup>
+                                                <col style="width:20%">
+                                                <col style="width:40%">
+                                                <col style="width:40%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">종류</th>
+                                                    <th scope="col">고객이 살 때<br>(부가가치세 포함)(원)</th>
+                                                    <th scope="col">고객이 팔 때(원)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="center">10g</td>
+                                                    <td class="right">3,032,557원</td>
+                                                    <td class="right">2,482,490원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="center">18.75g</td>
+                                                    <td class="right">3,032,557원</td>
+                                                    <td class="right">2,482,490원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="center">75g</td>
+                                                    <td class="right">3,032,557원</td>
+                                                    <td class="right">2,482,490원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="center">100g</td>
+                                                    <td class="right">3,032,557원</td>
+                                                    <td class="right">2,482,490원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="center">500g</td>
+                                                    <td class="right">15,047,846원</td>
+                                                    <td class="right">12,412,480원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="center">1kg</td>
+                                                    <td class="right">30,038,217원</td>
+                                                    <td class="right">24,824,970원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="notewrap">
+                                        <p class="p">기준가격은 국제 금가격과 원달러 환율의 변동에 따라 수시로 변경 고시됩니다.</p>
+                                    </div>
+                                </div>
+                                
+                                <div role="tabpanel" aria-labelledby="segment04" id="segments-panel04" class="segments-panel" tabindex="0">
+                                    <h4 class="h5">국제적인 대용 화폐로서의 가치</h4>
+                                    <p class="p">
+                                        금은 부동산, 주식, 채권 등과 달리 국제적으로 통용되는 고유의 가치를 가지고 있습니다.<br>
+                                        따라서, 국가 신용도에 영향을 받지 않습니다.<br>
+                                        (단, 국가 신용도에 따라 환율이 급등락할 경우, 국제 금 시세의 국내 금 기준 가격 전환 시 적용되는 환율의 영향으로 국내 금 기준 가격이 영향을 받을 수 있습니다.)
+                                    </p>
+
+                                    <h4 class="h5">인플레이션해지 효과</h4>
+                                    <p class="p">금 가격은 물가가 오르는 시기에 함께 가격이 오르는 경향이 있습니다. 금융 시장에서 실질 화폐 가치는 장기적으로 하락하는 경향이나, 상대적으로 금은 일정한 구매력을 유지해 인플레이션헤지 수단으로 활용되기도 합니다.</p>
+
+                                    <h4 class="h5">투자·위험 분산을 위한 포트폴리오</h4>
+                                    <p class="p">역사적으로 채권과 주식의 수익률이 저조할 때, 금 투자 수익률이 상승하는 경향이 있습니다. 또한 유가 인상, 인플레이션, 금리 하락, 달러 가치 하락 시 금 가격은 상승하는 추이를 보여왔습니다.  따라서 전통적인 투자 수단(은행 예금, 채권, 주식, 부동산 등) 이외에 금에도 일정 자산을 투자하는 것은 다양한 자산 보유에 따른 포트폴리오 분산 효과가 있습니다.</p>
+
+                                    <h4 class="h5">통계 자료(연도별 금 시세 변동 추이)</h4>
+                                    <div class="table">
+                                        <table>
+                                            <caption><span class="hide">통계 자료(연도별 금 시세 변동 추이)</span></caption>
+                                            <colgroup>
+                                                <col style="width:30%">
+                                                <col style="width:70%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">연도</th>
+                                                    <th scope="col">국제 금 시세(USD / T.oz)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2023</td>
+                                                    <td class="right">2,073.00USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2022</td>
+                                                    <td class="right">1,820.05USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2021</td>
+                                                    <td class="right">1,819.40USD</td>
+                                                </tr>
+                                                <!-- 2024-04-24 데이터 수정 -->
+                                                <!-- <tr>
+                                                    <td>2019</td>
+                                                    <td class="right">1,523.74USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018</td>
+                                                    <td class="right">1,279.62USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2017</td>
+                                                    <td class="right">1,295.70USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016</td>
+                                                    <td class="right">1,160.46USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2015</td>
+                                                    <td class="right">1,063.24USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2014</td>
+                                                    <td class="right">1,266.41USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2013</td>
+                                                    <td class="right">1,441.23USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2012</td>
+                                                    <td class="right">1,668.98USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2011</td>
+                                                    <td class="right">1,571.52USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2010</td>
+                                                    <td class="right">1,224.52USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2009</td>
+                                                    <td class="right">972.34USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2008</td>
+                                                    <td class="right">871.96USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2007</td>
+                                                    <td class="right">695.39USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2006</td>
+                                                    <td class="right">603.77USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2005</td>
+                                                    <td class="right">444.45USD</td>
+                                                </tr> -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="notewrap">
+                                        <div>
+                                            <ul class="ul -bullet -info">
+                                                <li>런던금시장협회의 매년 말 고시가격</li>
+                                                <li>T.oz : 세계적으로 사용되는 귀금속의 중량 단위<br>(1T.oz = 31.1034768g)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 준법감시 심의필 cms 영역 추가 -->
+                                    <!-- <div class="loadArea" data-includ="/content/cms/market/silverbar_iframe06.html"></div> -->
+                                    <!-- 준법감시 심의필 cms 영역 추가 -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //상품 정보 영역 -->
+
+                        <hr class="hr page-1" aria-hidden="true" tabindex="-1">
+
+                        <div class="product-other">
+                            <!-- 준법감시 심의필 (관리자) -->
+                            <div class="product-deliberate">
+                                <p class="p">준법심의필 2024-3233(심의일 : YYYY.MM.DD.)<br>
+                                    기간 : YYYY.MM.DD. ~ YYYY.MM.DD.</p>
+                            </div>
+                            <!-- //준법감시 심의필 (관리자) -->
+
+                            <!-- 공유 -->
+                            <div class="product-share">
+                                <ul>
+                                    <li><button type="button" class="share" aria-haspopup="true"><span class="hide">공유</span></button></li>
+                                </ul>
+                            </div>
+                            <!-- //공유 -->
+                        </div>
+                    </div><!-- //.product-detail-wrap -->
+                </div>
+
+                <div class="fixer -jsProcuctBtn">
+                    <div class="buttons">
+                        <button type="button" class="button -lg">시세조회</button>
+                        <button type="button" class="button -primary -lg">구매하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gs-view-layer" class="layer">
+        <div class="container">
+            <div class="contents">
+                <div class="content">
+                    <div class="gs-big-view">
+                        <img src="" alt="">
+                    </div>
+                    <p class="p">골드바 실물 확대 이미지입니다.</p>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -primary -lg" onclick="Layer.close('gs-view-layer')">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        Popup.open('popup');
+        procuctDatailAct();
+        // Layer.open('layer');
+
+        //이미지 확대 보기
+        function lageView(e) {
+            var $parent = e.closest('li');
+            var $title = $parent.querySelector('.title').textContent;
+            // var $title_target = document.querySelector('#gs-view-layer h1.title');
+            // $title_target.textContent = $title;
+
+            var $src = e.querySelector('img').getAttribute('src');
+            var $newSrc = $src.replace('.png','') + '_big.png';
+            var $src_target = document.querySelector('#gs-view-layer .gs-big-view img');
+            $src_target.setAttribute('src',$newSrc);
+            $src_target.setAttribute('alt',$title + ' 확대 이미지');
+
+            Layer.open('gs-view-layer');
+        }
+
+        // html 파일 로드 (퍼블확인용)
+        incHtml();
+        function incHtml() {
+            $('[data-includ]').each(function () {
+                $this = $(this);
+                var $url = $this.attr('data-includ')
+                $this.load($url)
+            })
+        }
+    </script>
+</body>
+</html>

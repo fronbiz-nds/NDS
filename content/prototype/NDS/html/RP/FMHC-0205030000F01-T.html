@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title></title>
+    <link rel="stylesheet" href="../../../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/common-ui.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="inner">
+                    <div class="funcs">
+                        <button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+                    </div>
+
+                    <h1 class="title">포트폴리오 설계</h1>
+
+                    <div class="funcs">
+                        <button type="button" class="func -cs"><span class="hide">상담</span></button>
+                        <button type="button" class="func">취소</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contents">
+                <div class="content">
+                    <h2 class="h2">신청 정보를 입력해 주세요</h2>
+
+                    <div class="case-wrap">
+                        <div class="card -sum">
+                            <div class="-box">
+                                <div class="top-data-area">
+                                    <dt class="title">
+                                        (NH로보)50대미만 위험중립형<br>e(RA012010520180322)
+                                    </dt>
+                                </div>
+                                <dl class="dl">
+                                    <div>
+                                        <dt>신청내역</dt>
+                                        <dd>포트폴리오 60%<br>
+                                            + 예금 40%
+                                        </dd>
+                                    </div>
+                                    <div>
+                                        <dt>계좌번호</dt>
+                                        <dd>000-0000-0000-00</dd>
+                                    </div>
+                                    <div>
+                                        <dt>가입일자</dt>
+                                        <dd>2023.02.12</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap">
+                        <h4 class="h4">교체매매 총 금액
+                            <span class="tooltip">
+                                <button type="button" class="trigger">
+                                    <span class="hide">툴팁</span>
+                                </button>
+                                <span class="panel">
+                                    <span class="title">교체매매</span>
+                                    <span class="t-content">
+                                        포트폴리오에 포함되어 있는 자산을 매도하여 다른 상품으로 매수해 포트폴리오를 재구성합니다.
+                                    </span>
+                                </span>
+                            </span>
+                        </h4>
+
+                        <div class="account card -list">
+                            <dl class="dl">
+                                <div>
+                                    <dt>평가금액</dt>
+                                    <dd>200,000원</dd>
+                                </div>
+                                <div>
+                                    <dt>투자금액</dt>
+                                    <dd>200,000원</dd>
+                                </div>
+                            </dl>    
+                        </div>
+                    </div>
+
+                    <h4 class="h4">상세내역</h4>
+
+                    <div class="segments -bar">
+                        <div class="outer">
+                            <div class="inner">
+                                <div role="tablist" class="list">
+                                    <div class="item -active"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel3" id="segment3">매도상품</button></div>
+                                    <div class="item"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel4" id="segment4">매수상품</button></div>
+                                    <span class="switcher" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="segments-panels">
+                        <div role="tabpanel" aria-labelledby="segment1" id="segments-panel3" class="segments-panel -active" tabindex="0">
+                            <div class="selection card">
+                                <ul>
+                                    <li>
+                                        <div class="int-rate -bordered -sum" role="button">
+                                            <div class="top-area">
+                                                <div class="top-tooltip">
+                                                    <div class="badges">
+                                                        <span class="badge line-gray">펀드</span>
+                                                        <span class="badge line-gray">계열사</span>
+                                                    </div>
+                                                    
+                                                    <p class="badge-tooltip">이미 가입한 상품
+                                                        <span class="tooltip">
+                                                            <button type="button" class="trigger">
+                                                                <span class="hide">툴팁</span>
+                                                            </button>
+                                                            <span class="panel">
+                                                                <span class="title">이미 가입한 상품</span>
+                                                                <span class="t-content">
+                                                                    <span class="dot">
+                                                                        운용중인 상품 비율이 추천비율보다 높은 경우<br>
+                                                                        추천 비중보다 높은 부분은 일부 매도되어 다른 상품으로 교체 매매됩니다.
+                                                                    </span>
+                                                                    <span class="dot">
+                                                                        운용중인 상품 비율이 추천비율보다 낮은 경우<br>
+                                                                        해당 상품은 모두 포트폴리오에 포함되고 부족한 비율에 맞춰 추가 매수됩니다.
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="data-info-main">
+                                                <div class="info-title">
+                                                    NH-Amundi 필승코리아증권투자신탁[주식] C-P2e
+                                                </div>
+                                            </div>
+                                            <dl class="dl">
+                                                <div>
+                                                    <dt>퇴직금</dt>
+                                                    <dd>10,000원</dd>
+                                                </div>
+                                                <div>
+                                                    <dt>개인적립금</dt>
+                                                    <dd>50,000원</dd>
+                                                </div>
+                                            </dl>
+                                            <div class="data-box" id="data-rd">
+                                                <div class="data-box-title">매도금액</div>
+                                                <div class="data-box-content">60,000원</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="int-rate -bordered -sum" role="button">
+                                            <div class="top-area badges">
+                                                <span class="badge line-gray">디폴트옵션</span>
+                                            </div>
+                                            <div class="data-info-main">
+                                                <div class="info-title">
+                                                    농협은행 디폴트옵션 저위험 포트폴리오 1호
+                                                </div>
+                                            </div>
+                                            <dl class="dl">
+                                                <div>
+                                                    <dt>개인적립금</dt>
+                                                    <dd>100,000,000원</dd>
+                                                </div>
+                                            </dl>
+                                            <div class="data-box" id="data-rd">
+                                                <div class="data-box-title">매도금액</div>
+                                                <div class="data-box-content">100,000,000원</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="int-rate -bordered -sum" role="button">
+                                            <div class="top-area badges">
+                                                <span class="badge line-gray">예금</span>
+                                            </div>
+                                            <div class="data-info-main">
+                                                <div class="info-title">
+                                                    (DC/IRP)경남은행 정기예금 1년
+                                                </div>
+                                            </div>
+                                            <dl class="dl">
+                                                <div>
+                                                    <dt>퇴직금</dt>
+                                                    <dd>10,000원</dd>
+                                                </div>
+                                                <div>
+                                                    <dt>개인적립금</dt>
+                                                    <dd>40,000원</dd>
+                                                </div>
+                                            </dl>
+                                            <div class="data-box" id="data-rd">
+                                                <div class="data-box-title">매도금액</div>
+                                                <div class="data-box-content">40,000원</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" aria-labelledby="segment2" id="segments-panel4" class="segments-panel" tabindex="0">
+                            
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -sm">
+                        <div class="title-group">
+                            <div class="inner">
+                                <h4 class="h4">리밸런싱 알림
+                                    <span class="tooltip">
+                                        <button type="button" class="trigger">
+                                            <span class="hide">툴팁</span>
+                                        </button>
+                                        <span class="panel">
+                                            <span class="title">리밸런싱 알림</span>
+                                            <span class="t-content">
+                                                <span class="dot">매월 말 수익률 알림을 발송해 드립니다.</span>
+                                                <span class="dot">정기 발송 외 추천 포트폴리오가 변경된 이후에도 알림을 발송해 드립니다.</span>
+                                                <span class="dot">평가금액 10만원 미만인 포트폴리오에 대해서는 리밸런싱 알림 수신이 제공되지 않습니다.</span>
+                                                <span class="dot">[퇴직연금 포트폴리오 > My포트폴리오] 메뉴에서 알림 설정을 변경할 수 있습니다.</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </h4>
+                            </div>
+                            <span class="switch ml-auto -sm">
+                                <input type="checkbox" id="switch28" checked>
+                                <label for="switch28"><span class="hide">스위치</span></label>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap">
+                        <div class="title-group">
+                            <div class="inner">
+                                <h4 class="h4">목표수익률/손실률 알림
+                                    <span class="tooltip">
+                                        <button type="button" class="trigger">
+                                            <span class="hide">툴팁</span>
+                                        </button>
+                                        <span class="panel">
+                                            <span class="title">목표수익률/손실률 알림</span>
+                                            <span class="t-content">
+                                                <span class="dot">목표수익률/손실률 알림은 설정한 수익률에 도달한 다음 영업일에 1회 안내해 드립니다.</span>
+                                                <span class="dot">수익률알림은 다음 영업일에 안내가 되어, 안내된 수익률과 알림을 받은 시점의 수익률은 다를 수 있습니다.</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </h4>
+                            </div>
+                            <span class="switch ml-auto -sm">
+                                <!-- [CASE] Default : Off / ON시 목표수익률, 위험손실률 인풋박스 노출 -->
+                                <input type="checkbox" id="switch2" checked>
+                                <!-- // [CASE] Default : Off / ON시 목표수익률, 위험손실률 인풋박스 노출 -->
+                                <label for="switch2"><span class="hide">스위치</span></label>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -xxs">
+                        <div class="field input">
+                            <label for="gggs1" class="label">목표수익률</label>
+                            <div class="mix unit3">
+                                <div class="plus-minus">
+                                    <div class="plus">
+                                        <input type="radio" name="plus-minus" id="plus" class="hide">
+                                        <label for="plus"><span class="hide">양수</span></label>
+                                    </div>
+                                </div>
+                        
+                                <div class="text -unit" data-clear="false">
+                                    <input type="tel" id="target" class="left-right pr-0" placeholder="1 ~ 99 이내로 입력">
+                                </div>
+                        
+                                <div class="space -lined">%</div>
+                            </div>
+                        </div>
+     
+                        <div class="field input">
+                            <label for="gggs2" class="label">손실률</label>
+                            <div class="mix unit3">
+                                <div class="plus-minus">
+                                    <div class="minus">
+                                        <input type="radio" name="plus-minus" id="minus" class="hide">
+                                        <label for="minus"><span class="hide">양수</span></label>
+                                    </div>
+                                </div>
+                        
+                                <div class="text -unit" data-clear="false">
+                                    <input type="tel" id="target" class="left-right pr-0" placeholder="1 ~ 99 이내로 입력">
+                                </div>
+                        
+                                <div class="space -lined">%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -sm">
+                        <h4 class="h4">알림방법 설정</h4>
+                        <div class="box-radios">
+                            <div class="box-radio">
+                                <input type="radio" name="period-point-color1" id="period-point-color1-1">
+                                <label for="period-point-color1-1">문자메시지</label>
+                            </div>
+                            <div class="box-radio">
+                                <input type="radio" name="period-point-color1" id="period-point-color1-2" checked>
+                                <label for="period-point-color1-2">카카오톡</label>
+                            </div>
+                        </div>
+                        <div class="case-wrap -xxs right">
+                            <a href="javascript:void(0)" class="a -arrow">내 정보 수정</a>
+                        </div>
+                    </div>
+
+                    <div class="case-wrap -sm">
+                        <div class="title-group">
+                            <div class="inner">
+                                <h4 class="h4">관리점 및 권유직원</h4>
+                            </div>
+                            <span class="switch ml-auto -sm">
+                                <input type="checkbox" id="switch1" checked>
+                                <label for="switch1"><span class="hide">스위치</span></label>
+                            </span>
+                        </div>
+                        <div class="field search mt-16">
+                            <div class="mix">
+                                <div class="text">
+                                    <input type="text" class="left-side" id="searchce" placeholder="찾기">
+                                </div>
+                        
+                                <div class="space -lined search">
+                                    <button type="button" class="icon-button -search right-side"><span class="hide">조회</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixer">
+                    <div class="buttons">
+                        <button type="button" class="button -lg -primary">다음</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../../../../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../../../assets/libs/anime/lib/anime.min.js"></script>
+    <script src="../../../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../../../assets/js/common-ui.js"></script>
+    <script>
+        // 스크립트 작성
+    </script>
+</body>
+</html>

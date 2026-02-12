@@ -1,73 +1,73 @@
-
 /* RESET */
 *,
 *:before,
 *:after {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    user-select: none;
-    -webkit-user-select: none;
-    box-sizing: border-box;
-    -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent;
+    margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+    user-select:none;
+    -webkit-user-select:none;
+    box-sizing:border-box;
+    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color:transparent;
 }
 
 html {
-    font-size: 62.5%;
-    -webkit-overflow-scrolling: auto;
+    font-size:62.5%;
+    -webkit-overflow-scrolling:auto;
 }
 body {
-    --in                   : 2.4rem;
-    --out                  : calc(var(--in) * -1);
+    --in:2.4rem;
+    --out:calc(var(--in) * -1);
 
-    --indent               : 0.4rem;
-    --outdent              : calc(var(--indent) * -1);
+    --indent:0.4rem;
+    --outdent:calc(var(--indent) * -1);
     
-    --word                 : "Pretendard", "DroidSans", "Apple SD Gothic Neo", "AppleGothic", sans-serif;
+    --word:"Pretendard", "DroidSans", "Apple SD Gothic Neo", "AppleGothic", sans-serif;
 }
 body {
-    color: var(--color-text-font-1);
-    font-size: 1.6rem;
-    line-height: 1.5;
-    font-family: var(--word);
-    letter-spacing: -0.025em;
+    color:var(--color-text-font-1);
+    font-size:1.6rem;
+    line-height:1.5;
+    font-family:var(--word);
+    letter-spacing:-0.025em;
     word-break:keep-all;
-    overflow-wrap: anywhere;
-    -webkit-text-size-adjust: none;
+    overflow-wrap:anywhere;
+    -webkit-text-size-adjust:none;
 }
 ul,
 ol,
 dl {
-    list-style: none;
+    list-style:none;
 }
 img {
-    max-width: 100%;
-    vertical-align: top;
+    max-width:100%;
+    vertical-align:top;
 }
 .img {
     width:100%;
 }
 a {
-    color: inherit;
-    text-decoration: none;
+    color:inherit;
+    text-decoration:none;
 }
 button {
-    cursor: pointer;
+    cursor:pointer;
 }
 input,
 textarea {
-    user-select: auto;
-   -webkit-user-select: auto;
+    user-select:auto;
+    -webkit-user-select:auto;
 }
 button,
 input,
 textarea {
     color:var(--color-text-font-1);
-    font-size: 1.6rem;
-    line-height: 1.5;
-    font-family: var(--word);
-    letter-spacing: -0.04em;
+    font-size:1.6rem;
+    line-height:1.5;
+    font-family:var(--word);
+    letter-spacing:-0.04em;
     -webkit-appearance:none;
+    appearance:none;
 }

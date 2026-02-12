@@ -40,6 +40,9 @@ body {
     overflow-wrap: anywhere;
     -webkit-text-size-adjust: none;
 }
+button{
+    border: none;
+}
 button,
 input,
 textarea {

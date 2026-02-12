@@ -709,7 +709,7 @@ p.label {color:var(--color-text-font-3);}
 .text .input:focus {border-color:var(--color-border-input-focus);}
 .text input[disabled] {opacity:1; background-color:var(--color-bg-input-disabled);}
 .text .input[data-bankcode]:before,
-.text .input[data-conuntrycode]:before {vertical-align:-0.8rem;}
+.text .input[data-countrycode]:before {vertical-align:-0.8rem;}
 .text .unit {position:absolute; top:1.1rem; right:.4rem; color:var(--color-text-font-1); font-weight:bold; font-size:1.8rem;}
 .text .info,
 .box-radios ~ .info,
@@ -1029,7 +1029,7 @@ p.label {color:var(--color-text-font-3);}
 .select.-price.-filled .amount .key {color:var(--color-text-font-4);} 
 .select.-price.-filled .amount .value {line-height:1.334;}
 .select.-price.-filled.-error .button-type,
-.select.-price.-filled.-error .account.card {border-color:var(--color-border-error);} {border-color:var(--color-border-error);}
+.select.-price.-filled.-error .account.card {border-color:var(--color-border-error);}
 .select.-list.-filled dl {margin-top:var(--spacing-32); margin-right:var(--spacing-4);}
 .select.-list.-filled dl div + div {margin-top:var(--spacing-16);}
 .select.-list.-filled dl dt,
@@ -1139,7 +1139,7 @@ p.label {color:var(--color-text-font-3);}
 .mix.datepicker .dash {position:absolute; top:50%; left:50%; z-index:1; border:none; color:var(--color-text-select-filled); transform:translate(-50%, -50%);}
 .mix.datepicker .text input {padding-right:0;}
 .mix.datepicker .text input[readonly] {background:transparent;}
-.-error .mix .left-space .left-side {border-color:var(--color-border-errorred);}
+.-error .mix .left-space .left-side {border-color:var(--color-border-error);}
 .search .mix .text > input {border-color:var(--color-border-select-default);}
 .search .mix .text > .clear {right:0;}
 
@@ -1193,9 +1193,9 @@ p.label {color:var(--color-text-font-3);}
 .-focused + .dot.-lined {border-color:var(--color-border-point);}
 .-focused + .dot.-lined + .space.-lined {border-color:var(--color-border-point);}
 .-focused + .money.-lined + .dot.-lined {border-color:var(--color-border-point);}
-.-focused + .money.-lined + .dot.-lined + .space.-lined {border-color:var(--color-border-pointt);}
+.-focused + .money.-lined + .dot.-lined + .space.-lined {border-color:var(--color-border-point);}
 .-success + .-lined {border-color:var(--color-blue-500);}
-.-error + .-lined {border-color:var(var(--color-border-errorred));}
+.-error + .-lined {border-color:var(var(--color-border-error));}
 .mix .info,
 p.info {width:100%; margin-top:var(--spacing-12); color:var(--color-text-font-4); font-size:1.3rem;}
 .bottom-abs-info {position:absolute; bottom:2.2rem; width:100%; text-align:center;}

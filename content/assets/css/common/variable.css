@@ -1,5 +1,15 @@
 :root {
     /*  ============================================================
+        Common
+        ============================================================ */
+    --nds-space-in                   : 2.4rem;
+    --nds-space-out                  : calc(var(--nds-space-in) * -1);
+    --nds-indent               : 0.4rem;
+    --nds-outdent              : calc(var(--nds-indent) * -1);
+    --ndx-font-base                 : "Pretendard", "DroidSans", "Apple SD Gothic Neo", "AppleGothic", sans-serif;
+
+
+    /*  ============================================================
         Colors - Light Mode
         ============================================================ */
 

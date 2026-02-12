@@ -34,7 +34,7 @@ body {
     color: var(--color-text-font-1);
     font-size: 1.6rem;
     line-height: 1.5;
-    font-family: var(--ndx-font-base);
+    font-family: var(--nds-font-base);
     letter-spacing: -0.025em;
     word-break:keep-all;
     overflow-wrap: anywhere;
@@ -46,7 +46,7 @@ textarea {
     color:var(--color-text-font-1);
     font-size: 1.6rem;
     line-height: 1.5;
-    font-family: var(--ndx-font-base);
+    font-family: var(--nds-font-base);
     letter-spacing: -0.04em;
     -webkit-appearance:none;
 }

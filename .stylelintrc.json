@@ -1,0 +1,20 @@
+{
+    "plugins": [
+        "@stylistic/stylelint-plugin"
+    ],
+    "rules": {
+        "@stylistic/string-quotes": "double",
+        "@stylistic/indentation": 4,
+        "@stylistic/block-opening-brace-space-before": "always",
+        "@stylistic/block-opening-brace-space-after": "never-single-line",
+        "@stylistic/block-closing-brace-space-before": "never-single-line",
+        "@stylistic/declaration-colon-space-before": "never",
+        "@stylistic/declaration-colon-space-after": "never",
+        "@stylistic/declaration-block-semicolon-space-after": "always-single-line",
+        "@stylistic/block-opening-brace-newline-after": "always-multi-line",
+        "@stylistic/block-closing-brace-newline-before": "always-multi-line",
+        "@stylistic/declaration-block-semicolon-newline-after": "always-multi-line",
+        "@stylistic/declaration-block-trailing-semicolon": "always",
+        "@stylistic/at-rule-name-space-after": "always"
+    }
+}

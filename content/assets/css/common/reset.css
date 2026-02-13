@@ -2,44 +2,44 @@
 *,
 *:before,
 *:after {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    user-select: none;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent;
+    margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+    user-select:none;
+    -webkit-user-select:none;
+    box-sizing:border-box;
+    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color:transparent;
 }
 ul,
 ol,
 dl {
-    list-style: none;
+    list-style:none;
 }
 img {
-    max-width: 100%;
-    vertical-align: top;
+    max-width:100%;
+    vertical-align:top;
 }
 .img {
     width:100%;
 }
 a {
-    color: inherit;
-    text-decoration: none;
+    color:inherit;
+    text-decoration:none;
 }
 button {
-    cursor: pointer;
+    cursor:pointer;
 }
 input,
 textarea {
-    user-select: auto;
-   -webkit-user-select: auto;
+    user-select:auto;
+    -webkit-user-select:auto;
 }
 
 html {
-    font-size: 62.5%;
-    -webkit-overflow-scrolling: auto;
+    font-size:62.5%;
+    -webkit-overflow-scrolling:auto;
 }
 
 /* NDS RESET  */

@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@stylistic/stylelint-plugin": "^5.0.1",
+    "stylelint": "^17.2.0"
+  }
+}

@@ -42,9 +42,10 @@ body {
 
 * {box-sizing:border-box; margin:0; padding:0; border:none; outline:none; -webkit-tap-highlight-color:transparent;}
 
-html {font-size:62.5%; -webkit-overflow-scrolling:auto;}
-body {background-color:var(--D1); color:var(--M9); font-size:1.5rem; line-height:1.5; font-family:'Pretendard','MalgunGothic', 'AppleGothic', sans-serif; letter-spacing:-0.025em; overflow-wrap:break-word; -webkit-text-size-adjust:none;}
-
+.guide-ui {
+    font-size:62.5%; -webkit-overflow-scrolling:auto;
+    background-color:var(--D1); color:var(--M9); font-size:1.5rem; line-height:1.5; font-family:'Pretendard','MalgunGothic', 'AppleGothic', sans-serif; letter-spacing:-0.025em; overflow-wrap:break-word; -webkit-text-size-adjust:none;
+}
 ul, ol, dl {list-style:none;}
 button {border:none;}
 a {color:inherit; text-decoration:none;}

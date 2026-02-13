@@ -42,7 +42,7 @@ html {
     -webkit-overflow-scrolling:auto;
 }
 
-/* NDS RESET  */
+/* NDS RESET */
 .nds-ui {
     color:var(--color-text-font-1);
     font-size:1.6rem;

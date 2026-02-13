@@ -3,3 +3,18 @@
    ---------------------------------------------------------
    
    ========================================================= */
+   
+:root {
+    /* [Popover - Default] */
+    --nds-color-text-popover-default:#FFFFFF;
+    --nds-color-border-popover-default:#111111;
+    --nds-color-bg-popover-default:#111111;
+}
+
+/* --- Dark Mode --- */
+.dark-mode {
+    /* [Popover - Default] */
+    --nds-color-text-popover-default:#121212;
+    --nds-color-border-popover-default:#FFFFFF;
+    --nds-color-bg-popover-default:#FFFFFF;
+}

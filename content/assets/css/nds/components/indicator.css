@@ -3,3 +3,16 @@
    ---------------------------------------------------------
    
    ========================================================= */
+
+:root {
+    /* [Indicator - Default] */
+    --nds-color-text-indicator-default:#FFFFFF;
+    --nds-color-bg-indicator-default:#111111;
+}
+
+/* --- Dark Mode --- */
+.dark-mode {
+    /* [Indicator - Default] */
+    --nds-color-text-indicator-default:#121212;
+    --nds-color-bg-indicator-default:#FFFFFF;
+}

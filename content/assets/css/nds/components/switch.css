@@ -3,3 +3,22 @@
    ---------------------------------------------------------
    
    ========================================================= */
+
+:root {
+    /* [Switch - Background] */
+    --nds-color-bg-switch-off:#707070;
+    --nds-color-bg-switch-on:#19973C;
+
+    /* [Switch - Handle] */
+    --nds-color-bg-switch-inner:#FFFFFF;
+}
+
+/* --- Dark Mode --- */
+.dark-mode {
+    /* [Switch - Background] */
+    --nds-color-bg-switch-off:#505050;
+    --nds-color-bg-switch-on:#3CBD61;
+
+    /* [Switch - Handle] */
+    --nds-color-bg-switch-inner:#212121;
+}

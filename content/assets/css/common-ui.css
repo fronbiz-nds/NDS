@@ -12,10 +12,11 @@
 /* Common */
 @import "./common/variable.css";
 @import "./common/reset.css";
-@import "./common/font.css";
+@import "./common/fonts.css";
 
 /* Components */
 @import "./components/components.css"; /* asis 전체 */
+@import "./components/layout.css";
 @import "./components/accordion.css";
 @import "./components/attachedfile.css";
 @import "./components/badge.css";
@@ -55,7 +56,3 @@
 @import "./components/textarea.css";
 @import "./components/toast.css";
 @import "./components/tooltip.css";
-
-/* Channel */
-/* @import "./channel/ch-allonebank.css"; */
-

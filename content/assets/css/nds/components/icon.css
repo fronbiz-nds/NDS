@@ -1,10 +1,15 @@
-/*  ============================================================
-    Icon.css
-    ============================================================ */
+/* ============================================================
+   icon.css
+   Description: 통합 아이콘 스타일 정의 (Line, Fill, Flag, CI)
+   ============================================================ */
     
-/* --- Variables --- */
+/* ============================================================
+   1. CSS Variables (Root & Dark Mode)
+   ============================================================ */
+
+/* --- Light Mode (Default) --- */
 :root {
-    /* General Line Icons */
+    /* [General Line Icons] - 24px ~ 40px */
     --nds-ico-publish-insurance:url("../../../imgs/nds/ico/common/ico_publish-insurance_line_24.svg");
     --nds-ico-security:url("../../../imgs/nds/ico/common/ico_security_line_24.svg");
     --nds-ico-payment:url("../../../imgs/nds/ico/common/ico_payment_line_24.svg");
@@ -90,7 +95,8 @@
     --nds-ico-gastric-cancer:url("../../../imgs/nds/ico/common/ico_gastric-cancer_line_36.svg");
     --nds-ico-franchise-shoot:url("../../../imgs/nds/ico/common/ico_franchise-shoot_line_40.svg");
     --nds-ico-franchise-qr:url("../../../imgs/nds/ico/common/ico_franchise-qr_line_40.svg");
-    /* General Fill Icons */
+
+    /* [General Fill Icons] - 12px ~ 60px */
     --nds-ico-fill-next-arrow:url("../../../imgs/nds/ico/common/ico_next-arrow_gray600_fill_12.svg");
     --nds-ico-fill-product-new:url("../../../imgs/nds/ico/common/ico_product-new_fill_24.svg");
     --nds-ico-fill-product-thumb:url("../../../imgs/nds/ico/common/ico_product-thumb_fill_24.svg");
@@ -248,8 +254,10 @@
     --nds-ico-fill-certi-yeskey-x56:url("../../../imgs/nds/ico/common/ico_certi-yeskey_fill_56.svg");
     --nds-ico-fill-joint-certificate:url("../../../imgs/nds/ico/common/ico_joint-certificate_fill_60.svg");
 }
-.nds-dark-mode {
-    /* General Icons */
+
+/* --- Dark Mode --- */
+.dark-mode {
+    /* [General Line Icons] - Dark Mode */
     --nds-ico-publish-insurance:url("../../../imgs/nds/ico/common/ico_publish-insurance_line_24_dk.svg");
     --nds-ico-security:url("../../../imgs/nds/ico/common/ico_security_line_24_dk.svg");
     --nds-ico-payment:url("../../../imgs/nds/ico/common/ico_payment_line_24_dk.svg");
@@ -335,7 +343,8 @@
     --nds-ico-gastric-cancer:url("../../../imgs/nds/ico/common/ico_gastric-cancer_line_36_dk.svg");
     --nds-ico-franchise-shoot:url("../../../imgs/nds/ico/common/ico_franchise-shoot_line_40_dk.svg");
     --nds-ico-franchise-qr:url("../../../imgs/nds/ico/common/ico_franchise-qr_line_40_dk.svg");
-    /* General Fill Icons */
+
+    /* [General Fill Icons] - Dark Mode */
     --nds-ico-fill-next-arrow:url("../../../imgs/nds/ico/common/ico_next-arrow_gray600_fill_12_dk.svg");
     --nds-ico-fill-call-receiver:url("../../../imgs/nds/ico/common/ico_call-receiver_fill_20_dk.svg");
     --nds-ico-fill-share-kakaotalk1:url("../../../imgs/nds/ico/common/ico_share-kakaotalk1_fill_24_dk.svg");
@@ -353,15 +362,15 @@
     --nds-ico-fill-certificate-empty:url("../../../imgs/nds/ico/common/ico_certificate-empty_fill_56_dk.svg");
 }
 
-/* ============================================================
-   COMPONENT: COMMON ICON (.nds-ico)
+/* ==========================================================================
+   2. Component: Common Icon (.nds-ico)
    가이드: 기본 클래스(.nds-ico)와 사이즈(-xN), 아이콘 종류를 조합하여 사용
    사용예시: <i class="nds-ico -x24 nds-ico-security"></i>
-   ============================================================ */
-.nds-ico {--nds-icon-size:1.6rem; display:inline-block; align-items:center; justify-content:center; width:var(--nds-icon-size); height:var(--nds-icon-size); flex-shrink:0;}
-.nds-ico::before {content:url(""); display:block; width:100%; height:100%; background-repeat:no-repeat; background-size:contain; background-position:center;}
+   ========================================================================== */
+.nds-ico {--nds-icon-size:1.6rem; display:inline-block; flex-shrink:0; justify-content:center; align-items:center; width:var(--nds-icon-size); height:var(--nds-icon-size);}
+.nds-ico::before {content:url(""); display:block; width:100%; height:100%; background-repeat:no-repeat; background-position:center; background-size:contain;}
 
-/* Size */
+/* --- Size Modifiers --- */
 .nds-ico.-x8 {--nds-icon-size:.8rem;}
 .nds-ico.-x12 {--nds-icon-size:1.2rem;}
 .nds-ico.-x16 {--nds-icon-size:1.6rem;}
@@ -375,8 +384,14 @@
 .nds-ico.-x56 {--nds-icon-size:5.6rem;}
 .nds-ico.-x60 {--nds-icon-size:6.0rem;}
 
-/* --- General Icons --- */
-/* General Line Icon */
+/* ==========================================================================
+   3. Icon Mapping (Variable Binding)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   3.1 General Line Icons
+   -------------------------------------------------------------------------- */
+/* [24*24 Size] */
 .nds-ico-publish-insurance::before {background-image:var(--nds-ico-publish-insurance);}
 .nds-ico-security::before {background-image:var(--nds-ico-security);}
 .nds-ico-payment::before {background-image:var(--nds-ico-payment);}
@@ -429,7 +444,8 @@
 .nds-ico-customer-verification::before {background-image:var(--nds-ico-customer-verification);}
 .nds-ico-terms-agree::before {background-image:var(--nds-ico-terms-agree);}
 .nds-ico-card-select::before {background-image:var(--nds-ico-card-select);}
-/* General Line Icon - 32*32 */
+
+/* [32*32 Size] */
 .nds-ico-certi-pattern::before {background-image:var(--nds-ico-certi-pattern);}
 .nds-ico-certi-face::before {background-image:var(--nds-ico-certi-face);}
 .nds-ico-certi-pw::before {background-image:var(--nds-ico-certi-pw);}
@@ -450,7 +466,8 @@
 .nds-ico-account-deposit::before {background-image:var(--nds-ico-account-deposit);}
 .nds-ico-exchange-docu::before {background-image:var(--nds-ico-exchange-docu);}
 .nds-ico-exchange-remittance::before {background-image:var(--nds-ico-exchange-remittance);}
-/* General Line Icon - 36*36 */
+
+/* [36*36 Size] */
 .nds-ico-female-cancer::before {background-image:var(--nds-ico-female-cancer);}
 .nds-ico-female-cancer-disabled::before {background-image:var(--nds-ico-female-cancer-disabled);}
 .nds-ico-male-cancer::before {background-image:var(--nds-ico-male-cancer);}
@@ -462,18 +479,23 @@
 .nds-ico-lung-cancer::before {background-image:var(--nds-ico-lung-cancer);}
 .nds-ico-colorectal-cancer::before {background-image:var(--nds-ico-colorectal-cancer);}
 .nds-ico-gastric-cancer::before {background-image:var(--nds-ico-gastric-cancer);}
-/* General Line Icon - 40*40 */
+
+/* [40*40 Size] */
 .nds-ico-franchise-shoot::before {background-image:var(--nds-ico-franchise-shoot);}
 .nds-ico-franchise-qr::before {background-image:var(--nds-ico-franchise-qr);}
 
-/* --- General Fill Icons --- */
-/* General Fill Icon - 12*12 */
+/* --------------------------------------------------------------------------
+   3.2 General Fill Icons
+   -------------------------------------------------------------------------- */
+/* [12*12 Size] */
 .nds-ico-fill-next-arrow::before {background-image:var(--nds-ico-fill-next-arrow);}
-/* General Fill Icon - 20*20 */
+
+/* [20*20 Size] */
 .nds-ico-fill-product-new::before {background-image:var(--nds-ico-fill-product-new);}
 .nds-ico-fill-product-thumb::before {background-image:var(--nds-ico-fill-product-thumb);}
 .nds-ico-fill-call-receiver::before {background-image:var(--nds-ico-fill-call-receiver);}
-/* General Fill Icon - 24*24 */
+
+/* [24*24 Size] */
 .nds-ico-fill-share-kakaotalk1::before {background-image:var(--nds-ico-fill-share-kakaotalk1);}
 .nds-ico-fill-share-kakaotalk2::before {background-image:var(--nds-ico-fill-share-kakaotalk2);}
 .nds-ico-fill-admin-number::before {background-image:var(--nds-ico-fill-admin-number);}
@@ -483,12 +505,11 @@
 .nds-ico-fill-trust-money::before {background-image:var(--nds-ico-fill-trust-money);}
 .nds-ico-fill-insurance-annuity::before {background-image:var(--nds-ico-fill-insurance-annuity);}
 .nds-ico-fill-trust-charitable::before {background-image:var(--nds-ico-fill-trust-charitable);}
-/* Folder 24*24은 Folder 32*32과 비율이 동일함으로 .nds-ico-fill-folder.-x24 사용으로 대체 */
-/* Monitoring 24*24은 Monitoring 32*32과 비율이 동일함으로 .nds-ico-fill-monitoring.-x24 사용으로 대체 */
-/* Management 24*24은 Management 32*32과 비율이 동일함으로 .nds-ico-fill-management.-x24 사용으로 대체 */
+/* Folder, Monitoring, Management 24px는 32px과 비율 동일, 클래스 재사용. ex) .nds-ico-fill-folder.-x24 */
 .nds-ico-fill-tendency-graph::before {background-image:var(--nds-ico-fill-tendency-graph);}
 .nds-ico-fill-interest-heart::before {background-image:var(--nds-ico-fill-interest-heart);}
-/* General Fill Icon - 28*28 */
+
+/* [28*28 Size] */
 .nds-ico-fill-notice-withdrawal::before {background-image:var(--nds-ico-fill-notice-withdrawal);}
 .nds-ico-fill-notice-remittance::before {background-image:var(--nds-ico-fill-notice-remittance);}
 .nds-ico-fill-notice-electronic::before {background-image:var(--nds-ico-fill-notice-electronic);}
@@ -502,7 +523,8 @@
 .nds-ico-fill-notice-nts::before {background-image:var(--nds-ico-fill-notice-nts);}
 .nds-ico-fill-insurance-gift::before {background-image:var(--nds-ico-fill-insurance-gift);}
 .nds-ico-fill-keep-gift::before {background-image:var(--nds-ico-fill-keep-gift);}
-/* General Fill Icon - 32*32 */
+
+/* [32*32 Size] */
 .nds-ico-fill-phone::before {background-image:var(--nds-ico-fill-phone);}
 .nds-ico-fill-share-kakaostory::before {background-image:var(--nds-ico-fill-share-kakaostory);}
 .nds-ico-fill-share-facebook::before {background-image:var(--nds-ico-fill-share-facebook);}
@@ -585,7 +607,8 @@
 .nds-ico-fill-certi-security-device::before {background-image:var(--nds-ico-fill-certi-security-device);}
 .nds-ico-fill-nh-robo-dream::before {background-image:var(--nds-ico-fill-nh-robo-dream);}
 .nds-ico-fill-hybrid-roboadviser::before {background-image:var(--nds-ico-fill-hybrid-roboadviser);}
-/* General Fill Icon - 36*36 */
+
+/* [36*36 Size] */
 .nds-ico-fill-investor-1th::before {background-image:var(--nds-ico-fill-investor-1th);}
 .nds-ico-fill-investor-2th::before {background-image:var(--nds-ico-fill-investor-2th);}
 .nds-ico-fill-investor-3th::before {background-image:var(--nds-ico-fill-investor-3th);}
@@ -614,9 +637,11 @@
 .nds-ico-fill-minor::before {background-image:var(--nds-ico-fill-minor);}
 .nds-ico-fill-hasten-explain::before {background-image:var(--nds-ico-fill-hasten-explain);}
 .nds-ico-fill-not-applicable::before {background-image:var(--nds-ico-fill-not-applicable);}
-/* General Fill Icon - 40*40 */
-/* No Data 40*40은 No Data 56*56과 비율이 동일함으로 .nds-ico-fill-no-data.-x40 사용으로 대체 */
-/* General Fill Icon - 48*48 */
+
+/* [40*40 Size] */
+/* No Data 40px는 56px과 비율 동일, 클래스 재사용. ex) .nds-ico-fill-no-data.-x40 */
+
+/* [48*48 Size] */
 .nds-ico-fill-calculator-coin::before {background-image:var(--nds-ico-fill-calculator-coin);}
 .nds-ico-fill-calculator-home::before {background-image:var(--nds-ico-fill-calculator-home);}
 .nds-ico-fill-certificate::before {background-image:var(--nds-ico-fill-certificate);}
@@ -626,7 +651,8 @@
 .nds-ico-fill-money-coins::before {background-image:var(--nds-ico-fill-money-coins);}
 .nds-ico-fill-saving::before {background-image:var(--nds-ico-fill-saving);}
 .nds-ico-fill-monitor::before {background-image:var(--nds-ico-fill-monitor);}
-/* General Fill Icon - 56*56 */
+
+/* [56*56 Size] */
 .nds-ico-fill-no-data::before {background-image:var(--nds-ico-fill-no-data);}
 .nds-ico-fill-certificate-empty::before {background-image:var(--nds-ico-fill-certificate-empty);}
 .nds-ico-fill-certi-nh-x56::before {background-image:var(--nds-ico-fill-certi-nh-x56);}
@@ -637,15 +663,16 @@
 .nds-ico-fill-certi-yeskey-x56::before {background-image:var(--nds-ico-fill-certi-yeskey-x56);}
 .nds-ico-fill-joint-certificate::before {background-image:var(--nds-ico-fill-joint-certificate);}
 
-/* --- Flag --- */
-/* TODO: 디자인 확인 필요.
-   1. right 여백 확인 필요. 
-      24사이즈 아이콘의 경우 bottomsheet usage에서는 margin-right 6px + 14px 텍스트인데 나머지에서는 margin-right 8px + 18px 텍스트임.
-      6px spacing은 nds에는 존재하지 않는 여백. margin-right:.6rem;
-      그리고 이 여백은 list 컴포넌트에서 제어하는게 맞는듯.
+/* --------------------------------------------------------------------------
+   3.3 Flags (Country Codes)
+   -------------------------------------------------------------------------- */
+/* TODO: 디자인 확인 필요 (여백 조정 등) */
+/* 
+    24사이즈 아이콘의 경우 bottomsheet usage에서는 margin-right 6px + 14px 텍스트인데 나머지에서는 margin-right 8px + 18px 텍스트임.
+    6px spacing은 nds에는 존재하지 않는 여백. margin-right:.6rem;
+    그리고 이 여백은 list 컴포넌트에서 제어하는게 맞는듯.
 */
 /* .nds-ico[data-countrycode]::before {margin-right:.6rem;} */
-/* Flag */
 .nds-ico[data-countrycode="000"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-south-korea_24.svg);}            /* KRW(대한민국 원) */
 .nds-ico[data-countrycode="001"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-usa_24.svg);}                    /* USD(미국 달러) */
 .nds-ico[data-countrycode="002"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-japan_24.svg);}                  /* JPY(일본 엔) */
@@ -677,8 +704,11 @@
 .nds-ico[data-countrycode="028"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-mexico_24.svg);}                 /* MXN(멕시코 페소) */
 .nds-ico[data-countrycode="029"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-vietnam_24.svg);}                /* VND(베트남 동) */
 
-/* --- Logo Bank --- */
-/* Logo Bank */
+/* --------------------------------------------------------------------------
+   3.4 Financial Institutions (CI)
+   -------------------------------------------------------------------------- */
+
+/* [Banks] */
 .nds-ico[data-bankcode="002"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kdb_56.svg);}                         /* 산업은행 */
 .nds-ico[data-bankcode="003"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-ibk_56.svg);}                         /* 기업은행 */
 .nds-ico[data-bankcode="004"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kb_56.svg);}                          /* 국민은행 */
@@ -749,8 +779,7 @@
 .nds-ico[data-bankcode="092"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-toss_56.svg);}                        /* 토스뱅크 */
 .nds-ico[data-bankcode="093"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-account_56.svg);}                     /* 전체계좌 */
 
-/* --- Logo Stock --- */
-/* Logo Stock */
+/* [Stock Firms] */
 .nds-ico[data-bankcode="209"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-myasset_56.svg);}                    /* 유안타증권 */
 .nds-ico[data-bankcode="218"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-kb_56.svg);}                         /* KB증권 */
 .nds-ico[data-bankcode="221"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-ssi_56.svg);}                        /* 상상인증권 */
@@ -784,7 +813,7 @@
 .nds-ico[data-bankcode="294"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-woori_56.svg);}                      /* 우리투자증권 */
 .nds-ico[data-bankcode="295"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-woori_56.svg);}                      /* 우리투자증권 */
 
-/* 카드사 */
+/* [Card Companies] */
 /* TODO: 디자인 확인 필요. NDS에는 없음. */
 .nds-ico[data-bankcode="041"]:before {background-image:url(../../../imgs/ico/ci/ci_woori.svg);}                                     /* 우리카드 */
 .nds-ico[data-bankcode="365"]:before {background-image:url(../../../imgs/ico/ci/ci_samsungcard.svg);}                               /* 삼성카드 */
@@ -794,7 +823,7 @@
 .nds-ico[data-bankcode="374"]:before {background-image:url(../../../imgs/ico/ci/ci_hana.svg);}                                      /* 하나카드 */
 .nds-ico[data-bankcode="381"]:before {background-image:url(../../../imgs/ico/ci/ci_kb.svg);}                                        /* KB국민카드 */
 
-/* 캐피탈 */
+/* [Capital Companies] */
 /* TODO: 디자인 확인 필요. NDS에는 없음. */
 .nds-ico[data-bankcode="299"]:before {background-image:url(../../../imgs/ico/ci/ci_woori.svg);}                                     /* 우리금융캐피탈 */
 .nds-ico[data-bankcode="301"]:before {background-image:url(../../../imgs/ico/ci/ci_dgb.svg);}                                       /* DGB캐피탈 */
@@ -806,8 +835,7 @@
 .nds-ico[data-bankcode="308"]:before {background-image:url(../../../imgs/ico/ci/ci_kb.svg);}                                        /* KB캐피탈 */
 .nds-ico[data-bankcode="310"]:before {background-image:url(../../../imgs/ico/ci/ci_hana.svg);}                                      /* 하나캐피탈 */
 
-/* --- Logo Insurance --- */
-/* Logo Insurance */
+/* [Insurance Companies] */
 .nds-ico[data-bankcode="401"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hana-life_56.svg);}          /* 하나손해보험 */
 .nds-ico[data-bankcode="562"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-myangel_56.svg);}            /* 동양생명보험 */
 .nds-ico[data-bankcode="563"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hk-fire_56.svg);}            /* 흥국화재해상 */

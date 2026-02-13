@@ -1,4 +1,14 @@
-/* FONT-FACE */
+/* ============================================================
+    font.css
+    Description: 웹 폰트(@font-face) 선언 (Pretendard, Password)
+    ============================================================ */
+
+/* ==========================================================================
+   1. Pretendard (Main Font)
+   Weights: 400(Regular), 500(Medium), 600(SemiBold)
+   ========================================================================== */
+
+/* Regular (400) */
 @font-face {
     font-style:normal;
     font-weight:400;
@@ -8,6 +18,7 @@
         url("../fonts/Pretendard-Regular.woff2?ver=1.0.0") format("woff2");
 }
 
+/* Medium (500) */
 @font-face {
     font-style:normal;
     font-weight:500;
@@ -17,6 +28,7 @@
         url("../fonts/Pretendard-Medium.woff2?ver=1.0.0")  format("woff2");
 }
 
+/* SemiBold (600) */
 @font-face {
     font-style:normal;
     font-weight:600;
@@ -26,6 +38,10 @@
         url("../fonts/Pretendard-SemiBold.woff2?ver=1.0.0")  format("woff2");
 }
 
+/* ==========================================================================
+   2. Password (Security Font)
+   Usage: 보안 키패드, 마스킹 처리 등
+   ========================================================================== */
 @font-face {
     font-style:normal;
     font-family:"Pass";

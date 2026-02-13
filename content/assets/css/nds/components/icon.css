@@ -1,0 +1,840 @@
+/*  ============================================================
+    Icon.css
+    ============================================================ */
+    
+/* --- Variables --- */
+:root {
+    /* General Line Icons */
+    --nds-ico-publish-insurance:url("../../../imgs/nds/ico/common/ico_publish-insurance_line_24.svg");
+    --nds-ico-security:url("../../../imgs/nds/ico/common/ico_security_line_24.svg");
+    --nds-ico-payment:url("../../../imgs/nds/ico/common/ico_payment_line_24.svg");
+    --nds-ico-phone-cs:url("../../../imgs/nds/ico/common/ico_phone-cs_line_24.svg");
+    --nds-ico-chat-cs:url("../../../imgs/nds/ico/common/ico_chat-cs_line_24.svg");
+    --nds-ico-mail-cs:url("../../../imgs/nds/ico/common/ico_mail-cs_line_24.svg");
+    --nds-ico-mobile-center:url("../../../imgs/nds/ico/common/ico_mobile-center_line_24.svg");
+    --nds-ico-bank:url("../../../imgs/nds/ico/common/ico_bank_line_24.svg");
+    --nds-ico-apply-insurance:url("../../../imgs/nds/ico/common/ico_apply-insurance_line_24.svg");
+    --nds-ico-stockoption:url("../../../imgs/nds/ico/common/ico_stockoption_line_24.svg");
+    --nds-ico-market-price:url("../../../imgs/nds/ico/common/ico_market-price_line_24.svg");
+    --nds-ico-fund:url("../../../imgs/nds/ico/common/ico_fund_line_24.svg");
+    --nds-ico-aim:url("../../../imgs/nds/ico/common/ico_aim_line_24.svg");
+    --nds-ico-circle-cancel:url("../../../imgs/nds/ico/common/ico_circle-cancel_line_24.svg");
+    --nds-ico-circle-cancel-disabled:url("../../../imgs/nds/ico/common/ico_circle-cancel_gray400_line_24_disabled.svg");
+    --nds-ico-o:url("../../../imgs/nds/ico/common/ico_o_line_24.svg");
+    --nds-ico-x:url("../../../imgs/nds/ico/common/ico_x_line_24.svg");
+    --nds-ico-o-selected:url("../../../imgs/nds/ico/common/ico_o_line_24_selected.svg");
+    --nds-ico-x-selected:url("../../../imgs/nds/ico/common/ico_x_line_24_selected.svg");
+    --nds-ico-check:url("../../../imgs/nds/ico/common/ico_check_line_24.svg");
+    --nds-ico-check-disabled:url("../../../imgs/nds/ico/common/ico_check_gray400_line_24_disabled.svg");
+    --nds-ico-check-filled:url("../../../imgs/nds/ico/common/ico_check_gray50_line_24.svg");
+    --nds-ico-pencil:url("../../../imgs/nds/ico/common/ico_pencil_line_24.svg");
+    --nds-ico-pencil-disabled:url("../../../imgs/nds/ico/common/ico_pencil_gray400_line_24_disabled.svg");
+    --nds-ico-login:url("../../../imgs/nds/ico/common/ico_id-login_line_24.svg");
+    --nds-ico-login-disabled:url("../../../imgs/nds/ico/common/ico_id-login_gray400_line_24_disabled.svg");
+    --nds-ico-security-info:url("../../../imgs/nds/ico/common/ico_security-info_line_24.svg");
+    --nds-ico-security-info-disabled:url("../../../imgs/nds/ico/common/ico_security-info_gray500_line_24_disabled.svg");
+    --nds-ico-profile-add-filled:url("../../../imgs/nds/ico/common/ico_profile-add_gray50_line_24.svg");
+    --nds-ico-profile-confirm-filled:url("../../../imgs/nds/ico/common/ico_profile-confirm_gray50_line_24.svg");
+    --nds-ico-recalculate-filled:url("../../../imgs/nds/ico/common/arr_recalculate_gray50_line_24.svg");
+    --nds-ico-application-check:url("../../../imgs/nds/ico/common/ico_application-check_line_24.svg");
+    --nds-ico-account:url("../../../imgs/nds/ico/common/ico_account_line_24.svg");
+    --nds-ico-account-gray:url("../../../imgs/nds/ico/common/ico_account_gray600_line_24.svg");
+    --nds-ico-confirm-phone:url("../../../imgs/nds/ico/common/ico_confirm-phone_line_24.svg");
+    --nds-ico-confirm-phone-gray:url("../../../imgs/nds/ico/common/ico_confirm-phone_gray600_line_24.svg");
+    --nds-ico-cs-call-gray:url("../../../imgs/nds/ico/common/ico_cs-call_gray600_line_24.svg");
+    --nds-ico-finance-won-gray:url("../../../imgs/nds/ico/common/ico_finance-won_gray600_line_24.svg");
+    --nds-ico-foreign-exchange-gray:url("../../../imgs/nds/ico/common/ico_foreign-exchange_gray600_line_24.svg");
+    --nds-ico-nh-group-gray:url("../../../imgs/nds/ico/common/ico_nh-group_gray600_line_24.svg");
+    --nds-ico-product-bag-gray:url("../../../imgs/nds/ico/common/ico_product-bag_gray600_line_24.svg");
+    --nds-ico-payment-card-gray:url("../../../imgs/nds/ico/common/ico_payment-card_gray600_line_24.svg");
+    --nds-ico-nh-mydata-gray:url("../../../imgs/nds/ico/common/ico_nh-mydata_gray600_line_24.svg");
+    --nds-ico-grip-line:url("../../../imgs/nds/ico/common/ico_grip-line_line_24.svg");
+    --nds-ico-domestic-franchise:url("../../../imgs/nds/ico/common/ico_domestic-franchise_line_24.svg");
+    --nds-ico-lounge-earth:url("../../../imgs/nds/ico/common/ico_lounge-earth_line_24.svg");
+    --nds-ico-exchange-pocket:url("../../../imgs/nds/ico/common/ico_exchange-pocket_line_24.svg");
+    --nds-ico-oversea-payment:url("../../../imgs/nds/ico/common/ico_overseas-payment_line_24.svg");
+    --nds-ico-auto-charge:url("../../../imgs/nds/ico/common/ico_auto-charge_line_24.svg");
+    --nds-ico-customer-verification:url("../../../imgs/nds/ico/common/ico_customer-verification_line_24.svg");
+    --nds-ico-terms-agree:url("../../../imgs/nds/ico/common/ico_terms-agree_line_24.svg");
+    --nds-ico-card-select:url("../../../imgs/nds/ico/common/ico_card-select_line_24.svg");
+    --nds-ico-certi-pattern:url("../../../imgs/nds/ico/common/ico_certi-pattern_line_32.svg");
+    --nds-ico-certi-face:url("../../../imgs/nds/ico/common/ico_certi-face_line_32.svg");
+    --nds-ico-certi-pw:url("../../../imgs/nds/ico/common/ico_certi-pw_line_32.svg");
+    --nds-ico-certi-fingerprint:url("../../../imgs/nds/ico/common/ico_certi-fingerprint_line_32.svg");
+    --nds-ico-share-message-filled:url("../../../imgs/nds/ico/common/ico_share-message_gray50_line_32.svg");
+    --nds-ico-share-copy-link-filled:url("../../../imgs/nds/ico/common/ico_share-copylink_gray50_line_32.svg");
+    --nds-ico-share-present:url("../../../imgs/nds/ico/common/ico_share-present_line_32.svg");
+    --nds-ico-share-link:url("../../../imgs/nds/ico/common/ico_share-link_line_32.svg");
+    --nds-ico-share-message2-filled:url("../../../imgs/nds/ico/common/ico_share-message2_gray50_line_32.svg");
+    --nds-ico-service-time:url("../../../imgs/nds/ico/common/ico_service-time_line_32.svg");
+    --nds-ico-service-faq:url("../../../imgs/nds/ico/common/ico_service-faq_line_32.svg");
+    --nds-ico-service-counselor:url("../../../imgs/nds/ico/common/ico_service-counselor_line_32.svg");
+    --nds-ico-service-branch:url("../../../imgs/nds/ico/common/ico_service-branch_line_32.svg");
+    --nds-ico-foreign-input:url("../../../imgs/nds/ico/common/ico_foreign-input_line_32.svg");
+    --nds-ico-foreign-storage:url("../../../imgs/nds/ico/common/ico_foreign-storage_line_32.svg");
+    --nds-ico-foreign-out:url("../../../imgs/nds/ico/common/ico_foreign-out_line_32.svg");
+    --nds-ico-receipt-branch:url("../../../imgs/nds/ico/common/ico_receipt-branch_line_32.svg");
+    --nds-ico-account-deposit:url("../../../imgs/nds/ico/common/ico_account-deposit_line_32.svg");
+    --nds-ico-exchange-docu:url("../../../imgs/nds/ico/common/ico_exchange-docu_line_32.svg");
+    --nds-ico-exchange-remittance:url("../../../imgs/nds/ico/common/ico_exchange-remittance_line_32.svg");
+    --nds-ico-female-cancer:url("../../../imgs/nds/ico/common/ico_female-cancer_line_36.svg");
+    --nds-ico-female-cancer-disabled:url("../../../imgs/nds/ico/common/ico_female-cancer_gray400_line_36_disabled.svg");
+    --nds-ico-male-cancer:url("../../../imgs/nds/ico/common/ico_male-cancer_line_36.svg");
+    --nds-ico-male-cancer-disabled:url("../../../imgs/nds/ico/common/ico_male-cancer_gray400_line_36_disabled.svg");
+    --nds-ico-driblet-cancer:url("../../../imgs/nds/ico/common/ico_driblet-cancer_line_36.svg");
+    --nds-ico-pancreatic-cancer:url("../../../imgs/nds/ico/common/ico_pancreatic-cancer_line_36.svg");
+    --nds-ico-general-cancer:url("../../../imgs/nds/ico/common/ico_general-cancer_line_36.svg");
+    --nds-ico-liver-cancer:url("../../../imgs/nds/ico/common/ico_liver-cancer_line_36.svg");
+    --nds-ico-lung-cancer:url("../../../imgs/nds/ico/common/ico_lung-cancer_line_36.svg");
+    --nds-ico-colorectal-cancer:url("../../../imgs/nds/ico/common/ico_colorectal-cancer_line_36.svg");
+    --nds-ico-gastric-cancer:url("../../../imgs/nds/ico/common/ico_gastric-cancer_line_36.svg");
+    --nds-ico-franchise-shoot:url("../../../imgs/nds/ico/common/ico_franchise-shoot_line_40.svg");
+    --nds-ico-franchise-qr:url("../../../imgs/nds/ico/common/ico_franchise-qr_line_40.svg");
+    /* General Fill Icons */
+    --nds-ico-fill-next-arrow:url("../../../imgs/nds/ico/common/ico_next-arrow_gray600_fill_12.svg");
+    --nds-ico-fill-product-new:url("../../../imgs/nds/ico/common/ico_product-new_fill_24.svg");
+    --nds-ico-fill-product-thumb:url("../../../imgs/nds/ico/common/ico_product-thumb_fill_24.svg");
+    --nds-ico-fill-call-receiver:url("../../../imgs/nds/ico/common/ico_call-receiver_fill_20.svg");
+    --nds-ico-fill-share-kakaotalk1:url("../../../imgs/nds/ico/common/ico_share-kakaotalk1_fill_24.svg");
+    --nds-ico-fill-share-kakaotalk2:url("../../../imgs/nds/ico/common/ico_share-kakaotalk2_fill_24.svg");
+    --nds-ico-fill-admin-number:url("../../../imgs/nds/ico/common/ico_admin-number_gray400_fill_24.svg");
+    --nds-ico-fill-announce-bell:url("../../../imgs/nds/ico/common/ico_announce-bell_fill_24.svg");
+    --nds-ico-fill-return-rate-search:url("../../../imgs/nds/ico/common/ico_return-rate-search_fill_24.svg");
+    --nds-ico-fill-major-index:url("../../../imgs/nds/ico/common/ico_major-index_fill_24.svg");
+    --nds-ico-fill-trust-money:url("../../../imgs/nds/ico/common/trust-money_fill_24.svg");
+    --nds-ico-fill-insurance-annuity:url("../../../imgs/nds/ico/common/ico_insurance-annuity_fill_24.svg");
+    --nds-ico-fill-trust-charitable:url("../../../imgs/nds/ico/common/ico_trust-charitable_fill_24.svg");
+    --nds-ico-fill-tendency-graph:url("../../../imgs/nds/ico/common/ico_tendency-graph_fill_24.svg");
+    --nds-ico-fill-interest-heart:url("../../../imgs/nds/ico/common/ico_interest-heart_fill_24.svg");
+    --nds-ico-fill-notice-withdrawal:url("../../../imgs/nds/ico/common/ico_notice-withdrawal_fill_28.svg");
+    --nds-ico-fill-notice-remittance:url("../../../imgs/nds/ico/common/ico_notice-remittance_fill_28.svg");
+    --nds-ico-fill-notice-electronic:url("../../../imgs/nds/ico/common/ico_notice-electronic_fill_28.svg");
+    --nds-ico-fill-notice-new:url("../../../imgs/nds/ico/common/ico_notice-new_fill_28.svg");
+    --nds-ico-fill-notice-candy:url("../../../imgs/nds/ico/common/ico_notice-candy_fill_28.svg");
+    --nds-ico-fill-notice-event:url("../../../imgs/nds/ico/common/ico_notice-event_fill_28.svg");
+    --nds-ico-fill-notice-smart-talk:url("../../../imgs/nds/ico/common/ico_notice-smart-talk_fill_28.svg");
+    --nds-ico-fill-notice-recommend-product:url("../../../imgs/nds/ico/common/ico_notice-recommend-product_fill_28.svg");
+    --nds-ico-fill-notice-community:url("../../../imgs/nds/ico/common/ico_notice-community_fill_28.svg");
+    --nds-ico-fill-notice-the-mouim:url("../../../imgs/nds/ico/common/ico_notice-the-mouim_fill_28.svg");
+    --nds-ico-fill-notice-nts:url("../../../imgs/nds/ico/common/ico_notice-nts_fill_28.svg");
+    --nds-ico-fill-insurance-gift:url("../../../imgs/nds/ico/common/ico_insurance-gift_fill_28.svg");
+    --nds-ico-fill-keep-gift:url("../../../imgs/nds/ico/common/ico_keep-gift_fill_28.svg");
+    --nds-ico-fill-phone:url("../../../imgs/nds/ico/common/ico_phone_fill_32.svg");
+    --nds-ico-fill-share-kakaostory:url("../../../imgs/nds/ico/common/ico_share-kakaostory_gray50_fill_32.svg");
+    --nds-ico-fill-share-facebook:url("../../../imgs/nds/ico/common/ico_share-facebook_gray50_fill_32.svg");
+    --nds-ico-fill-share-twitter:url("../../../imgs/nds/ico/common/ico_share-twitter_gray50_fill_32.svg");
+    --nds-ico-fill-silver-won:url("../../../imgs/nds/ico/common/ico_silver-won_fill_32.svg");
+    --nds-ico-fill-gold-won:url("../../../imgs/nds/ico/common/ico_gold-won_fill_32.svg");
+    --nds-ico-fill-silver-percent:url("../../../imgs/nds/ico/common/ico_silver-percent_fill_32.svg");
+    --nds-ico-fill-gold-percent:url("../../../imgs/nds/ico/common/ico_gold-percent_fill_32.svg");
+    --nds-ico-fill-certi-naver-x32:url("../../../imgs/nds/ico/common/ico_certi-naver_fill_32.svg");
+    --nds-ico-fill-certi-pass-x32:url("../../../imgs/nds/ico/common/ico_certi-pass_fill_32.svg");
+    --nds-ico-fill-certi-kakao-x32:url("../../../imgs/nds/ico/common/ico_certi-kakao_fill_32.svg");
+    --nds-ico-fill-certi-toss-x32:url("../../../imgs/nds/ico/common/ico_certi-toss_fill_32.svg");
+    --nds-ico-fill-certi-joint:url("../../../imgs/nds/ico/common/ico_certi-joint_fill_32.svg");
+    --nds-ico-fill-certi-nh-x32:url("../../../imgs/nds/ico/common/ico_certi-nh_fill_32.svg");
+    --nds-ico-fill-certi-yeskey-x32:url("../../../imgs/nds/ico/common/ico_certi-yeskey_fill_32.svg");
+    --nds-ico-fill-share-kakaotalk:url("../../../imgs/nds/ico/common/ico_share-kakaotalk_fill_32.svg");
+    --nds-ico-fill-target:url("../../../imgs/nds/ico/common/ico_target_fill_32.svg");
+    --nds-ico-fill-repayment:url("../../../imgs/nds/ico/common/ico_repayment_fill_32.svg");
+    --nds-ico-fill-amount-dollar:url("../../../imgs/nds/ico/common/ico_amount-dollar_fill_32.svg");
+    --nds-ico-fill-amount-won:url("../../../imgs/nds/ico/common/ico_amount-won_fill_32.svg");
+    --nds-ico-fill-rates-calculator:url("../../../imgs/nds/ico/common/ico_rates-calculator_fill_32.svg");
+    --nds-ico-fill-period-calendar:url("../../../imgs/nds/ico/common/ico_period-calendar_fill_32.svg");
+    --nds-ico-fill-diversified:url("../../../imgs/nds/ico/common/ico_diversified_fill_32.svg");
+    --nds-ico-fill-transaction-time:url("../../../imgs/nds/ico/common/ico_transaction-time_fill_32.svg");
+    --nds-ico-fill-play-video:url("../../../imgs/nds/ico/common/ico_play-video_fill_32.svg");
+    --nds-ico-fill-meritorious-person:url("../../../imgs/nds/ico/common/ico_meritorious-person_fill_32.svg");
+    --nds-ico-fill-global:url("../../../imgs/nds/ico/common/ico_global_fill_32.svg");
+    --nds-ico-fill-military-veterans:url("../../../imgs/nds/ico/common/ico_military-veterans_fill_32.svg");
+    --nds-ico-fill-own-name-phone:url("../../../imgs/nds/ico/common/ico_own-name-phone_fill_32.svg");
+    --nds-ico-fill-my-phone:url("../../../imgs/nds/ico/common/ico_my-phone_fill_32.svg");
+    --nds-ico-fill-nh-account:url("../../../imgs/nds/ico/common/ico_nh-account_fill_32.svg");
+    --nds-ico-fill-identification:url("../../../imgs/nds/ico/common/ico_identification_fill_32.svg");
+    --nds-ico-fill-verifying-info:url("../../../imgs/nds/ico/common/ico_verifying-info_fill_32.svg");
+    --nds-ico-fill-received-paid:url("../../../imgs/nds/ico/common/ico_received-paid_fill_32.svg");
+    --nds-ico-fill-bankbook-coin:url("../../../imgs/nds/ico/common/ico_bankbook_fill_32.svg");
+    --nds-ico-fill-installment-save:url("../../../imgs/nds/ico/common/ico_installment-save_fill_32.svg");
+    --nds-ico-fill-apart-application:url("../../../imgs/nds/ico/common/ico_apart-application_fill_32.svg");
+    --nds-ico-fill-fund-graph:url("../../../imgs/nds/ico/common/ico_fund-graph_fill_32.svg");
+    --nds-ico-fill-loan-pocket-pink:url("../../../imgs/nds/ico/common/ico_loan-pocket-fink_fill_32.svg");
+    --nds-ico-fill-foreign-exchange:url("../../../imgs/nds/ico/common/ico_foreign-exchange_fill_32.svg");
+    --nds-ico-fill-retirement-pension:url("../../../imgs/nds/ico/common/ico_retirement-pension_fill_32.svg");
+    --nds-ico-fill-trust-graph:url("../../../imgs/nds/ico/common/ico_trust-graph_fill_32.svg");
+    --nds-ico-fill-isa-shield:url("../../../imgs/nds/ico/common/ico_isa-shield_fill_32.svg");
+    --nds-ico-fill-insurance-heart:url("../../../imgs/nds/ico/common/ico_insurance-heart_fill_32.svg");
+    --nds-ico-fill-gold-bar:url("../../../imgs/nds/ico/common/ico_gold-bar_fill_32.svg");
+    --nds-ico-fill-recommed-fund:url("../../../imgs/nds/ico/common/ico_recommed-fund_fill_32.svg");
+    --nds-ico-fill-best-crown:url("../../../imgs/nds/ico/common/ico_best-crown_fill_32.svg");
+    --nds-ico-fill-fund-coinhand:url("../../../imgs/nds/ico/common/ico_fund-coinhand_fill_32.svg");
+    --nds-ico-fill-self-shield:url("../../../imgs/nds/ico/common/ico_elf-shield_fill_32.svg");
+    --nds-ico-fill-coin-bank:url("../../../imgs/nds/ico/common/ico_coin-bank_fill_32.svg");
+    --nds-ico-fill-pension-pocket:url("../../../imgs/nds/ico/common/ico_pension-pocket_fill_32.svg");
+    --nds-ico-fill-security-insurance:url("../../../imgs/nds/ico/common/ico_security-insurance_fill_32.svg");
+    --nds-ico-fill-variable-shield:url("../../../imgs/nds/ico/common/ico_variable-shield_fill_32.svg");
+    --nds-ico-fill-travel-insurance:url("../../../imgs/nds/ico/common/ico_travel-insurance_fill_32.svg");
+    --nds-ico-fill-children-insurance:url("../../../imgs/nds/ico/common/ico_children-insurance_fill_32.svg");
+    --nds-ico-fill-foreign-exchange-account:url("../../../imgs/nds/ico/common/ico_foreign-exchange-account_fill_32.svg");
+    --nds-ico-fill-insurance-heart2:url("../../../imgs/nds/ico/common/ico_insurance-heart2_fill_32.svg");
+    --nds-ico-fill-loan-pocket-orange:url("../../../imgs/nds/ico/common/ico_loan-pocket-orange_fill_32.svg");
+    --nds-ico-fill-nhis:url("../../../imgs/nds/ico/common/ico_nhis_fill_32.svg");
+    --nds-ico-fill-gov:url("../../../imgs/nds/ico/common/ico_gov_fill_32.svg");
+    --nds-ico-fill-rebalancing:url("../../../imgs/nds/ico/common/ico_rebalancing_fill_32.svg");
+    --nds-ico-fill-folder:url("../../../imgs/nds/ico/common/ico_folder_fill_32.svg");
+    --nds-ico-fill-monitoring:url("../../../imgs/nds/ico/common/ico_monitoring_fill_32.svg");
+    --nds-ico-fill-management:url("../../../imgs/nds/ico/common/ico_management_fill_32.svg");
+    --nds-ico-fill-guide-own-goods:url("../../../imgs/nds/ico/common/ico_guide-own-goods_fill_32.svg");
+    --nds-ico-fill-guide-deposit-product:url("../../../imgs/nds/ico/common/ico_guide-deposit-product_fill_32.svg");
+    --nds-ico-fill-check-payment-result:url("../../../imgs/nds/ico/common/ico_check-payment-result_fill_32.svg");
+    --nds-ico-fill-auto-payment-result:url("../../../imgs/nds/ico/common/ico_auto-payment-result_fill_32.svg");
+    --nds-ico-fill-auto-withdrawal-account:url("../../../imgs/nds/ico/common/ico_auto-withdrawal-account_fill_32.svg");
+    --nds-ico-fill-change-auto-payment:url("../../../imgs/nds/ico/common/ico_change-auto-payment_fill_32.svg");
+    --nds-ico-fill-block-credit-trans:url("../../../imgs/nds/ico/common/ico_block-credit-trans_fill_32.svg");
+    --nds-ico-fill-block-account-opening:url("../../../imgs/nds/ico/common/ico_block-account-opening_fill_32.svg");
+    --nds-ico-fill-certi-ars:url("../../../imgs/nds/ico/common/ico_certi-ars_fill_32.svg");
+    --nds-ico-fill-certi-joint2:url("../../../imgs/nds/ico/common/ico_certi-joint2_fill_32.svg");
+    --nds-ico-fill-certi-financial:url("../../../imgs/nds/ico/common/ico_certi-financial_fill_32.svg");
+    --nds-ico-fill-certi-sms:url("../../../imgs/nds/ico/common/ico_certi-sms_fill_32.svg");
+    --nds-ico-fill-certi-usim:url("../../../imgs/nds/ico/common/ico_certi-usim_fill_32.svg");
+    --nds-ico-fill-certi-videotelephony:url("../../../imgs/nds/ico/common/ico_certi-videotelephony_fill_32.svg");
+    --nds-ico-fill-certi-my-account:url("../../../imgs/nds/ico/common/ico_certi-my-account_fill_32.svg");
+    --nds-ico-fill-certi-security-device:url("../../../imgs/nds/ico/common/ico_certi-security-device_fill_32.svg");
+    --nds-ico-fill-nh-robo-dream:url("../../../imgs/nds/ico/common/ico_nh-robo-dream_fill_32.svg");
+    --nds-ico-fill-hybrid-roboadviser:url("../../../imgs/nds/ico/common/ico_hybrid-roboadviser_32.svg");
+    --nds-ico-fill-investor-1th:url("../../../imgs/nds/ico/common/ico_investor-1th_fill_36.svg");
+    --nds-ico-fill-investor-2th:url("../../../imgs/nds/ico/common/ico_investor-2th_fill_36.svg");
+    --nds-ico-fill-investor-3th:url("../../../imgs/nds/ico/common/ico_investor-3th_fill_36.svg");
+    --nds-ico-fill-investor-4th:url("../../../imgs/nds/ico/common/ico_investor-4th_fill_36.svg");
+    --nds-ico-fill-investor-5th:url("../../../imgs/nds/ico/common/ico_investor-5th_fill_36.svg");
+    --nds-ico-fill-goal1:url("../../../imgs/nds/ico/common/ico_goal1_fill_36.svg");
+    --nds-ico-fill-money-pocket:url("../../../imgs/nds/ico/common/ico_money_fill_36.svg");
+    --nds-ico-fill-bankbook:url("../../../imgs/nds/ico/common/ico_bankbook_fill_36.svg");
+    --nds-ico-fill-note:url("../../../imgs/nds/ico/common/ico_note_fill_36.svg");
+    --nds-ico-fill-suitcase:url("../../../imgs/nds/ico/common/ico_suitcase_fill_36.svg");
+    --nds-ico-fill-house1:url("../../../imgs/nds/ico/common/ico_house1_fill_36.svg");
+    --nds-ico-fill-goal2:url("../../../imgs/nds/ico/common/ico_goal2_fill_36.svg");
+    --nds-ico-fill-ring:url("../../../imgs/nds/ico/common/ico_ring_fill_36.svg");
+    --nds-ico-fill-present:url("../../../imgs/nds/ico/common/ico_present_fill_36.svg");
+    --nds-ico-fill-clover:url("../../../imgs/nds/ico/common/ico_clover_fill_36.svg");
+    --nds-ico-fill-baby:url("../../../imgs/nds/ico/common/ico_baby_fill_36.svg");
+    --nds-ico-fill-heart:url("../../../imgs/nds/ico/common/ico_heart_fill_36.svg");
+    --nds-ico-fill-house2:url("../../../imgs/nds/ico/common/ico_house2_fill_36.svg");
+    --nds-ico-fill-timer:url("../../../imgs/nds/ico/common/ico_timer_fill_36.svg");
+    --nds-ico-fill-one-year1:url("../../../imgs/nds/ico/common/ico_one-year1_fill_36.svg");
+    --nds-ico-fill-one-year2:url("../../../imgs/nds/ico/common/ico_one-year2_fill_36.svg");
+    --nds-ico-fill-three-years:url("../../../imgs/nds/ico/common/ico_three-years_fill_36.svg");
+    --nds-ico-fill-senior:url("../../../imgs/nds/ico/common/ico_senior_fill_36.svg");
+    --nds-ico-fill-retiree:url("../../../imgs/nds/ico/common/ico_retiree_fill_36.svg");
+    --nds-ico-fill-housewife:url("../../../imgs/nds/ico/common/ico_housewife_fill_36.svg");
+    --nds-ico-fill-minor:url("../../../imgs/nds/ico/common/ico_minor_fill_36.svg");
+    --nds-ico-fill-hasten-explain:url("../../../imgs/nds/ico/common/ico_hasten-explain._fill_36.svg");
+    --nds-ico-fill-not-applicable:url("../../../imgs/nds/ico/common/ico_not-applicable_fill_36.svg");
+    --nds-ico-fill-calculator-coin:url("../../../imgs/nds/ico/common/ico_calculator-coin_fill_48.svg");
+    --nds-ico-fill-calculator-home:url("../../../imgs/nds/ico/common/ico_calculator-home_fill_48.svg");
+    --nds-ico-fill-certificate:url("../../../imgs/nds/ico/common/ico_certificate_fill_48.svg");
+    --nds-ico-fill-certificate-error:url("../../../imgs/nds/ico/common/ico_certificate_fill_48_error.svg");
+    --nds-ico-fill-certificate-disabled:url("../../../imgs/nds/ico/common/ico_certificate_fill_48_disabled.svg");
+    --nds-ico-fill-guard:url("../../../imgs/nds/ico/common/ico_guard_fill_48.svg");
+    --nds-ico-fill-money-coins:url("../../../imgs/nds/ico/common/ico_money_fill_48.svg");
+    --nds-ico-fill-saving:url("../../../imgs/nds/ico/common/ico_saving_fill_48.svg");
+    --nds-ico-fill-monitor:url("../../../imgs/nds/ico/common/ico_monitor_fill_48.svg");
+    --nds-ico-fill-no-data:url("../../../imgs/nds/ico/common/ico_no-data_gray400_fill_56.svg");
+    --nds-ico-fill-certificate-empty:url("../../../imgs/nds/ico/common/ico_certificate-empty_fill_56.svg");
+    --nds-ico-fill-certi-nh-x56:url("../../../imgs/nds/ico/common/ico_certi-nh_fill_56.svg");
+    --nds-ico-fill-certi-toss-x56:url("../../../imgs/nds/ico/common/ico_certi-toss_fill_56.svg");
+    --nds-ico-fill-certi-kakao-x56:url("../../../imgs/nds/ico/common/ico_certi-kakao_fill_56.svg");
+    --nds-ico-fill-certi-pass-x56:url("../../../imgs/nds/ico/common/ico_certi-pass_fill_56.svg");
+    --nds-ico-fill-certi-naver-x56:url("../../../imgs/nds/ico/common/ico_certi-naver_fill_56.svg");
+    --nds-ico-fill-certi-yeskey-x56:url("../../../imgs/nds/ico/common/ico_certi-yeskey_fill_56.svg");
+    --nds-ico-fill-joint-certificate:url("../../../imgs/nds/ico/common/ico_joint-certificate_fill_60.svg");
+}
+.nds-dark-mode {
+    /* General Icons */
+    --nds-ico-publish-insurance:url("../../../imgs/nds/ico/common/ico_publish-insurance_line_24_dk.svg");
+    --nds-ico-security:url("../../../imgs/nds/ico/common/ico_security_line_24_dk.svg");
+    --nds-ico-payment:url("../../../imgs/nds/ico/common/ico_payment_line_24_dk.svg");
+    --nds-ico-phone-cs:url("../../../imgs/nds/ico/common/ico_phone-cs_line_24_dk.svg");
+    --nds-ico-chat-cs:url("../../../imgs/nds/ico/common/ico_chat-cs_line_24_dk.svg");
+    --nds-ico-mail-cs:url("../../../imgs/nds/ico/common/ico_mail-cs_line_24_dk.svg");
+    --nds-ico-mobile-center:url("../../../imgs/nds/ico/common/ico_mobile-center_line_24_dk.svg");
+    --nds-ico-bank:url("../../../imgs/nds/ico/common/ico_bank_line_24_dk.svg");
+    --nds-ico-apply-insurance:url("../../../imgs/nds/ico/common/ico_apply-insurance_line_24_dk.svg");
+    --nds-ico-stockoption:url("../../../imgs/nds/ico/common/ico_stockoption_line_24_dk.svg");
+    --nds-ico-market-price:url("../../../imgs/nds/ico/common/ico_market-price_line_24_dk.svg");
+    --nds-ico-fund:url("../../../imgs/nds/ico/common/ico_fund_line_24_dk.svg");
+    --nds-ico-aim:url("../../../imgs/nds/ico/common/ico_aim_line_24_dk.svg");
+    --nds-ico-circle-cancel:url("../../../imgs/nds/ico/common/ico_circle-cancel_line_24_dk.svg");
+    --nds-ico-circle-cancel-disabled:url("../../../imgs/nds/ico/common/ico_circle-cancel_gray400_line_24_disabled_dk.svg");
+    --nds-ico-o:url("../../../imgs/nds/ico/common/ico_o_line_24_dk.svg");
+    --nds-ico-x:url("../../../imgs/nds/ico/common/ico_x_line_24_dk.svg");
+    --nds-ico-o-selected:url("../../../imgs/nds/ico/common/ico_o_line_24_selected_dk.svg");
+    --nds-ico-x-selected:url("../../../imgs/nds/ico/common/ico_x_line_24_selected_dk.svg");
+    --nds-ico-check:url("../../../imgs/nds/ico/common/ico_check_line_24_dk.svg");
+    --nds-ico-check-disabled:url("../../../imgs/nds/ico/common/ico_check_gray400_line_24_disabled_dk.svg");
+    --nds-ico-check-filled:url("../../../imgs/nds/ico/common/ico_check_gray50_line_24_dk.svg");
+    --nds-ico-pencil:url("../../../imgs/nds/ico/common/ico_pencil_line_24_dk.svg");
+    --nds-ico-pencil-disabled:url("../../../imgs/nds/ico/common/ico_pencil_gray400_line_24_disabled_dk.svg");
+    --nds-ico-login:url("../../../imgs/nds/ico/common/ico_id-login_line_24_dk.svg");
+    --nds-ico-login-disabled:url("../../../imgs/nds/ico/common/ico_id-login_gray400_line_24_disabled_dk.svg");
+    --nds-ico-security-info:url("../../../imgs/nds/ico/common/ico_security-info_line_24_dk.svg");
+    --nds-ico-security-info-disabled:url("../../../imgs/nds/ico/common/ico_security-info_gray500_line_24_disabled_dk.svg");
+    --nds-ico-profile-add-filled:url("../../../imgs/nds/ico/common/ico_profile-add_gray50_line_24_dk.svg");
+    --nds-ico-profile-confirm-filled:url("../../../imgs/nds/ico/common/ico_profile-confirm_gray50_line_24_dk.svg");
+    --nds-ico-recalculate-filled:url("../../../imgs/nds/ico/common/arr_recalculate_gray50_line_24_dk.svg");
+    --nds-ico-application-check:url("../../../imgs/nds/ico/common/ico_application-check_line_24_dk.svg");
+    --nds-ico-account:url("../../../imgs/nds/ico/common/ico_account_line_24_dk.svg");
+    --nds-ico-account-gray:url("../../../imgs/nds/ico/common/ico_account_gray600_line_24_dk.svg");
+    --nds-ico-confirm-phone:url("../../../imgs/nds/ico/common/ico_confirm-phone_line_24_dk.svg");
+    --nds-ico-confirm-phone-gray:url("../../../imgs/nds/ico/common/ico_confirm-phone_gray600_line_24_dk.svg");
+    --nds-ico-cs-call-gray:url("../../../imgs/nds/ico/common/ico_cs-call_gray600_line_24_dk.svg");
+    --nds-ico-finance-won-gray:url("../../../imgs/nds/ico/common/ico_finance-won_gray600_line_24_dk.svg");
+    --nds-ico-foreign-exchange-gray:url("../../../imgs/nds/ico/common/ico_foreign-exchange_gray600_line_24_dk.svg");
+    --nds-ico-nh-group-gray:url("../../../imgs/nds/ico/common/ico_nh-group_gray600_line_24_dk.svg");
+    --nds-ico-product-bag-gray:url("../../../imgs/nds/ico/common/ico_product-bag_gray600_line_24_dk.svg");
+    --nds-ico-payment-card-gray:url("../../../imgs/nds/ico/common/ico_payment-card_gray600_line_24_dk.svg");
+    --nds-ico-nh-mydata-gray:url("../../../imgs/nds/ico/common/ico_nh-mydata_gray600_line_24_dk.svg");
+    --nds-ico-grip-line:url("../../../imgs/nds/ico/common/ico_grip-line_line_24_dk.svg");
+    --nds-ico-domestic-franchise:url("../../../imgs/nds/ico/common/ico_domestic-franchise_line_24_dk.svg");
+    --nds-ico-lounge-earth:url("../../../imgs/nds/ico/common/ico_lounge-earth_line_24_dk.svg");
+    --nds-ico-exchange-pocket:url("../../../imgs/nds/ico/common/ico_exchange-pocket_line_24_dk.svg");
+    --nds-ico-oversea-payment:url("../../../imgs/nds/ico/common/ico_overseas-payment_line_24_dk.svg");
+    --nds-ico-auto-charge:url("../../../imgs/nds/ico/common/ico_auto-charge_line_24_dk.svg");
+    --nds-ico-customer-verification:url("../../../imgs/nds/ico/common/ico_customer-verification_line_24_dk.svg");
+    --nds-ico-terms-agree:url("../../../imgs/nds/ico/common/ico_terms-agree_line_24_dk.svg");
+    --nds-ico-card-select:url("../../../imgs/nds/ico/common/ico_card-select_line_24_dk.svg");
+    --nds-ico-certi-pattern:url("../../../imgs/nds/ico/common/ico_certi-pattern_line_32_dk.svg");
+    --nds-ico-certi-face:url("../../../imgs/nds/ico/common/ico_certi-face_line_32_dk.svg");
+    --nds-ico-certi-pw:url("../../../imgs/nds/ico/common/ico_certi-pw_line_32_dk.svg");
+    --nds-ico-certi-fingerprint:url("../../../imgs/nds/ico/common/ico_certi-fingerprint_line_32_dk.svg");
+    --nds-ico-share-message-filled:url("../../../imgs/nds/ico/common/ico_share-message_gray50_line_32_dk.svg");
+    --nds-ico-share-copy-link-filled:url("../../../imgs/nds/ico/common/ico_share-copylink_gray50_line_32_dk.svg");
+    --nds-ico-share-present:url("../../../imgs/nds/ico/common/ico_share-present_line_32_dk.svg");
+    --nds-ico-share-link:url("../../../imgs/nds/ico/common/ico_share-link_line_32_dk.svg");
+    --nds-ico-share-message2-filled:url("../../../imgs/nds/ico/common/ico_share-message2_gray50_line_32_dk.svg");
+    --nds-ico-service-time:url("../../../imgs/nds/ico/common/ico_service-time_line_32_dk.svg");
+    --nds-ico-service-faq:url("../../../imgs/nds/ico/common/ico_service-faq_line_32_dk.svg");
+    --nds-ico-service-counselor:url("../../../imgs/nds/ico/common/ico_service-counselor_line_32_dk.svg");
+    --nds-ico-service-branch:url("../../../imgs/nds/ico/common/ico_service-branch_line_32_dk.svg");
+    --nds-ico-foreign-input:url("../../../imgs/nds/ico/common/ico_foreign-input_line_32_dk.svg");
+    --nds-ico-foreign-storage:url("../../../imgs/nds/ico/common/ico_foreign-storage_line_32_dk.svg");
+    --nds-ico-foreign-out:url("../../../imgs/nds/ico/common/ico_foreign-out_line_32_dk.svg");
+    --nds-ico-receipt-branch:url("../../../imgs/nds/ico/common/ico_receipt-branch_line_32_dk.svg");
+    --nds-ico-account-deposit:url("../../../imgs/nds/ico/common/ico_account-deposit_line_32_dk.svg");
+    --nds-ico-exchange-docu:url("../../../imgs/nds/ico/common/ico_exchange-docu_line_32_dk.svg");
+    --nds-ico-exchange-remittance:url("../../../imgs/nds/ico/common/ico_exchange-remittance_line_32_dk.svg");
+    --nds-ico-female-cancer:url("../../../imgs/nds/ico/common/ico_female-cancer_line_36_dk.svg");
+    --nds-ico-female-cancer-disabled:url("../../../imgs/nds/ico/common/ico_female-cancer_gray400_line_36_disabled_dk.svg");
+    --nds-ico-male-cancer:url("../../../imgs/nds/ico/common/ico_male-cancer_line_36_dk.svg");
+    --nds-ico-male-cancer-disabled:url("../../../imgs/nds/ico/common/ico_male-cancer_gray400_line_36_disabled_dk.svg");
+    --nds-ico-driblet-cancer:url("../../../imgs/nds/ico/common/ico_driblet-cancer_line_36_dk.svg");
+    --nds-ico-pancreatic-cancer:url("../../../imgs/nds/ico/common/ico_pancreatic-cancer_line_36_dk.svg");
+    --nds-ico-general-cancer:url("../../../imgs/nds/ico/common/ico_general-cancer_line_36_dk.svg");
+    --nds-ico-liver-cancer:url("../../../imgs/nds/ico/common/ico_liver-cancer_line_36_dk.svg");
+    --nds-ico-lung-cancer:url("../../../imgs/nds/ico/common/ico_lung-cancer_line_36_dk.svg");
+    --nds-ico-colorectal-cancer:url("../../../imgs/nds/ico/common/ico_colorectal-cancer_line_36_dk.svg");
+    --nds-ico-gastric-cancer:url("../../../imgs/nds/ico/common/ico_gastric-cancer_line_36_dk.svg");
+    --nds-ico-franchise-shoot:url("../../../imgs/nds/ico/common/ico_franchise-shoot_line_40_dk.svg");
+    --nds-ico-franchise-qr:url("../../../imgs/nds/ico/common/ico_franchise-qr_line_40_dk.svg");
+    /* General Fill Icons */
+    --nds-ico-fill-next-arrow:url("../../../imgs/nds/ico/common/ico_next-arrow_gray600_fill_12_dk.svg");
+    --nds-ico-fill-call-receiver:url("../../../imgs/nds/ico/common/ico_call-receiver_fill_20_dk.svg");
+    --nds-ico-fill-share-kakaotalk1:url("../../../imgs/nds/ico/common/ico_share-kakaotalk1_fill_24_dk.svg");
+    --nds-ico-fill-share-kakaotalk2:url("../../../imgs/nds/ico/common/ico_share-kakaotalk2_fill_24_dk.svg");
+    --nds-ico-fill-admin-number:url("../../../imgs/nds/ico/common/ico_admin-number_gray400_fill_24_dk.svg");
+    --nds-ico-fill-phone:url("../../../imgs/nds/ico/common/ico_phone_fill_32_dk.svg");
+    --nds-ico-fill-share-kakaostory:url("../../../imgs/nds/ico/common/ico_share-kakaostory_gray50_fill_32_dk.svg");
+    --nds-ico-fill-share-facebook:url("../../../imgs/nds/ico/common/ico_share-facebook_gray50_fill_32_dk.svg");
+    --nds-ico-fill-share-twitter:url("../../../imgs/nds/ico/common/ico_share-twitter_gray50_fill_32_dk.svg");
+    --nds-ico-fill-share-kakaotalk:url("../../../imgs/nds/ico/common/ico_share-kakaotalk_fill_32_dk.svg");
+    --nds-ico-fill-certificate:url("../../../imgs/nds/ico/common/ico_certificate_fill_48_dk.svg");
+    --nds-ico-fill-certificate-error:url("../../../imgs/nds/ico/common/ico_certificate_fill_48_error_dk.svg");
+    --nds-ico-fill-certificate-disabled:url("../../../imgs/nds/ico/common/ico_certificate_fill_48_disabled_dk.svg");
+    --nds-ico-fill-no-data:url("../../../imgs/nds/ico/common/ico_no-data_gray400_fill_56_dk.svg");
+    --nds-ico-fill-certificate-empty:url("../../../imgs/nds/ico/common/ico_certificate-empty_fill_56_dk.svg");
+}
+
+/* ============================================================
+   COMPONENT: COMMON ICON (.nds-ico)
+   가이드: 기본 클래스(.nds-ico)와 사이즈(-xN), 아이콘 종류를 조합하여 사용
+   사용예시: <i class="nds-ico -x24 nds-ico-security"></i>
+   ============================================================ */
+.nds-ico {--nds-icon-size:1.6rem; display:inline-block; align-items:center; justify-content:center; width:var(--nds-icon-size); height:var(--nds-icon-size); flex-shrink:0;}
+.nds-ico::before {content:url(""); display:block; width:100%; height:100%; background-repeat:no-repeat; background-size:contain; background-position:center;}
+
+/* Size */
+.nds-ico.-x8 {--nds-icon-size:.8rem;}
+.nds-ico.-x12 {--nds-icon-size:1.2rem;}
+.nds-ico.-x16 {--nds-icon-size:1.6rem;}
+.nds-ico.-x20 {--nds-icon-size:2.0rem;}
+.nds-ico.-x24 {--nds-icon-size:2.4rem;}
+.nds-ico.-x28 {--nds-icon-size:2.8rem;}
+.nds-ico.-x32 {--nds-icon-size:3.2rem;}
+.nds-ico.-x36 {--nds-icon-size:3.6rem;}
+.nds-ico.-x40 {--nds-icon-size:4.0rem;}
+.nds-ico.-x48 {--nds-icon-size:4.8rem;}
+.nds-ico.-x56 {--nds-icon-size:5.6rem;}
+.nds-ico.-x60 {--nds-icon-size:6.0rem;}
+
+/* --- General Icons --- */
+/* General Line Icon */
+.nds-ico-publish-insurance::before {background-image:var(--nds-ico-publish-insurance);}
+.nds-ico-security::before {background-image:var(--nds-ico-security);}
+.nds-ico-payment::before {background-image:var(--nds-ico-payment);}
+.nds-ico-phone-cs::before {background-image:var(--nds-ico-phone-cs);}
+.nds-ico-chat-cs::before {background-image:var(--nds-ico-chat-cs);}
+.nds-ico-mail-cs::before {background-image:var(--nds-ico-mail-cs);}
+.nds-ico-mobile-center::before {background-image:var(--nds-ico-mobile-center);}
+.nds-ico-bank::before {background-image:var(--nds-ico-bank);}
+.nds-ico-apply-insurance::before {background-image:var(--nds-ico-apply-insurance);}
+.nds-ico-stockoption::before {background-image:var(--nds-ico-stockoption);}
+.nds-ico-market-price::before {background-image:var(--nds-ico-market-price);}
+.nds-ico-fund::before {background-image:var(--nds-ico-fund);}
+.nds-ico-aim::before {background-image:var(--nds-ico-aim);}
+.nds-ico-circle-cancel::before {background-image:var(--nds-ico-circle-cancel);}
+.nds-ico-circle-cancel-disabled::before {background-image:var(--nds-ico-circle-cancel-disabled);}
+.nds-ico-o::before {background-image:var(--nds-ico-o);}
+.nds-ico-x::before {background-image:var(--nds-ico-x);}
+.nds-ico-o-selected::before {background-image:var(--nds-ico-o-selected);}
+.nds-ico-x-selected::before {background-image:var(--nds-ico-x-selected);}
+.nds-ico-check::before {background-image:var(--nds-ico-check);}
+.nds-ico-check-disabled::before {background-image:var(--nds-ico-check-disabled);}
+.nds-ico-check-filled::before {background-image:var(--nds-ico-check-filled);}
+.nds-ico-pencil::before {background-image:var(--nds-ico-pencil);}
+.nds-ico-pencil-disabled::before {background-image:var(--nds-ico-pencil-disabled);}
+.nds-ico-login::before {background-image:var(--nds-ico-login);}
+.nds-ico-login-disabled::before {background-image:var(--nds-ico-login-disabled);}
+.nds-ico-security-info::before {background-image:var(--nds-ico-security-info);}
+.nds-ico-security-info-disabled::before {background-image:var(--nds-ico-security-info-disabled);}
+.nds-ico-profile-add-filled::before {background-image:var(--nds-ico-profile-add-filled);}
+.nds-ico-profile-confirm-filled::before {background-image:var(--nds-ico-profile-confirm-filled);}
+.nds-ico-recalculate-filled::before {background-image:var(--nds-ico-recalculate-filled);}
+.nds-ico-application-check::before {background-image:var(--nds-ico-application-check);}
+.nds-ico-account::before {background-image:var(--nds-ico-account);}
+.nds-ico-account-gray::before {background-image:var(--nds-ico-account-gray);}
+.nds-ico-confirm-phone::before {background-image:var(--nds-ico-confirm-phone);}
+.nds-ico-confirm-phone-gray::before {background-image:var(--nds-ico-confirm-phone-gray);}
+.nds-ico-cs-call-gray::before {background-image:var(--nds-ico-cs-call-gray);}
+.nds-ico-finance-won-gray::before {background-image:var(--nds-ico-finance-won-gray);}
+.nds-ico-foreign-exchange-gray::before {background-image:var(--nds-ico-foreign-exchange-gray);}
+.nds-ico-nh-group-gray::before {background-image:var(--nds-ico-nh-group-gray);}
+.nds-ico-product-bag-gray::before {background-image:var(--nds-ico-product-bag-gray);}
+.nds-ico-payment-card-gray::before {background-image:var(--nds-ico-payment-card-gray);}
+.nds-ico-nh-mydata-gray::before {background-image:var(--nds-ico-nh-mydata-gray);}
+.nds-ico-grip-line::before {background-image:var(--nds-ico-grip-line);}
+.nds-ico-domestic-franchise::before {background-image:var(--nds-ico-domestic-franchise);}
+.nds-ico-lounge-earth::before {background-image:var(--nds-ico-lounge-earth);}
+.nds-ico-exchange-pocket::before {background-image:var(--nds-ico-exchange-pocket);}
+.nds-ico-oversea-payment::before {background-image:var(--nds-ico-oversea-payment);}
+.nds-ico-auto-charge::before {background-image:var(--nds-ico-auto-charge);}
+.nds-ico-customer-verification::before {background-image:var(--nds-ico-customer-verification);}
+.nds-ico-terms-agree::before {background-image:var(--nds-ico-terms-agree);}
+.nds-ico-card-select::before {background-image:var(--nds-ico-card-select);}
+/* General Line Icon - 32*32 */
+.nds-ico-certi-pattern::before {background-image:var(--nds-ico-certi-pattern);}
+.nds-ico-certi-face::before {background-image:var(--nds-ico-certi-face);}
+.nds-ico-certi-pw::before {background-image:var(--nds-ico-certi-pw);}
+.nds-ico-certi-fingerprint::before {background-image:var(--nds-ico-certi-fingerprint);}
+.nds-ico-share-message-filled::before {background-image:var(--nds-ico-share-message-filled);}
+.nds-ico-share-copy-link-filled::before {background-image:var(--nds-ico-share-copy-link-filled);}
+.nds-ico-share-present::before {background-image:var(--nds-ico-share-present);}
+.nds-ico-share-link::before {background-image:var(--nds-ico-share-link);}
+.nds-ico-share-message2-filled::before {background-image:var(--nds-ico-share-message2-filled);}
+.nds-ico-service-time::before {background-image:var(--nds-ico-service-time);}
+.nds-ico-service-faq::before {background-image:var(--nds-ico-service-faq);}
+.nds-ico-service-counselor::before {background-image:var(--nds-ico-service-counselor);}
+.nds-ico-service-branch::before {background-image:var(--nds-ico-service-branch);}
+.nds-ico-foreign-input::before {background-image:var(--nds-ico-foreign-input);}
+.nds-ico-foreign-storage::before {background-image:var(--nds-ico-foreign-storage);}
+.nds-ico-foreign-out::before {background-image:var(--nds-ico-foreign-out);}
+.nds-ico-receipt-branch::before {background-image:var(--nds-ico-receipt-branch);}
+.nds-ico-account-deposit::before {background-image:var(--nds-ico-account-deposit);}
+.nds-ico-exchange-docu::before {background-image:var(--nds-ico-exchange-docu);}
+.nds-ico-exchange-remittance::before {background-image:var(--nds-ico-exchange-remittance);}
+/* General Line Icon - 36*36 */
+.nds-ico-female-cancer::before {background-image:var(--nds-ico-female-cancer);}
+.nds-ico-female-cancer-disabled::before {background-image:var(--nds-ico-female-cancer-disabled);}
+.nds-ico-male-cancer::before {background-image:var(--nds-ico-male-cancer);}
+.nds-ico-male-cancer-disabled::before {background-image:var(--nds-ico-male-cancer-disabled);}
+.nds-ico-driblet-cancer::before {background-image:var(--nds-ico-driblet-cancer);}
+.nds-ico-pancreatic-cancer::before {background-image:var(--nds-ico-pancreatic-cancer);}
+.nds-ico-general-cancer::before {background-image:var(--nds-ico-general-cancer);}
+.nds-ico-liver-cancer::before {background-image:var(--nds-ico-liver-cancer);}
+.nds-ico-lung-cancer::before {background-image:var(--nds-ico-lung-cancer);}
+.nds-ico-colorectal-cancer::before {background-image:var(--nds-ico-colorectal-cancer);}
+.nds-ico-gastric-cancer::before {background-image:var(--nds-ico-gastric-cancer);}
+/* General Line Icon - 40*40 */
+.nds-ico-franchise-shoot::before {background-image:var(--nds-ico-franchise-shoot);}
+.nds-ico-franchise-qr::before {background-image:var(--nds-ico-franchise-qr);}
+
+/* --- General Fill Icons --- */
+/* General Fill Icon - 12*12 */
+.nds-ico-fill-next-arrow::before {background-image:var(--nds-ico-fill-next-arrow);}
+/* General Fill Icon - 20*20 */
+.nds-ico-fill-product-new::before {background-image:var(--nds-ico-fill-product-new);}
+.nds-ico-fill-product-thumb::before {background-image:var(--nds-ico-fill-product-thumb);}
+.nds-ico-fill-call-receiver::before {background-image:var(--nds-ico-fill-call-receiver);}
+/* General Fill Icon - 24*24 */
+.nds-ico-fill-share-kakaotalk1::before {background-image:var(--nds-ico-fill-share-kakaotalk1);}
+.nds-ico-fill-share-kakaotalk2::before {background-image:var(--nds-ico-fill-share-kakaotalk2);}
+.nds-ico-fill-admin-number::before {background-image:var(--nds-ico-fill-admin-number);}
+.nds-ico-fill-announce-bell::before {background-image:var(--nds-ico-fill-announce-bell);}
+.nds-ico-fill-return-rate-search::before {background-image:var(--nds-ico-fill-return-rate-search);}
+.nds-ico-fill-major-index::before {background-image:var(--nds-ico-fill-major-index);}
+.nds-ico-fill-trust-money::before {background-image:var(--nds-ico-fill-trust-money);}
+.nds-ico-fill-insurance-annuity::before {background-image:var(--nds-ico-fill-insurance-annuity);}
+.nds-ico-fill-trust-charitable::before {background-image:var(--nds-ico-fill-trust-charitable);}
+/* Folder 24*24은 Folder 32*32과 비율이 동일함으로 .nds-ico-fill-folder.-x24 사용으로 대체 */
+/* Monitoring 24*24은 Monitoring 32*32과 비율이 동일함으로 .nds-ico-fill-monitoring.-x24 사용으로 대체 */
+/* Management 24*24은 Management 32*32과 비율이 동일함으로 .nds-ico-fill-management.-x24 사용으로 대체 */
+.nds-ico-fill-tendency-graph::before {background-image:var(--nds-ico-fill-tendency-graph);}
+.nds-ico-fill-interest-heart::before {background-image:var(--nds-ico-fill-interest-heart);}
+/* General Fill Icon - 28*28 */
+.nds-ico-fill-notice-withdrawal::before {background-image:var(--nds-ico-fill-notice-withdrawal);}
+.nds-ico-fill-notice-remittance::before {background-image:var(--nds-ico-fill-notice-remittance);}
+.nds-ico-fill-notice-electronic::before {background-image:var(--nds-ico-fill-notice-electronic);}
+.nds-ico-fill-notice-new::before {background-image:var(--nds-ico-fill-notice-new);}
+.nds-ico-fill-notice-candy::before {background-image:var(--nds-ico-fill-notice-candy);}
+.nds-ico-fill-notice-event::before {background-image:var(--nds-ico-fill-notice-event);}
+.nds-ico-fill-notice-smart-talk::before {background-image:var(--nds-ico-fill-notice-smart-talk);}
+.nds-ico-fill-notice-recommend-product::before {background-image:var(--nds-ico-fill-notice-recommend-product);}
+.nds-ico-fill-notice-community::before {background-image:var(--nds-ico-fill-notice-community);}
+.nds-ico-fill-notice-the-mouim::before {background-image:var(--nds-ico-fill-notice-the-mouim);}
+.nds-ico-fill-notice-nts::before {background-image:var(--nds-ico-fill-notice-nts);}
+.nds-ico-fill-insurance-gift::before {background-image:var(--nds-ico-fill-insurance-gift);}
+.nds-ico-fill-keep-gift::before {background-image:var(--nds-ico-fill-keep-gift);}
+/* General Fill Icon - 32*32 */
+.nds-ico-fill-phone::before {background-image:var(--nds-ico-fill-phone);}
+.nds-ico-fill-share-kakaostory::before {background-image:var(--nds-ico-fill-share-kakaostory);}
+.nds-ico-fill-share-facebook::before {background-image:var(--nds-ico-fill-share-facebook);}
+.nds-ico-fill-share-twitter::before {background-image:var(--nds-ico-fill-share-twitter);}
+.nds-ico-fill-silver-won::before {background-image:var(--nds-ico-fill-silver-won);}
+.nds-ico-fill-gold-won::before {background-image:var(--nds-ico-fill-gold-won);}
+.nds-ico-fill-silver-percent::before {background-image:var(--nds-ico-fill-silver-percent);}
+.nds-ico-fill-gold-percent::before {background-image:var(--nds-ico-fill-gold-percent);}
+.nds-ico-fill-certi-naver-x32::before {background-image:var(--nds-ico-fill-certi-naver-x32);}
+.nds-ico-fill-certi-pass-x32::before {background-image:var(--nds-ico-fill-certi-pass-x32);}
+.nds-ico-fill-certi-kakao-x32::before {background-image:var(--nds-ico-fill-certi-kakao-x32);}
+.nds-ico-fill-certi-toss-x32::before {background-image:var(--nds-ico-fill-certi-toss-x32);}
+.nds-ico-fill-certi-joint::before {background-image:var(--nds-ico-fill-certi-joint);}
+.nds-ico-fill-certi-nh-x32::before {background-image:var(--nds-ico-fill-certi-nh-x32);}
+.nds-ico-fill-certi-yeskey-x32::before {background-image:var(--nds-ico-fill-certi-yeskey-x32);}
+.nds-ico-fill-share-kakaotalk::before {background-image:var(--nds-ico-fill-share-kakaotalk);}
+.nds-ico-fill-target::before {background-image:var(--nds-ico-fill-target);}
+.nds-ico-fill-repayment::before {background-image:var(--nds-ico-fill-repayment);}
+.nds-ico-fill-amount-dollar::before {background-image:var(--nds-ico-fill-amount-dollar);}
+.nds-ico-fill-amount-won::before {background-image:var(--nds-ico-fill-amount-won);}
+.nds-ico-fill-rates-calculator::before {background-image:var(--nds-ico-fill-rates-calculator);}
+.nds-ico-fill-period-calendar::before {background-image:var(--nds-ico-fill-period-calendar);}
+.nds-ico-fill-diversified::before {background-image:var(--nds-ico-fill-diversified);}
+.nds-ico-fill-transaction-time::before {background-image:var(--nds-ico-fill-transaction-time);}
+.nds-ico-fill-play-video::before {background-image:var(--nds-ico-fill-play-video);}
+.nds-ico-fill-meritorious-person::before {background-image:var(--nds-ico-fill-meritorious-person);}
+.nds-ico-fill-global::before {background-image:var(--nds-ico-fill-global);}
+.nds-ico-fill-military-veterans::before {background-image:var(--nds-ico-fill-military-veterans);}
+.nds-ico-fill-own-name-phone::before {background-image:var(--nds-ico-fill-own-name-phone);}
+.nds-ico-fill-my-phone::before {background-image:var(--nds-ico-fill-my-phone);}
+.nds-ico-fill-nh-account::before {background-image:var(--nds-ico-fill-nh-account);}
+.nds-ico-fill-identification::before {background-image:var(--nds-ico-fill-identification);}
+.nds-ico-fill-verifying-info::before {background-image:var(--nds-ico-fill-verifying-info);}
+.nds-ico-fill-received-paid::before {background-image:var(--nds-ico-fill-received-paid);}
+.nds-ico-fill-bankbook-coin::before {background-image:var(--nds-ico-fill-bankbook-coin);}
+.nds-ico-fill-installment-save::before {background-image:var(--nds-ico-fill-installment-save);}
+.nds-ico-fill-apart-application::before {background-image:var(--nds-ico-fill-apart-application);}
+.nds-ico-fill-fund-graph::before {background-image:var(--nds-ico-fill-fund-graph);}
+.nds-ico-fill-loan-pocket-pink::before {background-image:var(--nds-ico-fill-loan-pocket-pink);}
+.nds-ico-fill-foreign-exchange::before {background-image:var(--nds-ico-fill-foreign-exchange);}
+.nds-ico-fill-retirement-pension::before {background-image:var(--nds-ico-fill-retirement-pension);}
+.nds-ico-fill-trust-graph::before {background-image:var(--nds-ico-fill-trust-graph);}
+.nds-ico-fill-isa-shield::before {background-image:var(--nds-ico-fill-isa-shield);}
+.nds-ico-fill-insurance-heart::before {background-image:var(--nds-ico-fill-insurance-heart);}
+.nds-ico-fill-gold-bar::before {background-image:var(--nds-ico-fill-gold-bar);}
+.nds-ico-fill-recommed-fund::before {background-image:var(--nds-ico-fill-recommed-fund);}
+.nds-ico-fill-best-crown::before {background-image:var(--nds-ico-fill-best-crown);}
+.nds-ico-fill-fund-coinhand::before {background-image:var(--nds-ico-fill-fund-coinhand);}
+.nds-ico-fill-self-shield::before {background-image:var(--nds-ico-fill-self-shield);}
+.nds-ico-fill-coin-bank::before {background-image:var(--nds-ico-fill-coin-bank);}
+.nds-ico-fill-pension-pocket::before {background-image:var(--nds-ico-fill-pension-pocket);}
+.nds-ico-fill-security-insurance::before {background-image:var(--nds-ico-fill-security-insurance);}
+.nds-ico-fill-variable-shield::before {background-image:var(--nds-ico-fill-variable-shield);}
+.nds-ico-fill-travel-insurance::before {background-image:var(--nds-ico-fill-travel-insurance);}
+.nds-ico-fill-children-insurance::before {background-image:var(--nds-ico-fill-children-insurance);}
+.nds-ico-fill-foreign-exchange-account::before {background-image:var(--nds-ico-fill-foreign-exchange-account);}
+.nds-ico-fill-insurance-heart2::before {background-image:var(--nds-ico-fill-insurance-heart2);}
+.nds-ico-fill-loan-pocket-orange::before {background-image:var(--nds-ico-fill-loan-pocket-orange);}
+.nds-ico-fill-nhis::before {background-image:var(--nds-ico-fill-nhis);}
+.nds-ico-fill-gov::before {background-image:var(--nds-ico-fill-gov);}
+.nds-ico-fill-rebalancing::before {background-image:var(--nds-ico-fill-rebalancing);}
+.nds-ico-fill-folder::before {background-image:var(--nds-ico-fill-folder);}
+.nds-ico-fill-monitoring::before {background-image:var(--nds-ico-fill-monitoring);}
+.nds-ico-fill-management::before {background-image:var(--nds-ico-fill-management);}
+.nds-ico-fill-guide-own-goods::before {background-image:var(--nds-ico-fill-guide-own-goods);}
+.nds-ico-fill-guide-deposit-product::before {background-image:var(--nds-ico-fill-guide-deposit-product);}
+.nds-ico-fill-check-payment-result::before {background-image:var(--nds-ico-fill-check-payment-result);}
+.nds-ico-fill-auto-payment-result::before {background-image:var(--nds-ico-fill-auto-payment-result);}
+.nds-ico-fill-auto-withdrawal-account::before {background-image:var(--nds-ico-fill-auto-withdrawal-account);}
+.nds-ico-fill-change-auto-payment::before {background-image:var(--nds-ico-fill-change-auto-payment);}
+.nds-ico-fill-block-credit-trans::before {background-image:var(--nds-ico-fill-block-credit-trans);}
+.nds-ico-fill-block-account-opening::before {background-image:var(--nds-ico-fill-block-account-opening);}
+.nds-ico-fill-certi-ars::before {background-image:var(--nds-ico-fill-certi-ars);}
+.nds-ico-fill-certi-joint2::before {background-image:var(--nds-ico-fill-certi-joint2);}
+.nds-ico-fill-certi-financial::before {background-image:var(--nds-ico-fill-certi-financial);}
+.nds-ico-fill-certi-sms::before {background-image:var(--nds-ico-fill-certi-sms);}
+.nds-ico-fill-certi-usim::before {background-image:var(--nds-ico-fill-certi-usim);}
+.nds-ico-fill-certi-videotelephony::before {background-image:var(--nds-ico-fill-certi-videotelephony);}
+.nds-ico-fill-certi-my-account::before {background-image:var(--nds-ico-fill-certi-my-account);}
+.nds-ico-fill-certi-security-device::before {background-image:var(--nds-ico-fill-certi-security-device);}
+.nds-ico-fill-nh-robo-dream::before {background-image:var(--nds-ico-fill-nh-robo-dream);}
+.nds-ico-fill-hybrid-roboadviser::before {background-image:var(--nds-ico-fill-hybrid-roboadviser);}
+/* General Fill Icon - 36*36 */
+.nds-ico-fill-investor-1th::before {background-image:var(--nds-ico-fill-investor-1th);}
+.nds-ico-fill-investor-2th::before {background-image:var(--nds-ico-fill-investor-2th);}
+.nds-ico-fill-investor-3th::before {background-image:var(--nds-ico-fill-investor-3th);}
+.nds-ico-fill-investor-4th::before {background-image:var(--nds-ico-fill-investor-4th);}
+.nds-ico-fill-investor-5th::before {background-image:var(--nds-ico-fill-investor-5th);}
+.nds-ico-fill-goal1::before {background-image:var(--nds-ico-fill-goal1);}
+.nds-ico-fill-money-pocket::before {background-image:var(--nds-ico-fill-money-pocket);}
+.nds-ico-fill-bankbook::before {background-image:var(--nds-ico-fill-bankbook);}
+.nds-ico-fill-note::before {background-image:var(--nds-ico-fill-note);}
+.nds-ico-fill-suitcase::before {background-image:var(--nds-ico-fill-suitcase);}
+.nds-ico-fill-house1::before {background-image:var(--nds-ico-fill-house1);}
+.nds-ico-fill-goal2::before {background-image:var(--nds-ico-fill-goal2);}
+.nds-ico-fill-ring::before {background-image:var(--nds-ico-fill-ring);}
+.nds-ico-fill-present::before {background-image:var(--nds-ico-fill-present);}
+.nds-ico-fill-clover::before {background-image:var(--nds-ico-fill-clover);}
+.nds-ico-fill-baby::before {background-image:var(--nds-ico-fill-baby);}
+.nds-ico-fill-heart::before {background-image:var(--nds-ico-fill-heart);}
+.nds-ico-fill-house2::before {background-image:var(--nds-ico-fill-house2);}
+.nds-ico-fill-timer::before {background-image:var(--nds-ico-fill-timer);}
+.nds-ico-fill-one-year1::before {background-image:var(--nds-ico-fill-one-year1);}
+.nds-ico-fill-one-year2::before {background-image:var(--nds-ico-fill-one-year2);}
+.nds-ico-fill-three-years::before {background-image:var(--nds-ico-fill-three-years);}
+.nds-ico-fill-senior::before {background-image:var(--nds-ico-fill-senior);}
+.nds-ico-fill-retiree::before {background-image:var(--nds-ico-fill-retiree);}
+.nds-ico-fill-housewife::before {background-image:var(--nds-ico-fill-housewife);}
+.nds-ico-fill-minor::before {background-image:var(--nds-ico-fill-minor);}
+.nds-ico-fill-hasten-explain::before {background-image:var(--nds-ico-fill-hasten-explain);}
+.nds-ico-fill-not-applicable::before {background-image:var(--nds-ico-fill-not-applicable);}
+/* General Fill Icon - 40*40 */
+/* No Data 40*40은 No Data 56*56과 비율이 동일함으로 .nds-ico-fill-no-data.-x40 사용으로 대체 */
+/* General Fill Icon - 48*48 */
+.nds-ico-fill-calculator-coin::before {background-image:var(--nds-ico-fill-calculator-coin);}
+.nds-ico-fill-calculator-home::before {background-image:var(--nds-ico-fill-calculator-home);}
+.nds-ico-fill-certificate::before {background-image:var(--nds-ico-fill-certificate);}
+.nds-ico-fill-certificate-error::before {background-image:var(--nds-ico-fill-certificate-error);}
+.nds-ico-fill-certificate-disabled::before {background-image:var(--nds-ico-fill-certificate-disabled);}
+.nds-ico-fill-guard::before {background-image:var(--nds-ico-fill-guard);}
+.nds-ico-fill-money-coins::before {background-image:var(--nds-ico-fill-money-coins);}
+.nds-ico-fill-saving::before {background-image:var(--nds-ico-fill-saving);}
+.nds-ico-fill-monitor::before {background-image:var(--nds-ico-fill-monitor);}
+/* General Fill Icon - 56*56 */
+.nds-ico-fill-no-data::before {background-image:var(--nds-ico-fill-no-data);}
+.nds-ico-fill-certificate-empty::before {background-image:var(--nds-ico-fill-certificate-empty);}
+.nds-ico-fill-certi-nh-x56::before {background-image:var(--nds-ico-fill-certi-nh-x56);}
+.nds-ico-fill-certi-toss-x56::before {background-image:var(--nds-ico-fill-certi-toss-x56);}
+.nds-ico-fill-certi-kakao-x56::before {background-image:var(--nds-ico-fill-certi-kakao-x56);}
+.nds-ico-fill-certi-pass-x56::before {background-image:var(--nds-ico-fill-certi-pass-x56);}
+.nds-ico-fill-certi-naver-x56::before {background-image:var(--nds-ico-fill-certi-naver-x56);}
+.nds-ico-fill-certi-yeskey-x56::before {background-image:var(--nds-ico-fill-certi-yeskey-x56);}
+.nds-ico-fill-joint-certificate::before {background-image:var(--nds-ico-fill-joint-certificate);}
+
+/* --- Flag --- */
+/* TODO: 디자인 확인 필요.
+   1. right 여백 확인 필요. 
+      24사이즈 아이콘의 경우 bottomsheet usage에서는 margin-right 6px + 14px 텍스트인데 나머지에서는 margin-right 8px + 18px 텍스트임.
+      6px spacing은 nds에는 존재하지 않는 여백. margin-right:.6rem;
+      그리고 이 여백은 list 컴포넌트에서 제어하는게 맞는듯.
+*/
+/* .nds-ico[data-countrycode]::before {margin-right:.6rem;} */
+/* Flag */
+.nds-ico[data-countrycode="000"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-south-korea_24.svg);}            /* KRW(대한민국 원) */
+.nds-ico[data-countrycode="001"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-usa_24.svg);}                    /* USD(미국 달러) */
+.nds-ico[data-countrycode="002"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-japan_24.svg);}                  /* JPY(일본 엔) */
+.nds-ico[data-countrycode="003"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-eu_24.svg);}                     /* EUR(유럽연합 유로) */
+.nds-ico[data-countrycode="004"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-china_24.svg);}                  /* CNY(중국 위안) */
+.nds-ico[data-countrycode="005"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-uk_24.svg);}                     /* GBP(영국 파운드) */
+.nds-ico[data-countrycode="006"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-swiss_24.svg);}                  /* CHF(스위스 프랑) */
+.nds-ico[data-countrycode="007"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-canada_24.svg);}                 /* CAD(캐나다 달러) */
+.nds-ico[data-countrycode="008"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-hongkong_24.svg);}               /* HKD(홍콩 달러) */
+.nds-ico[data-countrycode="009"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-sweden_24.svg);}                 /* SEK(스웨덴 크로네) */
+.nds-ico[data-countrycode="010"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-australia_24.svg);}              /* AUD(호주 달러) */
+.nds-ico[data-countrycode="011"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-denmark_24.svg);}                /* DKK(덴마크 크로네) */
+.nds-ico[data-countrycode="012"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-norwey_24.svg);}                 /* NOK(노르웨이 크로네) */
+.nds-ico[data-countrycode="013"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-saudi_24.svg);}                  /* SAR(사우디아라비아 리얄) */
+.nds-ico[data-countrycode="014"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-kuwait_24.svg);}                 /* KWE(쿠웨이트 디나르) */
+.nds-ico[data-countrycode="015"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-bahrain_24.svg);}                /* BHD(바레인 디나리) */
+.nds-ico[data-countrycode="016"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-uae_24.svg);}                    /* AED(아랍에미리트 디히람) */
+.nds-ico[data-countrycode="017"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-singapore_24.svg);}              /* SGD(싱가포르 달러) */
+.nds-ico[data-countrycode="018"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-malaysia_24.svg);}               /* MYR(말레이시아 링기트) */
+.nds-ico[data-countrycode="019"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-newzealand_24.svg);}             /* NZD(뉴질랜드 달러) */
+.nds-ico[data-countrycode="020"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-thailand_24.svg);}               /* THB(태국 바트) */
+.nds-ico[data-countrycode="021"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-indonesia_24.svg);}              /* IDR(인도네시아 루피아) */
+.nds-ico[data-countrycode="022"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-taiwan_24.svg);}                 /* TWD(대만 달러) */
+.nds-ico[data-countrycode="023"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-philippines_24.svg);}            /* PHP(필리핀 페소) */
+.nds-ico[data-countrycode="024"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-india_24.svg);}                  /* INR(인도 루피) */
+.nds-ico[data-countrycode="025"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-russia_24.svg);}                 /* RUB(러시아 루블) */
+.nds-ico[data-countrycode="026"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-poland_24.svg);}                 /* PLN(폴란드 즈워티) */
+.nds-ico[data-countrycode="027"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-south-africa_24.svg);}           /* ZAR(남아프리카공화국 랜드) */
+.nds-ico[data-countrycode="028"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-mexico_24.svg);}                 /* MXN(멕시코 페소) */
+.nds-ico[data-countrycode="029"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-vietnam_24.svg);}                /* VND(베트남 동) */
+
+/* --- Logo Bank --- */
+/* Logo Bank */
+.nds-ico[data-bankcode="002"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kdb_56.svg);}                         /* 산업은행 */
+.nds-ico[data-bankcode="003"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-ibk_56.svg);}                         /* 기업은행 */
+.nds-ico[data-bankcode="004"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kb_56.svg);}                          /* 국민은행 */
+.nds-ico[data-bankcode="005"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hana_56.svg);}                        /* 하나은행 */
+.nds-ico[data-bankcode="006"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-ibk_56.svg);}                         /* 국민은행 */
+.nds-ico[data-bankcode="007"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-sh_56.svg);}                          /* 수협은행 */
+.nds-ico[data-bankcode="009"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-cu_56.svg);}                          /* 신협중앙회 */
+.nds-ico[data-bankcode="010"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh_56.svg);}                          /* 농협은행 */
+.nds-ico[data-bankcode="011"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh_56.svg);}                          /* 농협은행 */
+.nds-ico[data-bankcode="094"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 농축협 */
+.nds-ico[data-bankcode="012"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
+.nds-ico[data-bankcode="013"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
+.nds-ico[data-bankcode="014"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
+.nds-ico[data-bankcode="015"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
+.nds-ico[data-bankcode="016"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh_56.svg);}                          /* 농협은행 */
+.nds-ico[data-bankcode="017"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
+.nds-ico[data-bankcode="018"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
+.nds-ico[data-bankcode="019"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kb_56.svg);}                          /* 국민은행 */
+.nds-ico[data-bankcode="020"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-woori_56.svg);}                       /* 우리은행 */
+.nds-ico[data-bankcode="021"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg);}                     /* 신한은행 */
+.nds-ico[data-bankcode="022"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-woori_56.svg);}                       /* 우리은행 */
+.nds-ico[data-bankcode="023"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-sc_56.svg);}                          /* sc제일은행 */
+.nds-ico[data-bankcode="024"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-woori_56.svg);}                       /* 우리은행 */
+.nds-ico[data-bankcode="025"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hana_56.svg);}                        /* 하나은행 */
+.nds-ico[data-bankcode="026"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg);}                     /* 신한은행 */
+.nds-ico[data-bankcode="027"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-citi_56.svg);}                        /* 한국씨티은행 */
+.nds-ico[data-bankcode="028"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg);}                     /* 신한은행 */
+.nds-ico[data-bankcode="029"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kb_56.svg);}                          /* 국민은행 */
+.nds-ico[data-bankcode="031"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-im_56.svg);}                          /* 아이엠뱅크(구)대구 */
+.nds-ico[data-bankcode="032"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-bsbnk_56.svg);}                       /* 부산은행 */
+.nds-ico[data-bankcode="034"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kj_56.svg);}                          /* 광주은행 */
+.nds-ico[data-bankcode="035"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-jeju_56.svg);}                        /* 제주은행 */
+.nds-ico[data-bankcode="037"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-jb_56.svg);}                          /* 전북은행 */
+.nds-ico[data-bankcode="039"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-knbnk_56.svg);}                       /* 경남은행 */
+.nds-ico[data-bankcode="045"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg);}                        /* 새마을금고 */
+.nds-ico[data-bankcode="046"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg);}                        /* 새마을금고 */
+.nds-ico[data-bankcode="047"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-cu_56.svg);}                          /* 신협중앙회 */
+.nds-ico[data-bankcode="048"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-cu_56.svg);}                          /* 신협중앙회 */
+.nds-ico[data-bankcode="049"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-cu_56.svg);}                          /* 신협중앙회 */
+.nds-ico[data-bankcode="050"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-sb_56.svg);}                          /* 상호저축은행 */
+.nds-ico[data-bankcode="053"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-citi_56.svg);}                        /* 씨티은행 */
+.nds-ico[data-bankcode="054"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hsbc_56.svg);}                        /* HSBC은행 */
+.nds-ico[data-bankcode="055"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-deutsche_56.svg);}                    /* 도이치은행 */
+.nds-ico[data-bankcode="057"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-jp_56.svg);}                          /* JP모건체이스은행 */
+.nds-ico[data-bankcode="060"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-boa_56.svg);}                         /* 뱅크오브아메리카 */
+.nds-ico[data-bankcode="061"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-bnp_56.svg);}                         /* BNP파리바은행 */
+.nds-ico[data-bankcode="062"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-icbc_56.svg);}                        /* 중국공상은행 */
+.nds-ico[data-bankcode="063"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-boc_56.svg);}                         /* 중국은행 */
+.nds-ico[data-bankcode="064"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nfcf_56.svg);}                        /* 산림조합 */
+.nds-ico[data-bankcode="067"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-ccb_56.svg);}                         /* 중국건설은행 */
+.nds-ico[data-bankcode="081"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hana_56.svg);}                        /* 하나은행 */
+.nds-ico[data-bankcode="071"]::before {background-image:url(../../../imgs/nds/ico/ci/img_epost-nh_56.svg);}                         /* 우체국 */
+.nds-ico[data-bankcode="072"]::before {background-image:url(../../../imgs/nds/ico/ci/img_epost-nh_56.svg);}                         /* 우체국 */
+.nds-ico[data-bankcode="073"]::before {background-image:url(../../../imgs/nds/ico/ci/img_epost-nh_56.svg);}                         /* 우체국 */
+.nds-ico[data-bankcode="074"]::before {background-image:url(../../../imgs/nds/ico/ci/img_epost-nh_56.svg);}                         /* 우체국 */
+.nds-ico[data-bankcode="075"]::before {background-image:url(../../../imgs/nds/ico/ci/img_epost-nh_56.svg);}                         /* 우체국 */
+.nds-ico[data-bankcode="078"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kb_56.svg);}                          /* 국민은행 */
+.nds-ico[data-bankcode="079"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kb_56.svg);}                          /* 국민은행 */
+.nds-ico[data-bankcode="080"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hana_56.svg);}                        /* 하나은행 */
+.nds-ico[data-bankcode="082"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hana_56.svg);}                        /* 하나은행 */
+.nds-ico[data-bankcode="083"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-woori_56.svg);}                       /* 우리은행 */
+.nds-ico[data-bankcode="084"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-woori_56.svg);}                       /* 우리은행 */
+.nds-ico[data-bankcode="085"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg);}                        /* 새마을금고 */
+.nds-ico[data-bankcode="086"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg);}                        /* 새마을금고 */
+.nds-ico[data-bankcode="088"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg);}                     /* 신한은행 */
+.nds-ico[data-bankcode="089"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kbank_56.svg);}                       /* 케이뱅크 */
+.nds-ico[data-bankcode="090"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kakao_56.svg);}                       /* 카카오뱅크 */
+.nds-ico[data-bankcode="092"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-toss_56.svg);}                        /* 토스뱅크 */
+.nds-ico[data-bankcode="093"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-account_56.svg);}                     /* 전체계좌 */
+
+/* --- Logo Stock --- */
+/* Logo Stock */
+.nds-ico[data-bankcode="209"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-myasset_56.svg);}                    /* 유안타증권 */
+.nds-ico[data-bankcode="218"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-kb_56.svg);}                         /* KB증권 */
+.nds-ico[data-bankcode="221"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-ssi_56.svg);}                        /* 상상인증권 */
+.nds-ico[data-bankcode="224"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-bnk_56.svg);}                        /* BNK증권 */
+.nds-ico[data-bankcode="225"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-ibk_56.svg);}                        /* IBK투자증권 */
+.nds-ico[data-bankcode="227"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-daol_56.svg);}                       /* 다올투자증권 */
+.nds-ico[data-bankcode="237"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-miraeasset_56.svg);}                 /* 미래에셋증권 */
+.nds-ico[data-bankcode="238"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-miraeasset_56.svg);}                 /* 미래에셋증권 */
+.nds-ico[data-bankcode="256"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-samsung_56.svg);}                    /* 삼성증권 */
+.nds-ico[data-bankcode="243"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-ki_56.svg);}                         /* 한국투자증권 */
+.nds-ico[data-bankcode="247"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-nh_56.svg);}                         /* NH투자증권 */
+.nds-ico[data-bankcode="261"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-kyobo_56.svg);}                      /* 교보증권 */
+.nds-ico[data-bankcode="262"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-im_56.svg);}                         /* 아이엠증권 */
+.nds-ico[data-bankcode="263"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-hmsec_56.svg);}                      /* 현대차증권 */
+.nds-ico[data-bankcode="264"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-kiwoom_56.svg);}                     /* 키움증권 */
+.nds-ico[data-bankcode="265"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-ls_56.svg);}                         /* LS증권 */
+.nds-ico[data-bankcode="266"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-sk_56.svg);}                         /* SK증권 */
+.nds-ico[data-bankcode="267"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-daishin_56.svg);}                    /* 대신증권 */
+.nds-ico[data-bankcode="269"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-hanhwa_56.svg);}                     /* 한화투자증권 */
+.nds-ico[data-bankcode="270"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-hana_56.svg);}                       /* 하나증권 */
+.nds-ico[data-bankcode="271"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-toss_56.svg);}                       /* 토스증권 */
+.nds-ico[data-bankcode="278"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-shinhan_56.svg);}                    /* 신한투자증권 */
+.nds-ico[data-bankcode="279"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-db_56.svg);}                         /* DB금융투자 */
+.nds-ico[data-bankcode="280"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-eugene_56.svg);}                     /* 유진투자증권 */
+.nds-ico[data-bankcode="287"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-meritz_56.svg);}                     /* 메리츠증권 */
+.nds-ico[data-bankcode="288"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-kakaopay_56.svg);}                   /* 카카오페이증권 */
+.nds-ico[data-bankcode="289"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-nh_56.svg);}                         /* NH투자증권(농협증권) */
+.nds-ico[data-bankcode="290"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-bookook_56.svg);}                    /* 부국증권 */
+.nds-ico[data-bankcode="291"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-shinyoung_56.svg);}                  /* 신영증권 */
+.nds-ico[data-bankcode="292"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-cape_56.svg);}                       /* 케이프투자증권 */
+.nds-ico[data-bankcode="294"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-woori_56.svg);}                      /* 우리투자증권 */
+.nds-ico[data-bankcode="295"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-woori_56.svg);}                      /* 우리투자증권 */
+
+/* 카드사 */
+/* TODO: 디자인 확인 필요. NDS에는 없음. */
+.nds-ico[data-bankcode="041"]:before {background-image:url(../../../imgs/ico/ci/ci_woori.svg);}                                     /* 우리카드 */
+.nds-ico[data-bankcode="365"]:before {background-image:url(../../../imgs/ico/ci/ci_samsungcard.svg);}                               /* 삼성카드 */
+.nds-ico[data-bankcode="366"]:before {background-image:url(../../../imgs/ico/ci/ci_shinhan.svg);}                                   /* 신한카드 */
+.nds-ico[data-bankcode="367"]:before {background-image:url(../../../imgs/ico/ci/ci_hyundaicard.svg);}                               /* 현대카드 */
+.nds-ico[data-bankcode="368"]:before {background-image:url(../../../imgs/ico/ci/ci_lottecard.svg);}                                 /* 롯데카드 */
+.nds-ico[data-bankcode="374"]:before {background-image:url(../../../imgs/ico/ci/ci_hana.svg);}                                      /* 하나카드 */
+.nds-ico[data-bankcode="381"]:before {background-image:url(../../../imgs/ico/ci/ci_kb.svg);}                                        /* KB국민카드 */
+
+/* 캐피탈 */
+/* TODO: 디자인 확인 필요. NDS에는 없음. */
+.nds-ico[data-bankcode="299"]:before {background-image:url(../../../imgs/ico/ci/ci_woori.svg);}                                     /* 우리금융캐피탈 */
+.nds-ico[data-bankcode="301"]:before {background-image:url(../../../imgs/ico/ci/ci_dgb.svg);}                                       /* DGB캐피탈 */
+.nds-ico[data-bankcode="302"]:before {background-image:url(../../../imgs/ico/ci/ci_bnk.svg);}                                       /* BNK캐피탈 */
+.nds-ico[data-bankcode="303"]:before {background-image:url(../../../imgs/ico/ci/ci_lotte.svg);}                                     /* 롯데캐피탈 */
+.nds-ico[data-bankcode="304"]:before {background-image:url(../../../imgs/ico/ci/ci_hyundaicapital.svg);}                            /* 현대캐피탈 */
+.nds-ico[data-bankcode="305"]:before {background-image:url(../../../imgs/ico/ci/ci_jb.svg);}                                        /* 우리캐피탈 */
+.nds-ico[data-bankcode="306"]:before {background-image:url(../../../imgs/ico/ci/ci_nh.svg);}                                        /* NH캐피탈 */
+.nds-ico[data-bankcode="308"]:before {background-image:url(../../../imgs/ico/ci/ci_kb.svg);}                                        /* KB캐피탈 */
+.nds-ico[data-bankcode="310"]:before {background-image:url(../../../imgs/ico/ci/ci_hana.svg);}                                      /* 하나캐피탈 */
+
+/* --- Logo Insurance --- */
+/* Logo Insurance */
+.nds-ico[data-bankcode="401"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hana-life_56.svg);}          /* 하나손해보험 */
+.nds-ico[data-bankcode="562"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-myangel_56.svg);}            /* 동양생명보험 */
+.nds-ico[data-bankcode="563"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hk-fire_56.svg);}            /* 흥국화재해상 */
+.nds-ico[data-bankcode="431"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-miraeasset_56.svg);}         /* 미래에셋생명보험 */
+.nds-ico[data-bankcode="432"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hanhwa-life_56.svg);}        /* 한화생명보험 */
+.nds-ico[data-bankcode="433"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-kyobo-panet_56.svg);}        /* 교보라이프플래닛 */
+.nds-ico[data-bankcode="434"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-fubon_56.svg);}              /* 푸본현대생명보험 */
+.nds-ico[data-bankcode="435"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-lina_56.svg);}               /* 라이나생명보험 */
+.nds-ico[data-bankcode="436"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-kyobo-life_56.svg);}         /* 교보생명보험 */
+.nds-ico[data-bankcode="437"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-abl_56.svg);}                /* 에이비엘생명보험 */
+.nds-ico[data-bankcode="438"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-shinhan-life_56.svg);}       /* 신한생명보험 */
+.nds-ico[data-bankcode="439"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-kb-life_56.svg);}            /* KB생명보험 */
+.nds-ico[data-bankcode="456"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-nh-life_56.svg);}            /* 농협생명보험 */
+.nds-ico[data-bankcode="441"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-samsung-fire_56.svg);}       /* 삼성화재 */
+.nds-ico[data-bankcode="442"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hi_56.svg);}                 /* 현대해상화제보험 */
+.nds-ico[data-bankcode="444"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-kb-insure_56.svg);}          /* KB손해보험 */
+.nds-ico[data-bankcode="445"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-lotte_56.svg);}              /* 롯데손해보험 */
+.nds-ico[data-bankcode="448"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-meritz_56.svg);}             /* 메리츠화재해상보험 */
+.nds-ico[data-bankcode="449"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-nh-fire_56.svg);}            /* 농협손해보험 */
+.nds-ico[data-bankcode="452"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-samsung-life_56.svg);}       /* 삼성생명 */
+.nds-ico[data-bankcode="453"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hk-life_56.svg);}            /* 흥국생명보험 */
+.nds-ico[data-bankcode="454"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hanhwa-insure_56.svg);}      /* 한화손해보험 */
+.nds-ico[data-bankcode="456"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-im_56.svg);}                 /* 아이엠보험 */
+.nds-ico[data-bankcode="457"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-db-life_56.svg);}            /* DB생명보험 */
+.nds-ico[data-bankcode="458"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-kdb_56.svg);}                /* KDB생명보험 */
+.nds-ico[data-bankcode="L78"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-bnp_56.svg);}                /* 비엔피파라바카디프 생명보험 */
+.nds-ico[data-bankcode="N13"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-db-ins_56.svg);}             /* DB손해보험 */
+.nds-ico[data-bankcode="L41"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-ibk_56.svg);}                /* IBK연금보험 */
+.nds-ico[data-bankcode="L72"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-metlife_56.svg);}            /* 메트라이프생명 */
+.nds-ico[data-bankcode="L73"].-x56:before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-dgb_56.svg);}                /* DGB생명보험 */

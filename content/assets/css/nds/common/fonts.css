@@ -33,7 +33,3 @@
         url("../fonts/password.woff?ver=1.0.0")   format("woff"),
         url("../fonts/password.woff2?ver=1.0.0")  format("woff2");
 }
-
-@media (max-width: 346px) {html {font-size:60%;}}
-@media (max-width: 321px) {html {font-size:55%;}}
-@media (max-width: 281px) {html {font-size:48%;}}

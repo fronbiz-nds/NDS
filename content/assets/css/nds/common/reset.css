@@ -63,7 +63,7 @@ html {
    Description: 디자인 시스템 컨테이너 내 기본 타이포그래피 및 상속 정의
    ========================================================================== */
 .nds-ui {
-    color:var(--color-text-font-1);
+    color:var(--nds-color-text-font-1);
     font-size:1.6rem;
     line-height:1.5;
     font-family:var(--nds-font-base);

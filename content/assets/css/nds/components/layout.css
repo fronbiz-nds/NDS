@@ -5,11 +5,11 @@
    ========================================================= */
 
 /* 페이지 */
-.nds-page {height:100%; color:var(--color-text-font-1);}
+.nds-page {height:100%; color:var(--nds-color-text-font-1);}
 .nds-page .header {display:block; height:5rem;}
 .nds-page.-transparent .header {visibility:hidden; opacity:0;}
-.nds-page .header .inner {display:flex; align-items:center; position:fixed; top:0; left:0; z-index:200; width:100%; height:5rem; padding:1.3rem var(--spacing-24); background-color:var(--color-bg-default);}
-.nds-page .header .title {overflow:hidden; position:absolute; top:50%; left:50%; max-width:calc(100% - 18rem); color:var(--color-text-font-1); font-weight:bold; font-size:1.6rem; line-height:1.2; letter-spacing:-.1rem; text-align:left; white-space:nowrap; transform:translate(-50%, -50%); text-overflow:ellipsis;}
+.nds-page .header .inner {display:flex; align-items:center; position:fixed; top:0; left:0; z-index:200; width:100%; height:5rem; padding:1.3rem var(--nds-spacing-24); background-color:var(--nds-color-bg-default);}
+.nds-page .header .title {overflow:hidden; position:absolute; top:50%; left:50%; max-width:calc(100% - 18rem); color:var(--nds-color-text-font-1); font-weight:bold; font-size:1.6rem; line-height:1.2; letter-spacing:-.1rem; text-align:left; white-space:nowrap; transform:translate(-50%, -50%); text-overflow:ellipsis;}
 .nds-page .header .title.-expand {max-width:calc(100% - 11rem);}
 .nds-page .header .title > a {display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 /* .nds-page .header .funcs {display:flex; position:absolute; top:50%; transform:translateY(-50%);} */
@@ -29,7 +29,7 @@
 .nds-page .content.-full {height:100%; padding:0;}
 .nds-page .content.-middle {display:flex; flex-direction:column; justify-content:center;}
 .nds-page .sticker {margin-top:auto; padding:0 var(--nds-space-in) 5rem;}
-.nds-page .fixer {position:fixed; bottom:0; left:0; z-index:100; width:100%; padding:1rem var(--nds-space-in) 3.2rem; background:linear-gradient(180deg, rgba(255,255,255,0) 0%, var(--color-bg-default) .8rem); background-color:var(--color-bg-default);}
+.nds-page .fixer {position:fixed; bottom:0; left:0; z-index:100; width:100%; padding:1rem var(--nds-space-in) 3.2rem; background:linear-gradient(180deg, rgba(255,255,255,0) 0%, var(--nds-color-bg-default) .8rem); background-color:var(--nds-color-bg-default);}
 .nds-page .buffer {flex:0 0 auto;}
 
 .nds-page .fixer .buttons:not(.-half) {display:flex; flex-wrap:nowrap;}
@@ -38,22 +38,22 @@
 .nds-page .fixer .buttons:not(.-half) > .button:nth-child(1):nth-last-child(1) {flex-basis:calc(100% - 0.6rem);}
 
 .nds-page.-login,
-.popup.-login {background-color:var(--color-green-500);}
+.popup.-login {background-color:var(--nds-color-green-500);}
 .nds-page.-login .header .inner,
-.popup.-login .header .inner {background-color:var(--color-green-500);}
+.popup.-login .header .inner {background-color:var(--nds-color-green-500);}
 .nds-page.-login .header .inner .login-logo,
 .popup.-login .header .inner .login-logo {width:12.5rem;}
-.nds-page.-login .fixer {padding-right:0; padding-left:0; background-color:var(--color-green-500);}
+.nds-page.-login .fixer {padding-right:0; padding-left:0; background-color:var(--nds-color-green-500);}
 .nds-page .detail-view .title {position:sticky; top:5rem;}
 
-.popup .fixer.-float {padding-top:var(--spacing-0); background:var(--color-bg-default); box-shadow:0 -3px 10px 0 rgba(0, 0, 0, 0.05);}
-.popup .fixer.-float > .dl {padding:var(--spacing-2) var(--spacing-0) 2.2rem var(--spacing-0);}
+.popup .fixer.-float {padding-top:var(--nds-spacing-0); background:var(--nds-color-bg-default); box-shadow:0 -3px 10px 0 rgba(0, 0, 0, 0.05);}
+.popup .fixer.-float > .dl {padding:var(--nds-spacing-2) var(--nds-spacing-0) 2.2rem var(--nds-spacing-0);}
 .popup .fixer.-float > .dl .unit {font-weight:600; font-size:1.6rem; line-height:150%;}
 
 
 
 /* 헤더 버튼 */
-.header .func {display:flex; align-items:center; height:2.4rem; margin-left:1.2rem; background-color:transparent; color:var(--color-text-font-2); font-size:1.4rem; white-space:nowrap;}
+.header .func {display:flex; align-items:center; height:2.4rem; margin-left:1.2rem; background-color:transparent; color:var(--nds-color-text-font-2); font-size:1.4rem; white-space:nowrap;}
 .header .func.-back {width:2.4rem; background:url(../../imgs/nds/common/ico_left_line_24.png) no-repeat 0 / cover;}
 .header .func.-home {width:2.4rem; background:url(../../imgs/nds/common/ico_home-allone_line_24.png) no-repeat 50% / 2.4rem 2.4rem;}
 .smart-bank .header .func.-home {width:2.4rem; background:url(../../imgs/ico/common/ico-func-home-smart.png) no-repeat 50% / 2.4rem 2.4rem;}
@@ -74,13 +74,13 @@
 .dark-mode .header .func.-cart {width:2.4rem; background:url(../../imgs/nds/common/ico_cart_line_24_dk.png) no-repeat 0 / cover;}
 
 .header .func.-active {position:relative;}
-.header .func:not(.-bigsize).-active:after {content:""; position:absolute; top:0.2rem; right:0; width:.4rem; height:.4rem; border-radius:var(--border-radius-circle); background-color:var(--color-bg-badge-red);}
+.header .func:not(.-bigsize).-active:after {content:""; position:absolute; top:0.2rem; right:0; width:.4rem; height:.4rem; border-radius:var(--nds-border-radius-circle); background-color:var(--nds-color-bg-badge-red);}
 
-.navigation .header .inner {display:flex; align-items:center; position:fixed; top:0; left:0; z-index:200; width:100%; height:5rem; padding:1.3rem var(--spacing-24); background-color:var(--color-bg-default);}
+.navigation .header .inner {display:flex; align-items:center; position:fixed; top:0; left:0; z-index:200; width:100%; height:5rem; padding:1.3rem var(--nds-spacing-24); background-color:var(--nds-color-bg-default);}
 
 .navigation .header .func.-cart {position:relative;}
-.navigation .header .func.-cart .cart-badge-wrap {display:flex; justify-content:center; align-items:center; position:absolute; top:-.7rem; right:-.7rem; width:1.8rem; height:1.8rem; border-radius:var(--border-radius-circle); color:#fff; letter-spacing:0; word-spacing:0; animation:cart 8s infinite;}
-.navigation .header .func.-cart .cart-badge-wrap .cart-badge {content:""; display:flex; justify-content:center; align-items:center; position:absolute; top:0; right:0; width:1.8rem; height:1.8rem; border-radius:var(--border-radius-circle); background:var(--color-bg-badge-red); color:#fff; font-size:1.1rem; letter-spacing:0; word-spacing:0;}
+.navigation .header .func.-cart .cart-badge-wrap {display:flex; justify-content:center; align-items:center; position:absolute; top:-.7rem; right:-.7rem; width:1.8rem; height:1.8rem; border-radius:var(--nds-border-radius-circle); color:#fff; letter-spacing:0; word-spacing:0; animation:cart 8s infinite;}
+.navigation .header .func.-cart .cart-badge-wrap .cart-badge {content:""; display:flex; justify-content:center; align-items:center; position:absolute; top:0; right:0; width:1.8rem; height:1.8rem; border-radius:var(--nds-border-radius-circle); background:var(--nds-color-bg-badge-red); color:#fff; font-size:1.1rem; letter-spacing:0; word-spacing:0;}
 .navigation .header .func.-cart .cart-num {display:flex; justify-content:center; align-items:center; position:relative; z-index:10; width:1.8rem; height:1.8rem; font-weight:500; font-size:1.1rem; line-height:1.8rem;}
 .navigation .header .funcs > .func.-back {margin-left:0;}
 .navigation .header .-fullpop {display:flex; justify-content:space-between; align-items:center;}
@@ -96,7 +96,7 @@
 .navigation.-mall.smartbank .header .func.-home {background:url(../imgs/nds/common/ico_home-smartbanking_line_24.png) no-repeat 50% / 2.4rem 2.4rem;}
 .dark-mode .navigation.-mall.smartbank .header .func.-home {background:url(../imgs/nds/common/ico_home-smartbanking_line_24_dk.png) no-repeat 50% / 2.4rem 2.4rem;}
 .navigation.-product .header .title {overflow:hidden; position:absolute; top:50%; left:50%; max-width:calc(100% - 12rem); transform:translate(-50%, -50%); text-overflow:ellipsis;}
-.navigation.-login .header .inner {background-color:var(--color-bg-point);}
+.navigation.-login .header .inner {background-color:var(--nds-color-bg-point);}
 .navigation.-login .header .func.-back {background:url(../imgs/nds/common/ico_left_line_24_dk.png) no-repeat 0 / cover;}
 .navigation.-login .header .func.-menu {background:url(../imgs/nds/common/ico_menu_line_24_dk.png) no-repeat 0 / cover;}
 .navigation .header .title.t-tip span:first-of-type {display:inline-block; overflow:hidden; max-width:calc(100% - 5rem); vertical-align:middle; text-overflow:ellipsis;}

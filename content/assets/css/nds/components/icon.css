@@ -767,7 +767,7 @@
 .nds-ico-o-selected::before {background-image:var(--nds-ico-o-selected);}
 .nds-ico-x-selected::before {background-image:var(--nds-ico-x-selected);}
 .nds-ico-check::before {background-image:var(--nds-ico-check);}
-.nds-ico-check-disabled::before {background-image:var(--nds-ico-check-x24-disabled);}
+.nds-ico-check-x24-disabled::before {background-image:var(--nds-ico-check-x24-disabled);}
 .nds-ico-check-filled::before {background-image:var(--nds-ico-check-filled);}
 .nds-ico-pencil::before {background-image:var(--nds-ico-pencil);}
 .nds-ico-pencil-disabled::before {background-image:var(--nds-ico-pencil-disabled);}

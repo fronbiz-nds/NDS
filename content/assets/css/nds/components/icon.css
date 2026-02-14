@@ -5,11 +5,110 @@
    ========================================================= */
     
 /* ============================================================
-   1. CSS Variables (Root & Dark Mode)
+   CSS Variables (Root & Dark Mode)
    ============================================================ */
 
 /* --- Light Mode (Default) --- */
 :root {
+    /* [System Line Icons] - 12px ~ 24px */
+    --nds-ico-minus-x12:url("../../../imgs/nds/ico/common/ico_minus_line_12.svg");
+    --nds-ico-minus-x12-disabled:url("../../../imgs/nds/ico/common/ico_minus_gray400_line_12_disabled.svg");
+    --nds-ico-plus-x12:url("../../../imgs/nds/ico/common/ico_plus_line_12.svg");
+    --nds-ico-plus-x12-disabled:url("../../../imgs/nds/ico/common/ico_plus_gray400_line_12_disabled.svg");
+    --nds-ico-arr-right-x12:url("../../../imgs/nds/ico/common/arr_right_line_12.svg");
+    --nds-ico-arr-up:url("../../../imgs/nds/ico/common/arr_up_line_16.svg");
+    --nds-ico-arr-down:url("../../../imgs/nds/ico/common/arr_down_line_16.svg");
+    --nds-ico-arr-right-x16:url("../../../imgs/nds/ico/common/arr_right_line_16.svg");
+    --nds-ico-arr-left:url("../../../imgs/nds/ico/common/arr_left_line_16.svg");
+    --nds-ico-arr-right-x16-gray:url("../../../imgs/nds/ico/common/arr_right_line_gray600_line_16.svg");
+    --nds-ico-arr-left-filled:url("../../../imgs/nds/ico/common/arr_left_gray50_line_16.svg");
+    --nds-ico-arr-right-filled:url("../../../imgs/nds/ico/common/arr_right_gray50_line_16.svg");
+    --nds-ico-delete:url("../../../imgs/nds/ico/common/ico_delete_line_16.svg");
+    --nds-ico-delete-filled:url("../../../imgs/nds/ico/common/ico_delete_gray50_line_16.svg");
+    --nds-ico-refresh-x16:url("../../../imgs/nds/ico/common/ico_refresh_line_16.svg");
+    --nds-ico-check-active:url("../../../imgs/nds/ico/common/ico_check_line_16_active.svg");
+    --nds-ico-check-disabled:url("../../../imgs/nds/ico/common/ico_check_gray400_line_16_disabled.svg");
+    --nds-ico-check-complete:url("../../../imgs/nds/ico/common/ico_check_gray50_line_16_complete.svg");
+    --nds-ico-plus-x16:url("../../../imgs/nds/ico/common/ico_plus_line_16.svg");
+    --nds-ico-copy-info:url("../../../imgs/nds/ico/common/ico_copy-info_gray600_line_16.svg");
+    --nds-ico-download-filled:url("../../../imgs/nds/ico/common/ico_download_gray50_line_16.svg");
+    --nds-ico-favorite-star:url("../../../imgs/nds/ico/common/ico_favorite-star_gray500_line_16.svg");
+    --nds-ico-connector:url("../../../imgs/nds/ico/common/ico_connector_gray500_line_16.svg");
+    --nds-ico-arr-up1:url("../../../imgs/nds/ico/common/arr_up1_line_24.svg");
+    --nds-ico-arr-down1:url("../../../imgs/nds/ico/common/arr_down1_line_24.svg");
+    --nds-ico-arr-up1-disabled:url("../../../imgs/nds/ico/common/arr_up1_gray600_line_24_disabled.svg");
+    --nds-ico-arr-down1-disabled:url("../../../imgs/nds/ico/common/arr_down1_gray600_line_24_disabled.svg");
+    --nds-ico-arr-right1-disabled:url("../../../imgs/nds/ico/common/arr_right1_gray600_line_24.svg");
+    --nds-ico-notice-gray:url("../../../imgs/nds/ico/common/ico_notice_gray600_line_24.svg");
+    --nds-ico-tooltip1:url("../../../imgs/nds/ico/common/ico_tooltip1_gray600_line_24.svg");
+    --nds-ico-full-popup:url("../../../imgs/nds/ico/common/ico_full-popup_line_24.svg");
+    --nds-ico-tooltip2:url("../../../imgs/nds/ico/common/ico_tooltip2_gray600_line_24.svg");
+    --nds-ico-copy:url("../../../imgs/nds/ico/common/ico_copy_line_24.svg");
+    --nds-ico-down2:url("../../../imgs/nds/ico/common/arr_down2_line_24.svg");
+    --nds-ico-up2:url("../../../imgs/nds/ico/common/arr_up2_line_24.svg");
+    --nds-ico-left2:url("../../../imgs/nds/ico/common/arr_left2_line_24.svg");
+    --nds-ico-right2:url("../../../imgs/nds/ico/common/arr_right2_line_24.svg");
+    --nds-ico-left2-disabled:url("../../../imgs/nds/ico/common/arr_left2_gray400_line_24_disabled.svg");
+    --nds-ico-right2-disabled:url("../../../imgs/nds/ico/common/arr_right2_gray400_line_24_disabled.svg");
+    --nds-ico-plus-x24:url("../../../imgs/nds/ico/common/ico_plus_line_24.svg");
+    --nds-ico-minus-x24:url("../../../imgs/nds/ico/common/ico_minus_line_24.svg");
+    --nds-ico-plus-x24-active:url("../../../imgs/nds/ico/common/ico_plus_line_24_active.svg");
+    --nds-ico-minus-x24-active:url("../../../imgs/nds/ico/common/ico_minus_line_24_active.svg");
+    --nds-ico-plus-x24-disabled:url("../../../imgs/nds/ico/common/ico_plus_gray400_line_24_disabled.svg");
+    --nds-ico-minus-x24-disabled:url("../../../imgs/nds/ico/common/ico_minus_gray400_line_24_disabled.svg");
+    --nds-ico-download-gray:url("../../../imgs/nds/ico/common/ico_download_gray600_line_24.svg");
+    --nds-ico-refresh-x24:url("../../../imgs/nds/ico/common/ico_refresh_line_24.svg");
+    --nds-ico-cs-call:url("../../../imgs/nds/ico/common/ico_cs-call_line_24.svg");
+    --nds-ico-filter:url("../../../imgs/nds/ico/common/ico_filter_line_24.svg");
+    --nds-ico-notice:url("../../../imgs/nds/ico/common/ico_notice_line_24.svg");
+    --nds-ico-search:url("../../../imgs/nds/ico/common/ico_search_line_24.svg");
+    --nds-ico-calendar:url("../../../imgs/nds/ico/common/ico_calendar_line_24.svg");
+    --nds-ico-share1:url("../../../imgs/nds/ico/common/ico_share1_line_24.svg");
+    --nds-ico-share2:url("../../../imgs/nds/ico/common/ico_share2_line_24.svg");
+    --nds-ico-shop:url("../../../imgs/nds/ico/common/ico_shop_line_24.svg");
+    --nds-ico-camera:url("../../../imgs/nds/ico/common/ico_camera_line_24.svg");
+    --nds-ico-photo:url("../../../imgs/nds/ico/common/ico_photo_line_24.svg");
+    --nds-ico-download:url("../../../imgs/nds/ico/common/ico_download_line_24.svg");
+    --nds-ico-previous:url("../../../imgs/nds/ico/common/ico_previous_line_24.svg");
+    --nds-ico-close1:url("../../../imgs/nds/ico/common/ico_close1_line_24.svg");
+    --nds-ico-close2:url("../../../imgs/nds/ico/common/ico_close2_line_24.svg");
+    --nds-ico-home-allone:url("../../../imgs/nds/ico/common/ico_home-allone_line_24.svg");
+    --nds-ico-home-smartbanking:url("../../../imgs/nds/ico/common/ico_home-smartbanking_line_24.svg");
+    --nds-ico-cs-center:url("../../../imgs/nds/ico/common/ico_cs-center_line_24.svg");
+    --nds-ico-cart:url("../../../imgs/nds/ico/common/ico_cart_line_24.svg");
+    --nds-ico-check-selected:url("../../../imgs/nds/ico/common/ico_check_line_24_selected.svg");
+    --nds-ico-check-default:url("../../../imgs/nds/ico/common/ico_check_gray600_line_24_default.svg");
+    --nds-ico-left3:url("../../../imgs/nds/ico/common/arr_left3_line_24.svg");
+    --nds-ico-left3-filled:url("../../../imgs/nds/ico/common/arr_left3_gray50_line_24.svg");
+    --nds-ico-setup-nuts:url("../../../imgs/nds/ico/common/ico_setup-nuts_line_24.svg");
+    --nds-ico-alarm-notice:url("../../../imgs/nds/ico/common/ico_alarm-notice_line_24.svg");
+    --nds-ico-menu:url("../../../imgs/nds/ico/common/ico_menu_line_24.svg");
+    --nds-ico-menu-filled:url("../../../imgs/nds/ico/common/ico_menu_gray50_line_24.svg");
+    --nds-ico-delete-waste:url("../../../imgs/nds/ico/common/ico_delete-waste_line_24.svg");
+    --nds-ico-input:url("../../../imgs/nds/ico/common/ico_input_line_24.svg");
+    --nds-ico-input2:url("../../../imgs/nds/ico/common/ico_input2_line_24.svg");
+    --nds-ico-admin-dot:url("../../../imgs/nds/ico/common/ico_admin-dot_line_24.svg");
+    --nds-ico-favorite-star1:url("../../../imgs/nds/ico/common/ico_favorite-star1_line_24.svg");
+    --nds-ico-favorite-star2:url("../../../imgs/nds/ico/common/ico_favorite-star2_gray600_line_24.svg");
+    --nds-ico-share-message1:url("../../../imgs/nds/ico/common/ico_share-message1_line_24.svg");
+    --nds-ico-share-message2:url("../../../imgs/nds/ico/common/ico_share-message2_line_24.svg");
+    --nds-ico-share-link:url("../../../imgs/nds/ico/common/ico_share-link_line_24.svg");
+    --nds-ico-plus-add:url("../../../imgs/nds/ico/common/ico_plus-add_gray600_line_24.svg");
+    --nds-ico-continue:url("../../../imgs/nds/ico/common/ico_continue_line_24.svg");
+    
+    /* [System Fill Icons] - 8px ~ 24px */
+    --nds-ico-fill-indicator-stop-filled:url("../../../imgs/nds/ico/common/ico_indicator-stop_gray50_fill_8.svg");
+    --nds-ico-fill-indicator-play-filled:url("../../../imgs/nds/ico/common/ico_indicator-play_gray50_fill_8.svg");
+    --nds-ico-fill-indicator-play:url("../../../imgs/nds/ico/common/ico_indicator-play_gray600_fill_12.svg");
+    --nds-ico-fill-indicator-stop:url("../../../imgs/nds/ico/common/ico_indicator-stop_gray600_fill_12.svg");
+    --nds-ico-fill-favorite-star-selected:url("../../../imgs/nds/ico/common/ico_favorite-star_fill_16_selected.svg");
+    --nds-ico-fill-tooltip-error:url("../../../imgs/nds/ico/common/ico_tooltip-error_fill_20.svg");
+    --nds-ico-fill-zoom-in:url("../../../imgs/nds/ico/common/ico_zoom-in_fill_24.svg");
+    --nds-ico-fill-cancel1:url("../../../imgs/nds/ico/common/ico_cancel1_fill_24.svg");
+    --nds-ico-fill-cancel2:url("../../../imgs/nds/ico/common/ico_cancel2_fill_24.svg");
+    --nds-ico-fill-favorite-star-selected:url("../../../imgs/nds/ico/common/ico_favorite-star_fill_24_selected.svg");
+    --nds-ico-fill-favorite-star-default:url("../../../imgs/nds/ico/common/ico_favorite-star_gray600_fill_24_default.svg");
+
     /* [General Line Icons] - 24px ~ 40px */
     --nds-ico-publish-insurance:url("../../../imgs/nds/ico/common/ico_publish-insurance_line_24.svg");
     --nds-ico-security:url("../../../imgs/nds/ico/common/ico_security_line_24.svg");
@@ -31,7 +130,7 @@
     --nds-ico-o-selected:url("../../../imgs/nds/ico/common/ico_o_line_24_selected.svg");
     --nds-ico-x-selected:url("../../../imgs/nds/ico/common/ico_x_line_24_selected.svg");
     --nds-ico-check:url("../../../imgs/nds/ico/common/ico_check_line_24.svg");
-    --nds-ico-check-disabled:url("../../../imgs/nds/ico/common/ico_check_gray400_line_24_disabled.svg");
+    --nds-ico-check-x24-disabled:url("../../../imgs/nds/ico/common/ico_check_gray400_line_24_disabled.svg");
     --nds-ico-check-filled:url("../../../imgs/nds/ico/common/ico_check_gray50_line_24.svg");
     --nds-ico-pencil:url("../../../imgs/nds/ico/common/ico_pencil_line_24.svg");
     --nds-ico-pencil-disabled:url("../../../imgs/nds/ico/common/ico_pencil_gray400_line_24_disabled.svg");
@@ -278,6 +377,104 @@
 
 /* --- Dark Mode --- */
 .dark-mode {
+    /* [System Line Icons] - Dark Mode */
+    --nds-ico-minus-x12:url("../../../imgs/nds/ico/common/ico_minus_line_12_dk.svg");
+    --nds-ico-minus-x12-disabled:url("../../../imgs/nds/ico/common/ico_minus_gray400_line_12_disabled_dk.svg");
+    --nds-ico-plus-x12:url("../../../imgs/nds/ico/common/ico_plus_line_12_dk.svg");
+    --nds-ico-plus-x12-disabled:url("../../../imgs/nds/ico/common/ico_plus_gray400_line_12_disabled_dk.svg");
+    --nds-ico-arr-right-x12:url("../../../imgs/nds/ico/common/arr_right_line_12_dk.svg");
+    --nds-ico-arr-up:url("../../../imgs/nds/ico/common/arr_up_line_16_dk.svg");
+    --nds-ico-arr-down:url("../../../imgs/nds/ico/common/arr_down_line_16_dk.svg");
+    --nds-ico-arr-right-x16:url("../../../imgs/nds/ico/common/arr_right_line_16_dk.svg");
+    --nds-ico-arr-left:url("../../../imgs/nds/ico/common/arr_left_line_16_dk.svg");
+    --nds-ico-arr-right-x16-gray:url("../../../imgs/nds/ico/common/arr_right_line_gray600_line_16_dk.svg");
+    --nds-ico-arr-left-filled:url("../../../imgs/nds/ico/common/arr_left_gray50_line_16_dk.svg");
+    --nds-ico-arr-right-filled:url("../../../imgs/nds/ico/common/arr_right_gray50_line_16_dk.svg");
+    --nds-ico-delete:url("../../../imgs/nds/ico/common/ico_delete_line_16_dk.svg");
+    --nds-ico-delete-filled:url("../../../imgs/nds/ico/common/ico_delete_gray50_line_16_dk.svg");
+    --nds-ico-refresh-x16:url("../../../imgs/nds/ico/common/ico_refresh_line_16_dk.svg");
+    --nds-ico-check-active:url("../../../imgs/nds/ico/common/ico_check_line_16_active_dk.svg");
+    --nds-ico-check-disabled:url("../../../imgs/nds/ico/common/ico_check_gray400_line_16_disabled_dk.svg");
+    --nds-ico-check-complete:url("../../../imgs/nds/ico/common/ico_check_gray50_line_16_complete_dk.svg");
+    --nds-ico-plus-x16:url("../../../imgs/nds/ico/common/ico_plus_line_16_dk.svg");
+    --nds-ico-copy-info:url("../../../imgs/nds/ico/common/ico_copy-info_gray600_line_16_dk.svg");
+    --nds-ico-download-filled:url("../../../imgs/nds/ico/common/ico_download_gray50_line_16_dk.svg");
+    --nds-ico-favorite-star:url("../../../imgs/nds/ico/common/ico_favorite-star_gray500_line_16_dk.svg");
+    --nds-ico-connector:url("../../../imgs/nds/ico/common/ico_connector_gray500_line_16_dk.svg");
+    --nds-ico-arr-up1:url("../../../imgs/nds/ico/common/arr_up1_line_24_dk.svg");
+    --nds-ico-arr-down1:url("../../../imgs/nds/ico/common/arr_down1_line_24_dk.svg");
+    --nds-ico-arr-up1-disabled:url("../../../imgs/nds/ico/common/arr_up1_gray600_line_24_disabled_dk.svg");
+    --nds-ico-arr-down1-disabled:url("../../../imgs/nds/ico/common/arr_down1_gray600_line_24_disabled_dk.svg");
+    --nds-ico-arr-right1-disabled:url("../../../imgs/nds/ico/common/arr_right1_gray600_line_24_dk.svg");
+    --nds-ico-notice-gray:url("../../../imgs/nds/ico/common/ico_notice_gray600_line_24_dk.svg");
+    --nds-ico-tooltip1:url("../../../imgs/nds/ico/common/ico_tooltip1_gray600_line_24_dk.svg");
+    --nds-ico-full-popup:url("../../../imgs/nds/ico/common/ico_full-popup_line_24_dk.svg");
+    --nds-ico-tooltip2:url("../../../imgs/nds/ico/common/ico_tooltip2_gray600_line_24_dk.svg");
+    --nds-ico-copy:url("../../../imgs/nds/ico/common/ico_copy_line_24_dk.svg");
+    --nds-ico-down2:url("../../../imgs/nds/ico/common/arr_down2_line_24_dk.svg");
+    --nds-ico-up2:url("../../../imgs/nds/ico/common/arr_up2_line_24_dk.svg");
+    --nds-ico-left2:url("../../../imgs/nds/ico/common/arr_left2_line_24_dk.svg");
+    --nds-ico-right2:url("../../../imgs/nds/ico/common/arr_right2_line_24_dk.svg");
+    --nds-ico-left2-disabled:url("../../../imgs/nds/ico/common/arr_left2_gray400_line_24_disabled_dk.svg");
+    --nds-ico-right2-disabled:url("../../../imgs/nds/ico/common/arr_right2_gray400_line_24_disabled_dk.svg");
+    --nds-ico-plus-x24:url("../../../imgs/nds/ico/common/ico_plus_line_24_dk.svg");
+    --nds-ico-minus-x24:url("../../../imgs/nds/ico/common/ico_minus_line_24_dk.svg");
+    --nds-ico-plus-x24-active:url("../../../imgs/nds/ico/common/ico_plus_line_24_active_dk.svg");
+    --nds-ico-minus-x24-active:url("../../../imgs/nds/ico/common/ico_minus_line_24_active_dk.svg");
+    --nds-ico-plus-x24-disabled:url("../../../imgs/nds/ico/common/ico_plus_gray400_line_24_disabled_dk.svg");
+    --nds-ico-minus-x24-disabled:url("../../../imgs/nds/ico/common/ico_minus_gray400_line_24_disabled_dk.svg");
+    --nds-ico-download-gray:url("../../../imgs/nds/ico/common/ico_download_gray600_line_24_dk.svg");
+    --nds-ico-refresh-x24:url("../../../imgs/nds/ico/common/ico_refresh_line_24_dk.svg");
+    --nds-ico-cs-call:url("../../../imgs/nds/ico/common/ico_cs-call_line_24_dk.svg");
+    --nds-ico-filter:url("../../../imgs/nds/ico/common/ico_filter_line_24_dk.svg");
+    --nds-ico-notice:url("../../../imgs/nds/ico/common/ico_notice_line_24_dk.svg");
+    --nds-ico-search:url("../../../imgs/nds/ico/common/ico_search_line_24_dk.svg");
+    --nds-ico-calendar:url("../../../imgs/nds/ico/common/ico_calendar_line_24_dk.svg");
+    --nds-ico-share1:url("../../../imgs/nds/ico/common/ico_share1_line_24_dk.svg");
+    --nds-ico-share2:url("../../../imgs/nds/ico/common/ico_share2_line_24_dk.svg");
+    --nds-ico-shop:url("../../../imgs/nds/ico/common/ico_shop_line_24_dk.svg");
+    --nds-ico-camera:url("../../../imgs/nds/ico/common/ico_camera_line_24_dk.svg");
+    --nds-ico-photo:url("../../../imgs/nds/ico/common/ico_photo_line_24_dk.svg");
+    --nds-ico-download:url("../../../imgs/nds/ico/common/ico_download_line_24_dk.svg");
+    --nds-ico-previous:url("../../../imgs/nds/ico/common/ico_previous_line_24_dk.svg");
+    --nds-ico-close1:url("../../../imgs/nds/ico/common/ico_close1_line_24_dk.svg");
+    --nds-ico-close2:url("../../../imgs/nds/ico/common/ico_close2_line_24_dk.svg");
+    --nds-ico-home-allone:url("../../../imgs/nds/ico/common/ico_home-allone_line_24_dk.svg");
+    --nds-ico-home-smartbanking:url("../../../imgs/nds/ico/common/ico_home-smartbanking_line_24_dk.svg");
+    --nds-ico-cs-center:url("../../../imgs/nds/ico/common/ico_cs-center_line_24_dk.svg");
+    --nds-ico-cart:url("../../../imgs/nds/ico/common/ico_cart_line_24_dk.svg");
+    --nds-ico-check-selected:url("../../../imgs/nds/ico/common/ico_check_line_24_selected_dk.svg");
+    --nds-ico-left3:url("../../../imgs/nds/ico/common/arr_left3_line_24_dk.svg");
+    --nds-ico-left3-filled:url("../../../imgs/nds/ico/common/arr_left3_gray50_line_24_dk.svg");
+    --nds-ico-setup-nuts:url("../../../imgs/nds/ico/common/ico_setup-nuts_line_24_dk.svg");
+    --nds-ico-alarm-notice:url("../../../imgs/nds/ico/common/ico_alarm-notice_line_24_dk.svg");
+    --nds-ico-menu:url("../../../imgs/nds/ico/common/ico_menu_line_24_dk.svg");
+    --nds-ico-menu-filled:url("../../../imgs/nds/ico/common/ico_menu_gray50_line_24_dk.svg");
+    --nds-ico-delete-waste:url("../../../imgs/nds/ico/common/ico_delete-waste_line_24_dk.svg");
+    --nds-ico-input:url("../../../imgs/nds/ico/common/ico_input_line_24_dk.svg");
+    --nds-ico-input2:url("../../../imgs/nds/ico/common/ico_input2_line_24_dk.svg");
+    --nds-ico-admin-dot:url("../../../imgs/nds/ico/common/ico_admin-dot_line_24_dk.svg");
+    --nds-ico-favorite-star1:url("../../../imgs/nds/ico/common/ico_favorite-star1_line_24_dk.svg");
+    --nds-ico-favorite-star2:url("../../../imgs/nds/ico/common/ico_favorite-star2_gray600_line_24_dk.svg");
+    --nds-ico-share-message1:url("../../../imgs/nds/ico/common/ico_share-message1_line_24_dk.svg");
+    --nds-ico-share-message2:url("../../../imgs/nds/ico/common/ico_share-message_line_24_dk.svg");
+    --nds-ico-share-link:url("../../../imgs/nds/ico/common/ico_share-link_line_24_dk.svg");
+    --nds-ico-plus-add:url("../../../imgs/nds/ico/common/ico_plus-add_gray600_line_24_dk.svg");
+    --nds-ico-continue:url("../../../imgs/nds/ico/common/ico_continue_line_24_dk.svg");
+
+    /* [System Fill Icons] - 8px ~ 24px */
+    --nds-ico-fill-indicator-stop-filled:url("../../../imgs/nds/ico/common/ico_indicator-stop_gray50_fill_8_dk.svg");
+    --nds-ico-fill-indicator-play-filled:url("../../../imgs/nds/ico/common/ico_indicator-play_gray50_fill_8_dk.svg");
+    --nds-ico-fill-indicator-play:url("../../../imgs/nds/ico/common/ico_indicator-play_gray600_fill_12_dk.svg");
+    --nds-ico-fill-indicator-stop:url("../../../imgs/nds/ico/common/ico_indicator-stop_gray600_fill_12_dk.svg");
+    --nds-ico-fill-favorite-star-selected:url("../../../imgs/nds/ico/common/ico_favorite-star_fill_16_selected_dk.svg");
+    --nds-ico-fill-tooltip-error:url("../../../imgs/nds/ico/common/ico_tooltip-error_fill_20_dk.svg");
+    --nds-ico-fill-zoom-in:url("../../../imgs/nds/ico/common/ico_zoom-in_fill_24_dk.svg");
+    --nds-ico-fill-cancel1:url("../../../imgs/nds/ico/common/ico_cancel1_fill_24_dk.svg");
+    --nds-ico-fill-cancel2:url("../../../imgs/nds/ico/common/ico_cancel2_fill_24_dk.svg");
+    --nds-ico-fill-favorite-star-selected:url("../../../imgs/nds/ico/common/ico_favorite-star_fill_24_selected_dk.svg");
+    --nds-ico-fill-favorite-star-default:url("../../../imgs/nds/ico/common/ico_favorite-star_gray600_fill_24_default_dk.svg");
+
     /* [General Line Icons] - Dark Mode */
     --nds-ico-publish-insurance:url("../../../imgs/nds/ico/common/ico_publish-insurance_line_24_dk.svg");
     --nds-ico-security:url("../../../imgs/nds/ico/common/ico_security_line_24_dk.svg");
@@ -299,7 +496,7 @@
     --nds-ico-o-selected:url("../../../imgs/nds/ico/common/ico_o_line_24_selected_dk.svg");
     --nds-ico-x-selected:url("../../../imgs/nds/ico/common/ico_x_line_24_selected_dk.svg");
     --nds-ico-check:url("../../../imgs/nds/ico/common/ico_check_line_24_dk.svg");
-    --nds-ico-check-disabled:url("../../../imgs/nds/ico/common/ico_check_gray400_line_24_disabled_dk.svg");
+    --nds-ico-check-x24-disabled:url("../../../imgs/nds/ico/common/ico_check_gray400_line_24_disabled_dk.svg");
     --nds-ico-check-filled:url("../../../imgs/nds/ico/common/ico_check_gray50_line_24_dk.svg");
     --nds-ico-pencil:url("../../../imgs/nds/ico/common/ico_pencil_line_24_dk.svg");
     --nds-ico-pencil-disabled:url("../../../imgs/nds/ico/common/ico_pencil_gray400_line_24_disabled_dk.svg");
@@ -404,7 +601,7 @@
 }
 
 /* ==========================================================================
-   2. Component: Common Icon (.nds-ico)
+   Component: Common Icon (.nds-ico)
    가이드: 기본 클래스(.nds-ico)와 사이즈(-xN), 아이콘 종류를 조합하여 사용
    사용예시: <i class="nds-ico -x24 nds-ico-security"></i>
    ========================================================================== */
@@ -426,11 +623,128 @@
 .nds-ico.-x60 {--nds-icon-size:6.0rem;}
 
 /* ==========================================================================
-   3. Icon Mapping (Variable Binding)
+   Icon Mapping (Variable Binding)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   3.1 General Line Icons
+   System Line Icons
+   -------------------------------------------------------------------------- */
+/* [12*12 Size] */
+.nds-ico-minus-x12::before {background-image:var(--nds-ico-minus-x12);}
+.nds-ico-minus-x12-disabled::before {background-image:var(--nds-ico-minus-x12-disabled);}
+.nds-ico-plus-x12::before {background-image:var(--nds-ico-plus-x12);}
+.nds-ico-plus-x12-disabled::before {background-image:var(--nds-ico-plus-x12-disabled);}
+.nds-ico-arr-right-x12::before {background-image:var(--nds-ico-arr-right-x12);}
+
+/* [16*16 Size] */
+.nds-ico-arr-up::before {background-image:var(--nds-ico-arr-up);}
+.nds-ico-arr-down::before {background-image:var(--nds-ico-arr-down);}
+.nds-ico-arr-right-x16::before {background-image:var(--nds-ico-arr-right-x16);}
+.nds-ico-arr-left::before {background-image:var(--nds-ico-arr-left);}
+.nds-ico-arr-right-x16-gray::before {background-image:var(--nds-ico-arr-right-x16-gray);}
+.nds-ico-arr-left-filled::before {background-image:var(--nds-ico-arr-left-filled);}
+.nds-ico-arr-right-filled::before {background-image:var(--nds-ico-arr-right-filled);}
+.nds-ico-delete::before {background-image:var(--nds-ico-delete);}
+.nds-ico-delete-filled::before {background-image:var(--nds-ico-delete-filled);}
+.nds-ico-refresh-x16::before {background-image:var(--nds-ico-refresh-x16);}
+.nds-ico-check-active::before {background-image:var(--nds-ico-check-active);}
+.nds-ico-check-disabled::before {background-image:var(--nds-ico-check-disabled);}
+.nds-ico-check-complete::before {background-image:var(--nds-ico-check-complete);}
+.nds-ico-plus-x16::before {background-image:var(--nds-ico-plus-x16);}
+.nds-ico-copy-info::before {background-image:var(--nds-ico-copy-info);}
+.nds-ico-download-filled::before {background-image:var(--nds-ico-download-filled);}
+.nds-ico-favorite-star::before {background-image:var(--nds-ico-favorite-star);}
+.nds-ico-connector::before {background-image:var(--nds-ico-connector);}
+
+/* [24*24 Size] */
+.nds-ico-arr-up1::before {background-image:var(--nds-ico-arr-up1);}
+.nds-ico-arr-down1::before {background-image:var(--nds-ico-arr-down1);}
+.nds-ico-arr-up1-disabled::before {background-image:var(--nds-ico-arr-up1-disabled);}
+.nds-ico-arr-down1-disabled::before {background-image:var(--nds-ico-arr-down1-disabled);}
+.nds-ico-arr-right1-disabled::before {background-image:var(--nds-ico-arr-right1-disabled);}
+.nds-ico-notice-gray::before {background-image:var(--nds-ico-notice-gray);}
+.nds-ico-tooltip1::before {background-image:var(--nds-ico-tooltip1);}
+.nds-ico-full-popup::before {background-image:var(--nds-ico-full-popup);}
+.nds-ico-tooltip2::before {background-image:var(--nds-ico-tooltip2);}
+.nds-ico-copy::before {background-image:var(--nds-ico-copy);}
+.nds-ico-down2::before {background-image:var(--nds-ico-down2);}
+.nds-ico-up2::before {background-image:var(--nds-ico-up2);}
+.nds-ico-left2::before {background-image:var(--nds-ico-left2);}
+.nds-ico-right2::before {background-image:var(--nds-ico-right2);}
+.nds-ico-left2-disabled::before {background-image:var(--nds-ico-left2-disabled);}
+.nds-ico-right2-disabled::before {background-image:var(--nds-ico-right2-disabled);}
+.nds-ico-plus-x24::before {background-image:var(--nds-ico-plus-x24);}
+.nds-ico-minus-x24::before {background-image:var(--nds-ico-minus-x24);}
+.nds-ico-plus-x24-active::before {background-image:var(--nds-ico-plus-x24-active);}
+.nds-ico-minus-x24-active::before {background-image:var(--nds-ico-minus-x24-active);}
+.nds-ico-plus-x24-disabled::before {background-image:var(--nds-ico-plus-x24-disabled);}
+.nds-ico-minus-x24-disabled::before {background-image:var(--nds-ico-minus-x24-disabled);}
+.nds-ico-download-gray::before {background-image:var(--nds-ico-download-gray);}
+.nds-ico-refresh-x24::before {background-image:var(--nds-ico-refresh-x24);}
+.nds-ico-cs-call::before {background-image:var(--nds-ico-cs-call);}
+.nds-ico-filter::before {background-image:var(--nds-ico-filter);}
+.nds-ico-notice::before {background-image:var(--nds-ico-notice);}
+.nds-ico-search::before {background-image:var(--nds-ico-search);}
+.nds-ico-calendar::before {background-image:var(--nds-ico-calendar);}
+.nds-ico-share1::before {background-image:var(--nds-ico-share1);}
+.nds-ico-share2::before {background-image:var(--nds-ico-share2);}
+.nds-ico-shop::before {background-image:var(--nds-ico-shop);}
+.nds-ico-camera::before {background-image:var(--nds-ico-camera);}
+.nds-ico-photo::before {background-image:var(--nds-ico-photo);}
+.nds-ico-download::before {background-image:var(--nds-ico-download);}
+.nds-ico-previous::before {background-image:var(--nds-ico-previous);}
+.nds-ico-close1::before {background-image:var(--nds-ico-close1);}
+.nds-ico-close2::before {background-image:var(--nds-ico-close2);}
+.nds-ico-home-allone::before {background-image:var(--nds-ico-home-allone);}
+.nds-ico-home-smartbanking::before {background-image:var(--nds-ico-home-smartbanking);}
+.nds-ico-cs-center::before {background-image:var(--nds-ico-cs-center);}
+.nds-ico-cart::before {background-image:var(--nds-ico-cart);}
+.nds-ico-check-selected::before {background-image:var(--nds-ico-check-selected);}
+.nds-ico-check-default::before {background-image:var(--nds-ico-check-default);}
+.nds-ico-left3::before {background-image:var(--nds-ico-left3);}
+.nds-ico-left3-filled::before {background-image:var(--nds-ico-left3-filled);}
+.nds-ico-setup-nuts::before {background-image:var(--nds-ico-setup-nuts);}
+.nds-ico-alarm-notice::before {background-image:var(--nds-ico-alarm-notice);}
+.nds-ico-menu::before {background-image:var(--nds-ico-menu);}
+.nds-ico-menu-filled::before {background-image:var(--nds-ico-menu-filled);}
+.nds-ico-delete-waste::before {background-image:var(--nds-ico-delete-waste);}
+.nds-ico-input::before {background-image:var(--nds-ico-input);}
+.nds-ico-input2::before {background-image:var(--nds-ico-input2);}
+.nds-ico-admin-dot::before {background-image:var(--nds-ico-admin-dot);}
+.nds-ico-favorite-star1::before {background-image:var(--nds-ico-favorite-star1);}
+.nds-ico-favorite-star2::before {background-image:var(--nds-ico-favorite-star2);}
+.nds-ico-share-message1::before {background-image:var(--nds-ico-share-message1);}
+.nds-ico-share-message2::before {background-image:var(--nds-ico-share-message2);}
+.nds-ico-share-link::before {background-image:var(--nds-ico-share-link);}
+.nds-ico-plus-add::before {background-image:var(--nds-ico-plus-add);}
+.nds-ico-continue::before {background-image:var(--nds-ico-continue);}
+
+/* --------------------------------------------------------------------------
+   System Fill Icons
+   -------------------------------------------------------------------------- */
+/* [8*8 Size] */
+.nds-ico-fill-indicator-stop-filled::before {background-image:var(--nds-ico-fill-indicator-stop-filled);}
+.nds-ico-fill-indicator-play-filled::before {background-image:var(--nds-ico-fill-indicator-play-filled);}
+
+/* [12*12 Size] */
+.nds-ico-fill-indicator-play::before {background-image:var(--nds-ico-fill-indicator-play);}
+.nds-ico-fill-indicator-stop::before {background-image:var(--nds-ico-fill-indicator-stop);}
+
+/* [16*16 Size] */
+.nds-ico-fill-favorite-star-selected::before {background-image:var(--nds-ico-fill-favorite-star-selected);}
+
+/* [20*20 Size] */
+.nds-ico-fill-tooltip-error::before {background-image:var(--nds-ico-fill-tooltip-error);}
+
+/* [24*24 Size] */
+.nds-ico-fill-zoom-in::before {background-image:var(--nds-ico-fill-zoom-in);}
+.nds-ico-fill-cancel1::before {background-image:var(--nds-ico-fill-cancel1);}
+.nds-ico-fill-cancel2::before {background-image:var(--nds-ico-fill-cancel2);}
+.nds-ico-fill-favorite-star-selected::before {background-image:var(--nds-ico-fill-favorite-star-selected);}
+.nds-ico-fill-favorite-star-default::before {background-image:var(--nds-ico-fill-favorite-star-default);}
+
+/* --------------------------------------------------------------------------
+   General Line Icons
    -------------------------------------------------------------------------- */
 /* [24*24 Size] */
 .nds-ico-publish-insurance::before {background-image:var(--nds-ico-publish-insurance);}
@@ -453,7 +767,7 @@
 .nds-ico-o-selected::before {background-image:var(--nds-ico-o-selected);}
 .nds-ico-x-selected::before {background-image:var(--nds-ico-x-selected);}
 .nds-ico-check::before {background-image:var(--nds-ico-check);}
-.nds-ico-check-disabled::before {background-image:var(--nds-ico-check-disabled);}
+.nds-ico-check-disabled::before {background-image:var(--nds-ico-check-x24-disabled);}
 .nds-ico-check-filled::before {background-image:var(--nds-ico-check-filled);}
 .nds-ico-pencil::before {background-image:var(--nds-ico-pencil);}
 .nds-ico-pencil-disabled::before {background-image:var(--nds-ico-pencil-disabled);}
@@ -526,7 +840,7 @@
 .nds-ico-franchise-qr::before {background-image:var(--nds-ico-franchise-qr);}
 
 /* --------------------------------------------------------------------------
-   3.2 General Fill Icons
+   General Fill Icons
    -------------------------------------------------------------------------- */
 /* [12*12 Size] */
 .nds-ico-fill-next-arrow::before {background-image:var(--nds-ico-fill-next-arrow);}
@@ -705,7 +1019,7 @@
 .nds-ico-fill-joint-certificate::before {background-image:var(--nds-ico-fill-joint-certificate);}
 
 /* --------------------------------------------------------------------------
-   3.3 Tabbar Icons
+   Tabbar Icons
    -------------------------------------------------------------------------- */
 /* [28*28 Size] */
 .nds-ico-tabbar-home::before {background-image:var(--nds-ico-tabbar-home);}
@@ -728,7 +1042,7 @@
 .nds-ico-tabbar-fill-talk-smart::before {background-image:var(--nds-ico-tabbar-fill-talk-smart);}
 
 /* --------------------------------------------------------------------------
-   3.4 Flags (Country Codes)
+   Flags (Country Codes)
    -------------------------------------------------------------------------- */
 /* TODO: 디자인 확인 필요 (여백 조정 등) */
 /* 
@@ -737,195 +1051,195 @@
     그리고 이 여백은 list 컴포넌트에서 제어하는게 맞는듯.
 */
 /* .nds-ico[data-countrycode]::before {margin-right:.6rem;} */
-.nds-ico[data-countrycode="000"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-south-korea_24.svg);}            /* KRW(대한민국 원) */
-.nds-ico[data-countrycode="001"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-usa_24.svg);}                    /* USD(미국 달러) */
-.nds-ico[data-countrycode="002"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-japan_24.svg);}                  /* JPY(일본 엔) */
-.nds-ico[data-countrycode="003"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-eu_24.svg);}                     /* EUR(유럽연합 유로) */
-.nds-ico[data-countrycode="004"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-china_24.svg);}                  /* CNY(중국 위안) */
-.nds-ico[data-countrycode="005"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-uk_24.svg);}                     /* GBP(영국 파운드) */
-.nds-ico[data-countrycode="006"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-swiss_24.svg);}                  /* CHF(스위스 프랑) */
-.nds-ico[data-countrycode="007"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-canada_24.svg);}                 /* CAD(캐나다 달러) */
-.nds-ico[data-countrycode="008"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-hongkong_24.svg);}               /* HKD(홍콩 달러) */
-.nds-ico[data-countrycode="009"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-sweden_24.svg);}                 /* SEK(스웨덴 크로네) */
-.nds-ico[data-countrycode="010"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-australia_24.svg);}              /* AUD(호주 달러) */
-.nds-ico[data-countrycode="011"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-denmark_24.svg);}                /* DKK(덴마크 크로네) */
-.nds-ico[data-countrycode="012"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-norwey_24.svg);}                 /* NOK(노르웨이 크로네) */
-.nds-ico[data-countrycode="013"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-saudi_24.svg);}                  /* SAR(사우디아라비아 리얄) */
-.nds-ico[data-countrycode="014"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-kuwait_24.svg);}                 /* KWE(쿠웨이트 디나르) */
-.nds-ico[data-countrycode="015"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-bahrain_24.svg);}                /* BHD(바레인 디나리) */
-.nds-ico[data-countrycode="016"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-uae_24.svg);}                    /* AED(아랍에미리트 디히람) */
-.nds-ico[data-countrycode="017"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-singapore_24.svg);}              /* SGD(싱가포르 달러) */
-.nds-ico[data-countrycode="018"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-malaysia_24.svg);}               /* MYR(말레이시아 링기트) */
-.nds-ico[data-countrycode="019"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-newzealand_24.svg);}             /* NZD(뉴질랜드 달러) */
-.nds-ico[data-countrycode="020"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-thailand_24.svg);}               /* THB(태국 바트) */
-.nds-ico[data-countrycode="021"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-indonesia_24.svg);}              /* IDR(인도네시아 루피아) */
-.nds-ico[data-countrycode="022"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-taiwan_24.svg);}                 /* TWD(대만 달러) */
-.nds-ico[data-countrycode="023"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-philippines_24.svg);}            /* PHP(필리핀 페소) */
-.nds-ico[data-countrycode="024"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-india_24.svg);}                  /* INR(인도 루피) */
-.nds-ico[data-countrycode="025"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-russia_24.svg);}                 /* RUB(러시아 루블) */
-.nds-ico[data-countrycode="026"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-poland_24.svg);}                 /* PLN(폴란드 즈워티) */
-.nds-ico[data-countrycode="027"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-south-africa_24.svg);}           /* ZAR(남아프리카공화국 랜드) */
-.nds-ico[data-countrycode="028"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-mexico_24.svg);}                 /* MXN(멕시코 페소) */
-.nds-ico[data-countrycode="029"]::before {background-image:url(../../../imgs/nds/ico/flag/img_flag-vietnam_24.svg);}                /* VND(베트남 동) */
+.nds-ico[data-countrycode="000"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-south-korea_24.svg");}            /* KRW(대한민국 원) */
+.nds-ico[data-countrycode="001"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-usa_24.svg");}                    /* USD(미국 달러) */
+.nds-ico[data-countrycode="002"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-japan_24.svg");}                  /* JPY(일본 엔) */
+.nds-ico[data-countrycode="003"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-eu_24.svg");}                     /* EUR(유럽연합 유로) */
+.nds-ico[data-countrycode="004"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-china_24.svg");}                  /* CNY(중국 위안) */
+.nds-ico[data-countrycode="005"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-uk_24.svg");}                     /* GBP(영국 파운드) */
+.nds-ico[data-countrycode="006"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-swiss_24.svg");}                  /* CHF(스위스 프랑) */
+.nds-ico[data-countrycode="007"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-canada_24.svg");}                 /* CAD(캐나다 달러) */
+.nds-ico[data-countrycode="008"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-hongkong_24.svg");}               /* HKD(홍콩 달러) */
+.nds-ico[data-countrycode="009"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-sweden_24.svg");}                 /* SEK(스웨덴 크로네) */
+.nds-ico[data-countrycode="010"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-australia_24.svg");}              /* AUD(호주 달러) */
+.nds-ico[data-countrycode="011"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-denmark_24.svg");}                /* DKK(덴마크 크로네) */
+.nds-ico[data-countrycode="012"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-norwey_24.svg");}                 /* NOK(노르웨이 크로네) */
+.nds-ico[data-countrycode="013"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-saudi_24.svg");}                  /* SAR(사우디아라비아 리얄) */
+.nds-ico[data-countrycode="014"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-kuwait_24.svg");}                 /* KWE(쿠웨이트 디나르) */
+.nds-ico[data-countrycode="015"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-bahrain_24.svg");}                /* BHD(바레인 디나리) */
+.nds-ico[data-countrycode="016"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-uae_24.svg");}                    /* AED(아랍에미리트 디히람) */
+.nds-ico[data-countrycode="017"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-singapore_24.svg");}              /* SGD(싱가포르 달러) */
+.nds-ico[data-countrycode="018"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-malaysia_24.svg");}               /* MYR(말레이시아 링기트) */
+.nds-ico[data-countrycode="019"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-newzealand_24.svg");}             /* NZD(뉴질랜드 달러) */
+.nds-ico[data-countrycode="020"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-thailand_24.svg");}               /* THB(태국 바트) */
+.nds-ico[data-countrycode="021"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-indonesia_24.svg");}              /* IDR(인도네시아 루피아) */
+.nds-ico[data-countrycode="022"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-taiwan_24.svg");}                 /* TWD(대만 달러) */
+.nds-ico[data-countrycode="023"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-philippines_24.svg");}            /* PHP(필리핀 페소) */
+.nds-ico[data-countrycode="024"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-india_24.svg");}                  /* INR(인도 루피) */
+.nds-ico[data-countrycode="025"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-russia_24.svg");}                 /* RUB(러시아 루블) */
+.nds-ico[data-countrycode="026"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-poland_24.svg");}                 /* PLN(폴란드 즈워티) */
+.nds-ico[data-countrycode="027"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-south-africa_24.svg");}           /* ZAR(남아프리카공화국 랜드) */
+.nds-ico[data-countrycode="028"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-mexico_24.svg");}                 /* MXN(멕시코 페소) */
+.nds-ico[data-countrycode="029"]::before {background-image:url("../../../imgs/nds/ico/flag/img_flag-vietnam_24.svg");}                /* VND(베트남 동) */
 
 /* --------------------------------------------------------------------------
-   3.5 Financial Institutions (CI)
+   Financial Institutions (CI)
    -------------------------------------------------------------------------- */
 /* [Banks] */
-.nds-ico[data-bankcode="002"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kdb_56.svg);}                         /* 산업은행 */
-.nds-ico[data-bankcode="003"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-ibk_56.svg);}                         /* 기업은행 */
-.nds-ico[data-bankcode="004"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kb_56.svg);}                          /* 국민은행 */
-.nds-ico[data-bankcode="005"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hana_56.svg);}                        /* 하나은행 */
-.nds-ico[data-bankcode="006"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-ibk_56.svg);}                         /* 국민은행 */
-.nds-ico[data-bankcode="007"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-sh_56.svg);}                          /* 수협은행 */
-.nds-ico[data-bankcode="009"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-cu_56.svg);}                          /* 신협중앙회 */
-.nds-ico[data-bankcode="010"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh_56.svg);}                          /* 농협은행 */
-.nds-ico[data-bankcode="011"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh_56.svg);}                          /* 농협은행 */
-.nds-ico[data-bankcode="094"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 농축협 */
-.nds-ico[data-bankcode="012"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
-.nds-ico[data-bankcode="013"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
-.nds-ico[data-bankcode="014"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
-.nds-ico[data-bankcode="015"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
-.nds-ico[data-bankcode="016"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh_56.svg);}                          /* 농협은행 */
-.nds-ico[data-bankcode="017"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
-.nds-ico[data-bankcode="018"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg);}              /* 지역농축협 */
-.nds-ico[data-bankcode="019"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kb_56.svg);}                          /* 국민은행 */
-.nds-ico[data-bankcode="020"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-woori_56.svg);}                       /* 우리은행 */
-.nds-ico[data-bankcode="021"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg);}                     /* 신한은행 */
-.nds-ico[data-bankcode="022"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-woori_56.svg);}                       /* 우리은행 */
-.nds-ico[data-bankcode="023"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-sc_56.svg);}                          /* sc제일은행 */
-.nds-ico[data-bankcode="024"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-woori_56.svg);}                       /* 우리은행 */
-.nds-ico[data-bankcode="025"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hana_56.svg);}                        /* 하나은행 */
-.nds-ico[data-bankcode="026"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg);}                     /* 신한은행 */
-.nds-ico[data-bankcode="027"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-citi_56.svg);}                        /* 한국씨티은행 */
-.nds-ico[data-bankcode="028"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg);}                     /* 신한은행 */
-.nds-ico[data-bankcode="029"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kb_56.svg);}                          /* 국민은행 */
-.nds-ico[data-bankcode="031"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-im_56.svg);}                          /* 아이엠뱅크(구)대구 */
-.nds-ico[data-bankcode="032"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-bsbnk_56.svg);}                       /* 부산은행 */
-.nds-ico[data-bankcode="034"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kj_56.svg);}                          /* 광주은행 */
-.nds-ico[data-bankcode="035"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-jeju_56.svg);}                        /* 제주은행 */
-.nds-ico[data-bankcode="037"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-jb_56.svg);}                          /* 전북은행 */
-.nds-ico[data-bankcode="039"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-knbnk_56.svg);}                       /* 경남은행 */
-.nds-ico[data-bankcode="045"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg);}                        /* 새마을금고 */
-.nds-ico[data-bankcode="046"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg);}                        /* 새마을금고 */
-.nds-ico[data-bankcode="047"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-cu_56.svg);}                          /* 신협중앙회 */
-.nds-ico[data-bankcode="048"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-cu_56.svg);}                          /* 신협중앙회 */
-.nds-ico[data-bankcode="049"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-cu_56.svg);}                          /* 신협중앙회 */
-.nds-ico[data-bankcode="050"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-sb_56.svg);}                          /* 상호저축은행 */
-.nds-ico[data-bankcode="053"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-citi_56.svg);}                        /* 씨티은행 */
-.nds-ico[data-bankcode="054"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hsbc_56.svg);}                        /* HSBC은행 */
-.nds-ico[data-bankcode="055"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-deutsche_56.svg);}                    /* 도이치은행 */
-.nds-ico[data-bankcode="057"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-jp_56.svg);}                          /* JP모건체이스은행 */
-.nds-ico[data-bankcode="060"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-boa_56.svg);}                         /* 뱅크오브아메리카 */
-.nds-ico[data-bankcode="061"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-bnp_56.svg);}                         /* BNP파리바은행 */
-.nds-ico[data-bankcode="062"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-icbc_56.svg);}                        /* 중국공상은행 */
-.nds-ico[data-bankcode="063"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-boc_56.svg);}                         /* 중국은행 */
-.nds-ico[data-bankcode="064"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-nfcf_56.svg);}                        /* 산림조합 */
-.nds-ico[data-bankcode="067"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-ccb_56.svg);}                         /* 중국건설은행 */
-.nds-ico[data-bankcode="081"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hana_56.svg);}                        /* 하나은행 */
-.nds-ico[data-bankcode="071"]::before {background-image:url(../../../imgs/nds/ico/ci/img_epost-nh_56.svg);}                         /* 우체국 */
-.nds-ico[data-bankcode="072"]::before {background-image:url(../../../imgs/nds/ico/ci/img_epost-nh_56.svg);}                         /* 우체국 */
-.nds-ico[data-bankcode="073"]::before {background-image:url(../../../imgs/nds/ico/ci/img_epost-nh_56.svg);}                         /* 우체국 */
-.nds-ico[data-bankcode="074"]::before {background-image:url(../../../imgs/nds/ico/ci/img_epost-nh_56.svg);}                         /* 우체국 */
-.nds-ico[data-bankcode="075"]::before {background-image:url(../../../imgs/nds/ico/ci/img_epost-nh_56.svg);}                         /* 우체국 */
-.nds-ico[data-bankcode="078"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kb_56.svg);}                          /* 국민은행 */
-.nds-ico[data-bankcode="079"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kb_56.svg);}                          /* 국민은행 */
-.nds-ico[data-bankcode="080"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hana_56.svg);}                        /* 하나은행 */
-.nds-ico[data-bankcode="082"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-hana_56.svg);}                        /* 하나은행 */
-.nds-ico[data-bankcode="083"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-woori_56.svg);}                       /* 우리은행 */
-.nds-ico[data-bankcode="084"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-woori_56.svg);}                       /* 우리은행 */
-.nds-ico[data-bankcode="085"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg);}                        /* 새마을금고 */
-.nds-ico[data-bankcode="086"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg);}                        /* 새마을금고 */
-.nds-ico[data-bankcode="088"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg);}                     /* 신한은행 */
-.nds-ico[data-bankcode="089"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kbank_56.svg);}                       /* 케이뱅크 */
-.nds-ico[data-bankcode="090"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-kakao_56.svg);}                       /* 카카오뱅크 */
-.nds-ico[data-bankcode="092"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-toss_56.svg);}                        /* 토스뱅크 */
-.nds-ico[data-bankcode="093"]::before {background-image:url(../../../imgs/nds/ico/ci/img_bank-account_56.svg);}                     /* 전체계좌 */
+.nds-ico[data-bankcode="002"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kdb_56.svg");}                         /* 산업은행 */
+.nds-ico[data-bankcode="003"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-ibk_56.svg");}                         /* 기업은행 */
+.nds-ico[data-bankcode="004"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kb_56.svg");}                          /* 국민은행 */
+.nds-ico[data-bankcode="005"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-hana_56.svg");}                        /* 하나은행 */
+.nds-ico[data-bankcode="006"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-ibk_56.svg");}                         /* 국민은행 */
+.nds-ico[data-bankcode="007"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-sh_56.svg");}                          /* 수협은행 */
+.nds-ico[data-bankcode="009"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-cu_56.svg");}                          /* 신협중앙회 */
+.nds-ico[data-bankcode="010"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-nh_56.svg");}                          /* 농협은행 */
+.nds-ico[data-bankcode="011"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-nh_56.svg");}                          /* 농협은행 */
+.nds-ico[data-bankcode="094"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg");}              /* 농축협 */
+.nds-ico[data-bankcode="012"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg");}              /* 지역농축협 */
+.nds-ico[data-bankcode="013"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg");}              /* 지역농축협 */
+.nds-ico[data-bankcode="014"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg");}              /* 지역농축협 */
+.nds-ico[data-bankcode="015"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg");}              /* 지역농축협 */
+.nds-ico[data-bankcode="016"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-nh_56.svg");}                          /* 농협은행 */
+.nds-ico[data-bankcode="017"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg");}              /* 지역농축협 */
+.nds-ico[data-bankcode="018"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-nh-agriculture_56.svg");}              /* 지역농축협 */
+.nds-ico[data-bankcode="019"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kb_56.svg");}                          /* 국민은행 */
+.nds-ico[data-bankcode="020"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-woori_56.svg");}                       /* 우리은행 */
+.nds-ico[data-bankcode="021"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg");}                     /* 신한은행 */
+.nds-ico[data-bankcode="022"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-woori_56.svg");}                       /* 우리은행 */
+.nds-ico[data-bankcode="023"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-sc_56.svg");}                          /* sc제일은행 */
+.nds-ico[data-bankcode="024"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-woori_56.svg");}                       /* 우리은행 */
+.nds-ico[data-bankcode="025"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-hana_56.svg");}                        /* 하나은행 */
+.nds-ico[data-bankcode="026"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg");}                     /* 신한은행 */
+.nds-ico[data-bankcode="027"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-citi_56.svg");}                        /* 한국씨티은행 */
+.nds-ico[data-bankcode="028"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg");}                     /* 신한은행 */
+.nds-ico[data-bankcode="029"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kb_56.svg");}                          /* 국민은행 */
+.nds-ico[data-bankcode="031"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-im_56.svg");}                          /* 아이엠뱅크(구)대구 */
+.nds-ico[data-bankcode="032"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-bsbnk_56.svg");}                       /* 부산은행 */
+.nds-ico[data-bankcode="034"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kj_56.svg");}                          /* 광주은행 */
+.nds-ico[data-bankcode="035"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-jeju_56.svg");}                        /* 제주은행 */
+.nds-ico[data-bankcode="037"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-jb_56.svg");}                          /* 전북은행 */
+.nds-ico[data-bankcode="039"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-knbnk_56.svg");}                       /* 경남은행 */
+.nds-ico[data-bankcode="045"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg");}                        /* 새마을금고 */
+.nds-ico[data-bankcode="046"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg");}                        /* 새마을금고 */
+.nds-ico[data-bankcode="047"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-cu_56.svg");}                          /* 신협중앙회 */
+.nds-ico[data-bankcode="048"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-cu_56.svg");}                          /* 신협중앙회 */
+.nds-ico[data-bankcode="049"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-cu_56.svg");}                          /* 신협중앙회 */
+.nds-ico[data-bankcode="050"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-sb_56.svg");}                          /* 상호저축은행 */
+.nds-ico[data-bankcode="053"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-citi_56.svg");}                        /* 씨티은행 */
+.nds-ico[data-bankcode="054"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-hsbc_56.svg");}                        /* HSBC은행 */
+.nds-ico[data-bankcode="055"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-deutsche_56.svg");}                    /* 도이치은행 */
+.nds-ico[data-bankcode="057"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-jp_56.svg");}                          /* JP모건체이스은행 */
+.nds-ico[data-bankcode="060"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-boa_56.svg");}                         /* 뱅크오브아메리카 */
+.nds-ico[data-bankcode="061"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-bnp_56.svg");}                         /* BNP파리바은행 */
+.nds-ico[data-bankcode="062"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-icbc_56.svg");}                        /* 중국공상은행 */
+.nds-ico[data-bankcode="063"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-boc_56.svg");}                         /* 중국은행 */
+.nds-ico[data-bankcode="064"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-nfcf_56.svg");}                        /* 산림조합 */
+.nds-ico[data-bankcode="067"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-ccb_56.svg");}                         /* 중국건설은행 */
+.nds-ico[data-bankcode="081"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-hana_56.svg");}                        /* 하나은행 */
+.nds-ico[data-bankcode="071"]::before {background-image:url("../../../imgs/nds/ico/ci/img_epost-nh_56.svg");}                         /* 우체국 */
+.nds-ico[data-bankcode="072"]::before {background-image:url("../../../imgs/nds/ico/ci/img_epost-nh_56.svg");}                         /* 우체국 */
+.nds-ico[data-bankcode="073"]::before {background-image:url("../../../imgs/nds/ico/ci/img_epost-nh_56.svg");}                         /* 우체국 */
+.nds-ico[data-bankcode="074"]::before {background-image:url("../../../imgs/nds/ico/ci/img_epost-nh_56.svg");}                         /* 우체국 */
+.nds-ico[data-bankcode="075"]::before {background-image:url("../../../imgs/nds/ico/ci/img_epost-nh_56.svg");}                         /* 우체국 */
+.nds-ico[data-bankcode="078"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kb_56.svg");}                          /* 국민은행 */
+.nds-ico[data-bankcode="079"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kb_56.svg");}                          /* 국민은행 */
+.nds-ico[data-bankcode="080"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-hana_56.svg");}                        /* 하나은행 */
+.nds-ico[data-bankcode="082"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-hana_56.svg");}                        /* 하나은행 */
+.nds-ico[data-bankcode="083"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-woori_56.svg");}                       /* 우리은행 */
+.nds-ico[data-bankcode="084"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-woori_56.svg");}                       /* 우리은행 */
+.nds-ico[data-bankcode="085"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg");}                        /* 새마을금고 */
+.nds-ico[data-bankcode="086"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kfcc_56.svg");}                        /* 새마을금고 */
+.nds-ico[data-bankcode="088"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-shinhan_56.svg");}                     /* 신한은행 */
+.nds-ico[data-bankcode="089"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kbank_56.svg");}                       /* 케이뱅크 */
+.nds-ico[data-bankcode="090"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-kakao_56.svg");}                       /* 카카오뱅크 */
+.nds-ico[data-bankcode="092"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-toss_56.svg");}                        /* 토스뱅크 */
+.nds-ico[data-bankcode="093"]::before {background-image:url("../../../imgs/nds/ico/ci/img_bank-account_56.svg");}                     /* 전체계좌 */
 
 /* [Stock Firms] */
-.nds-ico[data-bankcode="209"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-myasset_56.svg);}                    /* 유안타증권 */
-.nds-ico[data-bankcode="218"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-kb_56.svg);}                         /* KB증권 */
-.nds-ico[data-bankcode="221"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-ssi_56.svg);}                        /* 상상인증권 */
-.nds-ico[data-bankcode="224"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-bnk_56.svg);}                        /* BNK증권 */
-.nds-ico[data-bankcode="225"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-ibk_56.svg);}                        /* IBK투자증권 */
-.nds-ico[data-bankcode="227"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-daol_56.svg);}                       /* 다올투자증권 */
-.nds-ico[data-bankcode="237"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-miraeasset_56.svg);}                 /* 미래에셋증권 */
-.nds-ico[data-bankcode="238"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-miraeasset_56.svg);}                 /* 미래에셋증권 */
-.nds-ico[data-bankcode="256"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-samsung_56.svg);}                    /* 삼성증권 */
-.nds-ico[data-bankcode="243"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-ki_56.svg);}                         /* 한국투자증권 */
-.nds-ico[data-bankcode="247"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-nh_56.svg);}                         /* NH투자증권 */
-.nds-ico[data-bankcode="261"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-kyobo_56.svg);}                      /* 교보증권 */
-.nds-ico[data-bankcode="262"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-im_56.svg);}                         /* 아이엠증권 */
-.nds-ico[data-bankcode="263"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-hmsec_56.svg);}                      /* 현대차증권 */
-.nds-ico[data-bankcode="264"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-kiwoom_56.svg);}                     /* 키움증권 */
-.nds-ico[data-bankcode="265"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-ls_56.svg);}                         /* LS증권 */
-.nds-ico[data-bankcode="266"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-sk_56.svg);}                         /* SK증권 */
-.nds-ico[data-bankcode="267"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-daishin_56.svg);}                    /* 대신증권 */
-.nds-ico[data-bankcode="269"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-hanhwa_56.svg);}                     /* 한화투자증권 */
-.nds-ico[data-bankcode="270"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-hana_56.svg);}                       /* 하나증권 */
-.nds-ico[data-bankcode="271"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-toss_56.svg);}                       /* 토스증권 */
-.nds-ico[data-bankcode="278"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-shinhan_56.svg);}                    /* 신한투자증권 */
-.nds-ico[data-bankcode="279"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-db_56.svg);}                         /* DB금융투자 */
-.nds-ico[data-bankcode="280"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-eugene_56.svg);}                     /* 유진투자증권 */
-.nds-ico[data-bankcode="287"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-meritz_56.svg);}                     /* 메리츠증권 */
-.nds-ico[data-bankcode="288"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-kakaopay_56.svg);}                   /* 카카오페이증권 */
-.nds-ico[data-bankcode="289"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-nh_56.svg);}                         /* NH투자증권(농협증권) */
-.nds-ico[data-bankcode="290"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-bookook_56.svg);}                    /* 부국증권 */
-.nds-ico[data-bankcode="291"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-shinyoung_56.svg);}                  /* 신영증권 */
-.nds-ico[data-bankcode="292"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-cape_56.svg);}                       /* 케이프투자증권 */
-.nds-ico[data-bankcode="294"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-woori_56.svg);}                      /* 우리투자증권 */
-.nds-ico[data-bankcode="295"]::before {background-image:url(../../../imgs/nds/ico/ci/img_stock-woori_56.svg);}                      /* 우리투자증권 */
+.nds-ico[data-bankcode="209"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-myasset_56.svg");}                    /* 유안타증권 */
+.nds-ico[data-bankcode="218"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-kb_56.svg");}                         /* KB증권 */
+.nds-ico[data-bankcode="221"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-ssi_56.svg");}                        /* 상상인증권 */
+.nds-ico[data-bankcode="224"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-bnk_56.svg");}                        /* BNK증권 */
+.nds-ico[data-bankcode="225"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-ibk_56.svg");}                        /* IBK투자증권 */
+.nds-ico[data-bankcode="227"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-daol_56.svg");}                       /* 다올투자증권 */
+.nds-ico[data-bankcode="237"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-miraeasset_56.svg");}                 /* 미래에셋증권 */
+.nds-ico[data-bankcode="238"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-miraeasset_56.svg");}                 /* 미래에셋증권 */
+.nds-ico[data-bankcode="256"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-samsung_56.svg");}                    /* 삼성증권 */
+.nds-ico[data-bankcode="243"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-ki_56.svg");}                         /* 한국투자증권 */
+.nds-ico[data-bankcode="247"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-nh_56.svg");}                         /* NH투자증권 */
+.nds-ico[data-bankcode="261"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-kyobo_56.svg");}                      /* 교보증권 */
+.nds-ico[data-bankcode="262"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-im_56.svg");}                         /* 아이엠증권 */
+.nds-ico[data-bankcode="263"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-hmsec_56.svg");}                      /* 현대차증권 */
+.nds-ico[data-bankcode="264"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-kiwoom_56.svg");}                     /* 키움증권 */
+.nds-ico[data-bankcode="265"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-ls_56.svg");}                         /* LS증권 */
+.nds-ico[data-bankcode="266"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-sk_56.svg");}                         /* SK증권 */
+.nds-ico[data-bankcode="267"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-daishin_56.svg");}                    /* 대신증권 */
+.nds-ico[data-bankcode="269"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-hanhwa_56.svg");}                     /* 한화투자증권 */
+.nds-ico[data-bankcode="270"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-hana_56.svg");}                       /* 하나증권 */
+.nds-ico[data-bankcode="271"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-toss_56.svg");}                       /* 토스증권 */
+.nds-ico[data-bankcode="278"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-shinhan_56.svg");}                    /* 신한투자증권 */
+.nds-ico[data-bankcode="279"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-db_56.svg");}                         /* DB금융투자 */
+.nds-ico[data-bankcode="280"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-eugene_56.svg");}                     /* 유진투자증권 */
+.nds-ico[data-bankcode="287"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-meritz_56.svg");}                     /* 메리츠증권 */
+.nds-ico[data-bankcode="288"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-kakaopay_56.svg");}                   /* 카카오페이증권 */
+.nds-ico[data-bankcode="289"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-nh_56.svg");}                         /* NH투자증권(농협증권) */
+.nds-ico[data-bankcode="290"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-bookook_56.svg");}                    /* 부국증권 */
+.nds-ico[data-bankcode="291"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-shinyoung_56.svg");}                  /* 신영증권 */
+.nds-ico[data-bankcode="292"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-cape_56.svg");}                       /* 케이프투자증권 */
+.nds-ico[data-bankcode="294"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-woori_56.svg");}                      /* 우리투자증권 */
+.nds-ico[data-bankcode="295"]::before {background-image:url("../../../imgs/nds/ico/ci/img_stock-woori_56.svg");}                      /* 우리투자증권 */
 
 /* [Card Companies] */
 /* TODO: 디자인 확인 필요. NDS에는 없음. */
-.nds-ico[data-bankcode="041"]::before {background-image:url(../../../imgs/ico/ci/ci_woori.svg);}                                     /* 우리카드 */
-.nds-ico[data-bankcode="365"]::before {background-image:url(../../../imgs/ico/ci/ci_samsungcard.svg);}                               /* 삼성카드 */
-.nds-ico[data-bankcode="366"]::before {background-image:url(../../../imgs/ico/ci/ci_shinhan.svg);}                                   /* 신한카드 */
-.nds-ico[data-bankcode="367"]::before {background-image:url(../../../imgs/ico/ci/ci_hyundaicard.svg);}                               /* 현대카드 */
-.nds-ico[data-bankcode="368"]::before {background-image:url(../../../imgs/ico/ci/ci_lottecard.svg);}                                 /* 롯데카드 */
-.nds-ico[data-bankcode="374"]::before {background-image:url(../../../imgs/ico/ci/ci_hana.svg);}                                      /* 하나카드 */
-.nds-ico[data-bankcode="381"]::before {background-image:url(../../../imgs/ico/ci/ci_kb.svg);}                                        /* KB국민카드 */
+.nds-ico[data-bankcode="041"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_woori.svg");}                                     /* 우리카드 */
+.nds-ico[data-bankcode="365"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_samsungcard.svg");}                               /* 삼성카드 */
+.nds-ico[data-bankcode="366"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_shinhan.svg");}                                   /* 신한카드 */
+.nds-ico[data-bankcode="367"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_hyundaicard.svg");}                               /* 현대카드 */
+.nds-ico[data-bankcode="368"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_lottecard.svg");}                                 /* 롯데카드 */
+.nds-ico[data-bankcode="374"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_hana.svg");}                                      /* 하나카드 */
+.nds-ico[data-bankcode="381"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_kb.svg");}                                        /* KB국민카드 */
 
 /* [Capital Companies] */
 /* TODO: 디자인 확인 필요. NDS에는 없음. */
-.nds-ico[data-bankcode="299"]::before {background-image:url(../../../imgs/ico/ci/ci_woori.svg);}                                     /* 우리금융캐피탈 */
-.nds-ico[data-bankcode="301"]::before {background-image:url(../../../imgs/ico/ci/ci_dgb.svg);}                                       /* DGB캐피탈 */
-.nds-ico[data-bankcode="302"]::before {background-image:url(../../../imgs/ico/ci/ci_bnk.svg);}                                       /* BNK캐피탈 */
-.nds-ico[data-bankcode="303"]::before {background-image:url(../../../imgs/ico/ci/ci_lotte.svg);}                                     /* 롯데캐피탈 */
-.nds-ico[data-bankcode="304"]::before {background-image:url(../../../imgs/ico/ci/ci_hyundaicapital.svg);}                            /* 현대캐피탈 */
-.nds-ico[data-bankcode="305"]::before {background-image:url(../../../imgs/ico/ci/ci_jb.svg);}                                        /* 우리캐피탈 */
-.nds-ico[data-bankcode="306"]::before {background-image:url(../../../imgs/ico/ci/ci_nh.svg);}                                        /* NH캐피탈 */
-.nds-ico[data-bankcode="308"]::before {background-image:url(../../../imgs/ico/ci/ci_kb.svg);}                                        /* KB캐피탈 */
-.nds-ico[data-bankcode="310"]::before {background-image:url(../../../imgs/ico/ci/ci_hana.svg);}                                      /* 하나캐피탈 */
+.nds-ico[data-bankcode="299"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_woori.svg");}                                     /* 우리금융캐피탈 */
+.nds-ico[data-bankcode="301"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_dgb.svg");}                                       /* DGB캐피탈 */
+.nds-ico[data-bankcode="302"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_bnk.svg");}                                       /* BNK캐피탈 */
+.nds-ico[data-bankcode="303"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_lotte.svg");}                                     /* 롯데캐피탈 */
+.nds-ico[data-bankcode="304"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_hyundaicapital.svg");}                            /* 현대캐피탈 */
+.nds-ico[data-bankcode="305"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_jb.svg");}                                        /* 우리캐피탈 */
+.nds-ico[data-bankcode="306"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_nh.svg");}                                        /* NH캐피탈 */
+.nds-ico[data-bankcode="308"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_kb.svg");}                                        /* KB캐피탈 */
+.nds-ico[data-bankcode="310"]::before {background-image:url("../../../../imgs/nds/ico/ci/ci_hana.svg");}                                      /* 하나캐피탈 */
 
 /* [Insurance Companies] */
-.nds-ico[data-bankcode="401"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hana-life_56.svg);}          /* 하나손해보험 */
-.nds-ico[data-bankcode="562"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-myangel_56.svg);}            /* 동양생명보험 */
-.nds-ico[data-bankcode="563"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hk-fire_56.svg);}            /* 흥국화재해상 */
-.nds-ico[data-bankcode="431"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-miraeasset_56.svg);}         /* 미래에셋생명보험 */
-.nds-ico[data-bankcode="432"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hanhwa-life_56.svg);}        /* 한화생명보험 */
-.nds-ico[data-bankcode="433"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-kyobo-panet_56.svg);}        /* 교보라이프플래닛 */
-.nds-ico[data-bankcode="434"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-fubon_56.svg);}              /* 푸본현대생명보험 */
-.nds-ico[data-bankcode="435"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-lina_56.svg);}               /* 라이나생명보험 */
-.nds-ico[data-bankcode="436"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-kyobo-life_56.svg);}         /* 교보생명보험 */
-.nds-ico[data-bankcode="437"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-abl_56.svg);}                /* 에이비엘생명보험 */
-.nds-ico[data-bankcode="438"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-shinhan-life_56.svg);}       /* 신한생명보험 */
-.nds-ico[data-bankcode="439"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-kb-life_56.svg);}            /* KB생명보험 */
-.nds-ico[data-bankcode="456"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-nh-life_56.svg);}            /* 농협생명보험 */
-.nds-ico[data-bankcode="441"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-samsung-fire_56.svg);}       /* 삼성화재 */
-.nds-ico[data-bankcode="442"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hi_56.svg);}                 /* 현대해상화제보험 */
-.nds-ico[data-bankcode="444"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-kb-insure_56.svg);}          /* KB손해보험 */
-.nds-ico[data-bankcode="445"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-lotte_56.svg);}              /* 롯데손해보험 */
-.nds-ico[data-bankcode="448"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-meritz_56.svg);}             /* 메리츠화재해상보험 */
-.nds-ico[data-bankcode="449"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-nh-fire_56.svg);}            /* 농협손해보험 */
-.nds-ico[data-bankcode="452"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-samsung-life_56.svg);}       /* 삼성생명 */
-.nds-ico[data-bankcode="453"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hk-life_56.svg);}            /* 흥국생명보험 */
-.nds-ico[data-bankcode="454"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-hanhwa-insure_56.svg);}      /* 한화손해보험 */
-.nds-ico[data-bankcode="456"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-im_56.svg);}                 /* 아이엠보험 */
-.nds-ico[data-bankcode="457"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-db-life_56.svg);}            /* DB생명보험 */
-.nds-ico[data-bankcode="458"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-kdb_56.svg);}                /* KDB생명보험 */
-.nds-ico[data-bankcode="L78"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-bnp_56.svg);}                /* 비엔피파라바카디프 생명보험 */
-.nds-ico[data-bankcode="N13"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-db-ins_56.svg);}             /* DB손해보험 */
-.nds-ico[data-bankcode="L41"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-ibk_56.svg);}                /* IBK연금보험 */
-.nds-ico[data-bankcode="L72"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-metlife_56.svg);}            /* 메트라이프생명 */
-.nds-ico[data-bankcode="L73"]::before {background-image:url(../../../imgs/nds/ico/ci/img_insurance-dgb_56.svg);}                /* DGB생명보험 */
+.nds-ico[data-bankcode="401"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-hana-life_56.svg");}          /* 하나손해보험 */
+.nds-ico[data-bankcode="562"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-myangel_56.svg");}            /* 동양생명보험 */
+.nds-ico[data-bankcode="563"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-hk-fire_56.svg");}            /* 흥국화재해상 */
+.nds-ico[data-bankcode="431"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-miraeasset_56.svg");}         /* 미래에셋생명보험 */
+.nds-ico[data-bankcode="432"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-hanhwa-life_56.svg");}        /* 한화생명보험 */
+.nds-ico[data-bankcode="433"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-kyobo-panet_56.svg");}        /* 교보라이프플래닛 */
+.nds-ico[data-bankcode="434"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-fubon_56.svg");}              /* 푸본현대생명보험 */
+.nds-ico[data-bankcode="435"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-lina_56.svg");}               /* 라이나생명보험 */
+.nds-ico[data-bankcode="436"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-kyobo-life_56.svg");}         /* 교보생명보험 */
+.nds-ico[data-bankcode="437"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-abl_56.svg");}                /* 에이비엘생명보험 */
+.nds-ico[data-bankcode="438"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-shinhan-life_56.svg");}       /* 신한생명보험 */
+.nds-ico[data-bankcode="439"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-kb-life_56.svg");}            /* KB생명보험 */
+.nds-ico[data-bankcode="456"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-nh-life_56.svg");}            /* 농협생명보험 */
+.nds-ico[data-bankcode="441"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-samsung-fire_56.svg");}       /* 삼성화재 */
+.nds-ico[data-bankcode="442"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-hi_56.svg");}                 /* 현대해상화제보험 */
+.nds-ico[data-bankcode="444"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-kb-insure_56.svg");}          /* KB손해보험 */
+.nds-ico[data-bankcode="445"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-lotte_56.svg");}              /* 롯데손해보험 */
+.nds-ico[data-bankcode="448"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-meritz_56.svg");}             /* 메리츠화재해상보험 */
+.nds-ico[data-bankcode="449"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-nh-fire_56.svg");}            /* 농협손해보험 */
+.nds-ico[data-bankcode="452"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-samsung-life_56.svg");}       /* 삼성생명 */
+.nds-ico[data-bankcode="453"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-hk-life_56.svg");}            /* 흥국생명보험 */
+.nds-ico[data-bankcode="454"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-hanhwa-insure_56.svg");}      /* 한화손해보험 */
+.nds-ico[data-bankcode="456"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-im_56.svg");}                 /* 아이엠보험 */
+.nds-ico[data-bankcode="457"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-db-life_56.svg");}            /* DB생명보험 */
+.nds-ico[data-bankcode="458"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-kdb_56.svg");}                /* KDB생명보험 */
+.nds-ico[data-bankcode="L78"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-bnp_56.svg");}                /* 비엔피파라바카디프 생명보험 */
+.nds-ico[data-bankcode="N13"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-db-ins_56.svg");}             /* DB손해보험 */
+.nds-ico[data-bankcode="L41"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-ibk_56.svg");}                /* IBK연금보험 */
+.nds-ico[data-bankcode="L72"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-metlife_56.svg");}            /* 메트라이프생명 */
+.nds-ico[data-bankcode="L73"]::before {background-image:url("../../../imgs/nds/ico/ci/img_insurance-dgb_56.svg");}                /* DGB생명보험 */

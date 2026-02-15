@@ -135,3 +135,6 @@
 .nds-label.-grade4 {border-color:var(--nds-color-border-label-lightblue); color:var(--nds-color-text-label-lightblue);}
 .nds-label.-grade5 {border-color:var(--nds-color-border-label-skyblue); color:var(--nds-color-text-label-skyblue);}
 .nds-label.-grade6 {border-color:var(--nds-color-border-label-navy); color:var(--nds-color-text-label-navy);}
+
+/* [Label - Variant: Text] */
+.nds-label.-form {color:#505050; font-size:1.4rem; line-height:2.2rem; text-align:left;}

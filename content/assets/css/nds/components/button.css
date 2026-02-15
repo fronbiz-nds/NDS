@@ -1,9 +1,14 @@
 /* ============================================================
    button.css
    ---------------------------------------------------------
-   
+   버튼 공통 스타일(Primary, Secondary, Tertiary), 크기 및 CTA 레이아웃 정의
    ========================================================= */
-   
+
+/* ============================================================
+    CSS Variables (Root & Dark Mode)
+    ============================================================ */
+
+/* --- Light Mode (Default) --- */
 :root {
     /* [Button - Primary] */
     --nds-color-text-button-primary-default:#FFFFFF;
@@ -94,7 +99,7 @@
    ============================================================ */
 
 /* [Button - Base] */
-.nds-button {display:inline-flex; justify-content:center; align-items:center; height:4.2rem; padding:0 1.6rem; border:1px solid transparent; border-radius:1.0rem; font-weight:500; font-size:1.6rem; font-family:inherit; font-family:var(--nds-font-base); letter-spacing:-0.02em; text-align:center; vertical-align:middle; white-space:nowrap; cursor:pointer; transition:all 0.3s ease; box-sizing:border-box;}
+.nds-button {display:inline-flex; justify-content:center; align-items:center; height:4.2rem; padding:0 1.6rem; border:1px solid transparent; border-radius:1.0rem; font-weight:500; font-size:1.6rem; font-family:var(--nds-font-base); letter-spacing:-0.02em; text-align:center; vertical-align:middle; white-space:nowrap; cursor:pointer; transition:all 0.3s ease; box-sizing:border-box;}
 
 /* [Button - Variant: Primary] */
 .nds-button.-primary {background-color:var(--nds-color-bg-button-primary-default); color:var(--nds-color-text-button-primary-default);}

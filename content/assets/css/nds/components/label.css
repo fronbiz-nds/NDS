@@ -4,6 +4,11 @@
    
    ========================================================= */
    
+/* ============================================================
+    CSS Variables (Root & Dark Mode)
+    ============================================================ */
+
+/* --- Light Mode (Default) --- */
 :root {
     /* [Label - Red] */
     --nds-color-text-label-red:#D10F0F;
@@ -82,3 +87,51 @@
     --nds-color-text-label-gray:#BFBFBF;
     --nds-color-border-label-gray:#B0B0B0;
 }
+
+/* ============================================================
+   Label (Badge) Component Style
+   ============================================================ */
+
+/* [Label - Base] */
+.nds-label {display:inline-flex; justify-content:center; align-items:center; height:2.0rem; padding:0 0.8rem; border:1px solid transparent; border-radius:var(--nds-border-radius-4); font-weight:500; font-size:1.0rem; line-height:1; font-family:var(--nds-font-base); letter-spacing:-0.02em; vertical-align:middle; white-space:nowrap; box-sizing:border-box;}
+
+/* [Label - Sizes] */
+.nds-label.-lg {height:2.4rem; padding:0 0.8rem; font-size:1.3rem;}
+
+/* [Label - Variant: Line] */
+.nds-label[class*="line-"] {background-color:transparent;}
+
+.nds-label.line-gray {border-color:var(--nds-color-border-label-gray); color:var(--nds-color-text-label-gray);}
+.nds-label.line-red {border-color:var(--nds-color-border-label-red); color:var(--nds-color-text-label-red);}
+.nds-label.line-orange {border-color:var(--nds-color-border-label-orange); color:var(--nds-color-text-label-orange);}
+.nds-label.line-yellow {border-color:var(--nds-color-border-label-yellow); color:var(--nds-color-text-label-yellow);}
+.nds-label.line-green {border-color:var(--nds-color-border-label-green); color:var(--nds-color-text-label-green);}
+.nds-label.line-blue {border-color:var(--nds-color-border-label-blue); color:var(--nds-color-text-label-blue);}
+.nds-label.line-lightblue {border-color:var(--nds-color-border-label-lightblue); color:var(--nds-color-text-label-lightblue);}
+.nds-label.line-skyblue {border-color:var(--nds-color-border-label-skyblue); color:var(--nds-color-text-label-skyblue);}
+.nds-label.line-navy {border-color:var(--nds-color-border-label-navy); color:var(--nds-color-text-label-navy);}
+
+
+/* [Label - Variant: Fill] */
+.nds-label[class*="fill-"] {color:var(--nds-color-base-white);}
+
+.nds-label.fill-gray {border-color:var(--nds-color-bg-label-gray); background-color:var(--nds-color-bg-label-gray); color:var(--nds-color-text-label-gray);}
+.nds-label.fill-red {border-color:var(--nds-color-border-label-red); background-color:var(--nds-color-border-label-red);}
+.nds-label.fill-orange {border-color:var(--nds-color-border-label-orange); background-color:var(--nds-color-border-label-orange);}
+.nds-label.fill-yellow {border-color:var(--nds-color-border-label-yellow); background-color:var(--nds-color-border-label-yellow);}
+.nds-label.fill-green {border-color:var(--nds-color-border-label-green); background-color:var(--nds-color-border-label-green);}
+.nds-label.fill-blue {border-color:var(--nds-color-border-label-blue); background-color:var(--nds-color-border-label-blue);}
+.nds-label.fill-lightblue {border-color:var(--nds-color-border-label-lightblue); background-color:var(--nds-color-border-label-lightblue);}
+.nds-label.fill-skyblue {border-color:var(--nds-color-border-label-skyblue); background-color:var(--nds-color-border-label-skyblue);}
+.nds-label.fill-navy {border-color:var(--nds-color-border-label-navy); background-color:var(--nds-color-border-label-navy);}
+
+/* [Label - Variant: Grade] */
+/* 1(Red) -> 2(Orange) -> 3(Yellow) -> 4(Lightblue) -> 5(Skyblue) -> 6(Navy) */
+.nds-label[class*="-grade"] {background-color:transparent;}
+
+.nds-label.-grade1 {border-color:var(--nds-color-border-label-red); color:var(--nds-color-text-label-red);}
+.nds-label.-grade2 {border-color:var(--nds-color-border-label-orange); color:var(--nds-color-text-label-orange);}
+.nds-label.-grade3 {border-color:var(--nds-color-border-label-yellow); color:var(--nds-color-text-label-yellow);}
+.nds-label.-grade4 {border-color:var(--nds-color-border-label-lightblue); color:var(--nds-color-text-label-lightblue);}
+.nds-label.-grade5 {border-color:var(--nds-color-border-label-skyblue); color:var(--nds-color-text-label-skyblue);}
+.nds-label.-grade6 {border-color:var(--nds-color-border-label-navy); color:var(--nds-color-text-label-navy);}

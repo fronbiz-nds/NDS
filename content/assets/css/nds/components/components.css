@@ -4,10 +4,6 @@
    
    ========================================================= */
 
-/* [Common Style] */
-/* TODO: common style 어디에 삽입할지 */
-.hide {overflow:hidden; position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:0; white-space:nowrap; clip:rect(0, 0, 0, 0);}
-
 /* TYPOGRAPHY */
 
 /* 제목 */

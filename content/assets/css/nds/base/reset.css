@@ -1,7 +1,7 @@
 /* =========================================================
    reset.css
    ---------------------------------------------------------
-   브라우저 기본 스타일 초기화 및 NDS 베이스 스타일 정의
+   브라우저 기본 스타일 초기화
    ========================================================= */
 
 /* ==========================================================================
@@ -58,28 +58,3 @@ html {
     -webkit-overflow-scrolling:auto;
 }
 
-/* ==========================================================================
-   4. NDS Base Style (.nds-ui)
-   Description: 디자인 시스템 컨테이너 내 기본 타이포그래피 및 상속 정의
-   ========================================================================== */
-.nds-ui {
-    color:var(--nds-color-text-font-1);
-    font-size:1.6rem;
-    line-height:1.5;
-    font-family:var(--nds-font-base);
-    letter-spacing:-0.025em;
-    word-break:keep-all;
-    overflow-wrap:anywhere;
-    -webkit-text-size-adjust:none;
-}
-.nds-ui button,
-.nds-ui input,
-.nds-ui textarea {
-    color:inherit;
-    font:inherit;
-    -webkit-appearance:none;
-    appearance:none;
-}
-.nds-ui button {
-    border:none;
-}

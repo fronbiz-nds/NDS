@@ -141,7 +141,7 @@ a {color:inherit; text-decoration:none;}
 .dn ~ .dc {margin-left:17.3rem;}
 .dc {counter-reset:book;}
 
-.book {max-width:86rem; margin:0 auto; padding:10rem 0;}
+.book {max-width:86rem; margin:0 3rem; padding:8rem 0;}
 .paper {counter-reset:paper; min-height:100rem; padding:6rem 5rem; border-radius:.4rem; background-color:#fff; box-shadow:0 0 1rem 0 rgba(0,0,0,.03), 0 0 3rem 0 rgba(0,0,0,.05); transition:box-shadow .2s;}
 .paper + .paper {position:relative; margin-top:10rem;}
 
@@ -236,6 +236,17 @@ a {color:inherit; text-decoration:none;}
 
 .print-buffer {display:none;}
 
+.wgTree.wrap {margin: .8rem 0; color:#1d1d1d; font-size:1.4rem; line-height:1.8; padding: 2rem; background-color: #f1f1f1; border-radius: .4rem;}
+.wgTree li > strong {display:inline-block; padding-left:20px; height:22px; line-height:22px;}
+.wgTree ul > li {background:url(../imgs/ico-li-tree.png) 3px 0 no-repeat; padding-left:20px;}
+.wgTree ul > li.last {background:url(../imgs/ico-treelast.gif) -2px 0 no-repeat;}
+.wgTree li .folder {background:url(../imgs/ico-folder.png) 0 50% no-repeat; background-size:18px; }
+.wgTree li.css strong:not(.folder) {background:url(../imgs/ico-css.png) 0 50% no-repeat; background-size:20px;}
+.wgTree li.js strong:not(.folder) {background:url(../imgs/ico-js.png) 0 50% no-repeat; background-size:20px;}
+.wgTree li.html {color:#535ba1;}
+.wgTree li.img {color:#d0547d;}
+.wgTree li.css {color:#1b75aa;}
+.wgTree li.js {color:#9e7129;}
 
 .emphasize {color:#ff0000; text-transform:uppercase;}
 

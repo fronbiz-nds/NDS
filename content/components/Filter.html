@@ -1,34 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Attached file</title>
+	<link rel="stylesheet" href="./../assets/css/nds-ui.css" />
+	<link rel="stylesheet" href="./../worklist/assets/css/guide-components.css" />
+</head>
+<body>
+	<div class="gl">
+		<!-- NDS components : S -->
 <script data-size="2" data-title="Filter | filter-left" type="text/template">
-    <div class="filter-bar">
-        <div class="mix-bar row1">
-            <div class="search"><span>전체</span>ㆍ<span>3개월</span><button type="button"
-                    class="icon-button -filter"><span class="hide">필터</span></button></div>
-            <div class="etc">
-                <div class="label">
-                    <label for="">추천 상품</label>
-                    <span class="tooltip">
-                        <button type="button" class="tooltip-button" aria-haspopup="true"><span
-                                class="hide">도움말 보기</span></button>
-                    </span>
-                </div>
-                <span class="switch -xs">
-                    <input type="checkbox" id="switch-sm-tlccc" checked="">
-                    <label for="switch-sm-tlccc"><span class="hide">토글스위치</span></label>
-                </span>
-            </div>
-        </div>
-    </div>
-                        </script>
+	<div class="filter-bar">
+		<div class="mix-bar row1">
+			<div class="search"><span>전체</span>ㆍ<span>3개월</span><button type="button"
+					class="icon-button -filter"><span class="hide">필터</span></button></div>
+			<div class="etc">
+				<div class="label">
+					<label for="">추천 상품</label>
+					<span class="tooltip">
+						<button type="button" class="tooltip-button" aria-haspopup="true"><span
+								class="hide">도움말 보기</span></button>
+					</span>
+				</div>
+				<span class="switch -xs">
+					<input type="checkbox" id="switch-sm-tlccc" checked="">
+					<label for="switch-sm-tlccc"><span class="hide">토글스위치</span></label>
+				</span>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Filter | filter-right" type="text/template">
-    <div class="filter-bar">
-        <div class="mix-bar row2">
-            <div class="date-sort">
-                <div class="date">2024.10.22 ~ 2024.12.22</div>
-                <div class="option">최신순</div>
-            </div>
-            <div class="search">
-                <button type="button" class="icon-button -filter"><span class="hide">필터</span></button>
-            </div>
-        </div>
-    </div>
-                        </script>
+	<div class="filter-bar">
+		<div class="mix-bar row2">
+			<div class="date-sort">
+				<div class="date">2024.10.22 ~ 2024.12.22</div>
+				<div class="option">최신순</div>
+			</div>
+			<div class="search">
+				<button type="button" class="icon-button -filter"><span class="hide">필터</span></button>
+			</div>
+		</div>
+	</div>
+</script>
+		<!-- NDS components : E -->
+	</div>
+	<!-- NDS Script -->
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/common-ui.js"></script>
+	<!-- Guide Script -->
+	<script src="./../worklist/assets/js/guide.js"></script>
+	<script>
+		buildGuide();
+	</script>
+</html>

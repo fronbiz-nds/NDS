@@ -1,189 +1,212 @@
-
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Attached file</title>
+	<link rel="stylesheet" href="./../assets/css/nds-ui.css" />
+	<link rel="stylesheet" href="./../worklist/assets/css/guide-components.css" />
+</head>
+<body>
+	<div class="gl">
+		<!-- NDS components : S -->
 <script data-size="2" data-title="Calendar | calendar-day @ State=disabled" type="text/template">
-    <div class="field calendar">
-        <label for="gga" class="label">날짜</label>
-        <div class="mix datepicker day">
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side fc-empty" id="gga" value="2024.01.01" placeholder="선택" title="날짜선택" aria-haspopup="true" disabled>
-            </div>
-            <div class="space -lined date">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
-            </div>
-            <p class="info">안내 문구 입력</p>
-        </div>
-    </div>
-                        </script>
+	<div class="field calendar">
+		<label for="gga" class="label">날짜</label>
+		<div class="mix datepicker day">
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side fc-empty" id="gga" value="2024.01.01" placeholder="선택" title="날짜선택" aria-haspopup="true" disabled>
+			</div>
+			<div class="space -lined date">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
+			</div>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Calendar | calendar-day @ State=error" type="text/template">
-    <div class="field calendar">
-        <label for="gga1" class="label">날짜</label>
-        <div class="mix datepicker day -error">
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" id="gga1" value="2025.08.23" title="첫번째 날짜선택" aria-haspopup="true" readonly>
-            </div>
-            <div class="space -lined date">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
-            </div>
-            <p class="info">안내 문구 입력</p>
-        </div>
-    </div>
-                        </script>
+	<div class="field calendar">
+		<label for="gga1" class="label">날짜</label>
+		<div class="mix datepicker day -error">
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" id="gga1" value="2025.08.23" title="첫번째 날짜선택" aria-haspopup="true" readonly>
+			</div>
+			<div class="space -lined date">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+			</div>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Calendar | calendar-day @ State=filled" type="text/template">
-    <div class="field calendar">
-        <label for="gga0" class="label">날짜</label>
-        <div class="mix datepicker day -filled">
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" id="gga0" value="2025.08.23" title="첫번째 날짜선택"
-                    aria-haspopup="true" readonly>
-            </div>
-            <div class="space -lined date">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span
-                        class="hide">달력 보기</span></button>
-            </div>
-            <p class="info">안내 문구 입력</p>
-        </div>
-    </div>
-                        </script>
+	<div class="field calendar">
+		<label for="gga0" class="label">날짜</label>
+		<div class="mix datepicker day -filled">
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" id="gga0" value="2025.08.23" title="첫번째 날짜선택"
+					aria-haspopup="true" readonly>
+			</div>
+			<div class="space -lined date">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true"><span
+						class="hide">달력 보기</span></button>
+			</div>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Calendar | calendar-day @ State=inactive" type="text/template">
-    <div class="field calendar">
-        <label for="gga" class="label">날짜</label>
-        <div class="mix datepicker day">
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side fc-empty" id="gga" value="" placeholder="선택"
-                    title="첫번째 날짜선택" aria-haspopup="true" readonly>
-            </div>
-            <div class="space -lined date">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span
-                        class="hide">달력
-                        보기</span></button>
-            </div>
-            <p class="info">안내 문구 입력</p>
-        </div>
-    </div>
-                        </script>
+	<div class="field calendar">
+		<label for="gga" class="label">날짜</label>
+		<div class="mix datepicker day">
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side fc-empty" id="gga" value="" placeholder="선택"
+					title="첫번째 날짜선택" aria-haspopup="true" readonly>
+			</div>
+			<div class="space -lined date">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true"><span
+						class="hide">달력
+						보기</span></button>
+			</div>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Calendar | calendar-day @ State=readonly" type="text/template">
-    <div class="field calendar">
-        <label for="gga" class="label">날짜</label>
-        <div class="mix datepicker day">
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side fc-empty" id="gga" value="2024.01.01" placeholder="선택" title="날짜선택" aria-haspopup="true" disabled>
-            </div>
-            <div class="space -lined date">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
-            </div>
-            <p class="info">안내 문구 입력</p>
-        </div>
-    </div>
-                        </script>
+	<div class="field calendar">
+		<label for="gga" class="label">날짜</label>
+		<div class="mix datepicker day">
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side fc-empty" id="gga" value="2024.01.01" placeholder="선택" title="날짜선택" aria-haspopup="true" disabled>
+			</div>
+			<div class="space -lined date">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
+			</div>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Calendar | calendar-period @ State=disabled" type="text/template">
-    <div class="field calendar">
-        <label for="datedate01" class="label">날짜</label>
-        <div class="mix datepicker period -filled">
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" id="datedate01" value="2024.12.24" placeholder="선택" title="첫번째 날짜선택" aria-haspopup="true" disabled>
-            </div>
-            <div class="space -lined date -start">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
-            </div>
-            <div class="dash"><span class="hide">부터</span>~</div>
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" data-id="datedate" value="2025.06.06" placeholder="선택" title="두번째 날짜선택" aria-haspopup="true" disabled>
-            </div>
-            <div class="space -lined date -end">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
-            </div>
-        </div>
-        <p class="info">안내 문구 입력</p>
-    </div>
-                        </script>
+	<div class="field calendar">
+		<label for="datedate01" class="label">날짜</label>
+		<div class="mix datepicker period -filled">
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" id="datedate01" value="2024.12.24" placeholder="선택" title="첫번째 날짜선택" aria-haspopup="true" disabled>
+			</div>
+			<div class="space -lined date -start">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
+			</div>
+			<div class="dash"><span class="hide">부터</span>~</div>
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" data-id="datedate" value="2025.06.06" placeholder="선택" title="두번째 날짜선택" aria-haspopup="true" disabled>
+			</div>
+			<div class="space -lined date -end">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
+			</div>
+		</div>
+		<p class="info">안내 문구 입력</p>
+	</div>
+</script>
 <script data-size="2" data-title="Calendar | calendar-period @ State=error" type="text/template">
-    <div class="field calendar">
-        <label for="datedate03" class="label">날짜</label>
-        <div class="mix datepicker period -error">
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" id="datedate03" value="2024.12.24" placeholder="선택" title="첫번째 날짜선택" aria-haspopup="true" readonly>
-            </div>
-            <div class="space -lined date -start">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
-            </div>
-            <div class="dash"><span class="hide">부터</span>~</div>
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" data-id="datedate" value="2025.06.06" placeholder="선택" title="두번째 날짜선택" aria-haspopup="true" readonly>
-            </div>
-            <div class="space -lined date -end">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
-            </div>
-        </div>
-        <p class="info -error">안내 문구 입력</p>
-    </div>
-                        </script>
+	<div class="field calendar">
+		<label for="datedate03" class="label">날짜</label>
+		<div class="mix datepicker period -error">
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" id="datedate03" value="2024.12.24" placeholder="선택" title="첫번째 날짜선택" aria-haspopup="true" readonly>
+			</div>
+			<div class="space -lined date -start">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+			</div>
+			<div class="dash"><span class="hide">부터</span>~</div>
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" data-id="datedate" value="2025.06.06" placeholder="선택" title="두번째 날짜선택" aria-haspopup="true" readonly>
+			</div>
+			<div class="space -lined date -end">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+			</div>
+		</div>
+		<p class="info -error">안내 문구 입력</p>
+	</div>
+</script>
 <script data-size="2" data-title="Calendar | calendar-period @ State=filled" type="text/template">
-    <div class="field calendar">
-        <label for="datedate01" class="label">날짜</label>
-        <div class="mix datepicker period -filled">
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" id="datedate01" value="2024.12.24"
-                    placeholder="선택" title="첫번째 날짜선택" aria-haspopup="true" readonly>
-            </div>
-            <div class="space -lined date -start">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span
-                        class="hide">달력 보기</span></button>
-            </div>
-            <div class="dash"><span class="hide">부터</span>~</div>
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" data-id="datedate" value="2025.06.06"
-                    placeholder="선택" title="두번째 날짜선택" aria-haspopup="true" readonly>
-            </div>
-            <div class="space -lined date -end">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span
-                        class="hide">달력 보기</span></button>
-            </div>
-        </div>
-        <p class="info">안내 문구 입력</p>
-    </div>
-                        </script>
+	<div class="field calendar">
+		<label for="datedate01" class="label">날짜</label>
+		<div class="mix datepicker period -filled">
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" id="datedate01" value="2024.12.24"
+					placeholder="선택" title="첫번째 날짜선택" aria-haspopup="true" readonly>
+			</div>
+			<div class="space -lined date -start">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true"><span
+						class="hide">달력 보기</span></button>
+			</div>
+			<div class="dash"><span class="hide">부터</span>~</div>
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" data-id="datedate" value="2025.06.06"
+					placeholder="선택" title="두번째 날짜선택" aria-haspopup="true" readonly>
+			</div>
+			<div class="space -lined date -end">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true"><span
+						class="hide">달력 보기</span></button>
+			</div>
+		</div>
+		<p class="info">안내 문구 입력</p>
+	</div>
+</script>
 <script data-size="2" data-title="Calendar | calendar-period @ State=inactive" type="text/template">
-    <div class="field calendar">
-        <label for="datedate0" class="label">날짜</label>
-        <div class="mix datepicker period">
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" id="datedate0" value="" placeholder="선택"
-                    title="첫번째 날짜선택" aria-haspopup="true" readonly>
-            </div>
-            <div class="space -lined date -start">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span
-                        class="hide">달력 보기</span></button>
-            </div>
-            <div class="dash"><span class="hide">부터</span>~</div>
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" data-id="datedate" value="" placeholder="선택"
-                    title="두번째 날짜선택" aria-haspopup="true" readonly>
-            </div>
-            <div class="space -lined date -end">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true"><span
-                        class="hide">달력 보기</span></button>
-            </div>
-        </div>
-        <p class="info">안내 문구 입력</p>
-    </div>
-                        </script>
+	<div class="field calendar">
+		<label for="datedate0" class="label">날짜</label>
+		<div class="mix datepicker period">
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" id="datedate0" value="" placeholder="선택"
+					title="첫번째 날짜선택" aria-haspopup="true" readonly>
+			</div>
+			<div class="space -lined date -start">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true"><span
+						class="hide">달력 보기</span></button>
+			</div>
+			<div class="dash"><span class="hide">부터</span>~</div>
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" data-id="datedate" value="" placeholder="선택"
+					title="두번째 날짜선택" aria-haspopup="true" readonly>
+			</div>
+			<div class="space -lined date -end">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true"><span
+						class="hide">달력 보기</span></button>
+			</div>
+		</div>
+		<p class="info">안내 문구 입력</p>
+	</div>
+</script>
 <script data-size="2" data-title="Calendar | calendar-period @ State=readonly" type="text/template">
-    <div class="field calendar">
-        <label for="datedate01" class="label">날짜</label>
-        <div class="mix datepicker period -filled">
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" id="datedate01" value="2024.12.24" placeholder="선택" title="첫번째 날짜선택" aria-haspopup="true" disabled>
-            </div>
-            <div class="space -lined date -start">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
-            </div>
-            <div class="dash"><span class="hide">부터</span>~</div>
-            <div class="text" data-clear="false">
-                <input type="text" class="left-side" data-id="datedate" value="2025.06.06" placeholder="선택" title="두번째 날짜선택" aria-haspopup="true" disabled>
-            </div>
-            <div class="space -lined date -end">
-                <button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
-            </div>
-        </div>
-        <p class="info">안내 문구 입력</p>
-    </div>
-                        </script>
+	<div class="field calendar">
+		<label for="datedate01" class="label">날짜</label>
+		<div class="mix datepicker period -filled">
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" id="datedate01" value="2024.12.24" placeholder="선택" title="첫번째 날짜선택" aria-haspopup="true" disabled>
+			</div>
+			<div class="space -lined date -start">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
+			</div>
+			<div class="dash"><span class="hide">부터</span>~</div>
+			<div class="text" data-clear="false">
+				<input type="text" class="left-side" data-id="datedate" value="2025.06.06" placeholder="선택" title="두번째 날짜선택" aria-haspopup="true" disabled>
+			</div>
+			<div class="space -lined date -end">
+				<button type="button" class="icon-button -calendar" aria-haspopup="true" disabled><span class="hide">달력 보기</span></button>
+			</div>
+		</div>
+		<p class="info">안내 문구 입력</p>
+	</div>
+</script>
+		<!-- NDS components : E -->
+	</div>
+	<!-- NDS Script -->
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/common-ui.js"></script>
+	<!-- Guide Script -->
+	<script src="./../worklist/assets/js/guide.js"></script>
+	<script>
+		buildGuide();
+	</script>
+</html>

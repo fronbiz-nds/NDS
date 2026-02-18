@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NDS 컴퍼넌트 템플릿 - 2026 NDS</title>
+
+    <link rel="stylesheet" href="worklist/assets/css/docs.css">
+</head>
+<body class="dw">
+    <div class="dh">
+        <div class="dh__title">
+            <a href="/">NDS</a>
+        </div>
+
+        <div class="dh__nav">
+            <a href="nds-convention.html">Convention</a>
+            <a href="nds-components.html" class="-active">Components</a>
+            <a href="nds-sample.html">Sample</a>
+        </div>
+
+        <div class="dh__utils">
+            <button type="button" class="dh__util -dark">
+                <span>다크모드</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="dn -bg">
+        <div class="dn__group -active">
+            <ul class="lnb" id="lnbMenu"></ul>
+        </div>
+    </div>
+
+    <div class="dc">
+        <!-- [컨텐츠 시작] -->
+        <div class="gl__wrap"></div>
+        <!-- [컨텐츠 끝] -->
+    </div>
+
+    <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="worklist/assets/js/guide.js"></script>
+    
+    <script>
+    const componentMap = {
+        "Accordion": "components/Accordion.html",
+        "Attached file": "components/Attachedfile.html",
+        "Badge": "components/Badge.html",
+        "Bottomsheet": "components/Bottomsheet.html",
+        "Bullet": "components/Bullet.html",
+        "Button": "components/Button.html",
+        "Calendar": "components/Calendar.html",
+        "Card": "components/Card.html",
+        "Check": "components/Check.html",
+        "Chip": "components/Chip.html",
+        "Controls": "components/Controls.html",
+        "Divider": "components/Divider.html",
+        "Empty": "components/Empty.html",
+        "Filter": "components/Filter.html",
+        "Icon": "components/Icon.html",
+        "Image": "components/Image.html",
+        "Indicator": "components/Indicator.html",
+        "Infobox": "components/Infobox.html",
+        "Input": "components/Input.html",
+        "Label": "components/Label.html",
+        "Link": "components/Link.html",
+        "List": "components/List.html",
+        "Load data": "components/Loaddata.html",
+        "Local Assets": "components/LocalAssets.html",
+        "Navigation": "components/Navigation.html",
+        "Popover": "components/Popover.html",
+        "Popup": "components/Popup.html",
+        "Process": "components/Process.html",
+        "Radio": "components/Radio.html",
+        "Search": "components/Search.html",
+        "Select": "components/Select.html",
+        "Statusbar": "components/Statusbar.html",
+        "Switch": "components/Switch.html",
+        "Tab": "components/Tab.html",
+        "Table": "components/Table.html",
+        "Terms": "components/Terms.html",
+        "Text area": "components/Textarea.html",
+        "Toast": "components/Toast.html",
+        "Tooltip": "components/Tooltip.html",
+    };
+    const lnbContainer = document.getElementById("lnbMenu");
+
+    Object.keys(componentMap).forEach((type) => {
+    const li = document.createElement("li");
+    const button = document.createElement("button");
+
+    button.type = "button";
+    button.textContent = type;
+
+    button.onclick = async () => {
+        document.querySelectorAll(".lnb button").forEach((btn) => {
+            btn.classList.remove("active");
+        });
+        button.classList.add("active");
+        await loadComponent(componentMap[type]);
+    };
+
+    li.appendChild(button);
+        lnbContainer.appendChild(li);
+    });
+
+    // 첫 버튼 active 처리
+    async function init() {
+        const firstKey = Object.keys(componentMap)[0];
+
+        await loadComponent(componentMap[firstKey]);
+        document.querySelector(".lnb button").classList.add("active");
+    }
+    init();
+
+    async function loadComponent(path) {
+        const container = document.querySelector(".gl__wrap");
+        container.innerHTML = "";
+
+        const iframe = document.createElement("iframe");
+        iframe.src = path;
+        iframe.style.width = "100%";
+        iframe.style.height = "calc(100vh - 6rem)";
+        iframe.style.border = "0";
+        container.appendChild(iframe);
+    }
+    </script>
+
+</body>
+</html>

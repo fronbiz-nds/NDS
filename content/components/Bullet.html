@@ -1,56 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Attached file</title>
+	<link rel="stylesheet" href="./../assets/css/nds-ui.css" />
+	<link rel="stylesheet" href="./../worklist/assets/css/guide-components.css" />
+</head>
+<body>
+	<div class="gl">
+		<!-- NDS components : S -->
 <script data-size="2" data-title="Bullet | bullet-body @ Type=1depth" type="text/template">
-    <ul class="ul -bullet">
-        <li>페이지 1depth 목록 내용 입니다.</li>
-        <li>페이지 1depth 목록 내용 입니다.</li>
-    </ul>
-                        </script>
+	<ul class="ul -bullet">
+		<li>페이지 1depth 목록 내용 입니다.</li>
+		<li>페이지 1depth 목록 내용 입니다.</li>
+	</ul>
+</script>
 <script data-size="2" data-title="Bullet | bullet-body @ Type=2depth" type="text/template">
-    <ul class="ul -bullet">
-        <li>1depth 목록 내용 입니다.</li>
-        <li>1depth 목록 내용 입니다.
-            <div>
-                <ul class="ul -dash">
-                    <li>2depth 목록 내용 입니다.</li>
-                    <li>2depth 목록 내용 입니다.</li>
-                </ul>
-            </div>
-        </li>
-        <li>내용</li>
-    </ul>
-                        </script>
+	<ul class="ul -bullet">
+		<li>1depth 목록 내용 입니다.</li>
+		<li>1depth 목록 내용 입니다.
+			<div>
+				<ul class="ul -dash">
+					<li>2depth 목록 내용 입니다.</li>
+					<li>2depth 목록 내용 입니다.</li>
+				</ul>
+			</div>
+		</li>
+		<li>내용</li>
+	</ul>
+</script>
 <script data-size="2" data-title="Bullet | bullet-caption" type="text/template">
-    <ul class="ul -bullet -caption">
-        <li>캡션 1depth 목록 내용 입니다.</li>
-        <li>캡션 1depth 목록 내용 입니다.</li>
-    </ul>
-                        </script>
+	<ul class="ul -bullet -caption">
+		<li>캡션 1depth 목록 내용 입니다.</li>
+		<li>캡션 1depth 목록 내용 입니다.</li>
+	</ul>
+</script>
 <script data-size="2" data-title="Bullet | bullet-notice @ Type=1depth" type="text/template">
-    <div class="sticker">
-        <div class="notice -active" data-role="fold">
-            <div class="panel" data-role="visible">
-                <ul class="ul -bullet">
-                    <li>알아두세요 1depth 목록 내용 입니다.</li>
-                    <li>알아두세요 1depth 목록 내용 입니다.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-                        </script>
+	<div class="sticker">
+		<div class="notice -active" data-role="fold">
+			<div class="panel" data-role="visible">
+				<ul class="ul -bullet">
+					<li>알아두세요 1depth 목록 내용 입니다.</li>
+					<li>알아두세요 1depth 목록 내용 입니다.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Bullet | bullet-notice @ Type=2depth" type="text/template">
-    <div class="sticker">
-        <div class="notice -active" data-role="fold">
-            <div class="panel" data-role="visible">
-                <ul class="ul -bullet">
-                    <li>알아두세요 1depth 목록 내용 입니다.
-                        <div>
-                            <ul class="ul -dash">
-                                <li>알아두세요 2depth 목록 내용 입니다.</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>알아두세요 1depth 목록 내용 입니다.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-                        </script>
+	<div class="sticker">
+		<div class="notice -active" data-role="fold">
+			<div class="panel" data-role="visible">
+				<ul class="ul -bullet">
+					<li>알아두세요 1depth 목록 내용 입니다.
+						<div>
+							<ul class="ul -dash">
+								<li>알아두세요 2depth 목록 내용 입니다.</li>
+							</ul>
+						</div>
+					</li>
+					<li>알아두세요 1depth 목록 내용 입니다.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</script>
+		<!-- NDS components : E -->
+	</div>
+	<!-- NDS Script -->
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/common-ui.js"></script>
+	<!-- Guide Script -->
+	<script src="./../worklist/assets/js/guide.js"></script>
+	<script>
+		buildGuide();
+	</script>
+</html>

@@ -1,23 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Attached file</title>
+	<link rel="stylesheet" href="./../assets/css/nds-ui.css" />
+	<link rel="stylesheet" href="./../worklist/assets/css/guide-components.css" />
+</head>
+<body>
+	<div class="gl">
+		<!-- NDS components : S -->
 <script data-size="2" data-title="Load data | load-data-basic" type="text/template">
-                            <div class="field load-data">
-                                <label for="data-rd" class="label">레이블</label>
-                                <div class="data-box" id="data-rd">
-                                    <div class="data-box-title">Label</div>
-                                    <div class="data-box-content">Data</div>
-                                </div>
-                                <p class="info">안내 문구 입력</p>
-                            </div>
-                        </script>
+	<div class="field load-data">
+		<label for="data-rd" class="label">레이블</label>
+		<div class="data-box" id="data-rd">
+			<div class="data-box-title">Label</div>
+			<div class="data-box-content">Data</div>
+		</div>
+		<p class="info">안내 문구 입력</p>
+	</div>
+</script>
 <script data-size="2" data-title="Load data | load-data-highlight" type="text/template">
-                            <div class="field load-data -highlight">
-                                <label for="data-rd" class="label">레이블</label>
-                                <div class="data-box" id="data-rd">
-                                    <div class="data-box-title">
-                                        <span class="data-box-main">Label</span>
-                                        <span class="data-box-info">부가설명</span>
-                                    </div>
-                                    <div class="data-box-content">Data</div>
-                                </div>
-                                <p class="info">안내 문구 입력</p>
-                            </div>
-                        </script>
+	<div class="field load-data -highlight">
+		<label for="data-rd" class="label">레이블</label>
+		<div class="data-box" id="data-rd">
+			<div class="data-box-title">
+				<span class="data-box-main">Label</span>
+				<span class="data-box-info">부가설명</span>
+			</div>
+			<div class="data-box-content">Data</div>
+		</div>
+		<p class="info">안내 문구 입력</p>
+	</div>
+</script>
+		<!-- NDS components : E -->
+	</div>
+	<!-- NDS Script -->
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/common-ui.js"></script>
+	<!-- Guide Script -->
+	<script src="./../worklist/assets/js/guide.js"></script>
+	<script>
+		buildGuide();
+	</script>
+</html>

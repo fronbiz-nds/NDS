@@ -1,953 +1,976 @@
-
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Attached file</title>
+	<link rel="stylesheet" href="./../assets/css/nds-ui.css" />
+	<link rel="stylesheet" href="./../worklist/assets/css/guide-components.css" />
+</head>
+<body>
+	<div class="gl">
+		<!-- NDS components : S -->
 <script data-size="2" data-title="Select | select-2row @ State=disabled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select row-two -filled -disabled">
-                                    <button type="button" aria-haspopup="true" class="fc-empty selct-wrap" disabled>
-                                        <div class="selct-opt">선택된 옵션명</div>
-                                        <div class="sub-disc">부가설명</div>
-                                    </button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select row-two -filled -disabled">
+			<button type="button" aria-haspopup="true" class="fc-empty selct-wrap" disabled>
+				<div class="selct-opt">선택된 옵션명</div>
+				<div class="sub-disc">부가설명</div>
+			</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-2row @ State=error" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select row-two -filled -error">
-                                    <button type="button" aria-haspopup="true" class="fc-empty selct-wrap">
-                                        <div class="selct-opt">선택된 옵션명</div>
-                                        <div class="sub-disc">부가설명</div>
-                                    </button>
-                                    <p class="info">오류 메세지 출력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select row-two -filled -error">
+			<button type="button" aria-haspopup="true" class="fc-empty selct-wrap">
+				<div class="selct-opt">선택된 옵션명</div>
+				<div class="sub-disc">부가설명</div>
+			</button>
+			<p class="info">오류 메세지 출력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-2row @ State=filled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select row-two -filled">
-                                    <button type="button" aria-haspopup="true" class="fc-empty selct-wrap">
-                                        <div class="selct-opt">선택된 옵션명</div>
-                                        <div class="sub-disc">부가설명</div>
-                                    </button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select row-two -filled">
+			<button type="button" aria-haspopup="true" class="fc-empty selct-wrap">
+				<div class="selct-opt">선택된 옵션명</div>
+				<div class="sub-disc">부가설명</div>
+			</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-2row @ State=focus" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select row-two -focused">
-                                    <button type="button" aria-haspopup="true" class="fc-empty selct-wrap">
-                                        <div class="selct-opt">선택</div>
-                                        <div class="sub-disc">부가설명</div>
-                                    </button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select row-two -focused">
+			<button type="button" aria-haspopup="true" class="fc-empty selct-wrap">
+				<div class="selct-opt">선택</div>
+				<div class="sub-disc">부가설명</div>
+			</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-2row @ State=inactive" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select row-two">
-                                    <button type="button" aria-haspopup="true" class="fc-empty selct-wrap">
-                                        <div class="selct-opt">선택</div>
-                                        <div class="sub-disc">부가설명</div>
-                                    </button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select row-two">
+			<button type="button" aria-haspopup="true" class="fc-empty selct-wrap">
+				<div class="selct-opt">선택</div>
+				<div class="sub-disc">부가설명</div>
+			</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-2row @ State=readonly" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select row-two -filled -readonly">
-                                    <button type="button" aria-haspopup="true" class="fc-empty selct-wrap" disabled>
-                                        <div class="selct-opt">선택된 옵션명</div>
-                                        <div class="sub-disc">부가설명</div>
-                                    </button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select row-two -filled -readonly">
+			<button type="button" aria-haspopup="true" class="fc-empty selct-wrap" disabled>
+				<div class="selct-opt">선택된 옵션명</div>
+				<div class="sub-disc">부가설명</div>
+			</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-account @ State=disabled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -account -filled -disabled">
-                                    <button type="button" aria-haspopup="true" disabled>
-                                        <div class="selection">
-                                            <div data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div class="text">
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -account -filled -disabled">
+			<button type="button" aria-haspopup="true" disabled>
+				<div class="selection">
+					<div data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</div>
+				</div>
+			</button>
+		</div>
+		<div class="text">
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-account @ State=error" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -account -filled -error">
-                                    <button type="button" aria-haspopup="true">
-                                        <div class="selection">
-                                            <div data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div class="text">
-                                    <p class="info -error">오류 메세지 출력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -account -filled -error">
+			<button type="button" aria-haspopup="true">
+				<div class="selection">
+					<div data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</div>
+				</div>
+			</button>
+		</div>
+		<div class="text">
+			<p class="info -error">오류 메세지 출력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-account @ State=filled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -account -filled">
-                                    <button type="button" aria-haspopup="true">
-                                        <div class="selection">
-                                            <div data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div class="text">
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -account -filled">
+			<button type="button" aria-haspopup="true">
+				<div class="selection">
+					<div data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</div>
+				</div>
+			</button>
+		</div>
+		<div class="text">
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-account @ State=focus" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -account -focused">
-                                    <button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -account -focused">
+			<button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-account @ State=inactive" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -account">
-                                    <button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -account">
+			<button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-account @ State=readonly" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -account -filled -readonly">
-                                    <button type="button" aria-haspopup="true" disabled>
-                                        <div class="selection">
-                                            <div data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div class="text">
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -account -filled -readonly">
+			<button type="button" aria-haspopup="true" disabled>
+				<div class="selection">
+					<div data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</div>
+				</div>
+			</button>
+		</div>
+		<div class="text">
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-admin @ State=disabled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -price -filled -disabled">
-                                    <div class="account card -comb">
-                                        <div class="dot-menu">
-                                            <button type="button" class="button">
-                                                <span class="hide">더보기</span>
-                                            </button>
-                                        </div>
-                                        <div class="selection">
-                                            <button type="button" aria-haspopup="true" data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <span class="select-btn">계좌번호</span>
-                                                </span>
-                                            </button>
-                                            <div class="amount mix-charge">
-                                                <div>
-                                                    <button type="button" class="button -tertiary -xs -fitted" disabled>잔액채우기</button>
-                                                </div>
-                                                <div>
-                                                    <div class="key">금액</div>
-                                                    <div class="value">
-                                                        <span>
-                                                            <!-- <button type="button" class="refresh"><span class="hide">새로고침</span></button> -->
-                                                            50,000,000원
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text">
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -price -filled -disabled">
+			<div class="account card -comb">
+				<div class="dot-menu">
+					<button type="button" class="button">
+						<span class="hide">더보기</span>
+					</button>
+				</div>
+				<div class="selection">
+					<button type="button" aria-haspopup="true" data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<span class="select-btn">계좌번호</span>
+						</span>
+					</button>
+					<div class="amount mix-charge">
+						<div>
+							<button type="button" class="button -tertiary -xs -fitted" disabled>잔액채우기</button>
+						</div>
+						<div>
+							<div class="key">금액</div>
+							<div class="value">
+								<span>
+									<!-- <button type="button" class="refresh"><span class="hide">새로고침</span></button> -->
+									50,000,000원
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text">
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-admin @ State=error" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -price -filled -error">
-                                    <div class="account card -comb">
-                                        <div class="dot-menu">
-                                            <button type="button" class="button">
-                                                <span class="hide">더보기</span>
-                                            </button>
-                                        </div>
-                                        <div class="selection">
-                                            <button type="button" aria-haspopup="true" data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <span class="select-btn">계좌번호</span>
-                                                </span>
-                                            </button>
-                                            <div class="amount mix-charge">
-                                                <div>
-                                                    <button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
-                                                </div>
-                                                <div>
-                                                    <div class="key">금액</div>
-                                                    <div class="value">
-                                                        <span>
-                                                            <!-- <button type="button" class="refresh"><span class="hide">새로고침</span></button> -->
-                                                            50,000,000원
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text">
-                                    <p class="info -error">오류 메세지 출력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -price -filled -error">
+			<div class="account card -comb">
+				<div class="dot-menu">
+					<button type="button" class="button">
+						<span class="hide">더보기</span>
+					</button>
+				</div>
+				<div class="selection">
+					<button type="button" aria-haspopup="true" data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<span class="select-btn">계좌번호</span>
+						</span>
+					</button>
+					<div class="amount mix-charge">
+						<div>
+							<button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
+						</div>
+						<div>
+							<div class="key">금액</div>
+							<div class="value">
+								<span>
+									<!-- <button type="button" class="refresh"><span class="hide">새로고침</span></button> -->
+									50,000,000원
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text">
+			<p class="info -error">오류 메세지 출력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-admin @ State=filled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -price -filled">
-                                    <div class="account card -comb">
-                                        <div class="dot-menu">
-                                            <button type="button" class="button">
-                                                <span class="hide">더보기</span>
-                                            </button>
-                                        </div>
-                                        <div class="selection">
-                                            <button type="button" aria-haspopup="true" data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <span class="select-btn">계좌번호</span>
-                                                </span>
-                                            </button>
-                                            <div class="amount mix-charge">
-                                                <div>
-                                                    <button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
-                                                </div>
-                                                <div>
-                                                    <div class="key">금액</div>
-                                                    <div class="value">
-                                                        <span>
-                                                            <!-- <button type="button" class="refresh"><span class="hide">새로고침</span></button> -->
-                                                            50,000,000원
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text">
-                                    <p class="info">오류 메세지 출력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -price -filled">
+			<div class="account card -comb">
+				<div class="dot-menu">
+					<button type="button" class="button">
+						<span class="hide">더보기</span>
+					</button>
+				</div>
+				<div class="selection">
+					<button type="button" aria-haspopup="true" data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<span class="select-btn">계좌번호</span>
+						</span>
+					</button>
+					<div class="amount mix-charge">
+						<div>
+							<button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
+						</div>
+						<div>
+							<div class="key">금액</div>
+							<div class="value">
+								<span>
+									<!-- <button type="button" class="refresh"><span class="hide">새로고침</span></button> -->
+									50,000,000원
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text">
+			<p class="info">오류 메세지 출력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-admin @ State=focus" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -list -focused">
-                                    <button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -list -focused">
+			<button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-admin @ State=inactive" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -list">
-                                    <button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -list">
+			<button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-admin @ State=readonly" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -price -filled -readonly">
-                                    <div class="account card -comb">
-                                        <div class="dot-menu">
-                                            <button type="button" class="button">
-                                                <span class="hide">더보기</span>
-                                            </button>
-                                        </div>
-                                        <div class="selection">
-                                            <button type="button" aria-haspopup="true" data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <span class="select-btn">계좌번호</span>
-                                                </span>
-                                            </button>
-                                            <div class="amount mix-charge">
-                                                <div>
-                                                    <button type="button" class="button -tertiary -xs -fitted" disabled>잔액채우기</button>
-                                                </div>
-                                                <div>
-                                                    <div class="key">금액</div>
-                                                    <div class="value">
-                                                        <span>
-                                                            <!-- <button type="button" class="refresh"><span class="hide">새로고침</span></button> -->
-                                                            50,000,000원
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text">
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -price -filled -readonly">
+			<div class="account card -comb">
+				<div class="dot-menu">
+					<button type="button" class="button">
+						<span class="hide">더보기</span>
+					</button>
+				</div>
+				<div class="selection">
+					<button type="button" aria-haspopup="true" data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<span class="select-btn">계좌번호</span>
+						</span>
+					</button>
+					<div class="amount mix-charge">
+						<div>
+							<button type="button" class="button -tertiary -xs -fitted" disabled>잔액채우기</button>
+						</div>
+						<div>
+							<div class="key">금액</div>
+							<div class="value">
+								<span>
+									<!-- <button type="button" class="refresh"><span class="hide">새로고침</span></button> -->
+									50,000,000원
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text">
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-bank @ State=disabled" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency -disabled">
-                                        <button type="button" aria-haspopup="true" title="은행 선택" disabled>
-                                            <span data-bankcode="011" class="-sm"></span>NH농협은행
-                                        </button>
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency -disabled">
+				<button type="button" aria-haspopup="true" title="은행 선택" disabled>
+					<span data-bankcode="011" class="-sm"></span>NH농협은행
+				</button>
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-bank @ State=error" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency -error">
-                                        <button type="button" aria-haspopup="true" title="은행 선택">
-                                            <span data-bankcode="011" class="-sm"></span>NH농협은행
-                                        </button>
-                                        <p class="info">오류 메세지 출력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency -error">
+				<button type="button" aria-haspopup="true" title="은행 선택">
+					<span data-bankcode="011" class="-sm"></span>NH농협은행
+				</button>
+				<p class="info">오류 메세지 출력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-bank @ State=filled" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency">
-                                        <button type="button" aria-haspopup="true" title="은행 선택">
-                                            <span data-bankcode="011" class="-sm"></span>NH농협은행
-                                        </button>
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency">
+				<button type="button" aria-haspopup="true" title="은행 선택">
+					<span data-bankcode="011" class="-sm"></span>NH농협은행
+				</button>
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-bank @ State=focus" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency -focused">
-                                        <button type="button" aria-haspopup="true" title="은행 선택" class="fc-empty">선택</button>
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency -focused">
+				<button type="button" aria-haspopup="true" title="은행 선택" class="fc-empty">선택</button>
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-bank @ State=inactive" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency">
-                                        <button type="button" aria-haspopup="true" title="은행 선택" class="fc-empty">선택</button>
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency">
+				<button type="button" aria-haspopup="true" title="은행 선택" class="fc-empty">선택</button>
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-bank @ State=readonly" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency -readonly">
-                                        <button type="button" aria-haspopup="true" title="은행 선택" disabled>
-                                            <span data-bankcode="011" class="-sm"></span>NH농협은행
-                                        </button>
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency -readonly">
+				<button type="button" aria-haspopup="true" title="은행 선택" disabled>
+					<span data-bankcode="011" class="-sm"></span>NH농협은행
+				</button>
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-basic @ State=disabled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -basic -disabled">
-                                    <button type="button" aria-haspopup="true" title="레이블명" disabled>선택된 옵션명</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -basic -disabled">
+			<button type="button" aria-haspopup="true" title="레이블명" disabled>선택된 옵션명</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-basic @ State=error" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -basic -error">
-                                    <button type="button" aria-haspopup="true" title="레이블명">선택된 옵션명</button>
-                                    <p class="info">오류 메세지 출력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -basic -error">
+			<button type="button" aria-haspopup="true" title="레이블명">선택된 옵션명</button>
+			<p class="info">오류 메세지 출력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-basic @ State=filled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -basic">
-                                    <button type="button" aria-haspopup="true" title="레이블명">선택된 옵션명</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -basic">
+			<button type="button" aria-haspopup="true" title="레이블명">선택된 옵션명</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-basic @ State=focus" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -basic -focused">
-                                    <button type="button" aria-haspopup="true" class="fc-empty" title="레이블명">선택</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -basic -focused">
+			<button type="button" aria-haspopup="true" class="fc-empty" title="레이블명">선택</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-basic @ State=inactive" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -basic">
-                                    <button type="button" aria-haspopup="true" class="fc-empty" title="레이블명">선택</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -basic">
+			<button type="button" aria-haspopup="true" class="fc-empty" title="레이블명">선택</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-basic @ State=readonly" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -basic -readonly">
-                                    <button type="button" aria-haspopup="true" title="레이블명" disabled>선택된 옵션명</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -basic -readonly">
+			<button type="button" aria-haspopup="true" title="레이블명" disabled>선택된 옵션명</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-currency @ State=disabled" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency -disabled">
-                                        <button type="button" aria-haspopup="true" title="통화 선택" disabled>
-                                            <span data-countrycode="001" class="-sm"></span>USD
-                                        </button>
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency -disabled">
+				<button type="button" aria-haspopup="true" title="통화 선택" disabled>
+					<span data-countrycode="001" class="-sm"></span>USD
+				</button>
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-currency @ State=error" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency -error">
-                                        <button type="button" aria-haspopup="true" title="통화 선택">
-                                            <span data-countrycode="001" class="-sm"></span>USD
-                                        </button>
-                                        <p class="info">오류 메세지 출력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency -error">
+				<button type="button" aria-haspopup="true" title="통화 선택">
+					<span data-countrycode="001" class="-sm"></span>USD
+				</button>
+				<p class="info">오류 메세지 출력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-currency @ State=filled" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency">
-                                        <button type="button" aria-haspopup="true" title="통화 선택">
-                                            <span data-countrycode="001" class="-sm"></span>USD
-                                        </button>
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency">
+				<button type="button" aria-haspopup="true" title="통화 선택">
+					<span data-countrycode="001" class="-sm"></span>USD
+				</button>
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-currency @ State=focus" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency -focused">
-                                        <button type="button" aria-haspopup="true" class="fc-empty" title="통화 선택">
-                                            선택
-                                        </button>
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency -focused">
+				<button type="button" aria-haspopup="true" class="fc-empty" title="통화 선택">
+					선택
+				</button>
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-currency @ State=inactive" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency">
-                                        <button type="button" aria-haspopup="true" class="fc-empty" title="통화 선택">
-                                            선택
-                                        </button>
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency">
+				<button type="button" aria-haspopup="true" class="fc-empty" title="통화 선택">
+					선택
+				</button>
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-currency @ State=readonly" type="text/template">
-                            <div class="field">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="mix">
-                                    <div class="select -currency -readonly">
-                                        <button type="button" aria-haspopup="true" title="통화 선택" disabled>
-                                            <span data-countrycode="001" class="-sm"></span>USD
-                                        </button>
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<label for="asd" class="label">레이블</label>
+		<div class="mix">
+			<div class="select -currency -readonly">
+				<button type="button" aria-haspopup="true" title="통화 선택" disabled>
+					<span data-countrycode="001" class="-sm"></span>USD
+				</button>
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-icon @ State=disabled" type="text/template">
-                            <div class="field type-wrap">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="select -levels -disabled">
-                                    <button type="button" aria-haspopup="true" class="title" disabled>선택된 옵션명<span class="grade1-icon"></span></button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field type-wrap">
+		<label for="asd" class="label">레이블</label>
+		<div class="select -levels -disabled">
+			<button type="button" aria-haspopup="true" class="title" disabled>선택된 옵션명<span class="grade1-icon"></span></button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-icon @ State=error" type="text/template">
-                            <div class="field type-wrap">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="select -levels -error">
-                                    <button type="button" aria-haspopup="true" class="title">선택된 옵션명<span class="grade1-icon"></span></button>
-                                    <p class="info">오류 메세지 출력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field type-wrap">
+		<label for="asd" class="label">레이블</label>
+		<div class="select -levels -error">
+			<button type="button" aria-haspopup="true" class="title">선택된 옵션명<span class="grade1-icon"></span></button>
+			<p class="info">오류 메세지 출력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-icon @ State=filled" type="text/template">
-                            <div class="field type-wrap">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="select -levels">
-                                    <button type="button" aria-haspopup="true" class="title">선택된 옵션명<span class="grade1-icon"></span></button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field type-wrap">
+		<label for="asd" class="label">레이블</label>
+		<div class="select -levels">
+			<button type="button" aria-haspopup="true" class="title">선택된 옵션명<span class="grade1-icon"></span></button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-icon @ State=focus" type="text/template">
-                            <div class="field type-wrap">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="select -levels -focused">
-                                    <button type="button" aria-haspopup="true" class="title fc-empty">선택<span class="grade1-icon"></span></button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field type-wrap">
+		<label for="asd" class="label">레이블</label>
+		<div class="select -levels -focused">
+			<button type="button" aria-haspopup="true" class="title fc-empty">선택<span class="grade1-icon"></span></button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-icon @ State=inactive" type="text/template">
-                            <div class="field type-wrap">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="select -levels">
-                                    <button type="button" aria-haspopup="true" class="title fc-empty">선택<span class="grade1-icon"></span></button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field type-wrap">
+		<label for="asd" class="label">레이블</label>
+		<div class="select -levels">
+			<button type="button" aria-haspopup="true" class="title fc-empty">선택<span class="grade1-icon"></span></button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-icon @ State=readonly" type="text/template">
-                            <div class="field type-wrap">
-                                <label for="asd" class="label">레이블</label>
-                                <div class="select -levels -readonly">
-                                    <button type="button" aria-haspopup="true" class="title" disabled>선택된 옵션명<span class="grade1-icon"></span></button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field type-wrap">
+		<label for="asd" class="label">레이블</label>
+		<div class="select -levels -readonly">
+			<button type="button" aria-haspopup="true" class="title" disabled>선택된 옵션명<span class="grade1-icon"></span></button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-list @ State=disabled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -list -filled -disabled">
-                                    <button type="button" aria-haspopup="true" class="-fixed" disabled>
-                                        <div class="selection">
-                                            <div data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </div>
-                                            <dl class="dl">
-                                                <div>
-                                                    <dt>타이틀</dt>
-                                                    <dd>데이터</dd>
-                                                </div>
-                                                <div>
-                                                    <dt>타이틀</dt>
-                                                    <dd>데이터</dd>
-                                                </div>
-                                            </dl>
-                                        </div>
-                                    </button>
-                                    <div class="text">
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -list -filled -disabled">
+			<button type="button" aria-haspopup="true" class="-fixed" disabled>
+				<div class="selection">
+					<div data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</div>
+					<dl class="dl">
+						<div>
+							<dt>타이틀</dt>
+							<dd>데이터</dd>
+						</div>
+						<div>
+							<dt>타이틀</dt>
+							<dd>데이터</dd>
+						</div>
+					</dl>
+				</div>
+			</button>
+			<div class="text">
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-list @ State=error" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -list -filled -error">
-                                    <button type="button" aria-haspopup="true" class="-fixed">
-                                        <div class="selection">
-                                            <div data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </div>
-                                            <dl class="dl">
-                                                <div>
-                                                    <dt>타이틀</dt>
-                                                    <dd>데이터</dd>
-                                                </div>
-                                                <div>
-                                                    <dt>타이틀</dt>
-                                                    <dd>데이터</dd>
-                                                </div>
-                                            </dl>
-                                        </div>
-                                    </button>
-                                    <div class="text">
-                                        <p class="info">오류 메세지 출력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -list -filled -error">
+			<button type="button" aria-haspopup="true" class="-fixed">
+				<div class="selection">
+					<div data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</div>
+					<dl class="dl">
+						<div>
+							<dt>타이틀</dt>
+							<dd>데이터</dd>
+						</div>
+						<div>
+							<dt>타이틀</dt>
+							<dd>데이터</dd>
+						</div>
+					</dl>
+				</div>
+			</button>
+			<div class="text">
+				<p class="info">오류 메세지 출력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-list @ State=filled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -list -filled">
-                                    <button type="button" aria-haspopup="true" class="-fixed">
-                                        <div class="selection">
-                                            <div data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </div>
-                                            <dl class="dl">
-                                                <div>
-                                                    <dt>타이틀</dt>
-                                                    <dd>데이터</dd>
-                                                </div>
-                                                <div>
-                                                    <dt>타이틀</dt>
-                                                    <dd>데이터</dd>
-                                                </div>
-                                            </dl>
-                                        </div>
-                                    </button>
-                                    <div class="text">
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -list -filled">
+			<button type="button" aria-haspopup="true" class="-fixed">
+				<div class="selection">
+					<div data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</div>
+					<dl class="dl">
+						<div>
+							<dt>타이틀</dt>
+							<dd>데이터</dd>
+						</div>
+						<div>
+							<dt>타이틀</dt>
+							<dd>데이터</dd>
+						</div>
+					</dl>
+				</div>
+			</button>
+			<div class="text">
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-list @ State=focus" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -list -focused">
-                                    <button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -list -focused">
+			<button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-list @ State=inactive" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -list">
-                                    <button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -list">
+			<button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-list @ State=readonly" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -list -filled -readonly">
-                                    <button type="button" aria-haspopup="true" class="-fixed" disabled>
-                                        <div class="selection">
-                                            <div data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </div>
-                                            <dl class="dl">
-                                                <div>
-                                                    <dt>타이틀</dt>
-                                                    <dd>데이터</dd>
-                                                </div>
-                                                <div>
-                                                    <dt>타이틀</dt>
-                                                    <dd>데이터</dd>
-                                                </div>
-                                            </dl>
-                                        </div>
-                                    </button>
-                                    <div class="text">
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -list -filled -readonly">
+			<button type="button" aria-haspopup="true" class="-fixed" disabled>
+				<div class="selection">
+					<div data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</div>
+					<dl class="dl">
+						<div>
+							<dt>타이틀</dt>
+							<dd>데이터</dd>
+						</div>
+						<div>
+							<dt>타이틀</dt>
+							<dd>데이터</dd>
+						</div>
+					</dl>
+				</div>
+			</button>
+			<div class="text">
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-price @ State=disabled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -price -filled -disabled">
-                                    <div class="button-type -fixed">
-                                        <div class="selection">
-                                            <div class="top-area badges">
-                                                <span class="badge fill-gray -sm">한도제한</span>
-                                            </div>
-                                            <button type="button" aria-haspopup="true" data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </button>
-                                            <div class="amount mix-charge">
-                                                <div>
-                                                    <button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
-                                                </div>
-                                                <div>
-                                                    <div class="key">금액</div>
-                                                    <div class="value">
-                                                        <span>
-                                                            <button type="button" class="refresh"><span class="hide">새로고침</span></button>
-                                                            50,000,000원
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -price -filled -disabled">
+			<div class="button-type -fixed">
+				<div class="selection">
+					<div class="top-area badges">
+						<span class="badge fill-gray -sm">한도제한</span>
+					</div>
+					<button type="button" aria-haspopup="true" data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</button>
+					<div class="amount mix-charge">
+						<div>
+							<button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
+						</div>
+						<div>
+							<div class="key">금액</div>
+							<div class="value">
+								<span>
+									<button type="button" class="refresh"><span class="hide">새로고침</span></button>
+									50,000,000원
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text">
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-price @ State=error" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -price -filled -error">
-                                    <div class="button-type -fixed">
-                                        <div class="selection">
-                                            <div class="top-area badges">
-                                                <span class="badge fill-gray -sm">한도제한</span>
-                                            </div>
-                                            <button type="button" aria-haspopup="true" data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </button>
-                                            <div class="amount mix-charge">
-                                                <div>
-                                                    <button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
-                                                </div>
-                                                <div>
-                                                    <div class="key">금액</div>
-                                                    <div class="value">
-                                                        <span>
-                                                            <button type="button" class="refresh"><span class="hide">새로고침</span></button>
-                                                            50,000,000원
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <p class="info">오류 메세지 출력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -price -filled -error">
+			<div class="button-type -fixed">
+				<div class="selection">
+					<div class="top-area badges">
+						<span class="badge fill-gray -sm">한도제한</span>
+					</div>
+					<button type="button" aria-haspopup="true" data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</button>
+					<div class="amount mix-charge">
+						<div>
+							<button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
+						</div>
+						<div>
+							<div class="key">금액</div>
+							<div class="value">
+								<span>
+									<button type="button" class="refresh"><span class="hide">새로고침</span></button>
+									50,000,000원
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text">
+				<p class="info">오류 메세지 출력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-price @ State=filled" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -price -filled">
-                                    <div class="button-type -fixed">
-                                        <div class="selection">
-                                            <div class="top-area badges">
-                                                <span class="badge fill-gray -sm">한도제한</span>
-                                            </div>
-                                            <button type="button" aria-haspopup="true" data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </button>
-                                            <div class="amount mix-charge">
-                                                <div>
-                                                    <button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
-                                                </div>
-                                                <div>
-                                                    <div class="key">금액</div>
-                                                    <div class="value">
-                                                        <span>
-                                                            <button type="button" class="refresh"><span class="hide">새로고침</span></button>
-                                                            50,000,000원
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -price -filled">
+			<div class="button-type -fixed">
+				<div class="selection">
+					<div class="top-area badges">
+						<span class="badge fill-gray -sm">한도제한</span>
+					</div>
+					<button type="button" aria-haspopup="true" data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</button>
+					<div class="amount mix-charge">
+						<div>
+							<button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
+						</div>
+						<div>
+							<div class="key">금액</div>
+							<div class="value">
+								<span>
+									<button type="button" class="refresh"><span class="hide">새로고침</span></button>
+									50,000,000원
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text">
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-price @ State=focus" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -price -focused">
-                                    <button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -price -focused">
+			<button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-price @ State=inactive" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -price">
-                                    <button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
-                                    <p class="info">안내 문구 입력</p>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -price">
+			<button type="button" aria-haspopup="true" class="fc-empty">출금계좌 선택</button>
+			<p class="info">안내 문구 입력</p>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Select | select-price @ State=readonly" type="text/template">
-                            <div class="field">
-                                <p class="label">레이블</p>
-                                <div class="select -price -filled -readonly">
-                                    <div class="button-type -fixed">
-                                        <div class="selection">
-                                            <div class="top-area badges">
-                                                <span class="badge fill-gray -sm">한도제한</span>
-                                            </div>
-                                            <button type="button" aria-haspopup="true" data-bankcode="011" class="info">
-                                                <span class="name">
-                                                    <span>금융사명</span>
-                                                </span>
-                                                <span class="account-number">
-                                                    <!-- <span>NH농협</span> -->
-                                                    <span>계좌번호</span>
-                                                </span>
-                                            </button>
-                                            <div class="amount mix-charge">
-                                                <div>
-                                                    <button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
-                                                </div>
-                                                <div>
-                                                    <div class="key">금액</div>
-                                                    <div class="value">
-                                                        <span>
-                                                            <button type="button" class="refresh"><span class="hide">새로고침</span></button>
-                                                            50,000,000원
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <p class="info">안내 문구 입력</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="field">
+		<p class="label">레이블</p>
+		<div class="select -price -filled -readonly">
+			<div class="button-type -fixed">
+				<div class="selection">
+					<div class="top-area badges">
+						<span class="badge fill-gray -sm">한도제한</span>
+					</div>
+					<button type="button" aria-haspopup="true" data-bankcode="011" class="info">
+						<span class="name">
+							<span>금융사명</span>
+						</span>
+						<span class="account-number">
+							<!-- <span>NH농협</span> -->
+							<span>계좌번호</span>
+						</span>
+					</button>
+					<div class="amount mix-charge">
+						<div>
+							<button type="button" class="button -tertiary -xs -fitted">잔액채우기</button>
+						</div>
+						<div>
+							<div class="key">금액</div>
+							<div class="value">
+								<span>
+									<button type="button" class="refresh"><span class="hide">새로고침</span></button>
+									50,000,000원
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text">
+				<p class="info">안내 문구 입력</p>
+			</div>
+		</div>
+	</div>
+</script>
+		<!-- NDS components : E -->
+	</div>
+	<!-- NDS Script -->
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/common-ui.js"></script>
+	<!-- Guide Script -->
+	<script src="./../worklist/assets/js/guide.js"></script>
+	<script>
+		buildGuide();
+	</script>
+</html>

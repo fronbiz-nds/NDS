@@ -1,60 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Attached file</title>
+	<link rel="stylesheet" href="./../assets/css/nds-ui.css" />
+	<link rel="stylesheet" href="./../worklist/assets/css/guide-components.css" />
+</head>
+<body>
+	<div class="gl">
+		<!-- NDS components : S -->
 <script data-size="2" data-title="Indicator | indicator-dot @ State=play" type="text/template">
-                            <div class="group-banner-wrap -dmp">
-                                <div class="swiper-container dmp-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                                    
-                                    <div class="pagination-wrap -center">
-                                        <span class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                                            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
-                                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span>
-                                            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-                                        </span>
-                                        <a href="javascript:;" class="button-stop -active" role="button" style="display: block;">
-                                            <span class="hide">재생</span>
-                                        </a>
-                                    </div>
-                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                                </div>
-                            </div>
-                        </script>
+	<div class="group-banner-wrap -dmp">
+		<div class="swiper-container dmp-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+			
+			<div class="pagination-wrap -center">
+				<span class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+					<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+					<span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span>
+					<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+				</span>
+				<a href="javascript:;" class="button-stop -active" role="button" style="display: block;">
+					<span class="hide">재생</span>
+				</a>
+			</div>
+			<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Indicator | indicator-dot @ State=stop" type="text/template">
-                            <div class="group-banner-wrap -dmp">
-                                <div class="swiper-container dmp-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                                    
-                                    <div class="pagination-wrap -center">
-                                        <span class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                                            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
-                                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span>
-                                            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-                                        </span>
-                                        <a href="javascript:;" class="button-stop" role="button" style="display: block;">
-                                            <span class="hide">정지</span>
-                                        </a>
-                                    </div>
-                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                                </div>
-                            </div>
-                        </script>
+	<div class="group-banner-wrap -dmp">
+		<div class="swiper-container dmp-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+			
+			<div class="pagination-wrap -center">
+				<span class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+					<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+					<span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span>
+					<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+				</span>
+				<a href="javascript:;" class="button-stop" role="button" style="display: block;">
+					<span class="hide">정지</span>
+				</a>
+			</div>
+			<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Indicator | indicator-number @ State=play" type="text/template">
-                            <div class="swiper swiper-number">
-                                <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                                    <div class="pagination-wrap indicator">
-                                        <div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal"><span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">3</span></div>
-                                        <a href="javascript:void(0);" class="button-stop -pause" role="button" aria-label="재생">
-                                            <span class="hide">재생</span>
-                                        </a>
-                                    </div>
-                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                            </div>
-                        </script>
+	<div class="swiper swiper-number">
+		<div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+			<div class="pagination-wrap indicator">
+				<div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal"><span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">3</span></div>
+				<a href="javascript:void(0);" class="button-stop -pause" role="button" aria-label="재생">
+					<span class="hide">재생</span>
+				</a>
+			</div>
+		<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+	</div>
+</script>
 <script data-size="2" data-title="Indicator | indicator-number @ State=stop" type="text/template">
-                            <div class="swiper swiper-number">
-                                <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                                    <div class="pagination-wrap indicator">
-                                        <div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal"><span class="swiper-pagination-current">3</span> / <span class="swiper-pagination-total">3</span></div>
-                                        <a href="javascript:void(0);" class="button-stop" role="button" aria-label="정지">
-                                            <span class="hide">정지</span>
-                                        </a>
-                                    </div>
-                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                            </div>
-                        </script>
+	<div class="swiper swiper-number">
+		<div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+			<div class="pagination-wrap indicator">
+				<div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal"><span class="swiper-pagination-current">3</span> / <span class="swiper-pagination-total">3</span></div>
+				<a href="javascript:void(0);" class="button-stop" role="button" aria-label="정지">
+					<span class="hide">정지</span>
+				</a>
+			</div>
+		<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+	</div>
+</script>
+		<!-- NDS components : E -->
+	</div>
+	<!-- NDS Script -->
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/common-ui.js"></script>
+	<!-- Guide Script -->
+	<script src="./../worklist/assets/js/guide.js"></script>
+	<script>
+		buildGuide();
+	</script>
+</html>

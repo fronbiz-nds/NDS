@@ -1,85 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Attached file</title>
+	<link rel="stylesheet" href="./../assets/css/nds-ui.css" />
+	<link rel="stylesheet" href="./../worklist/assets/css/guide-components.css" />
+</head>
+<body>
+	<div class="gl">
+		<!-- NDS components : S -->
 <script data-size="2" data-title="Terms | terms-accordion @ State=close" type="text/template">
-                            <div class="agree -accor" data-role="fold">
-                                <div class="title">
-                                    <div class="checkbox -sm">
-                                        <input type="checkbox" id="total555">
-                                        <label for="total555">유의사항</label>
-                                    </div>
-                                    <button type="button" class="more" data-role="marker" title="접힘"><span class="hide">약관 더보기</span></button>
-                                </div>
-                                <div class="panel -close" data-role="hidden">
-                                    <div class="dummy">내용을 입력해 주세요</div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="agree -accor" data-role="fold">
+		<div class="title">
+			<div class="checkbox -sm">
+				<input type="checkbox" id="total555">
+				<label for="total555">유의사항</label>
+			</div>
+			<button type="button" class="more" data-role="marker" title="접힘"><span class="hide">약관 더보기</span></button>
+		</div>
+		<div class="panel -close" data-role="hidden">
+			<div class="dummy">내용을 입력해 주세요</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Terms | terms-accordion @ State=open" type="text/template">
-                            <div class="agree -accor -active" data-role="fold">
-                                <div class="title">
-                                    <div class="checkbox -sm">
-                                        <input type="checkbox" id="total5575">
-                                        <label for="total5575">유의사항</label>
-                                    </div>
-                                    <button type="button" class="more" data-role="marker" title="접힘"><span class="hide">약관 더보기</span></button>
-                                </div>
-                                <div class="panel" data-role="visible">
-                                    <div>
-                                        <ul class="ul -bullet">
-                                            <li>개인적립금은 입금예정상품신청 메뉴에서 상품 운용비율을 설정하거나 변경할 수 있습니다.</li>
-                                            <li>상품 서비스 알고리즘은 장기 성과가 검증되지 않음에 따라 개인적립금에 한하여 운용하시길 권고드리며 가입자 본인 책임하에 퇴직금을 상품 서비스로 운용하시길 바랍니다.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="agree -accor -active" data-role="fold">
+		<div class="title">
+			<div class="checkbox -sm">
+				<input type="checkbox" id="total5575">
+				<label for="total5575">유의사항</label>
+			</div>
+			<button type="button" class="more" data-role="marker" title="접힘"><span class="hide">약관 더보기</span></button>
+		</div>
+		<div class="panel" data-role="visible">
+			<div>
+				<ul class="ul -bullet">
+					<li>개인적립금은 입금예정상품신청 메뉴에서 상품 운용비율을 설정하거나 변경할 수 있습니다.</li>
+					<li>상품 서비스 알고리즘은 장기 성과가 검증되지 않음에 따라 개인적립금에 한하여 운용하시길 권고드리며 가입자 본인 책임하에 퇴직금을 상품 서비스로 운용하시길 바랍니다.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Terms | terms-basic @ State=close" type="text/template">
-                            <div class="agree">
-                                <div class="title">
-                                    <div class="checkbox -sm">
-                                        <input type="checkbox" id="total">
-                                        <label for="total">[필수] 전체동의</label>
-                                    </div>
-                                    <button type="button" class="more"><span class="hide">약관명</span></button>
-                                </div>
-                            </div>
-                        </script>
+	<div class="agree">
+		<div class="title">
+			<div class="checkbox -sm">
+				<input type="checkbox" id="total">
+				<label for="total">[필수] 전체동의</label>
+			</div>
+			<button type="button" class="more"><span class="hide">약관명</span></button>
+		</div>
+	</div>
+</script>
 <script data-size="2" data-title="Terms | terms-basic @ State=open" type="text/template">
-                            <div class="agree -detail">
-                                <div class="title">
-                                    <div class="checkbox -sm">
-                                        <input type="checkbox" id="optional-total">
-                                        <label for="optional-total">[필수] 전체 동의</label>
-                                    </div>
-                                    <button type="button" class="more"><span class="hide">선택 전체 동의 약관</span></button>
-                                </div>
-                                <div class="panel">
-                                    <div class="checkboxes -full">
-                                        <div class="checkbox -sub">
-                                            <input type="checkbox" id="optional1">
-                                            <label for="optional1">약관명을 입력해 주세요</label>
-                                            <button type="button" class="more"><span class="hide">약관</span></button>
-                                        </div>
-                                        <div class="checkbox -sub">
-                                            <input type="checkbox" id="optional2">
-                                            <label for="optional2">약관명을 입력해 주세요</label>
-                                            <button type="button" class="more"><span class="hide">약관</span></button>
-                                        </div>
-                                        <div class="checkbox -sub">
-                                            <input type="checkbox" id="optional3">
-                                            <label for="optional3">약관명을 입력해 주세요</label>
-                                            <button type="button" class="more"><span class="hide">약관</span></button>
-                                        </div>
-                                        <div class="checkbox -sub">
-                                            <input type="checkbox" id="optional4">
-                                            <label for="optional4">약관명을 입력해 주세요</label>
-                                            <button type="button" class="more"><span class="hide">약관</span></button>
-                                        </div>
-                                        <div class="checkbox -sub">
-                                            <input type="checkbox" id="optional5">
-                                            <label for="optional5">약관명을 입력해 주세요</label>
-                                            <button type="button" class="more"><span class="hide">약관</span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </script>
+	<div class="agree -detail">
+		<div class="title">
+			<div class="checkbox -sm">
+				<input type="checkbox" id="optional-total">
+				<label for="optional-total">[필수] 전체 동의</label>
+			</div>
+			<button type="button" class="more"><span class="hide">선택 전체 동의 약관</span></button>
+		</div>
+		<div class="panel">
+			<div class="checkboxes -full">
+				<div class="checkbox -sub">
+					<input type="checkbox" id="optional1">
+					<label for="optional1">약관명을 입력해 주세요</label>
+					<button type="button" class="more"><span class="hide">약관</span></button>
+				</div>
+				<div class="checkbox -sub">
+					<input type="checkbox" id="optional2">
+					<label for="optional2">약관명을 입력해 주세요</label>
+					<button type="button" class="more"><span class="hide">약관</span></button>
+				</div>
+				<div class="checkbox -sub">
+					<input type="checkbox" id="optional3">
+					<label for="optional3">약관명을 입력해 주세요</label>
+					<button type="button" class="more"><span class="hide">약관</span></button>
+				</div>
+				<div class="checkbox -sub">
+					<input type="checkbox" id="optional4">
+					<label for="optional4">약관명을 입력해 주세요</label>
+					<button type="button" class="more"><span class="hide">약관</span></button>
+				</div>
+				<div class="checkbox -sub">
+					<input type="checkbox" id="optional5">
+					<label for="optional5">약관명을 입력해 주세요</label>
+					<button type="button" class="more"><span class="hide">약관</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+		<!-- NDS components : E -->
+	</div>
+	<!-- NDS Script -->
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/common-ui.js"></script>
+	<!-- Guide Script -->
+	<script src="./../worklist/assets/js/guide.js"></script>
+	<script>
+		buildGuide();
+	</script>
+</html>

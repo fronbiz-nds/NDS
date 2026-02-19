@@ -103,19 +103,22 @@
 
 /* [Button - Variant: Primary] */
 .nds-button.-primary {background-color:var(--nds-color-bg-button-primary-default); color:var(--nds-color-text-button-primary-default);}
-.nds-button.-primary:active {background-color:var(--nds-color-bg-button-primary-pressed);}
+.nds-button.-primary:active,
+.nds-button.-primary.-active {background-color:var(--nds-color-bg-button-primary-pressed);}
 .nds-button.-primary[disabled],
 .nds-button.-primary.-disabled {background-color:var(--nds-color-bg-button-primary-disabled); color:var(--nds-color-text-button-primary-disabled); cursor:not-allowed;}
 
 /* [Button - Variant: Secondary] */
 .nds-button.-secondary {border-color:var(--nds-color-border-button-secondary-default); background-color:var(--nds-color-bg-button-secondary-default); color:var(--nds-color-text-button-secondary-default);}
-.nds-button.-secondary:active {border-color:var(--nds-color-border-button-secondary-pressed); background-color:var(--nds-color-bg-button-secondary-pressed); color:var(--nds-color-text-button-secondary-pressed);}
+.nds-button.-secondary:active,
+.nds-button.-secondary.-active {border-color:var(--nds-color-border-button-secondary-pressed); background-color:var(--nds-color-bg-button-secondary-pressed); color:var(--nds-color-text-button-secondary-pressed);}
 .nds-button.-secondary[disabled],
 .nds-button.-secondary.-disabled {border-color:var(--nds-color-border-button-secondary-disabled); background-color:var(--nds-color-bg-button-secondary-disabled); color:var(--nds-color-text-button-secondary-disabled); cursor:not-allowed;}
 
 /* [Button - Variant: Tertiary] */
 .nds-button.-tertiary {border-color:var(--nds-color-border-button-tertiary-default); background-color:var(--nds-color-bg-button-tertiary-default); color:var(--nds-color-text-button-tertiary-default);}
-.nds-button.-tertiary:active {background-color:var(--nds-color-bg-button-tertiary-pressed);} 
+.nds-button.-tertiary:active,
+.nds-button.-tertiary.-active {background-color:var(--nds-color-bg-button-tertiary-pressed);} 
 .nds-button.-tertiary[disabled],
 .nds-button.-tertiary.-disabled {border-color:var(--nds-color-border-button-tertiary-disabled); color:var(--nds-color-text-button-tertiary-disabled); cursor:not-allowed;}
 

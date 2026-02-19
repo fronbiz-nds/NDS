@@ -16,7 +16,6 @@
     letter-spacing:-0.025em;
     word-break:keep-all;
     overflow-wrap:anywhere;
-    -webkit-text-size-adjust:none;
 }
 .nds-ui button,
 .nds-ui input,

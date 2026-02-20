@@ -15,7 +15,7 @@
 @import "./nds/base/common.css";
 
 /* Components */
-@import "./nds/components/components.css"; /* asis 전체 */
+/* @import "./nds/components/components.css"; asis 전체 */
 @import "./nds/components/layout.css";
 @import "./nds/components/accordion.css";
 @import "./nds/components/attachedfile.css";

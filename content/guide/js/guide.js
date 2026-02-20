@@ -146,6 +146,7 @@ var headings = document.querySelectorAll('.gc__heading');
 
 window.addEventListener('scroll', function() {
     var currentID;
+    if(!headings) return;
 
     headings.forEach(function(heading) {
         if (pageYOffset === 0) {

@@ -1,11 +1,5 @@
 /* ============================================================
    label.css
-   ---------------------------------------------------------
-   
-   ========================================================= */
-   
-/* ============================================================
-   Component Style
    ============================================================ */
 
 /* [Label - Base] */
@@ -26,7 +20,6 @@
 .nds-label.line-lightblue {border-color:var(--nds-color-border-label-lightblue); color:var(--nds-color-text-label-lightblue);}
 .nds-label.line-skyblue {border-color:var(--nds-color-border-label-skyblue); color:var(--nds-color-text-label-skyblue);}
 .nds-label.line-navy {border-color:var(--nds-color-border-label-navy); color:var(--nds-color-text-label-navy);}
-
 
 /* [Label - Variant: Fill] */
 .nds-label[class*="fill-"] {color:var(--nds-color-base-white);}

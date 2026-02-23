@@ -508,12 +508,6 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="bold -consolas letter-wide">inIframe</td>
-                                <td>
-                                    부모 윈도우에 다크모드가 적용되어 있는지를 파악하여 아이프레임 내부에 다크모드를 적용하는 함수이다.
-                                </td>
-                            </tr>
-                            <tr>
                                 <td class="bold -consolas letter-wide">fold</td>
                                 <td>
                                     아코디언과 같이 접고 펼치는 모든 UI를 위한 함수이다. data속성을 적용하면 클래스와 상관없이 모든 UI에 적용할 수 있다.<br>
@@ -694,49 +688,33 @@
                                     <li class="css">
                                         <strong class="folder">css</strong> : css 폴더
                                         <ul class="wgTree">
-                                            <li><strong>nds-ui.css</strong> : NDS Import css</li>
-                                            <li><strong class="folder">nds</strong>
-                                                <ul class="wgTree">
-                                                    <li>
-                                                        <strong class="folder">base</strong> : 기본 환경
-                                                        <ul class="treeset">
-                                                            <li><strong>variable.css</strong> : 전역 변수 및 컬러 시스템 정의</li>
-                                                            <li><strong>reset.css</strong> : 브라우저 기본 스타일 초기화</li>
-                                                            <li><strong>fonts.css</strong> : 웹 폰트 선언</li>
-                                                            <li class="last"><strong>common.css</strong> : 전역 설정, 공통 유틸리티 정의</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><strong class="folder">components</strong> : 공통 UI 컴포넌트</li>
-                                                </ul>
-                                            </li>
+                                            <li><strong>nds-common.css</strong> : reset, font, variable 등 NDS 공통 기반 스타일</li>
+                                            <li class="last"><strong>nds-components.css</strong> : 버튼, 입력폼, 카드 등 NDS UI 컴포넌트 스타일</li>
                                         </ul>
                                     </li>
                                     <li class="js">
                                         <strong class="folder">js</strong> : js 폴더
                                         <ul class="wgTree">
-                                            <li><strong>nds-ui.js</strong> : NDS 공통 UI 인터랙션 관리</li>
-                                            <li class="last">
-                                                <strong class="folder">libs</strong> : jquery 및 관련 plugin들
-                                                <ul class="wgTree">
-                                                    <li><strong class="folder">anime</strong> : 애니메이션 라이브러리</li>
-                                                    <li><strong class="folder">jquery</strong> : jquery 라이브러리</li>
-                                                    <li class="last"><strong class="folder">swiper</strong> : Swiper 슬라이드 라이브러리</li>
-                                                </ul>
-                                            </li>
+                                            <li class="last"><strong>nds-ui.js</strong> : NDS UI 인터랙션 관리</li>
                                         </ul>
                                     </li>
-                                    <li class="img">
+                                    <li class="img last">
                                         <strong class="folder">imgs</strong> : 이미지 폴더
                                         <ul class="treeset">
-                                            <li><strong class="folder">nds</strong> : NDS 이미지
+                                            <li class="last"><strong class="folder">nds</strong> : NDS 이미지
                                                 <ul class="treeset">
-                                                    <li><strong class="folder">ico</strong> : 컨텐츠 이미지</li>
+                                                    <li><strong class="folder">ci</strong> : ci 이미지</li>
+                                                    <li><strong class="folder">common</strong> : 공통 사용 이미지</li>
+                                                    <li><strong class="folder">flag</strong> : 국기 이미지</li>
                                                     <li class="last"><strong class="folder">temp</strong> : 테스트용 이미지</li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </li>
                                 </ul>
+                            </li>
+                            <li>
+                                <strong class="folder">components</strong> : 공통 UI 컴포넌트 html
                             </li>
                             <li class="last guide">
                                 <strong class="folder">guide</strong> : 퍼블리싱 가이드 관련 
@@ -1072,8 +1050,8 @@ round button -> .round-button
 
 </div>
 
-    <script src="assets/js/libs/jquery/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/libs/anime/lib/anime.min.js"></script>
+    <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/libs/anime/lib/anime.min.js"></script>
     <script>
         $(function() {
             $('.code').each(function(i, el) {

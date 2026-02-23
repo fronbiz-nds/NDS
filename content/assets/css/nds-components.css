@@ -1,20 +1,11 @@
 @charset "utf-8";
 
 /* =========================================================
-   NDS - UI Import Stylesheet
+   NDS - Components
    ---------------------------------------------------------
-   NDS 전체 스타일을 불러오는 Import Entry 파일
-   - Base (variable, reset, font, common 등 기본 환경)
-   - Components (공통 UI 컴포넌트)
+   공통 UI 컴포넌트 스타일 정의
    ========================================================= */
 
-/* Base */
-@import "./nds/base/variable.css";
-@import "./nds/base/reset.css";
-@import "./nds/base/fonts.css";
-@import "./nds/base/common.css";
-
-/* Components */
 @import "./nds/components/components.css"; /* asis 전체 */
 @import "./nds/components/layout.css";
 @import "./nds/components/accordion.css";

@@ -31,7 +31,7 @@ function buildGuide() {
         var detailBtn = document.createElement('button');
         detailBtn.type = 'button';
         detailBtn.classList.add('gl__detail');
-        detailBtn.innerHTML = '<span class="hide">소스보기</span>';
+        detailBtn.innerHTML = '<span class="nds-hide">소스보기</span>';
         detailBtn.addEventListener('click', function () {
 
             if (document.querySelector('.gd')) {
@@ -71,7 +71,7 @@ function buildGuide() {
         var copyBtn = document.createElement('button');
         copyBtn.type = 'button';
         copyBtn.classList.add('gl__copy');
-        copyBtn.innerHTML = '<span class="hide">카피하기</span>';
+        copyBtn.innerHTML = '<span class="nds-hide">카피하기</span>';
 
         copyBtn.addEventListener('click', function () {
             navigator.clipboard.writeText(html);
@@ -146,6 +146,7 @@ var headings = document.querySelectorAll('.gc__heading');
 
 window.addEventListener('scroll', function() {
     var currentID;
+    if(!headings) return;
 
     headings.forEach(function(heading) {
         if (pageYOffset === 0) {

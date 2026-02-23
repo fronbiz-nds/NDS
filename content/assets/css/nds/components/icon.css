@@ -4,7 +4,7 @@
 
 /* [Icon - Base] */
 .nds-ico {--nds-icon-size:1.6rem; display:inline-block; flex-shrink:0; justify-content:center; align-items:center; width:var(--nds-icon-size); height:var(--nds-icon-size);}
-.nds-ico::before {content:url(""); display:block; width:100%; height:100%; background-repeat:no-repeat; background-position:center; background-size:contain;}
+.nds-ico::before {content:""; display:block; width:100%; height:100%; background-repeat:no-repeat; background-position:center; background-size:contain;}
 
 /* [Icon - Sizes] */
 .nds-ico.-x8 {--nds-icon-size:.8rem;}

@@ -12,97 +12,744 @@
 *,
 *:before,
 *:after {
-   margin:0;
-   padding:0;
-   border:none;
-   outline:none;
-   -webkit-user-select:none;
-   user-select:none;
-   box-sizing:border-box;
-   -webkit-touch-callout:none;
-   -webkit-tap-highlight-color:transparent;
+    margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+    -webkit-user-select:none;
+    user-select:none;
+    box-sizing:border-box;
+    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color:transparent;
 }
 ul,
 ol,
 dl {
-   list-style:none;
+    list-style:none;
 }
 img {
-   max-width:100%;
-   vertical-align:top;
+    max-width:100%;
+    vertical-align:top;
 }
 a {
-   color:inherit;
-   text-decoration:none;
+    color:inherit;
+    text-decoration:none;
 }
 button {
-   cursor:pointer;
+    cursor:pointer;
 }
 input,
 textarea {
-   -webkit-user-select:auto;
-   user-select:auto;
+    -webkit-user-select:auto;
+    user-select:auto;
 }
 html {
-   font-size:62.5%;
-   -webkit-overflow-scrolling:auto;
+    font-size:62.5%;
+    -webkit-overflow-scrolling:auto;
 }
 
 /* font */
 @font-face {
-   font-style:normal;
-   font-weight:400;
-   font-family:"Pretendard";
-   src:url("../../../fonts/Pretendard-Regular.otf?ver=1.0.0")   format("opentype"),
-      url("../../../fonts/Pretendard-Regular.woff?ver=1.0.0")  format("woff"),
-      url("../../../fonts/Pretendard-Regular.woff2?ver=1.0.0") format("woff2");
+    font-style:normal;
+    font-weight:400;
+    font-family:"Pretendard";
+    src:url("../../../fonts/Pretendard-Regular.otf?ver=1.0.0")   format("opentype"),
+        url("../../../fonts/Pretendard-Regular.woff?ver=1.0.0")  format("woff"),
+        url("../../../fonts/Pretendard-Regular.woff2?ver=1.0.0") format("woff2");
 }
 @font-face {
-   font-style:normal;
-   font-weight:500;
-   font-family:"Pretendard";
-   src:url("../../../fonts/Pretendard-Medium.otf?ver=1.0.0")    format("opentype"),
-      url("../../../fonts/Pretendard-Medium.woff?ver=1.0.0")   format("woff"),
-      url("../../../fonts/Pretendard-Medium.woff2?ver=1.0.0")  format("woff2");
+    font-style:normal;
+    font-weight:500;
+    font-family:"Pretendard";
+    src:url("../../../fonts/Pretendard-Medium.otf?ver=1.0.0")    format("opentype"),
+        url("../../../fonts/Pretendard-Medium.woff?ver=1.0.0")   format("woff"),
+        url("../../../fonts/Pretendard-Medium.woff2?ver=1.0.0")  format("woff2");
 }
 @font-face {
-   font-style:normal;
-   font-weight:600;
-   font-family:"Pretendard";
-   src:url("../../../fonts/Pretendard-SemiBold.otf?ver=1.0.0")    format("opentype"),
-      url("../../../fonts/Pretendard-SemiBold.woff?ver=1.0.0")   format("woff"),
-      url("../../../fonts/Pretendard-SemiBold.woff2?ver=1.0.0")  format("woff2");
+    font-style:normal;
+    font-weight:600;
+    font-family:"Pretendard";
+    src:url("../../../fonts/Pretendard-SemiBold.otf?ver=1.0.0")    format("opentype"),
+        url("../../../fonts/Pretendard-SemiBold.woff?ver=1.0.0")   format("woff"),
+        url("../../../fonts/Pretendard-SemiBold.woff2?ver=1.0.0")  format("woff2");
 }
 @font-face {
-   font-style:normal;
-   font-family:"Pass";
-   src:url("../../../fonts/password.ttf?ver=1.0.0")    format("opentype"),
-      url("../../../fonts/password.woff?ver=1.0.0")   format("woff"),
-      url("../../../fonts/password.woff2?ver=1.0.0")  format("woff2");
+    font-style:normal;
+    font-family:"Pass";
+    src:url("../../../fonts/password.ttf?ver=1.0.0")    format("opentype"),
+        url("../../../fonts/password.woff?ver=1.0.0")   format("woff"),
+        url("../../../fonts/password.woff2?ver=1.0.0")  format("woff2");
 }
 
 /* variable */
+:root {
+    /* Global Setting Common */
+    --nds-space-in:2.4rem;
+    --nds-space-out:calc(var(--nds-space-in) * -1);
+    --nds-indent:0.4rem;
+    --nds-outdent:calc(var(--nds-indent) * -1);
+    --nds-font-base:"Pretendard", "DroidSans", "Apple SD Gothic Neo", "AppleGothic", sans-serif;
+
+    /* [Base] */
+    --nds-color-base-white:#FFFFFF;
+    --nds-color-base-black:#000000;
+
+    /* [Gray Scale] */
+    --nds-color-gray-50:#FFFFFF;
+    --nds-color-gray-100:#F6F6F6;
+    --nds-color-gray-200:#F0F0F0;
+    --nds-color-gray-300:#E1E1E1;
+    --nds-color-gray-400:#D3D3D3;
+    --nds-color-gray-500:#B3B3B3;
+    --nds-color-gray-550:#929292;
+    --nds-color-gray-600:#707070;
+    --nds-color-gray-700:#555555;
+    --nds-color-gray-800:#333333;
+    --nds-color-gray-900:#111111;
+
+    /* [Gray Scale - Font] */
+    --nds-color-gray-font-50:#FFFFFF;
+    --nds-color-gray-font-100:#F2F2F2;
+    --nds-color-gray-font-200:#D9D9D9;
+    --nds-color-gray-font-300:#BFBFBF;
+    --nds-color-gray-font-400:#A6A6A6;
+    --nds-color-gray-font-500:#929292;
+    --nds-color-gray-font-600:#767676;
+    --nds-color-gray-font-700:#505050;
+    --nds-color-gray-font-800:#343434;
+    --nds-color-gray-font-900:#121212;
+    
+    /* [Blue Gray] */
+    --nds-color-bluegray-50:#F3F5F8;
+    --nds-color-bluegray-100:#EBEFF6;
+    --nds-color-bluegray-200:#D9DFEB;
+    --nds-color-bluegray-300:#BCC2CF;
+    --nds-color-bluegray-400:#A2A8B2;
+    --nds-color-bluegray-500:#828894;
+    --nds-color-bluegray-600:#656A73;
+    --nds-color-bluegray-700:#4F5359;
+    --nds-color-bluegray-800:#383B40;
+    --nds-color-bluegray-900:#212326;
+    
+    /* Red */
+    --nds-color-red-50:#FFE5E5;
+    --nds-color-red-100:#FFB2B2;
+    --nds-color-red-200:#FF8989;
+    --nds-color-red-300:#E24949;
+    --nds-color-red-400:#DF3535;
+    --nds-color-red-500:#EC0C0C;
+    --nds-color-red-600:#D10F0F;
+    --nds-color-red-700:#800400;
+    --nds-color-red-800:#610000;
+    --nds-color-red-900:#400000;
+    
+    /* Orange */
+    --nds-color-orange-50:#FFF0E5;
+    --nds-color-orange-100:#FFD1B2;
+    --nds-color-orange-200:#FFB380;
+    --nds-color-orange-300:#FF944D;
+    --nds-color-orange-400:#FF7F29;
+    --nds-color-orange-500:#DA6F11;
+    --nds-color-orange-600:#D44B10;
+    --nds-color-orange-700:#803300;
+    --nds-color-orange-800:#4D1F00;
+    --nds-color-orange-900:#331400;
+    
+    /* Yellow */
+    --nds-color-yellow-50:#FFFCE5;
+    --nds-color-yellow-100:#FFF9BF;
+    --nds-color-yellow-200:#FFF27F;
+    --nds-color-yellow-300:#FFEC40;
+    --nds-color-yellow-400:#FFE600;
+    --nds-color-yellow-500:#FFD103;
+    --nds-color-yellow-600:#D9AE02;
+    --nds-color-yellow-700:#997300;
+    --nds-color-yellow-800:#664400;
+    --nds-color-yellow-900:#331F00;
+    
+    /* Green */
+    --nds-color-green-50:#DDF2E4;
+    --nds-color-green-100:#CBF2D6;
+    --nds-color-green-200:#ACE3BC;
+    --nds-color-green-300:#6DD189;
+    --nds-color-green-400:#3CBD61;
+    --nds-color-green-500:#19973C;
+    --nds-color-green-600:#12732E;
+    --nds-color-green-700:#0D5722;
+    --nds-color-green-800:#094018;
+    --nds-color-green-900:#06260F;
+    
+    /* Lightblue */
+    --nds-color-lightblue-50:#E8FCFB;
+    --nds-color-lightblue-100:#BAF7F2;
+    --nds-color-lightblue-200:#8CF2E9;
+    --nds-color-lightblue-300:#5EEDE0;
+    --nds-color-lightblue-400:#30E8D8;
+    --nds-color-lightblue-500:#17CFBE;
+    --nds-color-lightblue-600:#12A396;
+    --nds-color-lightblue-700:#0D736A;
+    --nds-color-lightblue-800:#08453F;
+    --nds-color-lightblue-900:#052E2A;
+    
+    /* Skyblue */
+    --nds-color-skyblue-50:#E8F8FF;
+    --nds-color-skyblue-100:#D1F1FF;
+    --nds-color-skyblue-200:#A8DCF2;
+    --nds-color-skyblue-300:#7DCAEA;
+    --nds-color-skyblue-400:#57B6DE;
+    --nds-color-skyblue-500:#2B9AC9;
+    --nds-color-skyblue-600:#187AA4;
+    --nds-color-skyblue-700:#095778;
+    --nds-color-skyblue-800:#023E58;
+    --nds-color-skyblue-900:#012D40;
+    
+    /* Blue */
+    --nds-color-blue-50:#E5EFFF;
+    --nds-color-blue-100:#B2D0FF;
+    --nds-color-blue-200:#8FBBFF;
+    --nds-color-blue-300:#7AAEFF;
+    --nds-color-blue-400:#66A1FF;
+    --nds-color-blue-500:#2C6DD4;
+    --nds-color-blue-600:#2357A9;
+    --nds-color-blue-700:#003B99;
+    --nds-color-blue-800:#003385;
+    --nds-color-blue-900:#002259;
+    
+    /* Navy */
+    --nds-color-navy-50:#E6F2FF;
+    --nds-color-navy-100:#B3DAFF;
+    --nds-color-navy-200:#80C2FE;
+    --nds-color-navy-300:#3F8ED6;
+    --nds-color-navy-400:#1B91FE;
+    --nds-color-navy-500:#0177E4;
+    --nds-color-navy-600:#015AAC;
+    --nds-color-navy-700:#01427F;
+    --nds-color-navy-800:#00274C;
+    --nds-color-navy-900:#001B33;
+    
+    /* Cobalt */
+    --nds-color-cobalt-50:#E1DEFE;
+    --nds-color-cobalt-100:#C4BEFE;
+    --nds-color-cobalt-200:#A59EFE;
+    --nds-color-cobalt-300:#8E86FD;
+    --nds-color-cobalt-400:#7167FF;
+    --nds-color-cobalt-500:#685EFD;
+    --nds-color-cobalt-600:#4D44D9;
+    --nds-color-cobalt-700:#362FB6;
+    --nds-color-cobalt-800:#231D92;
+    --nds-color-cobalt-900:#0E0C5A;
+
+    /* Purple */
+    --nds-color-purple-50:#FFEFF7;
+    --nds-color-purple-100:#F7DEEA;
+    --nds-color-purple-200:#F7CCE1;
+    --nds-color-purple-300:#EEB7D2;
+    --nds-color-purple-400:#E794BD;
+    --nds-color-purple-500:#D870A3;
+    --nds-color-purple-600:#AF4F7D;
+    --nds-color-purple-700:#92265A;
+    --nds-color-purple-800:#5A0D32;
+    --nds-color-purple-900:#38001B;
+    
+    /* [Product Colors 1-6] */
+    --nds-color-product-1-50:#DAEAF6;
+    --nds-color-product-1-100:#BEDAEF;
+    --nds-color-product-1-200:#A4CDEC;
+    --nds-color-product-1-300:#72B0DF;
+    --nds-color-product-1-400:#428FC9;
+    --nds-color-product-1-500:#2473AF;
+    --nds-color-product-1-600:#114E7D;
+    --nds-color-product-1-700:#083D64;
+    --nds-color-product-1-800:#052B48;
+    --nds-color-product-1-900:#031E33;
+
+    --nds-color-product-2-50:#DCE4F5;
+    --nds-color-product-2-100:#C8D4EF;
+    --nds-color-product-2-200:#ACC0EC;
+    --nds-color-product-2-300:#7896D8;
+    --nds-color-product-2-400:#5076CB;
+    --nds-color-product-2-500:#2F5ABA;
+    --nds-color-product-2-600:#1A42A1;
+    --nds-color-product-2-700:#0E2D78;
+    --nds-color-product-2-800:#061B50;
+    --nds-color-product-2-900:#031237;
+
+    --nds-color-product-3-50:#E7E4F3;
+    --nds-color-product-3-100:#D4CDF1;
+    --nds-color-product-3-200:#BFB4E9;
+    --nds-color-product-3-300:#A392E2;
+    --nds-color-product-3-400:#7B65D1;
+    --nds-color-product-3-500:#523AB1;
+    --nds-color-product-3-600:#2E1788;
+    --nds-color-product-3-700:#200C6B;
+    --nds-color-product-3-800:#15064E;
+    --nds-color-product-3-900:#0F0439;
+
+    --nds-color-product-4-50:#F3E9F0;
+    --nds-color-product-4-100:#F2D1E8;
+    --nds-color-product-4-200:#EBB7DB;
+    --nds-color-product-4-300:#DE8EC5;
+    --nds-color-product-4-400:#CE66AD;
+    --nds-color-product-4-500:#AF3C8B;
+    --nds-color-product-4-600:#8A2069;
+    --nds-color-product-4-700:#6E0E50;
+    --nds-color-product-4-800:#4A0635;
+    --nds-color-product-4-900:#300322;
+
+    --nds-color-product-5-50:#F6EFE6;
+    --nds-color-product-5-100:#F6E9CE;
+    --nds-color-product-5-200:#ECC98D;
+    --nds-color-product-5-300:#E5B851;
+    --nds-color-product-5-400:#EEAE1A;
+    --nds-color-product-5-500:#C88F0B;
+    --nds-color-product-5-600:#A27409;
+    --nds-color-product-5-700:#684C09;
+    --nds-color-product-5-800:#4A3606;
+    --nds-color-product-5-900:#332503;
+
+    --nds-color-product-6-50:#E2EFE8;
+    --nds-color-product-6-100:#C4EED7;
+    --nds-color-product-6-200:#9FE2BE;
+    --nds-color-product-6-300:#66D599;
+    --nds-color-product-6-400:#39C479;
+    --nds-color-product-6-500:#199A54;
+    --nds-color-product-6-600:#0A753B;
+    --nds-color-product-6-700:#054622;
+    --nds-color-product-6-800:#043E1E;
+    --nds-color-product-6-900:#022411;
+
+    /* [Point Colors 1-3] */
+    --nds-color-point-1-50:#DCEEF8;
+    --nds-color-point-1-100:#C4E3F4;
+    --nds-color-point-1-200:#9DD1ED;
+    --nds-color-point-1-300:#73BDE6;
+    --nds-color-point-1-400:#51ABDD;
+    --nds-color-point-1-500-point:#2D9CDB;
+    --nds-color-point-1-600:#267DAE;
+    --nds-color-point-1-700:#1E6289;
+    --nds-color-point-1-800:#123F58;
+    --nds-color-point-1-900:#09212E;
+
+    --nds-color-point-2-50:#F4DBFF;
+    --nds-color-point-2-100:#EBDAFF;
+    --nds-color-point-2-200:#D1B3F6;
+    --nds-color-point-2-300:#B78BEE;
+    --nds-color-point-2-400:#9F62EB;
+    --nds-color-point-2-500-point:#9B51E0;
+    --nds-color-point-2-600:#6B29BE;
+    --nds-color-point-2-700:#4F1696;
+    --nds-color-point-2-800:#3D0E77;
+    --nds-color-point-2-900:#200443;
+
+    --nds-color-point-3-50:#FFF3E9;
+    --nds-color-point-3-100:#FEE8D4;
+    --nds-color-point-3-200:#FBCFA9;
+    --nds-color-point-3-300:#F9BA85;
+    --nds-color-point-3-400:#F7A763;
+    --nds-color-point-3-500-point:#F1974B;
+    --nds-color-point-3-600:#DB7C2D;
+    --nds-color-point-3-700:#B15911;
+    --nds-color-point-3-800:#7E3F0B;
+    --nds-color-point-3-900:#422004;
+    
+    /* [Text] */
+    --nds-color-text-font-1:var(--nds-color-gray-font-900); /* #121212 / #FFFFFF*/
+    --nds-color-text-font-2:var(--nds-color-gray-font-800); /* #343434 / #F2F2F2 */
+    --nds-color-text-font-3:var(--nds-color-gray-font-700); /* #505050 / #D9D9D9 */
+    --nds-color-text-font-4:var(--nds-color-gray-font-600); /* #767676 / #BFBFBF */
+    --nds-color-text-font-5:var(--nds-color-gray-font-500); /* #929292 / #A6A6A6 */
+    --nds-color-text-font-6:var(--nds-color-gray-font-400); /* #A6A6A6 / #929292 */
+    --nds-color-text-font-7:var(--nds-color-gray-font-300); /* #BFBFBF / #767676 */
+    --nds-color-text-font-8:var(--nds-color-gray-font-200); /* #D9D9D9 / #505050 */
+    --nds-color-text-font-9:var(--nds-color-gray-font-100); /* #F2F2F2 / #343434 */
+    --nds-color-text-font-10:var(--nds-color-gray-font-50); /* #FFFFFF / #121212 */
+    --nds-color-text-visual:var(--nds-color-blue-500);      /* #2C6DD4 / #7AAEFF */
+    --nds-color-text-error:var(--nds-color-red-300);        /* #E24949 / #E24949 */
+    --nds-color-text-point:var(--nds-color-green-500);      /* #19973C / #3CBD61 */
+    --nds-color-text-positive:var(--nds-color-blue-500);    /* #2C6DD4 / #66A1FF */
+    --nds-color-text-negative:var(--nds-color-red-500);     /* #EC0C0C / #E24949 */
+    
+    /* [Border] */
+    --nds-color-border-line-1:var(--nds-color-gray-400);    /* #D3D3D3 / #707070 */
+    --nds-color-border-line-2:var(--nds-color-gray-300);    /* #E1E1E1 / #505050 */
+    --nds-color-border-line-3:var(--nds-color-gray-200);    /* #F0F0F0 / #404040 */
+    --nds-color-border-line-4:var(--nds-color-gray-100);    /* #F6F6F6 / #303030 */
+    --nds-color-border-error:var(--nds-color-red-300);      /* #E24949 / #E24949 */
+    --nds-color-border-point:var(--nds-color-green-500);    /* #19973C / #3CBD61 */
+
+    /* [Background] */
+    --nds-color-bg-default:var(--nds-color-gray-50);        /* #FFFFFF / #212121 */
+    --nds-color-bg-container:var(--nds-color-gray-100);     /* #F6F6F6 / #303030 */
+    --nds-color-bg-banner:var(--nds-color-bluegray-50);     /* #F3F5F8 / #35383B */
+    --nds-color-bg-table-header:var(--nds-color-gray-100);  /* #F6F6F6 / #303030 */
+    --nds-color-bg-disabled:var(--nds-color-gray-200);      /* #F0F0F0 / #404040 */
+    --nds-color-bg-point:var(--nds-color-green-500);        /* #19973C / #3CBD61 */
+    --nds-color-bg-error:var(--nds-color-red-500);          /* #EC0C0C / #EC0C0C */
+    --nds-color-bg-visual:var(--nds-color-blue-500);        /* #2C6DD4 / #7AAEFF */
+    --nds-color-bg-dimmed:rgba(17, 17, 17, 0.30);
+
+    /* [Badge] */
+    --nds-color-bg-badge-red:var(--nds-color-border-error);
+
+    /* [Button - Primary] */
+    --nds-color-text-button-primary-default:var(--nds-color-gray-font-50);
+    --nds-color-bg-button-primary-default:var(--nds-color-bg-point);
+    --nds-color-text-button-primary-pressed:var(--nds-color-gray-font-50);
+    --nds-color-bg-button-primary-pressed:var(--nds-color-green-700);
+    --nds-color-text-button-primary-disabled:var(--nds-color-text-font-5);
+    --nds-color-bg-button-primary-disabled:var(--nds-color-bg-disabled);
+
+    /* [Button - Secondary] */
+    --nds-color-text-button-secondary-default:var(--nds-color-text-point);
+    --nds-color-border-button-secondary-default:var(--nds-color-border-point);
+    --nds-color-bg-button-secondary-default:var(--nds-color-bg-default);
+    --nds-color-text-button-secondary-pressed:var(--nds-color-green-700);
+    --nds-color-border-button-secondary-pressed:var(--nds-color-green-700);
+    --nds-color-bg-button-secondary-pressed:var(--nds-color-green-50);
+    --nds-color-text-button-secondary-disabled:var(--nds-color-text-font-5);
+    --nds-color-border-button-secondary-disabled:var(--nds-color-border-line-2);
+    --nds-color-bg-button-secondary-disabled:var(--nds-color-bg-default);
+
+    /* [Button - Tertiary] */
+    --nds-color-text-button-tertiary-default:var(--nds-color-text-font-1);
+    --nds-color-border-button-tertiary-default:var(--nds-color-border-line-1);
+    --nds-color-bg-button-tertiary-default:var(--nds-color-bg-default);
+    --nds-color-text-button-tertiary-pressed:var(--nds-color-text-font-1);
+    --nds-color-border-button-tertiary-pressed:var(--nds-color-border-line-1);
+    --nds-color-bg-button-tertiary-pressed:var(--nds-color-bg-container);
+    --nds-color-text-button-tertiary-disabled:var(--nds-color-text-font-5);
+    --nds-color-border-button-tertiary-disabled:var(--nds-color-border-line-2);
+    --nds-color-bg-button-tertiary-disabled:var(--nds-color-bg-default);
+
+    /* [Button - Misc] */
+    --nds-color-text-button-text-icon:var(--nds-color-text-font-3);
+    --nds-color-text-button-file-default:var(--nds-color-text-font-3);
+    --nds-color-border-button-file:var(--nds-color-border-line-2);
+    --nds-color-text-button-file-disabled:var(--nds-color-text-font-5);
+    --nds-color-text-button-floating:var(--nds-color-cobalt-500);
+    --nds-color-border-button-floating:var(--nds-color-cobalt-500);
+    --nds-color-bg-button-floating:var(--nds-color-bg-default);
+
+    /* [Calendar] */
+    --nds-color-text-picker-calendar-select:var(--nds-color-text-font-10);
+    --nds-color-text-picker-disabled:var(--nds-color-text-font-5);
+    --nds-color-text-picker-default:var(--nds-color-text-font-1);
+    --nds-color-text-picker-sunday:var(--nds-color-red-500);
+    --nds-color-text-picker-saturday:var(--nds-color-blue-500);
+    --nds-color-text-picker-week:var(--nds-color-text-font-4);
+    --nds-color-text-picker-picker-select:var(--nds-color-text-point);
+    --nds-color-bg-picker-calendar-select-from:var(--nds-color-bg-default);
+    --nds-color-bg-picker-calendar-select-to:var(--nds-color-bg-point);
+    --nds-color-bg-picker-picker-press:var(--nds-color-bg-container);
+    
+    /* [Checkbox - Basic] */
+    --nds-color-text-checkbox-basic-default:var(--nds-color-text-font-1);
+    --nds-color-border-checkbox-basic-default:#707070;
+    --nds-color-text-checkbox-basic-selected:var(--nds-color-text-font-1);
+    --nds-color-border-checkbox-basic-checked:#FFFFFF;
+    --nds-color-bg-checkbox-basic-selected:var(--nds-color-bg-point);
+    --nds-color-text-checkbox-basic-disabled:var(--nds-color-text-font-5);
+    --nds-color-border-checkbox-basic-disabled:var(--nds-color-border-line-2);
+    --nds-color-bg-checkbox-basic-disabled:var(--nds-color-bg-container);
+    --nds-color-text-checkbox-basic-selected-disabled:var(--nds-color-text-font-1);
+    --nds-color-bg-checkbox-basic-selected-disabled:#B3B3B3;
+
+    /* [Checkbox - Box] */
+    --nds-color-text-checkbox-box-default:var(--nds-color-text-font-3);
+    --nds-color-border-checkbox-box-default:var(--nds-color-border-line-1);
+    --nds-color-text-checkbox-box-disabled:var(--nds-color-text-font-3);
+    --nds-color-border-checkbox-box-disabled:var(--nds-color-border-line-1);
+    --nds-color-text-checkbox-box-selected:var(--nds-color-text-point);
+    --nds-color-border-checkbox-box-selected:var(--nds-color-border-point);
+
+    /* [Checkbox - Survey] */
+    --nds-color-text-checkbox-survey-default:var(--nds-color-text-font-3);
+    --nds-color-border-checkbox-survey-default:var(--nds-color-border-line-1);
+    --nds-color-text-checkbox-survey-positive:var(--nds-color-text-font-3);
+    --nds-color-border-checkbox-survey-positive:var(--nds-color-border-point);
+    --nds-color-text-checkbox-survey-negative:var(--nds-color-text-font-3);
+    --nds-color-border-checkbox-survey-negative:var(--nds-color-border-error);
+    
+    /* [Chip] */
+    --nds-color-text-chip-active:var(--nds-color-text-font-10);
+    --nds-color-bg-chip-active:#111111;
+
+    /* [Input] */
+    --nds-color-text-input-placeholder:var(--nds-color-text-font-5);
+    --nds-color-text-input-default:var(--nds-color-text-font-1);
+    --nds-color-border-input-default:var(--nds-color-border-line-2);
+    --nds-color-text-input-readonly:var(--nds-color-text-font-1);
+    --nds-color-bg-input-readonly:var(--nds-color-bg-disabled);
+    --nds-color-text-input-disabled:var(--nds-color-text-font-1);
+    --nds-color-bg-input-disabled:var(--nds-color-bg-disabled);
+    --nds-color-border-input-focus:var(--nds-color-border-point);
+    --nds-color-border-input-error:var(--nds-color-border-error);
+    --nds-color-bg-input-load-data:var(--nds-color-bg-container);
+
+    /* [Label] */
+    --nds-color-text-label-red:var(--nds-color-red-600);
+    --nds-color-border-label-red:var(--nds-color-red-600);
+    --nds-color-text-label-orange:var(--nds-color-orange-600);
+    --nds-color-border-label-orange:var(--nds-color-orange-600);
+    --nds-color-text-label-yellow:var(--nds-color-orange-500);
+    --nds-color-border-label-yellow:var(--nds-color-orange-500);
+    --nds-color-text-label-lightblue:var(--nds-color-lightblue-600);
+    --nds-color-border-label-lightblue:var(--nds-color-lightblue-600);
+    --nds-color-text-label-skyblue:var(--nds-color-skyblue-500);
+    --nds-color-border-label-skyblue:var(--nds-color-skyblue-500);
+    --nds-color-text-label-navy:var(--nds-color-navy-600);
+    --nds-color-border-label-navy:var(--nds-color-navy-600);
+    --nds-color-text-label-green:var(--nds-color-green-500);
+    --nds-color-border-label-green:var(--nds-color-green-500);
+    --nds-color-text-label-blue:var(--nds-color-blue-500);
+    --nds-color-border-label-blue:var(--nds-color-blue-500);
+    --nds-color-bg-label-gray:#F6F6F6;
+    --nds-color-text-label-gray:var(--nds-color-text-font-4);
+    --nds-color-border-label-gray:#707070;
+
+    /* [Popover] */
+    --nds-color-text-popover-default:var(--nds-color-text-font-10);
+    --nds-color-border-popover-default:#111111;
+    --nds-color-bg-popover-default:#111111;
+
+    /* [Progress Bar] */
+    --nds-color-bg-progress-bg:var(--nds-color-bg-banner);
+    --nds-color-bg-progress-active:var(--nds-color-bg-point);
+
+    /* [Radio - Basic] */
+    --nds-color-text-radio-basic-default:var(--nds-color-text-font-1);
+    --nds-color-border-radio-basic-default:var(--nds-color-border-line-1);
+    --nds-color-bg-radio-basic-default:var(--nds-color-border-line-1);
+    --nds-color-text-radio-basic-selected:var(--nds-color-text-font-1);
+    --nds-color-border-radio-basic-selected:var(--nds-color-border-point);
+    --nds-color-bg-radio-basic-selected:var(--nds-color-bg-point);
+    --nds-color-text-radio-basic-disabled:var(--nds-color-text-font-5);
+    --nds-color-border-radio-basic-disabled:var(--nds-color-border-line-2);
+    --nds-color-bg-radio-basic-disabled:var(--nds-color-bg-container);
+    --nds-color-bg-radio-basic-disabled-inner:var(--nds-color-border-line-1);
+    --nds-color-text-radio-basic-selected-disabled:var(--nds-color-text-font-1);
+    --nds-color-bg-radio-basic-selected-disabled:#B3B3B3;
+    --nds-color-bg-radio-basic-selected-disabled-inner:var(--nds-color-bg-default);
+
+    /* [Radio - Box] */
+    --nds-color-text-radio-box-default:var(--nds-color-text-font-3);
+    --nds-color-border-radio-box-default:var(--nds-color-border-line-1);
+    --nds-color-text-radio-box-disabled:var(--nds-color-text-font-3);
+    --nds-color-border-radio-box-disabled:var(--nds-color-border-line-1);
+    --nds-color-text-radio-box-selected:var(--nds-color-text-point);
+    --nds-color-border-radio-box-selected:var(--nds-color-border-point);
+    
+    /* [Radio - Explain] */
+    --nds-color-text-radio-explain-default:var(--nds-color-text-font-1);
+    --nds-color-border-radio-explain-default:var(--nds-color-border-line-1);
+    --nds-color-text-radio-explain-selected:var(--nds-color-text-point);
+    --nds-color-border-radio-explain-selected:var(--nds-color-border-point);
+    --nds-color-text-radio-explain-disabled:var(--nds-color-text-font-3);
+
+    /* [Radio - Survey] */
+    --nds-color-text-radio-survey-default:var(--nds-color-text-font-3);
+    --nds-color-border-radio-survey-default:var(--nds-color-border-line-1);
+    --nds-color-text-radio-survey-positive:var(--nds-color-text-font-3);
+    --nds-color-border-radio-survey-positive:var(--nds-color-border-point);
+    --nds-color-text-radio-survey-negative:var(--nds-color-text-font-3);
+    --nds-color-border-radio-survey-negative:var(--nds-color-border-error);
+
+    /* [Select] */
+    --nds-color-text-select-inactive:var(--nds-color-text-font-5);
+    --nds-color-text-select-filled:var(--nds-color-text-font-1);
+    --nds-color-border-select-default:var(--nds-color-border-line-2);
+    --nds-color-text-select-readonly:var(--nds-color-text-font-1);
+    --nds-color-bg-select-readonly:var(--nds-color-bg-disabled);
+    --nds-color-text-select-disabled:var(--nds-color-text-font-1);
+    --nds-color-bg-select-disabled:var(--nds-color-bg-disabled);
+    --nds-color-border-select-focus:var(--nds-color-border-point);
+    --nds-color-border-select-error:var(--nds-color-border-error);
+
+    /* [Switch] */
+    --nds-color-bg-switch-off:#707070;
+    --nds-color-bg-switch-on:var(--nds-color-bg-point);
+    --nds-color-bg-switch-inner:var(--nds-color-bg-default);
+
+    /* [Tab] */
+    --nds-color-border-tab-line-active:#111111;
+    --nds-color-border-tab-line-default:var(--nds-color-border-line-2);
+    --nds-color-bg-tab-line-bg:var(--nds-color-bg-default);
+    --nds-color-text-tab-chip-default:#FFFFFF;
+    --nds-color-bg-tab-chip-bg:var(--nds-color-bg-default);
+    --nds-color-bg-tab-chip-active:#111111;
+    --nds-color-bg-tab-chip-default:var(--nds-color-bg-container);
+    --nds-color-bg-tab-bar-active:var(--nds-color-bg-default);
+    --nds-color-bg-tab-bar-default:var(--nds-color-bg-banner);
+
+    /* [Toast] */
+    --nds-color-text-toast-default:var(--nds-color-text-font-10);
+    --nds-color-bg-toast-basic:#111111;
+
+    /* [Step] */
+    --nds-color-text-step-active:var(--nds-color-bg-default);
+    --nds-color-border-step-point:var(--nds-color-bg-point);
+    --nds-color-bg-step-default:var(--nds-color-bg-default);
+    --nds-color-bg-step-active:var(--nds-color-bg-point);
+    --nds-color-bg-step-disabled:var(--nds-color-bg-banner);
+    
+    /* [Spacing] */
+    --nds-spacing-0:0;
+    --nds-spacing-2:.2rem;
+    --nds-spacing-4:.4rem;
+    --nds-spacing-8:.8rem;
+    --nds-spacing-12:1.2rem;
+    --nds-spacing-16:1.6rem;
+    --nds-spacing-20:2.0rem;
+    --nds-spacing-24:2.4rem;
+    --nds-spacing-32:3.2rem;
+    --nds-spacing-40:4.0rem;
+    --nds-spacing-48:4.8rem;
+    --nds-spacing-56:5.6rem;
+    --nds-spacing-60:6.0rem;
+    --nds-spacing-64:6.4rem;
+    --nds-spacing-72:7.2rem;
+    --nds-spacing-80:8.0rem;
+    --nds-spacing-88:8.8rem;
+    --nds-spacing-96:9.6rem;
+    --nds-spacing-104:10.4rem;
+    --nds-spacing-112:11.2rem;
+    --nds-spacing-120:12.0rem;
+    
+    /* [Radius] */
+    --nds-border-radius-0:0;
+    --nds-border-radius-4:.4rem;
+    --nds-border-radius-8:.8rem;
+    --nds-border-radius-10:1.0rem;
+    --nds-border-radius-12:1.2rem;
+    --nds-border-radius-16:1.6rem;
+    --nds-border-radius-circle:99.9rem;
+}
+
+.dark-mode {
+    /* [Gray Scale (Dark)] */
+    --nds-color-gray-50:#212121;
+    --nds-color-gray-100:#303030;
+    --nds-color-gray-200:#404040;
+    --nds-color-gray-300:#505050;
+    --nds-color-gray-400:#6E6E6E;
+    --nds-color-gray-500:#707070;
+    --nds-color-gray-550:#929292;
+    --nds-color-gray-600:#B0B0B0;
+    --nds-color-gray-700:#D0D0D0;
+    --nds-color-gray-800:#E6E6E6;
+    --nds-color-gray-900:#FFFFFF;
+    
+    /* [Gray Scale - Font (Dark)] */
+    --nds-color-gray-font-50:#121212;
+    --nds-color-gray-font-100:#343434;
+    --nds-color-gray-font-200:#505050;
+    --nds-color-gray-font-300:#767676;
+    --nds-color-gray-font-400:#929292;
+    --nds-color-gray-font-500:#A6A6A6;
+    --nds-color-gray-font-600:#BFBFBF;
+    --nds-color-gray-font-700:#D9D9D9;
+    --nds-color-gray-font-800:#F2F2F2;
+    --nds-color-gray-font-900:#FFFFFF;
+    
+    /* [Blue Gray (Dark)] */
+    --nds-color-bluegray-50:#35383B;
+    --nds-color-bluegray-100:#414448;
+    --nds-color-bluegray-200:#4F5359;
+    --nds-color-bluegray-300:#656A73;
+    --nds-color-bluegray-400:#838894;
+    --nds-color-bluegray-500:#A2A8B2;
+    --nds-color-bluegray-600:#BCC2CF;
+    --nds-color-bluegray-700:#D9DFEB;
+    --nds-color-bluegray-800:#EBEFF6;
+    --nds-color-bluegray-900:#F3F5F8;
+    
+    /* [Button - Secondary (Dark)] */
+    --nds-color-text-button-secondary-pressed:var(--nds-color-green-200);
+    --nds-color-border-button-secondary-pressed:var(--nds-color-green-200);
+    --nds-color-bg-button-secondary-pressed:var(--nds-color-green-900);
+
+    /* [Checkbox - Basic (Dark)] */
+    --nds-color-border-checkbox-basic-default:#B0B0B0;
+    --nds-color-border-checkbox-basic-checked:#212121;
+    --nds-color-bg-checkbox-basic-selected-disabled:#929292;
+
+    /* [Chip (Dark)] */
+    --nds-color-bg-chip-active:#FFFFFF;
+
+    /* [Label (Dark)] */
+    --nds-color-text-label-red:var(--nds-color-red-300);
+    --nds-color-border-label-red:var(--nds-color-red-300);
+    --nds-color-text-label-orange:var(--nds-color-orange-500);
+    --nds-color-border-label-orange:var(--nds-color-orange-500);
+    --nds-color-text-label-yellow:var(--nds-color-orange-400);
+    --nds-color-border-label-yellow:var(--nds-color-orange-400);
+    --nds-color-text-label-lightblue:var(--nds-color-lightblue-500);
+    --nds-color-border-label-lightblue:var(--nds-color-lightblue-500);
+    --nds-color-text-label-skyblue:var(--nds-color-skyblue-400);
+    --nds-color-border-label-skyblue:var(--nds-color-skyblue-400);
+    --nds-color-text-label-navy:var(--nds-color-navy-300);
+    --nds-color-border-label-navy:var(--nds-color-navy-300);
+    --nds-color-text-label-green:var(--nds-color-green-400);
+    --nds-color-border-label-green:var(--nds-color-green-400);
+    --nds-color-text-label-blue:var(--nds-color-blue-400);
+    --nds-color-border-label-blue:var(--nds-color-blue-400);
+    --nds-color-bg-label-gray:#333333;
+    --nds-color-border-label-gray:#B0B0B0;
+
+    /* [Popover (Dark)] */
+    --nds-color-border-popover-default:#FFFFFF;
+    --nds-color-bg-popover-default:#FFFFFF;
+
+    /* [Radio - Basic (Dark)] */
+    --nds-color-bg-radio-basic-selected-disabled:#909090;
+
+    /* [Switch (Dark)] */
+    --nds-color-bg-switch-off:#505050;
+
+    /* [Tab (Dark)] */
+    --nds-color-border-tab-line-active:#FFFFFF;
+    --nds-color-text-tab-chip-default:#121212;
+    --nds-color-bg-tab-chip-active:#FFFFFF;
+    
+    /* [Toast (Dark)] */
+    --nds-color-bg-toast-basic:#FFFFFF;
+
+    /* [Text (Dark)] */
+    --nds-color-text-visual:var(--nds-color-blue-300);
+    --nds-color-text-point:var(--nds-color-green-400);
+    --nds-color-text-positive:var(--nds-color-blue-400);
+    --nds-color-text-negative:var(--nds-color-red-300);
+    
+    /* [Border (Dark)] */
+    --nds-color-border-line-1:#707070;
+    --nds-color-border-point:var(--nds-color-green-400);
+    
+    /* [Background (Dark)] */
+    --nds-color-bg-point:var(--nds-color-green-400);
+    --nds-color-bg-visual:var(--nds-color-blue-300);
+    --nds-color-bg-dimmed:rgba(17, 17, 17, 0.80);
+}
 
 /* base */
 .nds-ui {
-   color:var(--nds-color-text-font-1);
-   font-size:1.6rem;
-   line-height:1.5;
-   font-family:var(--nds-font-base);
-   letter-spacing:-0.025em;
-   word-break:keep-all;
-   overflow-wrap:anywhere;
+    color:var(--nds-color-text-font-1);
+    font-size:1.6rem;
+    line-height:1.5;
+    font-family:var(--nds-font-base);
+    letter-spacing:-0.025em;
+    word-break:keep-all;
+    overflow-wrap:anywhere;
 }
 .nds-ui button,
 .nds-ui input,
 .nds-ui textarea {
-   color:inherit;
-   font:inherit;
-   -webkit-appearance:none;
-   appearance:none;
+    color:inherit;
+    font:inherit;
+    -webkit-appearance:none;
+    appearance:none;
 }
 .nds-ui button {
-   border:none;
+    border:none;
 }
 
 /* common */

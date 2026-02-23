@@ -11,7 +11,6 @@
 /* --- Light Mode (Default) --- */
 :root {
     /* [System Line Icons] - 12px ~ 24px */
-    /* TODO: 이미지 파일명 확인 필요. Figma와 동일하게 갈건지.. */
     --nds-ico-minus-x12:url("../../../imgs/nds/common/ico_minus_line_12.svg");
     --nds-ico-minus-x12-disabled:url("../../../imgs/nds/common/ico_minus_gray400_line_12_disabled.svg");
     --nds-ico-plus-x12:url("../../../imgs/nds/common/ico_plus_line_12.svg");

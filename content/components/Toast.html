@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title></title>
 	<!-- NDS CSS -->
-	<link rel="stylesheet" href="./../assets/css/nds-ui.css" />
+	<link rel="stylesheet" href="./../assets/css/nds-common.css" />
+	<link rel="stylesheet" href="./../assets/css/nds-components.css" />
 	<!-- Guide CSS -->
 	<link rel="stylesheet" href="./../guide/css/guide.css" />
 </head>
@@ -21,12 +22,14 @@
 		</div>                      
 	</div>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/toast-basic.png" alt=""></div>
+	
+	<button type="button"  class="a underline point" onClick="NDS_UI.Toast({ message: '데이터가 성공적으로 저장되었습니다.' });">토스트 테스트</button>
 </script>
 		<!-- NDS components : E -->
 	</div>
 	<!-- NDS Script -->
-	<script src="./../assets/js/libs/jquery/jquery-3.6.0.min.js"></script>
-	<script src="./../assets/js/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
 	<script src="./../assets/js/nds-ui.js"></script>
 	<!-- Guide Script -->
 	<script src="./../guide/js/guide.js"></script>

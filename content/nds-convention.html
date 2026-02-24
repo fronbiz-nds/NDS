@@ -677,7 +677,8 @@
                 <div class="h2">규칙</div>
                 <ul class="ul">
                     <li>외부에서 직접 호출되는 진입 파일은 <span>nds-</span> prefix를 필수로 사용한다. (예: nds-ui.css, nds-ui.js)</li>
-                    <li>NDS 내부 구성 파일은 기능 단위로 분리하며, nds 폴더 하위에서 그룹핑한다.</li>
+                    <li>이미지 폴더 구조는 Design Library_NDS_v1.0 기준을 따른다.</li>
+                    <li>이미지 파일명은 디자인 단계에서 정의된 Export 명을 기준으로 사용한다.</li>
                 </ul>
                 <ul class="wgTree wrap">
                     <li class="root"><strong class="folder bold">root</strong>
@@ -701,11 +702,25 @@
                                     <li class="img last">
                                         <strong class="folder">imgs</strong> : 이미지 폴더
                                         <ul class="treeset">
-                                            <li class="last"><strong class="folder">nds</strong> : NDS 이미지
+                                            <li class="last">
+                                                <strong class="folder">nds</strong> : NDS 이미지
                                                 <ul class="treeset">
-                                                    <li><strong class="folder">ci</strong> : ci 이미지</li>
-                                                    <li><strong class="folder">common</strong> : 공통 사용 이미지</li>
-                                                    <li><strong class="folder">flag</strong> : 국기 이미지</li>
+                                                    <li><strong class="folder">ico</strong> 
+                                                        <ul class="treeset">
+                                                            <li><strong class="folder">line</strong> : 라인 스타일 아이콘</li>
+                                                            <li><strong class="folder">fill</strong> : 채움형(Fill) 아이콘</li>
+                                                            <li class="last"><strong class="folder">tabbar</strong> : 하단 네비게이션 전용 아이콘</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><strong class="folder">img</strong>
+                                                        <ul class="treeset">
+                                                            <li><strong class="folder">common</strong> : 공통화면 이미지</li>
+                                                            <li><strong class="folder">general</strong> : 특정화면 이미지</li>
+                                                            <li><strong class="folder">flag</strong> : 국기 이미지</li>
+                                                            <li><strong class="folder">graph</strong> : 그래프 이미지</li>
+                                                            <li><strong class="folder">ci</strong> : ci 이미지</li>
+                                                        </ul>
+                                                    </li>
                                                     <li class="last"><strong class="folder">temp</strong> : 테스트용 이미지</li>
                                                 </ul>
                                             </li>

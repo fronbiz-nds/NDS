@@ -1323,7 +1323,7 @@ html {
 }
 
 /* base */
-.nds-ui {
+body {
     color:var(--nds-color-text-font-1);
     font-size:1.6rem;
     line-height:1.5;
@@ -1332,17 +1332,18 @@ html {
     word-break:keep-all;
     overflow-wrap:anywhere;
 }
-.nds-ui button,
-.nds-ui input,
-.nds-ui textarea {
+button, input, textarea {
     color:inherit;
     font:inherit;
-    -webkit-appearance:none;
+    line-height:inherit;
+    letter-spacing:inherit;
     appearance:none;
+    -webkit-appearance:none;
 }
-.nds-ui button {
+button {
     border:none;
 }
 
+
 /* common */
-.nds-hide {overflow:hidden; position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:0; white-space:nowrap; clip:rect(0, 0, 0, 0);}
+.hide {overflow:hidden; position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:0; white-space:nowrap; clip:rect(0, 0, 0, 0);}

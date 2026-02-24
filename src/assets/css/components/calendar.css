@@ -1,0 +1,47 @@
+/* ============================================================
+   calendar.css
+   ---------------------------------------------------------
+   
+   ========================================================= */
+
+/* ============================================================
+    CSS Variables (Root & Dark Mode)
+    ============================================================ */
+
+/* --- Light Mode (Default) --- */
+:root {
+    /* [Calendar - Text] */
+    --nds-color-text-picker-default:#121212;
+    --nds-color-text-picker-disabled:#929292;
+    --nds-color-text-picker-week:#767676;
+    --nds-color-text-picker-sunday:#EC0C0C;
+    --nds-color-text-picker-saturday:#2C6DD4;
+    --nds-color-text-picker-calendar-select:#FFFFFF;
+    --nds-color-text-picker-picker-select:#19973C;
+
+    /* [Calendar - Background] */
+    --nds-color-bg-picker-calendar-select-from:#FFFFFF;
+    --nds-color-bg-picker-calendar-select-to:#19973C;
+    --nds-color-bg-picker-picker-press:#F6F6F6;
+}
+
+/* --- Dark Mode --- */
+.dark-mode {
+    /* [Calendar - Text] */
+    --nds-color-text-picker-default:#FFFFFF;
+    --nds-color-text-picker-disabled:#A6A6A6;
+    --nds-color-text-picker-week:#BFBFBF;
+    --nds-color-text-picker-sunday:#EC0C0C;
+    --nds-color-text-picker-saturday:#2C6DD4;
+    --nds-color-text-picker-calendar-select:#121212;
+    --nds-color-text-picker-picker-select:#3CBD61;
+
+    /* [Calendar - Background] */
+    --nds-color-bg-picker-calendar-select-from:#212121;
+    --nds-color-bg-picker-calendar-select-to:#3CBD61;
+    --nds-color-bg-picker-picker-press:#303030;
+}
+
+/* ============================================================
+   Component Style
+   ============================================================ */

@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title></title>
+	<!-- NDS CSS -->
+	<link rel="stylesheet" href="./../assets/css/nds-ui.css" />
+	<!-- Guide CSS -->
+	<link rel="stylesheet" href="./../guide/css/guide.css" />
+</head>
+<body>
+	<div class="gl">
+		<!-- NDS components : S -->
+<script data-size="2" data-title="Card | card-account/accordion @ State=close" type="text/template">
+	<div class="field">
+		<div class="card account -comb -accor">
+			<div data-bankcode="011" class="info">
+				<span class="name">
+					<span>주거래우대통장</span>
+				</span>
+				<span class="account-number">
+					<span>NH농협</span>
+					<span>111-1234-5678-99</span>
+				</span>
+			</div>
+
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>
+			<div class="dls" data-role="fold">
+				<button type="button" class="more" data-role="marker">
+					<span>펼치기</span>
+				</button>
+				<dl class="dl" data-role="hidden">
+					<div>
+						<dt>타이틀</dt>
+						<dd>데이터</dd>
+					</div>
+					<div>
+						<dt>타이틀</dt>
+						<dd>데이터</dd>
+					</div>
+					<div>
+						<dt>타이틀</dt>
+						<dd>데이터</dd>
+					</div>
+				</dl>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-account/accordion @ State=open" type="text/template">
+	<div class="field">
+		<div class="card account -comb -accor">
+			<div data-bankcode="011" class="info">
+				<span class="name">
+					<span>주거래우대통장</span>
+				</span>
+				<span class="account-number">
+					<span>NH농협</span>
+					<span>111-1234-5678-99</span>
+				</span>
+			</div>
+
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>
+			<div class="dls -active" data-role="fold">
+				<button type="button" class="more" data-role="marker">
+					<span>접기</span>
+				</button>
+				<dl class="dl" data-role="hidden">
+					<div>
+						<dt>타이틀</dt>
+						<dd>데이터</dd>
+					</div>
+					<div>
+						<dt>타이틀</dt>
+						<dd>데이터</dd>
+					</div>
+					<div>
+						<dt>타이틀</dt>
+						<dd>데이터</dd>
+					</div>
+				</dl>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-account/list" type="text/template">
+	<div class="account card -comb">
+		<div class="dot-menu">
+			<button type="button" class="button">
+				<span class="hide">더보기</span>
+			</button>
+		</div>
+		<div data-bankcode="011" class="info">
+			<span class="name">
+				<span>금융사명</span>
+			</span>
+			<span class="account-number">
+				<span>계좌번호</span>
+			</span>
+		</div>
+	
+		<dl class="dl">
+			<div>
+				<dt>타이틀</dt>
+				<dd><span>데이터</span></dd>
+			</div>
+			<div>
+				<dt>타이틀</dt>
+				<dd><span>데이터</span></dd>
+			</div>
+		</dl>
+	
+		<div class="buttons">
+			<button type="button" class="button -tertiary -sm">버튼</button>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-account/list-mall" type="text/template">
+	<div class="account card -comb">
+		<div class="top-area badges -right">
+			<span class="badge line-gray">라벨</span>
+		</div>
+		<div data-bankcode="011" class="info">
+			<span class="name">
+				<span>NH고향사랑기부예금</span>
+			</span>
+			<span class="account-number">
+				<span>NH농협은행</span> 
+				<span>302-1234-5678-81</span>
+			</span>
+		</div>
+	
+		<dl class="dl">
+			<div>
+				<dt>타이틀</dt>
+				<dd><span>데이터</span></dd>
+			</div>
+			<div>
+				<dt>타이틀</dt>
+				<dd><span>데이터</span></dd>
+			</div>
+		</dl>
+	
+		<div class="buttons">
+			<button type="button" class="button -tertiary -sm">버튼</button>
+		</div>
+
+		<div class="bottom-area">
+			<p>약정서를 2025.01.01 24:00까지 작성해 주세요</p>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-account/price" type="text/template">
+	<div class="account card -comb">
+		<div class="dot-menu">
+			<button type="button" class="button">
+				<span class="hide">더보기</span>
+			</button>
+		</div>
+		<button type="button" data-bankcode="011" class="info">
+			<span class="name">
+				<span>금융사명</span>
+			</span>
+			<span class="account-number">
+				<span>계좌번호</span>
+			</span>
+		</button>
+	
+		<div class="amount">
+			<div class="key">금액</div>
+			<div class="value">
+				<button type="button" class="-refresh">
+					<span class="hide">새로고침</span>
+				</button>
+				<span>
+					<span>150,000,000</span>원
+				</span>
+			</div>
+		</div>
+	
+		<div class="buttons">
+			<button type="button" class="button -tertiary -sm">버튼</button>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-account/price-mall" type="text/template">
+	<div class="account card -comb">
+		<div class="dot-menu">
+			<button type="button" class="button">
+				<span class="hide">더보기</span>
+			</button>
+		</div>
+		<button type="button" data-bankcode="011" class="info">
+			<span class="name">
+				<span>금융사명</span>
+			</span>
+			<span class="account-number">
+				<span>계좌번호</span>
+			</span>
+		</button>
+	
+		<div class="amount">
+			<div class="key">금액</div>
+			<div class="value">
+				<button type="button" class="-refresh">
+					<span class="hide">새로고침</span>
+				</button>
+				<span>
+					<span>150,000,000</span>원
+				</span>
+			</div>
+		</div>
+	
+		<div class="buttons">
+			<button type="button" class="button -tertiary -sm">버튼</button>
+		</div>
+
+		<div class="info-box-error">
+			<p>메세지를 입력해 주세요.</p>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-data/4column" type="text/template">
+	<div class="selection card -data">
+		<ul>
+			<li>
+				<div class="int-rate -bordered" role="button">
+					<div class="top-area badges">
+						<span class="badge line-gray">다소높은위험</span>
+						<span class="badge line-blue">거치식</span>
+						<span class="badge line-yellow">선취</span>
+					</div>
+					<div class="data-info-main">
+						부가텍스트
+						<div class="info-title">
+							상품명
+						</div>
+					</div>
+					<div class="info-standard sep-four">
+						<div class="standard-value">
+							<div class="value-item">
+								<p class="month-text">1개월</p>
+								<span>-6.2%</span>
+							</div>
+							<div class="value-item">
+								<p class="month-text">3개월</p>
+								<span>-5.36%</span>
+							</div>
+							<div class="value-item">
+								<p class="month-text">6개월</p>
+								<span>-1.27%</span>
+							</div>
+							<div class="value-item">
+								<p class="month-text">12개월</p>
+								<span>+7.69%</span>
+							</div>
+						</div>
+					</div>
+					<div class="info-sub">
+						<p class="p">기초지수 : KOSPI 200 지수</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-data/highlight" type="text/template">
+	<div class="field">
+		<div class="selection card">
+			<ul>
+				<li>
+					<div class="int-rate -bordered" role="button">
+						<div class="top-area badges">
+							<span class="badge line-gray">추천</span>
+							<span class="badge line-red">신규</span>
+						</div>
+						<a href="javascript:void(0)" aria-haspopup="true">
+							<div class="data-info-main">
+								미래에셋스마트롱숏70증권자투자신탁1호[주식]
+								<div class="info-title">
+									상품명
+								</div>
+								<div class="info-list">
+									<ul>
+										<li>수수료 선취</li>
+										<li>국내[주식형]</li>
+										<li>국내</li>
+									</ul>
+								</div>
+							</div>
+							<div class="info-standard">
+								<p class="standard-h">기준가</p>
+								<p class="standard-price">1088.55<span class="red">+6.33%</span></p>
+
+								<div class="standard-value">
+									<div class="value-item">
+										<p class="month-text">3개월</p>
+										<span class="red">+6.33%</span>
+									</div>
+									<div class="value-item">
+										<p class="month-text">6개월</p>
+										<span class="blue">-14.33%</span>
+									</div>
+									<div class="value-item">
+										<p class="month-text">12개월</p>
+										<span class="red">+6.33%</span>
+									</div>
+								</div>
+								<div class="standard-value">
+									<div class="value-item">
+										<p class="month-text">3개월</p>
+										<span class="red">+6.33%</span>
+									</div>
+									<div class="value-item">
+										<p class="month-text">6개월</p>
+										<span class="blue">-14.33%</span>
+									</div>
+									<div class="value-item">
+										<p class="month-text">12개월</p>
+										<span class="red">+6.33%</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="compare-checkbox">
+							비교하기
+							<div class="checkbox -sm">
+								<input type="checkbox" id="bordered-account11" checked>
+								<label for="bordered-account11"></label>
+							</div>
+						</div>
+						<div class="accordion -graybox" data-role="fold">
+							<button type="button" class="title" data-role="marker"
+								title="접힘">제목</button>
+							<div class="panel" data-role="hidden">
+								<div class="dummy">내용</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-etc/image" type="text/template">
+	<div class="account card -comb">
+		<div class="info insur-golf">
+			<div class="inner">
+				<span class="inname">
+					NH레저상해보험 (스크린골프플랜)
+				</span>
+			</div>
+		</div>            
+		<div class="buttons mt-16">
+			<button type="button" class="button -sm">상세보기</button>
+			<button type="button" class="button -secondary -sm ml-0">선물하기</button>
+		</div>  
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-etc/input" type="text/template">
+	<div class="selection card">
+		<ul>
+			<li>
+				<div class="int-rate -bordered">
+					<div class="field input">
+						<label for="tex" class="label">레이블</label>
+						<div class="text line -basic">
+							<input type="text" id="tex" value="" placeholder="금액을 입력하세요">
+						</div>
+					</div>
+
+					<div class="field input">
+						<label for="rrn0" class="label">주민등록번호</label>
+						<div class="mix rrn">
+							<div class="text line flex-6" data-clear="false">
+								<input type="tel" class="left-side num-call" id="rrn01"
+									placeholder="앞 6자리" title="주민등록번호 앞자리" aria-haspopup="true"
+									value="" readonly>
+							</div>
+
+							<div class="dash line">-</div>
+
+							<div class="text line flex-6" data-clear="false">
+								<input type="password" data-id="phone123q"
+									class="mid-side num-call pl-4" placeholder="뒤 7자리"
+									title="주민등록번호 뒷자리" aria-haspopup="true" readonly="">
+								<button class="clear" type="button" style="z-index: -1;">
+									<div class="hide">초기화</div>
+								</button>
+							</div>
+
+							<div class="space line flex-4 right-side">
+								<button type="button" class="button -xs -fit" disabled>인증</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="field input">
+						<p class="label">레이블</p>
+						<div class="box-radios">
+							<div class="box-radio">
+								<input type="radio" name="period-point-color2"
+									id="period-point-color2-1" checked="">
+								<label for="period-point-color2-1">라디오</label>
+							</div>
+							<div class="box-radio">
+								<input type="radio" name="period-point-color2"
+									id="period-point-color2-2">
+								<label for="period-point-color2-2">라디오</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="field input">
+						<label for="phone123q" class="label">레이블</label>
+						<div class="mix phone line">
+							<div class="select flex-6">
+								<button type="button" class="left-side" aria-haspopup="true"
+									title="휴대폰 앞자리 선택">010</button>
+							</div>
+							<div class="text flex-7 -readonly -textless" data-clear="false">
+								<input type="tel" data-id="phone123q" class="mid-side num-call pl-8"
+									placeholder="-없이 입력" title="휴대폰번호 입력" aria-haspopup="true"
+									readonly="">
+							</div>
+							<div class="space flex-4 -lined right-side">
+								<button type="button" class="button -xs -fit" title="인증번호 요청"
+									disabled>요청</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="in-card buttons">
+						<button type="button" class="button -tertiary -sm" disabled>버튼</button>
+					</div>
+					<button type="button" class="del-btn"><span class="hide">삭제</span></button>
+
+				</div>
+			</li>
+		</ul>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/accordion @ State=close" type="text/template">
+	<div class="field">
+		<div class="account card -list -comb -accor">
+			<div class="top-area badges -right">
+				<span class="badge line-green">운용중</span>
+			</div>
+			<div class="data-info-main">
+				<span class="name">
+					<span>타이틀</span>
+				</span>
+				<span class="account-number">
+					<span>부가설명</span>
+				</span>
+			</div>
+			<button type="button" class="top-more-btn" data-role="marker">
+				<span class="hide">더보기</span>
+			</button>
+			
+			<dl class="dl">
+				<div>
+					<dt>평가금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>투자금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>수익률</dt>
+					<dd><span class="red">+20 %</span></dd>
+				</div>
+			</dl>
+			<div class="dls pb-0" data-role="fold">
+				<dl class="dl" data-role="hidden">
+					<div>
+						<dt>제목</dt>
+						<dd>내용</dd>
+					</div>
+					<div>
+						<dt>제목</dt>
+						<dd>내용</dd>
+					</div>
+					<div>
+						<dt>제목</dt>
+						<dd>내용</dd>
+					</div>
+				</dl>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/accordion @ State=open" type="text/template">
+	<div class="field">
+		<div class="account card -list -comb -accor">
+			<div class="top-area badges -right">
+				<span class="badge line-green">운용중</span>
+			</div>
+			<div class="data-info-main">
+				<span class="name">
+					<span>타이틀</span>
+				</span>
+				<span class="account-number">
+					<span>부가설명</span>
+				</span>
+			</div>
+			<button type="button" class="top-more-btn -active" data-role="marker">
+				<span class="hide">더보기</span>
+			</button>
+			
+			<dl class="dl">
+				<div>
+					<dt>평가금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>투자금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>수익률</dt>
+					<dd><span class="red">+20 %</span></dd>
+				</div>
+			</dl>
+			<div class="dls pb-0 -active" data-role="fold">
+				<dl class="dl" data-role="hidden">
+					<div>
+						<dt>제목</dt>
+						<dd>내용</dd>
+					</div>
+					<div>
+						<dt>제목</dt>
+						<dd>내용</dd>
+					</div>
+					<div>
+						<dt>제목</dt>
+						<dd>내용</dd>
+					</div>
+				</dl>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/add-accordion" type="text/template">
+							<div class="field">
+		<div class="account card -list">
+			<div class="badges">
+				<span class="badge line-gray">매우낮은위험</span>
+			</div>
+
+			<div class="info">
+				<span class="name">
+					<span>기쁨가득NH저축보험(무)_(기본형)</span>
+				</span>
+			</div>
+
+			<dl class="dl">
+				<div>
+					<dt>평가금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>투자금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>수익률</dt>
+					<dd><span class="red">+20 %</span></dd>
+				</div>
+			</dl>
+
+			<div class="accordion bg-grey -active" data-role="fold">
+				<button type="button" class="title" data-role="marker" title="펼쳐짐">계약서류 확인</button>
+				<div class="panel" data-role="visible">
+					<div class="download">
+						<ul>
+							<li>
+								<div>예금계약서(비대면_저축성)</div>
+								<div>
+									<button type="button" title="예금계약서(비대면_저축성)"
+										class="down-btn"><span class="hide">다운로드</span></button>
+									<button type="button" title="예금계약서(비대면_저축성)"
+										aria-haspopup="true" class="go-link"><span
+											class="hide">바로보기</span></button>
+								</div>
+							</li>
+							<li>
+								<div>NH고향사랑기부예금 상품설명서</div>
+								<div>
+									<button type="button" title="NH고향사랑기부예금 상품설명서"
+										class="down-btn"><span class="hide">다운로드</span></button>
+									<button type="button" title="NH고향사랑기부예금 상품설명서"
+										aria-haspopup="true" class="go-link"><span
+											class="hide">바로보기</span></button>
+								</div>
+							</li>
+							<li>
+								<div>NH고향사랑기부예금 핵심상품설명서</div>
+								<div>
+									<button type="button" title="NH고향사랑기부예금 핵심상품설명서"
+										class="down-btn"><span class="hide">다운로드</span></button>
+									<button type="button" title="NH고향사랑기부예금 핵심상품설명서"
+										aria-haspopup="true" class="go-link"><span
+											class="hide">바로보기</span></button>
+								</div>
+							</li>
+							<li>
+								<div>NH고향사랑기부예금 약관</div>
+								<div>
+									<button type="button" title="NH고향사랑기부예금 약관"
+										class="down-btn"><span class="hide">다운로드</span></button>
+									<button type="button" title="NH고향사랑기부예금 약관" aria-haspopup="true"
+										class="go-link"><span class="hide">바로보기</span></button>
+								</div>
+							</li>
+							<li>
+								<div>예금거래기본약관 외</div>
+								<div>
+									<button type="button" title="예금거래기본약관 외" class="down-btn"><span
+											class="hide">다운로드</span></button>
+									<button type="button" title="예금거래기본약관 외" aria-haspopup="true"
+										class="go-link"><span class="hide">바로보기</span></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/date1" type="text/template">
+	<div class="field">
+		<div class="account card -list">
+			<div class="info list-data-tit">
+				2025.01.01
+			</div>
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>    
+			
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/date2" type="text/template">
+	<div class="field">
+		<div class="account card -list">
+			<div class="info list-data-tit -date2">
+				<span>
+					<span>2025.01.01</span>
+					<span class="date2-tit">타이틀</span>
+				</span>
+				<span>
+					<a href="javascript:void(0)" class="button-arrow-right justify-flexend">버튼명</a>
+				</span>
+			</div>
+			<hr class="hr list-2" aria-hidden="true" tabindex="-1">
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>    
+			
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/detail" type="text/template">
+	<div class="account card detail">
+		<div class="info -silver-won">
+			<span class="name">
+				<span>타이틀</span>
+			</span>
+			<span class="account-number">
+				<span>부가설명</span>
+			</span>
+		</div>
+	
+		<div class="buttons">
+			<button type="button" class="button -tertiary -sm">상세내역</button>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/divide-multi" type="text/template">
+	<div class="field">
+		<div class="account card -list">
+			<div class="info">
+				<span class="name">
+					<span>상품명</span>
+				</span>
+			</div>
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>
+
+			<div class="info">
+				<span class="name">
+					<span>상품명</span>
+				</span>
+			</div>
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>
+			
+			<div class="info">
+				<span class="name">
+					<span>상품명</span>
+				</span>
+			</div>
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/divide-single" type="text/template">
+	<div class="field">
+		<div class="account card -list">
+			<div class="badges">
+				<span class="badge line-gray">라벨</span>
+			</div>
+	
+			<div class="info">
+				<span class="name">
+					<span>상품명</span>
+				</span>
+				<span class="account-number">
+					<span>부가설명</span>
+				</span>
+			</div>
+	
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>
+
+			<hr class="hr list-1" aria-hidden="true" tabindex="-1">
+
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>
+			<div class="buttons">
+				<button type="button" class="button -tertiary -sm">버튼</button>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/divide-single-title" type="text/template">
+	<div class="field">
+		<div class="account card -divide-tit">
+			<div class="top-area">
+				<div class="badges">
+					<span class="badge line-gray">라벨</span>
+				</div>
+				<div class="date">
+					<span>2025.01.01</span>
+				</div>
+			</div>
+			
+			<div class="info mt-0">
+				<span class="main-tit">
+					<span class="name">상품명</span>
+					<span class="main-data">상위 데이터</span>
+				</span>
+				<span class="account-number">
+					<span>부가설명</span>
+				</span>
+			</div>
+
+			<div class="info">
+				<span class="name">
+					<span>상품명</span>
+				</span>
+			</div>
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>
+			<hr class="hr list-2" aria-hidden="true" tabindex="-1">
+			<div class="info">
+				<span class="name">
+					<span>상품명</span>
+				</span>
+			</div>
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>
+
+			<div class="buttons">
+				<button type="button" class="button -tertiary -sm">버튼</button>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/grip" type="text/template">
+	<div class="sortable-wrap">
+		<ul id="sortable" class="sort-list ui-sortable">
+			<li class="-registered first">
+				<div class="info">
+					<span class="name">
+						<span>타이틀</span>
+					</span>
+					<span class="account-number">
+						<span class="number">계좌번호</span>
+					</span>
+				</div>
+				<div class="sortable-buttons">
+					<div class="space">
+						<button type="button" class="button -tertiary -xs">삭제</button>
+					</div>
+					<div class="sort-button ui-sortable-handle"></div>
+					<div class="sort-button-box">
+						<button type="button" class="sort-button-up hide" disabled="">리스트를 위로 이동</button>
+						<button type="button" class="sort-button-down hide">리스트를 아래로 이동</button>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/info" type="text/template">
+	<div class="field">
+		<div class="account card info">
+			<div class="data-split">
+				<div class="left-side">
+					<span class="info list-data-tit">상품명</span>
+					<span class="info-date">2025.01.01</span>
+					<span class="list-data-sub">
+						<span>부가설명1</span>
+						<span>부가설명2</span>
+					</span>
+				</div>
+				<div class="right-side">
+					<span class="list-data-sub">
+						<span>데이터</span>
+						<span>데이터 설명</span>
+					</span>
+				</div>
+			</div>
+			<div class="buttons">
+				<button type="button" class="button -tertiary -sm">버튼</button>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/input @ Input-Type=price" type="text/template">
+	<div class="field">
+		<div class="account card -list">
+			<div class="badges">
+				<span class="badge line-gray">매우낮은위험</span>
+			</div>
+
+			<div class="info">
+				<span class="name">
+					<span>기쁨가득NH저축보험(무)_(기본형)</span>
+				</span>
+				<span class="account-number">
+					<span>028-0612-0912-11</span>
+				</span>
+			</div>
+
+			<dl class="dl">
+				<div>
+					<dt>평가금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>투자금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>수익률</dt>
+					<dd><span class="red">+20 %</span></dd>
+				</div>
+			</dl>
+			<div class="input -bordertype">
+				<div class="mix">
+					<span class="left-text">운용비율</span>
+					<div class="text -percent" data-clear="false">
+						<input type="tel" id="gg" class="right num-call" aria-haspopup="true"
+							placeholder="신청금액 입력" aria-haspopup="true" title="운용비율 입력" readonly>
+						<div class="percent">원</div>
+					</div>
+				</div>
+			</div>
+			<dl class="dl">
+				<div>
+					<dt>평가금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>투자금액</dt>
+					<dd>200,000원</dd>
+				</div>
+			</dl>
+			<button type="button" class="del-btn -fixed"><span class="hide">삭제</span></button>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/input @ Input-Type=unit" type="text/template">
+	<div class="field">
+		<div class="account card -list">
+			<div class="badges">
+				<span class="badge line-gray">매우낮은위험</span>
+			</div>
+
+			<div class="info">
+				<span class="name">
+					<span>기쁨가득NH저축보험(무)_(기본형)</span>
+				</span>
+				<span class="account-number">
+					<span>028-0612-0912-11</span>
+				</span>
+			</div>
+
+			<dl class="dl">
+				<div>
+					<dt>평가금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>투자금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>수익률</dt>
+					<dd><span class="red">+20 %</span></dd>
+				</div>
+			</dl>
+			<div class="input -bordertype">
+				<div class="mix">
+					<span class="left-text">운용비율</span>
+					<div class="text -percent -plh-right" data-clear="false">
+						<input type="tel" id="gg" class="right num-call" aria-haspopup="true"
+							placeholder="1 ~ 99 이내로 입력" aria-haspopup="true" title="운용비율 입력"
+							readonly>
+						<div class="percent">%</div>
+					</div>
+				</div>
+			</div>
+			<dl class="dl">
+				<div>
+					<dt>평가금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>투자금액</dt>
+					<dd>200,000원</dd>
+				</div>
+			</dl>
+			<button type="button" class="del-btn -fixed"><span class="hide">삭제</span></button>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/list" type="text/template">
+	<div class="field">
+		<div class="account card -list">
+			<div class="badges">
+				<span class="badge line-gray">매우낮은위험</span>
+			</div>
+
+			<div class="info">
+				<span class="name">
+					<span>기쁨가득NH저축보험(무)_(기본형)</span>
+				</span>
+				<span class="account-number">
+					<span>028-0612-0912-11</span>
+				</span>
+			</div>
+
+			<dl class="dl">
+				<div>
+					<dt>평가금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>투자금액</dt>
+					<dd>200,000원</dd>
+				</div>
+				<div>
+					<dt>수익률</dt>
+					<dd><span class="red">+20 %</span></dd>
+				</div>
+			</dl>
+			<button type="button" class="del-btn -fixed"><span class="hide">삭제</span></button>
+			<div class="buttons">
+				<button type="button" class="button -tertiary -sm">진행 상태</button>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/list-link" type="text/template">
+	<div class="field">
+		<div class="account card -list -link">
+			<dl class="dl">
+				<div class="data-link">
+					<dt>타이틀</dt>
+					<dd>
+						<a type="button" class="button-arrow-right">데이터</a>
+					</dd>
+				</div>
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>    
+			
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/rate" type="text/template">
+	<div class="selection card">
+		<ul>
+			<li>
+				<div class="int-rate -bordered" role="button">
+					<div class="top-area badges">
+						<span class="badge line-blue">거치식</span>
+					</div>
+					<div class="top-area badges">
+						<span class="data-category">종류</span>
+						<span class="badge line-gray">다소높은위험</span>
+						<span class="badge line-blue">거치식</span>
+						<span class="badge line-yellow">선취</span>
+					</div>
+					<div class="data-info-main">
+						<div class="info-title">
+							상품명
+						</div>
+						부가설명
+					</div>
+					<div class="data-hash">
+						<span>#태그명</span>
+						<span>#태그명</span>
+						<span>#태그명</span>
+						<span>#태그명</span>
+					</div>
+					<div class="data-sub">
+						<span class="title">텍스트</span>
+						<span class="value">10%</span>
+						<span class="info-more">추가정보</span>
+					</div>
+					<hr class="hr list-1" aria-hidden="true" tabindex="-1">
+					<div class="card-data">
+						<dl class="dl">
+							<div>
+								<dt>평가금액</dt>
+								<dd>200,000원</dd>
+							</div>
+							<div>
+								<dt>투자금액</dt>
+								<dd>200,000원</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-general/sum" type="text/template">
+	<div class="selection card">
+		<ul>
+			<li>
+				<div class="int-rate -bordered -sum" role="button">
+					<div class="top-area">
+						<div class="top-tooltip">
+							<span class="badge line-blue">펀드</span>
+							<p class="badge-tooltip">이미 가입한 상품
+								<span class="tooltip">
+									<button type="button" class="trigger">
+										<span class="hide">툴팁</span>
+									</button>
+									<span class="panel">
+										<span class="title">이미 가입한 상품</span>
+										<span class="t-content">
+											<span class="dot">
+												운용중인 상품 비율이 추천비율보다 높은 경우<br>
+												추천 비중보다 높은 부분은 일부 매도되어 다른 상품으로 교체 매매됩니다.
+											</span>
+											<span class="dot">
+												운용중인 상품 비율이 추천비율보다 낮은 경우<br>
+												해당 상품은 모두 포트폴리오에 포함되고 부족한 비율에 맞춰 추가 매수됩니다.
+											</span>
+										</span>
+									</span>
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="data-info-main">
+						<div class="info-title">
+							상품명
+						</div>
+						부가설명
+					</div>
+					<dl class="dl">
+						<div>
+							<dt>평가금액</dt>
+							<dd>200,000원</dd>
+						</div>
+						<div>
+							<dt>투자금액</dt>
+							<dd>200,000원</dd>
+						</div>
+						<div>
+							<dt>수익률</dt>
+							<dd><span class="red">+20 %</span></dd>
+						</div>
+					</dl>
+					<div class="data-box" id="data-rd">
+						<div class="data-box-title">한도금액</div>
+						<div class="data-box-content">20,000,000원</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-summary/2column" type="text/template">
+	<div class="card -sum">
+		<dl class="dl -box -column2 -w50">
+			<div>
+				<dt>타이틀</dt>
+				<dd>데이터</dd>
+			</div>
+			<div>
+				<dt> <a href="javascript:void(0)" class="a -arrow">타이틀</a></dt>
+				<dd class="point">데이터</dd>
+			</div>
+		</dl>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-summary/accordion @ State=close" type="text/template">
+	<div class="card -sum">
+		<div class="dls -box" data-role="fold">
+			<button type="button" class="more" data-role="marker">
+				<span>펼치기</span>
+			</button>
+			<div class="top-data-area">
+				<p class="title">타이틀</p>
+			</div>
+			<dl class="dl">
+				<div>
+					<dt>대출과목</dt>
+					<dd>예적금담보대출</dd>
+				</div>
+				<div>
+					<dt>거래구분</dt>
+					<dd>개별거래</dd>
+				</div>
+				<div>
+					<dt>담보예적금(신탁) 계좌번호</dt>
+					<dd>111-1111-1111-11</dd>
+				</div>
+				<div>
+					<dt>대출약정금액</dt>
+					<dd>30,000,000원</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>입금계좌번호</dt>
+					<dd>302-1234-5678-80</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출관리점</dt>
+					<dd>서대문지점</dd>
+				</div>
+			</dl>
+
+			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden">
+
+			<div data-role="hidden" class="top-data-area">
+				<p class="title">타이틀</p>
+			</div>
+			<dl class="dl">
+				<div data-role="hidden">
+					<dt>질권설정금액</dt>
+					<dd>3,000,000원</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출신규일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출만기일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>지연배상금율</dt>
+					<dd>최고 연 15.000%</dd>
+				</div>
+			</dl>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-summary/accordion @ State=open" type="text/template">
+	<div class="card -sum">
+		<div class="dls -box -active" data-role="fold" style="">
+			<button type="button" class="more" data-role="marker">접기</button>
+			<div class="top-data-area">
+				<p class="title">타이틀</p>
+			</div>
+			<dl class="dl">
+				<div>
+					<dt>대출과목</dt>
+					<dd>예적금담보대출</dd>
+				</div>
+				<div>
+					<dt>거래구분</dt>
+					<dd>개별거래</dd>
+				</div>
+				<div>
+					<dt>담보예적금(신탁) 계좌번호</dt>
+					<dd>111-1111-1111-11</dd>
+				</div>
+				<div>
+					<dt>대출약정금액</dt>
+					<dd>30,000,000원</dd>
+				</div>
+				<div data-role="hidden" style="">
+					<dt>입금계좌번호</dt>
+					<dd>302-1234-5678-80</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출관리점</dt>
+					<dd>서대문지점</dd>
+				</div>
+			</dl>
+
+			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+
+			<div data-role="hidden" class="top-data-area">
+				<p class="title">타이틀</p>
+			</div>
+			<dl class="dl">
+				<div data-role="hidden" style="">
+					<dt>질권설정금액</dt>
+					<dd>3,000,000원</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출신규일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출만기일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>지연배상금율</dt>
+					<dd>최고 연 15.000%</dd>
+				</div>
+			</dl>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-summary/accordion-multi @ State=colse" type="text/template">
+	<div class="card -sum -acc-multi">
+		<div class="dls -box" data-role="fold" style="">
+			<button type="button" class="more" data-role="marker">펼치기</button>
+			<div class="top-data-area -data-view mb-0">
+				<dl class="dl">
+					<div>
+						<dt class="title">타이틀</dt>
+						<dd class="main-data">0원</dd>
+					</div>
+				</dl>
+			</div>
+			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+
+			<div data-role="hidden" class="top-data-area">
+				<p class="title">타이틀</p>
+			</div>
+			<dl class="dl">
+				<div data-role="hidden">
+					<dt>질권설정금액</dt>
+					<dd>3,000,000원</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출신규일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출만기일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>지연배상금율</dt>
+					<dd>최고 연 15.000%</dd>
+				</div>
+			</dl>
+			<div data-role="hidden" class="top-data-area">
+				<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+				<p class="title">타이틀</p>
+			</div>
+			<dl class="dl">
+				<div data-role="hidden" style="">
+					<dt>질권설정금액</dt>
+					<dd>3,000,000원</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출신규일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출만기일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>지연배상금율</dt>
+					<dd>최고 연 15.000%</dd>
+				</div>
+			</dl>
+			<div data-role="hidden" class="top-data-area mb-0">
+				<hr class="hr list-1 mb-0" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+				<p class="info">내용을 입력해 주세요.</p>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-summary/accordion-multi @ State=open" type="text/template">
+	<div class="card -sum -acc-multi">
+		<div class="dls -box -active" data-role="fold" style="">
+			<button type="button" class="more" data-role="marker">접기</button>
+			<div class="top-data-area -data-view">
+				<dl class="dl">
+					<div>
+						<dt class="title">타이틀</dt>
+						<dd class="main-data">0원</dd>
+					</div>
+				</dl>
+			</div>
+			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+
+			<div data-role="hidden" class="top-data-area">
+				<p class="title">타이틀</p>
+			</div>
+			<dl class="dl">
+				<div data-role="hidden">
+					<dt>질권설정금액</dt>
+					<dd>3,000,000원</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출신규일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출만기일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>지연배상금율</dt>
+					<dd>최고 연 15.000%</dd>
+				</div>
+			</dl>
+			<div data-role="hidden" class="top-data-area">
+				<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+				<p class="title">타이틀</p>
+			</div>
+			<dl class="dl">
+				<div data-role="hidden" style="">
+					<dt>질권설정금액</dt>
+					<dd>3,000,000원</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출신규일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>대출만기일</dt>
+					<dd>2023.01.01</dd>
+				</div>
+				<div data-role="hidden">
+					<dt>지연배상금율</dt>
+					<dd>최고 연 15.000%</dd>
+				</div>
+			</dl>
+			<div data-role="hidden" class="top-data-area mb-0">
+				<hr class="hr list-1 mb-0" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+				<p class="info">내용을 입력해 주세요.</p>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-summary/basic" type="text/template">
+	<div class="card -sum -basic">
+		<div class="-box">
+			<div class="top-data-area">
+				<dt class="badges">
+					<span class="badge line-gray">매우낮은위험</span>
+				</dt>
+				<dt class="title">타이틀</dt>
+				<dt class="sub-title">부가설명</dt>
+			</div>
+			<dl class="dl">
+				<div>
+					<dt>상품명</dt>
+					<dd>NH해외여행보험</dd>
+				</div>
+				<div>
+					<dt>보험료</dt>
+					<dd>50,000원</dd>
+				</div>
+				<div>
+					<dt>납입기간</dt>
+					<dd>10년납</dd>
+				</div>
+				<div>
+					<dt>납입방법</dt>
+					<dd>매월</dd>
+				</div>
+				<div>
+					<dt>계좌정보</dt>
+					<dd>
+						<div class="bName">NH농협은행</div>
+						<div class="bAccount"> 123-456-78910</div>
+					</dd>
+				</div>
+			</dl>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-summary/highlight @ Type=card" type="text/template">
+	<div class="card -sum">
+		<dl class="dl -box -highlight">
+			<div>
+				<dt>타이틀</dt>
+				<dd>데이터</dd>
+			</div>
+			<div>
+				<dt>타이틀</dt>
+				<dd>데이터</dd>
+			</div>
+			<div>
+				<dt>타이틀</dt>
+				<dd>데이터</dd>
+			</div>
+		</dl>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-summary/highlight @ Type=fixed" type="text/template">
+	<div class="card -sum">
+		<dl class="dl -box -highlight -fixed">
+			<div>
+				<dt>타이틀</dt>
+				<dd>데이터</dd>
+			</div>
+		</dl>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-summary/price/divide" type="text/template">
+	<div class="card -sum">
+		<div class="dl -divide">
+			<p class="txt">타이틀</p>
+			<dl class="dl">
+				<div class="monthly">
+					<dt>예상금리<span>부가설명</span></dt>
+					<dd>
+						<span class="point"><span>매월</span>0원</span><span
+							class="sub-info">부가설명</span>
+					</dd>
+				</div>
+			</dl>
+			<p class="info">가이드문구를 입력해 주세요.</p>
+
+			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden">
+
+			<p class="txt">타이틀</p>
+			<dl class="dl">
+				<div class="monthly">
+					<dt>예상금리<span>부가설명</span></dt>
+					<dd>
+						<span class="point"><span>매월</span>0원</span><span
+							class="sub-info">부가설명</span>
+					</dd>
+				</div>
+			</dl>
+			<p class="info">가이드문구를 입력해 주세요.</p>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-summary/price/double" type="text/template">
+	<div class="card -sum">
+		<dl class="dl -box price-single -double">
+			<div class="monthly">
+				<dt>예상금리<span>부가설명</span></dt>
+				<dd>
+					<span class="point"><span>매월</span>0원</span><span class="sub-info">부가설명</span>
+				</dd>
+			</div>
+			<div class="monthly">
+				<dt>예상금리<span>부가설명</span></dt>
+				<dd>
+					<span class="point"><span>매월</span>0원</span><span class="sub-info">부가설명</span>
+				</dd>
+			</div>
+		</dl>
+	</div>
+</script>
+<script data-size="2" data-title="Card | card-summary/price/single" type="text/template">
+	<div class="card -sum">
+		<dl class="dl -box price-single">
+			<div class="monthly">
+				<dt>예상금리<span>부가설명</span></dt>
+				<dd>
+					<span class="point"><span>매월</span>0원</span><span class="sub-info">부가설명</span>
+				</dd>
+			</div>
+		</dl>
+	</div>
+</script>
+		<!-- NDS components : E -->
+	</div>
+	<!-- NDS Script -->
+	<script src="./../assets/js/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/js/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/nds-ui.js"></script>
+	<!-- Guide Script -->
+	<script src="./../guide/js/guide.js"></script>
+	<script>
+		buildGuide();
+	</script>
+</html>

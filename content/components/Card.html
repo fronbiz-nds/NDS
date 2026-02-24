@@ -5,8 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title></title>
 	<!-- NDS CSS -->
-	<link rel="stylesheet" href="./../assets/css/nds-common.css" />
-	<link rel="stylesheet" href="./../assets/css/nds-components.css" />
+	<link rel="stylesheet" href="./../assets/css/nds-ui.css" />
 	<!-- Guide CSS -->
 	<link rel="stylesheet" href="./../guide/css/guide.css" />
 </head>
@@ -15,9 +14,9 @@
 		<!-- NDS components : S -->
 <script data-size="2" data-title="Card | card-account/accordion @ State=close" type="text/template">
 	<div class="field">
-		<div class="card account -comb -accor">
+		<div class="card account -comb -accor" aria-labelledby="account-title">
 			<div data-bankcode="011" class="info">
-				<span class="name">
+				<span class="name" id="account-title">
 					<span>주거래우대통장</span>
 				</span>
 				<span class="account-number">
@@ -37,10 +36,10 @@
 				</div>
 			</dl>
 			<div class="dls" data-role="fold">
-				<button type="button" class="more" data-role="marker">
+				<button type="button" class="more" data-role="marker" aria-expanded="false" aria-controls="folded-list">
 					<span>펼치기</span>
 				</button>
-				<dl class="dl" data-role="hidden">
+				<dl class="dl" data-role="hidden" id="folded-list">
 					<div>
 						<dt>타이틀</dt>
 						<dd>데이터</dd>
@@ -60,9 +59,9 @@
 </script>
 <script data-size="2" data-title="Card | card-account/accordion @ State=open" type="text/template">
 	<div class="field">
-		<div class="card account -comb -accor">
+		<div class="card account -comb -accor" aria-labelledby="account-title">
 			<div data-bankcode="011" class="info">
-				<span class="name">
+				<span class="name" id="account-title">
 					<span>주거래우대통장</span>
 				</span>
 				<span class="account-number">
@@ -82,10 +81,10 @@
 				</div>
 			</dl>
 			<div class="dls -active" data-role="fold">
-				<button type="button" class="more" data-role="marker">
+				<button type="button" class="more" data-role="marker" aria-expanded="true" aria-controls="folded-list">
 					<span>접기</span>
 				</button>
-				<dl class="dl" data-role="hidden">
+				<dl class="dl" data-role="hidden" id="folded-list">
 					<div>
 						<dt>타이틀</dt>
 						<dd>데이터</dd>
@@ -104,14 +103,14 @@
 	</div>
 </script>
 <script data-size="2" data-title="Card | card-account/list" type="text/template">
-	<div class="account card -comb">
+	<div class="account card -comb" aria-labelledby="card-title-id">
 		<div class="dot-menu">
-			<button type="button" class="button">
+			<button type="button" class="button" aria-haspopup="true">
 				<span class="hide">더보기</span>
 			</button>
 		</div>
 		<div data-bankcode="011" class="info">
-			<span class="name">
+			<span class="name"id="card-title-id">
 				<span>금융사명</span>
 			</span>
 			<span class="account-number">
@@ -136,12 +135,12 @@
 	</div>
 </script>
 <script data-size="2" data-title="Card | card-account/list-mall" type="text/template">
-	<div class="account card -comb">
+	<div class="account card -comb" aria-labelledby="acc-name">
 		<div class="top-area badges -right">
 			<span class="badge line-gray">라벨</span>
 		</div>
 		<div data-bankcode="011" class="info">
-			<span class="name">
+			<span class="name" id="acc-name">
 				<span>NH고향사랑기부예금</span>
 			</span>
 			<span class="account-number">
@@ -1577,8 +1576,8 @@
 		<!-- NDS components : E -->
 	</div>
 	<!-- NDS Script -->
-	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
-	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/js/libs/anime/lib/anime.min.js"></script>
 	<script src="./../assets/js/nds-ui.js"></script>
 	<!-- Guide Script -->
 	<script src="./../guide/js/guide.js"></script>

@@ -17,10 +17,10 @@
 	<div class="field ml-24">
 		<span class="label">테스트모드에서 클릭</span>
 		<span class="tooltip">
-			<button type="button" class="trigger">
+			<button type="button" class="trigger" aria-describedby="tooltip-panel" aria-expanded="false">
 				<span class="hide">도움말 보기</span>
 			</button>
-			<span class="panel">
+			<span class="panel" role="tooltip" id="tooltip-panel" aria-hidden="true">
 				<span class="title">타이틀</span>
 				<span class="sub-title">서브 타이틀</span>
 				<span class="t-content">
@@ -43,4 +43,5 @@
 	<script>
 		buildGuide();
 	</script>
+</body>
 </html>

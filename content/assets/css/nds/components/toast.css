@@ -3,4 +3,28 @@
    ---------------------------------------------------------
    
    ========================================================= */
+
+/* [Toast] */
+.nds-toast {position:fixed; bottom:0; left:2.4rem; z-index:1500; width:calc(100% - 4.8rem); min-height:4.8rem; padding:1.3rem var(--nds-spacing-16); border-radius:var(--nds-border-radius-12); background-color:var(--nds-color-bg-toast-basic); box-shadow:0 0.3rem 0.6rem rgba(0, 0, 0, 0.05); color:var(--nds-color-text-toast-default); font-size:1.4rem; opacity:0; pointer-events:none;}
+.nds-toast.-active {pointer-events:auto; animation:toastMsg 3s ease-in-out forwards;}
    
+/* AS-IS */
+.toast {display:none; overflow:hidden; position:fixed; right:0; bottom:0; left:0; z-index:-100; width:100%;}
+.toast.-active {display:block; z-index:1500;}
+.toast .message {opacity:0; position:fixed; bottom:0; left:2.4rem; width:calc(100% - 4.8rem); min-height:4.8rem; padding:1.3rem var(--nds-spacing-16); border-radius:var(--nds-border-radius-12); background-color:var(--nds-color-bg-toast-basic); box-shadow:0 .4rem .8rem rgba(0,0,0,.1); color:var(--nds-color-text-toast-default); font-size:1.4rem; line-height:157%; text-align:left;}
+.toast.-active .message {opacity:1; animation:toastMsg 3s ease-in-out forwards;}
+
+@-webkit-keyframes toastMsg {
+    0% {opacity:0; transform:translateY(4rem)  scale(0.9,1) perspective(3.75rem);}
+    5% {opacity:1; transform:translateY(-3.5rem) perspective(3.75rem);}
+    10%, 80% {opacity:1; transform:translateY(-3rem);}
+    93% {opacity:1; transform:translateY(-3.5rem);}
+    100% {opacity:0; transform:translateY(4rem) scale(0.9,1);}
+}
+@keyframes toastMsg {
+    0% {opacity:0; transform:translateY(4rem)  scale(0.9,1) perspective(3.75rem);}
+    5% {opacity:1; transform:translateY(-3.5rem) perspective(3.75rem);}
+    10%, 80% {opacity:1; transform:translateY(-3rem);}
+    93% {opacity:1; transform:translateY(-3.5rem);}
+    100% {opacity:0; transform:translateY(4rem) scale(0.9,1);}
+}

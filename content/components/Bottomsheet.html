@@ -16,11 +16,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-account/accordion" type="text/template">
 	<button type="button"  class="a underline point" onClick="Layer.open('Bottomsheet-account_accordion')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/bottomsheet-account-accordion.png" alt=""></div>
-	<div id="Bottomsheet-account_accordion" class="layer" role="dialog" aria-modal="true" aria-labelledby="dialogTitle">
+	<div id="Bottomsheet-account_accordion" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="dialogTitle">계좌를 선택해 주세요</h1>
+					<h1 class="title">계좌를 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-account_accordion')"><span class="hide">닫기</span></button>
@@ -43,11 +43,11 @@
 					</div>
 					
 					<div class="segments-panels">
-						<div role="tabpanel" aria-labelledby="segment3" id="segments-panel3" class="segments-panel" tabindex="0">
+						<div role="tabpanel" aria-labelledby="segment1" id="segments-panel3" class="segments-panel" tabindex="0">
 							
 						</div>
 						
-						<div role="tabpanel" aria-labelledby="segment4" id="segments-panel4" class="segments-panel -active" tabindex="0">
+						<div role="tabpanel" aria-labelledby="segment2" id="segments-panel4" class="segments-panel -active" tabindex="0">
 							<div class="choose-account-Wrap">
 								<div class="field">
 									<div class="text">
@@ -60,18 +60,18 @@
 								</div>
 								<div class="custom-key-display">
 									<div class="custom-key-wrap">
-										<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
-										<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
-										<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
-										<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
-										<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
-										<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
-										<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
-										<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
-										<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
-										<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
-										<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
-										<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+										<button type="button" class="key-btn" value="1" title="숫자 1 입력">1</button>
+										<button type="button" class="key-btn" value="2" title="숫자 2 입력">2</button>
+										<button type="button" class="key-btn" value="3" title="숫자 3 입력">3</button>
+										<button type="button" class="key-btn" value="4" title="숫자 4 입력">4</button>
+										<button type="button" class="key-btn" value="5" title="숫자 5 입력">5</button>
+										<button type="button" class="key-btn" value="6" title="숫자 6 입력">6</button>
+										<button type="button" class="key-btn" value="7" title="숫자 7 입력">7</button>
+										<button type="button" class="key-btn" value="8" title="숫자 8 입력">8</button>
+										<button type="button" class="key-btn" value="9" title="숫자 9 입력">9</button>
+										<button type="button" class="key-btn" disabled aria-hidden="true">NH</button>
+										<button type="button" class="key-btn" value="0" title="숫자 0 입력">0</button>
+										<button type="button" class="key-btn btn-del" title="마지막 숫자 삭제"></button>
 									</div>
 									<div class="buttons">
 										<button type="button" class="button -primary -lg">확인</button>
@@ -82,7 +82,7 @@
 								<div class="choose-account-list mb-0">
 									<div class="accordion -lg -borderless -active" data-role="fold">
 										<div class="exchange-selection-wrap">
-											<div class="selection" id="acc-info-01">
+											<div class="selection">
 												<ul>
 													<li>
 														<div data-bankcode="011" class="info -fix">
@@ -105,9 +105,9 @@
 													</li>
 												</ul>
 											</div>
-											<button type="button" class="title" data-role="marker" id="accordionBtn1" aria-expanded="true" aria-controls="panel1" aria-labelledby="acc-info-01"><span class="hide">상세 내역 펼치기</span></button>
+											<button type="button" class="title" data-role="marker" title="펼쳐짐"></button>
 										</div>
-										<div class="panel -borderless" data-role="hidden" id="panel1" role="region" aria-labelledby="accordionBtn1">
+										<div class="panel -borderless" data-role="hidden">
 											<div class="custom-list -borderless -account">
 												<ul>
 													<li>
@@ -128,7 +128,7 @@
 									</div>
 									<div class="accordion -lg -borderless" data-role="fold">
 										<div class="exchange-selection-wrap">
-											<div class="selection" id="acc-info-02">
+											<div class="selection">
 												<ul>
 													<li>
 														<div data-bankcode="011" class="info -fix">
@@ -151,9 +151,9 @@
 													</li>
 												</ul>
 											</div>
-											<button type="button" class="title" data-role="marker" id="accordionBtn2" aria-expanded="false" aria-controls="panel2" aria-labelledby="acc-info-02"><span class="hide">상세 내역 펼치기</span></button>
+											<button type="button" class="title" data-role="marker"></button>
 										</div>
-										<div class="panel -borderless" data-role="hidden" id="panel2" role="region" aria-labelledby="accordionBtn2">
+										<div class="panel -borderless" data-role="hidden">
 											<div class="custom-list -borderless -account">
 												<ul>
 													<li>
@@ -174,7 +174,7 @@
 									</div>
 									<div class="accordion -lg -borderless" data-role="fold">
 										<div class="exchange-selection-wrap">
-											<div class="selection" id="acc-info-03">
+											<div class="selection">
 												<ul>
 													<li>
 														<div data-bankcode="011" class="info -fix">
@@ -197,9 +197,9 @@
 													</li>
 												</ul>
 											</div>
-											<button type="button" class="title" data-role="marker" id="accordionBtn3" aria-expanded="false" aria-controls="panel3" aria-labelledby="acc-info-03"><span class="hide">상세 내역 펼치기</span></button>
+											<button type="button" class="title" data-role="marker"></button>
 										</div>
-										<div class="panel -borderless" data-role="hidden" id="panel3" role="region" aria-labelledby="accordionBtn3">
+										<div class="panel -borderless" data-role="hidden">
 											<div class="custom-list -borderless -account">
 												<ul>
 													<li>
@@ -230,11 +230,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-account/direct" type="text/template">
 	<button type="button" class="a underline point" onclick="Layer.open('Bottomsheet-account_direct')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/direct.png" alt="Bottomsheet - bottomsheet-account/direct"></div>
-	<div id="Bottomsheet-account_direct" class="layer" role="dialog" aria-modal="true" aria-labelledby="dialogTitle">
+	<div id="Bottomsheet-account_direct" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="dialogTitle">계좌를 선택해 주세요</h1>
+					<h1 class="title">계좌를 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-account_direct')"><span class="hide">닫기</span></button>
@@ -248,10 +248,18 @@
 						<div class="outer">
 							<div class="inner">
 								<div role="tablist" class="list">
-									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel33" id="segment5" class="">최근</button></div>
-									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel43" id="segment6" class="">자주</button></div>
-									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel53" id="segment7" class="">내계좌</button></div>
-									<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel63" id="segment8" class="">직접입력</button></div>
+									<div class="item"><button type="button" role="tab" aria-selected="false"
+											aria-controls="segments-panel33" id="segment5" class="">최근<span
+												class="hide">선택됨</span></button></div>
+									<div class="item"><button type="button" role="tab" aria-selected="false"
+											aria-controls="segments-panel43" id="segment6" class="">자주</button>
+									</div>
+									<div class="item"><button type="button" role="tab" aria-selected="false"
+											aria-controls="segments-panel53" id="segment7" class="">내계좌</button>
+									</div>
+									<div class="item -active"><button type="button" role="tab" aria-selected="true"
+											aria-controls="segments-panel63" id="segment8" class="">직접입력</button>
+									</div>
 									<span class="switcher" aria-hidden="true"></span>
 								</div>
 							</div>
@@ -271,7 +279,7 @@
 							<div class="choose-number-wrap -inputed">
 								<div class="field">
 									<div class="select -list">
-										<button type="button" aria-haspopup="true" aria-haspopup="listbox" aria-expanded="false" aria-controls="bankList" class="fc-empty">은행선택</button>
+										<button type="button" aria-haspopup="true" class="fc-empty">은행선택</button>
 									</div>
 								</div>
 								<div class="field mt-12">
@@ -285,18 +293,18 @@
 									</div> -->
 								</div>
 								<div class="custom-key-wrap">
-									<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
-									<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
-									<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
-									<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
-									<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
-									<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
-									<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
-									<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
-									<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
-									<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
-									<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
-									<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+									<span role="button" class="key-btn" data-value="1" title="숫자 1 입력">1</span>
+									<span role="button" class="key-btn" data-value="2" title="숫자 2 입력">2</span>
+									<span role="button" class="key-btn" data-value="3" title="숫자 3 입력">3</span>
+									<span role="button" class="key-btn" data-value="4" title="숫자 4 입력">4</span>
+									<span role="button" class="key-btn" data-value="5" title="숫자 5 입력">5</span>
+									<span role="button" class="key-btn" data-value="6" title="숫자 6 입력">6</span>
+									<span role="button" class="key-btn" data-value="7" title="숫자 7 입력">7</span>
+									<span role="button" class="key-btn" data-value="8" title="숫자 8 입력">8</span>
+									<span role="button" class="key-btn" data-value="9" title="숫자 9 입력">9</span>
+									<span role="button" class="key-btn disabled" aria-hidden="true">NH</span>
+									<span role="button" class="key-btn" data-value="0" title="숫자 0 입력">0</span>
+									<span role="button" class="key-btn btn-del" title="마지막 숫자 삭제"></span>
 								</div>
 								<div class="buttons">
 									<button type="button" class="button -lg -primary">확인</button>
@@ -312,11 +320,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-account/multiple" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-account_multiple')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/multiple.png" alt=""></div>
-	<div id="Bottomsheet-account_multiple" class="layer" role="dialog" aria-modal="true" aria-labelledby="dialogTitleMultiple">
+	<div id="Bottomsheet-account_multiple" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="dialogTitleMultiple">계좌를 선택해 주세요</h1>
+					<h1 class="title">계좌를 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-account_multiple')"><span class="hide">닫기</span></button>
@@ -436,11 +444,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-account/nh" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-account_nh')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1041_33584.png" alt=""></div>
-	<div id="Bottomsheet-account_nh" class="layer" role="dialog" aria-modal="true" aria-labelledby="dialogTitleNh">
+	<div id="Bottomsheet-account_nh" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="dialogTitleNh">계좌를 선택해 주세요</h1>
+					<h1 class="title">계좌를 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-account_nh')"><span class="hide">닫기</span></button>
@@ -468,26 +476,26 @@
 								<div class="field">
 									<div class="text">
 										<div class="choose-account-input">
-											<input type="text" id="text" readonly placeholder="계좌번호 직접 입력" aria-label="입력된 계좌번호" aria-describedby="accountMessage">
+											<input type="text" id="text" readonly placeholder="계좌번호 직접 입력">
 											<button type="button" class="button -tertiary jsChooseBtn -sm -inline">직접 입력</button>
 										</div>
-										<p class="message" id="accountMessage">입력 정보 안내 메시지 출력</p>
+										<p class="message">입력 정보 안내 메시지 출력</p>
 									</div>
 								</div>
 								<div class="custom-key-display">
 									<div class="custom-key-wrap">
-										<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
-										<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
-										<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
-										<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
-										<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
-										<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
-										<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
-										<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
-										<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
-										<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
-										<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
-										<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+										<button type="button" class="key-btn" value="1" title="숫자 1 입력">1</button>
+										<button type="button" class="key-btn" value="2" title="숫자 2 입력">2</button>
+										<button type="button" class="key-btn" value="3" title="숫자 3 입력">3</button>
+										<button type="button" class="key-btn" value="4" title="숫자 4 입력">4</button>
+										<button type="button" class="key-btn" value="5" title="숫자 5 입력">5</button>
+										<button type="button" class="key-btn" value="6" title="숫자 6 입력">6</button>
+										<button type="button" class="key-btn" value="7" title="숫자 7 입력">7</button>
+										<button type="button" class="key-btn" value="8" title="숫자 8 입력">8</button>
+										<button type="button" class="key-btn" value="9" title="숫자 9 입력">9</button>
+										<button type="button" class="key-btn" disabled aria-hidden="true">NH</button>
+										<button type="button" class="key-btn" value="0" title="숫자 0 입력">0</button>
+										<button type="button" class="key-btn btn-del" title="마지막 숫자 삭제"></button>
 									</div>
 									<div class="buttons">
 										<button type="button" class="button -primary -lg">확인</button>
@@ -571,11 +579,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-account/nh-no-data" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-account_nh-no-data')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1041_35093.png" alt=""></div>
-	<div id="Bottomsheet-account_nh-no-data" class="layer" role="dialog" aria-modal="true" aria-labelledby="bs-title">
+	<div id="Bottomsheet-account_nh-no-data" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="bs-title">계좌를 선택해 주세요</h1>
+					<h1 class="title">계좌를 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-account_nh-no-data')"><span class="hide">닫기</span></button>
@@ -589,8 +597,8 @@
 						<div class="outer">
 							<div class="inner">
 								<div role="tablist" class="list">
-									<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel53" id="segment3">NH농협</button></div>
-									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel54" id="segment4">다른금융</button></div>
+									<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel3" id="segment3">NH농협</button></div>
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel4" id="segment4">다른금융</button></div>
 									<span class="switcher" aria-hidden="true"></span>
 								</div>
 							</div>
@@ -598,31 +606,31 @@
 					</div>
 					
 					<div class="segments-panels">
-						<div role="tabpanel" aria-labelledby="segment1" id="segments-panel53" class="segments-panel -active" tabindex="0">
+						<div role="tabpanel" aria-labelledby="segment1" id="segments-panel3" class="segments-panel -active" tabindex="0">
 							<div class="choose-account-Wrap">
 								<div class="field">
 									<div class="text">
 										<div class="choose-account-input">
-											<input type="text" id="text" readonly placeholder="계좌번호 직접 입력" aria-label="입력된 계좌번호" aria-describedby="accountMessage">
+											<input type="text" id="text" readonly placeholder="계좌번호 직접 입력">
 											<button type="button" class="button -tertiary jsChooseBtn -sm -inline">직접 입력</button>
 										</div>
-										<p class="message" id="accountMessage">입력 정보 안내 메시지 출력</p>
+										<p class="message">입력 정보 안내 메시지 출력</p>
 									</div>
 								</div>
 								<div class="custom-key-display">
 									<div class="custom-key-wrap">
-										<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
-										<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
-										<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
-										<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
-										<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
-										<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
-										<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
-										<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
-										<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
-										<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
-										<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
-										<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+										<button type="button" class="key-btn" value="1" title="숫자 1 입력">1</button>
+										<button type="button" class="key-btn" value="2" title="숫자 2 입력">2</button>
+										<button type="button" class="key-btn" value="3" title="숫자 3 입력">3</button>
+										<button type="button" class="key-btn" value="4" title="숫자 4 입력">4</button>
+										<button type="button" class="key-btn" value="5" title="숫자 5 입력">5</button>
+										<button type="button" class="key-btn" value="6" title="숫자 6 입력">6</button>
+										<button type="button" class="key-btn" value="7" title="숫자 7 입력">7</button>
+										<button type="button" class="key-btn" value="8" title="숫자 8 입력">8</button>
+										<button type="button" class="key-btn" value="9" title="숫자 9 입력">9</button>
+										<button type="button" class="key-btn" disabled aria-hidden="true">NH</button>
+										<button type="button" class="key-btn" value="0" title="숫자 0 입력">0</button>
+										<button type="button" class="key-btn btn-del" title="마지막 숫자 삭제"></button>
 									</div>
 									<div class="buttons">
 										<button type="button" class="button -primary -lg">확인</button>
@@ -638,7 +646,7 @@
 							
 						</div>
 
-						<div role="tabpanel" aria-labelledby="segment2" id="segments-panel54" class="segments-panel" tabindex="0">
+						<div role="tabpanel" aria-labelledby="segment2" id="segments-panel4" class="segments-panel" tabindex="0">
 
 						</div>
 					</div>
@@ -650,11 +658,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-account/other" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-account_other')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1041_33588.png" alt=""></div>
-	<div id="Bottomsheet-account_other" class="layer" role="dialog" aria-modal="true" aria-labelledby="bs-acc-title">
+	<div id="Bottomsheet-account_other" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="bs-acc-title">계좌를 선택해 주세요</h1>
+					<h1 class="title">계좌를 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-account_other')"><span class="hide">닫기</span></button>
@@ -756,11 +764,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-account/other-no-data" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-account_other-no-data')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/3279_64860.png" alt=""></div>
-	<div id="Bottomsheet-account_other-no-data" class="layer" role="dialog" aria-modal="true" aria-labelledby="modal-title-account">
+	<div id="Bottomsheet-account_other-no-data" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="modal-title-account">계좌를 선택해 주세요</h1>
+					<h1 class="title">계좌를 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-account_other-no-data')"><span class="hide">닫기</span></button>
@@ -783,11 +791,11 @@
 					</div>
 					
 					<div class="segments-panels">
-						<div role="tabpanel" aria-labelledby="segment3" id="segments-panel3" class="segments-panel" tabindex="0">
+						<div role="tabpanel" aria-labelledby="segment1" id="segments-panel3" class="segments-panel" tabindex="0">
 							
 						</div>
 						
-						<div role="tabpanel" aria-labelledby="segment4" id="segments-panel4" class="segments-panel -active" tabindex="0">
+						<div role="tabpanel" aria-labelledby="segment2" id="segments-panel4" class="segments-panel -active" tabindex="0">
 							<div class="choose-account-list">
 								<p class="message">등록한 계좌가 없습니다<br>계좌를 등록하고 이용해 주세요</p>
 							</div>
@@ -803,7 +811,7 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-basic/none-header @ Type=none" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-basic_none-header-Type_none')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1170_36398.png" alt=""></div>
-	<div id="Bottomsheet-basic_none-header-Type_none" class="layer" role="dialog" aria-modal="true" aria-labelledby="bs-title-basic">
+	<div id="Bottomsheet-basic_none-header-Type_none" class="layer">
 		<div class="container">
 			<div class="no-header" aria-hidden="true">
 				<div class="inner"></div>
@@ -811,7 +819,7 @@
 
 			<div class="contents">
 				<div class="content bttm">
-					<h2 class="h3" id="bs-title-basic">타이틀</h2>
+					<h2 class="h3">타이틀</h2>
 					<p class="p">텍스트를 입력해 주세요.</p>
 					<p class="p"><button type="button" class="a underline point" onClick="Layer.close('Bottomsheet-basic_none-header-Type_none')">레이어 닫기</button></p>
 				</div>
@@ -822,7 +830,7 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-basic/none-header @ Type=with-cta" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-basic_none-header-Type_with-cta')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/5076_95876.png" alt=""></div>
-	<div id="Bottomsheet-basic_none-header-Type_with-cta" class="layer" role="dialog" aria-modal="true" aria-labelledby="bs-cta-title">
+	<div id="Bottomsheet-basic_none-header-Type_with-cta" class="layer">
 		<div class="container">
 			<div class="no-header" aria-hidden="true">
 				<div class="inner"></div>
@@ -830,7 +838,7 @@
 
 			<div class="contents">
 				<div class="content bttm">
-					<h2 class="h3" id="bs-cta-title">타이틀</h2>
+					<h2 class="h3">타이틀</h2>
 					<p class="p">텍스트를 입력해 주세요.</p>
 					<p class="p"><button type="button" class="a underline point" onClick="Layer.close('Bottomsheet-basic_none-header-Type_with-cta')">레이어 닫기</button></p>
 				</div>
@@ -847,7 +855,7 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-basic/none-header-display @ Type=none" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-basic_none-header-display-Type_none')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/none-header-display.png" alt=""></div>
-	<div id="Bottomsheet-basic_none-header-display-Type_none" class="layer" role="dialog" aria-modal="true" aria-labelledby="bs-title-info">
+	<div id="Bottomsheet-basic_none-header-display-Type_none" class="layer">
 		<div class="container">
 			<div class="no-header" aria-hidden="true">
 				<div class="inner"></div>
@@ -855,7 +863,7 @@
 
 			<div class="contents">
 				<div class="content bttm -display-noneBtn">
-					<h2 class="h3" id="bs-title-info">타이틀</h2>
+					<h2 class="h3">타이틀</h2>
 					<p class="p">텍스트를 입력해 주세요.</p>
 					<p class="p"><button type="button" class="a underline point" onClick="Layer.close('Bottomsheet-basic_none-header-display-Type_none')">레이어 닫기</button></p>
 				</div>
@@ -870,7 +878,7 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-basic/none-header-display @ Type=with-cta" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-basic_none-header-display-Type_with-cta')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/none-header-display-with.png" alt=""></div>
-	<div id="Bottomsheet-basic_none-header-display-Type_with-cta" class="layer" role="dialog" aria-modal="true"aria-labelledby="bottomsheet-title">
+	<div id="Bottomsheet-basic_none-header-display-Type_with-cta" class="layer">
 		<div class="container">
 			<div class="no-header" aria-hidden="true">
 				<div class="inner"></div>
@@ -878,7 +886,7 @@
 
 			<div class="contents">
 				<div class="content bttm -display">
-					<h2 class="h3" id="bottomsheet-title">타이틀</h2>
+					<h2 class="h3">타이틀</h2>
 					<p class="p">텍스트를 입력해 주세요.</p>
 					<p class="p"><button type="button" class="a underline point" onClick="Layer.close('Bottomsheet-basic_none-header-display-Type_with-cta')">레이어 닫기</button></p>
 				</div>
@@ -899,35 +907,35 @@
 </script>
 <script data-size="2" data-title="Bottomsheet | bottomsheet-basic/with-header @ Type=none" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-basic_with-header-Type_none')">테스트모드에서 클릭</button>
-	<div class="nds__thumbnail"><img src="./prototype/NDS/images/5076_70138.png" alt=""></div>
-	<div id="Bottomsheet-basic_with-header-Type_none" class="layer" role="dialog" aria-modal="true" aria-labelledby="modal-title-none-basic">
-		<div class="container">
-			<div class="header">
-				<div class="inner">
-					<h1 class="title" id="modal-title-none-basic">타이틀</h1>
+							<div class="nds__thumbnail"><img src="./prototype/NDS/images/5076_70138.png" alt=""></div>
+							<div id="Bottomsheet-basic_with-header-Type_none" class="layer">
+								<div class="container">
+									<div class="header">
+										<div class="inner">
+											<h1 class="title">타이틀</h1>
 
-					<div class="funcs">
-						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-basic_with-header-Type_none')"><span class="hide">닫기</span></button>
-					</div>
-				</div>
-			</div>
+											<div class="funcs">
+												<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-basic_with-header-Type_none')"><span class="hide">닫기</span></button>
+											</div>
+										</div>
+									</div>
 
-			<div class="contents">
-				<div class="content">
-					<p class="p">텍스트를 입력해 주세요.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+									<div class="contents">
+										<div class="content">
+											<p class="p">텍스트를 입력해 주세요.</p>
+										</div>
+									</div>
+								</div>
+							</div>
 </script>
 <script data-size="2" data-title="Bottomsheet | bottomsheet-basic/with-header @ Type=with-cta" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-basic_with-header-Type_with-cta')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1049_44851.png" alt=""></div>
-	<div id="Bottomsheet-basic_with-header-Type_with-cta" class="layer" role="dialog" aria-modal="true" aria-labelledby="modal-title-cta">
+	<div id="Bottomsheet-basic_with-header-Type_with-cta" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="modal-title-cta">타이틀</h1>
+					<h1 class="title">타이틀</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-basic_with-header-Type_with-cta')"><span class="hide">닫기</span></button>
@@ -952,11 +960,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-basic/with-header-display @ Type=none" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-basic_with-header-display-Type_none')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/with-header-display.png" alt=""></div>
-	<div id="Bottomsheet-basic_with-header-display-Type_none" class="layer" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+	<div id="Bottomsheet-basic_with-header-display-Type_none" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="modal-title">타이틀</h1>
+					<h1 class="title">타이틀</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-basic_with-header-Type_with-cta')"><span class="hide">닫기</span></button>
@@ -981,11 +989,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-basic/with-header-display @ Type=with-cta" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-basic_with-header-display-Type_with-cta')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/with-header-display-with.png" alt=""></div>
-	<div id="Bottomsheet-basic_with-header-display-Type_with-cta" class="layer" role="dialog" aria-modal="true" aria-labelledby="basic-modal-title">
+	<div id="Bottomsheet-basic_with-header-display-Type_with-cta" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="basic-modal-title">타이틀</h1>
+					<h1 class="title">타이틀</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-basic_with-header-Type_with-cta')"><span class="hide">닫기</span></button>
@@ -1016,11 +1024,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-cs" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-cs')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/bottomsheet-cs.png" alt=""></div>
-	<div id="Bottomsheet-cs" class="layer" role="dialog" aria-modal="true" aria-labelledby="cs-modal-title">
+	<div id="Bottomsheet-cs" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="cs-modal-title">상담 방법을 선택해 주세요</h1>
+					<h1 class="title">상담 방법을 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-cs')"><span class="hide">닫기</span></button>
@@ -1031,33 +1039,33 @@
 			<div class="contents">
 				<div class="content">
 					<div class="consults">
-						<a href="javascript:void(0)" role="button">
+						<a href="javascript:void(0)">
 							<div class="consulting">
-								<div class="consult-icon -phone" aria-hidden="true"></div>
+								<div class="consult-icon -phone"></div>
 								<p class="p text-unit">전화 상담 예약</p>
 							</div>
 						</a>
-						<a href="javascript:void(0)" role="button">
+						<a href="javascript:void(0)">
 							<div class="consulting">
-								<div class="consult-icon -chat" aria-hidden="true"></div>
+								<div class="consult-icon -chat"></div>
 								<p class="p text-unit">채팅 상담</p>
 							</div>
 						</a>
-						<a href="javascript:void(0)" role="button">
+						<a href="javascript:void(0)">
 							<div class="consulting">
-								<div class="consult-icon -mail" aria-hidden="true"></div>
+								<div class="consult-icon -mail"></div>
 								<p class="p text-unit">이메일 상담</p>
 							</div>
 						</a>
-						<a href="javascript:void(0)" role="button">
+						<a href="javascript:void(0)">
 							<div class="consulting">
-								<div class="consult-icon -video" aria-hidden="true"></div>
+								<div class="consult-icon -video"></div>
 								<p class="p text-unit">화상 상담</p>
 							</div>
 						</a>
-						<a href="javascript:void(0)" role="button">
+						<a href="javascript:void(0)">
 							<div class="consulting">
-								<div class="consult-icon -agent" aria-hidden="true"></div>
+								<div class="consult-icon -agent"></div>
 								<p class="p text-unit">영업점 방문 예약</p>
 							</div>
 						</a>
@@ -1070,11 +1078,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-finnace/bank" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-finnace_bank')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/bank.png" alt=""></div>
-	<div id="Bottomsheet-finnace_bank" class="layer" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+	<div id="Bottomsheet-finnace_bank" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="modal-title">금융기관을 선택해 주세요</h1>
+					<h1 class="title">금융기관을 선택해 주세요</h1>
 					
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-finnace_bank')"><span class="hide">닫기</span></button>
@@ -1088,7 +1096,7 @@
 						<div class="segments -bar">
 							<div class="outer">
 								<div class="inner">
-									<div role="tablist" class="list" aria-label="금융기관 유형">
+									<div role="tablist" class="list">
 										<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel1" id="segment1">은행</button></div>
 										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel2" id="segment2">증권사</button></div>
 										<span class="switcher" aria-hidden="true"></span>
@@ -1178,11 +1186,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-finnace/insurance" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-finnace_insurance')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/insurance.png" alt=""></div>
-	<div id="Bottomsheet-finnace_insurance" class="layer" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+	<div id="Bottomsheet-finnace_insurance" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="modal-title">금융기관을 선택해 주세요</h1>
+					<h1 class="title">금융기관을 선택해 주세요</h1>
 					
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-finnace_insurance')"><span class="hide">닫기</span></button>
@@ -1196,10 +1204,10 @@
 						<div class="segments -bar -triple">
 							<div class="outer">
 								<div class="inner">
-									<div role="tablist" class="list" aria-label="금융기관 유형">
-										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel101" id="segment101">은행</button></div>
-										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel201" id="segment201">증권사</button></div>
-										<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel301" id="segment301">보험사</button></div>
+									<div role="tablist" class="list">
+										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel101" id="segment10">은행</button></div>
+										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel201" id="segment20">증권사</button></div>
+										<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel301" id="segment30">보험사</button></div>
 										<span class="switcher" aria-hidden="true"></span>
 									</div>
 								</div>
@@ -1207,7 +1215,7 @@
 						</div>
 
 						<div class="segments-panels">
-							<div role="tabpanel" aria-labelledby="segment101" id="segments-panel101" class="segments-panel" tabindex="0">
+							<div role="tabpanel" aria-labelledby="segment10" id="segments-panel101" class="segments-panel" tabindex="0">
 								<ul class="button-box">
 									<li><button type="button" data-bankcode="011" class="unit"><span class="txt">NH농협</span></button></li>
 									<li><button type="button" data-bankcode="004" class="unit"><span class="txt">국민</span></button></li>
@@ -1244,7 +1252,7 @@
 								</ul>
 							</div>
 	
-							<div role="tabpanel" aria-labelledby="segment201" id="segments-panel201" class="segments-panel" tabindex="0">
+							<div role="tabpanel" aria-labelledby="segment20" id="segments-panel201" class="segments-panel" tabindex="0">
 								<ul class="button-box">
 									<li><button type="button" data-bankcode="247" class="unit"><span class="txt">NH농협</span></button></li>
 									<li><button type="button" data-bankcode="261" class="unit"><span class="txt">교보증권</span></button></li>
@@ -1278,7 +1286,7 @@
 								</ul>
 							</div>
 
-							<div role="tabpanel" aria-labelledby="segment301" id="segments-panel301" class="segments-panel -active" tabindex="0">
+							<div role="tabpanel" aria-labelledby="segment30" id="segments-panel301" class="segments-panel -active" tabindex="0">
 								<ul class="button-box">
 									<li><button type="button" data-bankcode="440" class="unit"><span class="txt">NH농협생명</span></button></li>
 									<li><button type="button" data-bankcode="431" class="unit"><span class="txt">미래에셋생명</span></button></li>
@@ -1313,11 +1321,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-finnace/organ" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-finnace_organ')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/organ.png" alt=""></div>
-	<div id="Bottomsheet-finnace_organ" class="layer" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+	<div id="Bottomsheet-finnace_organ" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="modal-title"">금융기관을 선택해 주세요</h1>
+					<h1 class="title">금융기관을 선택해 주세요</h1>
 					
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-finnace_organ')"><span class="hide">닫기</span></button>
@@ -1430,11 +1438,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-finnace/stock" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-finnace_stock')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/stock.png" alt=""></div>
-	<div id="Bottomsheet-finnace_stock" class="layer" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+	<div id="Bottomsheet-finnace_stock" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="modal-title">금융기관을 선택해 주세요</h1>
+					<h1 class="title">금융기관을 선택해 주세요</h1>
 					
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-finnace_stock')"><span class="hide">닫기</span></button>
@@ -1448,9 +1456,9 @@
 						<div class="segments -bar">
 							<div class="outer">
 								<div class="inner">
-									<div role="tablist" class="list" aria-label="금융기관 유형">
-										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel111" id="segment111">은행</button></div>
-										<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel222" id="segment222">증권사</button></div>
+									<div role="tablist" class="list">
+										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel1" id="segment1">은행</button></div>
+										<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel2" id="segment2">증권사</button></div>
 										<span class="switcher" aria-hidden="true"></span>
 									</div>
 								</div>
@@ -1458,7 +1466,7 @@
 						</div>
 
 						<div class="segments-panels">
-							<div role="tabpanel" aria-labelledby="segment111" id="segments-panel111" class="segments-panel" tabindex="0">
+							<div role="tabpanel" aria-labelledby="segment1" id="segments-panel1" class="segments-panel" tabindex="0">
 								<ul class="button-box">
 									<li><button type="button" data-bankcode="011" class="unit"><span class="txt">NH농협</span></button></li>
 									<li><button type="button" data-bankcode="004" class="unit"><span class="txt">국민</span></button></li>
@@ -1495,7 +1503,7 @@
 								</ul>
 							</div>
 	
-							<div role="tabpanel" aria-labelledby="segment222" id="segments-panel222" class="segments-panel -active" tabindex="0">
+							<div role="tabpanel" aria-labelledby="segment2" id="segments-panel2" class="segments-panel -active" tabindex="0">
 								<ul class="button-box">
 									<li><button type="button" data-bankcode="247" class="unit"><span class="txt">NH농협</span></button></li>
 									<li><button type="button" data-bankcode="261" class="unit"><span class="txt">교보증권</span></button></li>
@@ -1538,7 +1546,7 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-float" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-float')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/bottomsheet-float.png" alt=""></div>
-	<div id="Bottomsheet-float" class="layer -float" role="dialog" aria-modal="true" aria-label="상세 정보">
+	<div id="Bottomsheet-float" class="layer -float">
 		<div class="container">
 			<div class="contents">
 				<div class="content">
@@ -1563,24 +1571,24 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/basic" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-keypad_basic')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1104_27986.png" alt=""></div>
-	<div id="Bottomsheet-keypad_basic" class="layer dimWhiteLayer" role="dialog" aria-modal="true" aria-label="숫자 입력 키패드">
+	<div id="Bottomsheet-keypad_basic" class="layer dimWhiteLayer">
 		<div class="container">
 			<div class="contents">
 				<div class="content">
 					<div class="choose-account-Wrap -inputed">
 						<div class="custom-key-wrap">
-							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
-							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
-							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
-							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
-							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
-							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
-							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
-							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
-							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
-							<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
-							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
-							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+							<span role="button" class="key-btn" data-value="1" title="숫자 1 입력">1</span>
+							<span role="button" class="key-btn" data-value="2" title="숫자 2 입력">2</span>
+							<span role="button" class="key-btn" data-value="3" title="숫자 3 입력">3</span>
+							<span role="button" class="key-btn" data-value="4" title="숫자 4 입력">4</span>
+							<span role="button" class="key-btn" data-value="5" title="숫자 5 입력">5</span>
+							<span role="button" class="key-btn" data-value="6" title="숫자 6 입력">6</span>
+							<span role="button" class="key-btn" data-value="7" title="숫자 7 입력">7</span>
+							<span role="button" class="key-btn" data-value="8" title="숫자 8 입력">8</span>
+							<span role="button" class="key-btn" data-value="9" title="숫자 9 입력">9</span>
+							<span role="button" class="key-btn disabled" aria-hidden="true">NH</span>
+							<span role="button" class="key-btn" data-value="0" title="숫자 0 입력">0</span>
+							<span role="button" class="key-btn btn-del" title="마지막 숫자 삭제"></span>
 						</div>
 						<div class="buttons">
 							<button type="button" class="button -lg -primary" onClick="Layer.close('Bottomsheet-keypad_basic')">확인(레이어닫기)</button>
@@ -1594,11 +1602,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/basic-input" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-keypad_basic-input')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1046_19726.png" alt=""></div>
-	<div id="Bottomsheet-keypad_basic-input" class="layer" role="dialog" aria-modal="true" aria-labelledby="basic-keypad-title">
+	<div id="Bottomsheet-keypad_basic-input" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="basic-keypad-title">타이틀</h1>
+					<h1 class="title">타이틀</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-keypad_basic-input')"><span class="hide">닫기</span></button>
@@ -1611,27 +1619,27 @@
 					<div class="choose-number-wrap -inputed">
 						<div class="field">
 							<div class="text">
-								<div class="choose-number-input" aria-live="polite" aria-atomic="true">
-									<input type="text" id="text" title="계좌번호 입력" readonly placeholder="숫자입력" aria-describedby="pubNumKeypadBoxMsgText">
+								<div class="choose-number-input">
+									<input type="text" id="text" title="계좌번호 입력" readonly placeholder="숫자입력">
 								</div>
 							</div>
 							<div class="info-wrap">
-								<p class="message -error" id="pubNumKeypadBoxMsgText" role="alert">10자리 이상으로 입력하여 주세요.</p>
+								<p class="message -error" id="pubNumKeypadBoxMsgText">10자리 이상으로 입력하여 주세요.</p>
 							</div>
 						</div>
 						<div class="custom-key-wrap">
-							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
-							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
-							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
-							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
-							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
-							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
-							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
-							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
-							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
-							<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
-							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
-							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+							<span role="button" class="key-btn" data-value="1" title="숫자 1 입력">1</span>
+							<span role="button" class="key-btn" data-value="2" title="숫자 2 입력">2</span>
+							<span role="button" class="key-btn" data-value="3" title="숫자 3 입력">3</span>
+							<span role="button" class="key-btn" data-value="4" title="숫자 4 입력">4</span>
+							<span role="button" class="key-btn" data-value="5" title="숫자 5 입력">5</span>
+							<span role="button" class="key-btn" data-value="6" title="숫자 6 입력">6</span>
+							<span role="button" class="key-btn" data-value="7" title="숫자 7 입력">7</span>
+							<span role="button" class="key-btn" data-value="8" title="숫자 8 입력">8</span>
+							<span role="button" class="key-btn" data-value="9" title="숫자 9 입력">9</span>
+							<span role="button" class="key-btn disabled" aria-hidden="true">NH</span>
+							<span role="button" class="key-btn" data-value="0" title="숫자 0 입력">0</span>
+							<span role="button" class="key-btn btn-del" title="마지막 숫자 삭제"></span>
 						</div>
 						<div class="buttons">
 							<button type="button" class="button -lg -primary">확인</button>
@@ -1646,24 +1654,24 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/point" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-keypad_point')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1104_27857.png" alt=""></div>
-	<div id="Bottomsheet-keypad_point" class="layer dimWhiteLayer" role="dialog" aria-modal="true" aria-label="포인트 입력 키패드">
+	<div id="Bottomsheet-keypad_point" class="layer dimWhiteLayer">
 		<div class="container">
 			<div class="contents">
 				<div class="content">
 					<div class="choose-account-Wrap -inputed">
 						<div class="custom-key-wrap">
-							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
-							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
-							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
-							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
-							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
-							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
-							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
-							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
-							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>
-							<button type="button" class="key-btn" data-value="." aria-label="점 입력">.</button>						
-							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
-							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+							<span role="button" class="key-btn" data-value="1" title="숫자 1 입력">1</span>
+							<span role="button" class="key-btn" data-value="2" title="숫자 2 입력">2</span>
+							<span role="button" class="key-btn" data-value="3" title="숫자 3 입력">3</span>
+							<span role="button" class="key-btn" data-value="4" title="숫자 4 입력">4</span>
+							<span role="button" class="key-btn" data-value="5" title="숫자 5 입력">5</span>
+							<span role="button" class="key-btn" data-value="6" title="숫자 6 입력">6</span>
+							<span role="button" class="key-btn" data-value="7" title="숫자 7 입력">7</span>
+							<span role="button" class="key-btn" data-value="8" title="숫자 8 입력">8</span>
+							<span role="button" class="key-btn" data-value="9" title="숫자 9 입력">9</span>
+							<span role="button" class="key-btn" data-value="." title="소수점 입력">.</span>
+							<span role="button" class="key-btn" data-value="0" title="숫자 0 입력">0</span>
+							<span role="button" class="key-btn btn-del" title="마지막 숫자 삭제"></span>
 						</div>
 						<div class="buttons">
 							<button type="button" class="button -lg -primary" onClick="Layer.close('Bottomsheet-keypad_point')">확인(레이어닫기)</button>
@@ -1678,11 +1686,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/point-input" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-keypad_point-input')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1104_29171.png" alt=""></div>
-	<div id="Bottomsheet-keypad_point-input" class="layer" role="dialog" aria-modal="true" aria-labelledby="keypad-title">
+	<div id="Bottomsheet-keypad_point-input" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="keypad-title">~을(를) 입력해 주세요</h1>
+					<h1 class="title">~을(를) 입력해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-keypad_point-input')"><span class="hide">닫기</span></button>
@@ -1695,24 +1703,24 @@
 					<div class="choose-account-Wrap -inputed">
 						<div class="field">
 							<div class="text">
-								<div class="choose-account-input" aria-live="polite" aria-atomic="true"> 
-									<input type="text" id="text" aria-labelledby="keypad-title" readonly placeholder="숫자입력">
+								<div class="choose-account-input"> 
+									<input type="text" id="text" title="~을(를) 입력" readonly placeholder="숫자입력">
 								</div>
 							</div>
 						</div>
 						<div class="custom-key-wrap">
-							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
-							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
-							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
-							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
-							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
-							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
-							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
-							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
-							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>
-							<button type="button" class="key-btn" data-value="." aria-label="점 입력">.</button>						
-							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
-							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+							<span role="button" class="key-btn" data-value="1" title="숫자 1 입력">1</span>
+							<span role="button" class="key-btn" data-value="2" title="숫자 2 입력">2</span>
+							<span role="button" class="key-btn" data-value="3" title="숫자 3 입력">3</span>
+							<span role="button" class="key-btn" data-value="4" title="숫자 4 입력">4</span>
+							<span role="button" class="key-btn" data-value="5" title="숫자 5 입력">5</span>
+							<span role="button" class="key-btn" data-value="6" title="숫자 6 입력">6</span>
+							<span role="button" class="key-btn" data-value="7" title="숫자 7 입력">7</span>
+							<span role="button" class="key-btn" data-value="8" title="숫자 8 입력">8</span>
+							<span role="button" class="key-btn" data-value="9" title="숫자 9 입력">9</span>
+							<span role="button" class="key-btn" data-value="." title="소수점 입력">.</span>
+							<span role="button" class="key-btn" data-value="0" title="숫자 0 입력">0</span>
+							<span role="button" class="key-btn btn-del" title="마지막 숫자 삭제"></span>
 						</div>
 						<div class="buttons">
 							<button type="button" class="button -lg -primary">확인</button>
@@ -1727,24 +1735,24 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/price" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-keypad_price')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/9224_102393.png" alt=""></div>
-	<div id="Bottomsheet-keypad_price" class="layer dimWhiteLayer" role="dialog" aria-modal="true" aria-label="금액 입력 키패드">
+	<div id="Bottomsheet-keypad_price" class="layer dimWhiteLayer">
 		<div class="container">
 			<div class="contents">
 				<div class="content">
 					<div class="choose-account-Wrap -inputed">
 						<div class="custom-key-wrap">
-							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
-							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
-							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
-							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
-							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
-							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
-							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
-							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
-							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>
-							<button type="button" class="key-btn" data-value="00" aria-label="숫자 00 입력">00</button>						
-							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
-							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+							<span role="button" class="key-btn" data-value="1" title="숫자 1 입력">1</span>
+							<span role="button" class="key-btn" data-value="2" title="숫자 2 입력">2</span>
+							<span role="button" class="key-btn" data-value="3" title="숫자 3 입력">3</span>
+							<span role="button" class="key-btn" data-value="4" title="숫자 4 입력">4</span>
+							<span role="button" class="key-btn" data-value="5" title="숫자 5 입력">5</span>
+							<span role="button" class="key-btn" data-value="6" title="숫자 6 입력">6</span>
+							<span role="button" class="key-btn" data-value="7" title="숫자 7 입력">7</span>
+							<span role="button" class="key-btn" data-value="8" title="숫자 8 입력">8</span>
+							<span role="button" class="key-btn" data-value="9" title="숫자 9 입력">9</span>
+							<span role="button" class="key-btn" data-value="00" title="숫자 00 입력">00</span>
+							<span role="button" class="key-btn" data-value="0" title="숫자 0 입력">0</span>
+							<span role="button" class="key-btn btn-del" title="마지막 숫자 삭제"></span>
 						</div>
 						<div class="buttons">
 							<button type="button" class="button -lg -primary" onClick="Layer.close('Bottomsheet-keypad_price')">확인(레이어닫기)</button>
@@ -1759,30 +1767,30 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/price-button" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-keypad_price-button')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1104_27856.png" alt=""></div>
-	<div id="Bottomsheet-keypad_price-button" class="layer dimWhiteLayer" role="dialog" aria-modal="true" aria-label="금액 입력 키패드">
+	<div id="Bottomsheet-keypad_price-button" class="layer dimWhiteLayer">
 		<div class="container">
 			<div class="contents">
 				<div class="content">
 					<div class="choose-account-Wrap -inputed">
 						<div class="amount-btn-wrap">
-							<button type="button" data-value="100000" class="button numBtn -sm -fit">+10만</button>
-							<button type="button" data-value="500000" class="button numBtn -sm -fit">+50만</button>
-							<button type="button" data-value="1000000" class="button numBtn -sm -fit">+100만</button>
-							<button type="button" data-value="10000000" class="button numBtn -sm -fit">+1000만</button>
+							<span role="button" data-value="100000" class="button numBtn -sm -fit">+10만</span>
+							<span role="button" data-value="500000" class="button numBtn -sm -fit">+50만</span>
+							<span role="button" data-value="1000000" class="button numBtn -sm -fit">+100만</span>
+							<span role="button" data-value="10000000" class="button numBtn -sm -fit">+1000만</span>
 						</div>
 						<div class="custom-key-wrap">
-							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
-							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
-							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
-							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
-							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
-							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
-							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
-							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
-							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>
-							<button type="button" class="key-btn" data-value="00" aria-label="숫자 00 입력">00</button>						
-							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
-							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+							<span role="button" class="key-btn" data-value="1" title="숫자 1 입력">1</span>
+							<span role="button" class="key-btn" data-value="2" title="숫자 2 입력">2</span>
+							<span role="button" class="key-btn" data-value="3" title="숫자 3 입력">3</span>
+							<span role="button" class="key-btn" data-value="4" title="숫자 4 입력">4</span>
+							<span role="button" class="key-btn" data-value="5" title="숫자 5 입력">5</span>
+							<span role="button" class="key-btn" data-value="6" title="숫자 6 입력">6</span>
+							<span role="button" class="key-btn" data-value="7" title="숫자 7 입력">7</span>
+							<span role="button" class="key-btn" data-value="8" title="숫자 8 입력">8</span>
+							<span role="button" class="key-btn" data-value="9" title="숫자 9 입력">9</span>
+							<span role="button" class="key-btn" data-value="00" title="숫자 00 입력">00</span>
+							<span role="button" class="key-btn" data-value="0" title="숫자 0 입력">0</span>
+							<span role="button" class="key-btn btn-del" title="마지막 숫자 삭제"></span>
 						</div>
 						<div class="buttons">
 							<button type="button" class="button -lg -primary" onClick="Layer.close('Bottomsheet-keypad_price-button')">확인(레이어닫기)</button>
@@ -1797,11 +1805,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/price-input" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-keypad_price-input')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1104_27855.png" alt=""></div>
-	<div id="Bottomsheet-keypad_price-input" class="layer" role="dialog" aria-modal="true" aria-labelledby="keypad-title">
+	<div id="Bottomsheet-keypad_price-input" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="keypad-title">타이틀</h1>
+					<h1 class="title">타이틀</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-keypad_price-input')"><span class="hide">닫기</span></button>
@@ -1815,36 +1823,36 @@
 						<div class="field layerType">
 							<div class="mix">
 								<div class="text -won choose-account-input">
-									<div class="num-call" role="status" aria-live="polite" aria-atomic="true" aria-label="입금 금액" aria-describedby="price-input-guide">
+									<div class="num-call">
 										<span class="placeholder">0원</span> 
 										<span class="num-val"></span>
 									</div>
 									<div class="won" aria-hidden="true">원</div>
 								</div>
 								<div class="info-wrap key-info">
-									<p class="message" id="price-input-guide">100만원이상 10만원 단위로 입력</p>
+									<p class="message">100만원이상 10만원 단위로 입력</p>
 								</div>
 							</div>
 						</div>
 						<div class="amount-btn-wrap">
-							<button type="button" data-value="100000" class="button numBtn -sm -fit">+10만</button>
-							<button type="button" data-value="500000" class="button numBtn -sm -fit">+50만</button>
-							<button type="button" data-value="1000000" class="button numBtn -sm -fit">+100만</button>
-							<button type="button" data-value="10000000" class="button numBtn -sm -fit">+1000만</button>
+							<span role="button" data-value="100000" class="button numBtn -sm -fit">+10만</span>
+							<span role="button" data-value="500000" class="button numBtn -sm -fit">+50만</span>
+							<span role="button" data-value="1000000" class="button numBtn -sm -fit">+100만</span>
+							<span role="button" data-value="10000000" class="button numBtn -sm -fit">+1000만</span>
 						</div>
 						<div class="custom-key-wrap">
-							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
-							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
-							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
-							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
-							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
-							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
-							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
-							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
-							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>
-							<button type="button" class="key-btn" data-value="00" aria-label="숫자 00 입력">00</button>						
-							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
-							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+							<span role="button" class="key-btn" data-value="1" title="숫자 1 입력">1</span>
+							<span role="button" class="key-btn" data-value="2" title="숫자 2 입력">2</span>
+							<span role="button" class="key-btn" data-value="3" title="숫자 3 입력">3</span>
+							<span role="button" class="key-btn" data-value="4" title="숫자 4 입력">4</span>
+							<span role="button" class="key-btn" data-value="5" title="숫자 5 입력">5</span>
+							<span role="button" class="key-btn" data-value="6" title="숫자 6 입력">6</span>
+							<span role="button" class="key-btn" data-value="7" title="숫자 7 입력">7</span>
+							<span role="button" class="key-btn" data-value="8" title="숫자 8 입력">8</span>
+							<span role="button" class="key-btn" data-value="9" title="숫자 9 입력">9</span>
+							<span role="button" class="key-btn" data-value="00" title="숫자 00 입력">00</span>
+							<span role="button" class="key-btn" data-value="0" title="숫자 0 입력">0</span>
+							<span role="button" class="key-btn btn-del" title="마지막 숫자 삭제"></span>
 						</div>
 						<div class="buttons">
 							<button type="button" class="button -lg -primary">확인</button>
@@ -1859,11 +1867,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-list/currency" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-list_currency')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1046_26880.png" alt=""></div>
-	<div id="Bottomsheet-list_currency" class="layer" role="dialog" aria-modal="true" aria-labelledby="currency-title">
+	<div id="Bottomsheet-list_currency" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="currency-title">통화를 선택해 주세요</h1>
+					<h1 class="title">통화를 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-list_currency')"><span class="hide">닫기</span></button>
@@ -1874,9 +1882,9 @@
 			<div class="contents">
 				<div class="content">
 					<div class="options">
-						<ul role="radiogroup" aria-labelledby="currency-title">
-							<li role="none">
-								<button type="button" class="option" role="radio" aria-checked="false">
+						<ul>
+							<li>
+								<button type="button" class="option">
 									<div class="exchange">
 										<span data-countrycode="001" class="-md">
 											<span>USD(미국 달러)</span>
@@ -1884,8 +1892,8 @@
 									</div>
 								</button>
 							</li>
-							<li role="none">
-								<button type="button" class="option -active" role="radio" aria-checked="true">
+							<li>
+								<button type="button" class="option -active">
 									<div class="exchange">
 										<span data-countrycode="010" class="-md">
 											<span>AUD(호주 달러)</span>
@@ -1893,8 +1901,8 @@
 									</div>
 								</button>
 							</li>
-							<li role="none">
-								<button type="button" class="option" role="radio" aria-checked="false">
+							<li>
+								<button type="button" class="option">
 									<div class="exchange">
 										<span data-countrycode="004" class="-md">
 											<span>CNY(중국 위안)</span>
@@ -1913,11 +1921,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-list/multi" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-list_multi')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1041_35284.png" alt=""></div>
-	<div id="Bottomsheet-list_multi" class="layer" role="dialog" aria-modal="true" aria-labelledby="loan-title">
+	<div id="Bottomsheet-list_multi" class="layer" aria-labelledby="coupon-head" role="region">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="loan-title">대출금리를 확인해 주세요</h1>
+					<h1 class="title">대출금리를 확인해 주세요</h1>
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-list_multi')"><span class="hide">닫기</span></button>
 					</div>
@@ -1926,24 +1934,24 @@
 			<div class="contents">
 				<div class="content slec-checked">
 					<div class="options">
-						<ul role="group" aria-labelledby="loan-title">
+						<ul>
 							<li>
-								<button type="button" role="checkbox" aria-checked="true" class="option -checked">
+								<button type="button" class="option -checked">
 									항목1
 								</button>
 							</li>
 							<li>
-								<button type="button" role="checkbox" aria-checked="false" class="option">
+								<button type="button" class="option">
 									항목2
 								</button>
 							</li>
 							<li>
-								<button type="button" role="checkbox" aria-checked="true" class="option -checked">
+								<button type="button" class="option -checked">
 									항목3
 								</button>
 							</li>
 							<li>
-								<button type="button" role="checkbox" aria-checked="false" class="option">
+								<button type="button" class="option">
 									항목4
 								</button>
 							</li>
@@ -1962,11 +1970,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-list/single" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-list_single')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1041_35282.png" alt=""></div>
-	<div id="Bottomsheet-list_single" class="layer" role="dialog" aria-modal="true" aria-labelledby="single-title">
+	<div id="Bottomsheet-list_single" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="single-title">타이틀</h1>
+					<h1 class="title">타이틀</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-list_single')"><span class="hide">닫기</span></button>
@@ -1976,12 +1984,12 @@
 
 			<div class="contents">
 				<div class="content">
-					<div class="options" role="radiogroup" aria-labelledby="single-title">
+					<div class="options">
 						<ul>
-							<li role="none"><button type="button" role="radio" aria-checked="false" class="option">항목1</button></li>
-							<li role="none"><button type="button" role="radio" aria-checked="true" class="option -active">항목2</button></li>
-							<li role="none"><button type="button" role="radio" aria-checked="false" class="option">항목3</button></li>
-							<li role="none"><button type="button" role="radio" aria-checked="false" class="option">항목4</button></li>
+							<li><button type="button" class="option">항목1</button></li>
+							<li><button type="button" class="option -active">항목2</button></li>
+							<li><button type="button" class="option">항목3</button></li>
+							<li><button type="button" class="option">항목4</button></li>
 						</ul>
 					</div>
 				</div>
@@ -1992,11 +2000,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-option" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-option')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1055_28823.png" alt=""></div>
-	<div id="Bottomsheet-option" class="layer" role="dialog" aria-modal="true" aria-labelledby="option-title" >
+	<div id="Bottomsheet-option" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="option-title">조회 설정</h1>
+					<h1 class="title">조회 설정</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-option')"><span class="hide">닫기</span></button>
@@ -2006,8 +2014,8 @@
 
 			<div class="contents">
 				<div class="content">
-					<div class="field" role="group" aria-labelledby="label-period">
-						<p class="label" id="label-period">조회기간</p>
+					<div class="field">
+						<p class="label">조회기간</p>
 						<div class="box-radios -sm">
 							<div class="box-radio">
 								<input type="radio" name="periods" id="period1" checked>
@@ -2028,14 +2036,14 @@
 						</div>
 						<div class="mix datepicker">
 							<div class="text" data-clear="false">
-								<input type="text" class="left-side" id="date1" value="2025.01.01" aria-haspopup="true" aria-label="조회 시작일" readonly>
+								<input type="text" class="left-side" id="date" value="2025.01.01" aria-haspopup="true" readonly>
 							</div>
 							<div class="space -lined date -start">
 								<button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
 							</div>
 							<div class="dash">~</div>
 							<div class="text" data-clear="false">
-								<input type="text" class="left-side" id="date2" value="2025.01.02" aria-haspopup="true" aria-label="조회 종료일" readonly>
+								<input type="text" class="left-side" id="date" value="2025.01.02" aria-haspopup="true" readonly>
 							</div>
 							<div class="space -lined date -end">
 								<button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
@@ -2043,8 +2051,8 @@
 						</div>
 					</div>
 
-					<div class="field" role="group" aria-labelledby="label-sort">
-						<p class="label" id="label-sort">조회기간</p>
+					<div class="field">
+						<p class="label">조회기간</p>
 						<div class="box-radios -sm">
 							<div class="box-radio">
 								<input type="radio" name="box-radios" id="box-radio1" checked>
@@ -2057,8 +2065,8 @@
 						</div>
 					</div>
 
-					<div class="field"role="group" aria-labelledby="label-type">
-						<p class="label" id="label-type">조회유형</p>
+					<div class="field">
+						<p class="label">조회유형</p>
 						<div class="box-radios -sm">
 							<div class="box-radio">
 								<input type="radio" name="box-radios2" id="box-radio3" checked>
@@ -2088,11 +2096,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-picker/calendar/month-day" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-picker_calendar_month-day')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/month-day.png" alt=""></div>
-	<div id="Bottomsheet-picker_calendar_month-day" class="layer" role="dialog" aria-modal="true" aria-labelledby="cal-title">
+	<div id="Bottomsheet-picker_calendar_month-day" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="cal-title">날짜를 선택해 주세요</h1>
+					<h1 class="title">날짜를 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-picker_calendar_month-day')"><span class="hide">닫기</span></button>
@@ -2107,14 +2115,14 @@
 							<button type="button" class="button -tertiary -xs -fitted">오늘</button>
 
 							<div class="title">
-								<button type="button" class="prev" aria-label="이전달"><span class="hide">이전달</span></button>
+								<button type="button" class="prev"><span class="hide">이전달</span></button>
 								<span class="value">2024.10</span>
-								<button type="button" class="next" aria-label="다음달"><span class="hide">다음달</span></button>
+								<button type="button" class="next"><span class="hide">다음달</span></button>
 							</div>
 						</div>
 						<!-- 단순 선택 시 -active, 시작일 클래스 -start , 종료일 클래스 -end, 사이 날짜는 -between 클래스로 UI가 적용됩니다.
 						접근성 적용으로 span 태그 내 시작일, 선택됨, 종료일 텍스트가 동적으로 적용되어야 합니다. -->
-						<table role="grid">
+						<table>
 							<caption><span class="hide">일별 선택 달력</span></caption>
 							<thead>
 								<tr>
@@ -2129,49 +2137,49 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td role="gridcell"><button type="button" disabled>30</button></td>
-									<td role="gridcell"><button type="button" disabled>31</button></td>
-									<td role="gridcell"><button type="button" disabled>1</button></td>
-									<td role="gridcell"><button type="button" disabled>2</button></td>
-									<td role="gridcell"><button type="button" disabled>3</button></td>
-									<td role="gridcell"><button type="button" disabled>4</button></td>
-									<td role="gridcell"><button type="button" disabled>5</button></td>
+									<td><button type="button" disabled>30</button></td>
+									<td><button type="button" disabled>31</button></td>
+									<td><button type="button" disabled>1</button></td>
+									<td><button type="button" disabled>2</button></td>
+									<td><button type="button" disabled>3</button></td>
+									<td><button type="button" disabled>4</button></td>
+									<td><button type="button" disabled>5</button></td>
 								</tr>
 								<tr>
-									<td role="gridcell"><button type="button" disabled>6</button></td>
-									<td role="gridcell"><button type="button" disabled>7</button></td>
-									<td role="gridcell"><button type="button" disabled>8</button></td>
-									<td role="gridcell"><button type="button" disabled>9</button></td>
-									<td role="gridcell"><button type="button" disabled>10</button></td>
-									<td role="gridcell"><button type="button" disabled>11</button></td>
-									<td role="gridcell"><button type="button" disabled>12</button></td>
+									<td><button type="button" disabled>6</button></td>
+									<td><button type="button" disabled>7</button></td>
+									<td><button type="button" disabled>8</button></td>
+									<td><button type="button" disabled>9</button></td>
+									<td><button type="button" disabled>10</button></td>
+									<td><button type="button" disabled>11</button></td>
+									<td><button type="button" disabled>12</button></td>
 								</tr>
 								<tr>
-									<td role="gridcell"><button type="button" disabled>13</button></td>
-									<td role="gridcell"><button type="button" disabled>14</button></td>
-									<td role="gridcell"><button type="button" disabled>15</button></td>
-									<td role="gridcell"><button type="button" aria-current="date" class="-today">16<span class="hide">오늘</span></button></td>
-									<td role="gridcell"><button type="button">17</button></td>
-									<td role="gridcell"><button type="button">18</button></td>
-									<td role="gridcell"><button type="button">19</button></td>
+									<td><button type="button" disabled>13</button></td>
+									<td><button type="button" disabled>14</button></td>
+									<td><button type="button" disabled>15</button></td>
+									<td><button type="button" class="-today">16<span class="hide">오늘</span></button></td>
+									<td><button type="button">17</button></td>
+									<td><button type="button">18</button></td>
+									<td><button type="button">19</button></td>
 								</tr>
 								<tr>
-									<td role="gridcell"><button type="button">20</button></td>
-									<td role="gridcell"><button type="button">21</button></td>
-									<td role="gridcell"><button type="button">22 </button></td>
-									<td role="gridcell"><button type="button">23</button></td>
-									<td role="gridcell"><button type="button">24</button></td>
-									<td role="gridcell"><button type="button">25</button></td>
-									<td role="gridcell"><button type="button">26</button></td>
+									<td><button type="button">20</button></td>
+									<td><button type="button">21</button></td>
+									<td><button type="button">22 </button></td>
+									<td><button type="button">23</button></td>
+									<td><button type="button">24</button></td>
+									<td><button type="button">25</button></td>
+									<td><button type="button">26</button></td>
 								</tr>
 								<tr>
-									<td role="gridcell"><button type="button" aria-selected="true" class="-active">27</button></td>
-									<td role="gridcell"><button type="button">28</button></td>
-									<td role="gridcell"><button type="button">29</button></td>
-									<td role="gridcell"><button type="button">30</button></td>
-									<td role="gridcell"><button type="button">31</button></td>
-									<td role="gridcell"><button type="button" disabled>1</button></td>
-									<td role="gridcell"><button type="button" disabled>2</button></td>
+									<td><button type="button" class="-active">27</button></td>
+									<td><button type="button">28</button></td>
+									<td><button type="button">29</button></td>
+									<td><button type="button">30</button></td>
+									<td><button type="button">31</button></td>
+									<td><button type="button" disabled>1</button></td>
+									<td><button type="button" disabled>2</button></td>
 								</tr>
 							</tbody>
 						</table>
@@ -2189,11 +2197,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-picker/calendar/year-month" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-picker_calendar_year-month')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/year-month.png" alt=""></div>
-	<div id="Bottomsheet-picker_calendar_year-month" class="layer" role="dialog" aria-modal="true" aria-labelledby="cal-title">
+	<div id="Bottomsheet-picker_calendar_year-month" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="cal-title">년 · 월을 선택해 주세요</h1>
+					<h1 class="title">년 · 월을 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-picker_calendar_year-month')"><span class="hide">닫기</span></button>
@@ -2207,27 +2215,27 @@
 							<button type="button" class="button -tertiary -xs -fitted">당월</button>
 
 							<div class="title">
-								<button type="button" class="prev" aria-label="이전달"><span class="hide">이전달</span></button>
+								<button type="button" class="prev"><span class="hide">이전달</span></button>
 								<span class="value">2025</span>
-								<button type="button" class="next" aria-label="다음달"><span class="hide">다음달</span></button>
+								<button type="button" class="next"><span class="hide">다음달</span></button>
 							</div>
 						</div>
 
 						<div class="month">
 							<caption><span class="hide">월별 선택 달력</span></caption>
-							<ol role="listbox" aria-label="월 선택">
-								<li><button type="button" role="option" disabled>1</button></li>
-								<li><button type="button" role="option" disabled>2</button></li>
-								<li><button type="button" role="option" disabled>3</button></li>
-								<li><button type="button" role="option" disabled>4</button></li>
-								<li><button type="button" role="option" disabled>5</button></li>
-								<li><button type="button" role="option" disabled>6</button></li>
-								<li><button type="button" role="option" aria-current="date" class="-today">7 <span class="hide">오늘</span></button></li>
-								<li><button type="button" role="option">8</button></li>
-								<li><button type="button" role="option">9</button></li>
-								<li><button type="button" role="option" aria-selected="true" class="-active">10 <span class="hide">선택됨</span></button></li>
-								<li><button type="button" role="option">11</button></li>
-								<li><button type="button" role="option">12</button></li>
+							<ol>
+								<li><button type="button" disabled>1</button></li>
+								<li><button type="button" disabled>2</button></li>
+								<li><button type="button" disabled>3</button></li>
+								<li><button type="button" disabled>4</button></li>
+								<li><button type="button" disabled>5</button></li>
+								<li><button type="button" disabled>6</button></li>
+								<li><button type="button" class="-today">7 <span class="hide">선택됨</span></button></li>
+								<li><button type="button">8</button></li>
+								<li><button type="button">9</button></li>
+								<li><button type="button" class="-active">10 <span class="hide">오늘</span></button></li>
+								<li><button type="button">11</button></li>
+								<li><button type="button">12</button></li>
 							</ol>
 						</div>
 					</div>
@@ -2244,11 +2252,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-picker/calendar/year-month-day" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-picker_calendar_year-month-day')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/year-month-day.png" alt=""></div>
-	<div id="Bottomsheet-picker_calendar_year-month-day" class="layer" role="dialog" aria-modal="true" aria-labelledby="cal-title">
+	<div id="Bottomsheet-picker_calendar_year-month-day" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="cal-title">날짜를 선택해 주세요</h1>
+					<h1 class="title">날짜를 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-picker_calendar_year-month-day')"><span class="hide">닫기</span></button>
@@ -2263,20 +2271,20 @@
 							<button type="button" class="button -tertiary -xs -fitted">오늘</button>
 
 							<div class="title">
-								<button type="button" class="prev" aria-label="이전 연도"><span class="hide">이전 연도</span></button>
+								<button type="button" class="prev"><span class="hide">이전달</span></button>
 								<span class="value">2024</span>
-								<button type="button" class="next" aria-label="다음 연도"><span class="hide">다음 연도</span></button>
+								<button type="button" class="next"><span class="hide">다음달</span></button>
 							</div>
 							<div class="title -month">
-								<button type="button" class="prev" aria-label="이전달"><span class="hide">이전달</span></button>
+								<button type="button" class="prev"><span class="hide">이전달</span></button>
 								<span class="value">12</span>
-								<button type="button" class="next" aria-label="다음달"><span class="hide">다음달</span></button>
+								<button type="button" class="next"><span class="hide">다음달</span></button>
 							</div>
 						</div>
-						<table role="grid">
+						<table>
 							<caption><span class="hide">일별 선택 달력</span></caption>
 							<thead>
-								<tr role="row">
+								<tr>
 									<th scope="col">일</th>
 									<th scope="col">월</th>
 									<th scope="col">화</th>
@@ -2287,50 +2295,50 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr role="row">
-									<td role="gridcell"><button type="button" disabled>30</button></td>
-									<td role="gridcell"><button type="button" disabled>31</button></td>
-									<td role="gridcell"><button type="button" disabled>1</button></td>
-									<td role="gridcell"><button type="button" disabled>2</button></td>
-									<td role="gridcell"><button type="button" disabled>3</button></td>
-									<td role="gridcell"><button type="button" disabled>4</button></td>
-									<td role="gridcell"><button type="button" disabled>5</button></td>
+								<tr>
+									<td><button type="button" disabled>30</button></td>
+									<td><button type="button" disabled>31</button></td>
+									<td><button type="button" disabled>1</button></td>
+									<td><button type="button" disabled>2</button></td>
+									<td><button type="button" disabled>3</button></td>
+									<td><button type="button" disabled>4</button></td>
+									<td><button type="button" disabled>5</button></td>
 								</tr>
-								<tr role="row">
-									<td role="gridcell"><button type="button" disabled>6</button></td>
-									<td role="gridcell"><button type="button" disabled>7</button></td>
-									<td role="gridcell"><button type="button" disabled>8</button></td>
-									<td role="gridcell"><button type="button" disabled>9</button></td>
-									<td role="gridcell"><button type="button" disabled>10</button></td>
-									<td role="gridcell"><button type="button" disabled>11</button></td>
-									<td role="gridcell"><button type="button" disabled>12</button></td>
+								<tr>
+									<td><button type="button" disabled>6</button></td>
+									<td><button type="button" disabled>7</button></td>
+									<td><button type="button" disabled>8</button></td>
+									<td><button type="button" disabled>9</button></td>
+									<td><button type="button" disabled>10</button></td>
+									<td><button type="button" disabled>11</button></td>
+									<td><button type="button" disabled>12</button></td>
 								</tr>
-								<tr role="row">
-									<td role="gridcell"><button type="button" disabled>13</button></td>
-									<td role="gridcell"><button type="button" disabled>14</button></td>
-									<td role="gridcell"><button type="button" class="-today" aria-current="date">15 <span class="hide">오늘</span></button></td>
-									<td role="gridcell"><button type="button">16</button></td>
-									<td role="gridcell"><button type="button" class="-active" aria-selected="true">17</button></td>
-									<td role="gridcell"><button type="button">18</button></td>
-									<td role="gridcell"><button type="button">19</button></td>
+								<tr>
+									<td><button type="button" disabled>13</button></td>
+									<td><button type="button" disabled>14</button></td>
+									<td><button type="button" class="-today">15 <span class="hide">오늘</span></button></td>
+									<td><button type="button">16</button></td>
+									<td><button type="button" class="-active">17</button></td>
+									<td><button type="button">18</button></td>
+									<td><button type="button">19</button></td>
 								</tr>
-								<tr role="row">
-									<td role="gridcell"><button type="button">20</button></td>
-									<td role="gridcell"><button type="button">21</button></td>
-									<td role="gridcell"><button type="button">22 </button></td>
-									<td role="gridcell"><button type="button">23</button></td>
-									<td role="gridcell"><button type="button">24</button></td>
-									<td role="gridcell"><button type="button">25</button></td>
-									<td role="gridcell"><button type="button">26</button></td>
+								<tr>
+									<td><button type="button">20</button></td>
+									<td><button type="button">21</button></td>
+									<td><button type="button">22 </button></td>
+									<td><button type="button">23</button></td>
+									<td><button type="button">24</button></td>
+									<td><button type="button">25</button></td>
+									<td><button type="button">26</button></td>
 								</tr>
-								<tr role="row">
-									<td role="gridcell"><button type="button">27</button></td>
-									<td role="gridcell"><button type="button">28</button></td>
-									<td role="gridcell"><button type="button">29</button></td>
-									<td role="gridcell"><button type="button">30</button></td>
-									<td role="gridcell"><button type="button">31</button></td>
-									<td role="gridcell"><button type="button" disabled>1</button></td>
-									<td role="gridcell"><button type="button" disabled>2</button></td>
+								<tr>
+									<td><button type="button">27</button></td>
+									<td><button type="button">28</button></td>
+									<td><button type="button">29</button></td>
+									<td><button type="button">30</button></td>
+									<td><button type="button">31</button></td>
+									<td><button type="button" disabled>1</button></td>
+									<td><button type="button" disabled>2</button></td>
 								</tr>
 							</tbody>
 						</table>
@@ -2348,11 +2356,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-picker/wheel/day" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-picker_wheel_day')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/w-day.png" alt=""></div>
-	<div id="Bottomsheet-picker_wheel_day" class="layer" role="dialog" aria-modal="true" aria-labelledby="picker-title">
+	<div id="Bottomsheet-picker_wheel_day" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="picker-title">이체주기를 선택해 주세요</h1>
+					<h1 class="title">이체주기를 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-picker_wheel_day')"><span class="hide">닫기</span></button>
@@ -2363,55 +2371,55 @@
 			<div class="contents">
 				<div class="content pb-16">
 					<div class="datepicker-widget cycle-type">
-						<ul class="cycle" role="listbox" aria-label="이체주기 선택">
-							<li role="option" aria-selected="false">매일</li>
-							<li role="option" aria-selected="true" class="on">매주</li>
-							<li role="option" aria-selected="false">매월</li>
+						<ul class="cycle">
+							<li aria-selected="false">매일</li>
+							<li aria-selected="true" class="on">매주</li>
+							<li aria-selected="false">매월</li>
 						</ul>
 						<div class="cycle-list" >
-							<ul class="everyday" aria-hidden="true">
-								<li class="on" role="option" aria-selected="false">매일</li>
+							<ul class="everyday">
+								<li class="on" aria-selected="false">매일</li>
 							</ul>
-							<ul class="week" style="display:block" aria-hidden="false">
-								<li role="option" aria-selected="false">월요일</li>
-								<li role="option" aria-selected="false">화요일</li>
-								<li class="on" role="option" aria-selected="true">수요일</li>
-								<li role="option" aria-selected="false">목요일</li>
-								<li role="option" aria-selected="false">금요일</li>
-								<li role="option" aria-selected="false">토요일</li>
-								<li role="option" aria-selected="false">일요일</li>
+							<ul class="week" style="display:block">
+								<li aria-selected="false">월요일</li>
+								<li aria-selected="false">화요일</li>
+								<li class="on" aria-selected="true">수요일</li>
+								<li aria-selected="false">목요일</li>
+								<li aria-selected="false">금요일</li>
+								<li aria-selected="false">토요일</li>
+								<li aria-selected="false">일요일</li>
 							</ul>
-							<ul class="day" aria-hidden="true">
-								<li role="option" aria-selected="false">01일</li>
-								<li role="option" aria-selected="false">02일</li>
-								<li role="option" aria-selected="false">03일</li>
-								<li role="option" aria-selected="false">04일</li>
-								<li role="option" aria-selected="false">05일</li>
-								<li class="on" role="option" aria-selected="true">06일</li>
-								<li role="option" aria-selected="false">07일</li>
-								<li role="option" aria-selected="false">08일</li>
-								<li role="option" aria-selected="false">09일</li>
-								<li role="option" aria-selected="false">10일</li>
-								<li role="option" aria-selected="false">11일</li>
-								<li role="option" aria-selected="false">12일</li>
-								<li role="option" aria-selected="false">13일</li>
-								<li role="option" aria-selected="false">14일</li>
-								<li role="option" aria-selected="false">15일</li>
-								<li role="option" aria-selected="false">16일</li>
-								<li role="option" aria-selected="false">17일</li>
-								<li role="option" aria-selected="false">18일</li>
-								<li role="option" aria-selected="false">19일</li>
-								<li role="option" aria-selected="false">20일</li>
-								<li role="option" aria-selected="false">21일</li>
-								<li role="option" aria-selected="false">22일</li>
-								<li role="option" aria-selected="false">23일</li>
-								<li role="option" aria-selected="false">24일</li>
-								<li role="option" aria-selected="false">25일</li>
-								<li role="option" aria-selected="false">26일</li>
-								<li role="option" aria-selected="false">27일</li>
-								<li role="option" aria-selected="false">28일</li>
-								<li role="option" aria-selected="false">29일</li>
-								<li role="option" aria-selected="false">30일</li>
+							<ul class="day">
+								<li aria-selected="false">01일</li>
+								<li aria-selected="false">02일</li>
+								<li aria-selected="false">03일</li>
+								<li aria-selected="false">04일</li>
+								<li aria-selected="false">05일</li>
+								<li class="on" aria-selected="true">06일</li>
+								<li aria-selected="false">07일</li>
+								<li aria-selected="false">08일</li>
+								<li aria-selected="false">09일</li>
+								<li aria-selected="false">10일</li>
+								<li aria-selected="false">11일</li>
+								<li aria-selected="false">12일</li>
+								<li aria-selected="false">13일</li>
+								<li aria-selected="false">14일</li>
+								<li aria-selected="false">15일</li>
+								<li aria-selected="false">16일</li>
+								<li aria-selected="false">17일</li>
+								<li aria-selected="false">18일</li>
+								<li aria-selected="false">19일</li>
+								<li aria-selected="false">20일</li>
+								<li aria-selected="false">21일</li>
+								<li aria-selected="false">22일</li>
+								<li aria-selected="false">23일</li>
+								<li aria-selected="false">24일</li>
+								<li aria-selected="false">25일</li>
+								<li aria-selected="false">26일</li>
+								<li aria-selected="false">27일</li>
+								<li aria-selected="false">28일</li>
+								<li aria-selected="false">29일</li>
+								<li aria-selected="false">30일</li>
 							</ul>
 						</div>
 					</div>
@@ -2429,11 +2437,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-picker/wheel/hour-minute" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-picker_whell_hour-minute')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/w-hour-minute.png" alt=""></div>
-	<div id="Bottomsheet-picker_whell_hour-minute" class="layer" role="dialog" aria-modal="true" aria-labelledby="picker-title">
+	<div id="Bottomsheet-picker_whell_hour-minute" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="picker-title">시 · 분을 선택해 주세요</h1>
+					<h1 class="title">시 · 분을 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-picker_whell_hour-minute')"><span class="hide">닫기</span></button>
@@ -2444,93 +2452,93 @@
 			<div class="contents">
 				<div class="content pb-16">
 					<div class="datepicker-widget">
-						<ul class="time" role="listbox" aria-label="시간 선택">
-							<li role="option" aria-selected="false"><span class="number">01</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">02</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">03</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">04</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">05</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">06</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">07</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">08</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">09</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">10</span>시</li>
-							<li class="on" role="option" aria-selected="true"><span class="number">11</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">12</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">13</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">14</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">15</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">16</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">17</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">18</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">19</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">20</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">21</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">22</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">23</span>시</li>
-							<li role="option" aria-selected="false"><span class="number">24</span>시</li>
+						<ul class="time">
+							<li aria-selected="false"><span class="number">01</span>시</li>
+							<li aria-selected="false"><span class="number">02</span>시</li>
+							<li aria-selected="false"><span class="number">03</span>시</li>
+							<li aria-selected="false"><span class="number">04</span>시</li>
+							<li aria-selected="false"><span class="number">05</span>시</li>
+							<li aria-selected="false"><span class="number">06</span>시</li>
+							<li aria-selected="false"><span class="number">07</span>시</li>
+							<li aria-selected="false"><span class="number">08</span>시</li>
+							<li aria-selected="false"><span class="number">09</span>시</li>
+							<li aria-selected="false"><span class="number">10</span>시</li>
+							<li class="on" aria-selected="true"><span cass="number">11</span>시</li>
+							<li aria-selected="false"><span class="number">12</span>시</li>
+							<li aria-selected="false"><span class="number">13</span>시</li>
+							<li aria-selected="false"><span class="number">14</span>시</li>
+							<li aria-selected="false"><span class="number">15</span>시</li>
+							<li aria-selected="false"><span class="number">16</span>시</li>
+							<li aria-selected="false"><span class="number">17</span>시</li>
+							<li aria-selected="false"><span class="number">18</span>시</li>
+							<li aria-selected="false"><span class="number">19</span>시</li>
+							<li aria-selected="false"><span class="number">20</span>시</li>
+							<li aria-selected="false"><span class="number">21</span>시</li>
+							<li aria-selected="false"><span class="number">22</span>시</li>
+							<li aria-selected="false"><span class="number">23</span>시</li>
+							<li aria-selected="false"><span class="number">24</span>시</li>
 						</ul>
-						<ul class="minute" role="listbox" aria-label="분 선택">
-							<li role="option" aria-selected="false"><span class="number">00</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">01</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">02</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">03</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">04</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">05</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">06</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">07</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">08</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">09</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">10</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">11</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">12</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">13</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">14</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">15</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">16</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">17</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">18</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">19</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">20</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">21</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">22</span>분</li>
-							<li class="on" role="option" aria-selected="true"><span class="number">23</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">24</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">25</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">26</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">27</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">28</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">29</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">30</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">31</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">32</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">33</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">34</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">35</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">36</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">37</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">38</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">39</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">40</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">41</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">42</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">43</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">44</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">45</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">46</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">47</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">48</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">49</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">50</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">51</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">52</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">53</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">54</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">55</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">56</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">57</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">58</span>분</li>
-							<li role="option" aria-selected="false"><span class="number">59</span>분</li>
+						<ul class="minute">
+							<li aria-selected="false"><span class="number">00</span>분</li>
+							<li aria-selected="false"><span class="number">01</span>분</li>
+							<li aria-selected="false"><span class="number">02</span>분</li>
+							<li aria-selected="false"><span class="number">03</span>분</li>
+							<li aria-selected="false"><span class="number">04</span>분</li>
+							<li aria-selected="false"><span class="number">05</span>분</li>
+							<li aria-selected="false"><span class="number">06</span>분</li>
+							<li aria-selected="false"><span class="number">07</span>분</li>
+							<li aria-selected="false"><span class="number">08</span>분</li>
+							<li aria-selected="false"><span class="number">09</span>분</li>
+							<li aria-selected="false"><span class="number">10</span>분</li>
+							<li aria-selected="false"><span class="number">11</span>분</li>
+							<li aria-selected="false"><span class="number">12</span>분</li>
+							<li aria-selected="false"><span class="number">13</span>분</li>
+							<li aria-selected="false"><span class="number">14</span>분</li>
+							<li aria-selected="false"><span class="number">15</span>분</li>
+							<li aria-selected="false"><span class="number">16</span>분</li>
+							<li aria-selected="false"><span class="number">17</span>분</li>
+							<li aria-selected="false"><span class="number">18</span>분</li>
+							<li aria-selected="false"><span class="number">19</span>분</li>
+							<li aria-selected="false"><span class="number">20</span>분</li>
+							<li aria-selected="false"><span class="number">21</span>분</li>
+							<li aria-selected="false"><span class="number">22</span>분</li>
+							<li class="on" aria-selected="true"><span class="number">23</span>분</li>
+							<li aria-selected="false"><span class="number">24</span>분</li>
+							<li aria-selected="false"><span class="number">25</span>분</li>
+							<li aria-selected="false"><span class="number">26</span>분</li>
+							<li aria-selected="false"><span class="number">27</span>분</li>
+							<li aria-selected="false"><span class="number">28</span>분</li>
+							<li aria-selected="false"><span class="number">29</span>분</li>
+							<li aria-selected="false"><span class="number">30</span>분</li>
+							<li aria-selected="false"><span class="number">31</span>분</li>
+							<li aria-selected="false"><span class="number">32</span>분</li>
+							<li aria-selected="false"><span class="number">33</span>분</li>
+							<li aria-selected="false"><span class="number">34</span>분</li>
+							<li aria-selected="false"><span class="number">35</span>분</li>
+							<li aria-selected="false"><span class="number">36</span>분</li>
+							<li aria-selected="false"><span class="number">37</span>분</li>
+							<li aria-selected="false"><span class="number">38</span>분</li>
+							<li aria-selected="false"><span class="number">39</span>분</li>
+							<li aria-selected="false"><span class="number">40</span>분</li>
+							<li aria-selected="false"><span class="number">41</span>분</li>
+							<li aria-selected="false"><span class="number">42</span>분</li>
+							<li aria-selected="false"><span class="number">43</span>분</li>
+							<li aria-selected="false"><span class="number">44</span>분</li>
+							<li aria-selected="false"><span class="number">45</span>분</li>
+							<li aria-selected="false"><span class="number">46</span>분</li>
+							<li aria-selected="false"><span class="number">47</span>분</li>
+							<li aria-selected="false"><span class="number">48</span>분</li>
+							<li aria-selected="false"><span class="number">49</span>분</li>
+							<li aria-selected="false"><span class="number">50</span>분</li>
+							<li aria-selected="false"><span class="number">51</span>분</li>
+							<li aria-selected="false"><span class="number">52</span>분</li>
+							<li aria-selected="false"><span class="number">53</span>분</li>
+							<li aria-selected="false"><span class="number">54</span>분</li>
+							<li aria-selected="false"><span class="number">55</span>분</li>
+							<li aria-selected="false"><span class="number">56</span>분</li>
+							<li aria-selected="false"><span class="number">57</span>분</li>
+							<li aria-selected="false"><span class="number">58</span>분</li>
+							<li aria-selected="false"><span class="number">59</span>분</li>
 						</ul>
 					</div>
 				</div>
@@ -2547,11 +2555,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-picker/wheel/period" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-picker_wheel_period')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/w-period.png" alt=""></div>
-	<div id="Bottomsheet-picker_wheel_period" class="layer" role="dialog" aria-modal="true" aria-labelledby="picker-title">
+	<div id="Bottomsheet-picker_wheel_period" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="picker-title">기간을 선택해 주세요</h1>
+					<h1 class="title">기간을 선택해 주세요</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-picker_wheel_period')"><span class="hide">닫기</span></button>
@@ -2562,92 +2570,92 @@
 			<div class="contents">
 				<div class="content pb-16">
 					<div class="datepicker-widget">
-						<ul class="time" role="listbox" aria-label="기간(년) 선택">
-							<li role="option" aria-selected="false"><span class="number">1</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">3</span>년</li>
-							<li class="on" role="option" aria-selected="true"><span class="number">4</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">5</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">6</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">7</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">8</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">9</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">10</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">11</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">12</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">13</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">14</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">15</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">16</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">17</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">18</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">19</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">20</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">21</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">22</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">23</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">24</span>년</li>
+						<ul class="time">
+							<li aria-selected="false"><span class="number">1</span>년</li>
+							<li aria-selected="false"><span class="number">2</span>년</li>
+							<li aria-selected="false"><span class="number">3</span>년</li>
+							<li class="on" aria-selected="true"><span class="number">4</span>년</li>
+							<li aria-selected="false"><span class="number">5</span>년</li>
+							<li aria-selected="false"><span class="number">6</span>년</li>
+							<li aria-selected="false"><span class="number">7</span>년</li>
+							<li aria-selected="false"><span class="number">8</span>년</li>
+							<li aria-selected="false"><span class="number">9</span>년</li>
+							<li aria-selected="false"><span class="number">10</span>년</li>
+							<li aria-selected="false"><span class="number">11</span>년</li>
+							<li aria-selected="false"><span class="number">12</span>년</li>
+							<li aria-selected="false"><span class="number">13</span>년</li>
+							<li aria-selected="false"><span class="number">14</span>년</li>
+							<li aria-selected="false"><span class="number">15</span>년</li>
+							<li aria-selected="false"><span class="number">16</span>년</li>
+							<li aria-selected="false"><span class="number">17</span>년</li>
+							<li aria-selected="false"><span class="number">18</span>년</li>
+							<li aria-selected="false"><span class="number">19</span>년</li>
+							<li aria-selected="false"><span class="number">20</span>년</li>
+							<li aria-selected="false"><span class="number">21</span>년</li>
+							<li aria-selected="false"><span class="number">22</span>년</li>
+							<li aria-selected="false"><span class="number">23</span>년</li>
+							<li aria-selected="false"><span class="number">24</span>년</li>
 						</ul>
-						<ul class="minute" role="listbox" aria-label="기간(개월) 선택">
-							<li role="option" aria-selected="false"><span class="number">1</span>개월</li>
-							<li class="on" role="option" aria-selected="true"><span class="number">2</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">3</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">4</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">5</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">6</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">7</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">8</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">9</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">10</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">11</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">12</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">13</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">14</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">15</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">16</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">17</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">18</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">19</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">20</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">21</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">22</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">23</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">24</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">25</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">26</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">27</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">28</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">29</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">30</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">31</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">32</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">33</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">34</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">35</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">36</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">37</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">38</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">39</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">40</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">41</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">42</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">43</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">44</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">45</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">46</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">47</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">48</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">49</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">50</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">51</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">52</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">53</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">54</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">55</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">56</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">57</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">58</span>개월</li>
-							<li role="option" aria-selected="false"><span class="number">59</span>개월</li>
+						<ul class="minute">
+							<li aria-selected="false"><span class="number">1</span>개월</li>
+							<li class="on" aria-selected="true"><span class="number">2</span>개월</li>
+							<li aria-selected="false"><span class="number">3</span>개월</li>
+							<li aria-selected="false"><span class="number">4</span>개월</li>
+							<li aria-selected="false"><span class="number">5</span>개월</li>
+							<li aria-selected="false"><span class="number">6</span>개월</li>
+							<li aria-selected="false"><span class="number">7</span>개월</li>
+							<li aria-selected="false"><span class="number">8</span>개월</li>
+							<li aria-selected="false"><span class="number">9</span>개월</li>
+							<li aria-selected="false"><span class="number">10</span>개월</li>
+							<li aria-selected="false"><span class="number">11</span>개월</li>
+							<li aria-selected="false"><span class="number">12</span>개월</li>
+							<li aria-selected="false"><span class="number">13</span>개월</li>
+							<li aria-selected="false"><span class="number">14</span>개월</li>
+							<li aria-selected="false"><span class="number">15</span>개월</li>
+							<li aria-selected="false"><span class="number">16</span>개월</li>
+							<li aria-selected="false"><span class="number">17</span>개월</li>
+							<li aria-selected="false"><span class="number">18</span>개월</li>
+							<li aria-selected="false"><span class="number">19</span>개월</li>
+							<li aria-selected="false"><span class="number">20</span>개월</li>
+							<li aria-selected="false"><span class="number">21</span>개월</li>
+							<li aria-selected="false"><span class="number">22</span>개월</li>
+							<li aria-selected="false"><span class="number">23</span>개월</li>
+							<li aria-selected="false"><span class="number">24</span>개월</li>
+							<li aria-selected="false"><span class="number">25</span>개월</li>
+							<li aria-selected="false"><span class="number">26</span>개월</li>
+							<li aria-selected="false"><span class="number">27</span>개월</li>
+							<li aria-selected="false"><span class="number">28</span>개월</li>
+							<li aria-selected="false"><span class="number">29</span>개월</li>
+							<li aria-selected="false"><span class="number">30</span>개월</li>
+							<li aria-selected="false"><span class="number">31</span>개월</li>
+							<li aria-selected="false"><span class="number">32</span>개월</li>
+							<li aria-selected="false"><span class="number">33</span>개월</li>
+							<li aria-selected="false"><span class="number">34</span>개월</li>
+							<li aria-selected="false"><span class="number">35</span>개월</li>
+							<li aria-selected="false"><span class="number">36</span>개월</li>
+							<li aria-selected="false"><span class="number">37</span>개월</li>
+							<li aria-selected="false"><span class="number">38</span>개월</li>
+							<li aria-selected="false"><span class="number">39</span>개월</li>
+							<li aria-selected="false"><span class="number">40</span>개월</li>
+							<li aria-selected="false"><span class="number">41</span>개월</li>
+							<li aria-selected="false"><span class="number">42</span>개월</li>
+							<li aria-selected="false"><span class="number">43</span>개월</li>
+							<li aria-selected="false"><span class="number">44</span>개월</li>
+							<li aria-selected="false"><span class="number">45</span>개월</li>
+							<li aria-selected="false"><span class="number">46</span>개월</li>
+							<li aria-selected="false"><span class="number">47</span>개월</li>
+							<li aria-selected="false"><span class="number">48</span>개월</li>
+							<li aria-selected="false"><span class="number">49</span>개월</li>
+							<li aria-selected="false"><span class="number">50</span>개월</li>
+							<li aria-selected="false"><span class="number">51</span>개월</li>
+							<li aria-selected="false"><span class="number">52</span>개월</li>
+							<li aria-selected="false"><span class="number">53</span>개월</li>
+							<li aria-selected="false"><span class="number">54</span>개월</li>
+							<li aria-selected="false"><span class="number">55</span>개월</li>
+							<li aria-selected="false"><span class="number">56</span>개월</li>
+							<li aria-selected="false"><span class="number">57</span>개월</li>
+							<li aria-selected="false"><span class="number">58</span>개월</li>
+							<li aria-selected="false"><span class="number">59</span>개월</li>
 						</ul>
 					</div>
 				</div>
@@ -2664,11 +2672,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-picker/wheel/year-month-day" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-picker_wheel_year-month-day')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/w-year-month-day.png" alt=""></div>
-	<div id="Bottomsheet-picker_wheel_year-month-day" class="layer" role="dialog" aria-modal="true" aria-labelledby="picker-title">
+	<div id="Bottomsheet-picker_wheel_year-month-day" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="picker-title">년 · 월 · 일을 선택해 주세요</h1> 
+					<h1 class="title">년 · 월 · 일을 선택해 주세요</h1> 
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-picker_wheel_year-month-day')"><span class="hide">닫기</span></button>
@@ -2679,78 +2687,78 @@
 			<div class="contents">
 				<div class="content pb-16">
 					<div class="datepicker-widget">
-						<ul class="year-pick"  role="listbox" aria-label="연도 선택">
-							<li role="option" aria-selected="false"><span class="number">2010</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2011</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2012</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2013</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2014</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2015</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2016</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2017</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2018</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2019</span>년</li>
-							<li class="on" role="option" aria-selected="true"><span class="number">2020</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2021</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2022</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2023</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2024</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2025</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2026</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2027</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2028</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2029</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2030</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2031</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2032</span>년</li>
-							<li role="option" aria-selected="false"><span class="number">2033</span>년</li>
+						<ul class="year-pick">
+							<li aria-selected="false"><span class="number">2010</span>년</li>
+							<li aria-selected="false"><span class="number">2011</span>년</li>
+							<li aria-selected="false"><span class="number">2012</span>년</li>
+							<li aria-selected="false"><span class="number">2013</span>년</li>
+							<li aria-selected="false"><span class="number">2014</span>년</li>
+							<li aria-selected="false"><span class="number">2015</span>년</li>
+							<li aria-selected="false"><span class="number">2016</span>년</li>
+							<li aria-selected="false"><span class="number">2017</span>년</li>
+							<li aria-selected="false"><span class="number">2018</span>년</li>
+							<li aria-selected="false"><span class="number">2019</span>년</li>
+							<li class="on" aria-selected="true"><span class="number">2020</span>년</li>
+							<li aria-selected="false"><span class="number">2021</span>년</li>
+							<li aria-selected="false"><span class="number">2022</span>년</li>
+							<li aria-selected="false"><span class="number">2023</span>년</li>
+							<li aria-selected="false"><span class="number">2024</span>년</li>
+							<li aria-selected="false"><span class="number">2025</span>년</li>
+							<li aria-selected="false"><span class="number">2026</span>년</li>
+							<li aria-selected="false"><span class="number">2027</span>년</li>
+							<li aria-selected="false"><span class="number">2028</span>년</li>
+							<li aria-selected="false"><span class="number">2029</span>년</li>
+							<li aria-selected="false"><span class="number">2030</span>년</li>
+							<li aria-selected="false"><span class="number">2031</span>년</li>
+							<li aria-selected="false"><span class="number">2032</span>년</li>
+							<li aria-selected="false"><span class="number">2033</span>년</li>
 						</ul>
-						<ul class="month-pick" role="listbox" aria-label="월 선택">
-							<li role="option" aria-selected="false"><span class="number">1</span>월</li>
-							<li role="option" aria-selected="false"><span class="number">2</span>월</li>
-							<li role="option" aria-selected="false"><span class="number">3</span>월</li>
-							<li role="option" aria-selected="false"><span class="number">4</span>월</li>
-							<li role="option" aria-selected="false"><span class="number">5</span>월</li>
-							<li role="option" aria-selected="false"><span class="number">6</span>월</li>
-							<li role="option" aria-selected="false"><span class="number">7</span>월</li>
-							<li role="option" aria-selected="false"><span class="number">8</span>월</li>
-							<li class="on" role="option" aria-selected="true"><span class="number">9</span>월</li>
-							<li role="option" aria-selected="false"><span class="number">10</span>월</li>
-							<li role="option" aria-selected="false"><span class="number">11</span>월</li>
-							<li role="option" aria-selected="false"><span class="number">12</span>월</li>
+						<ul class="month-pick">
+							<li aria-selected="false"><span class="number">1</span>월</li>
+							<li aria-selected="false"><span class="number">2</span>월</li>
+							<li aria-selected="false"><span class="number">3</span>월</li>
+							<li aria-selected="false"><span class="number">4</span>월</li>
+							<li aria-selected="false"><span class="number">5</span>월</li>
+							<li aria-selected="false"><span class="number">6</span>월</li>
+							<li aria-selected="false"><span class="number">7</span>월</li>
+							<li aria-selected="false"><span class="number">8</span>월</li>
+							<li class="on" aria-selected="true"><span class="number">9</span>월</li>
+							<li aria-selected="false"><span class="number">10</span>월</li>
+							<li aria-selected="false"><span class="number">11</span>월</li>
+							<li aria-selected="false"><span class="number">12</span>월</li>
 						</ul>
-						<ul class="day-pick" role="listbox" aria-label="일 선택">
-							<li role="option" aria-selected="false"><span class="number">1</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">2</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">3</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">4</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">5</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">6</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">7</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">8</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">9</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">10</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">11</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">12</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">13</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">14</span>일</li>
-							<li class="on" role="option" aria-selected="true"><span class="number">15</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">16</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">17</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">18</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">19</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">20</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">21</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">22</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">23</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">24</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">25</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">26</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">27</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">28</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">29</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">30</span>일</li>
-							<li role="option" aria-selected="false"><span class="number">31</span>일</li>
+						<ul class="day-pick">
+							<li aria-selected="false"><span class="number">1</span>일</li>
+							<li aria-selected="false"><span class="number">2</span>일</li>
+							<li aria-selected="false"><span class="number">3</span>일</li>
+							<li aria-selected="false"><span class="number">4</span>일</li>
+							<li aria-selected="false"><span class="number">5</span>일</li>
+							<li aria-selected="false"><span class="number">6</span>일</li>
+							<li aria-selected="false"><span class="number">7</span>일</li>
+							<li aria-selected="false"><span class="number">8</span>일</li>
+							<li aria-selected="false"><span class="number">9</span>일</li>
+							<li aria-selected="false"><span class="number">10</span>일</li>
+							<li aria-selected="false"><span class="number">11</span>일</li>
+							<li aria-selected="false"><span class="number">12</span>일</li>
+							<li aria-selected="false"><span class="number">13</span>일</li>
+							<li aria-selected="false"><span class="number">14</span>일</li>
+							<li class="on" aria-selected="true"><span class="number">15</span>일</li>
+							<li aria-selected="false"><span class="number">16</span>일</li>
+							<li aria-selected="false"><span class="number">17</span>일</li>
+							<li aria-selected="false"><span class="number">18</span>일</li>
+							<li aria-selected="false"><span class="number">19</span>일</li>
+							<li aria-selected="false"><span class="number">20</span>일</li>
+							<li aria-selected="false"><span class="number">21</span>일</li>
+							<li aria-selected="false"><span class="number">22</span>일</li>
+							<li aria-selected="false"><span class="number">23</span>일</li>
+							<li aria-selected="false"><span class="number">24</span>일</li>
+							<li aria-selected="false"><span class="number">25</span>일</li>
+							<li aria-selected="false"><span class="number">26</span>일</li>
+							<li aria-selected="false"><span class="number">27</span>일</li>
+							<li aria-selected="false"><span class="number">28</span>일</li>
+							<li aria-selected="false"><span class="number">29</span>일</li>
+							<li aria-selected="false"><span class="number">30</span>일</li>
+							<li aria-selected="false"><span class="number">31</span>일</li>
 						</ul>
 					</div>
 				</div>
@@ -2767,11 +2775,11 @@
 <script data-size="2" data-title="Bottomsheet | bottomsheet-share" type="text/template">
 	<button type="button" class="a underline point" onClick="Layer.open('Bottomsheet-share')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1055_29966.png" alt=""></div>
-	<div id="Bottomsheet-share" class="layer" role="dialog" aria-modal="true" aria-labelledby="share-title">
+	<div id="Bottomsheet-share" class="layer">
 		<div class="container">
 			<div class="header">
 				<div class="inner">
-					<h1 class="title" id="share-title">공유하기</h1>
+					<h1 class="title">공유하기</h1>
 
 					<div class="funcs">
 						<button type="button" class="func -close" onClick="Layer.close('Bottomsheet-share')"><span class="hide">닫기</span></button>
@@ -2802,5 +2810,4 @@
 	<script>
 		buildGuide();
 	</script>
-</body>
 </html>

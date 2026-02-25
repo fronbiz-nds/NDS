@@ -3,7 +3,7 @@
    ============================================================ */
 
 /* [Button - Base] */
-.nds-button {display:inline-flex; justify-content:center; align-items:center; height:4.2rem; padding:0 1.6rem; border:1px solid transparent; border-radius:var(--nds-border-radius-10); font-weight:500; font-size:1.6rem; font-family:var(--nds-font-base); letter-spacing:-0.02em; text-align:center; vertical-align:middle; white-space:nowrap; cursor:pointer; transition:all 0.3s ease; box-sizing:border-box;}
+.nds-button {display:inline-flex; justify-content:center; align-items:center; height:4.2rem; padding:0 1.6rem; border:1px solid transparent; border-radius:var(--nds-border-radius-10); font-weight:500; letter-spacing:-0.02em; text-align:center; vertical-align:middle; white-space:nowrap; cursor:pointer; transition:all 0.3s ease; box-sizing:border-box;}
 
 /* [Button - Variant: Primary] */
 .nds-button.-primary {background-color:var(--nds-color-bg-button-primary-default); color:var(--nds-color-text-button-primary-default);}
@@ -37,15 +37,15 @@
 .nds-button.-lg + .nds-button.-lg,
 .nds-button.-md + .nds-button.-md,
 .nds-button.-rg + .nds-button.-rg,
-.nds-button.-xs + .nds-button.-xs {margin-left:var(--nds-spacing-8);}
-.nds-button.-sm + .nds-button.-sm {margin-left:var(--nds-spacing-4);}
-.nds-button.-text + .nds-button.-text {margin-left:var(--nds-spacing-16);}
+.nds-button.-xs + .nds-button.-xs {margin-left:0.8rem;}
+.nds-button.-sm + .nds-button.-sm {margin-left:0.4rem;}
+.nds-button.-text + .nds-button.-text {margin-left:1.6rem;}
 
 /* [Button - Shape] */
 .nds-button.-shape-circle {border-radius:var(--nds-border-radius-circle);}
 
 /* [Button - Variant: Text] */
-.nds-button.-text {gap:var(--nds-spacing-2); height:fit-content; padding:0; border-color:transparent; background-color:transparent; color:var(--nds-color-text-button-text-icon); font-size:1.4rem; line-height:2.2rem; text-decoration:none;}
+.nds-button.-text {gap:0.2rem; height:fit-content; padding:0; border-color:transparent; background-color:transparent; color:var(--nds-color-text-button-text-icon); font-size:1.4rem; line-height:2.2rem; text-decoration:none;}
 
 /* [Button - Variant: Link] */
 .nds-button.-link {min-width:auto; height:fit-content; padding:0; border:none; background-color:transparent; color:var(--nds-color-text-button-text-icon); font-size:1.4rem; line-height:2.2rem; text-decoration:underline; text-underline-offset:0.2rem;}
@@ -65,20 +65,20 @@
 .nds-button.-ico.-minus.-active {background-image:var(--nds-ico-minus-x24-active);}
 
 /* [Button - CTA Layouts] */
-.nds-cta-wrap {display:flex; gap:var(--nds-spacing-8); width:100%;}
+.nds-cta-wrap {display:flex; gap:0.8rem; width:100%;}
 .nds-button.-full {width:100%;} 
 .nds-button.-flex-5 {flex:5;}    /* 5:5 비율 */
 .nds-button.-flex-3 {flex:3;}    /* 3:7 비율 (Small) */
 .nds-button.-flex-7 {flex:7;}    /* 3:7 비율 (Large) */
-.nds-cta-double {display:flex; flex-direction:column; gap:var(--nds-spacing-12);} /* 상하 배치 */
+.nds-cta-double {display:flex; flex-direction:column; gap:1.2rem;} /* 상하 배치 */
 .nds-cta-wrap > .nds-button + .nds-button,
 .nds-cta-double > .nds-button + .nds-button {margin-left:0 !important;} 
 
 /* [Button - Floating] */
 .nds-floating-button-wrap {position:fixed; top:8rem; right:2.4rem; z-index:500;}
-.nds-floating-button {display:flex; justify-content:center; align-items:center; position:relative; width:5.6rem; height:5.6rem; border-radius:var(--nds-border-radius-circle); background-color:var(--nds-color-bg-button-floating); box-shadow:0 0 0 1px var(--nds-color-border-button-floating), 0 4px 8px 0 rgba(0,0,0,0.15); cursor:pointer; padding:0; border:none;}
-.nds-floating-button span {color:var(--nds-color-text-button-floating); font-weight:500; font-size:1.0rem; text-align:center; line-height:1.3;}
-.nds-floating-button-close {display:block; position:absolute; top:-0.4rem; right:0; width:1.8rem; height:1.8rem; border-radius:var(--nds-border-radius-circle); background-color:var(--nds-color-gray-900); cursor:pointer; border:none; padding:0;}
+.nds-floating-button {display:flex; justify-content:center; align-items:center; position:relative; width:5.6rem; height:5.6rem; padding:0; border:none; border-radius:var(--nds-border-radius-circle); background-color:var(--nds-color-bg-button-floating); box-shadow:0 0 0 1px var(--nds-color-border-button-floating), 0 4px 8px 0 rgba(0,0,0,0.15); cursor:pointer;}
+.nds-floating-button span {color:var(--nds-color-text-button-floating); font-weight:500; font-size:1.0rem; line-height:1.3; text-align:center;}
+.nds-floating-button-close {display:block; position:absolute; top:-0.4rem; right:0; width:1.8rem; height:1.8rem; padding:0; border:none; border-radius:var(--nds-border-radius-circle); background-color:var(--nds-color-gray-900); cursor:pointer;}
 .nds-floating-button-close::before, 
 .nds-floating-button-close::after {content:""; position:absolute; top:50%; left:50%; width:0.2rem; height:1.0rem; border-radius:var(--nds-border-radius-10); background-color:var(--nds-color-gray-50); transform:translate(-50%, -50%) rotate(45deg); transform-origin:center;}
 .nds-floating-button-close::after {transform:translate(-50%, -50%) rotate(135deg);}

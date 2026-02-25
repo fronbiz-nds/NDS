@@ -471,11 +471,11 @@ html {
     
     /* [Chip] */
     --nds-color-text-chip-active:var(--nds-color-text-font-10);
-    --nds-color-bg-chip-active:#111111;
+    --nds-color-bg-chip-active:var(--nds-color-gray-900);
 
     /* [Indicator] */
     --nds-color-text-indicator-default:var(--nds-color-text-font-10);
-    --nds-color-bg-indicator-default:#111111;
+    --nds-color-bg-indicator-default:var(--nds-color-gray-900);
 
     /* [Input] */
     --nds-color-text-input-placeholder:var(--nds-color-text-font-5);
@@ -512,8 +512,8 @@ html {
 
     /* [Popover] */
     --nds-color-text-popover-default:var(--nds-color-text-font-10);
-    --nds-color-border-popover-default:#111111;
-    --nds-color-bg-popover-default:#111111;
+    --nds-color-border-popover-default:var(--nds-color-gray-900);
+    --nds-color-bg-popover-default:var(--nds-color-gray-900);
 
     /* [Progress Bar] */
     --nds-color-bg-progress-bg:var(--nds-color-bg-banner);
@@ -574,19 +574,19 @@ html {
     --nds-color-bg-switch-inner:var(--nds-color-bg-default);
 
     /* [Tab] */
-    --nds-color-border-tab-line-active:#111111;
+    --nds-color-border-tab-line-active:var(--nds-color-gray-900);
     --nds-color-border-tab-line-default:var(--nds-color-border-line-2);
     --nds-color-bg-tab-line-bg:var(--nds-color-bg-default);
     --nds-color-text-tab-chip-default:#FFFFFF;
     --nds-color-bg-tab-chip-bg:var(--nds-color-bg-default);
-    --nds-color-bg-tab-chip-active:#111111;
+    --nds-color-bg-tab-chip-active:var(--nds-color-gray-900);
     --nds-color-bg-tab-chip-default:var(--nds-color-bg-container);
     --nds-color-bg-tab-bar-active:var(--nds-color-bg-default);
     --nds-color-bg-tab-bar-default:var(--nds-color-bg-banner);
 
     /* [Toast] */
     --nds-color-text-toast-default:var(--nds-color-text-font-10);
-    --nds-color-bg-toast-basic:#111111;
+    --nds-color-bg-toast-basic:var(--nds-color-gray-900);
 
     /* [Step] */
     --nds-color-text-step-active:var(--nds-color-bg-default);

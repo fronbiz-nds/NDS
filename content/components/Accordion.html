@@ -13,10 +13,52 @@
 <body>
 	<div class="gl">
 		<!-- NDS components : S -->
-<div class="gc__heading">accordion-box/list</div>
+
+<div class="gc__heading">Notice</div>
 <script data-size="2" data-title="State=close" type="text/template">
-	<div class="nds-ui nds-accordion -box -list" data-role="fold">
-		<button type="button" class="title" data-role="marker" aria-expanded="false" aria-controls="panel1">
+	<div class="sticker">
+		<div class="nds-accordion -notice" data-nds-role="fold">
+			<button type="button" class="title" data-nds-role="marker">알아두세요</button>
+			<div class="panel" data-nds-role="hidden">
+				<ul class="ul -bullet">
+					<li>목록</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</script>
+		 
+<div class="gc__heading">Line</div>
+<script data-size="2" data-title="State=close" type="text/template">
+	<div class="nds-accordion -line" data-nds-role="fold">
+		<button type="button" class="title" data-nds-role="marker">제목</button>
+		<div class="panel" data-nds-role="hidden">
+			<div class="dummy">내용</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="State=close" type="text/template">
+	<div class="nds-accordion -line -active" data-nds-role="fold">
+		<button type="button" class="title" data-nds-role="marker">제목</button>
+		<div class="panel" data-nds-role="hidden">
+			<div class="dummy">내용</div>
+		</div>
+	</div>
+</script>
+
+<div class="gc__heading">Box-Text</div>
+<script data-size="2" data-title="State=close" type="text/template">
+	<div class="nds-accordion -box" data-nds-role="fold">
+		<button type="button" class="title" data-nds-role="marker">제목</button>
+		<div class="panel" data-nds-role="hidden">
+			<div class="dummy">내용</div>
+		</div>
+	</div>
+</script>
+<div class="gc__heading">Box-List</div>
+<script data-size="2" data-title="State=close" type="text/template">
+	<div class="nds-accordion -box -list" data-nds-role="fold">
+		<button type="button" class="title" data-nds-role="marker">
 			<div class="badges">
 				<span class="badge line-gray">라벨</span>
 			</div>
@@ -29,7 +71,38 @@
 				</span>
 			</div>
 		</button>
-		<div class="panel" data-role="hidden" id="panel1" hidden>
+		<div class="panel" data-nds-role="hidden">
+			<dl class="dl">
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+				<div>
+					<dt>타이틀</dt>
+					<dd>데이터</dd>
+				</div>
+			</dl>
+		</div>
+	</div>
+	<div class="nds-accordion -box -list" data-nds-role="fold">
+		<button type="button" class="title" data-nds-role="marker">
+			<div class="badges">
+				<span class="badge line-gray">라벨</span>
+			</div>
+			<div class="info">
+				<span class="name">
+					<span>타이틀</span>
+				</span>
+				<span class="sub-info">
+					<span>부가설명</span>
+				</span>
+			</div>
+		</button>
+		<div class="panel" data-nds-role="hidden">
 			<dl class="dl">
 				<div>
 					<dt>타이틀</dt>
@@ -47,78 +120,20 @@
 		</div>
 	</div>
 </script>
-<script data-size="2" data-title="State=open" type="text/template">
-	<div class="nds-ui nds-accordion -box -list -active" data-role="fold">
-		<button type="button" class="title" data-role="marker" aria-expanded="true" aria-controls="panel2">
-			<div class="badges">
-				<span class="badge line-gray">라벨</span>
-			</div>
-			<div class="info">
-				<span class="name">
-					<span>타이틀</span>
-				</span>
-				<span class="sub-info">
-					<span>부가설명</span>
-				</span>
-			</div>
-		</button>
-		<div class="panel" data-role="visible" id="panel2">
-			<dl class="dl">
-				<div>
-					<dt>타이틀</dt>
-					<dd>데이터</dd>
-				</div>
-				<div>
-					<dt>타이틀</dt>
-					<dd>데이터</dd>
-				</div>
-				<div>
-					<dt>타이틀</dt>
-					<dd>데이터</dd>
-				</div>
-			</dl>
-		</div>
-	</div>
-</script>
-<div class="gc__heading">accordion-box/text</div>
+<div class="gc__heading">Graybox/basic</div>
 <script data-size="2" data-title="State=close" type="text/template">
-	<div class="nds-ui nds-accordion -box" data-role="fold">
-		<button type="button" class="title" data-role="marker" aria-expanded=false aria-controls="panel3">제목</button>
-		<div class="panel" data-role="hidden" id="panel3" hidden>
+	<div class="nds-accordion -graybox" data-nds-role="fold">
+		<button type="button" class="title" data-nds-role="marker">제목</button>
+		<div class="panel" data-nds-role="hidden">
 			<div class="dummy">내용</div>
 		</div>
 	</div>
 </script>
-<script data-size="2" data-title="State=open" type="text/template">
-	<div class="nds-ui nds-accordion -box -active" data-role="fold">
-		<button type="button" class="title" data-role="marker" aria-expanded="true" aria-controls="panel4">제목</button>
-		<div class="panel visible" data-role="visible" id="panel4">
-			<div class="dummy">내용</div>
-		</div>
-	</div>
-</script>
-<div class="gc__heading">accordion-graybox/basic</div>
+<div class="gc__heading">Graybox/list</div>
 <script data-size="2" data-title="State=close" type="text/template">
-	<div class="nds-ui nds-accordion -graybox" data-role="fold">
-		<button type="button" class="title" data-role="marker" aria-expanded="false" aria-controls="panel5">제목</button>
-		<div class="panel" data-role="hidden" id="panel5" hidden>
-			<div class="dummy">내용</div>
-		</div>
-	</div>
-</script>
-<script data-size="2" data-title="State=open" type="text/template">
-	<div class="nds-ui nds-accordion -graybox -active" data-role="fold">
-		<button type="button" class="title" data-role="marker" aria-expanded="true" aria-controls="panel6">제목</button>
-		<div class="panel" data-role="visible" id="panel6">
-			<div class="dummy">내용</div>
-		</div>
-	</div>
-</script>
-<div class="gc__heading">accordion-graybox/list</div>
-<script data-size="2" data-title="State=close" type="text/template">
-	<div class="nds-ui nds-accordion bg-grey" data-role="fold">
-		<button type="button" class="title" data-role="marker" aria-expanded="false" aria-controls="panel7">계약서류 확인</button>
-		<div class="panel" data-role="hidden" id="panel7" hidden>
+	<div class="nds-accordion -graybox" data-nds-role="fold">
+		<button type="button" class="title" data-nds-role="marker">계약서류 확인</button>
+		<div class="panel" data-nds-role="hidden">
 			<div class="download">
 				<ul>
 					<li>
@@ -174,107 +189,7 @@
 		</div>
 	</div>
 </script>
-<script data-size="2" data-title="State=open" type="text/template">
-	<div class="nds-ui nds-accordion bg-grey -active" data-role="fold">
-		<button type="button" class="title" data-role="marker" aria-expanded="true" aria-controls="panel8">계약서류 확인</button>
-		<div class="panel" data-role="visible" id="panel8">
-			<div class="download">
-				<ul>
-					<li>
-						<div>예금계약서(비대면_저축성)</div>
-						<div>
-							<button type="button" title="예금계약서(비대면_저축성)"
-								class="down-btn"><span class="hide">다운로드</span></button>
-							<button type="button" title="예금계약서(비대면_저축성)"
-								aria-haspopup="true" class="go-link"><span
-									class="hide">바로보기</span></button>
-						</div>
-					</li>
-					<li>
-						<div>NH고향사랑기부예금 상품설명서</div>
-						<div>
-							<button type="button" title="NH고향사랑기부예금 상품설명서"
-								class="down-btn"><span class="hide">다운로드</span></button>
-							<button type="button" title="NH고향사랑기부예금 상품설명서"
-								aria-haspopup="true" class="go-link"><span
-									class="hide">바로보기</span></button>
-						</div>
-					</li>
-					<li>
-						<div>NH고향사랑기부예금 핵심상품설명서</div>
-						<div>
-							<button type="button" title="NH고향사랑기부예금 핵심상품설명서"
-								class="down-btn"><span class="hide">다운로드</span></button>
-							<button type="button" title="NH고향사랑기부예금 핵심상품설명서"
-								aria-haspopup="true" class="go-link"><span
-									class="hide">바로보기</span></button>
-						</div>
-					</li>
-					<li>
-						<div>NH고향사랑기부예금 약관</div>
-						<div>
-							<button type="button" title="NH고향사랑기부예금 약관"
-								class="down-btn"><span class="hide">다운로드</span></button>
-							<button type="button" title="NH고향사랑기부예금 약관" aria-haspopup="true"
-								class="go-link"><span class="hide">바로보기</span></button>
-						</div>
-					</li>
-					<li>
-						<div>예금거래기본약관 외</div>
-						<div>
-							<button type="button" title="예금거래기본약관 외" class="down-btn"><span
-									class="hide">다운로드</span></button>
-							<button type="button" title="예금거래기본약관 외" aria-haspopup="true"
-								class="go-link"><span class="hide">바로보기</span></button>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</script>
-<div class="gc__heading">accordion-line</div>
-<script data-size="2" data-title="State=close" type="text/template">
-	<div class="nds-ui nds-accordion -line" data-role="fold">
-		<button type="button" class="title" data-role="marker" aria-expanded="false" aria-controls="panel9">제목</button>
-		<div class="panel" data-role="hidden" id="panel9" hidden>
-			<div class="dummy">내용</div>
-		</div>
-	</div>
-</script>
-<script data-size="2" data-title="State=open" type="text/template">
-	<div class="nds-ui nds-accordion -line -active" data-role="fold">
-		<button type="button" class="title" data-role="marker" aria-expanded="true" aria-controls="panel10">제목</button>
-		<div class="panel" data-role="visible" id="panel10">
-			<div class="dummy">내용</div>
-		</div>
-	</div>
-</script>
-<div class="gc__heading">accordion-notice</div>
-<script data-size="2" data-title="State=close" type="text/template">
-	<div class="sticker">
-		<div class="notice" data-role="fold">
-			<button type="button" class="title" data-role="marker" aria-expanded="false" aria-controls="panel11">알아두세요</button>
-			<div class="panel" data-role="hidden" id="panel11" hidden>
-				<ul class="ul -bullet">
-					<li>목록</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</script>
-<script data-size="2" data-title="State=open" type="text/template">
-	<div class="sticker">
-		<div class="notice -active" data-role="fold">
-			<button type="button" class="title" data-role="marker" aria-expanded="true" aria-controls="panel12">알아두세요</button>
-			<div class="panel" data-role="visible" id="panel12">
-				<ul class="ul -bullet">
-					<li>목록</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</script>
+
 		<!-- NDS components : E -->
 	</div>
 	<!-- Guide Script -->
@@ -283,7 +198,6 @@
 	<!-- AS-IS Script -->
 	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
 	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
-	<script src="./../assets/js/common-ui.js"></script>
 	<!-- NDS Script -->
 	<script src="./../assets/js/nds-ui.js"></script>
 </body>

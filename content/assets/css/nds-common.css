@@ -575,10 +575,10 @@ html {
 
     /* [Tab] */
     --nds-color-border-tab-line-active:#111111;
-    --nds-color-border-tab-line-default:var(--nds-color-border-line-2);
+    --nds-color-border-tab-line-default:var(--nds-color-border-line-2); /* tab-line, tab-chip에 사용*/
     --nds-color-bg-tab-line-bg:var(--nds-color-bg-default);
-    --nds-color-text-tab-chip-default:#FFFFFF;
-    --nds-color-bg-tab-chip-bg:var(--nds-color-bg-default);
+    --nds-color-text-tab-chip-default:#FFFFFF; /* TODO: active font color임. 확인 필요 */
+    --nds-color-bg-tab-chip-bg:var(--nds-color-bg-default); /* TODO: tab-chip에 사용되지 않는 컬러임. 확인 필요 */
     --nds-color-bg-tab-chip-active:#111111;
     --nds-color-bg-tab-chip-default:var(--nds-color-bg-container);
     --nds-color-bg-tab-bar-active:var(--nds-color-bg-default);

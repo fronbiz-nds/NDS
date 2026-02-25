@@ -13,6 +13,8 @@
 <body>
 	<div class="gl">
 		<!-- NDS components : S -->
+<!-- NOTE: as-is의 불필요한 div 중첩 구조를 줄이고 통일된 구조를 갖게함. -->
+<!-- TO-BE : S -->
 <script data-size="2" data-title="line fixed" type="text/template">
 	<div class="nds-tab -line -fixed" data-nds-role="tab">
 		<div class="nds-tab-inner" role="tablist" data-nds-role="tab-list">
@@ -119,6 +121,7 @@
 			<button type="button" id="chip-2-3" class="nds-tab-button" role="tab" data-nds-role="tab-btn" aria-selected="false" aria-controls="chip-panel-2-3">메뉴 3</button>
 			<button type="button" id="chip-2-4" class="nds-tab-button" role="tab" data-nds-role="tab-btn" aria-selected="false" aria-controls="chip-panel-2-4">메뉴 4</button>
 		</div>
+		<!-- TODO: 버튼 스타일 추가 필요 -->
 		<button type="button" title="추천키워드" class="nds-button -ico">
 			<i class="nds-ico -x16 nds-ico-arr-down1"></i><span class="hide">펼치기</span>
 		</button>
@@ -145,6 +148,496 @@
 		<div id="text-panel-2" class="nds-tab-panel" role="tabpanel" data-nds-role="tab-panel" aria-labelledby="text-2" tabindex="-1" hidden>패널 2</div>
 	</div>
 </script>
+<!-- TO-BE : E -->
+
+<!-- AS-IS : S -->
+ <script data-size="2" data-title="Tab | tab-bar @ Menu=2-menu" type="text/template">
+                            <div class="segments tab -bar">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div role="tablist" class="list">
+                                            <div class="item -active"><button type="button" role="tab" aria-selected="true"
+                                                    aria-controls="segments-panel3" id="segment5" class="">메뉴<span
+                                                        class="hide">선택됨</span></button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false"
+                                                    aria-controls="segments-panel4" id="segment6" class="">메뉴</button>
+                                            </div>
+                                            <span class="switcher" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="segments-panels">
+                                <div role="tabpanel" aria-labelledby="segment5" id="segments-panel3"
+                                    class="segments-panel -active" tabindex="0">
+                                    컨텐츠1
+                                </div>
+                                <div role="tabpanel" aria-labelledby="segment6" id="segments-panel4" class="segments-panel"
+                                    tabindex="-1">
+                                    컨텐츠2
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-bar @ Menu=3-menu" type="text/template">
+                            <div class="segments tab -bar -triple">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div role="tablist" class="list">
+                                            <div class="item -active"><button type="button" role="tab" aria-selected="true"
+                                                    aria-controls="segments-panel33" id="segment5" class="">메뉴<span
+                                                        class="hide">선택됨</span></button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false"
+                                                    aria-controls="segments-panel43" id="segment6" class="">메뉴</button>
+                                            </div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false"
+                                                    aria-controls="segments-panel53" id="segment7" class="">메뉴</button>
+                                            </div>
+                                            <span class="switcher" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="segments-panels">
+                                <div role="tabpanel" aria-labelledby="segment5" id="segments-panel33" class="segments-panel -active" tabindex="0">
+                                    컨텐츠1
+                                </div>
+                                <div role="tabpanel" aria-labelledby="segment6" id="segments-panel43" class="segments-panel"tabindex="-1">
+                                    컨텐츠2
+                                </div>
+                                <div role="tabpanel" aria-labelledby="segment7" id="segments-panel53" class="segments-panel"tabindex="-1">
+                                    컨텐츠3
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-bar @ Menu=4-menu" type="text/template">
+                            <div class="segments tab -bar -quad">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div role="tablist" class="list">
+                                            <div class="item -active"><button type="button" role="tab" aria-selected="true"
+                                                    aria-controls="segments-panel331" id="segment51" class="">메뉴<span
+                                                        class="hide">선택됨</span></button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false"
+                                                    aria-controls="segments-panel431" id="segment61" class="">메뉴</button>
+                                            </div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false"
+                                                    aria-controls="segments-panel531" id="segment71" class="">메뉴</button>
+                                            </div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false"
+                                                    aria-controls="segments-panel5341" id="segment741" class="">메뉴</button>
+                                            </div>
+                                            <span class="switcher" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="segments-panels">
+                                <div role="tabpanel" aria-labelledby="segment51" id="segments-panel331" class="segments-panel -active" tabindex="0">
+                                    컨텐츠1
+                                </div>
+                                <div role="tabpanel" aria-labelledby="segment61" id="segments-panel431" class="segments-panel"tabindex="-1">
+                                    컨텐츠2
+                                </div>
+                                <div role="tabpanel" aria-labelledby="segment71" id="segments-panel531" class="segments-panel"tabindex="-1">
+                                    컨텐츠3
+                                </div>
+                                <div role="tabpanel" aria-labelledby="segment741" id="segments-panel5341" class="segments-panel"tabindex="-1">
+                                    컨텐츠4
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-chip @ Type=accordion, State=close, Menu=2-menu" type="text/template">
+                            <div class="popular-search chip in-tab">
+                                <!-- 인기검색어 열림 상태 : popular-anchors 에 -active 클래스 추가 -->
+                                <div class="popular-anchors accordion">
+                                    <div class="outer">
+                                        <div class="inner over-x">
+                                            <ul class="list tab">
+                                                <!-- 버튼 선택시 -active 클래스 추가  -->
+                                                <li class="item"><button type="button" class="hash-btn -active">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="more" onclick="morebtn(this)"><span class="hide">펼치기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-chip @ Type=accordion, State=close, Menu=3-menu" type="text/template">
+                            <div class="popular-search chip in-tab">
+                                <!-- 인기검색어 열림 상태 : popular-anchors 에 -active 클래스 추가 -->
+                                <div class="popular-anchors accordion">
+                                    <div class="outer">
+                                        <div class="inner over-x">
+                                            <ul class="list tab">
+                                                <!-- 버튼 선택시 -active 클래스 추가  -->
+                                                <li class="item"><button type="button" class="hash-btn -active">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="more" onclick="morebtn(this)"><span class="hide">펼치기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-chip @ Type=accordion, State=close, Menu=4-menu" type="text/template">
+                            <div class="popular-search chip in-tab">
+                                <!-- 인기검색어 열림 상태 : popular-anchors 에 -active 클래스 추가 -->
+                                <div class="popular-anchors accordion">
+                                    <div class="outer">
+                                        <div class="inner over-x">
+                                            <ul class="list tab">
+                                                <!-- 버튼 선택시 -active 클래스 추가  -->
+                                                <li class="item"><button type="button" class="hash-btn -active">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="more" onclick="morebtn(this)"><span class="hide">펼치기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-chip @ Type=accordion, State=close, Menu=5-menu" type="text/template">
+                            <div class="popular-search chip in-tab">
+                                <!-- 인기검색어 열림 상태 : popular-anchors 에 -active 클래스 추가 -->
+                                <div class="popular-anchors accordion">
+                                    <div class="outer">
+                                        <div class="inner over-x">
+                                            <ul class="list tab">
+                                                <!-- 버튼 선택시 -active 클래스 추가  -->
+                                                <li class="item"><button type="button" class="hash-btn -active">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="more" onclick="morebtn(this)"><span class="hide">펼치기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-chip @ Type=accordion, State=open, Menu=none" type="text/template">
+                            <div class="popular-search chip in-tab">
+                                <!-- 인기검색어 열림 상태 : popular-anchors 에 -active 클래스 추가 -->
+                                <div class="popular-anchors accordion -active">
+                                    <div class="outer">
+                                        <div class="inner over-x">
+                                            <ul class="list tab">
+                                                <!-- 버튼 선택시 -active 클래스 추가  -->
+                                                <li class="item"><button type="button" class="hash-btn -active">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                                <li class="item"><button type="button" class="hash-btn">메뉴</button></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="more" onclick="morebtn(this)"><span class="hide">펼치기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-chip @ Type=flexible, State=none, Menu=2-menu" type="text/template">
+                            <div class="subs">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div role="tablist" class="list">
+                                            <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="subs-panel11" id="sub11">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel12" id="sub12">메뉴</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content -wide">
+                                <div class="subs-panels">
+                                    <div role="tabpanel" aria-labelledby="sub11" id="subs-panel11" class="subs-panel -active" tabindex="0">
+                                        패널1
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub12" id="subs-panel12" class="subs-panel" tabindex="0">
+                                        패널2
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-chip @ Type=flexible, State=none, Menu=3-menu" type="text/template">
+                            <div class="subs">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div role="tablist" class="list">
+                                            <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="subs-panel31" id="sub31">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel32" id="sub32">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel33" id="sub33">메뉴</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content -wide">
+                                <div class="subs-panels">
+                                    <div role="tabpanel" aria-labelledby="sub31" id="subs-panel31" class="subs-panel -active" tabindex="0">패널1</div>
+                                    <div role="tabpanel" aria-labelledby="sub32" id="subs-panel32" class="subs-panel" tabindex="0">패널2</div>
+                                    <div role="tabpanel" aria-labelledby="sub33" id="subs-panel33" class="subs-panel" tabindex="0">패널3</div>
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-chip @ Type=flexible, State=none, Menu=4-menu" type="text/template">
+                            <div class="subs">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div role="tablist" class="list">
+                                            <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="subs-panel41" id="sub41">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel42" id="sub42">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel43" id="sub43">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel44" id="sub44">메뉴</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content -wide">
+                                <div class="subs-panels">
+                                    <div role="tabpanel" aria-labelledby="sub41" id="subs-panel41" class="subs-panel -active" tabindex="0">패널1</div>
+                                    <div role="tabpanel" aria-labelledby="sub42" id="subs-panel42" class="subs-panel" tabindex="0">패널2</div>
+                                    <div role="tabpanel" aria-labelledby="sub43" id="subs-panel43" class="subs-panel" tabindex="0">패널3</div>
+                                    <div role="tabpanel" aria-labelledby="sub44" id="subs-panel44" class="subs-panel" tabindex="0">패널4</div>
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-chip @ Type=flexible, State=none, Menu=5-menu" type="text/template">
+                            <div class="subs">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div role="tablist" class="list">
+                                            <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="subs-panel51" id="sub51">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel52" id="sub52">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel53" id="sub53">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel54" id="sub54">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel55" id="sub55">메뉴</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content -wide">
+                                <div class="subs-panels">
+                                    <div role="tabpanel" aria-labelledby="sub51" id="subs-panel51" class="subs-panel -active" tabindex="0">
+                                        패널1
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub52" id="subs-panel52" class="subs-panel" tabindex="0">
+                                        패널2
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub53" id="subs-panel53" class="subs-panel" tabindex="0">
+                                        패널3
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub54" id="subs-panel54" class="subs-panel" tabindex="0">
+                                        패널4
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub55" id="subs-panel55" class="subs-panel" tabindex="0">
+                                        패널5
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-chip @ Type=flexible, State=none, Menu=left" type="text/template">
+                            <div class="subs">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div role="tablist" class="list">
+                                            <div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="subs-panel1" id="sub1">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel2" id="sub2">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel3" id="sub3">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel4" id="sub4">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel5" id="sub5">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel6" id="sub6">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel7" id="sub7">메뉴</button></div>
+                                            <div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="subs-panel8" id="sub8">메뉴</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content -wide">
+                                <div class="subs-panels">
+                                    <div role="tabpanel" aria-labelledby="sub1" id="subs-panel1" class="subs-panel -active" tabindex="0">
+                                        패널1
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub2" id="subs-panel2" class="subs-panel" tabindex="0">
+                                        패널2
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub3" id="subs-panel3" class="subs-panel" tabindex="0">
+                                        패널3
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub4" id="subs-panel4" class="subs-panel" tabindex="0">
+                                        패널4
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub5" id="subs-panel5" class="subs-panel" tabindex="0">
+                                        패널5
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub6" id="subs-panel6" class="subs-panel" tabindex="0">
+                                        패널6
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub7" id="subs-panel7" class="subs-panel" tabindex="0">
+                                        패널7
+                                    </div>
+                                    <div role="tabpanel" aria-labelledby="sub8" id="subs-panel8" class="subs-panel" tabindex="0">
+                                        패널8
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-line @ Type=fixed, Menu=2-menu" type="text/template">
+                            <nav class="tabs">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <ul class="list tab -line -fixed">
+                                            <li class="item -active"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </script>
+<script data-size="2" data-title="Tab | tab-line @ Type=fixed, Menu=3-menu" type="text/template">
+                            <nav class="tabs">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <ul class="list tab -line -fixed">
+                                            <li class="item -active"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </script>
+<script data-size="2" data-title="Tab | tab-line @ Type=fixed, Menu=4-menu" type="text/template">
+                            <nav class="tabs">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <ul class="list tab -line -fixed">
+                                            <li class="item -active"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </script>
+<script data-size="2" data-title="Tab | tab-line @ Type=flexible, Menu=2-menu" type="text/template">
+                            <nav class="tabs -swipe">
+                                <div class="outer flex -relative -end">
+                                    <div class="inner">
+                                        <ul class="list tab -line -flexible">
+                                            <li class="item -active"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </script>
+<script data-size="2" data-title="Tab | tab-line @ Type=flexible, Menu=3-menu" type="text/template">
+                            <nav class="tabs -swipe">
+                                <div class="outer flex -relative -end">
+                                    <div class="inner">
+                                        <ul class="list tab -line -flexible">
+                                            <li class="item -active"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </script>
+<script data-size="2" data-title="Tab | tab-line @ Type=flexible, Menu=4-menu" type="text/template">
+                            <nav class="tabs -swipe">
+                                <div class="outer flex -relative -end">
+                                    <div class="inner">
+                                        <ul class="list tab -line -flexible">
+                                            <li class="item -active"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </script>
+<script data-size="2" data-title="Tab | tab-line @ Type=flexible, Menu=5-menu" type="text/template">
+                            <nav class="tabs -swipe">
+                                <div class="outer flex -relative -end">
+                                    <div class="inner">
+                                        <ul class="list tab -line -flexible">
+                                            <li class="item -active"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </script>
+<script data-size="2" data-title="Tab | tab-line @ Type=flexible, Menu=6-menu" type="text/template">
+                            <nav class="tabs -swipe">
+                                <div class="outer flex -relative -end">
+                                    <div class="inner">
+                                        <ul class="list tab -line -flexible">
+                                            <li class="item -active"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </script>
+<script data-size="2" data-title="Tab | tab-line @ Type=flexible, Menu=left" type="text/template">
+                            <nav class="tabs -swipe">
+                                <div class="outer flex -relative -end">
+                                    <div class="inner">
+                                        <ul class="list tab -line -flexible">
+                                            <li class="item -active"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                            <li class="item"><a href="javascript:void(0)">메뉴</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </script>
+<script data-size="2" data-title="Tab | tab-text @ Menu=2-menu" type="text/template">
+                            <div class="tab-text" style="justify-content: center;">
+                                <span class="opt -active"><button type="button">메뉴</button></span>
+                                <span class="opt"><button type="button">메뉴</button></span>
+                            </div>
+                        </script>
+<script data-size="2" data-title="Tab | tab-text @ Menu=3-menu" type="text/template">
+                            <div class="tab-text" style="justify-content: center;">
+                                <span class="opt -active"><button type="button">메뉴</button></span>
+                                <span class="opt"><button type="button">메뉴</button></span>
+                                <span class="opt"><button type="button">메뉴</button></span>
+                            </div>
+                        </script>
+<!-- AS-IS : E -->
 		<!-- NDS components : E -->
 	</div>
 	<!-- NDS Script -->

@@ -34,8 +34,11 @@
 
 /* [Tab - Layouts: Fixed, Accordion, Flexible, Swipe] */
 .nds-tab.-fixed .nds-tab-button {flex:1;}
+
 .nds-tab.-accordion .nds-tab-inner {flex-wrap:wrap; padding:1.2rem 2.4rem;}
 .nds-tab.-accordion .nds-tab-inner {flex-wrap:wrap; padding:1.2rem 2.4rem;}
+/* TODO: 아코디언 펼침 버튼 스타일 추가? 기존 button 컴포넌트의 아이콘 버튼과는 스타일이 달라 혼용할 수 없음 */
+
 .nds-tab.-flexible .nds-tab-inner {flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;}
 .nds-tab.-flexible .nds-tab-inner::-webkit-scrollbar {display:none;}
 .nds-tab.-flexible .nds-tab-inner {flex:0 0 auto;}

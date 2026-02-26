@@ -13,32 +13,34 @@
 <body>
 	<div class="gl">
 		<!-- NDS components : S -->
-<script data-size="2" data-title="Tooltip | tooltip-basic" type="text/template">
-	<div class="field ml-24">
-		<!-- NOTE: span 태그가 남용되어서 접근성에 맞지 않는듯.. 타이틀도 span 태그로 되어있어서 semantic 적으로도 애매해보임. -->
-
-		<!-- TO-BE -->
-		<div class="nds-tooltip" data-nds-role="tooltip">
-			<button type="button" title="도움말" class="nds-button -ico trigger" data-nds-role="tooltip-trigger" aria-expanded="false" aria-controls="tooltip-panel-1">
-				<i class="nds-ico -x24 nds-ico-tooltip1" aria-hidden="true"></i><span class="hide">보기</span>
-			</button>
+<div class="gc__heading">Tooltip-base</div>
+<script data-size="2" data-title="" type="text/template">
+	<!-- NOTE: span 태그가 남용되어서 접근성에 맞지 않는듯.. 타이틀도 span 태그로 되어있어서 semantic 적으로도 애매해보임. -->
+	<div class="nds-tooltip" data-nds-role="tooltip">
+		<button type="button" title="도움말" class="nds-button -ico trigger" data-nds-role="tooltip-trigger" aria-expanded="false" aria-controls="tooltip-panel-1">
+			<i class="nds-ico -x24 nds-ico-tooltip1" aria-hidden="true"></i><span class="hide">보기</span>
+		</button>
+		
+		<div class="panel" role="tooltip" id="tooltip-panel-1" data-nds-role="tooltip-panel" aria-hidden="true">
+			<strong class="title">타이틀</strong>
+			<strong class="sub-title">서브 타이틀</strong>
 			
-			<div class="panel" role="tooltip" id="tooltip-panel-1" data-nds-role="tooltip-panel" aria-hidden="true">
-				<strong class="title">타이틀</strong>
-				<strong class="sub-title">서브 타이틀</strong>
-				
-				<div class="content">
-					<p class="sub-cont">서브 텍스트 내용을 입력해 주세요.</p>
-					<!-- NOTE: Bullet 컴포넌트 사용?-->
-					<ul class="nds-ul -bullet">
-						<li>리스트 내용을 입력해 주세요.</li>
-						<li>리스트 내용을 입력해 주세요.</li>
-					</ul>
-				</div>
+			<div class="content">
+				<p class="sub-cont">서브 텍스트 내용을 입력해 주세요.</p>
+				<!-- NOTE: Bullet 컴포넌트 사용?-->
+				<ul class="nds-ul -bullet">
+					<li>리스트 내용을 입력해 주세요.</li>
+					<li>리스트 내용을 입력해 주세요.</li>
+				</ul>
 			</div>
 		</div>
-		
-		<!-- AS-IS -->
+	</div>
+</script>
+
+<!-- AS-IS : S -->
+<div class="gc__heading">AS-IS</div>
+<script data-size="2" data-title="tooltip-basic" type="text/template">
+	<div class="field ml-24">
 		<span class="label">테스트모드에서 클릭</span>
 		<span class="tooltip">
 			<button type="button" class="trigger" aria-describedby="tooltip-panel" aria-expanded="false">
@@ -56,6 +58,7 @@
 		</span>
 	</div>
 </script>
+<!-- AS-IS : E -->
 		<!-- NDS components : E -->
 	</div>
 	<!-- NDS Script -->

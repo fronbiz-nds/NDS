@@ -386,87 +386,85 @@ html {
     --nds-color-bg-error:var(--nds-color-red-500);          /* #EC0C0C / #EC0C0C */
     --nds-color-bg-visual:var(--nds-color-blue-500);        /* #2C6DD4 / #7AAEFF */
     --nds-color-bg-dimmed:rgba(17, 17, 17, 0.30);
+    
+    /* [Icon] */
+    --nds-color-icon-gray-900:var(--nds-color-gray-900);    /* #111111 / #FFFFFFF */
+    --nds-color-icon-gray-600:var(--nds-color-gray-600);    /* #707070 / #B0B0B0 */
+    --nds-color-icon-gray-500:var(--nds-color-gray-500);    /* #B3B3B3 / #909090 */
+    --nds-color-icon-gray-550:var(--nds-color-gray-550);    /* #929292 / #929292 */
+    --nds-color-icon-gray-400:var(--nds-color-gray-400);    /* #D3D3D3 / #707070 */
+    --nds-color-icon-gray-300:var(--nds-color-gray-300);    /* #E1E1E1 / #505050 */
+    --nds-color-icon-gray-50:var(--nds-color-gray-50);      /* #FFFFFF / #212121 */
 
     /* [Badge] */
     --nds-color-bg-badge-red:var(--nds-color-border-error);
 
     /* [Button - Primary] */
-    --nds-color-text-button-primary-default:var(--nds-color-gray-font-50);
-    --nds-color-bg-button-primary-default:var(--nds-color-bg-point);
-    --nds-color-text-button-primary-pressed:var(--nds-color-gray-font-50);
-    --nds-color-bg-button-primary-pressed:var(--nds-color-green-700);
+    --nds-color-text-button-primary-default:var(--nds-color-text-font-10);
+    --nds-color-text-button-primary-pressed:var(--nds-color-text-font-10);
     --nds-color-text-button-primary-disabled:var(--nds-color-text-font-5);
+    --nds-color-bg-button-primary-default:var(--nds-color-green-500);
+    --nds-color-bg-button-primary-pressed:var(--nds-color-green-700);
     --nds-color-bg-button-primary-disabled:var(--nds-color-bg-disabled);
 
     /* [Button - Secondary] */
     --nds-color-text-button-secondary-default:var(--nds-color-text-point);
-    --nds-color-border-button-secondary-default:var(--nds-color-border-point);
-    --nds-color-bg-button-secondary-default:var(--nds-color-bg-default);
     --nds-color-text-button-secondary-pressed:var(--nds-color-green-700);
-    --nds-color-border-button-secondary-pressed:var(--nds-color-green-700);
-    --nds-color-bg-button-secondary-pressed:var(--nds-color-green-50);
     --nds-color-text-button-secondary-disabled:var(--nds-color-text-font-5);
+    --nds-color-border-button-secondary-default:var(--nds-color-border-point);
+    --nds-color-border-button-secondary-pressed:var(--nds-color-green-700);
     --nds-color-border-button-secondary-disabled:var(--nds-color-border-line-2);
+    --nds-color-bg-button-secondary-default:var(--nds-color-bg-default);
+    --nds-color-bg-button-secondary-pressed:var(--nds-color-green-50);
     --nds-color-bg-button-secondary-disabled:var(--nds-color-bg-default);
-
+    
     /* [Button - Tertiary] */
     --nds-color-text-button-tertiary-default:var(--nds-color-text-font-1);
-    --nds-color-border-button-tertiary-default:var(--nds-color-border-line-1);
-    --nds-color-bg-button-tertiary-default:var(--nds-color-bg-default);
     --nds-color-text-button-tertiary-pressed:var(--nds-color-text-font-1);
-    --nds-color-border-button-tertiary-pressed:var(--nds-color-border-line-1);
-    --nds-color-bg-button-tertiary-pressed:var(--nds-color-bg-container);
     --nds-color-text-button-tertiary-disabled:var(--nds-color-text-font-5);
+    --nds-color-border-button-tertiary-default:var(--nds-color-border-line-1);
+    --nds-color-border-button-tertiary-pressed:var(--nds-color-border-line-1);
     --nds-color-border-button-tertiary-disabled:var(--nds-color-border-line-2);
+    --nds-color-bg-button-tertiary-default:var(--nds-color-bg-default);
+    --nds-color-bg-button-tertiary-pressed:var(--nds-color-bg-container);
     --nds-color-bg-button-tertiary-disabled:var(--nds-color-bg-default);
 
     /* [Button - Misc] */
-    --nds-color-text-button-text-icon:var(--nds-color-text-font-3);
+    --nds-color-text-button-ect-text-icon:var(--nds-color-text-font-3);
     --nds-color-text-button-file-default:var(--nds-color-text-font-3);
-    --nds-color-border-button-file:var(--nds-color-border-line-2);
     --nds-color-text-button-file-disabled:var(--nds-color-text-font-5);
+    --nds-color-border-button-file:var(--nds-color-border-line-2);
     --nds-color-text-button-floating:var(--nds-color-cobalt-500);
     --nds-color-border-button-floating:var(--nds-color-cobalt-500);
     --nds-color-bg-button-floating:var(--nds-color-bg-default);
 
-    /* [Calendar] */
-    --nds-color-text-picker-calendar-select:var(--nds-color-text-font-10);
-    --nds-color-text-picker-disabled:var(--nds-color-text-font-5);
-    --nds-color-text-picker-default:var(--nds-color-text-font-1);
-    --nds-color-text-picker-sunday:var(--nds-color-red-500);
-    --nds-color-text-picker-saturday:var(--nds-color-blue-500);
-    --nds-color-text-picker-week:var(--nds-color-text-font-4);
-    --nds-color-text-picker-picker-select:var(--nds-color-text-point);
-    --nds-color-bg-picker-calendar-select-from:var(--nds-color-bg-default);
-    --nds-color-bg-picker-calendar-select-to:var(--nds-color-bg-point);
-    --nds-color-bg-picker-picker-press:var(--nds-color-bg-container);
-    
     /* [Checkbox - Basic] */
     --nds-color-text-checkbox-basic-default:var(--nds-color-text-font-1);
-    --nds-color-border-checkbox-basic-default:#707070;
-    --nds-color-text-checkbox-basic-selected:var(--nds-color-text-font-1);
-    --nds-color-border-checkbox-basic-checked:#FFFFFF;
-    --nds-color-bg-checkbox-basic-selected:var(--nds-color-bg-point);
     --nds-color-text-checkbox-basic-disabled:var(--nds-color-text-font-5);
+    --nds-color-text-checkbox-basic-selected:var(--nds-color-text-font-1);
+    --nds-color-text-checkbox-basic-selected-disabled:var(--nds-color-text-font-1);
+    --nds-color-border-checkbox-basic-default:var(--nds-color-icon-gray-600);
+    --nds-color-border-checkbox-basic-checked:var(--nds-color-icon-gray-50);
     --nds-color-border-checkbox-basic-disabled:var(--nds-color-border-line-2);
     --nds-color-bg-checkbox-basic-disabled:var(--nds-color-bg-container);
-    --nds-color-text-checkbox-basic-selected-disabled:var(--nds-color-text-font-1);
-    --nds-color-bg-checkbox-basic-selected-disabled:#B3B3B3;
+    --nds-color-bg-checkbox-basic-selected-disabled:var(--nds-color-gray-500);
+    --nds-color-bg-checkbox-basic-selected:var(--nds-color-bg-point);
 
     /* [Checkbox - Box] */
     --nds-color-text-checkbox-box-default:var(--nds-color-text-font-3);
-    --nds-color-border-checkbox-box-default:var(--nds-color-border-line-1);
     --nds-color-text-checkbox-box-disabled:var(--nds-color-text-font-3);
-    --nds-color-border-checkbox-box-disabled:var(--nds-color-border-line-1);
     --nds-color-text-checkbox-box-selected:var(--nds-color-text-point);
+    --nds-color-border-checkbox-box-default:var(--nds-color-border-line-1);
+    --nds-color-border-checkbox-box-disabled:var(--nds-color-border-line-1);
     --nds-color-border-checkbox-box-selected:var(--nds-color-border-point);
+    --nds-color-bg-checkbox-box-disabled:var(--nds-color-bg-disabled);
 
     /* [Checkbox - Survey] */
     --nds-color-text-checkbox-survey-default:var(--nds-color-text-font-3);
-    --nds-color-border-checkbox-survey-default:var(--nds-color-border-line-1);
     --nds-color-text-checkbox-survey-positive:var(--nds-color-text-font-3);
-    --nds-color-border-checkbox-survey-positive:var(--nds-color-border-point);
     --nds-color-text-checkbox-survey-negative:var(--nds-color-text-font-3);
+    --nds-color-border-checkbox-survey-default:var(--nds-color-border-line-1);
+    --nds-color-border-checkbox-survey-positive:var(--nds-color-border-point);
     --nds-color-border-checkbox-survey-negative:var(--nds-color-border-error);
     
     /* [Chip] */
@@ -475,18 +473,20 @@ html {
 
     /* [Indicator] */
     --nds-color-text-indicator-default:var(--nds-color-text-font-10);
-    --nds-color-bg-indicator-default:var(--nds-color-gray-900);
+    --nds-color-bg-indicator-number-default:var(--nds-color-gray-900);
+    --nds-color-bg-indicator-dot-default:var(--nds-color-gray-400);
+    --nds-color-bg-indicator-dot-active:var(--nds-color-bg-point);
 
     /* [Input] */
-    --nds-color-text-input-placeholder:var(--nds-color-text-font-5);
-    --nds-color-text-input-default:var(--nds-color-text-font-1);
-    --nds-color-border-input-default:var(--nds-color-border-line-2);
+    --nds-color-text-input-inactive:var(--nds-color-text-font-5);
+    --nds-color-text-input-filled:var(--nds-color-text-font-1);
     --nds-color-text-input-readonly:var(--nds-color-text-font-1);
-    --nds-color-bg-input-readonly:var(--nds-color-bg-disabled);
     --nds-color-text-input-disabled:var(--nds-color-text-font-1);
-    --nds-color-bg-input-disabled:var(--nds-color-bg-disabled);
+    --nds-color-border-input-default:var(--nds-color-border-line-2);
     --nds-color-border-input-focus:var(--nds-color-border-point);
     --nds-color-border-input-error:var(--nds-color-border-error);
+    --nds-color-bg-input-readonly:var(--nds-color-bg-disabled);
+    --nds-color-bg-input-disabled:var(--nds-color-bg-disabled);
     --nds-color-bg-input-load-data:var(--nds-color-bg-container);
 
     /* [Label] */
@@ -514,59 +514,83 @@ html {
     --nds-color-text-popover-default:var(--nds-color-text-font-10);
     --nds-color-border-popover-default:var(--nds-color-gray-900);
     --nds-color-bg-popover-default:var(--nds-color-gray-900);
-
+    
     /* [Progress Bar] */
     --nds-color-bg-progress-bg:var(--nds-color-bg-banner);
     --nds-color-bg-progress-active:var(--nds-color-bg-point);
+    --nds-color-bg-progress-bubble:var(--nds-color-gray-700);
+
+    /* [Picker] */
+    --nds-color-text-picker-calendar-select-to:var(--nds-color-text-font-10);
+    --nds-color-text-picker-calendar-select-from:var(--nds-color-gray-900);
+    --nds-color-text-picker-disabled:var(--nds-color-text-font-5);
+    --nds-color-text-picker-default:var(--nds-color-text-font-1);
+    --nds-color-text-picker-sunday:var(--nds-color-red-500);
+    --nds-color-text-picker-saturday:var(--nds-color-blue-500);
+    --nds-color-text-picker-week:var(--nds-color-text-font-4);
+    --nds-color-text-picker-picker-select:var(--nds-color-text-point);
+    --nds-color-bg-picker-calendar-select-from:var(--nds-color-bg-default);
+    --nds-color-bg-picker-calendar-select-to:var(--nds-color-bg-point);
+    --nds-color-bg-picker-picker-press:var(--nds-color-bg-container);
 
     /* [Radio - Basic] */
     --nds-color-text-radio-basic-default:var(--nds-color-text-font-1);
-    --nds-color-border-radio-basic-default:var(--nds-color-border-line-1);
-    --nds-color-bg-radio-basic-default:var(--nds-color-border-line-1);
-    --nds-color-text-radio-basic-selected:var(--nds-color-text-font-1);
-    --nds-color-border-radio-basic-selected:var(--nds-color-border-point);
-    --nds-color-bg-radio-basic-selected:var(--nds-color-bg-point);
     --nds-color-text-radio-basic-disabled:var(--nds-color-text-font-5);
-    --nds-color-border-radio-basic-disabled:var(--nds-color-border-line-2);
-    --nds-color-bg-radio-basic-disabled:var(--nds-color-bg-container);
-    --nds-color-bg-radio-basic-disabled-inner:var(--nds-color-border-line-1);
+    --nds-color-text-radio-basic-selected:var(--nds-color-text-font-1);
     --nds-color-text-radio-basic-selected-disabled:var(--nds-color-text-font-1);
-    --nds-color-bg-radio-basic-selected-disabled:#B3B3B3;
+    --nds-color-border-radio-basic-default:var(--nds-color-border-line-1);
+    --nds-color-border-radio-basic-selected:var(--nds-color-border-point);
+    --nds-color-border-radio-basic-disabled:var(--nds-color-border-line-2);
+    --nds-color-bg-radio-basic-default:var(--nds-color-gray-400);
+    --nds-color-bg-radio-basic-selected:var(--nds-color-bg-point);
+    --nds-color-bg-radio-basic-disabled:var(--nds-color-bg-container);
+    --nds-color-bg-radio-basic-disabled-inner:var(--nds-color-gray-400);
+    --nds-color-bg-radio-basic-selected-disabled:var(--nds-color-gray-500);
     --nds-color-bg-radio-basic-selected-disabled-inner:var(--nds-color-bg-default);
 
     /* [Radio - Box] */
     --nds-color-text-radio-box-default:var(--nds-color-text-font-3);
-    --nds-color-border-radio-box-default:var(--nds-color-border-line-1);
     --nds-color-text-radio-box-disabled:var(--nds-color-text-font-3);
-    --nds-color-border-radio-box-disabled:var(--nds-color-border-line-1);
     --nds-color-text-radio-box-selected:var(--nds-color-text-point);
+    --nds-color-border-radio-box-default:var(--nds-color-border-line-1);
+    --nds-color-border-radio-box-disabled:var(--nds-color-border-line-1);
     --nds-color-border-radio-box-selected:var(--nds-color-border-point);
+    --nds-color-bg-radio-box-selected:var(--nds-color-bg-default);
+    --nds-color-bg-radio-box-default:var(--nds-color-bg-banner);
+    --nds-color-bg-radio-box-disabled:var(--nds-color-bg-disabled);
     
     /* [Radio - Explain] */
     --nds-color-text-radio-explain-default:var(--nds-color-text-font-1);
-    --nds-color-border-radio-explain-default:var(--nds-color-border-line-1);
-    --nds-color-text-radio-explain-selected:var(--nds-color-text-point);
-    --nds-color-border-radio-explain-selected:var(--nds-color-border-point);
     --nds-color-text-radio-explain-disabled:var(--nds-color-text-font-3);
+    --nds-color-text-radio-explain-selected:var(--nds-color-text-point);
+    --nds-color-border-radio-explain-default:var(--nds-color-border-line-1);
+    --nds-color-border-radio-explain-selected:var(--nds-color-border-point);
 
     /* [Radio - Survey] */
     --nds-color-text-radio-survey-default:var(--nds-color-text-font-3);
-    --nds-color-border-radio-survey-default:var(--nds-color-border-line-1);
     --nds-color-text-radio-survey-positive:var(--nds-color-text-font-3);
-    --nds-color-border-radio-survey-positive:var(--nds-color-border-point);
     --nds-color-text-radio-survey-negative:var(--nds-color-text-font-3);
+    --nds-color-border-radio-survey-default:var(--nds-color-border-line-1);
+    --nds-color-border-radio-survey-positive:var(--nds-color-border-point);
     --nds-color-border-radio-survey-negative:var(--nds-color-border-error);
 
     /* [Select] */
     --nds-color-text-select-inactive:var(--nds-color-text-font-5);
     --nds-color-text-select-filled:var(--nds-color-text-font-1);
-    --nds-color-border-select-default:var(--nds-color-border-line-2);
     --nds-color-text-select-readonly:var(--nds-color-text-font-1);
-    --nds-color-bg-select-readonly:var(--nds-color-bg-disabled);
     --nds-color-text-select-disabled:var(--nds-color-text-font-1);
-    --nds-color-bg-select-disabled:var(--nds-color-bg-disabled);
+    --nds-color-border-select-default:var(--nds-color-border-line-2);
     --nds-color-border-select-focus:var(--nds-color-border-point);
     --nds-color-border-select-error:var(--nds-color-border-error);
+    --nds-color-bg-select-readonly:var(--nds-color-bg-disabled);
+    --nds-color-bg-select-disabled:var(--nds-color-bg-disabled);
+
+    /* [Step] */
+    --nds-color-text-step-active:var(--nds-color-text-font-10);
+    --nds-color-border-step-point:var(--nds-color-bg-point);
+    --nds-color-bg-step-default:var(--nds-color-bg-default);
+    --nds-color-bg-step-active:var(--nds-color-bg-point);
+    --nds-color-bg-step-disabled:var(--nds-color-bg-banner);
 
     /* [Switch] */
     --nds-color-bg-switch-off:#707070;
@@ -574,26 +598,19 @@ html {
     --nds-color-bg-switch-inner:var(--nds-color-bg-default);
 
     /* [Tab] */
-    --nds-color-border-tab-line-active:#111111;
+    --nds-color-text-tab-chip-default:var(--nds-color-text-font-10);
+    --nds-color-border-tab-line-active:var(--nds-color-gray-900);
     --nds-color-border-tab-line-default:var(--nds-color-border-line-2); /* tab-line, tab-chip에 사용*/
-    --nds-color-bg-tab-line-bg:var(--nds-color-bg-default);
-    --nds-color-text-tab-chip-default:#FFFFFF; /* TODO: active font color임. 확인 필요 */
-    --nds-color-bg-tab-chip-bg:var(--nds-color-bg-default); /* TODO: tab-chip에 사용되지 않는 컬러임. 확인 필요 */
-    --nds-color-bg-tab-chip-active:#111111;
-    --nds-color-bg-tab-chip-default:var(--nds-color-bg-container);
     --nds-color-bg-tab-bar-active:var(--nds-color-bg-default);
     --nds-color-bg-tab-bar-default:var(--nds-color-bg-banner);
+    --nds-color-bg-tab-chip-bg:var(--nds-color-bg-default); /* TODO: tab-chip에 사용되지 않는 컬러임. 확인 필요 */
+    --nds-color-bg-tab-line-bg:var(--nds-color-bg-default);
+    --nds-color-bg-tab-chip-active:var(--nds-color-gray-900);
+    --nds-color-bg-tab-chip-default:var(--nds-color-bg-container);
 
     /* [Toast] */
     --nds-color-text-toast-default:var(--nds-color-text-font-10);
     --nds-color-bg-toast-basic:var(--nds-color-gray-900);
-
-    /* [Step] */
-    --nds-color-text-step-active:var(--nds-color-bg-default);
-    --nds-color-border-step-point:var(--nds-color-bg-point);
-    --nds-color-bg-step-default:var(--nds-color-bg-default);
-    --nds-color-bg-step-active:var(--nds-color-bg-point);
-    --nds-color-bg-step-disabled:var(--nds-color-bg-banner);
     
     /* [Spacing] */
     --nds-spacing-0:0;
@@ -1029,6 +1046,25 @@ html {
     --nds-color-bluegray-700:#D9DFEB;
     --nds-color-bluegray-800:#EBEFF6;
     --nds-color-bluegray-900:#F3F5F8;
+
+    /* [Text (Dark)] */
+    --nds-color-text-visual:var(--nds-color-blue-300);
+    --nds-color-text-point:var(--nds-color-green-400);
+    --nds-color-text-positive:var(--nds-color-blue-400);
+    --nds-color-text-negative:var(--nds-color-red-300);
+    
+    /* [Border (Dark)] */
+    --nds-color-border-line-1:#707070;
+    --nds-color-border-point:var(--nds-color-green-400);
+    
+    /* [Background (Dark)] */
+    --nds-color-bg-point:var(--nds-color-green-400);
+    --nds-color-bg-visual:var(--nds-color-blue-300);
+    --nds-color-bg-dimmed:rgba(17, 17, 17, 0.80);
+
+    /* [Icon (Dark)] */
+    --nds-color-icon--gray-500:#909090;
+    --nds-color-icon--gray-400:#707070;
     
     /* [Button - Secondary (Dark)] */
     --nds-color-text-button-secondary-pressed:var(--nds-color-green-200);
@@ -1036,15 +1072,15 @@ html {
     --nds-color-bg-button-secondary-pressed:var(--nds-color-green-900);
 
     /* [Checkbox - Basic (Dark)] */
-    --nds-color-border-checkbox-basic-default:#B0B0B0;
-    --nds-color-border-checkbox-basic-checked:#212121;
     --nds-color-bg-checkbox-basic-selected-disabled:#929292;
 
     /* [Chip (Dark)] */
     --nds-color-bg-chip-active:#FFFFFF;
     
-    /* [Indicator] */
+    /* [Indicator (Dark)] */
     --nds-color-bg-indicator-default:#FFFFFF;
+    --nds-color-bg-indicator-number-default:#FFFFFF;
+    --nds-color-bg-indicator-dot-default:#707070;
 
     /* [Label (Dark)] */
     --nds-color-text-label-red:var(--nds-color-red-300);
@@ -1069,35 +1105,27 @@ html {
     /* [Popover (Dark)] */
     --nds-color-border-popover-default:#FFFFFF;
     --nds-color-bg-popover-default:#FFFFFF;
+    
+    /* [Progress Bar (Dark)] */
+    --nds-color-bg-progress-bubble:#D0D0D0;
+
+    /* [Picker (Dark)] */
+    --nds-color-text-picker-calendar-select-from:#FFFFFF;
 
     /* [Radio - Basic (Dark)] */
-    --nds-color-bg-radio-basic-selected-disabled:#909090;
+    --nds-color-bg-radio-basic-default:#707070;
+    --nds-color-bg-radio-basic-disabled-inner:#707070;
+    --nds-color-bg-radio-basic-selected-disabled:#929292;
 
     /* [Switch (Dark)] */
     --nds-color-bg-switch-off:#505050;
 
     /* [Tab (Dark)] */
     --nds-color-border-tab-line-active:#FFFFFF;
-    --nds-color-text-tab-chip-default:#121212;
     --nds-color-bg-tab-chip-active:#FFFFFF;
-    
+
     /* [Toast (Dark)] */
     --nds-color-bg-toast-basic:#FFFFFF;
-
-    /* [Text (Dark)] */
-    --nds-color-text-visual:var(--nds-color-blue-300);
-    --nds-color-text-point:var(--nds-color-green-400);
-    --nds-color-text-positive:var(--nds-color-blue-400);
-    --nds-color-text-negative:var(--nds-color-red-300);
-    
-    /* [Border (Dark)] */
-    --nds-color-border-line-1:#707070;
-    --nds-color-border-point:var(--nds-color-green-400);
-    
-    /* [Background (Dark)] */
-    --nds-color-bg-point:var(--nds-color-green-400);
-    --nds-color-bg-visual:var(--nds-color-blue-300);
-    --nds-color-bg-dimmed:rgba(17, 17, 17, 0.80);
 
     /* [System Line Icons (Dark)] - 12px ~ 24px */
     --nds-ico-minus-x12:url("../../../imgs/nds/ico/line/ico_minus_line_12_dk.svg");

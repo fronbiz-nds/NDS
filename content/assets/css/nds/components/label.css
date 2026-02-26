@@ -46,4 +46,4 @@
 .nds-label.-grade6 {border-color:var(--nds-color-border-label-navy); color:var(--nds-color-text-label-navy);}
 
 /* [Label - Variant: Text] */
-.nds-label.-form {color:#505050; font-size:1.4rem; line-height:2.2rem; text-align:left;}
+.nds-label.-form {color:var(--nds-color-text-font-3); font-size:1.4rem; line-height:2.2rem; text-align:left;}

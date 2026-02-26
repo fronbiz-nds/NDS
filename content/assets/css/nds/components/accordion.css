@@ -4,8 +4,7 @@
    아코디언 컴포넌트 스타일, 콘텐츠 확장/축소(Toggle) 및 상태 변화 정의
    ========================================================= */
    
-.nds-accordion > .title {display:flex; align-items:center; position:relative; width:100%; border:none; background-color:transparent; color:var(--nds-color-text-font-1); font-weight:600; font-size:1.6rem; transform:translate3d(0,0,0); transition:background-color .3s;}
-.nds-accordion > .title:active {background-color:var(--nds-color-gray-100); transition:none;}
+.nds-accordion > .title {display:flex; align-items:center; position:relative; width:100%; border:none; background-color:transparent; color:var(--nds-color-text-font-1); font-weight:600; font-size:1.6rem;}
 .nds-accordion > .title:before {content:""; position:absolute; top:50%; right:.4rem; width:2.4rem; height:2.4rem; background:var(--nds-ico-down2) no-repeat 0 / cover; transform:translateY(-50%);}
 .nds-accordion > .panel {color:var(--nds-color-text-font-1); font-size:1.4rem; opacity:0; transition:opacity 0.2s ease;}
 .nds-accordion.-slidedown .title:before {transform:translateY(-50%) rotate(180deg);}

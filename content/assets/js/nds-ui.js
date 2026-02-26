@@ -19,6 +19,8 @@ const NDS_UI = (function() {
     function Tabs() {
         const tabContainers = document.querySelectorAll('[data-nds-role="tab"]');
 
+        if (tabContainers.length === 0) return;
+
         tabContainers.forEach(container => {
             const tabList = container.querySelector('[data-nds-role="tab-list"]');
             const tabs = Array.from(tabList.querySelectorAll('[data-nds-role="tab-btn"]'));
@@ -511,6 +513,7 @@ const NDS_UI = (function() {
     function init() {
         Accordion();
         Tabs();
+        TextArea();
         Tooltip();
     }
 

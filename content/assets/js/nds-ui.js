@@ -510,7 +510,6 @@ const NDS_UI = (function() {
 
     function init() {
         Accordion();
-        Sample();
         Tabs();
         Tooltip();
     }

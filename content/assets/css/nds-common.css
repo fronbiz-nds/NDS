@@ -471,11 +471,11 @@ html {
     
     /* [Chip] */
     --nds-color-text-chip-active:var(--nds-color-text-font-10);
-    --nds-color-bg-chip-active:#111111;
+    --nds-color-bg-chip-active:var(--nds-color-gray-900);
 
     /* [Indicator] */
     --nds-color-text-indicator-default:var(--nds-color-text-font-10);
-    --nds-color-bg-indicator-default:#111111;
+    --nds-color-bg-indicator-default:var(--nds-color-gray-900);
 
     /* [Input] */
     --nds-color-text-input-placeholder:var(--nds-color-text-font-5);
@@ -512,8 +512,8 @@ html {
 
     /* [Popover] */
     --nds-color-text-popover-default:var(--nds-color-text-font-10);
-    --nds-color-border-popover-default:#111111;
-    --nds-color-bg-popover-default:#111111;
+    --nds-color-border-popover-default:var(--nds-color-gray-900);
+    --nds-color-bg-popover-default:var(--nds-color-gray-900);
 
     /* [Progress Bar] */
     --nds-color-bg-progress-bg:var(--nds-color-bg-banner);
@@ -586,7 +586,7 @@ html {
 
     /* [Toast] */
     --nds-color-text-toast-default:var(--nds-color-text-font-10);
-    --nds-color-bg-toast-basic:#111111;
+    --nds-color-bg-toast-basic:var(--nds-color-gray-900);
 
     /* [Step] */
     --nds-color-text-step-active:var(--nds-color-bg-default);

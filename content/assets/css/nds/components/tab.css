@@ -34,11 +34,11 @@
 
 /* [Tab - Layouts: Fixed, Accordion, Flexible, Swipe] */
 .nds-tab.-fixed .nds-tab-button {flex:1;}
-
-.nds-tab.-accordion .nds-tab-inner {flex-wrap:wrap; padding:1.2rem 2.4rem;}
-.nds-tab.-accordion .nds-tab-inner {flex-wrap:wrap; padding:1.2rem 2.4rem;}
-/* TODO: 아코디언 펼침 버튼 스타일 추가? 기존 button 컴포넌트의 아이콘 버튼과는 스타일이 달라 혼용할 수 없음 */
-
+.nds-tab.-accordion {position:relative; padding:0 5.6rem 1.2rem 0;}
+.nds-tab.-accordion .nds-tab-inner {flex-wrap:wrap; overflow:hidden; align-content:flex-start; padding:1.2rem 0 0 2.4rem; max-height:4.4rem;}
+.nds-tab.-accordion.-expanded .nds-tab-inner {max-height:50rem;}
+/* TODO: 화살표 애니메이션 확인 후 추가 필요. 아코디언 기준으로 작업 필요 */
+.nds-tab.-accordion [data-nds-role="tab-accordion-trigger"] {position:absolute; top:1.2rem; right:2.4rem; z-index:10; width:3.2rem; height:3.2rem;}
 .nds-tab.-flexible .nds-tab-inner {flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;}
 .nds-tab.-flexible .nds-tab-inner::-webkit-scrollbar {display:none;}
 .nds-tab.-flexible .nds-tab-inner {flex:0 0 auto;}

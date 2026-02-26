@@ -117,6 +117,39 @@ const NDS_UI = (function() {
                 });
             }
 
+            //아코디언 (펼침/닫힘)
+            const isAccordion = container.classList.contains('-accordion');
+            if (isAccordion) {
+                const accordionBtn = container.querySelector('[data-nds-role="tab-accordion-trigger"]');
+                
+                if (accordionBtn) {
+                    accordionBtn.addEventListener('click', () => {
+                        const isExpanded = container.classList.toggle('-expanded');
+                        
+                        const icon = accordionBtn.querySelector('.nds-ico');
+                        const hiddenText = accordionBtn.querySelector('.hide');
+
+                        if (isExpanded) {
+                            // 열림 상태 처리
+                            accordionBtn.setAttribute('aria-expanded', 'true');
+                            if (icon) {
+                                icon.classList.remove('nds-ico-arr-down1');
+                                icon.classList.add('nds-ico-arr-up1');
+                            }
+                            if (hiddenText) hiddenText.textContent = '접기';
+                        } else {
+                            // 닫힘 상태 처리
+                            accordionBtn.setAttribute('aria-expanded', 'false');
+                            if (icon) {
+                                icon.classList.remove('nds-ico-arr-up1');
+                                icon.classList.add('nds-ico-arr-down1');
+                            }
+                            if (hiddenText) hiddenText.textContent = '펼치기';
+                        }
+                    });
+                }
+            }
+
             if (isFlexible) {
                 tabList.addEventListener('scroll', handleScrollShadow);
             }

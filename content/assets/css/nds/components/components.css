@@ -3669,32 +3669,6 @@ p.info.-error,
 .badge.-lg.arr-red {position:relative; padding-right:var(--nds-spacing-16);}
 .badge.-lg.arr-red::after {content:""; position:absolute; right:.8rem; width:.4rem; height:.8rem; background:url(../imgs/nds/common/arr_right_label-error_line_8.png) no-repeat 0 / cover;}
 
-/* 툴팁 */
-.tooltip {display:inline-flex; position:relative; width:2.4rem; margin:0; vertical-align:middle;}
-.tooltip > .trigger {position:absolute; top:50%; left:0; width:2.4rem; height:2.4rem; margin-top:-.1rem; background:url(../../imgs/nds/common/ico_tooltip1_gray600_line_24.png) no-repeat 0 / cover; transform:translateY(-50%);}
-.dark-mode .tooltip > .trigger {position:absolute; top:50%; left:0; width:2.4rem; height:2.4rem; background:url(../../imgs/ico/common/ico-tooltip_dk.png) no-repeat 0 / cover; transform:translateY(-50%);}
-.tooltip > .panel {display:none; position:absolute; top:1.6rem; left:0; padding:var(--nds-spacing-20); border:1px solid var(--nds-color-border-line-3); border-radius:var(--nds-border-radius-16); background-color:var(--nds-color-bg-default); box-shadow:0 0.2rem .8rem rgba(0,0,0,.05); color:var(--nds-color-text-font-3); font-style:normal; font-weight:normal; font-size:1.4rem; line-height:1.5; text-align:left; text-decoration:none;}
-.tooltip.-active > .panel {display:block; z-index:90;}
-.tooltip.-reversed > .panel {top:auto; bottom:1.7rem;}
-.tooltip > .panel > .close {position:absolute; top:2rem; right:2rem; width:2.4rem; height:2.4rem; background:url(../../imgs/nds/common/ico_close1_line_24.png) no-repeat 0 0 / cover;}
-.dark-mode .tooltip > .panel > .close {position:absolute; top:2rem; right:2rem; width:2.4rem; height:2.4rem; background:url(../../imgs/ico/common/ico-tooltip-close_dk.png) no-repeat 0 0 / cover;}
-.tooltip > .panel > .title {display:block; margin-bottom:var(--nds-spacing-12); padding-right:var(--nds-spacing-24); color:var(--nds-color-text-font-1); font-weight:600; font-size:1.6rem;}
-.tooltip > .panel > .t-content {display:block; padding-right:2.8rem;}
-.tooltip > .panel > .title + .t-content {padding-right:var(--nds-spacing-0);}
-.tooltip > .panel > span:first-child {margin-top:0;}
-.tooltip > .panel span.dot {display:block; position:relative; padding-left:var(--nds-spacing-12); color:var(--nds-color-text-font-3); font-weight:400; word-break:keep-all; overflow-wrap:break-word;}
-.tooltip > .panel span.dot::before {content:""; display:block; position:absolute; top:0.8rem; left:0; width:.4rem; height:.4rem; border-radius:50%; background-color:var(--color-icon-gray600);}
-.tooltip > .panel > .sub-title {display:block; margin-bottom:1.2rem; color:var(--nds-color-text-font-1); font-weight:500; font-size:1.4rem;}
-.tooltip > .panel > .t-content > .sub-cont {display:block; margin-bottom:var(--nds-spacing-12); color:var(--nds-color-text-font-3); font-weight:400; font-size:1.4rem;}
-/* .tooltip > .panel > .t-content > span[class*=dot]:first-of-type {margin-top: 1.2rem;} */
-.tooltip > .panel span.dot + span.dot {margin-top:var(--nds-spacing-8);}
-
-.label + .tooltip {margin-bottom:.2rem;}
-.label.-tooltitle {color:var(--nds-color-text-font-3); font-weight:500; font-size:1.4rem;}
-
-.tooltip-button {display:inline-block; width:2.4rem !important; height:2.4rem !important; margin:0; background:url(../../imgs/nds/common/ico_tooltip1_gray600_line_24.png) no-repeat 0 / cover; vertical-align:middle;}
-.dark-mode .tooltip-button {display:inline-block; width:2.4rem !important; height:2.4rem !important; margin:0; background:url(../../imgs/ico/common/ico-tooltip_dk.png) no-repeat 0 / cover; vertical-align:middle;}
-
 /* 공유하기 */
 .shares {display:flex; justify-content:center; margin-top:4rem;}
 .shares:first-child {margin-top:var(--nds-spacing-0);}

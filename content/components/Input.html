@@ -13,6 +13,71 @@
 <body>
 	<div class="gl">
 		<!-- NDS components : S -->
+<div class="gc__heading">Input-box/basic</div>
+<script data-size="2" data-title="State=inactive" type="text/template">
+    <div class="nds-field -input" data-nds-role="field">
+        <label for="text1" class="nds-label -form">레이블</label>
+        <div class="control-wrap" data-nds-role="input-wrap">
+            <input type="text" id="text1" class="control" placeholder="플레이스홀더" aria-describedby="info-text1" data-nds-role="control">
+        </div>
+        <div class="info-wrap">
+			<p id="info-text1" class="message" data-nds-role="info">안내 문구 입력</p>
+		</div>
+    </div>
+</script>
+
+<script data-size="2" data-title="State=error" type="text/template">
+    <div class="nds-field -input -error " data-nds-role="field">
+        <label for="text2" class="nds-label -form">레이블</label>
+        <div class="control-wrap" data-nds-role="input-wrap">
+            <input type="text" id="text2" class="control" placeholder="플레이스홀더" value="입력된 텍스트 입니다" aria-describedby="info-text2" data-nds-role="control" aria-invalid="true">
+        </div>
+        <div class="info-wrap">
+        	<p id="info-text2" class="message" data-nds-role="info" role="alert">오류 메시지 출력</p>
+		</div>
+    </div>
+</script>
+
+<script data-size="2" data-title="State=success" type="text/template">
+    <div class="nds-field -input -success " data-nds-role="field">
+        <label for="text3" class="nds-label -form">레이블</label>
+        <div class="control-wrap" data-nds-role="input-wrap">
+            <input type="text" id="text3" class="control" placeholder="플레이스홀더" value="입력된 텍스트 입니다" aria-describedby="info-text3" data-nds-role="control">
+        </div>
+        <div class="info-wrap">
+        	<p id="info-text3" class="message" data-nds-role="info">검증필요 입력정보 확인 메시지</p>
+		</div>
+    </div>
+</script>
+
+<script data-size="2" data-title="State=readonly" type="text/template">
+    <div class="nds-field -input" data-nds-role="field">
+        <label for="text4" class="nds-label -form">레이블</label>
+        <div class="control-wrap" data-nds-role="input-wrap">
+            <input type="text" id="text4" class="control" placeholder="플레이스홀더" value="입력된 텍스트 입니다" aria-describedby="info-text4" data-nds-role="control" readonly>
+        </div>
+        <div class="info-wrap">
+        	<p id="info-text4" class="message" data-nds-role="info">안내 문구 입력</p>
+		</div>
+    </div>
+</script>
+
+<script data-size="2" data-title="State=disabled" type="text/template">
+    <div class="nds-field -input" data-nds-role="field">
+        <label for="text5" class="nds-label -form">레이블</label>
+        <div class="control-wrap" data-nds-role="input-wrap">
+            <input type="text" id="text5" class="control" placeholder="플레이스홀더" value="입력된 텍스트 입니다" aria-describedby="info-text5" data-nds-role="control" disabled>
+        </div>
+        <div class="info-wrap">
+        	<p id="info-text5" class="message" data-nds-role="info">안내 문구 입력</p>
+		</div>
+    </div>
+</script>
+
+	
+
+<!-- AS-IS : S -->
+<div class="gc__heading">AS-IS</div>
 <script data-size="2" data-title="Input | input-box/12serial @ State=disabled" type="text/template">
 	<div class="field serial -disabled">
 		<label for="rrn1" class="label multi-label">레이블</label>
@@ -2924,6 +2989,7 @@
 		</div>
 	</div>
 </script>
+<!-- AS-IS : E -->
 		<!-- NDS components : E -->
 	</div>
 	<!-- NDS Script -->

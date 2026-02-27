@@ -3,3 +3,34 @@
    ---------------------------------------------------------
    
    ========================================================= */
+
+/* Textarea와 css는 관리 및 유지보수를 위해 input.css에 작성함. */
+
+/* AS-IS */
+.textarea {position:relative;}
+.textarea textarea {display:block; width:100%; min-height:15.6rem; padding:var(--nds-spacing-16) var(--nds-spacing-32) var(--nds-spacing-20) var(--nds-spacing-20); border:1px solid var(--nds-color-border-line-2); border-radius:var(--nds-border-radius-12); background-color:transparent; color:var(--nds-color-text-font-1); font-size:1.5rem; resize:none; transition:border .3s;}
+.textarea textarea:focus {border-color:var(--nds-color-border-point);}
+.textarea textarea[readonly] {background-color:var(--nds-color-bg-container);}
+.textarea textarea[readonly]:focus {border-color:var(--nds-color-border-line-2);}
+.textarea textarea[disabled] {opacity:1; background-color:var(--nds-color-bg-container);}
+.textarea textarea::placeholder {color:var(--nds-color-text-font-5); font-weight:normal; letter-spacing:-.1rem;}
+.textarea .bottom-info .text-count {margin-top:1rem; color:var(--nds-color-text-font-1); font-size:1.3rem; text-align:right;}
+.textarea .bottom-info .text-count.-limit {color:var(--nds-color-text-error);}
+.textarea .bottom-info .total:before {content:" / ";}
+.textarea .bottom-info {display:flex; justify-content:space-between;}
+.textarea .bottom-info .info {width:80%; color:var(--nds-color-text-font-4); font-weight:400; font-size:1.3rem;}
+.textarea .info {width:100%; margin-top:1rem; padding:var(--nds-spacing-0) var(--nds-spacing-4); color:var(--nds-color-text-font-7); font-size:1.4rem; text-align:left;}
+.textarea .info.-bullet {position:relative; padding:var(--nds-spacing-0) var(--nds-spacing-4) var(--nds-spacing-0) 1.9rem;}
+.textarea .info.-bullet:before {content:""; position:absolute; top:1rem; left:0.6rem; width:.3rem; height:.3rem; border-radius:50%; background-color:var(--nds-color-text-font-7);}
+.textarea .message {width:100%; margin-top:1rem; padding:0 var(--nds-spacing-4); color:var(--nds-color-text-font-7); font-size:1.4rem; text-align:left;}
+.textarea.-error .message {color:var(--nds-color-text-error);}
+.textarea .clear {opacity:0; position:absolute; top:.8rem; right:.8rem; width:2.4rem; height:2.4rem; background:url(../../imgs/ico/common/ico-round-del.png) no-repeat 50% / 2.4rem;}
+.dark-mode .textarea .clear {opacity:0; position:absolute; top:.8rem; right:.8rem; width:2.4rem; height:2.4rem; background:url(../../imgs/ico/common/ico-round-del_dk.png) no-repeat 50% / 2.4rem;}
+.textarea .clear:focus {opacity:1;}
+.textarea.-textless .clear {display:none;}
+.textarea:not(.-textless).-focused .clear {opacity:1;}
+
+.textfield .textarea.-focused textarea {border-color:var(--nds-color-border-point);}
+
+.box-radios + .textarea,
+.box-checks + .textarea {margin-top:var(--nds-spacing-20);}

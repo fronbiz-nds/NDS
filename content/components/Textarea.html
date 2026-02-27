@@ -13,6 +13,58 @@
 <body>
 	<div class="gl">
 		<!-- NDS components : S -->
+<div class="gc__heading">Textarea-base</div>
+<script data-size="2" data-title="State=inactive" type="text/template">
+	<div class="nds-field -textarea" data-nds-role="field">
+		<label for="textarea1" class="nds-label -form">레이블</label>
+		<div class="control-wrap" data-nds-role="input-wrap">
+			<textarea id="textarea1" class="control" placeholder="내용을 입력하세요" maxlength="50" aria-describedby="info-textarea1 count-textarea1" data-nds-role="control"></textarea>
+		</div>
+		<div class="info-wrap">
+			<p id="info-textarea1" class="message" data-nds-role="info">안내 문구 입력</p>
+			<div id="count-textarea1" class="text-counter" data-nds-role="count-wrap">
+				<!-- TODO: 타이포그래피 스타일 적용 필요. 포인트 컬러. -->
+				<span class="count" data-nds-role="count"></span>
+				<span class="total" data-nds-role="total"></span>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="State=filled" type="text/template">
+	<div class="nds-field -textarea" data-nds-role="field">
+		<label for="textarea2" class="nds-label -form">레이블</label>
+		<div class="control-wrap" data-nds-role="input-wrap">
+			<textarea id="textarea2" class="control" placeholder="내용을 입력하세요" maxlength="50" aria-describedby="info-textarea2 count-textarea2" data-nds-role="control">입력된 텍스트 입니다</textarea>
+		</div>
+		<div class="info-wrap">
+			<p id="info-textarea2" class="message" data-nds-role="info">안내 문구 입력</p>
+			<div id="count-textarea2" class="text-counter" data-nds-role="count-wrap">
+				<!-- TODO: 타이포그래피 스타일 적용 필요. 포인트 컬러. -->
+				<span class="count" data-nds-role="count"></span>
+				<span class="total" data-nds-role="total"></span>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="State=error" type="text/template">
+	<div class="nds-field -textarea -error" data-nds-role="field">
+		<label for="textarea3" class="nds-label -form">레이블</label>
+		<div class="control-wrap" data-nds-role="input-wrap">
+			<textarea id="textarea3" class="control" placeholder="내용을 입력하세요" maxlength="50" aria-describedby="info-textarea3 count-textarea3" data-nds-role="control">입력된 텍스트 입니다</textarea>
+		</div>
+		<div class="info-wrap">
+			<p id="info-textarea3" class="message" data-nds-role="info" role="alert">오류 메시지 출력</p>
+			<div id="count-textarea3" class="text-counter" data-nds-role="count-wrap">
+				<!-- TODO: 타이포그래피 스타일 적용 필요. 포인트 컬러. -->
+				<span class="count" data-nds-role="count"></span>
+				<span class="total" data-nds-role="total"></span>
+			</div>
+		</div>
+	</div>
+</script>
+
+<!-- AS-IS: S -->
+<div class="gc__heading">AS-IS</div>
 <script data-size="2" data-title="Text area | textarea-message-basic @ State=error" type="text/template">
 	<div class="field textfield">
 		<label for="textarea" class="label">레이블</label>
@@ -73,6 +125,7 @@
 		</div>
 	</div>
 </script>
+<!-- AS-IS: E -->
 		<!-- NDS components : E -->
 	</div>
 	<!-- NDS Script -->

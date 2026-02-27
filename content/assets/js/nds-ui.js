@@ -1,6 +1,97 @@
 
 const NDS_UI = (function() {
     /**
+     * Accordion 컴포넌트
+     */
+    function Accordion() {
+        document.addEventListener('click', function (e) {
+            const marker = e.target.closest('[data-nds-role="marker"]');
+            if (!marker) return;
+
+            const fold = marker.closest('[data-nds-role="fold"]');
+            const hiddenItems = fold.querySelectorAll('[data-nds-role="hidden"]');
+            const isOpen = fold.classList.contains('-active');
+            let foldSize;
+            let unfoldSize;
+
+            marker.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+
+            if (!isOpen) {
+                foldSize = fold.offsetHeight;
+                fold.classList.add('-slidedown');
+                unfoldSize = fold.offsetHeight;
+                const duration = 200;
+                const delay = 10;
+
+                anime({
+                    targets: hiddenItems,
+                    easing: 'linear',
+                    duration: duration,
+                    delay: anime.stagger(delay),
+                    opacity: [0, 1],
+                    complete: function () {
+                        hiddenItems.forEach(function (item) {
+                            item.removeAttribute('style');
+                        });
+                    }
+                });
+                anime({
+                    targets: fold,
+                    easing: 'linear',
+                    duration: duration + delay * hiddenItems.length - delay,
+                    height: [foldSize, unfoldSize],
+                    complete: function () {
+                        fold.classList.remove('-slidedown');
+                        fold.classList.add('-active');
+                        fold.removeAttribute('style');
+                    }
+                });
+
+            } else {
+                const duration = 150;
+                const delay = 0;
+                if (!foldSize) {
+                    fold.classList.remove('-active');
+                    foldSize = fold.offsetHeight;
+                    fold.classList.add('-active');
+                }
+
+                unfoldSize = fold.offsetHeight;
+                fold.classList.remove('-active');
+                fold.classList.add('-slideup');
+
+                anime({
+                    targets: hiddenItems,
+                    easing: 'linear',
+                    height: { value: 0, duration: duration },
+                    opacity: { value: 0, duration: duration / 2 },
+                    delay: anime.stagger(delay, { direction: 'reverse' }),
+                });
+                anime({
+                    targets: fold,
+                    easing: 'linear',
+                    duration: duration + delay * hiddenItems.length - delay,
+                    height: [unfoldSize, foldSize],
+                    complete: function () {
+                        fold.classList.remove('-slideup');
+                        fold.removeAttribute('style');
+                        hiddenItems.forEach(function (item) {
+                            item.removeAttribute('style');
+                        });
+                    }
+                });
+            }
+        });
+
+        const folds = document.querySelectorAll('[data-nds-role="fold"]');
+        folds.forEach(function (item) {
+            const title = item.querySelector('[data-nds-role="marker"]');
+            const isOpen = item.classList.contains('-active');
+            title.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    }
+    
+    /**
      * Tab 컴포넌트
      * - 타입(-line, -bar, -chip, -text) 및 레이아웃(-fixed, -flexible, -accordion, -swipe)에 대응
      * 
@@ -199,184 +290,48 @@ const NDS_UI = (function() {
     }
 
     /**
-     * Toast 컴포넌트
-     * - 화면에 일시적인 알림 메시지를 띄우고, 3초 뒤 자동으로 DOM에서 제거됨
+     * TextField 컴포넌트 (Input, Textarea)
+     * - 폼 입력 필드의 상태(포커스, 글자 수 카운팅, 유효성)를 관리하고, 포커스 시 입력 초기화(Clear) 버튼을 동적으로 생성함
+     *
+     * * * [필수 HTML 구조 - data-nds-role 속성]
+     * 필드 컨테이너 : data-nds-role="field" (레이블과 입력창을 모두 포함하는 최상위 영역)
+     * 입력 래퍼     : data-nds-role="input-wrap" (실제 입력 요소와 초기화 버튼을 감싸는 영역)
+     * 입력 컨트롤   : data-nds-role="control" (실제 input 또는 textarea 태그)
+     * 글자 수 표시  : data-nds-role="count" (선택적 사용, 현재 입력 글자 수)
+     * 최대 글자 수  : data-nds-role="total" (선택적 사용, 제한 글자 수)
      * 
-     * * @example
-     * NDS_UI.Toast({ message: '데이터가 성공적으로 저장되었습니다.' });
-     * 
-     * 주의사항: 사용자 작업을 중단시켜야 되는 메시지는 alert modal 컴포넌트 사용 필요
-     */
-
-    // NOTE: AS-IS 토스트 컴포넌트는 HTML에 요소를 미리 마크업 하고 display, setTimeout을 통해 제어함. 
-    // 이 방식은 접근성에 어긋나기 때문에 동적 DOM 생성 및 이벤트 기반 제거 방식으로 변경함.
-    let lastFocusedElement;
-
-    function Toast(options) {
-        options = options || {};
-        const message = options.message || '알림이 발생했습니다.';
-        lastFocusedElement = document.activeElement;
-        
-        // 컴포넌트 중복 생성 방지
-        const existingToast = document.querySelector('[data-nds-role="toast"]');
-        if (existingToast) {
-            existingToast.remove();
-        }
-
-        const toastEl = document.createElement('div');
-        toastEl.setAttribute('data-nds-role', 'toast');
-        toastEl.className = 'nds-toast';
-        toastEl.textContent = message;
-        toastEl.setAttribute('role', 'alert');
-        toastEl.setAttribute('aria-live', 'polite'); // polite: 사용자가 진행중인 작업을 완료했을때 사용. assertive: 스크린 리더가 수행중인 작업을 중단하고 알림. 서버 오류 등.
-        toastEl.setAttribute('aria-atomic', 'true');
-
-        document.body.appendChild(toastEl);
-
-        requestAnimationFrame(() => {
-            toastEl.classList.add('-active');
-        });
-
-        toastEl.addEventListener('animationend', (e) => {
-            if (e.target === toastEl) {
-                toastEl.remove();
-            }
-        });
-    }
-
-    /**
-     * Accordion 컴포넌트
-     */
-    function Accordion() {
-        document.addEventListener('click', function (e) {
-            const marker = e.target.closest('[data-nds-role="marker"]');
-            if (!marker) return;
-
-            const fold = marker.closest('[data-nds-role="fold"]');
-            const hiddenItems = fold.querySelectorAll('[data-nds-role="hidden"]');
-            const isOpen = fold.classList.contains('-active');
-            let foldSize;
-            let unfoldSize;
-
-            marker.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
-
-            if (!isOpen) {
-                foldSize = fold.offsetHeight;
-                fold.classList.add('-slidedown');
-                unfoldSize = fold.offsetHeight;
-                const duration = 200;
-                const delay = 10;
-
-                anime({
-                    targets: hiddenItems,
-                    easing: 'linear',
-                    duration: duration,
-                    delay: anime.stagger(delay),
-                    opacity: [0, 1],
-                    complete: function () {
-                        hiddenItems.forEach(function (item) {
-                            item.removeAttribute('style');
-                        });
-                    }
-                });
-                anime({
-                    targets: fold,
-                    easing: 'linear',
-                    duration: duration + delay * hiddenItems.length - delay,
-                    height: [foldSize, unfoldSize],
-                    complete: function () {
-                        fold.classList.remove('-slidedown');
-                        fold.classList.add('-active');
-                        fold.removeAttribute('style');
-                    }
-                });
-
-            } else {
-                const duration = 150;
-                const delay = 0;
-                if (!foldSize) {
-                    fold.classList.remove('-active');
-                    foldSize = fold.offsetHeight;
-                    fold.classList.add('-active');
-                }
-
-                unfoldSize = fold.offsetHeight;
-                fold.classList.remove('-active');
-                fold.classList.add('-slideup');
-
-                anime({
-                    targets: hiddenItems,
-                    easing: 'linear',
-                    height: { value: 0, duration: duration },
-                    opacity: { value: 0, duration: duration / 2 },
-                    delay: anime.stagger(delay, { direction: 'reverse' }),
-                });
-                anime({
-                    targets: fold,
-                    easing: 'linear',
-                    duration: duration + delay * hiddenItems.length - delay,
-                    height: [unfoldSize, foldSize],
-                    complete: function () {
-                        fold.classList.remove('-slideup');
-                        fold.removeAttribute('style');
-                        hiddenItems.forEach(function (item) {
-                            item.removeAttribute('style');
-                        });
-                    }
-                });
-            }
-        });
-
-        const folds = document.querySelectorAll('[data-nds-role="fold"]');
-        folds.forEach(function (item) {
-            const title = item.querySelector('[data-nds-role="marker"]');
-            const isOpen = item.classList.contains('-active');
-            title.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        });
-    }
-    
-    /**
-     * Input, Textarea 컴포넌트
+     * * * * [참고 사항]
+     * - 초기화(Clear) 버튼은 JS에서 data-nds-role="clear" 속성으로 동적 생성됨
+     * (단, input-wrap에 data-clear="false" 속성이 있거나 readonly/disabled 상태일 경우 생성되지 않음)
      */
     function TextField() {
-        if (TextField.isInitialized) return;
-        TextField.isInitialized = true;
+        // 입력값 상태 갱신
+        const updateState = (target) => {
+            if (target.tagName !== 'TEXTAREA') return;
 
-        // 텍스트에어리어 자동 확장
-        const autoExpand = (target) => {
-            const wrap = target.closest('.-extend');
-            if (wrap) {
-                target.style.height = 'auto';
-                target.style.height = target.scrollHeight + 'px';
-            }
-        };
-
-        // 글자 수 카운팅
-        const updateCount = (target) => {
             const field = target.closest('[data-nds-role="field"]');
             const countEl = field?.querySelector('[data-nds-role="count"]');
-            if (countEl) countEl.innerText = target.value.length;
-        };
+            const totalEl = field?.querySelector('[data-nds-role="total"]');
+            const total = target.getAttribute('maxlength');
 
-        // 입력값 상태(textless) 갱신
-        const updateState = (target) => {
-            const wrap = target.closest('[data-nds-role="input-wrap"]');
-            const field = target.closest('[data-nds-role="field"]');
-            const label = field?.querySelector('label');
-            
-            const isTextless = target.value.length === 0;
-            if (isTextless) {
-                wrap?.classList.add('-textless');
-                label?.classList.add('-textless');
-                field?.classList.add('-textless');
-            } else {
-                wrap?.classList.remove('-textless');
-                label?.classList.remove('-textless');
-                field?.classList.remove('-textless');
+            if (totalEl && total) {
+                totalEl.innerText = total;
             }
 
-            updateCount(target);
-            autoExpand(target);
+            if (countEl) {
+                const currentLength = target.value.length;
+                countEl.innerText = currentLength;
+
+                if (total && currentLength >= parseInt(total, 10)) {
+                    // TODO: 타이포그래피 스타일 적용 필요.
+                    countEl.classList.add('-error');
+                    target.setAttribute('aria-invalid', 'true');
+                } else {
+                    // TODO: 타이포그래피 스타일 적용 필요.
+                    countEl.classList.remove('-error');
+                    target.removeAttribute('aria-invalid');
+                }
+            }
         };
 
         // NOTE: 올원뱅킹에만 있는 로직. 확인 후 추가 여부 판단 필요
@@ -482,20 +437,22 @@ const NDS_UI = (function() {
             }
         };
 
-        document.querySelectorAll('[data-nds-role="control"]').forEach(control => {
-            const wrap = control.closest('[data-nds-role="input-wrap"]');
-            const label = control.closest('[data-nds-role="field"]')?.querySelector('label');
+        const initElements = () => {
+            document.querySelectorAll('[data-nds-role="control"]').forEach(control => {
+                if (control.dataset.ndsInit) return;
+                control.dataset.ndsInit = 'true';
+                updateState(control);
+            });
+        };
 
-            if (control.readOnly) {
-                wrap?.classList.add('-readonly');
-                label?.classList.add('-readonly');
-            }
-            if (control.disabled) {
-                wrap?.classList.add('-disabled');
-                label?.classList.add('-disabled');
-            }
-            updateState(control);
-        });
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initElements);
+        } else {
+            initElements();
+        }
+
+        if (TextField.isInitialized) return;
+        TextField.isInitialized = true;
 
         document.addEventListener('input', function(e) {
             const target = e.target;
@@ -524,7 +481,7 @@ const NDS_UI = (function() {
                 const clearBtn = document.createElement('button');
                 clearBtn.type = 'button';
                 clearBtn.title = '초기화';
-                clearBtn.className = 'nds-button -ico nds-clear'; 
+                clearBtn.className = 'nds-button -ico clear'; 
                 clearBtn.setAttribute('data-nds-role', 'clear');
                 clearBtn.innerHTML = '<i class="nds-ico -x24 nds-ico-fill-cancel1" aria-hidden="true"></i><span class="hide">초기화</span>';
 
@@ -540,9 +497,15 @@ const NDS_UI = (function() {
 
         document.addEventListener('focusout', function(e) {
             const target = e.target;
-            if (!target.matches('[data-nds-role="control"]')) return;
+            const isControl = target.matches('[data-nds-role="control"]');
+            const isClearBtn = target.matches('[data-nds-role="clear"]');
+
+            if (!isControl && !isClearBtn) return;
 
             const wrap = target.closest('[data-nds-role="input-wrap"]');
+            
+            if (e.relatedTarget && wrap?.contains(e.relatedTarget)) return;
+
             const field = target.closest('[data-nds-role="field"]');
             const label = field?.querySelector('label');
 
@@ -552,27 +515,76 @@ const NDS_UI = (function() {
 
             // NOTE: 각 채널별에 있던 고유 로직. 확인 후 추가 여부 판단 필요
             if (!target.readOnly && !target.disabled) {
-                handleFixer(target, false); // Fixer 원복
+                handleFixer(target, false);
             }
         });
 
-        document.addEventListener('mousedown', function(e) {
+        document.addEventListener('click', function(e) {
             const clearBtn = e.target.closest('[data-nds-role="clear"]');
             if (!clearBtn) return;
 
-            e.preventDefault(); 
             const wrap = clearBtn.closest('[data-nds-role="input-wrap"]');
             const control = wrap.querySelector('[data-nds-role="control"]');
 
             if (control) {
                 control.value = '';
                 
-                const field = wrap.closest('[data-nds-role="field"]');
-                field?.classList.remove('-error');
                 control.removeAttribute('aria-invalid');
 
                 updateState(control);
                 control.focus();
+            }
+        });
+
+        document.addEventListener('mousedown', function(e) {
+            const clearBtn = e.target.closest('[data-nds-role="clear"]');
+            if (clearBtn) e.preventDefault();
+        });
+    }
+
+    /**
+     * Toast 컴포넌트
+     * - 화면에 일시적인 알림 메시지를 띄우고, 3초 뒤 자동으로 DOM에서 제거됨
+     * 
+     * * @example
+     * NDS_UI.Toast({ message: '데이터가 성공적으로 저장되었습니다.' });
+     * 
+     * * * * [주의사항]
+     * - 사용자 작업을 중단시켜야 되는 메시지는 alert modal 컴포넌트 사용 필요
+     */
+
+    // NOTE: AS-IS 토스트 컴포넌트는 HTML에 요소를 미리 마크업 하고 display, setTimeout을 통해 제어함. 
+    // 이 방식은 접근성에 어긋나기 때문에 동적 DOM 생성 및 이벤트 기반 제거 방식으로 변경함.
+    function Toast(options) {
+        options = options || {};
+        const message = options.message || '알림이 발생했습니다.';
+        lastFocusedElement = document.activeElement;
+        
+        // 컴포넌트 중복 생성 방지
+        const existingToast = document.querySelector('[data-nds-role="toast"]');
+        if (existingToast) {
+            existingToast.remove();
+        }
+
+        const toastEl = document.createElement('div');
+        toastEl.setAttribute('data-nds-role', 'toast');
+        toastEl.className = 'nds-toast';
+        toastEl.textContent = message;
+        toastEl.setAttribute('role', 'alert');
+        // polite: 사용자가 진행중인 작업을 완료했을때 사용. 
+        // assertive: 스크린 리더가 수행중인 작업을 중단하고 알림이 필요할때 사용. 서버 오류 등.
+        toastEl.setAttribute('aria-live', 'polite'); 
+        toastEl.setAttribute('aria-atomic', 'true');
+
+        document.body.appendChild(toastEl);
+
+        requestAnimationFrame(() => {
+            toastEl.classList.add('-active');
+        });
+
+        toastEl.addEventListener('animationend', (e) => {
+            if (e.target === toastEl) {
+                toastEl.remove();
             }
         });
     }
@@ -586,7 +598,7 @@ const NDS_UI = (function() {
      * 툴팁 트리거   : data-nds-role="tooltip-trigger" (aria-controls="패널ID" 필수)
      * 툴팁 패널     : data-nds-role="tooltip-panel" (id="패널ID" 필수)
      * 
-     * * * [참고 사항]
+     * * * * [참고 사항]
      * - 닫기 버튼은 JS에서 data-nds-role="tooltip-close" 속성으로 동적 생성됨
      */
     function Tooltip() {
@@ -773,9 +785,9 @@ const NDS_UI = (function() {
 
     return {
         init: init,
-        Toast: Toast,
         Tabs: Tabs,
         TextField: TextField,
+        Toast: Toast,
         Tooltip: Tooltip,
     }
 }());

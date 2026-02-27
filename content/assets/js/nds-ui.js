@@ -102,11 +102,6 @@ const NDS_UI = (function() {
      */
 
     // NOTE: AS-IS 스크립트가 tabs(), subs(), segments()로 분리되어있어 관리 및 유지보수에 용이하지 않아 하나의 함수로 통합함
-    // 단 올원뱅크의 아래 함수만 충족하지 않음. 특정 케이스에만 적용되는 스크립트인듯한데 해당 케이스를 찾을 수 없음...따라서 통합 함수에서 제외함
-    // common-ui.js:166
-    // if(tab.parentNode.nextElementSibling) {
-    // 	tab.parentNode.nextElementSibling.classList.add('mt-15')
-    // }
     function Tabs() {
         const tabContainers = document.querySelectorAll('[data-nds-role="tab"]');
 
@@ -310,6 +305,7 @@ const NDS_UI = (function() {
             if (target.tagName !== 'TEXTAREA') return;
 
             const field = target.closest('[data-nds-role="field"]');
+            const infoEl = field?.querySelector('[data-nds-role="info"]');
             const countEl = field?.querySelector('[data-nds-role="count"]');
             const totalEl = field?.querySelector('[data-nds-role="total"]');
             const total = target.getAttribute('maxlength');
@@ -318,23 +314,30 @@ const NDS_UI = (function() {
                 totalEl.innerText = total;
             }
 
-            if (countEl) {
+            if (countEl && total) {
                 const currentLength = target.value.length;
                 countEl.innerText = currentLength;
 
-                if (total && currentLength >= parseInt(total, 10)) {
-                    // TODO: 타이포그래피 스타일 적용 필요.
-                    countEl.classList.add('-error');
+                if (currentLength > parseInt(total, 10)) {
+                    countEl.classList.add('-limit');
                     target.setAttribute('aria-invalid', 'true');
+
+                    if (infoEl) {
+                        infoEl.classList.add('-error');
+                        infoEl.innerHTML = '<span class="hide">오류: </span>최대 글자 수를 초과했습니다.';
+                    }
                 } else {
-                    // TODO: 타이포그래피 스타일 적용 필요.
-                    countEl.classList.remove('-error');
+                    countEl.classList.remove('-limit');
                     target.removeAttribute('aria-invalid');
+
+                    if (infoEl) {
+                        infoEl.classList.remove('-error');
+                        infoEl.innerHTML = ''; 
+                    }
                 }
             }
         };
 
-        // NOTE: 올원뱅킹에만 있는 로직. 확인 후 추가 여부 판단 필요
         // 하단 고정 버튼(.fixer) 및 스크롤 버퍼 제어 로직
         const handleFixer = (target, isFocusIn) => {
             const root = target.closest('.container')?.parentNode;
@@ -383,57 +386,6 @@ const NDS_UI = (function() {
                 }, 200);
             } else if (isLayer || isAlert) {
                 applyFixerState();
-            }
-        };
-
-        // NOTE: 금상몰에만 있는 로직. 확인 후 추가 여부 판단 필요
-        // OS별 스크롤 애니메이션 제어 로직
-        const handleScroll = (target, label) => {
-            const uaClass = typeof opa !== 'undefined' ? opa.exeStatus : null;
-            if (uaClass === 5) return; 
-
-            if (target.closest('[data-scroll="false"]')) return;
-
-            const root = target.closest('.container')?.parentNode;
-            if (!root) return;
-
-            const rootID = root.id || '';
-            const contents = root.querySelector('.contents');
-            
-            let targetOffset = label ? label.getBoundingClientRect().top : target.getBoundingClientRect().top;
-            
-            if (target.closest('[data-scroll]') && target.closest('[data-scroll]').dataset.scroll == 'item') {
-                const group = target.closest('[data-scroll="group"]');
-                if(group) targetOffset = group.getBoundingClientRect().top;
-            } else if (target.closest('[role ="tabpanel"]') && !target.matches('input')) {
-                const tabPanels = target.closest('.middle-tabs-panels');
-                if (tabPanels && tabPanels.previousElementSibling) {
-                    targetOffset = tabPanels.previousElementSibling.getBoundingClientRect().top - 30;
-                }
-            }
-
-            let scrollTarget, targetScrollTop;
-
-            if (root.classList.contains('page')) {
-                scrollTarget = document.documentElement;
-                const upperHeight = (typeof information !== 'undefined') ? information.upperHeight : 60;
-                targetScrollTop = scrollTarget.scrollTop + targetOffset - upperHeight;
-            } else {
-                scrollTarget = contents;
-                if (!scrollTarget) return;
-                const upperHeight = (window[rootID] && window[rootID].information) ? window[rootID].information.upperHeight : 60;
-                targetScrollTop = scrollTarget.scrollTop + targetOffset - upperHeight;
-            }
-
-            if (typeof anime !== 'undefined') {
-                setTimeout(() => {
-                    anime({
-                        targets: scrollTarget,
-                        duration: 100,
-                        easing: 'linear',
-                        scrollTop: targetScrollTop
-                    });
-                }, 1);
             }
         };
 
@@ -488,10 +440,8 @@ const NDS_UI = (function() {
                 wrap.appendChild(clearBtn);
             }
 
-            // NOTE: 각 채널별에 있던 고유 로직. 확인 후 추가 여부 판단 필요
             if (!isReadonly && !isDisabled) {
                 handleFixer(target, true);
-                handleScroll(target, label);
             }
         });
 
@@ -513,7 +463,6 @@ const NDS_UI = (function() {
             wrap?.classList.remove('-focused');
             field?.classList.remove('-focused');
 
-            // NOTE: 각 채널별에 있던 고유 로직. 확인 후 추가 여부 판단 필요
             if (!target.readOnly && !target.disabled) {
                 handleFixer(target, false);
             }
@@ -571,8 +520,8 @@ const NDS_UI = (function() {
         toastEl.className = 'nds-toast';
         toastEl.textContent = message;
         toastEl.setAttribute('role', 'alert');
-        // polite: 사용자가 진행중인 작업을 완료했을때 사용. 
-        // assertive: 스크린 리더가 수행중인 작업을 중단하고 알림이 필요할때 사용. 서버 오류 등.
+        // polite: 사용자가 수행중인 작업을 멈추면 읽어줌
+        // assertive: 사용자가 수행중인 작업을 중단하고 읽어줌
         toastEl.setAttribute('aria-live', 'polite'); 
         toastEl.setAttribute('aria-atomic', 'true');
 
@@ -645,19 +594,6 @@ const NDS_UI = (function() {
         const trigger = e.target.closest('[data-nds-role="tooltip-trigger"]');
         const tooltipContainer = e.target.closest('[data-nds-role="tooltip"]');
         const activeTooltips = document.querySelectorAll('[data-nds-role="tooltip"].-active');
-
-        // NOTE: 사용자 경험 측면에서 개선이 필요해 추가함
-        // 외부 영역 클릭 감지. @result - close tooltip
-        if (!tooltipContainer && !trigger) {
-            if (activeTooltips.length === 0) return;
-
-            activeTooltips.forEach(function(tt) {
-                const ttTrigger = tt.querySelector('[data-nds-role="tooltip-trigger"]');
-                const ttPanel = tt.querySelector('[data-nds-role="tooltip-panel"]');
-                closeTooltip(tt, ttPanel, ttTrigger, false);
-            });
-            return;
-        }
 
         if (!trigger) return;
 

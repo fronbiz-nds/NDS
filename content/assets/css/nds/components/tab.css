@@ -7,41 +7,41 @@
 /* TODO: 추후 레이아웃 스타일(여백 등) 추가 필요. */
 
 /* [Tab - Base] */
-.nds-tab-inner {display:flex; align-items:center; position:relative; width:100%; --indicator-left:0px; --indicator-width:0px;}
-.nds-tab-button {display:flex; justify-content:center; align-items:center; position:relative; z-index:1; border:none; background:transparent; color:var(--nds-color-text-font-3); font-size:1.5rem; line-height:2.2rem; white-space:nowrap; cursor:pointer; transition:color 0.2s ease, background-color 0.2s ease;}
-.nds-tab-button.-active {color:var(--nds-color-text-font-1); font-weight:600;}
+.tab-inner {display:flex; align-items:center; position:relative; width:100%; --indicator-left:0px; --indicator-width:0px;}
+.tab-button {display:flex; justify-content:center; align-items:center; position:relative; z-index:1; border:none; background:transparent; color:var(--nds-color-text-font-3); font-size:1.5rem; line-height:2.2rem; white-space:nowrap; cursor:pointer; transition:color 0.2s ease, background-color 0.2s ease;}
+.tab-button.-active {color:var(--nds-color-text-font-1); font-weight:600;}
 
 /* [Tab - Variants: Line] */
 .nds-tab.-line {border-bottom:1px solid var(--nds-color-border-tab-line-default);}
-.nds-tab.-line .nds-tab-button {padding:1.2rem 1.6rem;}
-.nds-tab.-line .nds-tab-inner::after {content:""; position:absolute; bottom:-1px; left:var(--indicator-left); z-index:2; width:var(--indicator-width); height:0.2rem; background-color:var(--nds-color-border-tab-line-active); transition:left 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);}
+.nds-tab.-line .tab-button {padding:1.2rem 1.6rem;}
+.nds-tab.-line .tab-inner::after {content:""; position:absolute; bottom:-1px; left:var(--indicator-left); z-index:2; width:var(--indicator-width); height:0.2rem; background-color:var(--nds-color-border-tab-line-active); transition:left 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);}
 
 /* [Tab - Variants: Bar] */
 .nds-tab.-bar {padding:0.3rem; border-radius:var(--nds-border-radius-12); background-color:var(--nds-color-bg-tab-bar-default);}
-.nds-tab.-bar .nds-tab-button {flex:1; padding:1.1rem 1.2rem; font-size:1.4rem;}
-.nds-tab.-bar .nds-tab-inner::before {content:""; position:absolute; top:0; bottom:0; left:var(--indicator-left); z-index:0; width:var(--indicator-width); border-radius:var(--nds-border-radius-10); background-color:var(--nds-color-bg-tab-bar-active); box-shadow:0 0 0.4rem rgba(0,0,0,0.1); transition:left 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);}
+.nds-tab.-bar .tab-button {flex:1; padding:1.1rem 1.2rem; font-size:1.4rem;}
+.nds-tab.-bar .tab-inner::before {content:""; position:absolute; top:0; bottom:0; left:var(--indicator-left); z-index:0; width:var(--indicator-width); border-radius:var(--nds-border-radius-10); background-color:var(--nds-color-bg-tab-bar-active); box-shadow:0 0 0.4rem rgba(0,0,0,0.1); transition:left 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);}
 
 /* [Tab - Variants: Chip] */
-.nds-tab.-chip .nds-tab-inner {gap:0.8rem; padding:1.2rem 2.4rem;}
-.nds-tab.-chip .nds-tab-button {padding:0.4rem 1.6rem; border:1px solid var(--nds-color-border-tab-line-default); border-radius:var(--nds-border-radius-circle); background-color:var(--nds-color-bg-tab-chip-default); font-size:1.4rem;}
-.nds-tab.-chip .nds-tab-button.-active {border-color:var(--nds-color-bg-tab-chip-active); background-color:var(--nds-color-bg-tab-chip-active); color:var(--nds-color-text-tab-chip-default); font-weight:500;}
+.nds-tab.-chip .tab-inner {gap:0.8rem; padding:1.2rem 2.4rem;}
+.nds-tab.-chip .tab-button {padding:0.4rem 1.6rem; border:1px solid var(--nds-color-border-tab-line-default); border-radius:var(--nds-border-radius-circle); background-color:var(--nds-color-bg-tab-chip-default); font-size:1.4rem;}
+.nds-tab.-chip .tab-button.-active {border-color:var(--nds-color-bg-tab-chip-active); background-color:var(--nds-color-bg-tab-chip-active); color:var(--nds-color-text-tab-chip-default); font-weight:500;}
 
 /* [Tab - Variants: Text] */
-.nds-tab.-text .nds-tab-inner {gap:2.4rem;}
-.nds-tab.-text .nds-tab-button {color:var(--nds-color-text-font-4); line-height:2.4rem;}
-.nds-tab.-text .nds-tab-button.-active {color:var(--color-text-font-1); font-weight:500;}
-.nds-tab.-text .nds-tab-button:not(:first-child)::before {content:""; position:absolute; top:50%; left:-1.2rem; width:1px; height:1.2rem; background-color:var(--nds-color-border-line-2); transform:translateY(-50%);}
+.nds-tab.-text .tab-inner {gap:2.4rem;}
+.nds-tab.-text .tab-button {color:var(--nds-color-text-font-4); line-height:2.4rem;}
+.nds-tab.-text .tab-button.-active {color:var(--color-text-font-1); font-weight:500;}
+.nds-tab.-text .tab-button:not(:first-child)::before {content:""; position:absolute; top:50%; left:-1.2rem; width:1px; height:1.2rem; background-color:var(--nds-color-border-line-2); transform:translateY(-50%);}
 
 /* [Tab - Layouts: Fixed, Accordion, Flexible, Swipe] */
-.nds-tab.-fixed .nds-tab-button {flex:1;}
+.nds-tab.-fixed .tab-button {flex:1;}
 .nds-tab.-accordion {position:relative; padding:0 5.6rem 1.2rem 0;}
-.nds-tab.-accordion .nds-tab-inner {flex-wrap:wrap; overflow:hidden; align-content:flex-start; padding:1.2rem 0 0 2.4rem; max-height:4.4rem;}
-.nds-tab.-accordion.-expanded .nds-tab-inner {max-height:50rem;}
+.nds-tab.-accordion .tab-inner {flex-wrap:wrap; overflow:hidden; align-content:flex-start; padding:1.2rem 0 0 2.4rem; max-height:4.4rem;}
+.nds-tab.-accordion.-expanded .tab-inner {max-height:50rem;}
 /* TODO: 화살표 애니메이션 확인 후 추가 필요. 아코디언 기준으로 작업 필요 */
 .nds-tab.-accordion [data-nds-role="tab-accordion-trigger"] {position:absolute; top:1.2rem; right:2.4rem; z-index:10; width:3.2rem; height:3.2rem;}
-.nds-tab.-flexible .nds-tab-inner {flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;}
-.nds-tab.-flexible .nds-tab-inner::-webkit-scrollbar {display:none;}
-.nds-tab.-flexible .nds-tab-inner {flex:0 0 auto;}
+.nds-tab.-flexible .tab-inner {flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;}
+.nds-tab.-flexible .tab-inner::-webkit-scrollbar {display:none;}
+.nds-tab.-flexible .tab-inner {flex:0 0 auto;}
 .nds-tab.-flexible.-swipe {position:relative;}
 .nds-tab.-flexible.-swipe::after {content:""; position:absolute; top:0; bottom:0; z-index:10; width:4.8rem; pointer-events:none;}
 .nds-tab.-flexible.-swipe::after {opacity:1; right:0; background:linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 50%, #FFF 100%);}
@@ -56,6 +56,6 @@
    - text: 24px
    - 바텀시트 내부 bar : 16px;
 */
-.nds-tab-panels {width:100%;}
-.nds-tab-panel {display:none;}
-.nds-tab-panel.-active {display:block;}
+.tab-panels {width:100%;}
+.tab-panel {display:none;}
+.tab-panel.-active {display:block;}

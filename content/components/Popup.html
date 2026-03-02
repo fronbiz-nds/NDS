@@ -14,19 +14,19 @@
 	<div class="gl">
 		<!-- NDS components : S -->
 <script data-size="2" data-title="Popup | popup-basic" type="text/template">
-	<button type="button" class="a underline point" onClick="Alert.open('Popup-basic')">테스트모드에서 클릭</button>
+	<button type="button" class="a underline point" onClick="Modal.open('Popup-basic')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/962_21182.png" alt=""></div>
-	<div id="Popup-basic" class="alert">
-		<div class="container">
-			<div class="contents">
-				<div class="content">
+	<div id="Popup-basic" class="nds-alert">
+		<div class="nds-container">
+			<div class="nds-contents">
+				<div class="nds-content">
 					<h2 class="h5">타이틀</h2>
 					<p class="noti-phrase">내용을 입력해주세요.</p>
 				</div>
 
-				<div class="fixer">
+				<div class="nds-fixer">
 					<div class="buttons">
-						<button type="button" class="button -secondary -md" onClick="Alert.close('Popup-basic')">확인</button>
+						<button type="button" class="button -secondary -md" onClick="Modal.close('Popup-basic')">확인</button>
 					</div>
 				</div>
 			</div>
@@ -34,12 +34,12 @@
 	</div>
 </script>
 <script data-size="2" data-title="Popup | popup-error-accordion" type="text/template">
-	<button type="button" class="a underline point" onClick="Alert.open('Popup-error-accordion')">테스트모드에서 클릭</button>
+	<button type="button" class="a underline point" onClick="Modal.open('Popup-error-accordion')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/popup-error-accordion.png" alt=""></div>
-	<div id="Popup-error-accordion" class="alert">
-		<div class="container">
-			<div class="contents">
-				<div class="content">
+	<div id="Popup-error-accordion" class="nds-alert">
+		<div class="nds-container">
+			<div class="nds-contents">
+				<div class="nds-content">
 					<p class="noti-phrase">
 						일시적인 오류가 발생했습니다.<br>
 						잠시 후 다시 시도해 주세요.<br>
@@ -53,9 +53,9 @@
 					</div>
 				</div>
 
-				<div class="fixer">
+				<div class="nds-fixer">
 					<div class="buttons">
-						<button type="button" class="button -secondary -md" onClick="Alert.close('Popup-error-accordion')">확인</button>
+						<button type="button" class="button -secondary -md" onClick="Modal.close('Popup-error-accordion')">확인</button>
 					</div>
 				</div>
 			</div>
@@ -63,12 +63,12 @@
 	</div>
 </script>
 <script data-size="2" data-title="Popup | popup-login" type="text/template">
-	<button type="button" class="a underline point" onClick="Alert.open('Popup-login')">테스트모드에서 클릭</button>
+	<button type="button" class="a underline point" onClick="Modal.open('Popup-login')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/962_21869.png" alt=""></div>
-	<div id="Popup-login" class="alert">
-		<div class="container">
-			<div class="contents">
-				<div class="content">
+	<div id="Popup-login" class="nds-alert">
+		<div class="nds-container">
+			<div class="nds-contents">
+				<div class="nds-content">
 					<h2 class="h5">로그인 연장 안내</h2>
 					<p class="noti-phrase">약 10분간 이용이 없으면 금융정보 보호를 위해 자동으로 로그아웃됩니다.<br>
 						계속 이용하려면 로그인을 연장해 주세요.
@@ -76,10 +76,10 @@
 					<p class="noti-phrase login-time">남은시간 <span>24</span>초</p>
 				</div>
 
-				<div class="fixer">
+				<div class="nds-fixer">
 					<div class="buttons -half">
-						<button type="button" class="button -tertiary -md" onClick="Alert.close('Popup-login')">로그아웃</button>
-						<button type="button" class="button -secondary -md" onClick="Alert.close('Popup-login')">로그인 연장</button>
+						<button type="button" class="button -tertiary -md" onClick="Modal.close('Popup-login')">로그아웃</button>
+						<button type="button" class="button -secondary -md" onClick="Modal.close('Popup-login')">로그인 연장</button>
 					</div>
 				</div>
 			</div>
@@ -87,21 +87,21 @@
 	</div>
 </script>
 <script data-size="2" data-title="Popup | popup-push" type="text/template">
-	<button type="button" class="a underline point" onClick="Alert.open('Popup-push')">테스트모드에서 클릭</button>
+	<button type="button" class="a underline point" onClick="Modal.open('Popup-push')">테스트모드에서 클릭</button>
 	<div class="nds__thumbnail"><img src="./prototype/NDS/images/962_21868.png" alt=""></div>
-	<div id="Popup-push" class="alert">
-		<div class="container">
-			<div class="contents">
-				<div class="content">
+	<div id="Popup-push" class="nds-alert">
+		<div class="nds-container">
+			<div class="nds-contents">
+				<div class="nds-content">
 					<h2 class="h5">혜택정보 PUSH 알림</h2>
 					<p class="noti-phrase">이벤트, 새소식, 상품정보 등 다양한 혜택 정보를 Push알림으로 받아보세요.</p>
 				</div>
 
-				<div class="fixer">
+				<div class="nds-fixer">
 					<!-- 비대칭 버튼 그룹의 경우 -custom -->
 					<div class="buttons -custom">
-						<button type="button" class="button -tertiary -md flex-3" onClick="Alert.close('Popup-push')">닫기</button>
-						<button type="button" class="button -secondary -md flex-7" onClick="Alert.close('Popup-push')">동의하고 알림받기</button>
+						<button type="button" class="button -tertiary -md flex-3" onClick="Modal.close('Popup-push')">닫기</button>
+						<button type="button" class="button -secondary -md flex-7" onClick="Modal.close('Popup-push')">동의하고 알림받기</button>
 					</div>
 				</div>
 			</div>

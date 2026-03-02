@@ -6,7 +6,7 @@
    공통 UI 컴포넌트 스타일 정의
    ========================================================= */
 
-@import "./nds/components/components.css"; /* asis 전체 */
+/*@import "./nds/components/components.css";  asis 전체 */
 @import "./nds/components/layout.css";
 @import "./nds/components/accordion.css";
 @import "./nds/components/attachedfile.css";

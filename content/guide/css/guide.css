@@ -49,11 +49,10 @@ body {
 
 @media (min-width:1200px) {
     .gl__item {max-width: calc(33.3333% - 1rem); min-width: calc(25% - 1rem);}
-    .gd {width:30vw;}
+    .gd {width:50vw;}
 }
 
 /* gl 내부 NDS 초기화 */
-.gl__preview > :not(.-inline){width:100%;}
 .gl__preview > .ref {width:auto !important;}
 .gl__preview .highlight {z-index:1;}
 .gl__preview .footnote {margin-top:0;}

@@ -3,3 +3,42 @@
    ---------------------------------------------------------
    
    ========================================================= */
+
+body.lock {overflow:hidden;}
+.nds-dim {visibility:hidden; opacity:0; position:fixed; top:0; left:0; z-index:900; width:100%; height:100%; background-color:var(--nds-color-bg-dimmed); transition:visibility .6s, opacity .6s;}
+.nds-dim.-active {visibility:visible; opacity:1; transition:visibility .4s, opacity .4s;}
+.nds-header .func.-close {width:2.4rem; background:var(--nds-ico-close2) no-repeat 0 / cover;}
+
+/* 레이어 */
+.nds-layer {visibility:hidden; opacity:0; position:fixed; bottom:0; left:0; z-index:2000; width:100%; max-height:calc(100% - 6.4rem); border-radius:2.4rem 2.4rem 0 0; background-color:var(--nds-color-bg-default); transform:translate3d(0, 100%, 0); transition:transform .4s;}
+.nds-layer.-active {visibility:visible; opacity:1; transform:translate3d(0, 0, 0); transition:transform .4s;}
+.nds-layer .nds-container {height:100%;}
+.nds-layer .nds-header .inner {display:flex; justify-content:flex-start; align-items:center; padding:2.2rem 2.4rem 1rem 2.4rem; padding-top:2rem; padding-bottom:1rem; text-align:left;}
+.nds-layer .nds-header .title {color:var(--nds-color-text-font-1); font-weight:600; font-size:2rem; text-align:left;}
+.nds-layer .nds-header .funcs {display:flex; align-items:center; margin-left:auto;}
+.nds-layer .nds-contents {display:flex; flex-direction:column; justify-content:space-between; overflow-x:hidden; overflow-y:auto; height:100%; max-height:calc(100vh - 11rem); max-height:calc(100dvh - 11rem);}
+.nds-layer .nds-content {flex:1; padding:var(--nds-spacing-12) var(--nds-spacing-24) var(--nds-spacing-32);}
+.nds-layer .nds-header ~ .nds-contents .nds-content {padding-top:var(--nds-spacing-12);}
+.nds-layer .nds-fixer {position:absolute; bottom:0; left:0; z-index:100; width:100%; padding:0 var(--nds-spacing-24) 3.2rem; background-color:var(--G10);}
+.nds-layer .nds-buffer {flex:1 0 auto;}
+
+/* 얼럿 */
+.nds-alert {visibility:hidden; opacity:0; overflow:hidden; position:fixed; top:50%; left:50%; z-index:3000; width:calc(100% - 4.8rem); border-radius:var(--nds-border-radius-16); background-color:var(--nds-color-bg-default); box-shadow:0 .3rem .6rem 0 rgba(0, 0, 0, .05); transform:translate(-50%, -50%); transition:visibility .4s, opacity .4s;}
+.nds-alert.-active {visibility:visible; opacity:1; transition:visibility .4s, opacity .4s;}
+.nds-alert .nds-container {padding:4rem 0 0;}
+.nds-alert .nds-contents {display:flex; flex-direction:column; justify-content:space-between; height:100%; overflow-x:hidden; overflow-y:auto; min-height:16rem; max-height: calc(100vh - 9.6rem); max-height: calc(100dvh - 9.6rem);}
+.nds-alert .nds-content {flex:1; height:100%; padding:0 2.4rem 2.2rem; color:var(--nds-color-text-font-1); font-size:1.5rem;  }
+.nds-alert .nds-content .title {margin-bottom:1.2rem; font-weight:600; font-size:1.6rem;}
+.nds-alert .nds-buffer {flex:1 0 auto;}
+.nds-alert .nds-fixer {position:absolute; bottom:0; left:0; z-index:100; width:100%; padding:1rem 2.4rem 2rem; border-radius:0 0 1.6rem 1.6rem; background-color:var(--nds-color-bg-default);}
+
+/* 팝업 */
+.nds-popup {display:none; overflow:hidden; position:fixed; top:0; left:0; z-index:1000; width:100%; height:100%; background-color:var(--nds-color-bg-default); }
+.nds-popup.-active {display:block;}
+.nds-popup .nds-header {height:5rem;}
+.nds-popup .nds-header .inner {display:flex; align-items:center; height:5rem; padding:0 2.4rem;}
+.nds-popup .nds-header .title {overflow:hidden; max-width:100%; color:var(--nds-color-text-font-1); font-weight:600; font-size:1.6rem; line-height:1.2; white-space:nowrap; text-overflow:ellipsis;}
+.nds-popup .nds-header .funcs {display:flex; align-items:center; margin-left:auto;}
+.nds-popup .nds-container {height:100%; overscroll-behavior-y:none;}
+.nds-popup .nds-contents {display:flex; flex-direction:column; overflow-y:auto; height:calc(100vh - 5rem); height:calc(100dvh - 5rem); overscroll-behavior-y:none; -webkit-overflow-scrolling:touch;}
+.nds-popup .nds-content {padding:1.6rem 2.4rem 6rem;}

@@ -1,0 +1,2808 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title></title>
+	<!-- NDS CSS -->
+	<link rel="stylesheet" href="./../assets/css/nds-common.css" />
+	<link rel="stylesheet" href="./../assets/css/nds-components.css" />
+	<!-- Guide CSS -->
+	<link rel="stylesheet" href="./../guide/css/guide.css" />
+</head>
+<body>
+	<div class="nds-page">
+	</div>
+	<div class="gl">
+		<!-- NDS components : S -->
+<script data-size="2" data-title="Bottomsheet | bottomsheet-account/accordion" type="text/template">
+	<button type="button"  class="a underline point" onClick="Modal.open('Bottomsheet-account_accordion')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/bottomsheet-account-accordion.png" alt=""></div>
+	<div id="Bottomsheet-account_accordion" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">계좌를 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-account_accordion')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="segments tab -bar">
+						<div class="outer">
+							<div class="inner">
+								<div role="tablist" class="list">
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel3" id="segment3">NH농협(원화)</button></div>
+									<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel4" id="segment4">NH농협(외화)</button></div>
+									<span class="switcher" aria-hidden="true"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="segments-panels">
+						<div role="tabpanel" aria-labelledby="segment3" id="segments-panel3" class="segments-panel" tabindex="0">
+							
+						</div>
+						
+						<div role="tabpanel" aria-labelledby="segment4" id="segments-panel4" class="segments-panel -active" tabindex="0">
+							<div class="choose-account-Wrap">
+								<div class="field">
+									<div class="text">
+										<div class="choose-account-input">
+											<input type="text" id="text" readonly placeholder="계좌번호 직접 입력">
+											<button type="button" class="button -tertiary jsChooseBtn -sm -inline">직접 입력</button>
+										</div>
+										<p class="message">입력 정보 안내 메시지 출력</p>
+									</div>
+								</div>
+								<div class="custom-key-display">
+									<div class="custom-key-wrap">
+										<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
+										<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
+										<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
+										<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
+										<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
+										<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
+										<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
+										<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
+										<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
+										<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
+										<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
+										<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+									</div>
+									<div class="buttons">
+										<button type="button" class="button -primary -lg">확인</button>
+									</div>
+									
+								</div>
+								
+								<div class="choose-account-list mb-0">
+									<div class="accordion -lg -borderless -active" data-role="fold">
+										<div class="exchange-selection-wrap">
+											<div class="selection" id="acc-info-01">
+												<ul>
+													<li>
+														<div data-bankcode="011" class="info -fix">
+															<span>
+																<span>
+																	<span class="name">
+																		<span>외화보통예금(비대면실명확인)</span>
+																	</span>
+																	<span class="account-number">
+																		<span>NH농협은행</span>
+																		<span>302-1234-5678-01</span>
+																	</span>
+																</span>
+																<div class="amout-number">
+																	<span class="amout-title">출금가능금액</span>
+																	<span>120,000,000</span>원
+																</div>
+															</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<button type="button" class="title" data-role="marker" id="accordionBtn1" aria-expanded="true" aria-controls="panel1"><span class="hide">상세 내역 펼치기</span></button>
+										</div>
+										<div class="panel -borderless" data-role="hidden" id="panel1" role="region">
+											<div class="custom-list -borderless -account">
+												<ul>
+													<li>
+														<div class="exchange-mini">
+															<span data-countrycode="001" class="-sm">
+															<span class="unit">USD</span> 100,500.00</span>
+														</div>
+													</li>
+													<li>
+														<div class="exchange-mini">
+															<span data-countrycode="003" class="-sm">
+															<span class="unit">EUR</span> 100,500.00</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="accordion -lg -borderless" data-role="fold">
+										<div class="exchange-selection-wrap">
+											<div class="selection" id="acc-info-02">
+												<ul>
+													<li>
+														<div data-bankcode="011" class="info -fix">
+															<span>
+																<span>
+																	<span class="name">
+																		<span>주거래우대통장</span>
+																	</span>
+																	<span class="account-number">
+																		<span>NH농협은행</span>
+																		<span>111-1234-5678-99</span>
+																	</span>
+																</span>
+																<div class="amout-number">
+																	<span class="amout-title">출금가능금액</span>
+																	<span>100,000,000</span>원
+																</div>
+															</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<button type="button" class="title" data-role="marker" id="accordionBtn2" aria-expanded="false" aria-controls="panel2"><span class="hide">상세 내역 펼치기</span></button>
+										</div>
+										<div class="panel -borderless" data-role="hidden" id="panel2" role="region">
+											<div class="custom-list -borderless -account">
+												<ul>
+													<li>
+														<div class="exchange-mini">
+															<span data-countrycode="001" class="-sm">
+															<span class="unit">USD</span> 100,500.00</span>
+														</div>
+													</li>
+													<li>
+														<div class="exchange-mini">
+															<span data-countrycode="003" class="-sm">
+															<span class="unit">EUR</span> 100,500.00</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="accordion -lg -borderless" data-role="fold">
+										<div class="exchange-selection-wrap">
+											<div class="selection" id="acc-info-03">
+												<ul>
+													<li>
+														<div data-bankcode="011" class="info -fix">
+															<span>
+																<span>
+																	<span class="name">
+																		<span>주거래우대통장</span>
+																	</span>
+																	<span class="account-number">
+																		<span>NH농협은행</span>
+																		<span>111-1234-5678-99</span>
+																	</span>
+																</span>
+																<div class="amout-number">
+																	<span class="amout-title">출금가능금액</span>
+																	<span>100,000,000</span>원
+																</div>
+															</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<button type="button" class="title" data-role="marker" id="accordionBtn3" aria-expanded="false" aria-controls="panel3" aria-labelledby="acc-info-03"><span class="hide">상세 내역 펼치기</span></button>
+										</div>
+										<div class="panel -borderless" data-role="hidden" id="panel3" role="region" aria-labelledby="accordionBtn3">
+											<div class="custom-list -borderless -account">
+												<ul>
+													<li>
+														<div class="exchange-mini">
+															<span data-countrycode="001" class="-sm">
+															<span class="unit">USD</span> 100,500.00</span>
+														</div>
+													</li>
+													<li>
+														<div class="exchange-mini">
+															<span data-countrycode="003" class="-sm">
+															<span class="unit">EUR</span> 100,500.00</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-account/direct" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-account_direct')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/direct.png" alt="Bottomsheet - bottomsheet-account/direct"></div>
+	<div id="Bottomsheet-account_direct" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">계좌를 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-account_direct')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="segments tab -bar -quad">
+						<div class="outer">
+							<div class="inner">
+								<div role="tablist" class="list">
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel33" id="segment5" class="">최근</button></div>
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel43" id="segment6" class="">자주</button></div>
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel53" id="segment7" class="">내계좌</button></div>
+									<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel63" id="segment8" class="">직접입력</button></div>
+									<span class="switcher" aria-hidden="true"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="segments-panels">
+						<div role="tabpanel" aria-labelledby="segment5" id="segments-panel33" class="segments-panel" tabindex="-1">
+							컨텐츠1
+						</div>
+						<div role="tabpanel" aria-labelledby="segment6" id="segments-panel43" class="segments-panel"tabindex="-1">
+							컨텐츠2
+						</div>
+						<div role="tabpanel" aria-labelledby="segment7" id="segments-panel53" class="segments-panel"tabindex="-1">
+							컨텐츠3
+						</div>
+						<div role="tabpanel" aria-labelledby="segment8" id="segments-panel63" class="segments-panel -active"tabindex="0">
+							<div class="choose-number-wrap -inputed">
+								<div class="field">
+									<div class="select -list">
+										<button type="button" aria-haspopup="true" aria-haspopup="listbox" aria-expanded="false" aria-controls="bankList" class="fc-empty">은행선택</button>
+									</div>
+								</div>
+								<div class="field mt-12">
+									<div class="text">
+										<div class="choose-number-input">
+											<input type="text" id="text" title="계좌번호 입력" readonly placeholder="계좌번호 입력">
+										</div>
+									</div>
+									<!-- <div class="info-wrap">
+										<p class="message -error" id="pubNumKeypadBoxMsgText">10자리 이상으로 입력하여 주세요.</p>
+									</div> -->
+								</div>
+								<div class="custom-key-wrap">
+									<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
+									<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
+									<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
+									<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
+									<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
+									<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
+									<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
+									<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
+									<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
+									<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
+									<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
+									<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+								</div>
+								<div class="buttons">
+									<button type="button" class="button -lg -primary">확인</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-account/multiple" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-account_multiple')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/multiple.png" alt=""></div>
+	<div id="Bottomsheet-account_multiple" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">계좌를 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-account_multiple')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="segments tab -bar">
+						<div class="outer">
+							<div class="inner">
+								<div role="tablist" class="list">
+									<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel31" id="segment31">NH농협</button></div>
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel41" id="segment41">다른금융</button></div>
+									<span class="switcher" aria-hidden="true"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="segments-panels">
+						<div role="tabpanel" aria-labelledby="segment31" id="segments-panel31" class="segments-panel -active" tabindex="0">
+							<div class="choose-account-list account -borderless -multi">
+								<div class="case-wrap">
+									<p class="label">NH농협은행</p>
+									<ul>
+										<li>
+											<button data-bankcode="011" class="info -fix">
+												<span>
+													<span>
+														<div class="atom-selec-wrap">
+															<span class="name">금융사명</span>
+															<div class="atom-selec">
+																<div class="checkbox -basic -xs -ico_star">
+																	<input type="checkbox" id="checkbox-xs211" checked="">
+																	<label for="checkbox-xs211"></label>
+																</div>
+																<div class="checkbox -basic -xs -ico_check">
+																	<input type="checkbox" id="checkbox-xs221" checked="">
+																	<label for="checkbox-xs221"></label>
+																</div>
+															</div>
+														</div>
+													</span>
+													<span class="account-number">
+														<span>계좌번호</span>
+													</span>
+												</span>
+											</button>
+										</li>
+										<li>
+											<button data-bankcode="011" class="info -fix">
+												<span>
+													<span>
+														<div class="atom-selec-wrap">
+															<span class="name">금융사명</span>
+															<div class="atom-selec">
+																<div class="checkbox -basic -xs -ico_star">
+																	<input type="checkbox" id="checkbox-xs212">
+																	<label for="checkbox-xs212"></label>
+																</div>
+																<div class="checkbox -basic -xs -ico_check">
+																	<input type="checkbox" id="checkbox-xs222">
+																	<label for="checkbox-xs222"></label>
+																</div>
+															</div>
+														</div>
+													</span>
+													<span class="account-number">
+														<span>계좌번호</span>
+													</span>
+												</span>
+											</button>
+										</li>
+										<li>
+											<button data-bankcode="011" class="info -fix">
+												<span>
+													<span>
+														<div class="atom-selec-wrap">
+															<span class="name">금융사명</span>
+															<div class="atom-selec">
+																<div class="checkbox -basic -xs -ico_star">
+																	<input type="checkbox" id="checkbox-xs213">
+																	<label for="checkbox-xs213"></label>
+																</div>
+																<div class="checkbox -basic -xs -ico_check">
+																	<input type="checkbox" id="checkbox-xs223">
+																	<label for="checkbox-xs223"></label>
+																</div>
+															</div>
+														</div>
+													</span>
+													<span class="account-number">
+														<span>계좌번호</span>
+													</span>
+												</span>
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div role="tabpanel" aria-labelledby="segment41" id="segments-panel41" class="segments-panel" tabindex="0">
+							컨텐츠2
+						</div>
+					</div>
+					<div class="buttons">
+						<button type="button" class="button -lg -primary">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-account/nh" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-account_nh')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1041_33584.png" alt=""></div>
+	<div id="Bottomsheet-account_nh" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">계좌를 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-account_nh')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="segments tab -bar">
+						<div class="outer">
+							<div class="inner">
+								<div role="tablist" class="list">
+									<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel39" id="segment39">NH농협</button></div>
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel49" id="segment49">다른금융</button></div>
+									<span class="switcher" aria-hidden="true"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="segments-panels">
+						<div role="tabpanel" aria-labelledby="segment39" id="segments-panel39" class="segments-panel -active" tabindex="0">
+							<div class="choose-account-Wrap">
+								<div class="field">
+									<div class="text">
+										<div class="choose-account-input">
+											<input type="text" id="text" readonly placeholder="계좌번호 직접 입력" aria-label="입력된 계좌번호" aria-describedby="accountMessage">
+											<button type="button" class="button -tertiary jsChooseBtn -sm -inline">직접 입력</button>
+										</div>
+										<p class="message" id="accountMessage">입력 정보 안내 메시지 출력</p>
+									</div>
+								</div>
+								<div class="custom-key-display">
+									<div class="custom-key-wrap">
+										<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
+										<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
+										<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
+										<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
+										<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
+										<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
+										<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
+										<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
+										<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
+										<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
+										<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
+										<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+									</div>
+									<div class="buttons">
+										<button type="button" class="button -primary -lg">확인</button>
+									</div>
+									
+								</div>
+
+								<div class="choose-account-list account -borderless">
+									<ul>
+										<li>
+											<button type="button" data-bankcode="011" class="info -fix">
+												<span>
+													<span>
+														<span class="name">
+															<span>주거래우대통장</span>
+														</span>
+														<span class="account-number">
+															<span>NH농협은행</span>
+															<span>111-1234-5678-99</span>
+														</span>
+													</span>
+													<div class="amout-number">
+														<span class="amout-title">출금가능금액</span>
+														<span>100,000,000</span>원
+													</div>
+												</span>
+											</button>
+										</li>
+										<li>
+											<button type="button" data-bankcode="011" class="info -fix">
+												<span>
+													<span>
+														<span class="name">
+															<span>주거래우대통장</span>
+														</span>
+														<span class="account-number">
+															<span>NH농협은행</span>
+															<span>111-1234-5678-99</span>
+														</span>
+													</span>
+													<div class="amout-number">
+														<span class="amout-title">출금가능금액</span>
+														<span>100,000,000</span>원
+													</div>
+												</span>
+											</button>
+										</li>
+										<li>
+											<button type="button" data-bankcode="011" class="info -fix">
+												<span>
+													<span>
+														<span class="name">
+															<span>주거래우대통장</span>
+														</span>
+														<span class="account-number">
+															<span>NH농협은행</span>
+															<span>111-1234-5678-99</span>
+														</span>
+													</span>
+													<div class="amout-number">
+														<span class="amout-title">출금가능금액</span>
+														<span>100,000,000</span>원
+													</div>
+												</span>
+											</button>
+										</li>
+									</ul>
+								</div>
+
+								<button type="button" class="goto-button">NH농협 계좌등록</button>
+							</div>
+							
+						</div>
+						<div role="tabpanel" aria-labelledby="segment49" id="segments-panel49" class="segments-panel" tabindex="0"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-account/nh-no-data" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-account_nh-no-data')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1041_35093.png" alt=""></div>
+	<div id="Bottomsheet-account_nh-no-data" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">계좌를 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-account_nh-no-data')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="segments tab -bar">
+						<div class="outer">
+							<div class="inner">
+								<div role="tablist" class="list">
+									<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel53" id="segment3">NH농협</button></div>
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel54" id="segment4">다른금융</button></div>
+									<span class="switcher" aria-hidden="true"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="segments-panels">
+						<div role="tabpanel" aria-labelledby="segment1" id="segments-panel53" class="segments-panel -active" tabindex="0">
+							<div class="choose-account-Wrap">
+								<div class="field">
+									<div class="text">
+										<div class="choose-account-input">
+											<input type="text" id="text" readonly placeholder="계좌번호 직접 입력" aria-label="입력된 계좌번호" aria-describedby="accountMessage">
+											<button type="button" class="button -tertiary jsChooseBtn -sm -inline">직접 입력</button>
+										</div>
+										<p class="message" id="accountMessage">입력 정보 안내 메시지 출력</p>
+									</div>
+								</div>
+								<div class="custom-key-display">
+									<div class="custom-key-wrap">
+										<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
+										<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
+										<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
+										<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
+										<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
+										<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
+										<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
+										<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
+										<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
+										<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
+										<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
+										<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+									</div>
+									<div class="buttons">
+										<button type="button" class="button -primary -lg">확인</button>
+									</div>
+									
+								</div>
+								<div class="choose-account-list">
+									<p class="message">등록한 계좌가 없습니다<br>계좌를 등록하고 이용해 주세요</p>
+								</div>
+		
+								<button type="button" class="goto-button">NH농협 계좌등록</button>
+							</div>
+							
+						</div>
+
+						<div role="tabpanel" aria-labelledby="segment2" id="segments-panel54" class="segments-panel" tabindex="0">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-account/other" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-account_other')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1041_33588.png" alt=""></div>
+	<div id="Bottomsheet-account_other" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">계좌를 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-account_other')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="segments tab -bar">
+						<div class="outer">
+							<div class="inner">
+								<div role="tablist" class="list">
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel377" id="segment377">NH농협</button></div>
+									<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel477" id="segment477">다른금융</button></div>
+									<span class="switcher" aria-hidden="true"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="segments-panels">
+						<div role="tabpanel" aria-labelledby="segment377" id="segments-panel377" class="segments-panel" tabindex="0">
+							
+						</div>
+						
+						<div role="tabpanel" aria-labelledby="segment477" id="segments-panel477" class="segments-panel -active" tabindex="0">
+							<div class="choose-account-list account -borderless">
+								<div class="case-wrap">
+									<ul>
+										<li>
+											<button data-bankcode="092" class="info -fix">
+												<span>
+													<span>
+														<span class="name">
+															<span>토스뱅크통장</span>
+														</span>
+														<span class="account-number">
+															<span>토스뱅크</span>
+															<span>1002125478901</span>
+														</span>
+													</span>
+												</span>
+												<div class="amout-number">
+													<a href="javascript:void(0)" class="a -arrow">출금가능금액조회</a>
+												</div>
+											</button>
+										</li>
+										<li>
+											<button type="button" data-bankcode="090" class="info -fix">
+												<span>
+													<span>
+														<span class="name">
+															<span>카카오뱅크통장</span>
+														</span>
+														<span class="account-number">
+															<span>카카오뱅크</span>
+															<span>123412341234123</span>
+														</span>
+													</span>
+													<div class="amout-number">
+														<span class="amout-title">출금가능금액</span>
+														<span class="payment">700,000</span>원
+													</div>
+												</span>
+											</button>
+										</li>
+										<li>
+											<button data-bankcode="088" class="info -fix">
+												<span>
+													<span>
+														<span class="name">
+															<span>신한우대통장</span>
+														</span>
+														<span class="account-number">
+															<span>계좌번호</span>
+															<span></span>
+														</span>
+													</span>
+						
+													<div class="amout-number">
+														<span class="red">조회불가</span>
+													</div>
+												</span>
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<button type="button" class="goto-button">다른금융 계좌등록</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-account/other-no-data" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-account_other-no-data')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/3279_64860.png" alt=""></div>
+	<div id="Bottomsheet-account_other-no-data" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">계좌를 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-account_other-no-data')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="segments tab -bar">
+						<div class="outer">
+							<div class="inner">
+								<div role="tablist" class="list">
+									<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel3" id="segment3">NH농협</button></div>
+									<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel4" id="segment4">다른금융</button></div>
+									<span class="switcher" aria-hidden="true"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="segments-panels">
+						<div role="tabpanel" aria-labelledby="segment3" id="segments-panel3" class="segments-panel" tabindex="0">
+							
+						</div>
+						
+						<div role="tabpanel" aria-labelledby="segment4" id="segments-panel4" class="segments-panel -active" tabindex="0">
+							<div class="choose-account-list">
+								<p class="message">등록한 계좌가 없습니다<br>계좌를 등록하고 이용해 주세요</p>
+							</div>
+								
+							<button type="button" class="goto-button">다른금융 계좌등록</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-basic/none-header @ Type=none" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-basic_none-header-Type_none')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1170_36398.png" alt=""></div>
+	<div id="Bottomsheet-basic_none-header-Type_none" class="nds-layer">
+		<div class="container">
+			<div class="no-header" aria-hidden="true">
+				<div class="inner"></div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content bttm">
+					<h2 class="h3">타이틀</h2>
+					<p class="p">텍스트를 입력해 주세요.</p>
+					<p class="p"><button type="button" class="a underline point" onClick="Modal.close('Bottomsheet-basic_none-header-Type_none')">레이어 닫기</button></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-basic/none-header @ Type=with-cta" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-basic_none-header-Type_with-cta')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/5076_95876.png" alt=""></div>
+	<div id="Bottomsheet-basic_none-header-Type_with-cta" class="nds-layer">
+		<div class="container">
+			<div class="no-header" aria-hidden="true">
+				<div class="inner"></div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content bttm">
+					<h2 class="h3">타이틀</h2>
+					<p class="p">텍스트를 입력해 주세요.</p>
+					<p class="p"><button type="button" class="a underline point" onClick="Modal.close('Bottomsheet-basic_none-header-Type_with-cta')">레이어 닫기</button></p>
+				</div>
+
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -lg -primary" >버튼명</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-basic/none-header-display @ Type=none" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-basic_none-header-display-Type_none')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/none-header-display.png" alt=""></div>
+	<div id="Bottomsheet-basic_none-header-display-Type_none" class="nds-layer">
+		<div class="container">
+			<div class="no-header" aria-hidden="true">
+				<div class="inner"></div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content bttm -display-noneBtn">
+					<h2 class="h3">타이틀</h2>
+					<p class="p">텍스트를 입력해 주세요.</p>
+					<p class="p"><button type="button" class="a underline point" onClick="Modal.close('Bottomsheet-basic_none-header-display-Type_none')">레이어 닫기</button></p>
+				</div>
+				<div class="bttm-text">
+					<button type="button">3일동안 열지 않기</button>
+					<button type="button">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-basic/none-header-display @ Type=with-cta" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-basic_none-header-display-Type_with-cta')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/none-header-display-with.png" alt=""></div>
+	<div id="Bottomsheet-basic_none-header-display-Type_with-cta" class="nds-layer">
+		<div class="container">
+			<div class="no-header" aria-hidden="true">
+				<div class="inner"></div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content bttm -display">
+					<h2 class="h3">타이틀</h2>
+					<p class="p">텍스트를 입력해 주세요.</p>
+					<p class="p"><button type="button" class="a underline point" onClick="Modal.close('Bottomsheet-basic_none-header-display-Type_with-cta')">레이어 닫기</button></p>
+				</div>
+				
+				<div class="bttmBtnWrap">
+					<div class="buttons">
+						<button type="button" class="button -lg -primary" >버튼명</button>
+					</div>
+				</div>
+
+				<div class="bttm-text">
+					<button type="button">3일동안 열지 않기</button>
+					<button type="button">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-basic/with-header @ Type=none" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-basic_with-header-Type_none')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/5076_70138.png" alt=""></div>
+	<div id="Bottomsheet-basic_with-header-Type_none" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">타이틀</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-basic_with-header-Type_none')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<p class="p">텍스트를 입력해 주세요.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-basic/with-header @ Type=with-cta" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-basic_with-header-Type_with-cta')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1049_44851.png" alt=""></div>
+	<div id="Bottomsheet-basic_with-header-Type_with-cta" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">타이틀</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-basic_with-header-Type_with-cta')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<p class="p">텍스트를 입력해 주세요.</p>
+				</div>
+
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -lg -primary">버튼명</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-basic/with-header-display @ Type=none" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-basic_with-header-display-Type_none')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/with-header-display.png" alt=""></div>
+	<div id="Bottomsheet-basic_with-header-display-Type_none" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">타이틀</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-basic_with-header-Type_with-cta')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content bttm -display-noneBtn">
+					<p class="p">텍스트를 입력해 주세요.</p>
+					<p class="p"><button type="button" class="a underline point" onClick="Modal.close('Bottomsheet-basic_with-header-display-Type_none')">레이어 닫기</button></p>
+				</div>
+				<div class="bttm-text">
+					<button type="button">3일동안 열지 않기</button>
+					<button type="button">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+							
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-basic/with-header-display @ Type=with-cta" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-basic_with-header-display-Type_with-cta')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/with-header-display-with.png" alt=""></div>
+	<div id="Bottomsheet-basic_with-header-display-Type_with-cta" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">타이틀</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-basic_with-header-Type_with-cta')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content bttm -display">
+					<p class="p">텍스트를 입력해 주세요.</p>
+					<p class="p"><button type="button" class="a underline point" onClick="Modal.close('Bottomsheet-basic_with-header-display-Type_with-cta')">레이어 닫기</button></p>
+				</div>
+				
+				<div class="bttmBtnWrap">
+					<div class="buttons">
+						<button type="button" class="button -lg -primary" >버튼명</button>
+					</div>
+				</div>
+
+				<div class="bttm-text">
+					<button type="button">3일동안 열지 않기</button>
+					<button type="button">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-cs" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-cs')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/bottomsheet-cs.png" alt=""></div>
+	<div id="Bottomsheet-cs" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">상담 방법을 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-cs')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="consults">
+						<a href="javascript:void(0)" role="button">
+							<div class="consulting">
+								<div class="consult-icon -phone" aria-hidden="true"></div>
+								<p class="p text-unit">전화 상담 예약</p>
+							</div>
+						</a>
+						<a href="javascript:void(0)" role="button">
+							<div class="consulting">
+								<div class="consult-icon -chat" aria-hidden="true"></div>
+								<p class="p text-unit">채팅 상담</p>
+							</div>
+						</a>
+						<a href="javascript:void(0)" role="button">
+							<div class="consulting">
+								<div class="consult-icon -mail" aria-hidden="true"></div>
+								<p class="p text-unit">이메일 상담</p>
+							</div>
+						</a>
+						<a href="javascript:void(0)" role="button">
+							<div class="consulting">
+								<div class="consult-icon -video" aria-hidden="true"></div>
+								<p class="p text-unit">화상 상담</p>
+							</div>
+						</a>
+						<a href="javascript:void(0)" role="button">
+							<div class="consulting">
+								<div class="consult-icon -agent" aria-hidden="true"></div>
+								<p class="p text-unit">영업점 방문 예약</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-finnace/bank" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-finnace_bank')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/bank.png" alt=""></div>
+	<div id="Bottomsheet-finnace_bank" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">금융기관을 선택해 주세요</h1>
+					
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-finnace_bank')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="bank-select">
+						<div class="segments -bar">
+							<div class="outer">
+								<div class="inner">
+									<div role="tablist" class="list" aria-label="금융기관 유형">
+										<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel1" id="segment1">은행</button></div>
+										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel2" id="segment2">증권사</button></div>
+										<span class="switcher" aria-hidden="true"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="segments-panels">
+							<div role="tabpanel" aria-labelledby="segment1" id="segments-panel1" class="segments-panel -active" tabindex="0">
+								<ul class="button-box">
+									<li><button type="button" data-bankcode="011" class="unit"><span class="txt">NH농협</span></button></li>
+									<li><button type="button" data-bankcode="004" class="unit"><span class="txt">국민</span></button></li>
+									<li><button type="button" data-bankcode="003" class="unit"><span class="txt">기업</span></button></li>
+									<li><button type="button" data-bankcode="002" class="unit"><span class="txt">산업</span></button></li>
+									<li><button type="button" data-bankcode="088" class="unit"><span class="txt">신한</span></button></li>
+									<li><button type="button" data-bankcode="020" class="unit"><span class="txt">우리</span></button></li>
+									<li><button type="button" data-bankcode="082" class="unit"><span class="txt">하나</span></button></li>
+									<li><button type="button" data-bankcode="027" class="unit"><span class="txt">한국씨티</span></button></li>
+									<li><button type="button" data-bankcode="023" class="unit"><span class="txt">SC제일</span></button></li>
+									<li><button type="button" data-bankcode="090" class="unit"><span class="txt">카카오뱅크</span></button></li>
+									<li><button type="button" data-bankcode="089" class="unit"><span class="txt">케이뱅크</span></button></li>
+									<li><button type="button" data-bankcode="092" class="unit"><span class="txt">토스뱅크</span></button></li>
+									<li><button type="button" data-bankcode="039" class="unit"><span class="txt">경남</span></button></li>
+									<li><button type="button" data-bankcode="034" class="unit"><span class="txt">광주</span></button></li>
+									<li><button type="button" data-bankcode="031" class="unit"><span class="txt">iM뱅크</span></button></li>
+									<li><button type="button" data-bankcode="032" class="unit"><span class="txt">부산</span></button></li>
+									<li><button type="button" data-bankcode="037" class="unit"><span class="txt">전북</span></button></li>
+									<li><button type="button" data-bankcode="007" class="unit"><span class="txt">수협</span></button></li>
+									<li><button type="button" data-bankcode="035" class="unit"><span class="txt">제주</span></button></li>
+									<li><button type="button" data-bankcode="064" class="unit"><span class="txt">산림조합</span></button></li>
+									<li><button type="button" data-bankcode="048" class="unit"><span class="txt">신협</span></button></li>
+									<li><button type="button" data-bankcode="045" class="unit"><span class="txt">새마을</span></button></li>
+									<li><button type="button" data-bankcode="071" class="unit"><span class="txt">우체국</span></button></li>
+									<li><button type="button" data-bankcode="050" class="unit"><span class="txt">저축은행</span></button></li>
+									<li><button type="button" data-bankcode="055" class="unit"><span class="txt">도이치</span></button></li>
+									<li><button type="button" data-bankcode="060" class="unit"><span class="txt">뱅크오브아메리카</span></button></li>
+									<li><button type="button" data-bankcode="062" class="unit"><span class="txt">중국공상</span></button></li>
+									<li><button type="button" data-bankcode="063" class="unit"><span class="txt">중국</span></button></li>
+									<li><button type="button" data-bankcode="067" class="unit"><span class="txt">중국건설</span></button></li>
+									<li><button type="button" data-bankcode="061" class="unit"><span class="txt">BNP파리바</span></button></li>
+									<li><button type="button" data-bankcode="054" class="unit"><span class="txt">HSBC</span></button></li>
+									<li><button type="button" data-bankcode="057" class="unit"><span class="txt">JP모건</span></button></li>
+								</ul>
+							</div>
+	
+							<div role="tabpanel" aria-labelledby="segment2" id="segments-panel2" class="segments-panel" tabindex="0">
+								<ul class="button-box">
+									<li><button type="button" data-bankcode="247" class="unit"><span class="txt">NH농협</span></button></li>
+									<li><button type="button" data-bankcode="261" class="unit"><span class="txt">교보증권</span></button></li>
+									<li><button type="button" data-bankcode="267" class="unit"><span class="txt">대신증권</span></button></li>
+									<li><button type="button" data-bankcode="287" class="unit"><span class="txt">메리츠증권</span></button></li>
+									<li><button type="button" data-bankcode="238" class="unit"><span class="txt">미래에셋증권</span></button></li>
+									<li><button type="button" data-bankcode="290" class="unit"><span class="txt">부국증권</span></button></li>
+									<li><button type="button" data-bankcode="240" class="unit"><span class="txt">삼성증권</span></button></li>
+									<li><button type="button" data-bankcode="291" class="unit"><span class="txt">신영증권</span></button></li>
+									<li><button type="button" data-bankcode="278" class="unit"><span class="txt">신한투자증권</span></button></li>
+									<li><button type="button" data-bankcode="266" class="unit"><span class="txt">에스케이증권</span></button></li>
+									<li><button type="button" data-bankcode="209" class="unit"><span class="txt">유안타증권</span></button></li>
+									<li><button type="button" data-bankcode="280" class="unit"><span class="txt">유진투자증권</span></button></li>
+									<li><button type="button" data-bankcode="265" class="unit"><span class="txt">LS증권</span></button></li>
+									<li><button type="button" data-bankcode="288" class="unit"><span class="txt">카카오페이증권</span></button></li>
+									<li><button type="button" data-bankcode="292" class="unit"><span class="txt">케이프투자증권</span></button></li>
+									<li><button type="button" data-bankcode="264" class="unit"><span class="txt">키움증권</span></button></li>
+									<li><button type="button" data-bankcode="271" class="unit"><span class="txt">토스증권</span></button></li>
+									<li><button type="button" data-bankcode="270" class="unit"><span class="txt">하나증권</span></button></li>
+									<li><button type="button" data-bankcode="262" class="unit"><span class="txt">아이엠증권</span></button></li>
+									<li><button type="button" data-bankcode="243" class="unit"><span class="txt">한국투자증권</span></button></li>
+									<li><button type="button" data-bankcode="269" class="unit"><span class="txt">한화투자증권</span></button></li>
+									<li><button type="button" data-bankcode="263" class="unit"><span class="txt">현대차증권</span></button></li>
+									<li><button type="button" data-bankcode="295" class="unit"><span class="txt">우리투자증권</span></button></li>
+									<li><button type="button" data-bankcode="224" class="unit"><span class="txt">BNK증권</span></button></li>
+									<li><button type="button" data-bankcode="279" class="unit"><span class="txt">DB금융증권</span></button></li>
+									<li><button type="button" data-bankcode="225" class="unit"><span class="txt">IBK투자증권</span></button></li>
+									<li><button type="button" data-bankcode="218" class="unit"><span class="txt">KB증권</span></button></li>
+									<li><button type="button" data-bankcode="227" class="unit"><span class="txt">디올투자증권</span></button></li>
+									<li><button type="button" data-bankcode="221" class="unit"><span class="txt">상상인증권</span></button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-finnace/insurance" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-finnace_insurance')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/insurance.png" alt=""></div>
+	<div id="Bottomsheet-finnace_insurance" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">금융기관을 선택해 주세요</h1>
+					
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-finnace_insurance')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="bank-select">
+						<div class="segments -bar -triple">
+							<div class="outer">
+								<div class="inner">
+									<div role="tablist" class="list" aria-label="금융기관 유형">
+										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel101" id="segment101">은행</button></div>
+										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel201" id="segment201">증권사</button></div>
+										<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel301" id="segment301">보험사</button></div>
+										<span class="switcher" aria-hidden="true"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="segments-panels">
+							<div role="tabpanel" aria-labelledby="segment101" id="segments-panel101" class="segments-panel" tabindex="0">
+								<ul class="button-box">
+									<li><button type="button" data-bankcode="011" class="unit"><span class="txt">NH농협</span></button></li>
+									<li><button type="button" data-bankcode="004" class="unit"><span class="txt">국민</span></button></li>
+									<li><button type="button" data-bankcode="003" class="unit"><span class="txt">기업</span></button></li>
+									<li><button type="button" data-bankcode="002" class="unit"><span class="txt">산업</span></button></li>
+									<li><button type="button" data-bankcode="088" class="unit"><span class="txt">신한</span></button></li>
+									<li><button type="button" data-bankcode="020" class="unit"><span class="txt">우리</span></button></li>
+									<li><button type="button" data-bankcode="082" class="unit"><span class="txt">하나</span></button></li>
+									<li><button type="button" data-bankcode="027" class="unit"><span class="txt">한국씨티</span></button></li>
+									<li><button type="button" data-bankcode="023" class="unit"><span class="txt">SC제일</span></button></li>
+									<li><button type="button" data-bankcode="090" class="unit"><span class="txt">카카오뱅크</span></button></li>
+									<li><button type="button" data-bankcode="089" class="unit"><span class="txt">케이뱅크</span></button></li>
+									<li><button type="button" data-bankcode="092" class="unit"><span class="txt">토스뱅크</span></button></li>
+									<li><button type="button" data-bankcode="039" class="unit"><span class="txt">경남</span></button></li>
+									<li><button type="button" data-bankcode="034" class="unit"><span class="txt">광주</span></button></li>
+									<li><button type="button" data-bankcode="031" class="unit"><span class="txt">iM뱅크</span></button></li>
+									<li><button type="button" data-bankcode="032" class="unit"><span class="txt">부산</span></button></li>
+									<li><button type="button" data-bankcode="037" class="unit"><span class="txt">전북</span></button></li>
+									<li><button type="button" data-bankcode="007" class="unit"><span class="txt">수협</span></button></li>
+									<li><button type="button" data-bankcode="035" class="unit"><span class="txt">제주</span></button></li>
+									<li><button type="button" data-bankcode="064" class="unit"><span class="txt">산림조합</span></button></li>
+									<li><button type="button" data-bankcode="048" class="unit"><span class="txt">신협</span></button></li>
+									<li><button type="button" data-bankcode="045" class="unit"><span class="txt">새마을</span></button></li>
+									<li><button type="button" data-bankcode="071" class="unit"><span class="txt">우체국</span></button></li>
+									<li><button type="button" data-bankcode="050" class="unit"><span class="txt">저축은행</span></button></li>
+									<li><button type="button" data-bankcode="055" class="unit"><span class="txt">도이치</span></button></li>
+									<li><button type="button" data-bankcode="060" class="unit"><span class="txt">뱅크오브아메리카</span></button></li>
+									<li><button type="button" data-bankcode="062" class="unit"><span class="txt">중국공상</span></button></li>
+									<li><button type="button" data-bankcode="063" class="unit"><span class="txt">중국</span></button></li>
+									<li><button type="button" data-bankcode="067" class="unit"><span class="txt">중국건설</span></button></li>
+									<li><button type="button" data-bankcode="061" class="unit"><span class="txt">BNP파리바</span></button></li>
+									<li><button type="button" data-bankcode="054" class="unit"><span class="txt">HSBC</span></button></li>
+									<li><button type="button" data-bankcode="057" class="unit"><span class="txt">JP모건</span></button></li>
+								</ul>
+							</div>
+	
+							<div role="tabpanel" aria-labelledby="segment201" id="segments-panel201" class="segments-panel" tabindex="0">
+								<ul class="button-box">
+									<li><button type="button" data-bankcode="247" class="unit"><span class="txt">NH농협</span></button></li>
+									<li><button type="button" data-bankcode="261" class="unit"><span class="txt">교보증권</span></button></li>
+									<li><button type="button" data-bankcode="267" class="unit"><span class="txt">대신증권</span></button></li>
+									<li><button type="button" data-bankcode="287" class="unit"><span class="txt">메리츠증권</span></button></li>
+									<li><button type="button" data-bankcode="238" class="unit"><span class="txt">미래에셋증권</span></button></li>
+									<li><button type="button" data-bankcode="290" class="unit"><span class="txt">부국증권</span></button></li>
+									<li><button type="button" data-bankcode="240" class="unit"><span class="txt">삼성증권</span></button></li>
+									<li><button type="button" data-bankcode="291" class="unit"><span class="txt">신영증권</span></button></li>
+									<li><button type="button" data-bankcode="278" class="unit"><span class="txt">신한투자증권</span></button></li>
+									<li><button type="button" data-bankcode="266" class="unit"><span class="txt">에스케이증권</span></button></li>
+									<li><button type="button" data-bankcode="209" class="unit"><span class="txt">유안타증권</span></button></li>
+									<li><button type="button" data-bankcode="280" class="unit"><span class="txt">유진투자증권</span></button></li>
+									<li><button type="button" data-bankcode="265" class="unit"><span class="txt">LS증권</span></button></li>
+									<li><button type="button" data-bankcode="288" class="unit"><span class="txt">카카오페이증권</span></button></li>
+									<li><button type="button" data-bankcode="292" class="unit"><span class="txt">케이프투자증권</span></button></li>
+									<li><button type="button" data-bankcode="264" class="unit"><span class="txt">키움증권</span></button></li>
+									<li><button type="button" data-bankcode="271" class="unit"><span class="txt">토스증권</span></button></li>
+									<li><button type="button" data-bankcode="270" class="unit"><span class="txt">하나증권</span></button></li>
+									<li><button type="button" data-bankcode="262" class="unit"><span class="txt">아이엠증권</span></button></li>
+									<li><button type="button" data-bankcode="243" class="unit"><span class="txt">한국투자증권</span></button></li>
+									<li><button type="button" data-bankcode="269" class="unit"><span class="txt">한화투자증권</span></button></li>
+									<li><button type="button" data-bankcode="263" class="unit"><span class="txt">현대차증권</span></button></li>
+									<li><button type="button" data-bankcode="295" class="unit"><span class="txt">우리투자증권</span></button></li>
+									<li><button type="button" data-bankcode="224" class="unit"><span class="txt">BNK증권</span></button></li>
+									<li><button type="button" data-bankcode="279" class="unit"><span class="txt">DB금융증권</span></button></li>
+									<li><button type="button" data-bankcode="225" class="unit"><span class="txt">IBK투자증권</span></button></li>
+									<li><button type="button" data-bankcode="218" class="unit"><span class="txt">KB증권</span></button></li>
+									<li><button type="button" data-bankcode="227" class="unit"><span class="txt">디올투자증권</span></button></li>
+									<li><button type="button" data-bankcode="221" class="unit"><span class="txt">상상인증권</span></button></li>
+								</ul>
+							</div>
+
+							<div role="tabpanel" aria-labelledby="segment301" id="segments-panel301" class="segments-panel -active" tabindex="0">
+								<ul class="button-box">
+									<li><button type="button" data-bankcode="440" class="unit"><span class="txt">NH농협생명</span></button></li>
+									<li><button type="button" data-bankcode="431" class="unit"><span class="txt">미래에셋생명</span></button></li>
+									<li><button type="button" data-bankcode="432" class="unit"><span class="txt">한화생명</span></button></li>
+									<li><button type="button" data-bankcode="436" class="unit"><span class="txt">교보라이프플래닛</span></button></li>
+									<li><button type="button" data-bankcode="434" class="unit"><span class="txt">푸본현대생명보험</span></button></li>
+									<li><button type="button" data-bankcode="436" class="unit"><span class="txt">교보생명</span></button></li>
+									<li><button type="button" data-bankcode="437" class="unit"><span class="txt">ABL생명</span></button></li>
+									<li><button type="button" data-bankcode="438" class="unit"><span class="txt">신한생명</span></button></li>
+									<li><button type="button" data-bankcode="439" class="unit"><span class="txt">KB생명보험</span></button></li>
+									<li><button type="button" data-bankcode="441" class="unit"><span class="txt">삼성화재해상보험</span></button></li>
+									<li><button type="button" data-bankcode="442" class="unit"><span class="txt">현대해상화재</span></button></li>
+									<li><button type="button" data-bankcode="457" class="unit"><span class="txt">DB손해보험</span></button></li>
+									<li><button type="button" data-bankcode="444" class="unit"><span class="txt">케이비손해보험</span></button></li>
+									<li><button type="button" data-bankcode="445" class="unit"><span class="txt">롯데손해보험</span></button></li>
+									<li><button type="button" data-bankcode="448" class="unit"><span class="txt">메리츠화재</span></button></li>
+									<li><button type="button" data-bankcode="452" class="unit"><span class="txt">삼성생명</span></button></li>
+									<li><button type="button" data-bankcode="453" class="unit"><span class="txt">흥국생명</span></button></li>
+									<li><button type="button" data-bankcode="454" class="unit"><span class="txt">한화손해보험</span></button></li>
+									<li><button type="button" data-bankcode="L73" class="unit"><span class="txt">DGB생명</span></button></li>
+									<li><button type="button" data-bankcode="457" class="unit"><span class="txt">DB생명보험</span></button></li>
+									<li><button type="button" data-bankcode="458" class="unit"><span class="txt">케이디비생명</span></button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-finnace/organ" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-finnace_organ')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/organ.png" alt=""></div>
+	<div id="Bottomsheet-finnace_organ" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">금융기관을 선택해 주세요</h1>
+					
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-finnace_organ')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="bank-select">
+						<div class="segments -bar -triple">
+							<div class="outer">
+								<div class="inner">
+									<div role="tablist" class="list">
+										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel1013" id="segment103">은행</button></div>
+										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel2012" id="segment202">증권사</button></div>
+										<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel3011" id="segment301">국세/지방세입</button></div>
+										<span class="switcher" aria-hidden="true"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="segments-panels">
+							<div role="tabpanel" aria-labelledby="segment103" id="segments-panel1013" class="segments-panel" tabindex="0">
+								<ul class="button-box">
+									<li><button type="button" data-bankcode="011" class="unit"><span class="txt">NH농협</span></button></li>
+									<li><button type="button" data-bankcode="004" class="unit"><span class="txt">국민</span></button></li>
+									<li><button type="button" data-bankcode="003" class="unit"><span class="txt">기업</span></button></li>
+									<li><button type="button" data-bankcode="002" class="unit"><span class="txt">산업</span></button></li>
+									<li><button type="button" data-bankcode="088" class="unit"><span class="txt">신한</span></button></li>
+									<li><button type="button" data-bankcode="020" class="unit"><span class="txt">우리</span></button></li>
+									<li><button type="button" data-bankcode="082" class="unit"><span class="txt">하나</span></button></li>
+									<li><button type="button" data-bankcode="027" class="unit"><span class="txt">한국씨티</span></button></li>
+									<li><button type="button" data-bankcode="023" class="unit"><span class="txt">SC제일</span></button></li>
+									<li><button type="button" data-bankcode="090" class="unit"><span class="txt">카카오뱅크</span></button></li>
+									<li><button type="button" data-bankcode="089" class="unit"><span class="txt">케이뱅크</span></button></li>
+									<li><button type="button" data-bankcode="092" class="unit"><span class="txt">토스뱅크</span></button></li>
+									<li><button type="button" data-bankcode="039" class="unit"><span class="txt">경남</span></button></li>
+									<li><button type="button" data-bankcode="034" class="unit"><span class="txt">광주</span></button></li>
+									<li><button type="button" data-bankcode="031" class="unit"><span class="txt">iM뱅크</span></button></li>
+									<li><button type="button" data-bankcode="032" class="unit"><span class="txt">부산</span></button></li>
+									<li><button type="button" data-bankcode="037" class="unit"><span class="txt">전북</span></button></li>
+									<li><button type="button" data-bankcode="007" class="unit"><span class="txt">수협</span></button></li>
+									<li><button type="button" data-bankcode="035" class="unit"><span class="txt">제주</span></button></li>
+									<li><button type="button" data-bankcode="064" class="unit"><span class="txt">산림조합</span></button></li>
+									<li><button type="button" data-bankcode="048" class="unit"><span class="txt">신협</span></button></li>
+									<li><button type="button" data-bankcode="045" class="unit"><span class="txt">새마을</span></button></li>
+									<li><button type="button" data-bankcode="071" class="unit"><span class="txt">우체국</span></button></li>
+									<li><button type="button" data-bankcode="050" class="unit"><span class="txt">저축은행</span></button></li>
+									<li><button type="button" data-bankcode="055" class="unit"><span class="txt">도이치</span></button></li>
+									<li><button type="button" data-bankcode="060" class="unit"><span class="txt">뱅크오브아메리카</span></button></li>
+									<li><button type="button" data-bankcode="062" class="unit"><span class="txt">중국공상</span></button></li>
+									<li><button type="button" data-bankcode="063" class="unit"><span class="txt">중국</span></button></li>
+									<li><button type="button" data-bankcode="067" class="unit"><span class="txt">중국건설</span></button></li>
+									<li><button type="button" data-bankcode="061" class="unit"><span class="txt">BNP파리바</span></button></li>
+									<li><button type="button" data-bankcode="054" class="unit"><span class="txt">HSBC</span></button></li>
+									<li><button type="button" data-bankcode="057" class="unit"><span class="txt">JP모건</span></button></li>
+								</ul>
+							</div>
+	
+							<div role="tabpanel" aria-labelledby="segment202" id="segments-panel2012" class="segments-panel" tabindex="0">
+								<ul class="button-box">
+									<li><button type="button" data-bankcode="247" class="unit"><span class="txt">NH농협</span></button></li>
+									<li><button type="button" data-bankcode="261" class="unit"><span class="txt">교보증권</span></button></li>
+									<li><button type="button" data-bankcode="267" class="unit"><span class="txt">대신증권</span></button></li>
+									<li><button type="button" data-bankcode="287" class="unit"><span class="txt">메리츠증권</span></button></li>
+									<li><button type="button" data-bankcode="238" class="unit"><span class="txt">미래에셋증권</span></button></li>
+									<li><button type="button" data-bankcode="290" class="unit"><span class="txt">부국증권</span></button></li>
+									<li><button type="button" data-bankcode="240" class="unit"><span class="txt">삼성증권</span></button></li>
+									<li><button type="button" data-bankcode="291" class="unit"><span class="txt">신영증권</span></button></li>
+									<li><button type="button" data-bankcode="278" class="unit"><span class="txt">신한투자증권</span></button></li>
+									<li><button type="button" data-bankcode="266" class="unit"><span class="txt">에스케이증권</span></button></li>
+									<li><button type="button" data-bankcode="209" class="unit"><span class="txt">유안타증권</span></button></li>
+									<li><button type="button" data-bankcode="280" class="unit"><span class="txt">유진투자증권</span></button></li>
+									<li><button type="button" data-bankcode="265" class="unit"><span class="txt">LS증권</span></button></li>
+									<li><button type="button" data-bankcode="288" class="unit"><span class="txt">카카오페이증권</span></button></li>
+									<li><button type="button" data-bankcode="292" class="unit"><span class="txt">케이프투자증권</span></button></li>
+									<li><button type="button" data-bankcode="264" class="unit"><span class="txt">키움증권</span></button></li>
+									<li><button type="button" data-bankcode="271" class="unit"><span class="txt">토스증권</span></button></li>
+									<li><button type="button" data-bankcode="270" class="unit"><span class="txt">하나증권</span></button></li>
+									<li><button type="button" data-bankcode="262" class="unit"><span class="txt">아이엠증권</span></button></li>
+									<li><button type="button" data-bankcode="243" class="unit"><span class="txt">한국투자증권</span></button></li>
+									<li><button type="button" data-bankcode="269" class="unit"><span class="txt">한화투자증권</span></button></li>
+									<li><button type="button" data-bankcode="263" class="unit"><span class="txt">현대차증권</span></button></li>
+									<li><button type="button" data-bankcode="295" class="unit"><span class="txt">우리투자증권</span></button></li>
+									<li><button type="button" data-bankcode="224" class="unit"><span class="txt">BNK증권</span></button></li>
+									<li><button type="button" data-bankcode="279" class="unit"><span class="txt">DB금융증권</span></button></li>
+									<li><button type="button" data-bankcode="225" class="unit"><span class="txt">IBK투자증권</span></button></li>
+									<li><button type="button" data-bankcode="218" class="unit"><span class="txt">KB증권</span></button></li>
+									<li><button type="button" data-bankcode="227" class="unit"><span class="txt">디올투자증권</span></button></li>
+									<li><button type="button" data-bankcode="221" class="unit"><span class="txt">상상인증권</span></button></li>
+								</ul>
+							</div>
+
+							<div role="tabpanel" aria-labelledby="segment301" id="segments-panel3011" class="segments-panel -active" tabindex="0">
+								<ul class="button-box">
+									<li><button type="button" data-bankcode="481" class="unit"><span class="txt">국세</span></button></li>
+									<li><button type="button" data-bankcode="481" class="unit"><span class="txt">지방세입</span></button></li>
+									<li><button type="button" data-bankcode="481" class="unit"><span class="txt">국고금</span></button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-finnace/stock" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-finnace_stock')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/stock.png" alt=""></div>
+	<div id="Bottomsheet-finnace_stock" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">금융기관을 선택해 주세요</h1>
+					
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-finnace_stock')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="bank-select">
+						<div class="segments -bar">
+							<div class="outer">
+								<div class="inner">
+									<div role="tablist" class="list" aria-label="금융기관 유형">
+										<div class="item"><button type="button" role="tab" aria-selected="false" aria-controls="segments-panel111" id="segment111">은행</button></div>
+										<div class="item -active"><button type="button" role="tab" aria-selected="true" aria-controls="segments-panel222" id="segment222">증권사</button></div>
+										<span class="switcher" aria-hidden="true"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="segments-panels">
+							<div role="tabpanel" aria-labelledby="segment111" id="segments-panel111" class="segments-panel" tabindex="0">
+								<ul class="button-box">
+									<li><button type="button" data-bankcode="011" class="unit"><span class="txt">NH농협</span></button></li>
+									<li><button type="button" data-bankcode="004" class="unit"><span class="txt">국민</span></button></li>
+									<li><button type="button" data-bankcode="003" class="unit"><span class="txt">기업</span></button></li>
+									<li><button type="button" data-bankcode="002" class="unit"><span class="txt">산업</span></button></li>
+									<li><button type="button" data-bankcode="088" class="unit"><span class="txt">신한</span></button></li>
+									<li><button type="button" data-bankcode="020" class="unit"><span class="txt">우리</span></button></li>
+									<li><button type="button" data-bankcode="082" class="unit"><span class="txt">하나</span></button></li>
+									<li><button type="button" data-bankcode="027" class="unit"><span class="txt">한국씨티</span></button></li>
+									<li><button type="button" data-bankcode="023" class="unit"><span class="txt">SC제일</span></button></li>
+									<li><button type="button" data-bankcode="090" class="unit"><span class="txt">카카오뱅크</span></button></li>
+									<li><button type="button" data-bankcode="089" class="unit"><span class="txt">케이뱅크</span></button></li>
+									<li><button type="button" data-bankcode="092" class="unit"><span class="txt">토스뱅크</span></button></li>
+									<li><button type="button" data-bankcode="039" class="unit"><span class="txt">경남</span></button></li>
+									<li><button type="button" data-bankcode="034" class="unit"><span class="txt">광주</span></button></li>
+									<li><button type="button" data-bankcode="031" class="unit"><span class="txt">iM뱅크</span></button></li>
+									<li><button type="button" data-bankcode="032" class="unit"><span class="txt">부산</span></button></li>
+									<li><button type="button" data-bankcode="037" class="unit"><span class="txt">전북</span></button></li>
+									<li><button type="button" data-bankcode="007" class="unit"><span class="txt">수협</span></button></li>
+									<li><button type="button" data-bankcode="035" class="unit"><span class="txt">제주</span></button></li>
+									<li><button type="button" data-bankcode="064" class="unit"><span class="txt">산림조합</span></button></li>
+									<li><button type="button" data-bankcode="048" class="unit"><span class="txt">신협</span></button></li>
+									<li><button type="button" data-bankcode="045" class="unit"><span class="txt">새마을</span></button></li>
+									<li><button type="button" data-bankcode="071" class="unit"><span class="txt">우체국</span></button></li>
+									<li><button type="button" data-bankcode="050" class="unit"><span class="txt">저축은행</span></button></li>
+									<li><button type="button" data-bankcode="055" class="unit"><span class="txt">도이치</span></button></li>
+									<li><button type="button" data-bankcode="060" class="unit"><span class="txt">뱅크오브아메리카</span></button></li>
+									<li><button type="button" data-bankcode="062" class="unit"><span class="txt">중국공상</span></button></li>
+									<li><button type="button" data-bankcode="063" class="unit"><span class="txt">중국</span></button></li>
+									<li><button type="button" data-bankcode="067" class="unit"><span class="txt">중국건설</span></button></li>
+									<li><button type="button" data-bankcode="061" class="unit"><span class="txt">BNP파리바</span></button></li>
+									<li><button type="button" data-bankcode="054" class="unit"><span class="txt">HSBC</span></button></li>
+									<li><button type="button" data-bankcode="057" class="unit"><span class="txt">JP모건</span></button></li>
+								</ul>
+							</div>
+	
+							<div role="tabpanel" aria-labelledby="segment222" id="segments-panel222" class="segments-panel -active" tabindex="0">
+								<ul class="button-box">
+									<li><button type="button" data-bankcode="247" class="unit"><span class="txt">NH농협</span></button></li>
+									<li><button type="button" data-bankcode="261" class="unit"><span class="txt">교보증권</span></button></li>
+									<li><button type="button" data-bankcode="267" class="unit"><span class="txt">대신증권</span></button></li>
+									<li><button type="button" data-bankcode="287" class="unit"><span class="txt">메리츠증권</span></button></li>
+									<li><button type="button" data-bankcode="238" class="unit"><span class="txt">미래에셋증권</span></button></li>
+									<li><button type="button" data-bankcode="290" class="unit"><span class="txt">부국증권</span></button></li>
+									<li><button type="button" data-bankcode="240" class="unit"><span class="txt">삼성증권</span></button></li>
+									<li><button type="button" data-bankcode="291" class="unit"><span class="txt">신영증권</span></button></li>
+									<li><button type="button" data-bankcode="278" class="unit"><span class="txt">신한투자증권</span></button></li>
+									<li><button type="button" data-bankcode="266" class="unit"><span class="txt">에스케이증권</span></button></li>
+									<li><button type="button" data-bankcode="209" class="unit"><span class="txt">유안타증권</span></button></li>
+									<li><button type="button" data-bankcode="280" class="unit"><span class="txt">유진투자증권</span></button></li>
+									<li><button type="button" data-bankcode="265" class="unit"><span class="txt">LS증권</span></button></li>
+									<li><button type="button" data-bankcode="288" class="unit"><span class="txt">카카오페이증권</span></button></li>
+									<li><button type="button" data-bankcode="292" class="unit"><span class="txt">케이프투자증권</span></button></li>
+									<li><button type="button" data-bankcode="264" class="unit"><span class="txt">키움증권</span></button></li>
+									<li><button type="button" data-bankcode="271" class="unit"><span class="txt">토스증권</span></button></li>
+									<li><button type="button" data-bankcode="270" class="unit"><span class="txt">하나증권</span></button></li>
+									<li><button type="button" data-bankcode="262" class="unit"><span class="txt">아이엠증권</span></button></li>
+									<li><button type="button" data-bankcode="243" class="unit"><span class="txt">한국투자증권</span></button></li>
+									<li><button type="button" data-bankcode="269" class="unit"><span class="txt">한화투자증권</span></button></li>
+									<li><button type="button" data-bankcode="263" class="unit"><span class="txt">현대차증권</span></button></li>
+									<li><button type="button" data-bankcode="295" class="unit"><span class="txt">우리투자증권</span></button></li>
+									<li><button type="button" data-bankcode="224" class="unit"><span class="txt">BNK증권</span></button></li>
+									<li><button type="button" data-bankcode="279" class="unit"><span class="txt">DB금융증권</span></button></li>
+									<li><button type="button" data-bankcode="225" class="unit"><span class="txt">IBK투자증권</span></button></li>
+									<li><button type="button" data-bankcode="218" class="unit"><span class="txt">KB증권</span></button></li>
+									<li><button type="button" data-bankcode="227" class="unit"><span class="txt">디올투자증권</span></button></li>
+									<li><button type="button" data-bankcode="221" class="unit"><span class="txt">상상인증권</span></button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-float" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-float')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/bottomsheet-float.png" alt=""></div>
+	<div id="Bottomsheet-float" class="layer -float" aria-label="상세 정보">
+		<div class="container">
+			<div class="nds-contents">
+				<div class="content">
+					<dl class="dl">
+						<div>
+							<dt>타이틀</dt>
+							<dd>데이터</dd>
+						</div>
+					</dl>
+					<p class="p"><button type="button" class="a underline point" onClick="Modal.close('Bottomsheet-float')">레이어 닫기</button></p>
+				</div>
+
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -lg -primary">버튼명</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/basic" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-keypad_basic')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1104_27986.png" alt=""></div>
+	<div id="Bottomsheet-keypad_basic" class="layer dimWhiteLayer" aria-label="숫자 입력 키패드">
+		<div class="container">
+			<div class="nds-contents">
+				<div class="content">
+					<div class="choose-account-Wrap -inputed">
+						<div class="custom-key-wrap">
+							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
+							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
+							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
+							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
+							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
+							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
+							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
+							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
+							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
+							<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
+							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
+							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+						</div>
+						<div class="buttons">
+							<button type="button" class="button -lg -primary" onClick="Modal.close('Bottomsheet-keypad_basic')">확인(레이어닫기)</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/basic-input" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-keypad_basic-input')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1046_19726.png" alt=""></div>
+	<div id="Bottomsheet-keypad_basic-input" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">타이틀</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-keypad_basic-input')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="choose-number-wrap -inputed">
+						<div class="field">
+							<div class="text">
+								<div class="choose-number-input" aria-live="polite" aria-atomic="true">
+									<input type="text" id="text" title="계좌번호 입력" readonly placeholder="숫자입력" aria-describedby="pubNumKeypadBoxMsgText">
+								</div>
+							</div>
+							<div class="info-wrap">
+								<p class="message -error" id="pubNumKeypadBoxMsgText" role="alert">10자리 이상으로 입력하여 주세요.</p>
+							</div>
+						</div>
+						<div class="custom-key-wrap">
+							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
+							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
+							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
+							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
+							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
+							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
+							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
+							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
+							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>							
+							<button type="button" class="key-btn" disabled aria-label="NH(입력 불가)">NH</button>							
+							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
+							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+						</div>
+						<div class="buttons">
+							<button type="button" class="button -lg -primary">확인</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/point" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-keypad_point')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1104_27857.png" alt=""></div>
+	<div id="Bottomsheet-keypad_point" class="layer dimWhiteLayer" aria-label="포인트 입력 키패드">
+		<div class="container">
+			<div class="nds-contents">
+				<div class="content">
+					<div class="choose-account-Wrap -inputed">
+						<div class="custom-key-wrap">
+							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
+							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
+							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
+							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
+							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
+							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
+							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
+							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
+							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>
+							<button type="button" class="key-btn" data-value="." aria-label="점 입력">.</button>						
+							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
+							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+						</div>
+						<div class="buttons">
+							<button type="button" class="button -lg -primary" onClick="Modal.close('Bottomsheet-keypad_point')">확인(레이어닫기)</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/point-input" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-keypad_point-input')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1104_29171.png" alt=""></div>
+	<div id="Bottomsheet-keypad_point-input" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">~을(를) 입력해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-keypad_point-input')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="choose-account-Wrap -inputed">
+						<div class="field">
+							<div class="text">
+								<div class="choose-account-input" aria-live="polite" aria-atomic="true"> 
+									<input type="text" id="text" readonly placeholder="숫자입력">
+								</div>
+							</div>
+						</div>
+						<div class="custom-key-wrap">
+							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
+							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
+							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
+							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
+							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
+							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
+							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
+							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
+							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>
+							<button type="button" class="key-btn" data-value="." aria-label="점 입력">.</button>						
+							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
+							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+						</div>
+						<div class="buttons">
+							<button type="button" class="button -lg -primary">확인</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/price" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-keypad_price')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/9224_102393.png" alt=""></div>
+	<div id="Bottomsheet-keypad_price" class="layer dimWhiteLayer" aria-label="금액 입력 키패드">
+		<div class="container">
+			<div class="nds-contents">
+				<div class="content">
+					<div class="choose-account-Wrap -inputed">
+						<div class="custom-key-wrap">
+							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
+							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
+							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
+							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
+							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
+							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
+							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
+							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
+							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>
+							<button type="button" class="key-btn" data-value="00" aria-label="숫자 00 입력">00</button>						
+							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
+							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+						</div>
+						<div class="buttons">
+							<button type="button" class="button -lg -primary" onClick="Modal.close('Bottomsheet-keypad_price')">확인(레이어닫기)</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/price-button" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-keypad_price-button')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1104_27856.png" alt=""></div>
+	<div id="Bottomsheet-keypad_price-button" class="layer dimWhiteLayer" aria-label="금액 입력 키패드">
+		<div class="container">
+			<div class="nds-contents">
+				<div class="content">
+					<div class="choose-account-Wrap -inputed">
+						<div class="amount-btn-wrap">
+							<button type="button" data-value="100000" class="button numBtn -sm -fit">+10만</button>
+							<button type="button" data-value="500000" class="button numBtn -sm -fit">+50만</button>
+							<button type="button" data-value="1000000" class="button numBtn -sm -fit">+100만</button>
+							<button type="button" data-value="10000000" class="button numBtn -sm -fit">+1000만</button>
+						</div>
+						<div class="custom-key-wrap">
+							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
+							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
+							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
+							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
+							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
+							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
+							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
+							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
+							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>
+							<button type="button" class="key-btn" data-value="00" aria-label="숫자 00 입력">00</button>						
+							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
+							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+						</div>
+						<div class="buttons">
+							<button type="button" class="button -lg -primary" onClick="Modal.close('Bottomsheet-keypad_price-button')">확인(레이어닫기)</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-keypad/price-input" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-keypad_price-input')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1104_27855.png" alt=""></div>
+	<div id="Bottomsheet-keypad_price-input" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">타이틀</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-keypad_price-input')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="choose-account-Wrap -inputed">
+						<div class="field layerType">
+							<div class="mix">
+								<div class="text -won choose-account-input">
+									<div class="num-call" role="status" aria-live="polite" aria-atomic="true" aria-label="입금 금액" aria-describedby="price-input-guide">
+										<span class="placeholder">0원</span> 
+										<span class="num-val"></span>
+									</div>
+									<div class="won" aria-hidden="true">원</div>
+								</div>
+								<div class="info-wrap key-info">
+									<p class="message" id="price-input-guide">100만원이상 10만원 단위로 입력</p>
+								</div>
+							</div>
+						</div>
+						<div class="amount-btn-wrap">
+							<button type="button" data-value="100000" class="button numBtn -sm -fit">+10만</button>
+							<button type="button" data-value="500000" class="button numBtn -sm -fit">+50만</button>
+							<button type="button" data-value="1000000" class="button numBtn -sm -fit">+100만</button>
+							<button type="button" data-value="10000000" class="button numBtn -sm -fit">+1000만</button>
+						</div>
+						<div class="custom-key-wrap">
+							<button type="button" class="key-btn" data-value="1" aria-label="숫자 1 입력">1</button>
+							<button type="button" class="key-btn" data-value="2" aria-label="숫자 2 입력">2</button>
+							<button type="button" class="key-btn" data-value="3" aria-label="숫자 3 입력">3</button>
+							<button type="button" class="key-btn" data-value="4" aria-label="숫자 4 입력">4</button>
+							<button type="button" class="key-btn" data-value="5" aria-label="숫자 5 입력">5</button>
+							<button type="button" class="key-btn" data-value="6" aria-label="숫자 6 입력">6</button>
+							<button type="button" class="key-btn" data-value="7" aria-label="숫자 7 입력">7</button>
+							<button type="button" class="key-btn" data-value="8" aria-label="숫자 8 입력">8</button>
+							<button type="button" class="key-btn" data-value="9" aria-label="숫자 9 입력">9</button>
+							<button type="button" class="key-btn" data-value="00" aria-label="숫자 00 입력">00</button>						
+							<button type="button" class="key-btn" data-value="0" aria-label="숫자 0 입력">0</button>
+							<button type="button" class="key-btn btn-del" aria-label="마지막 숫자 삭제"></button>
+						</div>
+						<div class="buttons">
+							<button type="button" class="button -lg -primary">확인</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-list/currency" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-list_currency')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1046_26880.png" alt=""></div>
+	<div id="Bottomsheet-list_currency" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">통화를 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-list_currency')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="options">
+						<ul role="radiogroup">
+							<li role="none">
+								<button type="button" class="option" role="radio" aria-checked="false">
+									<div class="exchange">
+										<span data-countrycode="001" class="-md">
+											<span>USD(미국 달러)</span>
+										</span>
+									</div>
+								</button>
+							</li>
+							<li role="none">
+								<button type="button" class="option -active" role="radio" aria-checked="true">
+									<div class="exchange">
+										<span data-countrycode="010" class="-md">
+											<span>AUD(호주 달러)</span>
+										</span>
+									</div>
+								</button>
+							</li>
+							<li role="none">
+								<button type="button" class="option" role="radio" aria-checked="false">
+									<div class="exchange">
+										<span data-countrycode="004" class="-md">
+											<span>CNY(중국 위안)</span>
+										</span>
+									</div>
+								</button>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-list/multi" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-list_multi')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1041_35284.png" alt=""></div>
+	<div id="Bottomsheet-list_multi" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">대출금리를 확인해 주세요</h1>
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-list_multi')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="nds-contents">
+				<div class="content slec-checked">
+					<div class="options">
+						<ul role="group">
+							<li>
+								<button type="button" role="checkbox" aria-checked="true" class="option -checked">
+									항목1
+								</button>
+							</li>
+							<li>
+								<button type="button" role="checkbox" aria-checked="false" class="option">
+									항목2
+								</button>
+							</li>
+							<li>
+								<button type="button" role="checkbox" aria-checked="true" class="option -checked">
+									항목3
+								</button>
+							</li>
+							<li>
+								<button type="button" role="checkbox" aria-checked="false" class="option">
+									항목4
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -lg -primary">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-list/single" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-list_single')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1041_35282.png" alt=""></div>
+	<div id="Bottomsheet-list_single" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">타이틀</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-list_single')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="options" role="radiogroup">
+						<ul>
+							<li role="none"><button type="button" role="radio" aria-checked="false" class="option">항목1</button></li>
+							<li role="none"><button type="button" role="radio" aria-checked="true" class="option -active">항목2</button></li>
+							<li role="none"><button type="button" role="radio" aria-checked="false" class="option">항목3</button></li>
+							<li role="none"><button type="button" role="radio" aria-checked="false" class="option">항목4</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-option" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-option')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1055_28823.png" alt=""></div>
+	<div id="Bottomsheet-option" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">조회 설정</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-option')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="field" role="group" aria-labelledby="label-period">
+						<p class="label" id="label-period">조회기간</p>
+						<div class="box-radios -sm">
+							<div class="box-radio">
+								<input type="radio" name="periods" id="period1" checked>
+								<label for="period1">12개월</label>
+							</div>
+							<div class="box-radio">
+								<input type="radio" name="periods" id="period2">
+								<label for="period2">24개월</label>
+							</div>
+							<div class="box-radio">
+								<input type="radio" name="periods" id="period3">
+								<label for="period3">36개월</label>
+							</div>
+							<div class="box-radio">
+								<input type="radio" name="periods" id="period4">
+								<label for="period4">직접입력</label>
+							</div>
+						</div>
+						<div class="mix datepicker">
+							<div class="text" data-clear="false">
+								<input type="text" class="left-side" id="date1" value="2025.01.01" aria-haspopup="true" aria-label="조회 시작일" readonly>
+							</div>
+							<div class="space -lined date -start">
+								<button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+							</div>
+							<div class="dash">~</div>
+							<div class="text" data-clear="false">
+								<input type="text" class="left-side" id="date2" value="2025.01.02" aria-haspopup="true" aria-label="조회 종료일" readonly>
+							</div>
+							<div class="space -lined date -end">
+								<button type="button" class="icon-button -calendar" aria-haspopup="true"><span class="hide">달력 보기</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="field" role="group" aria-labelledby="label-sort">
+						<p class="label" id="label-sort">조회기간</p>
+						<div class="box-radios -sm">
+							<div class="box-radio">
+								<input type="radio" name="box-radios" id="box-radio1" checked>
+								<label for="box-radio1">최신순</label>
+							</div>
+							<div class="box-radio">
+								<input type="radio" name="box-radios" id="box-radio2">
+								<label for="box-radio2">과거순</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="field"role="group" aria-labelledby="label-type">
+						<p class="label" id="label-type">조회유형</p>
+						<div class="box-radios -sm">
+							<div class="box-radio">
+								<input type="radio" name="box-radios2" id="box-radio3" checked>
+								<label for="box-radio3">전체</label>
+							</div>
+							<div class="box-radio">
+								<input type="radio" name="box-radios2" id="box-radio4">
+								<label for="box-radio4">입금</label>
+							</div>
+							<div class="box-radio">
+								<input type="radio" name="box-radios2" id="box-radio5">
+								<label for="box-radio5">출금</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -lg -primary">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-picker/calendar/month-day" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-picker_calendar_month-day')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/month-day.png" alt=""></div>
+	<div id="Bottomsheet-picker_calendar_month-day" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">날짜를 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-picker_calendar_month-day')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="calendar">
+						<div class="control">
+							<button type="button" class="button -tertiary -xs -fitted">오늘</button>
+
+							<div class="title">
+								<button type="button" class="prev" aria-label="이전달"><span class="hide">이전달</span></button>
+								<span class="value">2024.10</span>
+								<button type="button" class="next" aria-label="다음달"><span class="hide">다음달</span></button>
+							</div>
+						</div>
+						<!-- 단순 선택 시 -active, 시작일 클래스 -start , 종료일 클래스 -end, 사이 날짜는 -between 클래스로 UI가 적용됩니다.
+						접근성 적용으로 span 태그 내 시작일, 선택됨, 종료일 텍스트가 동적으로 적용되어야 합니다. -->
+						<table role="grid">
+							<caption><span class="hide">일별 선택 달력</span></caption>
+							<thead>
+								<tr>
+									<th scope="col">일</th>
+									<th scope="col">월</th>
+									<th scope="col">화</th>
+									<th scope="col">수</th>
+									<th scope="col">목</th>
+									<th scope="col">금</th>
+									<th scope="col">토</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td role="gridcell"><button type="button" disabled>30</button></td>
+									<td role="gridcell"><button type="button" disabled>31</button></td>
+									<td role="gridcell"><button type="button" disabled>1</button></td>
+									<td role="gridcell"><button type="button" disabled>2</button></td>
+									<td role="gridcell"><button type="button" disabled>3</button></td>
+									<td role="gridcell"><button type="button" disabled>4</button></td>
+									<td role="gridcell"><button type="button" disabled>5</button></td>
+								</tr>
+								<tr>
+									<td role="gridcell"><button type="button" disabled>6</button></td>
+									<td role="gridcell"><button type="button" disabled>7</button></td>
+									<td role="gridcell"><button type="button" disabled>8</button></td>
+									<td role="gridcell"><button type="button" disabled>9</button></td>
+									<td role="gridcell"><button type="button" disabled>10</button></td>
+									<td role="gridcell"><button type="button" disabled>11</button></td>
+									<td role="gridcell"><button type="button" disabled>12</button></td>
+								</tr>
+								<tr>
+									<td role="gridcell"><button type="button" disabled>13</button></td>
+									<td role="gridcell"><button type="button" disabled>14</button></td>
+									<td role="gridcell"><button type="button" disabled>15</button></td>
+									<td role="gridcell"><button type="button" aria-current="date" class="-today">16<span class="hide">오늘</span></button></td>
+									<td role="gridcell"><button type="button">17</button></td>
+									<td role="gridcell"><button type="button">18</button></td>
+									<td role="gridcell"><button type="button">19</button></td>
+								</tr>
+								<tr>
+									<td role="gridcell"><button type="button">20</button></td>
+									<td role="gridcell"><button type="button">21</button></td>
+									<td role="gridcell"><button type="button">22 </button></td>
+									<td role="gridcell"><button type="button">23</button></td>
+									<td role="gridcell"><button type="button">24</button></td>
+									<td role="gridcell"><button type="button">25</button></td>
+									<td role="gridcell"><button type="button">26</button></td>
+								</tr>
+								<tr>
+									<td role="gridcell"><button type="button" aria-selected="true" class="-active">27</button></td>
+									<td role="gridcell"><button type="button">28</button></td>
+									<td role="gridcell"><button type="button">29</button></td>
+									<td role="gridcell"><button type="button">30</button></td>
+									<td role="gridcell"><button type="button">31</button></td>
+									<td role="gridcell"><button type="button" disabled>1</button></td>
+									<td role="gridcell"><button type="button" disabled>2</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -primary -lg">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-picker/calendar/year-month" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-picker_calendar_year-month')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/year-month.png" alt=""></div>
+	<div id="Bottomsheet-picker_calendar_year-month" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">년 · 월을 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-picker_calendar_year-month')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="nds-contents">
+				<div class="content">
+					<div class="calendar">
+						<div class="control choose-m">
+							<button type="button" class="button -tertiary -xs -fitted">당월</button>
+
+							<div class="title">
+								<button type="button" class="prev" aria-label="이전달"><span class="hide">이전달</span></button>
+								<span class="value">2025</span>
+								<button type="button" class="next" aria-label="다음달"><span class="hide">다음달</span></button>
+							</div>
+						</div>
+
+						<div class="month">
+							<caption><span class="hide">월별 선택 달력</span></caption>
+							<ol role="listbox" aria-label="월 선택">
+								<li><button type="button" role="option" disabled>1</button></li>
+								<li><button type="button" role="option" disabled>2</button></li>
+								<li><button type="button" role="option" disabled>3</button></li>
+								<li><button type="button" role="option" disabled>4</button></li>
+								<li><button type="button" role="option" disabled>5</button></li>
+								<li><button type="button" role="option" disabled>6</button></li>
+								<li><button type="button" role="option" aria-current="date" class="-today">7 <span class="hide">오늘</span></button></li>
+								<li><button type="button" role="option">8</button></li>
+								<li><button type="button" role="option">9</button></li>
+								<li><button type="button" role="option" aria-selected="true" class="-active">10 <span class="hide">선택됨</span></button></li>
+								<li><button type="button" role="option">11</button></li>
+								<li><button type="button" role="option">12</button></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -lg -primary">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-picker/calendar/year-month-day" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-picker_calendar_year-month-day')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/year-month-day.png" alt=""></div>
+	<div id="Bottomsheet-picker_calendar_year-month-day" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">날짜를 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-picker_calendar_year-month-day')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<div class="calendar">
+						<div class="control -seperate">
+							<button type="button" class="button -tertiary -xs -fitted">오늘</button>
+
+							<div class="title">
+								<button type="button" class="prev" aria-label="이전 연도"><span class="hide">이전 연도</span></button>
+								<span class="value">2024</span>
+								<button type="button" class="next" aria-label="다음 연도"><span class="hide">다음 연도</span></button>
+							</div>
+							<div class="title -month">
+								<button type="button" class="prev" aria-label="이전달"><span class="hide">이전달</span></button>
+								<span class="value">12</span>
+								<button type="button" class="next" aria-label="다음달"><span class="hide">다음달</span></button>
+							</div>
+						</div>
+						<table role="grid">
+							<caption><span class="hide">일별 선택 달력</span></caption>
+							<thead>
+								<tr role="row">
+									<th scope="col">일</th>
+									<th scope="col">월</th>
+									<th scope="col">화</th>
+									<th scope="col">수</th>
+									<th scope="col">목</th>
+									<th scope="col">금</th>
+									<th scope="col">토</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr role="row">
+									<td role="gridcell"><button type="button" disabled>30</button></td>
+									<td role="gridcell"><button type="button" disabled>31</button></td>
+									<td role="gridcell"><button type="button" disabled>1</button></td>
+									<td role="gridcell"><button type="button" disabled>2</button></td>
+									<td role="gridcell"><button type="button" disabled>3</button></td>
+									<td role="gridcell"><button type="button" disabled>4</button></td>
+									<td role="gridcell"><button type="button" disabled>5</button></td>
+								</tr>
+								<tr role="row">
+									<td role="gridcell"><button type="button" disabled>6</button></td>
+									<td role="gridcell"><button type="button" disabled>7</button></td>
+									<td role="gridcell"><button type="button" disabled>8</button></td>
+									<td role="gridcell"><button type="button" disabled>9</button></td>
+									<td role="gridcell"><button type="button" disabled>10</button></td>
+									<td role="gridcell"><button type="button" disabled>11</button></td>
+									<td role="gridcell"><button type="button" disabled>12</button></td>
+								</tr>
+								<tr role="row">
+									<td role="gridcell"><button type="button" disabled>13</button></td>
+									<td role="gridcell"><button type="button" disabled>14</button></td>
+									<td role="gridcell"><button type="button" class="-today" aria-current="date">15 <span class="hide">오늘</span></button></td>
+									<td role="gridcell"><button type="button">16</button></td>
+									<td role="gridcell"><button type="button" class="-active" aria-selected="true">17</button></td>
+									<td role="gridcell"><button type="button">18</button></td>
+									<td role="gridcell"><button type="button">19</button></td>
+								</tr>
+								<tr role="row">
+									<td role="gridcell"><button type="button">20</button></td>
+									<td role="gridcell"><button type="button">21</button></td>
+									<td role="gridcell"><button type="button">22 </button></td>
+									<td role="gridcell"><button type="button">23</button></td>
+									<td role="gridcell"><button type="button">24</button></td>
+									<td role="gridcell"><button type="button">25</button></td>
+									<td role="gridcell"><button type="button">26</button></td>
+								</tr>
+								<tr role="row">
+									<td role="gridcell"><button type="button">27</button></td>
+									<td role="gridcell"><button type="button">28</button></td>
+									<td role="gridcell"><button type="button">29</button></td>
+									<td role="gridcell"><button type="button">30</button></td>
+									<td role="gridcell"><button type="button">31</button></td>
+									<td role="gridcell"><button type="button" disabled>1</button></td>
+									<td role="gridcell"><button type="button" disabled>2</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -lg -primary">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-picker/wheel/day" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-picker_wheel_day')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/w-day.png" alt=""></div>
+	<div id="Bottomsheet-picker_wheel_day" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">이체주기를 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-picker_wheel_day')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content pb-16">
+					<div class="datepicker-widget cycle-type">
+						<ul class="cycle" role="listbox" aria-label="이체주기 선택">
+							<li role="option" aria-selected="false">매일</li>
+							<li role="option" aria-selected="true" class="on">매주</li>
+							<li role="option" aria-selected="false">매월</li>
+						</ul>
+						<div class="cycle-list" >
+							<ul class="everyday" aria-hidden="true">
+								<li class="on" role="option" aria-selected="false">매일</li>
+							</ul>
+							<ul class="week" style="display:block" aria-hidden="false">
+								<li role="option" aria-selected="false">월요일</li>
+								<li role="option" aria-selected="false">화요일</li>
+								<li class="on" role="option" aria-selected="true">수요일</li>
+								<li role="option" aria-selected="false">목요일</li>
+								<li role="option" aria-selected="false">금요일</li>
+								<li role="option" aria-selected="false">토요일</li>
+								<li role="option" aria-selected="false">일요일</li>
+							</ul>
+							<ul class="day" aria-hidden="true">
+								<li role="option" aria-selected="false">01일</li>
+								<li role="option" aria-selected="false">02일</li>
+								<li role="option" aria-selected="false">03일</li>
+								<li role="option" aria-selected="false">04일</li>
+								<li role="option" aria-selected="false">05일</li>
+								<li class="on" role="option" aria-selected="true">06일</li>
+								<li role="option" aria-selected="false">07일</li>
+								<li role="option" aria-selected="false">08일</li>
+								<li role="option" aria-selected="false">09일</li>
+								<li role="option" aria-selected="false">10일</li>
+								<li role="option" aria-selected="false">11일</li>
+								<li role="option" aria-selected="false">12일</li>
+								<li role="option" aria-selected="false">13일</li>
+								<li role="option" aria-selected="false">14일</li>
+								<li role="option" aria-selected="false">15일</li>
+								<li role="option" aria-selected="false">16일</li>
+								<li role="option" aria-selected="false">17일</li>
+								<li role="option" aria-selected="false">18일</li>
+								<li role="option" aria-selected="false">19일</li>
+								<li role="option" aria-selected="false">20일</li>
+								<li role="option" aria-selected="false">21일</li>
+								<li role="option" aria-selected="false">22일</li>
+								<li role="option" aria-selected="false">23일</li>
+								<li role="option" aria-selected="false">24일</li>
+								<li role="option" aria-selected="false">25일</li>
+								<li role="option" aria-selected="false">26일</li>
+								<li role="option" aria-selected="false">27일</li>
+								<li role="option" aria-selected="false">28일</li>
+								<li role="option" aria-selected="false">29일</li>
+								<li role="option" aria-selected="false">30일</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -lg -primary">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-picker/wheel/hour-minute" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-picker_whell_hour-minute')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/w-hour-minute.png" alt=""></div>
+	<div id="Bottomsheet-picker_whell_hour-minute" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">시 · 분을 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-picker_whell_hour-minute')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content pb-16">
+					<div class="datepicker-widget">
+						<ul class="time" role="listbox" aria-label="시간 선택">
+							<li role="option" aria-selected="false"><span class="number">01</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">02</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">03</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">04</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">05</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">06</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">07</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">08</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">09</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">10</span>시</li>
+							<li class="on" role="option" aria-selected="true"><span class="number">11</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">12</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">13</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">14</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">15</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">16</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">17</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">18</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">19</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">20</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">21</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">22</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">23</span>시</li>
+							<li role="option" aria-selected="false"><span class="number">24</span>시</li>
+						</ul>
+						<ul class="minute" role="listbox" aria-label="분 선택">
+							<li role="option" aria-selected="false"><span class="number">00</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">01</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">02</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">03</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">04</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">05</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">06</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">07</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">08</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">09</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">10</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">11</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">12</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">13</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">14</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">15</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">16</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">17</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">18</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">19</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">20</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">21</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">22</span>분</li>
+							<li class="on" role="option" aria-selected="true"><span class="number">23</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">24</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">25</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">26</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">27</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">28</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">29</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">30</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">31</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">32</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">33</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">34</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">35</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">36</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">37</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">38</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">39</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">40</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">41</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">42</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">43</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">44</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">45</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">46</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">47</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">48</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">49</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">50</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">51</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">52</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">53</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">54</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">55</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">56</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">57</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">58</span>분</li>
+							<li role="option" aria-selected="false"><span class="number">59</span>분</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -primary -lg">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-picker/wheel/period" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-picker_wheel_period')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/w-period.png" alt=""></div>
+	<div id="Bottomsheet-picker_wheel_period" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">기간을 선택해 주세요</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-picker_wheel_period')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content pb-16">
+					<div class="datepicker-widget">
+						<ul class="time" role="listbox" aria-label="기간(년) 선택">
+							<li role="option" aria-selected="false"><span class="number">1</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">3</span>년</li>
+							<li class="on" role="option" aria-selected="true"><span class="number">4</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">5</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">6</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">7</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">8</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">9</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">10</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">11</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">12</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">13</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">14</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">15</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">16</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">17</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">18</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">19</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">20</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">21</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">22</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">23</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">24</span>년</li>
+						</ul>
+						<ul class="minute" role="listbox" aria-label="기간(개월) 선택">
+							<li role="option" aria-selected="false"><span class="number">1</span>개월</li>
+							<li class="on" role="option" aria-selected="true"><span class="number">2</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">3</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">4</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">5</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">6</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">7</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">8</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">9</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">10</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">11</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">12</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">13</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">14</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">15</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">16</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">17</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">18</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">19</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">20</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">21</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">22</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">23</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">24</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">25</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">26</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">27</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">28</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">29</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">30</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">31</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">32</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">33</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">34</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">35</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">36</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">37</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">38</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">39</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">40</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">41</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">42</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">43</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">44</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">45</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">46</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">47</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">48</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">49</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">50</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">51</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">52</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">53</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">54</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">55</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">56</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">57</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">58</span>개월</li>
+							<li role="option" aria-selected="false"><span class="number">59</span>개월</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -primary -lg">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-picker/wheel/year-month-day" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-picker_wheel_year-month-day')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/w-year-month-day.png" alt=""></div>
+	<div id="Bottomsheet-picker_wheel_year-month-day" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">년 · 월 · 일을 선택해 주세요</h1> 
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-picker_wheel_year-month-day')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content pb-16">
+					<div class="datepicker-widget">
+						<ul class="year-pick"  role="listbox" aria-label="연도 선택">
+							<li role="option" aria-selected="false"><span class="number">2010</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2011</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2012</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2013</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2014</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2015</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2016</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2017</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2018</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2019</span>년</li>
+							<li class="on" role="option" aria-selected="true"><span class="number">2020</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2021</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2022</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2023</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2024</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2025</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2026</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2027</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2028</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2029</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2030</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2031</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2032</span>년</li>
+							<li role="option" aria-selected="false"><span class="number">2033</span>년</li>
+						</ul>
+						<ul class="month-pick" role="listbox" aria-label="월 선택">
+							<li role="option" aria-selected="false"><span class="number">1</span>월</li>
+							<li role="option" aria-selected="false"><span class="number">2</span>월</li>
+							<li role="option" aria-selected="false"><span class="number">3</span>월</li>
+							<li role="option" aria-selected="false"><span class="number">4</span>월</li>
+							<li role="option" aria-selected="false"><span class="number">5</span>월</li>
+							<li role="option" aria-selected="false"><span class="number">6</span>월</li>
+							<li role="option" aria-selected="false"><span class="number">7</span>월</li>
+							<li role="option" aria-selected="false"><span class="number">8</span>월</li>
+							<li class="on" role="option" aria-selected="true"><span class="number">9</span>월</li>
+							<li role="option" aria-selected="false"><span class="number">10</span>월</li>
+							<li role="option" aria-selected="false"><span class="number">11</span>월</li>
+							<li role="option" aria-selected="false"><span class="number">12</span>월</li>
+						</ul>
+						<ul class="day-pick" role="listbox" aria-label="일 선택">
+							<li role="option" aria-selected="false"><span class="number">1</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">2</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">3</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">4</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">5</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">6</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">7</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">8</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">9</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">10</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">11</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">12</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">13</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">14</span>일</li>
+							<li class="on" role="option" aria-selected="true"><span class="number">15</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">16</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">17</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">18</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">19</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">20</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">21</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">22</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">23</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">24</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">25</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">26</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">27</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">28</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">29</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">30</span>일</li>
+							<li role="option" aria-selected="false"><span class="number">31</span>일</li>
+						</ul>
+					</div>
+				</div>
+			
+				<div class="fixer">
+					<div class="buttons">
+						<button type="button" class="button -primary -lg">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Bottomsheet | bottomsheet-share" type="text/template">
+	<button type="button" class="a underline point" onClick="Modal.open('Bottomsheet-share')">테스트모드에서 클릭</button>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/1055_29966.png" alt=""></div>
+	<div id="Bottomsheet-share" class="nds-layer">
+		<div class="container">
+			<div class="nds-header">
+				<div class="inner">
+					<h1 class="title">공유하기</h1>
+
+					<div class="funcs">
+						<button type="button" class="func -close" onClick="Modal.close('Bottomsheet-share')"><span class="hide">닫기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="nds-contents">
+				<div class="content">
+					<ul class="shares">
+						<li><button type="button" class="share -kakao"><span>카카오톡</span></button></li>
+						<li><button type="button" class="share -sms"><span>문자메시지</span></button></li>
+						<li><button type="button" class="share -clipboard"><span>링크복사</span></button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+		<!-- NDS components : E -->
+	</div>
+	<!-- NDS Script -->
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/nds-ui.js"></script>
+	<!-- Guide Script -->
+	<script src="./../guide/js/guide.js"></script>
+	<script>
+		buildGuide();
+	</script>
+</body>
+</html>

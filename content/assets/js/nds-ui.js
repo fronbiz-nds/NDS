@@ -1,5 +1,337 @@
 
 const NDS_UI = (function() {
+
+    function Buffer(selector) {
+        if (document.querySelector(selector) == (null || undefined)) return;
+
+        var target = document.querySelector(selector);
+        var contents = target.querySelector('.nds-contents');
+        var fixer = [].filter.call(contents.children, function(x) { return x.classList.contains('nds-fixer'); })[0];
+        var isFixer = (fixer) ? true: false;
+        var bufferSize = (typeof size == 'number') ? size : 0;
+        var history = 0;
+        var isEdited = false;
+        var obj = {};
+        var bufferEl = document.createElement('div');
+
+        function init() {
+            if (target.classList.contains('main')) return;
+            if (isFixer) {bufferSize += fixer.offsetHeight;}
+
+            bufferEl.classList.add('nds-buffer');
+            bufferEl.setAttribute('style', 'height: '+ bufferSize +'px !important');
+            contents.insertAdjacentElement('beforeend', bufferEl);
+        }
+
+        function set(size) {
+            history = bufferSize;
+            bufferSize = size;
+            isEdited = true;
+
+            setSize(bufferSize);
+        }
+
+        function add(size) {
+            history = bufferSize;
+            bufferSize += size
+            isEdited = true;
+
+            setSize(bufferSize);
+        }
+
+        function revert() {
+            bufferSize = history;
+
+            setSize(bufferSize);
+        }
+
+        function setSize(size) {
+            target.querySelector('.nds-buffer').setAttribute('style', 'height: '+ size +'px !important');
+        }
+
+        function remove() {
+            bufferEl.remove();
+        };
+
+        init();
+
+        Object.defineProperties(obj, {
+            isEdited: {
+                get: function() {
+                    return isEdited;
+                }
+            },
+            get: {
+                get: function() {
+                    return bufferSize;
+                }
+            },
+            set: { value: set },
+            add: { value: add },
+            revert: { value: revert },
+            remove: { value: remove }
+        });
+
+        return obj;
+    }
+
+    function stackModalA11y(id) {
+        var page = document.querySelector('.nds-page');
+        var Modal = document.querySelector(id);
+        if (Modal) {
+            Modal.tabIndex = 0;
+            Modal.removeAttribute('aria-hidden');
+
+            // visibility:hidden 상태에서는 focus()가 동작하지 않으므로
+            // 브라우저 렌더링이 완료된 이후 focus()를 실행하기 위해 requestAnimationFrame을 두 번 중첩하여 처리
+            requestAnimationFrame(function() {
+                requestAnimationFrame(function() {
+                    Modal.focus();
+                });
+            });
+        }
+
+        if (stack.print.length === 0) {
+            stack.set(page);
+        }
+
+        if (page) {
+            page.tabIndex = -1;
+            page.setAttribute('aria-hidden', 'true');
+        }
+
+        stack.print.forEach(function(modal) {
+            if (modal && modal !== Modal) {
+                modal.tabIndex = -1;
+                modal.setAttribute('aria-hidden', 'true');
+            }
+        });
+    }
+
+    function queueModalA11y() {
+        var Modal = stack.print;
+        if (Modal.length > 2) {
+            Modal[Modal.length - 1].removeAttribute('tabindex');
+            Modal[Modal.length - 1].removeAttribute('aria-hidden');
+            Modal[Modal.length - 2].tabIndex = 0;
+            Modal[Modal.length - 2].removeAttribute('aria-hidden');
+        }
+        if (Modal.length <= 2) {
+            Modal.forEach(function(modal) {
+                if (modal) { 
+                    modal.removeAttribute('aria-hidden');
+                    modal.tabIndex = 0;
+                }
+            });
+        }
+        var page = document.querySelector('.nds-page');
+        if (page) {
+            page.removeAttribute('aria-hidden');
+            page.removeAttribute('tabindex');
+        }
+    }
+
+    function Stack() {
+        var count = 1000;
+        var stack = [];
+        var obj = {};
+
+        function set(dom) {
+            if (dom) {
+                stack.push(dom);
+            }
+        }
+        function push(dom) {
+            count++;
+            if (dom) {
+                stack.push(dom);
+            }
+            return count;
+        }
+        function pop(dom) {
+            count--;
+            if (dom) {
+                stack.pop();
+            }
+        }
+        Object.defineProperties(obj, {
+            print: {
+                get: function() {
+                    return stack;
+                }
+            },
+            set: { value: set },
+            push: { value: push },
+            pop: { value: pop }
+        });
+        return obj;
+    }
+    var stack = new Stack();
+
+    function Scroll() {
+        var body = document.body;
+        var history = 0;
+
+        return {
+            save: function() {
+                history = (window.hasScrollSave)
+                    ? getComputedStyle(body).marginTop.replace(/[^0-9]/g, '')
+                    : window.scrollY;
+
+                if (!window.hasScrollSave) {
+                    body.classList.add('lock');
+                    body.style.marginTop = (history * -1) + 'px';
+                }
+
+                window.hasScrollSave = true;
+            },
+            load: function() {
+                if (stack.print.length <= 2) {
+                    window.hasScrollSave = false;
+
+                    body.classList.remove('lock');
+                    body.removeAttribute('style');
+                    window.scrollTo(0, history);
+                }
+            }
+        }
+    }
+
+    function Dim() {
+        var dim = document.createElement('div');
+        dim.classList.add('nds-dim');
+
+        return {
+            open: function(id) {
+                var target = document.querySelector(id);
+                target.insertAdjacentElement('beforebegin', dim);
+                dim.style.zIndex = stack.push();
+                setTimeout(function() {
+                    dim.classList.add('-active');
+                });
+            },
+            close: function() {
+                stack.pop();
+                dim.classList.remove('-active');
+                setTimeout(function() {
+                    dim.remove();
+                }, 600);
+            }
+        };
+    }
+
+    function ModalHandler(type) {
+        return {
+            open: function(id, callback) {
+                window[id] = new type('#' + id);
+                window[id].open(callback);
+            },
+            close: function(id, callback, isRemove) {
+                window[id].close(callback, isRemove);
+            },
+            isOpen: function(id) {
+                return window[id] ? window[id].isOpen : false;
+            }
+        };
+    }
+
+    /**
+     * Modal 컴포넌트
+     */
+    function Modal(id) {
+        var el = document.querySelector(id);
+        var dim = new Dim();
+        var scroll = new Scroll();
+        // var information;
+        var ModalBuffer;
+        var triggerEl = null;
+        var isActive = false;
+        var lastFocusable = null;
+        var type = 'popup'; 
+        if (el.classList.contains('nds-alert')) { type = 'alert'; }
+        else if (el.classList.contains('nds-layer')) { type = 'layer'; }
+        else if (el.classList.contains('nds-popup')) { type = 'popup'; }
+
+        function trapFocus(e) {
+            if (e.key === 'Tab' && !e.shiftKey) {
+                e.preventDefault();
+                el.focus();
+            }
+        }
+        function bindFocusTrap() {
+            var focusableSelectors = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+            var focusableElements = el.querySelectorAll(focusableSelectors);
+            lastFocusable = focusableElements[focusableElements.length - 1];
+            if (lastFocusable) {
+                lastFocusable.addEventListener('keydown', trapFocus);
+            }
+        }
+        function unbindFocusTrap() {
+            if (lastFocusable) {
+                lastFocusable.removeEventListener('keydown', trapFocus);
+                lastFocusable = null;
+            }
+        }
+
+        function open(callback) {
+            triggerEl = document.activeElement;
+            scroll.save();
+
+            if (type !== 'popup') dim.open(id);
+
+            setTimeout(function() {
+                el.classList.add('-active');
+                el.setAttribute('aria-modal', 'true');
+                el.style.zIndex = stack.push(el);
+                // information = new Information(id);
+                ModalBuffer = new Buffer(id);
+                stackModalA11y(id);
+                bindFocusTrap();
+
+                switch(type) {
+                    case 'alert':
+                        el.setAttribute('role', 'alertdialog');
+                        break;
+                    case 'layer':
+                        el.setAttribute('role', 'dialog');
+                        break;
+                    case 'popup':
+                        el.setAttribute('role', 'dialog');
+                        break;
+                }
+
+                isActive = true;
+                if (callback instanceof Function) { callback(); }
+            });
+        }
+
+        function close(callback, isRemove) {
+            unbindFocusTrap();
+            scroll.load();
+
+            el.classList.remove('-active');
+            el.removeAttribute('style');
+            el.setAttribute('aria-modal', 'false');
+            ModalBuffer.remove();
+
+            stack.pop(el);
+            queueModalA11y();
+
+            if (type !== 'popup') dim.close();
+            if (isRemove) { el.remove(); }
+            if (triggerEl) { triggerEl.focus(); };
+            isActive = false;
+            if (callback instanceof Function) { callback(); }
+        }
+
+        return {
+            open: open,
+            close: close,
+            // get information() { return information },
+            get isOpen() { return isActive; },
+        };
+    }
+
     /**
      * Accordion 컴포넌트
      */
@@ -725,7 +1057,14 @@ const NDS_UI = (function() {
         TextField: TextField,
         Toast: Toast,
         Tooltip: Tooltip,
+        Stack: Stack,
+        Scroll: Scroll,
+        Dim: Dim,
+        Modal: Modal,
+        ModalHandler : ModalHandler,
     }
 }());
 
 NDS_UI.init()
+
+var Modal = NDS_UI.ModalHandler(NDS_UI.Modal);

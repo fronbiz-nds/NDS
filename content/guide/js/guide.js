@@ -75,6 +75,7 @@ function buildGuide() {
 
         copyBtn.addEventListener('click', function () {
             navigator.clipboard.writeText(html);
+            NDS_UI.Toast({ message: '코드가 복사되었습니다.' });
         });
 
         /* 조립 */

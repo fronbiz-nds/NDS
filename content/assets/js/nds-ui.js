@@ -478,7 +478,7 @@ const NDS_UI = (function() {
             if (!popover.querySelector('[data-nds-role="popover-close"]')) {
                 const closeBtn = document.createElement('button');
                 closeBtn.type = 'button';
-                closeBtn.className = 'nds-btn -ico popover-close';
+                closeBtn.className = 'nds-button -ico popover-close';
                 closeBtn.setAttribute('data-nds-role', 'popover-close');
                 closeBtn.innerHTML = '<span class="hide">닫기</span>';
                 

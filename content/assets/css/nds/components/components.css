@@ -4504,26 +4504,6 @@ p.info.-error,
 .agree.-sub > .panel {padding-right:0;}
 .agree.-sub .checkbox {padding-right:2rem;}
 
-.controller .controllwarp {display:flex; justify-content:space-between;}
-.controller .controllwarp .button {width:3rem; min-height:3rem; padding:.3rem var(--nds-spacing-2) .3rem var(--nds-spacing-4); border:0; border-radius:var(--nds-border-radius-8); background:var(--nds-color-bg-default); box-shadow:0px 3px 6px 0px rgba(0, 0, 0, 0.05);}
-.controller .controllwarp .button.prev {background:url(../imgs/nds/common/arr_left2_line_24.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.controller .controllwarp .button.next {background:url(../imgs/nds/common/arr_right2_line_24.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .controller .controllwarp .button.prev {background:url(../imgs/nds/common/arr_left2_line_24_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .controller .controllwarp .button.next {background:url(../imgs/nds/common/arr_right2_line_24_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.controller .controllwarp .button.prev[disabled] {background:url(../imgs/nds/common/arr_left2_gray400_line_24_disabled.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.controller .controllwarp .button.next[disabled] {background:url(../imgs/nds/common/arr_right2_gray400_line_24_disabled.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .controller .controllwarp .button.prev[disabled] {background:url(../imgs/nds/common/arr_left2_gray400_line_24_disabled_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .controller .controllwarp .button.next[disabled] {background:url(../imgs/nds/common/arr_right2_gray400_line_24_disabled_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.plus-minus .controllwarp {display:flex; justify-content:center;}
-.plus-minus .controllwarp .button {width:5.4rem; height:5.4rem; border:1px solid var(--nds-color-border-button-tertiary-default); border-radius:var(--nds-border-radius-12); background:var(--nds-color-bg-button-tertiary-default);}
-.plus-minus .controllwarp .button + .button {margin-left:var(--nds-spacing-12);}
-.plus-minus .controllwarp .button.plus {background:url(../imgs/nds/common/ico_plus_line_24.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.plus-minus .controllwarp .button.minus {background:url(../imgs/nds/common//ico_minus_line_24.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.plus-minus .controllwarp .button.plus:active {background:url(../imgs/nds/common/ico_plus_line_24_active.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.plus-minus .controllwarp .button.minus:active {background:url(../imgs/nds/common//ico_minus_line_24_active.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .plus-minus .controllwarp .button.plus {background:url(../imgs/nds/common/ico_plus_line_24_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .plus-minus .controllwarp .button.minus {background:url(../imgs/nds/common//ico_minus_line_24_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-
 /* 게시판 목록 */
 .total-count {margin-bottom:var(--nds-spacing-12); padding:0; color:var(--nds-color-text-font-1); font-size:1.4rem;}
 .board-list a {display:block; padding:2.4rem 0;}

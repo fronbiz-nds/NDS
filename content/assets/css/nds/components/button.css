@@ -4,6 +4,8 @@
 
 /* [Button - Base] */
 .nds-button {display:inline-flex; justify-content:center; align-items:center; height:4.2rem; padding:0 1.6rem; border:1px solid transparent; border-radius:var(--nds-border-radius-10); font-weight:500; letter-spacing:-0.02em; text-align:center; vertical-align:middle; white-space:nowrap; cursor:pointer; transition:all 0.3s ease; box-sizing:border-box;}
+.nds-button[disabled],
+.nds-button.-disabled {cursor:not-allowed;}
 
 /* [Button - Variant: Primary] */
 .nds-button.-primary {background-color:var(--nds-color-bg-button-primary-default); color:var(--nds-color-text-button-primary-default);}

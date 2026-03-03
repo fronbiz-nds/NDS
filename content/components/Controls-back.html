@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title></title>
+	<!-- NDS CSS -->
+	<link rel="stylesheet" href="./../assets/css/nds-common.css" />
+	<link rel="stylesheet" href="./../assets/css/nds-components.css" />
+	<!-- Guide CSS -->
+	<link rel="stylesheet" href="./../guide/css/guide.css" />
+</head>
+<body>
+	<div class="gl">
+		<!-- NDS components : S -->
+<script data-size="2" data-title="Controls | controls-controller @ Type=next, Status=default" type="text/template">
+	<div class="controls controller">
+		<div class="controllwarp">
+			<button type="button" class="button prev" disabled><span class="hide">이전 문서보기</span></button>
+			<button type="button" class="button next"><span class="hide">다음 문서보기</span></button>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Controls | controls-controller @ Type=next, Status=disabled" type="text/template">
+	<div class="controls controller">
+		<div class="controllwarp">
+			<button type="button" class="button prev"><span class="hide">이전 문서보기</span></button>
+			<button type="button" class="button next" disabled><span class="hide">다음 문서보기</span></button>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Controls | controls-controller @ Type=previous, Status=default" type="text/template">
+	<div class="controls controller">
+		<div class="controllwarp">
+			<button type="button" class="button prev"><span class="hide">이전 문서보기</span></button>
+			<button type="button" class="button next"><span class="hide">다음 문서보기</span></button>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Controls | controls-controller @ Type=previous, Status=disabled" type="text/template">
+	<div class="controls controller">
+		<div class="controllwarp">
+			<button type="button" class="button prev" disabled><span class="hide">이전 문서보기</span></button>
+			<button type="button" class="button next" disabled><span class="hide">다음 문서보기</span></button>
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Controls | controls-stepper" type="text/template">
+	<div class="controls stpper">
+		<button type="button" class="minus" disabled><span class="hide">감소</span></button>
+		<span class="value">
+			1
+		</span>
+		<button type="button" class="plus"><span class="hide">증가</span></button>
+	</div>
+</script>
+		<!-- NDS components : E -->
+	</div>
+	<!-- NDS Script -->
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/nds-ui.js"></script>
+	<!-- Guide Script -->
+	<script src="./../guide/js/guide.js"></script>
+	<script>
+		buildGuide();
+	</script>
+</body>
+</html>

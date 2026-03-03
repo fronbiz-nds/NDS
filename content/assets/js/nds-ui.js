@@ -501,6 +501,167 @@ const NDS_UI = (function() {
     }
     
     /**
+     * Controls(Stepper) 컴포넌트
+     * - 수량 증감 및 직접 입력을 통한 숫자 제어
+     * 
+     * * * [필수 HTML 구조 - data-nds-role 속성]
+     * 컨테이너 : data-nds-role="stepper"
+     * 감소 버튼 : data-nds-role="step-minus"
+     * 증가 버튼 : data-nds-role="step-plus"
+     * 수량 입력 : data-nds-role="step-val" (input 요소 권장)
+     * 
+     * * * * [속성 제어]
+     * min / max : 최소/최대값 제한 가능
+     * step      : 증감 단위 설정 가능
+     */
+    function Controls() {
+        const steppers = document.querySelectorAll('[data-nds-role="stepper"]');
+
+        steppers.forEach(stepper => {
+            if (stepper.dataset.ndsInit) return;
+            stepper.dataset.ndsInit = 'true';
+
+            const minusBtn = stepper.querySelector('[data-nds-role="step-minus"]');
+            const plusBtn = stepper.querySelector('[data-nds-role="step-plus"]');
+            const input = stepper.querySelector('[data-nds-role="step-val"]');
+            
+            if (!minusBtn || !plusBtn || !input) return;
+
+            const min = parseInt(input.getAttribute('min')) || 0;
+            const max = parseInt(input.getAttribute('max')) || 999;
+            const step = parseInt(input.getAttribute('step')) || 1;
+
+            // 접근성
+            input.setAttribute('role', 'spinbutton');
+            input.setAttribute('aria-valuemin', min);
+            input.setAttribute('aria-valuemax', max);
+            minusBtn.setAttribute('tabindex', '-1');
+            plusBtn.setAttribute('tabindex', '-1');
+
+            const updateState = () => {
+                let val = parseInt(input.value);
+                
+                if (isNaN(val)) val = min;
+
+                if (val < min) val = min;
+                if (val > max) val = max;
+
+                minusBtn.disabled = (val <= min);
+                plusBtn.disabled = (val >= max);
+                
+                input.value = val;
+                input.setAttribute('aria-valuenow', val);
+            };
+
+            updateState();
+
+            minusBtn.addEventListener('click', () => {
+                let val = parseInt(input.value) || min;
+                if (val > min) {
+                    input.value = Math.max(val - step, min);
+                    updateState();
+                }
+            });
+
+            plusBtn.addEventListener('click', () => {
+                let val = parseInt(input.value) || min;
+                if (val < max) {
+                    input.value = Math.min(val + step, max);
+                    updateState();
+                }
+            });
+
+            // 키보드 네비게이션
+            input.addEventListener('keydown', (e) => {
+                let val = parseInt(input.value) || min;
+
+                switch (e.key) {
+                    case 'ArrowUp':
+                        e.preventDefault();
+                        if (val < max) input.value = Math.min(val + step, max);
+                        updateState();
+                        break;
+                    case 'ArrowDown':
+                        e.preventDefault();
+                        if (val > min) input.value = Math.max(val - step, min);
+                        updateState();
+                        break;
+                    case 'Home':
+                    case 'End':
+                        e.preventDefault();
+                        input.value = (e.key === 'Home') ? min : max;
+                        updateState();
+                        break;
+                }
+            });
+
+            input.addEventListener('input', function() {
+                this.value = this.value.replace(/[^0-9]/g, '');
+            });
+
+            input.addEventListener('change', updateState);
+            input.addEventListener('blur', updateState);
+        });
+    }
+
+    /**
+     * Popover 컴포넌트
+     */
+    function Popover() {
+        const popovers = document.querySelectorAll('[data-nds-role="popover"]');
+        
+        popovers.forEach(popover => {
+            if (popover.dataset.ndsInit) return;
+            popover.dataset.ndsInit = 'true';
+            popover.classList.add('nds-popover');
+
+            // 위치 클래스 적용
+            const placement = popover.getAttribute('data-nds-placement');
+            const positionMap = {
+                'bottom-center': '-bc',
+                'bottom-left': '-bl',
+                'bottom-right': '-br',
+                'top-center': '-tc',
+                'top-left': '-tl',
+                'top-right': '-tr'
+            };
+
+            if (placement && positionMap[placement]) {
+                popover.classList.add(positionMap[placement]);
+            }
+
+            // 내용이 없고 data-nds-content가 있는 경우 텍스트 추가
+            if (popover.children.length === 0 && !popover.textContent.trim() && popover.dataset.ndsContent) {
+                popover.textContent = popover.dataset.ndsContent;
+            }
+
+            // 닫기 버튼 생성
+            if (!popover.querySelector('[data-nds-role="popover-close"]')) {
+                const closeBtn = document.createElement('button');
+                closeBtn.type = 'button';
+                closeBtn.className = 'nds-button -ico popover-close';
+                closeBtn.setAttribute('data-nds-role', 'popover-close');
+                closeBtn.innerHTML = '<span class="hide">닫기</span>';
+                
+                closeBtn.addEventListener('click', () => {
+                    popover.remove();
+                    if (popover.timer) clearTimeout(popover.timer);
+                });
+                popover.appendChild(closeBtn);
+            }
+
+            // 자동 닫힘 (Duration) 설정
+            const duration = popover.getAttribute('data-nds-duration');
+            if (duration) {
+                if (popover.timer) clearTimeout(popover.timer);
+                popover.timer = setTimeout(() => {
+                    popover.remove();
+                }, parseInt(duration, 10));
+            }
+        });
+    }
+    
+    /**
      * Tab 컴포넌트
      * - 타입(-line, -bar, -chip, -text) 및 레이아웃(-fixed, -flexible, -accordion, -swipe)에 대응
      * 
@@ -1132,6 +1293,7 @@ const NDS_UI = (function() {
 
     function init() {
         Accordion();
+        Controls();
         Popover();
         Tabs();
         TextField();
@@ -1140,6 +1302,7 @@ const NDS_UI = (function() {
 
     return {
         init: init,
+        Controls: Controls,
         Popover: Popover,
         Tabs: Tabs,
         TextField: TextField,

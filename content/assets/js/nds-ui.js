@@ -442,73 +442,6 @@ const NDS_UI = (function() {
             title.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
     }
-
-    /**
-     * Popover 컴포넌트
-     * - 위치 지정(placement), 텍스트 자동 삽입, 닫기 버튼 자동 생성 및 자동 소멸(duration) 대응
-     * 
-     * * * [필수 HTML 구조 - data-nds-role 속성]
-     * 팝오버 컨테이너: data-nds-role="popover"
-     * 닫기 버튼(선택): data-nds-role="popover-close" (미존재 시 자동 생성)
-     * 
-     * * * * [주요 데이터 속성 - data-nds-*]
-     * data-nds-placement : 노출 위치 설정 ('bottom-center', 'bottom-left', 'bottom-right', 'top-center', 'top-left', 'top-right')
-     * data-nds-content   : 내부 내용이 없을 경우 삽입될 텍스트 내용
-     * data-nds-duration  : 자동 닫힘 시간 (ms 단위, 설정 시 해당 시간 후 요소 제거)
-     */
-    function Popover() {
-        const popovers = document.querySelectorAll('[data-nds-role="popover"]');
-        
-        popovers.forEach(popover => {
-            if (popover.dataset.ndsInit) return;
-            popover.dataset.ndsInit = 'true';
-            popover.classList.add('nds-popover');
-
-            // 위치 클래스 적용
-            const placement = popover.getAttribute('data-nds-placement');
-            const positionMap = {
-                'bottom-center': '-bc',
-                'bottom-left': '-bl',
-                'bottom-right': '-br',
-                'top-center': '-tc',
-                'top-left': '-tl',
-                'top-right': '-tr'
-            };
-
-            if (placement && positionMap[placement]) {
-                popover.classList.add(positionMap[placement]);
-            }
-
-            // 내용이 없고 data-nds-content가 있는 경우 텍스트 추가
-            if (popover.children.length === 0 && !popover.textContent.trim() && popover.dataset.ndsContent) {
-                popover.textContent = popover.dataset.ndsContent;
-            }
-
-            // 닫기 버튼 생성
-            if (!popover.querySelector('[data-nds-role="popover-close"]')) {
-                const closeBtn = document.createElement('button');
-                closeBtn.type = 'button';
-                closeBtn.className = 'nds-button -ico close';
-                closeBtn.setAttribute('data-nds-role', 'popover-close');
-                closeBtn.innerHTML = '<span class="hide">닫기</span>';
-                
-                closeBtn.addEventListener('click', () => {
-                    popover.remove();
-                    if (popover.timer) clearTimeout(popover.timer);
-                });
-                popover.appendChild(closeBtn);
-            }
-
-            // 자동 닫힘 (Duration) 설정
-            const duration = popover.getAttribute('data-nds-duration');
-            if (duration) {
-                if (popover.timer) clearTimeout(popover.timer);
-                popover.timer = setTimeout(() => {
-                    popover.remove();
-                }, parseInt(duration, 10));
-            }
-        });
-    }
     
     /**
      * Controls(Stepper) 컴포넌트
@@ -616,6 +549,16 @@ const NDS_UI = (function() {
 
     /**
      * Popover 컴포넌트
+     * - 위치 지정(placement), 텍스트 자동 삽입, 닫기 버튼 자동 생성 및 자동 소멸(duration) 대응
+     * 
+     * * * [필수 HTML 구조 - data-nds-role 속성]
+     * 팝오버 컨테이너: data-nds-role="popover"
+     * 닫기 버튼(선택): data-nds-role="popover-close" (미존재 시 자동 생성)
+     * 
+     * * * * [주요 데이터 속성 - data-nds-*]
+     * data-nds-placement : 노출 위치 설정 ('bottom-center', 'bottom-left', 'bottom-right', 'top-center', 'top-left', 'top-right')
+     * data-nds-content   : 내부 내용이 없을 경우 삽입될 텍스트 내용
+     * data-nds-duration  : 자동 닫힘 시간 (ms 단위, 설정 시 해당 시간 후 요소 제거)
      */
     function Popover() {
         const popovers = document.querySelectorAll('[data-nds-role="popover"]');
@@ -649,7 +592,7 @@ const NDS_UI = (function() {
             if (!popover.querySelector('[data-nds-role="popover-close"]')) {
                 const closeBtn = document.createElement('button');
                 closeBtn.type = 'button';
-                closeBtn.className = 'nds-btn -ico popover-close';
+                closeBtn.className = 'nds-button -ico close';
                 closeBtn.setAttribute('data-nds-role', 'popover-close');
                 closeBtn.innerHTML = '<span class="hide">닫기</span>';
                 

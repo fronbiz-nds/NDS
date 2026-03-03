@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title></title>
+	<!-- NDS CSS -->
+	<link rel="stylesheet" href="./../assets/css/nds-common.css" />
+	<link rel="stylesheet" href="./../assets/css/nds-components.css" />
+	<!-- Guide CSS -->
+	<link rel="stylesheet" href="./../guide/css/guide.css" />
+</head>
+<body>
+	<div class="nds-page main-body">
+		<div class="nds-container">
+			<header class="nds-header">
+				<div class="inner">
+					<div class="funcs">
+						<button type="button" class="func -back"><span class="hide">뒤로가기</span></button>
+					</div>
+					<h1 class="title">서비스 타이틀</h1>
+					<div class="funcs">
+                        <button type="button" class="func -home"><span class="hide">홈</span></button>
+                        <button type="button" class="func -menu"><span class="hide">전체메뉴</span></button>
+                    </div>
+				</div>
+			</header>
+			<main class="nds-contents">
+				<div class="nds-content">
+					<div class="main-content">
+						<div style="height: 800px;"></div>
+						<div class="linked-bottom-menu up"></div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<!-- NDS Script -->
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<script src="./../assets/js/nds-ui.js"></script>
+	<!-- Guide Script -->
+	<script src="./../guide/js/guide.js"></script>
+	<script>
+		buildGuide();
+		
+		document.addEventListener('DOMContentLoaded', function(){
+			const footer = document.querySelector('.linked-bottom-menu');
+			const mainContent = document.querySelector('.main-content');
+			let prevScroll = window.scrollY;
+			let scrollTimer = null;
+
+			window.addEventListener('scroll', function(){
+				const currentScroll = window.scrollY;
+
+				if (currentScroll === prevScroll) return;
+
+				if (mainContent.classList.contains('sc-stop')) {
+					mainContent.classList.remove('sc-stop');
+				}
+
+				if (currentScroll > prevScroll) {
+					if (!footer.classList.contains('down')) {
+						footer.classList.add('down');
+						footer.classList.remove('up');
+					}
+
+					clearTimeout(scrollTimer);
+					scrollTimer = setTimeout(function(){
+						mainContent.classList.add('sc-stop');
+					}, 500);
+				} 
+				else {
+					if (!footer.classList.contains('up')) {
+						footer.classList.add('up');
+						footer.classList.remove('down');
+					}
+				}
+
+				prevScroll = currentScroll;
+
+			}, { passive: true });
+
+		});
+	</script>
+</body>
+</html>

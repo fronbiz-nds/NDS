@@ -1048,16 +1048,23 @@ html {
     --nds-color-bluegray-900:#F3F5F8;
 
     /* [Text (Dark)] */
+    --nds-color-text-font-1:var(--nds-color-gray-font-900);
+    --nds-color-text-font-2:var(--nds-color-gray-font-800);
+    --nds-color-text-font-3:var(--nds-color-gray-font-700);
+    --nds-color-text-font-4:var(--nds-color-gray-font-600);
+    --nds-color-text-font-5:var(--nds-color-gray-font-500);
     --nds-color-text-visual:var(--nds-color-blue-300);
     --nds-color-text-point:var(--nds-color-green-400);
     --nds-color-text-positive:var(--nds-color-blue-400);
-    --nds-color-text-negative:var(--nds-color-red-300);
+    --nds-color-text-negative:var(--nds-color-red-300);    
     
     /* [Border (Dark)] */
     --nds-color-border-line-1:#707070;
     --nds-color-border-point:var(--nds-color-green-400);
     
     /* [Background (Dark)] */
+    --nds-color-bg-default:var(--nds-color-gray-50);
+    --nds-color-bg-container:var(--nds-color-gray-100);
     --nds-color-bg-point:var(--nds-color-green-400);
     --nds-color-bg-visual:var(--nds-color-blue-300);
     --nds-color-bg-dimmed:rgba(17, 17, 17, 0.80);
@@ -1359,6 +1366,7 @@ body {
     letter-spacing:-0.025em;
     word-break:keep-all;
     overflow-wrap:anywhere;
+    background-color:var(--nds-color-bg-default);
 }
 button, input, textarea {
     color:inherit;

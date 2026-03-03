@@ -2,6 +2,7 @@ function buildGuide() {
     document.querySelectorAll('.gl script').forEach(function(script, i) {
 
         var item = document.createElement('div');
+        var itemRow = document.createElement('div');
         var preview = document.createElement('div');
         var etc = document.createElement('div');
 
@@ -15,6 +16,8 @@ function buildGuide() {
         if (script.dataset.desc) item.dataset.desc = script.dataset.desc;
         if (script.dataset.notes) item.dataset.notes = script.dataset.notes;
 
+        /* gl__row */
+        itemRow.classList.add('gl__row');
         /* preview */
         preview.classList.add('gl__preview');
         preview.innerHTML = html;
@@ -79,8 +82,9 @@ function buildGuide() {
         });
 
         /* 조립 */
-        etc.append(desc, detailBtn, copyBtn);
-        item.append(preview, etc);
+        etc.append(desc, copyBtn, detailBtn);
+        itemRow.append(preview);
+        item.append(itemRow, etc);
 
         script.insertAdjacentElement('afterend', item);
         script.remove();

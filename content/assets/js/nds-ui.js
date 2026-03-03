@@ -442,6 +442,63 @@ const NDS_UI = (function() {
             title.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
     }
+
+    /**
+     * Popover 컴포넌트
+     */
+    function Popover() {
+        const popovers = document.querySelectorAll('[data-nds-role="popover"]');
+        
+        popovers.forEach(popover => {
+            if (popover.dataset.ndsInit) return;
+            popover.dataset.ndsInit = 'true';
+            popover.classList.add('nds-popover');
+
+            // 위치 클래스 적용
+            const placement = popover.getAttribute('data-nds-placement');
+            const positionMap = {
+                'bottom-center': '-bc',
+                'bottom-left': '-bl',
+                'bottom-right': '-br',
+                'top-center': '-tc',
+                'top-left': '-tl',
+                'top-right': '-tr'
+            };
+
+            if (placement && positionMap[placement]) {
+                popover.classList.add(positionMap[placement]);
+            }
+
+            // 내용이 없고 data-nds-content가 있는 경우 텍스트 추가
+            if (popover.children.length === 0 && !popover.textContent.trim() && popover.dataset.ndsContent) {
+                popover.innerHTML = popover.dataset.ndsContent;
+            }
+
+            // 닫기 버튼 생성
+            if (!popover.querySelector('[data-nds-role="popover-close"]')) {
+                const closeBtn = document.createElement('button');
+                closeBtn.type = 'button';
+                closeBtn.className = 'nds-btn -ico popover-close';
+                closeBtn.setAttribute('data-nds-role', 'popover-close');
+                closeBtn.innerHTML = '<span class="hide">닫기</span>';
+                
+                closeBtn.addEventListener('click', () => {
+                    popover.remove();
+                    if (popover.timer) clearTimeout(popover.timer);
+                });
+                popover.appendChild(closeBtn);
+            }
+
+            // 자동 닫힘 (Duration) 설정
+            const duration = popover.getAttribute('data-nds-duration');
+            if (duration) {
+                if (popover.timer) clearTimeout(popover.timer);
+                popover.timer = setTimeout(() => {
+                    popover.remove();
+                }, parseInt(duration, 10));
+            }
+        });
+    }
     
     /**
      * Tab 컴포넌트
@@ -749,16 +806,11 @@ const NDS_UI = (function() {
             });
         };
 
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initElements);
-        } else {
-            initElements();
-        }
+        const registerGlobalEvents = () => {
+            if (TextField.isInitialized) return;
+            TextField.isInitialized = true;
 
-        if (TextField.isInitialized) return;
-        TextField.isInitialized = true;
-
-        document.addEventListener('input', function(e) {
+            document.addEventListener('input', function(e) {
             const target = e.target;
             if (!target.matches('[data-nds-role="control"]')) return;
             updateState(target);
@@ -841,6 +893,20 @@ const NDS_UI = (function() {
             const clearBtn = e.target.closest('[data-nds-role="clear"]');
             if (clearBtn) e.preventDefault();
         });
+        };
+
+        const init = () => {
+            const fields = document.querySelectorAll('[data-nds-role="field"]');
+            if (fields.length === 0) return;
+            initElements();
+            registerGlobalEvents();
+        };
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
     }
 
     /**
@@ -903,169 +969,170 @@ const NDS_UI = (function() {
      * - 닫기 버튼은 JS에서 data-nds-role="tooltip-close" 속성으로 동적 생성됨
      */
     function Tooltip() {
-    if (Tooltip.isInitialized) return;
-    Tooltip.isInitialized = true;
+        if (Tooltip.isInitialized) return;
+        Tooltip.isInitialized = true;
 
-    // 툴팁 닫기
-    const closeTooltip = (parent, panel, trigger, isTriggerClick = false) => {
-        if (!parent.classList.contains('-active')) return;
+        // 툴팁 닫기
+        const closeTooltip = (parent, panel, trigger, isTriggerClick = false) => {
+            if (!parent.classList.contains('-active')) return;
 
-        if (typeof anime !== 'undefined') anime.remove(panel);
+            if (typeof anime !== 'undefined') anime.remove(panel);
 
-        const closeBtn = panel.querySelector('[data-nds-role="tooltip-close"]');
+            const closeBtn = panel.querySelector('[data-nds-role="tooltip-close"]');
 
-        anime({
-            targets: panel,
-            easing: 'easeOutCirc',
-            duration: 100,
-            opacity: [1, 0],
-            translateY: [0, '30%'],
-            complete: function() {
-                parent.classList.remove('-active', '-reversed');
-                panel.removeAttribute('style');
-                if (trigger) trigger.setAttribute('aria-expanded', 'false');
-                if (panel) panel.setAttribute('aria-hidden', 'true');
-                if (closeBtn) closeBtn.remove();
+            anime({
+                targets: panel,
+                easing: 'easeOutCirc',
+                duration: 100,
+                opacity: [1, 0],
+                translateY: [0, '30%'],
+                complete: function() {
+                    parent.classList.remove('-active', '-reversed');
+                    panel.removeAttribute('style');
+                    if (trigger) trigger.setAttribute('aria-expanded', 'false');
+                    if (panel) panel.setAttribute('aria-hidden', 'true');
+                    if (closeBtn) closeBtn.remove();
+                }
+            });
+
+            if (isTriggerClick) {
+                const container = parent.closest('.container');
+                const root = container ? container.parentNode : document.body;
+
+                const rootID = root.id || '';
+                
+                if (root.classList.contains('page') && window.buffer?.isEdited) window.buffer.revert();
+                if (root.classList.contains('popup') && window[rootID]?.buffer?.isEdited) window[rootID].buffer.revert();
+                if (root.classList.contains('layer') && window.layer?.buffer?.isEdited) window.layer.buffer.revert();
+                if (root.classList.contains('alert') && window.alert?.buffer?.isEdited) window.alert.buffer.revert();
             }
-        });
+        };
 
-        if (isTriggerClick) {
-            const container = parent.closest('.container');
-            const root = container ? container.parentNode : document.body;
+        document.addEventListener('click', function(e) {
+            const trigger = e.target.closest('[data-nds-role="tooltip-trigger"]');
+            const tooltipContainer = e.target.closest('[data-nds-role="tooltip"]');
+            const activeTooltips = document.querySelectorAll('[data-nds-role="tooltip"].-active');
 
-            const rootID = root.id || '';
+            if (!trigger) return;
+
+            const parent = tooltipContainer || trigger.closest('[data-nds-role="tooltip"]');
+            const panel = parent?.querySelector('[data-nds-role="tooltip-panel"]');
             
-            if (root.classList.contains('page') && window.buffer?.isEdited) window.buffer.revert();
-            if (root.classList.contains('popup') && window[rootID]?.buffer?.isEdited) window[rootID].buffer.revert();
-            if (root.classList.contains('layer') && window.layer?.buffer?.isEdited) window.layer.buffer.revert();
-            if (root.classList.contains('alert') && window.alert?.buffer?.isEdited) window.alert.buffer.revert();
-        }
-    };
+            if (!parent || !panel) return;
 
-    document.addEventListener('click', function(e) {
-        const trigger = e.target.closest('[data-nds-role="tooltip-trigger"]');
-        const tooltipContainer = e.target.closest('[data-nds-role="tooltip"]');
-        const activeTooltips = document.querySelectorAll('[data-nds-role="tooltip"].-active');
+            const isOpen = parent.classList.contains('-active');
 
-        if (!trigger) return;
-
-        const parent = tooltipContainer || trigger.closest('[data-nds-role="tooltip"]');
-        const panel = parent?.querySelector('[data-nds-role="tooltip-panel"]');
-        
-        if (!parent || !panel) return;
-
-        const isOpen = parent.classList.contains('-active');
-
-        if (isOpen) {
-            closeTooltip(parent, panel, trigger, true);
-            return;
-        }
-
-        // NOTE: 타이틀 유무를 왜 감지하는지 확인 필요. 스타일 적으로는 차이가 없음. 개발에서 추가요청이 온 건이 아닌가 싶음.
-        if (panel.querySelector('.title')) {
-            panel.classList.add('withTitle');
-        }
-
-        activeTooltips.forEach(function(tt) {
-            if (tt !== parent) {
-                const ttTrigger = tt.querySelector('[data-nds-role="tooltip-trigger"]');
-                const ttPanel = tt.querySelector('[data-nds-role="tooltip-panel"]');
-                closeTooltip(tt, ttPanel, ttTrigger, false);
+            if (isOpen) {
+                closeTooltip(parent, panel, trigger, true);
+                return;
             }
-        });
 
-        const container = trigger.closest('.container');
-        const root = container ? container.parentNode : document.body;
-        const rootID = root.id || '';
-
-        const isPage = root.classList.contains('page');
-        const isPopup = root.classList.contains('popup');
-        const isLayer = root.classList.contains('layer');
-        const isAlert = root.classList.contains('alert');
-
-        const gutter = isAlert ? 48 : 24;
-        const clientH = document.documentElement.clientHeight;
-        const rootHeight = parseInt(window.getComputedStyle(root).height || 0);
-
-        if (e.clientY > parseInt(clientH - (clientH / 2.8))) {
-            if (!isLayer || (isLayer && rootHeight >= window.innerHeight - 60)) {
-                parent.classList.add('-reversed');
+            // NOTE: 타이틀 유무를 왜 감지하는지 확인 필요. 스타일 적으로는 차이가 없음. 개발에서 추가요청이 온 건이 아닌가 싶음.
+            if (panel.querySelector('.title')) {
+                panel.classList.add('withTitle');
             }
-        }
 
-        if (typeof anime !== 'undefined') anime.remove(panel);
+            activeTooltips.forEach(function(tt) {
+                if (tt !== parent) {
+                    const ttTrigger = tt.querySelector('[data-nds-role="tooltip-trigger"]');
+                    const ttPanel = tt.querySelector('[data-nds-role="tooltip-panel"]');
+                    closeTooltip(tt, ttPanel, ttTrigger, false);
+                }
+            });
 
-        // 툴팁 열기
-        anime({
-            targets: panel,
-            easing: 'easeOutCirc',
-            duration: 400,
-            opacity: [0, 1],
-            translateY: ['30%', 0],
-            begin: function() {
-                parent.classList.add('-active');
-                trigger.setAttribute('aria-expanded', 'true');
-                panel.setAttribute('aria-hidden', 'false');
+            const container = trigger.closest('.container');
+            const root = container ? container.parentNode : document.body;
+            const rootID = root.id || '';
 
-                panel.style.left = `calc(calc(${e.pageX}px - ${e.offsetX}px - ${gutter / 10}rem) * -1)`;
-                panel.style.width = `calc(100vw - ${(gutter / 10) * 2}rem)`;
+            const isPage = root.classList.contains('page');
+            const isPopup = root.classList.contains('popup');
+            const isLayer = root.classList.contains('layer');
+            const isAlert = root.classList.contains('alert');
 
-                // 툴팁 닫힘 버튼
-                if (!panel.querySelector('[data-nds-role="tooltip-close"]')) {
-                    const closeBtn = document.createElement('button');
-                    closeBtn.type = 'button';
-                    closeBtn.title = '도움말 닫기';
-                    closeBtn.className = 'nds-button -ico close';
-                    closeBtn.setAttribute('data-nds-role', 'tooltip-close');
-                    closeBtn.innerHTML = '<i class="nds-ico -x24 nds-ico-close1"></i><span class="hide">닫기</span>';
+            const gutter = isAlert ? 48 : 24;
+            const clientH = document.documentElement.clientHeight;
+            const rootHeight = parseInt(window.getComputedStyle(root).height || 0);
+
+            if (e.clientY > parseInt(clientH - (clientH / 2.8))) {
+                if (!isLayer || (isLayer && rootHeight >= window.innerHeight - 60)) {
+                    parent.classList.add('-reversed');
+                }
+            }
+
+            if (typeof anime !== 'undefined') anime.remove(panel);
+
+            // 툴팁 열기
+            anime({
+                targets: panel,
+                easing: 'easeOutCirc',
+                duration: 400,
+                opacity: [0, 1],
+                translateY: ['30%', 0],
+                begin: function() {
+                    parent.classList.add('-active');
+                    trigger.setAttribute('aria-expanded', 'true');
+                    panel.setAttribute('aria-hidden', 'false');
+
+                    panel.style.left = `calc(calc(${e.pageX}px - ${e.offsetX}px - ${gutter / 10}rem) * -1)`;
+                    panel.style.width = `calc(100vw - ${(gutter / 10) * 2}rem)`;
+
+                    // 툴팁 닫힘 버튼
+                    if (!panel.querySelector('[data-nds-role="tooltip-close"]')) {
+                        const closeBtn = document.createElement('button');
+                        closeBtn.type = 'button';
+                        closeBtn.title = '도움말 닫기';
+                        closeBtn.className = 'nds-button -ico close';
+                        closeBtn.setAttribute('data-nds-role', 'tooltip-close');
+                        closeBtn.innerHTML = '<i class="nds-ico -x24 nds-ico-close1"></i><span class="hide">닫기</span>';
+                        
+                        closeBtn.addEventListener('click', function(event) {
+                            event.stopPropagation();
+                            closeTooltip(parent, panel, trigger, true);
+                        }, { once: true });
+
+                        panel.appendChild(closeBtn);
+                    }
+
+                    const fixerEl = root.querySelector('.fixer');
+                    const bufferEl = root.querySelector('.buffer');
+                    const stickerEl = root.querySelector('.sticker');
                     
-                    closeBtn.addEventListener('click', function(event) {
-                        event.stopPropagation();
-                        closeTooltip(parent, panel, trigger, true);
-                    }, { once: true });
+                    const fixerHeight = fixerEl ? parseInt(window.getComputedStyle(fixerEl).height) : 
+                                        (root.querySelector('.content') ? parseInt(window.getComputedStyle(root.querySelector('.content')).paddingBottom) : 0);
+                    const bufferOffsetTop = bufferEl ? bufferEl.offsetTop : 0;
+                    const bufferMarginTop = bufferEl ? parseInt(window.getComputedStyle(bufferEl).height) : 0;
+                    const stickerMarginTop = stickerEl ? parseInt(window.getComputedStyle(stickerEl).marginTop) : 0;
 
-                    panel.appendChild(closeBtn);
+                    const comparePageHeight = document.documentElement.scrollHeight - (e.pageY - e.offsetY) - fixerHeight;
+                    const halfCompareHeight = Math.floor((document.documentElement.scrollHeight - rootHeight) / 2);
+                    const alertCompareHeight = document.documentElement.scrollHeight - (e.pageY - e.offsetY) - halfCompareHeight - fixerHeight;
+                    const compareBufferHeight = isPage ? Math.abs(document.documentElement.scrollHeight - bufferOffsetTop - bufferMarginTop - stickerMarginTop) : 0;
+
+                    const panelTop = Math.floor(parseFloat(window.getComputedStyle(panel).top) || 0);
+                    const targetHeight = Math.floor(parseFloat(window.getComputedStyle(trigger).height) || 0);
+                    const tooltipHeight = Math.floor(parseFloat(window.getComputedStyle(panel).height) || 0);
+                    const tooltipTotalHeight = tooltipHeight + panelTop + targetHeight + compareBufferHeight;
+                    
+                    const heightProfit = Math.abs(comparePageHeight - tooltipTotalHeight);
+                    const alertHeightProfit = Math.abs(alertCompareHeight - tooltipTotalHeight);
+
+                    if (tooltipTotalHeight >= comparePageHeight) {
+                        if (isPage && window.buffer) window.buffer.add(heightProfit);
+                        if (isPopup && window[rootID]?.buffer) window[rootID].buffer.add(heightProfit);
+                        if (isLayer && window.layer?.buffer) window.layer.buffer.add(heightProfit);
+                    }
+                    if (isAlert && tooltipHeight >= alertCompareHeight && window.alert?.buffer) {
+                        window.alert.buffer.add(alertHeightProfit);
+                    }
                 }
+            });
 
-                const fixerEl = root.querySelector('.fixer');
-                const bufferEl = root.querySelector('.buffer');
-                const stickerEl = root.querySelector('.sticker');
-                
-                const fixerHeight = fixerEl ? parseInt(window.getComputedStyle(fixerEl).height) : 
-                                    (root.querySelector('.content') ? parseInt(window.getComputedStyle(root.querySelector('.content')).paddingBottom) : 0);
-                const bufferOffsetTop = bufferEl ? bufferEl.offsetTop : 0;
-                const bufferMarginTop = bufferEl ? parseInt(window.getComputedStyle(bufferEl).height) : 0;
-                const stickerMarginTop = stickerEl ? parseInt(window.getComputedStyle(stickerEl).marginTop) : 0;
-
-                const comparePageHeight = document.documentElement.scrollHeight - (e.pageY - e.offsetY) - fixerHeight;
-                const halfCompareHeight = Math.floor((document.documentElement.scrollHeight - rootHeight) / 2);
-                const alertCompareHeight = document.documentElement.scrollHeight - (e.pageY - e.offsetY) - halfCompareHeight - fixerHeight;
-                const compareBufferHeight = isPage ? Math.abs(document.documentElement.scrollHeight - bufferOffsetTop - bufferMarginTop - stickerMarginTop) : 0;
-
-                const panelTop = Math.floor(parseFloat(window.getComputedStyle(panel).top) || 0);
-                const targetHeight = Math.floor(parseFloat(window.getComputedStyle(trigger).height) || 0);
-                const tooltipHeight = Math.floor(parseFloat(window.getComputedStyle(panel).height) || 0);
-                const tooltipTotalHeight = tooltipHeight + panelTop + targetHeight + compareBufferHeight;
-                
-                const heightProfit = Math.abs(comparePageHeight - tooltipTotalHeight);
-                const alertHeightProfit = Math.abs(alertCompareHeight - tooltipTotalHeight);
-
-                if (tooltipTotalHeight >= comparePageHeight) {
-                    if (isPage && window.buffer) window.buffer.add(heightProfit);
-                    if (isPopup && window[rootID]?.buffer) window[rootID].buffer.add(heightProfit);
-                    if (isLayer && window.layer?.buffer) window.layer.buffer.add(heightProfit);
-                }
-                if (isAlert && tooltipHeight >= alertCompareHeight && window.alert?.buffer) {
-                    window.alert.buffer.add(alertHeightProfit);
-                }
-            }
-        });
-
-    }, true);
-}
+        }, true);
+    }
 
     function init() {
         Accordion();
+        Popover();
         Tabs();
         TextField();
         Tooltip();
@@ -1073,6 +1140,7 @@ const NDS_UI = (function() {
 
     return {
         init: init,
+        Popover: Popover,
         Tabs: Tabs,
         TextField: TextField,
         Toast: Toast,

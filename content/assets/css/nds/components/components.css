@@ -4504,26 +4504,6 @@ p.info.-error,
 .agree.-sub > .panel {padding-right:0;}
 .agree.-sub .checkbox {padding-right:2rem;}
 
-.controller .controllwarp {display:flex; justify-content:space-between;}
-.controller .controllwarp .button {width:3rem; min-height:3rem; padding:.3rem var(--nds-spacing-2) .3rem var(--nds-spacing-4); border:0; border-radius:var(--nds-border-radius-8); background:var(--nds-color-bg-default); box-shadow:0px 3px 6px 0px rgba(0, 0, 0, 0.05);}
-.controller .controllwarp .button.prev {background:url(../imgs/nds/common/arr_left2_line_24.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.controller .controllwarp .button.next {background:url(../imgs/nds/common/arr_right2_line_24.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .controller .controllwarp .button.prev {background:url(../imgs/nds/common/arr_left2_line_24_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .controller .controllwarp .button.next {background:url(../imgs/nds/common/arr_right2_line_24_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.controller .controllwarp .button.prev[disabled] {background:url(../imgs/nds/common/arr_left2_gray400_line_24_disabled.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.controller .controllwarp .button.next[disabled] {background:url(../imgs/nds/common/arr_right2_gray400_line_24_disabled.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .controller .controllwarp .button.prev[disabled] {background:url(../imgs/nds/common/arr_left2_gray400_line_24_disabled_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .controller .controllwarp .button.next[disabled] {background:url(../imgs/nds/common/arr_right2_gray400_line_24_disabled_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.plus-minus .controllwarp {display:flex; justify-content:center;}
-.plus-minus .controllwarp .button {width:5.4rem; height:5.4rem; border:1px solid var(--nds-color-border-button-tertiary-default); border-radius:var(--nds-border-radius-12); background:var(--nds-color-bg-button-tertiary-default);}
-.plus-minus .controllwarp .button + .button {margin-left:var(--nds-spacing-12);}
-.plus-minus .controllwarp .button.plus {background:url(../imgs/nds/common/ico_plus_line_24.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.plus-minus .controllwarp .button.minus {background:url(../imgs/nds/common//ico_minus_line_24.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.plus-minus .controllwarp .button.plus:active {background:url(../imgs/nds/common/ico_plus_line_24_active.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.plus-minus .controllwarp .button.minus:active {background:url(../imgs/nds/common//ico_minus_line_24_active.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .plus-minus .controllwarp .button.plus {background:url(../imgs/nds/common/ico_plus_line_24_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-.dark-mode .plus-minus .controllwarp .button.minus {background:url(../imgs/nds/common//ico_minus_line_24_dk.png) no-repeat 100% / 2.4rem auto; background-position:center center;}
-
 /* 게시판 목록 */
 .total-count {margin-bottom:var(--nds-spacing-12); padding:0; color:var(--nds-color-text-font-1); font-size:1.4rem;}
 .board-list a {display:block; padding:2.4rem 0;}
@@ -4625,76 +4605,7 @@ p.info.-error,
 .hr + .account-list-wrap .account-list li:first-child .account-item {padding-top:0;}
 .hr + .account-list-wrap .account-list li:first-child .account-item .type {top:0;}
 
-/* 팝업 */
 
-.popover {display:flex; align-items:center; opacity:0; position:absolute; left:2.4rem; z-index:49; width:auto !important; min-height:3.8rem; padding:.6rem var(--nds-spacing-12); border:.1rem solid var(--nds-color-border-popover-default); border-radius:var(--nds-border-radius-8); background-color:var(--nds-color-bg-popover-default); color:var(--nds-color-text-popover-default); font-size:1.3rem; animation:mini-under 4s backwards;}
-.popover .popover-close {width:1.6rem; height:1.6rem; margin-left:0.4rem; background:url("../imgs/nds/common/ico_delete_gray50_line_16.png") no-repeat center; background-size:cover;}
-.popover::after {content:""; display:block; position:absolute; top:-.7rem; left:2.2rem; z-index:10; width:1rem; height:.7rem; background:url(../imgs/nds/common/Edge.png) no-repeat center center / 1rem .7rem;}
-.popover.-bc::after {top:auto; bottom:-0.6rem; left:50%; margin-left:-0.5rem ; transform:rotate(180deg);}
-.popover.-bl::after {top:auto; right:auto; bottom:-0.6rem; left:2.2rem; transform:rotate(180deg);}
-.popover.-br::after {top:auto; right:2.2rem; bottom:-0.6rem; left:auto; transform:rotate(180deg);}
-
-.popover.-tc::after {top:-0.6rem; bottom:auto; left:50%; margin-left:-0.5rem ;}
-.popover.-tl::after {top:-0.6rem; right:auto; bottom:auto; left:2.2rem;}
-.popover.-tr::after {top:-0.6rem; right:2.2rem; bottom:auto; left:auto;}
-
-.dark-mode .popover::after {content:""; display:block; position:absolute; z-index:10; width:1.1rem; height:.6rem; background:url(../imgs/nds/common/Edge_dk.png) no-repeat center center / 1.1rem .6rem; /* transform: rotateX(180deg); */}
-.dark-mode .popover .popover-close {background-image:url("../imgs/nds/common/ico_delete_gray50_line_16_dk.png");}
-.popover.hidden {display:none;}
-
-@-webkit-keyframes mini-under {
-    0% {
-        opacity:0;
-        bottom:0;
-    }
-
-    7% {
-        opacity:1;
-        bottom:-2rem;
-    }
-
-    14% {
-        opacity:1;
-        bottom:-1.6rem;
-    }
-
-    90% {
-        opacity:1;
-        bottom:-1.6rem;
-    }
-
-    100% {
-        opacity:0;
-        bottom:-1.6rem;
-    }
-}
-
-@keyframes mini-under {
-    0% {
-        opacity:0;
-        bottom:0;
-    }
-
-    7% {
-        opacity:1;
-        bottom:-2rem;
-    }
-
-    14% {
-        opacity:1;
-        bottom:-1.6rem;
-    }
-
-    90% {
-        opacity:1;
-        bottom:-1.6rem;
-    }
-
-    100% {
-        opacity:0;
-        bottom:-1.6rem;
-    }
-}
 
 .content.-full .iframe {width:100%; height:100%; margin:0;}
 .content.-wide .iframe {width:100%; margin:0;}

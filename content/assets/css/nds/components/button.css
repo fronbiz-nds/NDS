@@ -3,7 +3,7 @@
    ============================================================ */
 
 /* [Button - Base] */
-.nds-button {display:inline-flex; justify-content:center; align-items:center; height:4.2rem; padding:0 1.6rem; border:1px solid transparent; border-radius:var(--nds-border-radius-10); font-weight:500; letter-spacing:-0.02em; text-align:center; vertical-align:middle; white-space:nowrap; cursor:pointer; transition:all 0.3s ease; box-sizing:border-box;}
+.nds-button {display:inline-flex; justify-content:center; align-items:center; width:100%; height:4.2rem; padding:0 1.6rem; border:1px solid transparent; border-radius:var(--nds-border-radius-10); font-weight:500; letter-spacing:-0.02em; text-align:center; vertical-align:middle; white-space:nowrap; cursor:pointer; transition:all 0.3s ease; box-sizing:border-box;}
 .nds-button[disabled],
 .nds-button.-disabled {cursor:not-allowed;}
 
@@ -68,11 +68,11 @@
 
 /* [Button - CTA Layouts] */
 .nds-cta-wrap {display:flex; gap:0.8rem; width:100%;}
-.nds-button.-full {width:100%;} 
+.nds-cta-wrap .nds-button:only-child {width:100%;}
 .nds-button.-flex-5 {flex:5;}    /* 5:5 비율 */
 .nds-button.-flex-3 {flex:3;}    /* 3:7 비율 (Small) */
 .nds-button.-flex-7 {flex:7;}    /* 3:7 비율 (Large) */
-.nds-cta-double {display:flex; flex-direction:column; gap:1.2rem;} /* 상하 배치 */
+.nds-cta-double {display:flex; flex-direction:column; gap:1.2rem; width:100%;} /* 상하 배치 */
 .nds-cta-wrap > .nds-button + .nds-button,
 .nds-cta-double > .nds-button + .nds-button {margin-left:0 !important;} 
 

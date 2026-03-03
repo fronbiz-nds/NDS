@@ -22,7 +22,6 @@
 .main-body,
 .nds-page.main-body .nds-content, 
 .nds-page.main-body .nds-header .inner {background-color:var(--nds-color-bg-container);}
-.nds-page.main-body .nds-content {padding-top:1rem; padding-bottom:8rem;}
 
 /* ios 대응 */
 .nds-page .nds-header .funcs {display:flex; position:absolute; top:50%; margin-top:-1.2rem ; transform:translate3d(0,0,0);}
@@ -147,18 +146,6 @@
     border-radius: 1.6rem 1.6rem 0 0;
     background-color:var(--nds-color-bg-default);
     border-top: 1px solid var(--nds-color-gray-200);
-}
-
-.linked-bottom-menu [class^="linked-"] {
-    width: 6.4rem;
-    padding-top: 4.2rem;
-    background-repeat: no-repeat;
-    background-position: 50% 1.4rem;
-    background-size: 2.4rem auto;
-    color: var(--font2);
-    font-size: 1.3rem;
-    text-align: center;
-    line-height: 1.5;
 }
 .linked-bottom-menu.down {transform: translateY(82px); transition: transform 1s cubic-bezier(0.25, 0, 0, 1);}
 .linked-bottom-menu.up, .main-content.sc-stop .linked-bottom-menu {transform: translateY(0); transition: transform 1s cubic-bezier(0.25, 0, 0, 1);}

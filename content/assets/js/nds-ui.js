@@ -1,6 +1,8 @@
 
 const NDS_UI = (function() {
-
+    /**
+     * Buffer - 모달/레이어 하단에 동적으로 여백(buffer) 생성하는 함수 
+     */
     function Buffer(selector) {
         if (document.querySelector(selector) == (null || undefined)) return;
 
@@ -75,6 +77,9 @@ const NDS_UI = (function() {
         return obj;
     }
 
+    /**
+     * stackModalA11y - 모달 오픈 시 접근성 처리
+     */
     function stackModalA11y(id) {
         var page = document.querySelector('.nds-page');
         var Modal = document.querySelector(id);
@@ -108,6 +113,9 @@ const NDS_UI = (function() {
         });
     }
 
+    /**
+     * queueModalA11y - 모달 클로즈 시 접근성 복원 처리
+     */
     function queueModalA11y() {
         var Modal = stack.print;
         if (Modal.length > 2) {
@@ -131,6 +139,9 @@ const NDS_UI = (function() {
         }
     }
 
+    /**
+     * Stack - 모달 스택 및 z-index 관리 객체
+     */
     function Stack() {
         var count = 1000;
         var stack = [];
@@ -168,6 +179,9 @@ const NDS_UI = (function() {
     }
     var stack = new Stack();
 
+    /**
+     * Scroll - 모달 오픈 시 바디 스크롤 잠금 및 위치 복원 처리
+     */
     function Scroll() {
         var body = document.body;
         var history = 0;
@@ -197,6 +211,9 @@ const NDS_UI = (function() {
         }
     }
 
+    /**
+     * Dim - 모달 배경 딤(dim) 레이어 생성 및 제거
+     */
     function Dim() {
         var dim = document.createElement('div');
         dim.classList.add('nds-dim');
@@ -220,6 +237,9 @@ const NDS_UI = (function() {
         };
     }
 
+    /**
+     * ModalHandler - 모달 생성자 래핑 핸들러
+     */
     function ModalHandler(type) {
         return {
             open: function(id, callback) {

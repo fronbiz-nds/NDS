@@ -8,14 +8,14 @@
 .nds-popover {display:inline-flex; align-items:center; opacity:0; position:absolute; z-index:100; width:max-content; max-width:calc(100vw - 4.8rem); min-height:3.8rem; padding:0.6rem 1.2rem; border:1px solid var(--nds-color-border-popover-default); border-radius:0.8rem; background-color:var(--nds-color-bg-popover-default); box-shadow:0 0.3rem 0.6rem rgba(0, 0, 0, 0.05); color:var(--nds-color-text-popover-default); font-size:1.3rem; line-height:2.0rem; white-space:normal;}
 
 /* [Close Button] */
-.nds-popover .popover-close {flex:0 0 1.6rem; width:1.6rem; height:1.6rem; margin-left:0.4rem; border:none; background-image:var(--nds-ico-delete-filled); background-repeat:no-repeat; background-size:center; background-size:cover; cursor:pointer;}
+.nds-popover .popover-close {flex:0 0 1.6rem; width:1.6rem; height:1.6rem; margin-left:0.4rem; border:none; background-image:var(--nds-ico-delete-filled); background-repeat:no-repeat; background-position:center; background-size:cover; cursor:pointer;}
 
 /* [Arrow] */
 .nds-popover::after {content:""; position:absolute; width:1.0rem; height:0.6rem; background-image:url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_9587_79190' fill='white'%3E%3Cpath d='M0 6C1.11152 4.40002 2.22272 2.79996 3.33363 1.19998C4.44454 -0.399994 5.55574 -0.399994 6.66726 1.19998L10 6'/%3E%3C/mask%3E%3Cpath d='M0 6C1.11152 4.40002 2.22272 2.79996 3.33363 1.19998C4.44454 -0.399994 5.55574 -0.399994 6.66726 1.19998L10 6' fill='%23111111'/%3E%3Cpath d='M-0.821269 5.42946L-1.39181 6.25073L0.250728 7.39181L0.821269 6.57054L0 6L-0.821269 5.42946ZM6.66726 1.19998L7.48868 0.629657L7.48853 0.629442L6.66726 1.19998ZM9.17858 6.57033L9.74891 7.39174L11.3917 6.25109L10.8214 5.42967L10 6L9.17858 6.57033ZM0 6L0.821269 6.57054C1.93284 4.97048 3.0441 3.37035 4.15504 1.77031L3.33363 1.19998L2.51221 0.629652C1.40134 2.22958 0.290188 3.82957 -0.821269 5.42946L0 6ZM3.33363 1.19998L4.15504 1.77031C4.66169 1.04062 4.95638 1 5.00022 1C5.04417 1 5.33901 1.04075 5.84599 1.77052L6.66726 1.19998L7.48853 0.629442C6.88399 -0.24076 6.06747 -1 5.00022 -1C3.93285 -1 3.11647 -0.240628 2.51221 0.629652L3.33363 1.19998ZM6.66726 1.19998L5.84584 1.77031L9.17858 6.57033L10 6L10.8214 5.42967L7.48868 0.629657L6.66726 1.19998Z' fill='%23111111' mask='url(%23path-1-inside-1_9587_79190)'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:center; box-sizing:border-box;}
 
 /* [Placement] */
 /* Top */
-.nds-popover[class*="-t"] {bottom:100%; margin-bottom:1rem; animation:popoverFadeInTop 4s forwards;}
+.nds-popover[class*="-t"] {bottom:100%; margin-bottom:1rem; animation:popoverFadeInTop 0.4s forwards;}
 .nds-popover.-tc {left:50%; transform:translateX(-50%);}
 .nds-popover.-tl {left:0;}
 .nds-popover.-tr {right:0;}
@@ -26,7 +26,7 @@
 .nds-popover.-tr::after {right:1.6rem;}
 
 /* Bottom */
-.nds-popover[class*="-b"] {top:100%; margin-top:1rem; animation:popoverFadeInBottom 4s forwards;}
+.nds-popover[class*="-b"] {top:100%; margin-top:1rem; animation:popoverFadeInBottom 0.4s forwards;}
 .nds-popover.-bc {left:50%; transform:translateX(-50%);}
 .nds-popover.-bl {left:0;}
 .nds-popover.-br {right:0;}

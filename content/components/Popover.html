@@ -13,6 +13,69 @@
 <body>
 	<div class="gl">
 		<!-- NDS components : S -->
+<div class="gc__heading">Popover-basic</div>
+<script data-size="2" data-title="Type=bottom-left" type="text/template">
+	<div style="position: relative; display: inline-block;">
+		<div>나농협님 가입 중인 상품이 2건 있어요</div>
+		<!-- data-nds-duration으로 노출 시간 제어. ex) data-nds-duration="3000" -->
+		<div class="nds-popover" data-nds-role="popover" 
+			data-nds-placement="bottom-left" 
+			data-nds-content="텍스트를 입력해 주세요.">
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Type=bottom-center" type="text/template">
+	<div style="position: relative; display: inline-block;">
+		<div>나농협님 가입 중인 상품이 2건 있어요</div>
+		<!-- data-nds-duration으로 노출 시간 제어. ex) data-nds-duration="3000" -->
+		<div class="nds-popover" data-nds-role="popover" 
+			data-nds-placement="bottom-center" 
+			data-nds-content="텍스트를 입력해 주세요.">
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Type=bottom-right" type="text/template">
+	<div style="position: relative; display: inline-block;">
+		<div>나농협님 가입 중인 상품이 2건 있어요</div>
+		<!-- data-nds-duration으로 노출 시간 제어. ex) data-nds-duration="3000" -->
+		<div class="nds-popover" data-nds-role="popover" 
+			data-nds-placement="bottom-right" 
+			data-nds-content="텍스트를 입력해 주세요.">
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Type=top-left" type="text/template">
+	<div style="position: relative; display: inline-block;">
+		<div>나농협님 가입 중인 상품이 2건 있어요</div>
+		<!-- data-nds-duration으로 노출 시간 제어. ex) data-nds-duration="3000" -->
+		<div class="nds-popover" data-nds-role="popover" 
+			data-nds-placement="top-left" 
+			data-nds-content="텍스트를 입력해 주세요.">
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Type=top-center" type="text/template">
+	<div style="position: relative; display: inline-block;">
+		<div>나농협님 가입 중인 상품이 2건 있어요</div>
+		<!-- data-nds-duration으로 노출 시간 제어. ex) data-nds-duration="3000" -->
+		<div class="nds-popover" data-nds-role="popover" 
+			data-nds-placement="top-center" 
+			data-nds-content="텍스트를 입력해 주세요.">
+		</div>
+	</div>
+</script>
+<script data-size="2" data-title="Type=top-right" type="text/template">
+	<div style="position: relative; display: inline-block;">
+		<div>나농협님 가입 중인 상품이 2건 있어요</div>
+		<!-- data-nds-duration으로 노출 시간 제어. ex) data-nds-duration="3000" -->
+		<div class="nds-popover" data-nds-role="popover" 
+			data-nds-placement="top-right" 
+			data-nds-content="텍스트를 입력해 주세요.">
+		</div>
+	</div>
+</script>
+
+<!-- AS-IS : S -->
 <script data-size="2" data-title="Popover | popover-basic @ Type=bottom-center" type="text/template">
 	<span class="popover -bc" style="opacity: 1;">텍스트를 입력해 주세요
 		<button type="button" class="popover-close"><span class="hide">삭제</span></button>
@@ -49,6 +112,7 @@
 	</span>
 	<!-- 사용시 style="opacity: 1;" 삭제 -->
 </script>
+<!-- AS-IS :  -->
 		<!-- NDS components : E -->
 	</div>
 	<!-- NDS Script -->
@@ -59,6 +123,7 @@
 	<script src="./../guide/js/guide.js"></script>
 	<script>
 		buildGuide();
+		NDS_UI.Popover();
 	</script>
 </body>
 </html>

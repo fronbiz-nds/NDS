@@ -1142,6 +1142,7 @@ const NDS_UI = (function() {
 
     function init() {
         Accordion();
+        Controls();
         Popover();
         Tabs();
         TextField();
@@ -1150,6 +1151,7 @@ const NDS_UI = (function() {
 
     return {
         init: init,
+        Controls: Controls,
         Popover: Popover,
         Tabs: Tabs,
         TextField: TextField,

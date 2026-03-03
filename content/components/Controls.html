@@ -13,45 +13,40 @@
 <body>
 	<div class="gl">
 		<!-- NDS components : S -->
-<script data-size="2" data-title="Controls | controls-controller @ Type=next, Status=default" type="text/template">
-	<div class="controls controller">
-		<div class="controllwarp">
-			<button type="button" class="button prev" disabled><span class="hide">이전 문서보기</span></button>
-			<button type="button" class="button next"><span class="hide">다음 문서보기</span></button>
-		</div>
-	</div>
+<div class="gc__heading">controls-controller</div>
+<script data-size="2" data-title="Status=default" type="text/template">
+	<button type="button" title="이전" class="nds-button -ico prev">
+		<i class="nds-ico -x24 nds-ico-left2" aria-hidden="true"></i><span class="hide">이전</span>
+	</button>
+	<button type="button" title="다음" class="nds-button -ico next">
+		<i class="nds-ico -x24 nds-ico-right2" aria-hidden="true"></i><span class="hide">다음</span>
+	</button>
 </script>
-<script data-size="2" data-title="Controls | controls-controller @ Type=next, Status=disabled" type="text/template">
-	<div class="controls controller">
-		<div class="controllwarp">
-			<button type="button" class="button prev"><span class="hide">이전 문서보기</span></button>
-			<button type="button" class="button next" disabled><span class="hide">다음 문서보기</span></button>
-		</div>
-	</div>
+<script data-size="2" data-title="Status=disabled" type="text/template">
+	<button type="button" title="이전" class="nds-button -ico prev" disabled>
+		<i class="nds-ico -x24 nds-ico-left2" aria-hidden="true"></i><span class="hide">이전</span>
+	</button>
+	<button type="button" title="다음" class="nds-button -ico next" disabled>
+		<i class="nds-ico -x24 nds-ico-right2" aria-hidden="true"></i><span class="hide">다음</span>
+	</button>
 </script>
-<script data-size="2" data-title="Controls | controls-controller @ Type=previous, Status=default" type="text/template">
-	<div class="controls controller">
-		<div class="controllwarp">
-			<button type="button" class="button prev"><span class="hide">이전 문서보기</span></button>
-			<button type="button" class="button next"><span class="hide">다음 문서보기</span></button>
+
+<div class="gc__heading">controls-stepper</div>
+<script data-size="2" data-title="" type="text/template">
+	<div class="nds-stepper" data-nds-role="stepper">
+		<button type="button" title="수량" class="nds-button -ico minus" data-nds-role="step-minus" disabled>
+			<i class="nds-ico -x24 nds-ico-minus-x24" aria-hidden="true"></i>
+			<span class="hide">감소</span>
+		</button>
+		
+		<div class="nds-stepper-input">
+			<input type="number" class="nds-input-val" value="0" min="0" max="99" data-nds-role="step-val" title="수량 입력">
 		</div>
-	</div>
-</script>
-<script data-size="2" data-title="Controls | controls-controller @ Type=previous, Status=disabled" type="text/template">
-	<div class="controls controller">
-		<div class="controllwarp">
-			<button type="button" class="button prev" disabled><span class="hide">이전 문서보기</span></button>
-			<button type="button" class="button next" disabled><span class="hide">다음 문서보기</span></button>
-		</div>
-	</div>
-</script>
-<script data-size="2" data-title="Controls | controls-stepper" type="text/template">
-	<div class="controls stpper">
-		<button type="button" class="minus" disabled><span class="hide">감소</span></button>
-		<span class="value">
-			1
-		</span>
-		<button type="button" class="plus"><span class="hide">증가</span></button>
+		
+		<button type="button" title="수량" class="nds-button -ico plus" data-nds-role="step-plus">
+			<i class="nds-ico -x24 nds-ico-plus-x24" aria-hidden="true"></i>
+			<span class="hide">증가</span>
+		</button>
 	</div>
 </script>
 		<!-- NDS components : E -->
@@ -64,6 +59,7 @@
 	<script src="./../guide/js/guide.js"></script>
 	<script>
 		buildGuide();
+		NDS_UI.Controls();
 	</script>
 </body>
 </html>

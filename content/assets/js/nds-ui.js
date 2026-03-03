@@ -442,6 +442,110 @@ const NDS_UI = (function() {
             title.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
     }
+    
+    /**
+     * Controls(Stepper) 컴포넌트
+     * - 수량 증감 및 직접 입력을 통한 숫자 제어
+     * 
+     * * * [필수 HTML 구조 - data-nds-role 속성]
+     * 컨테이너 : data-nds-role="stepper"
+     * 감소 버튼 : data-nds-role="step-minus"
+     * 증가 버튼 : data-nds-role="step-plus"
+     * 수량 입력 : data-nds-role="step-val" (input 요소 권장)
+     * 
+     * * * * [속성 제어]
+     * min / max : 최소/최대값 제한 가능
+     * step      : 증감 단위 설정 가능
+     */
+    function Controls() {
+        const steppers = document.querySelectorAll('[data-nds-role="stepper"]');
+
+        steppers.forEach(stepper => {
+            if (stepper.dataset.ndsInit) return;
+            stepper.dataset.ndsInit = 'true';
+
+            const minusBtn = stepper.querySelector('[data-nds-role="step-minus"]');
+            const plusBtn = stepper.querySelector('[data-nds-role="step-plus"]');
+            const input = stepper.querySelector('[data-nds-role="step-val"]');
+            
+            if (!minusBtn || !plusBtn || !input) return;
+
+            const min = parseInt(input.getAttribute('min')) || 0;
+            const max = parseInt(input.getAttribute('max')) || 999;
+            const step = parseInt(input.getAttribute('step')) || 1;
+
+            // 접근성
+            input.setAttribute('role', 'spinbutton');
+            input.setAttribute('aria-valuemin', min);
+            input.setAttribute('aria-valuemax', max);
+            minusBtn.setAttribute('tabindex', '-1');
+            plusBtn.setAttribute('tabindex', '-1');
+
+            const updateState = () => {
+                let val = parseInt(input.value);
+                
+                if (isNaN(val)) val = min;
+
+                if (val < min) val = min;
+                if (val > max) val = max;
+
+                minusBtn.disabled = (val <= min);
+                plusBtn.disabled = (val >= max);
+                
+                input.value = val;
+                input.setAttribute('aria-valuenow', val);
+            };
+
+            updateState();
+
+            minusBtn.addEventListener('click', () => {
+                let val = parseInt(input.value) || min;
+                if (val > min) {
+                    input.value = Math.max(val - step, min);
+                    updateState();
+                }
+            });
+
+            plusBtn.addEventListener('click', () => {
+                let val = parseInt(input.value) || min;
+                if (val < max) {
+                    input.value = Math.min(val + step, max);
+                    updateState();
+                }
+            });
+
+            // 키보드 네비게이션
+            input.addEventListener('keydown', (e) => {
+                let val = parseInt(input.value) || min;
+
+                switch (e.key) {
+                    case 'ArrowUp':
+                        e.preventDefault();
+                        if (val < max) input.value = Math.min(val + step, max);
+                        updateState();
+                        break;
+                    case 'ArrowDown':
+                        e.preventDefault();
+                        if (val > min) input.value = Math.max(val - step, min);
+                        updateState();
+                        break;
+                    case 'Home':
+                    case 'End':
+                        e.preventDefault();
+                        input.value = (e.key === 'Home') ? min : max;
+                        updateState();
+                        break;
+                }
+            });
+
+            input.addEventListener('input', function() {
+                this.value = this.value.replace(/[^0-9]/g, '');
+            });
+
+            input.addEventListener('change', updateState);
+            input.addEventListener('blur', updateState);
+        });
+    }
 
     /**
      * Popover 컴포넌트
@@ -1142,6 +1246,7 @@ const NDS_UI = (function() {
 
     function init() {
         Accordion();
+        Controls();
         Popover();
         Tabs();
         TextField();
@@ -1150,6 +1255,7 @@ const NDS_UI = (function() {
 
     return {
         init: init,
+        Controls: Controls,
         Popover: Popover,
         Tabs: Tabs,
         TextField: TextField,

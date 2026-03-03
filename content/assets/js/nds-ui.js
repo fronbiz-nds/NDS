@@ -471,7 +471,7 @@ const NDS_UI = (function() {
 
             // 내용이 없고 data-nds-content가 있는 경우 텍스트 추가
             if (popover.children.length === 0 && !popover.textContent.trim() && popover.dataset.ndsContent) {
-                popover.innerHTML = popover.dataset.ndsContent;
+                popover.textContent = popover.dataset.ndsContent;
             }
 
             // 닫기 버튼 생성

@@ -13,10 +13,15 @@
 <body>
 	<div class="gl">
 		<!-- NDS components : S -->
-<!-- NOTE: as-is의 경우 접근성에 맞지 않아 아래와 같이 수정이 필요함. -->
-<div class="gc__heading">Toast-base</div>
 <script data-size="2" data-title="" type="text/template">
-	<button type="button"  class="a underline point" onClick="NDS_UI.Toast({ message: '데이터가 성공적으로 저장되었습니다.' });">토스트 테스트</button>
+	<button type="button"  class="a underline point" onClick="tostAtive(this)">테스트모드에서 클릭</button>
+	<!-- 토스트팝업은 -active 클래스 사용하여 실행합니다 -->
+	<div class="toast" role="alert" aria-live="assertive">
+		<div class="message" >
+			<p>텍스트를 입력해 주세요.</p>
+		</div>                      
+	</div>
+	<div class="nds__thumbnail"><img src="./prototype/NDS/images/toast-basic.png" alt=""></div>
 </script>
 		<!-- NDS components : E -->
 	</div>

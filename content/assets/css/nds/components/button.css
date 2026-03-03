@@ -53,7 +53,7 @@
 .nds-button.-link {min-width:auto; height:fit-content; padding:0; border:none; background-color:transparent; color:var(--nds-color-text-button-text-icon); font-size:1.4rem; line-height:2.2rem; text-decoration:underline; text-underline-offset:0.2rem;}
 
 /* [Button - Variant: Icon] */
-.nds-button.-ico {justify-content:center; align-items:center; width:5.6rem; min-width:auto; height:auto; padding:0; border:1px solid var(--nds-color-border-line-2); border-radius:calc(var(--nds-border-radius-12) * 2); background-color:transparent; aspect-ratio:1/1;}
+.nds-button.-ico {justify-content:center; align-items:center; width:5.6rem; min-width:auto; height:auto; padding:0; border:1px solid var(--nds-color-border-line-2); border-radius:calc(var(--nds-border-radius-12) * 2); background-color:transparent; transition:none; aspect-ratio:1/1;}
 
 /* [Button - Variant: Plus/Minus] */
 .nds-control-buttons-wrap {display:flex; gap:var(--nds-spacing-12);}

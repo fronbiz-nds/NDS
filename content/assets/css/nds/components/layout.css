@@ -4,11 +4,171 @@
    
    ========================================================= */
 
-/* ============================================================
-   Component Style
-   ============================================================ */
+:root {
+    --nds-safe-bottom:env(safe-area-inset-bottom, 0px);
+}
+
+/* page */
+.nds-page {height:100%; color:var(--nds-color-text-font-1);}
+.nds-page .nds-header {display:block; height:5rem;}
+.nds-page.-transparent .nds-header {visibility:hidden; opacity:0;}
+.nds-page .nds-header .inner {display:flex; align-items:center; position:fixed; top:0; left:0; z-index:200; width:100%; height:5rem; padding:1.3rem var(--nds-spacing-24); background-color:var(--nds-color-bg-default);}
+.nds-page .nds-header .title {overflow:hidden; position:absolute; top:50%; left:50%; max-width:calc(100% - 18rem); color:var(--nds-color-text-font-1); font-weight:bold; font-size:1.6rem; line-height:1.2; letter-spacing:-.1rem; text-align:left; white-space:nowrap; transform:translate(-50%, -50%); text-overflow:ellipsis;}
+.nds-page .nds-header .title.-expand {max-width:calc(100% - 11rem);}
+.nds-page .nds-header .title > a {display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+
+/* main */
+.nds-page.main-body .nds-content {padding-top:1rem; padding-bottom:8rem;}
+.main-body,
+.nds-page.main-body .nds-content, 
+.nds-page.main-body .nds-header .inner {background-color:var(--nds-color-bg-container);}
+.nds-page.main-body .nds-content {padding-top:1rem; padding-bottom:8rem;}
+
+/* ios 대응 */
+.nds-page .nds-header .funcs {display:flex; position:absolute; top:50%; margin-top:-1.2rem ; transform:translate3d(0,0,0);}
+.nds-page .nds-header .funcs * {transform:translate3d(0,0,0);}
+.nds-page .nds-header .funcs:first-child {left:var(--nds-space-in);}
+.nds-page .nds-header .funcs:last-child {right:var(--nds-space-in);}
+.nds-page .nds-header .func + .func {margin-left:1.2rem;}
+.nds-page .nds-header .func.hide {display:none;}
+.nds-page .nds-container {height:100%;}
+.nds-page.-no-header .nds-container {padding-top:5rem;}
+.nds-page .nds-contents {display:flex; flex-direction:column; height:calc(100vh - 5rem); height:calc(100dvh - 5rem);}
+.nds-page .nds-content {position:relative; padding:2.4rem var(--nds-space-in) 6rem;}
+.nds-page .nds-content:last-of-type {padding-bottom:6rem;}
+.nds-page .nds-content.-wide {padding:0 0 6rem;}
+.nds-page .nds-content.-full {height:100%; padding:0;}
+.nds-page .nds-content.-middle {display:flex; flex-direction:column; justify-content:center;}
+.nds-page .nds-sticker {margin-top:auto; padding:0 var(--nds-space-in) 5rem;}
+.nds-page .nds-fixer {position:fixed; bottom:0; left:0; z-index:100; width:100%; padding:1rem var(--nds-space-in) calc(3.2rem + var(--nds-safe-bottom)); background:linear-gradient(180deg, rgba(255,255,255,0) 0%, var(--nds-color-bg-default) .8rem); background-color:var(--nds-color-bg-default);}
+.nds-page .nds-buffer {flex:0 0 auto;}
+
+.nds-page .nds-fixer .buttons:not(.-half) {display:flex; flex-wrap:nowrap;}
+.nds-page .nds-fixer .buttons:not(.-half) > .button:nth-child(1) {flex-basis:calc(34% - 0.6rem);}
+.nds-page .nds-fixer .buttons:not(.-half) > .button:nth-child(2) {flex-basis:calc(66% - 0.6rem);}
+.nds-page .nds-fixer .buttons:not(.-half) > .button:nth-child(1):nth-last-child(1) {flex-basis:calc(100% - 0.6rem);}
+
+/* header */
+.nds-header .func {display:flex; align-items:center; height:2.4rem; background-color:transparent; color:var(--nds-color-text-font-2); font-size:1.4rem; white-space:nowrap;}
+.nds-header .func.-back {width:2.4rem; background-image: var(--nds-ico-previous);}
+.nds-header .func.-home {width:2.4rem; background-image: var(--nds-ico-home-allone);}
+.nds-header .func.-menu {width:2.4rem; background-image: var(--nds-ico-menu);}
+
+/* progress */
+.nds-progress-box {padding:1.1rem  0 .8rem; margin-bottom:2.4rem;}
+.nds-content:has(> .nds-progress-box:first-child) {padding-top:0;}
+
+.nds-progress-box .progress .bar {width:100%; border-bottom:.1rem solid var(--nds-color-border-line-3);}
+.nds-progress-box .progress .bar .gauge {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    position:relative;
+    width:0;
+    height:.2rem;
+    background-color:var(--nds-color-bg-progress-active);
+    animation:progressBar 1s forwards;
+}
+
+@-webkit-keyframes progressBar {
+    0% {
+        width:0;
+    }
+
+    100% {
+        width:calc( 100% * (var(--current) / var(--max)) );
+    }
+}
+
+@keyframes progressBar {
+    0% {
+        width:0;
+    }
+
+    100% {
+        width:calc( 100% * (var(--current) / var(--max)) );
+    }
+}
+
+.nds-progress-box .progress-label {display:flex; justify-content:space-between; margin-top:1.1rem; line-height:1.2;}
+
+/* buffer */
+.nds-fixer[style*="block"] ~ .buffer, 
+.nds-fixer:not(.dp-none):not([style*="none"]) ~ .buffer {
+    height:98px !important;
+}
+
+/* typo */
+.nds-h1 {font-size:2.6rem; line-height:3.8rem; font-weight:600; color:var(--nds-color-text-font-1);}
+.nds-h2 {font-size:2.2rem; line-height:3.2rem; font-weight:600; color:var(--nds-color-text-font-1);}
+.nds-h3 {font-size:2rem; line-height:2.8rem; font-weight:600; color:var(--nds-color-text-font-1);}
+.nds-h4 {font-size:1.8rem; line-height:2.6rem; font-weight:600; color:var(--nds-color-text-font-1);}
+.nds-h5 {font-size:1.6rem; line-height:2.4rem; font-weight:600; color:var(--nds-color-text-font-1);}
+/*
+.nds-h1-group {margin-bottom:var(--nds-spacing-48);}
+.nds-h2-group {margin-bottom:var(--nds-spacing-32);}
+.nds-h3-group {margin-bottom:var(--nds-spacing-40);}
+.nds-h4-group {margin-bottom:var(--nds-spacing-24);} 
+.nds-h5-group {margin-bottom:var(--nds-spacing-16);}
+*/
+
+.nds-body1 {font-size:1.6rem; line-height:2.4rem; color:var(--nds-color-text-font-1);}
+.nds-body2 {font-size:1.5rem; line-height:2.4rem; color:var(--nds-color-text-font-3);}
+.nds-body3 {font-size:1.4rem; line-height:2.2rem; color:var(--nds-color-text-font-4);}
+.nds-table1 {font-size:1.6rem; line-height:2.4rem;}
+.nds-table2 {font-size:1.5rem; line-height:2.4rem;}
+.nds-table3 {font-size:1.4rem; line-height:2.2rem;}
+.nds-caption1 {font-size:1.3rem; line-height:2rem; color:var(--nds-color-text-font-4);}
+.nds-caption2 {font-size:1.2rem; line-height:1.8rem;}
+
+/* font-color */
+.-font1 {color:var(--nds-color-text-font-1) !important;}
+.-font2 {color:var(--nds-color-text-font-2) !important;}
+.-font3 {color:var(--nds-color-text-font-3) !important;}
+.-font4 {color:var(--nds-color-text-font-4) !important;}
+.-font5 {color:var(--nds-color-text-font-5) !important;}
+.-visual {color:var(--nds-color-text-visual) !important;}
+.-error {color:var(--nds-color-text-error) !important;}
+.-point {color:var(--nds-color-text-point) !important;}
+.-positive {color:var(--nds-color-text-positive) !important;}
+.-negative {color:var(--nds-color-text-negative) !important;}
+
+/* tabbar */
+.linked-bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2024;
+    width: 100%;
+    height: 7.6rem;
+    padding: 0rem 2rem 1rem 2rem;
+    border-radius: 1.6rem 1.6rem 0 0;
+    background-color:var(--nds-color-bg-default);
+    border-top: 1px solid var(--nds-color-gray-200);
+}
+
+.linked-bottom-menu [class^="linked-"] {
+    width: 6.4rem;
+    padding-top: 4.2rem;
+    background-repeat: no-repeat;
+    background-position: 50% 1.4rem;
+    background-size: 2.4rem auto;
+    color: var(--font2);
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5;
+}
+.linked-bottom-menu.down {transform: translateY(82px); transition: transform 1s cubic-bezier(0.25, 0, 0, 1);}
+.linked-bottom-menu.up, .main-content.sc-stop .linked-bottom-menu {transform: translateY(0); transition: transform 1s cubic-bezier(0.25, 0, 0, 1);}
+.dark-mode .linked-bottom-menu {background-color:var(--nds-color-bg-default); border-top: 1px solid var(--nds-color-gray-200);}
+
+
+/* ASIS*/
 
 /* 페이지 */
+/*
 .nds-page {height:100%; color:var(--nds-color-text-font-1);}
 .nds-page .nds-header{display:block; height:5rem;}
 .nds-page.-transparent .nds-header{visibility:hidden; opacity:0;}
@@ -16,8 +176,10 @@
 .nds-page .nds-header .title {overflow:hidden; position:absolute; top:50%; left:50%; max-width:calc(100% - 18rem); color:var(--nds-color-text-font-1); font-weight:bold; font-size:1.6rem; line-height:1.2; letter-spacing:-.1rem; text-align:left; white-space:nowrap; transform:translate(-50%, -50%); text-overflow:ellipsis;}
 .nds-page .nds-header .title.-expand {max-width:calc(100% - 11rem);}
 .nds-page .nds-header .title > a {display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
-/* .nds-page .nds-header .funcs {display:flex; position:absolute; top:50%; transform:translateY(-50%);} */
+ .nds-page .nds-header .funcs {display:flex; position:absolute; top:50%; transform:translateY(-50%);} 
+ */
 /* ios 대응 */
+/*
 .nds-page .nds-header .funcs {display:flex; position:absolute; top:50%; margin-top:-1.2rem ; transform:translate3d(0,0,0);}
 .nds-page .nds-header .funcs * {transform:translate3d(0,0,0);}
 .nds-page .nds-header .funcs:first-child {left:var(--nds-space-in);}
@@ -53,10 +215,12 @@
 .popup .fixer.-float {padding-top:var(--nds-spacing-0); background:var(--nds-color-bg-default); box-shadow:0 -3px 10px 0 rgba(0, 0, 0, 0.05);}
 .popup .fixer.-float > .dl {padding:var(--nds-spacing-2) var(--nds-spacing-0) 2.2rem var(--nds-spacing-0);}
 .popup .fixer.-float > .dl .unit {font-weight:600; font-size:1.6rem; line-height:150%;}
+*/
 
 
 
 /* 헤더 버튼 */
+/*
 .nds-header .func {display:flex; align-items:center; height:2.4rem; margin-left:1.2rem; background-color:transparent; color:var(--nds-color-text-font-2); font-size:1.4rem; white-space:nowrap;}
 .nds-header .func.-back {width:2.4rem; background:url(../../imgs/nds/common/ico_left_line_24.png) no-repeat 0 / cover;}
 .nds-header .func.-home {width:2.4rem; background:url(../../imgs/nds/common/ico_home-allone_line_24.png) no-repeat 50% / 2.4rem 2.4rem;}
@@ -104,3 +268,4 @@
 .navigation.-login .nds-header .func.-back {background:url(../imgs/nds/common/ico_left_line_24_dk.png) no-repeat 0 / cover;}
 .navigation.-login .nds-header .func.-menu {background:url(../imgs/nds/common/ico_menu_line_24_dk.png) no-repeat 0 / cover;}
 .navigation .nds-header .title.t-tip span:first-of-type {display:inline-block; overflow:hidden; max-width:calc(100% - 5rem); vertical-align:middle; text-overflow:ellipsis;}
+*/

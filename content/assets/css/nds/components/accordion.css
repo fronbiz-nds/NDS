@@ -62,9 +62,9 @@
 .nds-accordion.-notice .panel > .ul.-bullet > li > div > .ul.-dash li + li {margin-top:.8rem;} */
 
 /* FUNCTION */
-[data-nds-role="fold"] > [data-nds-role="hidden"] {display:none;}
+[data-nds-role="fold"] [data-nds-role="hidden"] {display:none;}
 [data-nds-role="fold"].-slidedown,
 [data-nds-role="fold"].-slideup {overflow:hidden;}
-[data-nds-role="fold"].-slidedown > [data-nds-role="hidden"],
-[data-nds-role="fold"].-slideup > [data-nds-role="hidden"] {display:block; overflow:hidden;}
-[data-nds-role="fold"].-active > [data-nds-role="hidden"] {display:block;}
+[data-nds-role="fold"].-slidedown [data-nds-role="hidden"],
+[data-nds-role="fold"].-slideup [data-nds-role="hidden"] {display:block; overflow:hidden;}
+[data-nds-role="fold"].-active [data-nds-role="hidden"] {display:block;}

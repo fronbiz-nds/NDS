@@ -36,11 +36,11 @@
 					<dd>데이터</dd>
 				</div>
 			</dl>
-			<div class="dls" data-role="fold">
-				<button type="button" class="more" data-role="marker">
+			<div class="dls" data-nds-role="fold">
+				<button type="button" class="more" data-nds-role="marker">
 					<span>펼치기</span>
 				</button>
-				<dl class="dl" data-role="hidden">
+				<dl class="dl" data-nds-role="hidden">
 					<div>
 						<dt>타이틀</dt>
 						<dd>데이터</dd>
@@ -81,11 +81,11 @@
 					<dd>데이터</dd>
 				</div>
 			</dl>
-			<div class="dls -active" data-role="fold">
-				<button type="button" class="more" data-role="marker">
+			<div class="dls -active" data-nds-role="fold">
+				<button type="button" class="more" data-nds-role="marker">
 					<span>접기</span>
 				</button>
-				<dl class="dl" data-role="hidden">
+				<dl class="dl" data-nds-role="hidden">
 					<div>
 						<dt>타이틀</dt>
 						<dd>데이터</dd>
@@ -349,10 +349,9 @@
 								<label for="bordered-account11"></label>
 							</div>
 						</div>
-						<div class="accordion -graybox" data-role="fold">
-							<button type="button" class="title" data-role="marker"
-								title="접힘">제목</button>
-							<div class="panel" data-role="hidden">
+						<div class="accordion -graybox" data-nds-role="fold">
+							<button type="button" class="title" data-nds-role="marker" title="접힘">제목</button>
+							<div class="panel" data-nds-role="hidden">
 								<div class="dummy">내용</div>
 							</div>
 						</div>
@@ -462,7 +461,7 @@
 </script>
 <script data-size="2" data-title="Card | card-general/accordion @ State=close" type="text/template">
 	<div class="field">
-		<div class="account card -list -comb -accor">
+		<div class="account card -list -comb -accor" data-nds-role="fold">
 			<div class="top-area badges -right">
 				<span class="badge line-green">운용중</span>
 			</div>
@@ -474,7 +473,7 @@
 					<span>부가설명</span>
 				</span>
 			</div>
-			<button type="button" class="top-more-btn" data-role="marker">
+			<button type="button" class="top-more-btn" data-nds-role="marker">
 				<span class="hide">더보기</span>
 			</button>
 			
@@ -492,8 +491,8 @@
 					<dd><span class="red">+20 %</span></dd>
 				</div>
 			</dl>
-			<div class="dls pb-0" data-role="fold">
-				<dl class="dl" data-role="hidden">
+			<div class="dls pb-0">
+				<dl class="dl" data-nds-role="hidden">
 					<div>
 						<dt>제목</dt>
 						<dd>내용</dd>
@@ -513,7 +512,7 @@
 </script>
 <script data-size="2" data-title="Card | card-general/accordion @ State=open" type="text/template">
 	<div class="field">
-		<div class="account card -list -comb -accor">
+		<div class="account card -list -comb -accor" data-nds-role="fold">
 			<div class="top-area badges -right">
 				<span class="badge line-green">운용중</span>
 			</div>
@@ -525,7 +524,7 @@
 					<span>부가설명</span>
 				</span>
 			</div>
-			<button type="button" class="top-more-btn -active" data-role="marker">
+			<button type="button" class="top-more-btn -active" data-nds-role="marker">
 				<span class="hide">더보기</span>
 			</button>
 			
@@ -543,8 +542,8 @@
 					<dd><span class="red">+20 %</span></dd>
 				</div>
 			</dl>
-			<div class="dls pb-0 -active" data-role="fold">
-				<dl class="dl" data-role="hidden">
+			<div class="dls pb-0 -active">
+				<dl class="dl" data-nds-role="hidden">
 					<div>
 						<dt>제목</dt>
 						<dd>내용</dd>
@@ -590,9 +589,9 @@
 				</div>
 			</dl>
 
-			<div class="accordion bg-grey -active" data-role="fold">
-				<button type="button" class="title" data-role="marker" title="펼쳐짐">계약서류 확인</button>
-				<div class="panel" data-role="visible">
+			<div class="accordion bg-grey -active" data-nds-role="fold">
+				<button type="button" class="title" data-nds-role="marker">계약서류 확인</button>
+				<div class="panel" data-nds-role="hidden">
 					<div class="download">
 						<ul>
 							<li>
@@ -1199,8 +1198,8 @@
 </script>
 <script data-size="2" data-title="Card | card-summary/accordion @ State=close" type="text/template">
 	<div class="card -sum">
-		<div class="dls -box" data-role="fold">
-			<button type="button" class="more" data-role="marker">
+		<div class="dls -box" data-nds-role="fold">
+			<button type="button" class="more" data-nds-role="marker">
 				<span>펼치기</span>
 			</button>
 			<div class="top-data-area">
@@ -1223,35 +1222,35 @@
 					<dt>대출약정금액</dt>
 					<dd>30,000,000원</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>입금계좌번호</dt>
 					<dd>302-1234-5678-80</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출관리점</dt>
 					<dd>서대문지점</dd>
 				</div>
 			</dl>
 
-			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden">
+			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-nds-role="hidden">
 
-			<div data-role="hidden" class="top-data-area">
+			<div data-nds-role="hidden" class="top-data-area">
 				<p class="title">타이틀</p>
 			</div>
 			<dl class="dl">
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>질권설정금액</dt>
 					<dd>3,000,000원</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출신규일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출만기일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>지연배상금율</dt>
 					<dd>최고 연 15.000%</dd>
 				</div>
@@ -1261,8 +1260,8 @@
 </script>
 <script data-size="2" data-title="Card | card-summary/accordion @ State=open" type="text/template">
 	<div class="card -sum">
-		<div class="dls -box -active" data-role="fold" style="">
-			<button type="button" class="more" data-role="marker">접기</button>
+		<div class="dls -box -active" data-nds-role="fold">
+			<button type="button" class="more" data-nds-role="marker">접기</button>
 			<div class="top-data-area">
 				<p class="title">타이틀</p>
 			</div>
@@ -1283,35 +1282,35 @@
 					<dt>대출약정금액</dt>
 					<dd>30,000,000원</dd>
 				</div>
-				<div data-role="hidden" style="">
+				<div data-nds-role="hidden" style="">
 					<dt>입금계좌번호</dt>
 					<dd>302-1234-5678-80</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출관리점</dt>
 					<dd>서대문지점</dd>
 				</div>
 			</dl>
 
-			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-nds-role="hidden" style="">
 
-			<div data-role="hidden" class="top-data-area">
+			<div data-nds-role="hidden" class="top-data-area">
 				<p class="title">타이틀</p>
 			</div>
 			<dl class="dl">
-				<div data-role="hidden" style="">
+				<div data-nds-role="hidden" style="">
 					<dt>질권설정금액</dt>
 					<dd>3,000,000원</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출신규일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출만기일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>지연배상금율</dt>
 					<dd>최고 연 15.000%</dd>
 				</div>
@@ -1321,8 +1320,8 @@
 </script>
 <script data-size="2" data-title="Card | card-summary/accordion-multi @ State=colse" type="text/template">
 	<div class="card -sum -acc-multi">
-		<div class="dls -box" data-role="fold" style="">
-			<button type="button" class="more" data-role="marker">펼치기</button>
+		<div class="dls -box" data-nds-role="fold">
+			<button type="button" class="more" data-nds-role="marker">펼치기</button>
 			<div class="top-data-area -data-view mb-0">
 				<dl class="dl">
 					<div>
@@ -1331,53 +1330,53 @@
 					</div>
 				</dl>
 			</div>
-			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-nds-role="hidden" style="">
 
-			<div data-role="hidden" class="top-data-area">
+			<div data-nds-role="hidden" class="top-data-area">
 				<p class="title">타이틀</p>
 			</div>
 			<dl class="dl">
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>질권설정금액</dt>
 					<dd>3,000,000원</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출신규일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출만기일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>지연배상금율</dt>
 					<dd>최고 연 15.000%</dd>
 				</div>
 			</dl>
-			<div data-role="hidden" class="top-data-area">
-				<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+			<div data-nds-role="hidden" class="top-data-area">
+				<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-nds-role="hidden" style="">
 				<p class="title">타이틀</p>
 			</div>
 			<dl class="dl">
-				<div data-role="hidden" style="">
+				<div data-nds-role="hidden" style="">
 					<dt>질권설정금액</dt>
 					<dd>3,000,000원</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출신규일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출만기일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>지연배상금율</dt>
 					<dd>최고 연 15.000%</dd>
 				</div>
 			</dl>
-			<div data-role="hidden" class="top-data-area mb-0">
-				<hr class="hr list-1 mb-0" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+			<div data-nds-role="hidden" class="top-data-area mb-0">
+				<hr class="hr list-1 mb-0" aria-hidden="true" tabindex="-1" data-nds-role="hidden" style="">
 				<p class="info">내용을 입력해 주세요.</p>
 			</div>
 		</div>
@@ -1385,8 +1384,8 @@
 </script>
 <script data-size="2" data-title="Card | card-summary/accordion-multi @ State=open" type="text/template">
 	<div class="card -sum -acc-multi">
-		<div class="dls -box -active" data-role="fold" style="">
-			<button type="button" class="more" data-role="marker">접기</button>
+		<div class="dls -box -active" data-nds-role="fold">
+			<button type="button" class="more" data-nds-role="marker">접기</button>
 			<div class="top-data-area -data-view">
 				<dl class="dl">
 					<div>
@@ -1395,53 +1394,53 @@
 					</div>
 				</dl>
 			</div>
-			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-nds-role="hidden">
 
-			<div data-role="hidden" class="top-data-area">
+			<div data-nds-role="hidden" class="top-data-area">
 				<p class="title">타이틀</p>
 			</div>
 			<dl class="dl">
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>질권설정금액</dt>
 					<dd>3,000,000원</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출신규일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출만기일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>지연배상금율</dt>
 					<dd>최고 연 15.000%</dd>
 				</div>
 			</dl>
-			<div data-role="hidden" class="top-data-area">
-				<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+			<div data-nds-role="hidden" class="top-data-area">
+				<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-nds-role="hidden" style="">
 				<p class="title">타이틀</p>
 			</div>
 			<dl class="dl">
-				<div data-role="hidden" style="">
+				<div data-nds-role="hidden" style="">
 					<dt>질권설정금액</dt>
 					<dd>3,000,000원</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출신규일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>대출만기일</dt>
 					<dd>2023.01.01</dd>
 				</div>
-				<div data-role="hidden">
+				<div data-nds-role="hidden">
 					<dt>지연배상금율</dt>
 					<dd>최고 연 15.000%</dd>
 				</div>
 			</dl>
-			<div data-role="hidden" class="top-data-area mb-0">
-				<hr class="hr list-1 mb-0" aria-hidden="true" tabindex="-1" data-role="hidden" style="">
+			<div data-nds-role="hidden" class="top-data-area mb-0">
+				<hr class="hr list-1 mb-0" aria-hidden="true" tabindex="-1" data-nds-role="hidden" style="">
 				<p class="info">내용을 입력해 주세요.</p>
 			</div>
 		</div>
@@ -1528,7 +1527,7 @@
 			</dl>
 			<p class="info">가이드문구를 입력해 주세요.</p>
 
-			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-role="hidden">
+			<hr class="hr list-1" aria-hidden="true" tabindex="-1" data-nds-role="hidden">
 
 			<p class="txt">타이틀</p>
 			<dl class="dl">
@@ -1576,13 +1575,13 @@
 </script>
 		<!-- NDS components : E -->
 	</div>
-	<!-- NDS Script -->
-	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
-	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
-	<script src="./../assets/js/nds-ui.js"></script>
 	<!-- Guide Script -->
 	<script src="./../guide/js/guide.js"></script>
-	<script>
-		buildGuide();
-	</script>
+	<script>buildGuide();</script>
+	<!-- AS-IS Script -->
+	<script src="./../assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./../assets/libs/anime/lib/anime.min.js"></script>
+	<!-- NDS Script -->
+	<script src="./../assets/js/nds-ui.js"></script>
+</body>
 </html>

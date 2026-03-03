@@ -473,9 +473,9 @@ const NDS_UI = (function() {
             
             if (!minusBtn || !plusBtn || !input) return;
 
-            const min = parseInt(input.getAttribute('min')) || 0;
-            const max = parseInt(input.getAttribute('max')) || 999;
-            const step = parseInt(input.getAttribute('step')) || 1;
+            const min = parseInt(input.getAttribute('min'), 10) || 0;
+            const max = parseInt(input.getAttribute('max'), 10) || 999;
+            const step = parseInt(input.getAttribute('step'), 10) || 1;
 
             // 접근성
             input.setAttribute('role', 'spinbutton');
@@ -519,7 +519,7 @@ const NDS_UI = (function() {
 
             // 키보드 네비게이션
             input.addEventListener('keydown', (e) => {
-                let val = parseInt(input.value) || min;
+                let val = parseInt(input.value, 10) || min;
 
                 switch (e.key) {
                     case 'ArrowUp':

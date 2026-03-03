@@ -442,6 +442,63 @@ const NDS_UI = (function() {
             title.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
     }
+
+    /**
+     * Popover 컴포넌트
+     */
+    function Popover() {
+        const popovers = document.querySelectorAll('[data-nds-role="popover"]');
+        
+        popovers.forEach(popover => {
+            if (popover.dataset.ndsInit) return;
+            popover.dataset.ndsInit = 'true';
+            popover.classList.add('nds-popover');
+
+            // 위치 클래스 적용
+            const placement = popover.getAttribute('data-nds-placement');
+            const positionMap = {
+                'bottom-center': '-bc',
+                'bottom-left': '-bl',
+                'bottom-right': '-br',
+                'top-center': '-tc',
+                'top-left': '-tl',
+                'top-right': '-tr'
+            };
+
+            if (placement && positionMap[placement]) {
+                popover.classList.add(positionMap[placement]);
+            }
+
+            // 내용이 없고 data-nds-content가 있는 경우 텍스트 추가
+            if (popover.children.length === 0 && !popover.textContent.trim() && popover.dataset.ndsContent) {
+                popover.textContent = popover.dataset.ndsContent;
+            }
+
+            // 닫기 버튼 생성
+            if (!popover.querySelector('[data-nds-role="popover-close"]')) {
+                const closeBtn = document.createElement('button');
+                closeBtn.type = 'button';
+                closeBtn.className = 'nds-button -ico popover-close';
+                closeBtn.setAttribute('data-nds-role', 'popover-close');
+                closeBtn.innerHTML = '<span class="hide">닫기</span>';
+                
+                closeBtn.addEventListener('click', () => {
+                    popover.remove();
+                    if (popover.timer) clearTimeout(popover.timer);
+                });
+                popover.appendChild(closeBtn);
+            }
+
+            // 자동 닫힘 (Duration) 설정
+            const duration = popover.getAttribute('data-nds-duration');
+            if (duration) {
+                if (popover.timer) clearTimeout(popover.timer);
+                popover.timer = setTimeout(() => {
+                    popover.remove();
+                }, parseInt(duration, 10));
+            }
+        });
+    }
     
     /**
      * Controls(Stepper) 컴포넌트

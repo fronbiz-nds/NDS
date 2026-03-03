@@ -361,6 +361,7 @@ const NDS_UI = (function() {
             if (!marker) return;
 
             const fold = marker.closest('[data-nds-role="fold"]');
+            const more = fold.querySelector('.more');
             const hiddenItems = fold.querySelectorAll('[data-nds-role="hidden"]');
             const isOpen = fold.classList.contains('-active');
             let foldSize;
@@ -374,6 +375,7 @@ const NDS_UI = (function() {
                 unfoldSize = fold.offsetHeight;
                 const duration = 200;
                 const delay = 10;
+                if (more) more.innerHTML = '접기';
 
                 anime({
                     targets: hiddenItems,
@@ -411,6 +413,7 @@ const NDS_UI = (function() {
                 unfoldSize = fold.offsetHeight;
                 fold.classList.remove('-active');
                 fold.classList.add('-slideup');
+                if (more) more.innerHTML = '펼치기';
 
                 anime({
                     targets: hiddenItems,
